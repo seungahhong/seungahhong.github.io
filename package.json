@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "hongseungah-tech-blog",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Welcome to Hons's Tech Blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Hong SeungAh <gmm117@naver.com>",
   "dependencies": {
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
@@ -19,8 +19,15 @@
     "gatsby-plugin-react-helmet": "^5.4.0",
     "gatsby-plugin-sharp": "^4.4.0",
     "gatsby-plugin-typescript": "^4.4.0",
+    "gatsby-remark-copy-linked-files": "^5.4.0",
+    "gatsby-remark-external-links": "0.0.4",
+    "gatsby-remark-images": "^6.4.0",
+    "gatsby-remark-prismjs": "^6.4.0",
+    "gatsby-remark-smartypants": "^5.4.0",
     "gatsby-source-filesystem": "^4.4.0",
+    "gatsby-transformer-remark": "^5.4.0",
     "gatsby-transformer-sharp": "^4.4.0",
+    "prismjs": "^1.25.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -32,7 +39,8 @@
     "prettier": "^2.5.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "blog"
   ],
   "license": "0BSD",
   "scripts": {
@@ -47,9 +55,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/seungahhong/seungahhong.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/seungahhong/seungahhong.github.io/issues"
   }
 }
