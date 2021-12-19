@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[691],{6738:function(e,t,a){a.r(t);var l=a(7294);t.default=function(){return l.createElement("div",null,"hello hong tech blog")}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-1c042463e73c6dc0a413.js.map
