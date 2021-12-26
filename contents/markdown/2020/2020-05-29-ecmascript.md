@@ -6,26 +6,7 @@ published: 2020-05-29 00:00:00 +0200
 categories: development
 tags: ['ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'javascript']
 comments: true,
-github: 'https://github.com/gmm117/gmm117.github.io'
----
-
-<pre>
-    ES2015
-    ES2016
-    ES2017
-    ES2018
-    ES2019
-    ES2020
-    HTML Fragments
-    More String Implovements
-    Array
-    For ... of
-    classes
-    fetch
-    Symbol/Map
-</pre>
-<!--more-->
-
+github: 'https://github.com/seungahhong/seungahhong.github.io'
 ---
 
 # ES3 (1999)
@@ -37,19 +18,21 @@ github: 'https://github.com/gmm117/gmm117.github.io'
 배열에 forEach, map, filter, reduce, some, every와 같은 메소드 지원
 Object에 대한 getter / setter 지원
 
-{% highlight javascript %}
+```javascript
 var person = {
-firstName: 'Hong',
-lastName: 'SeungAh',
-get fullName() {
-return this.firstName + ' ' + this.lastName;
-},
-set fullName (name) {
-var words = name.toString().split(' ');
-this.firstName = words[0] || '';
-this.lastName = words[1] || '';
-}
-}
+  firstName: 'Hong',
+  lastName: 'SeungAh',
+
+  get fullName() {
+    return this.firstName + ' ' + this.lastName;
+  },
+
+  set fullName(name) {
+    var words = name.toString().split(' ');
+    this.firstName = words[0] || '';
+    this.lastName = words[1] || '';
+  },
+};
 
 person.fullName = 'Hong SeungAh';
 console.log(person.firstName); // Hong
@@ -57,21 +40,21 @@ console.log(person.lastName); // SeungAh
 
 // defineProperty 속성추가가능
 var person = {
-firstName: 'Hong',
-lastName: 'SeungAH'
+  firstName: 'Hong',
+  lastName: 'SeungAH',
 };
-Object.defineProperty(person, 'fullName', {
-get: function() {
-return this.firstName + ' ' + this.lastName;
-},
-set: function(name) {
-var words = name.split(' ');
-this.firstName = words[0] || '';
-this.lastName = words[1] || '';
-}
-});
 
-{% endhighlight %}
+Object.defineProperty(person, 'fullName', {
+  get: function () {
+    return this.firstName + ' ' + this.lastName;
+  },
+  set: function (name) {
+    var words = name.split(' ');
+    this.firstName = words[0] || '';
+    this.lastName = words[1] || '';
+  },
+});
+```
 
 자바스크립트 strict 모드 지원 (더 깐깐한? 문법 검사를 한다.)
 JSON 지원 ( 과거에는 XML을 사용하다가, json이 뜨면서 지원하게 됨 )
@@ -80,8 +63,7 @@ JSON 지원 ( 과거에는 XML을 사용하다가, json이 뜨면서 지원하�
 
 ## let, const의 장점
 
-{% highlight javascript %}
-
+````javascript
 function sayHello(name) {
 if (!name) {
 let errorMessage = '"name" parameter should be non empty String.';
@@ -113,39 +95,38 @@ bar2: 'bar'
 };
 
 foo2.bar2 = 'bar2'; // OK - foo2의 프로퍼티는 수정이 가능하다.
-
-{% endhighlight %}
+```
 
 ## 화살표 함수(Arrow function)
 
-{% highlight javascript %}
+```javascript
 const sum = (a, b) => {
 return a + b;
 };
-{% endhighlight %}
+````
 
 ## 클래스(Class)
 
 ### Instroduction classes
 
-{% highlight javascript %}
+```javascript
 const MakeUser = {
-userName : 'hong',
-sayHello : function() {
-console.log(`hello, this is ${this.userName}`);
-}
-}
+  userName: 'hong',
+  sayHello: function () {
+    console.log(`hello, this is ${this.userName}`);
+  },
+};
 
 // class와 그냥 객체의 차이점은 new로 할당할 경우에만 instance를 생성한다는 것이다.(MakeUser를 객체를 만들어서 리턴한 것이다.)
 class User {
-constructor(name) {
-this.userName = name;
-}
+  constructor(name) {
+    this.userName = name;
+  }
 
-sayHello() {
-console.log(`hello, this is ${this.userName}`);
+  sayHello() {
+    console.log(`hello, this is ${this.userName}`);
+  }
 }
-};
 
 const user1 = new User('hong');
 const user2 = new User('seungah');
@@ -155,40 +136,42 @@ const user3 = MakeUser;
 console.log(user1.sayHello());
 console.log(user2.sayHello());
 console.log(user3.sayHello());
-{% endhighlight %}
+```
 
 ## Extending classes
 
-{% highlight javascript %}
+```javascript
 class User {
-constructor({name}) {
-this.userName = name;
-}
+  constructor({ name }) {
+    this.userName = name;
+  }
 
-sayHello() {
-console.log(`hello, this is ${this.userName}`);
+  sayHello() {
+    console.log(`hello, this is ${this.userName}`);
+  }
 }
-};
 
 // 자식 생성자가 있는경우 super 키워드가 없으면 상속받은 부모 생성자 호출이 불가능하다.
 class Admin extends User {
-constructor({name, superAdmin}) {
-super({name});
-this.superAdmin = superAdmin;
-}
-sayAdmin() {
-console.log(`admin, this is ${this.userName} superAdmin : ${this.superAdmin}`);
-}
+  constructor({ name, superAdmin }) {
+    super({ name });
+    this.superAdmin = superAdmin;
+  }
+  sayAdmin() {
+    console.log(
+      `admin, this is ${this.userName} superAdmin : ${this.superAdmin}`,
+    );
+  }
 }
 
-const admin = new Admin({name : 'hong', superAdmin: true});
+const admin = new Admin({ name: 'hong', superAdmin: true });
 admin.sayHello();
 admin.sayAdmin();
-{% endhighlight %}
+```
 
 ## WTF is this
 
-{% highlight javascript %}
+```javascript
 class Counter {
 this.plusButton.addEventListener("click", this.increase);
 this.minusButton.addEventListener("click", this.descrease);
@@ -212,18 +195,17 @@ descrease = () => {
 consoloe.log(this);
 }
 }
-{% endhighlight %}
+```
 
 ## 개선된 객체 리터럴(Object literal)
 
-{% highlight javascript %}
-
+```javascript
 // before ES2015
 var dog = {
-name: 'Lycos',
-bark: function () {
-console.log('Woof! Woof!')
-}
+  name: 'Lycos',
+  bark: function () {
+    console.log('Woof! Woof!');
+  },
 };
 
 dog.bark(); // 'Woof! Woof!';
@@ -233,18 +215,18 @@ var iPad = '아이패드';
 var iMac = '아이맥';
 
 var appleProducts = {
-iPhone: iPhone,
-iPad: iPad,
-iMac: iMac
+  iPhone: iPhone,
+  iPad: iPad,
+  iMac: iMac,
 };
 
 // after ES2015
 
 const dog = {
-name: 'Lycos',
-bark() {
-console.log('Woof! Woof!')
-}
+  name: 'Lycos',
+  bark() {
+    console.log('Woof! Woof!');
+  },
 };
 
 dog.bark(); // 'Woof! Woof!';
@@ -253,62 +235,54 @@ const iPhone = '아이폰';
 const iPad = '아이패드';
 const iMac = '아이맥';
 
-const appleProducts = {iPhone, iPad, iMac};
-
-{% endhighlight %}
+const appleProducts = { iPhone, iPad, iMac };
+```
 
 ## 템플릿 리터럴(Template literal)
 
-{% highlight javascript %}
-
+```javascript
 // before es2015
-let sayHello1 = (aName="hong") => "hello " + aName;
+let sayHello1 = (aName = 'hong') => 'hello ' + aName;
 console.log(sayHello1());
 
 // after es2015
-let sayHello2 = (aName="hong") => `hello ${aName}`;
+let sayHello2 = (aName = 'hong') => `hello ${aName}`;
 console.log(sayHello2());
 
-console.log(`hello ${100*100}`);
+console.log(`hello ${100 * 100}`);
 
 const add = (prev, next) => prev + next;
-console.log(`prev plus next : ${add(3,4)}`);
-
-{% endhighlight %}
+console.log(`prev plus next : ${add(3, 4)}`);
+```
 
 ## 디스트럭처링(Destructuring)
 
 ### Object Destructuring
 
-{% highlight javascript %}
+```javascript
 // 비구조화 할당
 const settings = {
-noti : {
-follow : true,
-alerts : true,
-unfollow : false
-},
-color : {
-theme : "dark"
-}
+  noti: {
+    follow: true,
+    alerts: true,
+    unfollow: false,
+  },
+  color: {
+    theme: 'dark',
+  },
 };
 
 const {
-noti : {
-data = "init",
-unfollow
-} = {},
-color : {
-theme
-}
+  noti: { data = 'init', unfollow } = {},
+  color: { theme },
 } = settings;
 console.log(unfollow, theme, data);
-{% endhighlight %}
+```
 
 ### Array Destructuring
 
-{% highlight javascript %}
-const days = ["Mon", "Tue", "Wen", "Thu", "Fri", "Sat"];
+```javascript
+const days = ['Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat'];
 
 // 이전
 // const Mon = days[0];
@@ -320,27 +294,27 @@ const days = ["Mon", "Tue", "Wen", "Thu", "Fri", "Sat"];
 // const Sun = days[6];
 
 // 이후
-const [Mon, Tue, Wen, Thu, Fri, Sat, Sun = "Sun"] = days;
+const [Mon, Tue, Wen, Thu, Fri, Sat, Sun = 'Sun'] = days;
 console.log(Mon, Tue, Wen, Thu, Fri, Sat, Sun);
-{% endhighlight %}
+```
 
 ## 함수 매개변수의 디폴트 값 설정
 
-{% highlight javascript %}
+```javascript
 const sayName = (name = 'World') => {
-console.log(`Hello, ${name}!`);
-}
+  console.log(`Hello, ${name}!`);
+};
 
 sayName(); // "Hello, World!"
-{% endhighlight %}
+```
 
-{% highlight javascript %}
-function sayHello(aName = "hong") {
-return "Hello " + aName;
+```javascript
+function sayHello(aName = 'hong') {
+  return 'Hello ' + aName;
 }
 
 console.log(sayHi());
-{% endhighlight %}
+```
 
 - 기존 JS6이전에는 aName이 undefined 여부를 체크한 이후에 다시 값을 세팅해야했는데, 인자에 대한 초기값 세팅이 가능해졌다.
   예) let defalutName = aName || "hong"
@@ -349,44 +323,43 @@ console.log(sayHi());
 
 ### Spread
 
-{% highlight javascript %}
+```javascript
 // Spread object/Array unpack
 const number = [1, 2, 3, 4];
 const alpha = ['a', 'b', 'c'];
 
 console.log([...number, ...alpha]);
 //[1, 2, 3, 4, "a", "b", "c"]
-
-{% endhighlight %}
+```
 
 ### Rest
 
-{% highlight javascript %}
-const bestfriends = (one, ...friendsRest) => console.log(`my best friends : ${one}, friends rest : ${friendsRest}`);
+```javascript
+const bestfriends = (one, ...friendsRest) =>
+  console.log(`my best friends : ${one}, friends rest : ${friendsRest}`);
 
 bestfriends('kim', 'choi', 'seyoung');
-{% endhighlight %}
+```
 
 ### Rest & Spread Destructure
 
-{% highlight javascript %}
+```javascript
 // object 삭제 & 정리할경우 유용
 const user = {
-name : 'hong',
-age : 36,
-password : '\*\*123'
+  name: 'hong',
+  age: 36,
+  password: '**123',
 };
 
-const ignorepwd = ({password, ...rest}) => rest;
+const ignorepwd = ({ password, ...rest }) => rest;
 
 console.log(ignorepwd(user));
 
 // object를 만들어서 return 할 경우 () 감싸줘야한다.
-const setCountry = ({country="kr", ...rest}) => ({country, ...rest}); // ({country, ...rest}) spread 문법사용
+const setCountry = ({ country = 'kr', ...rest }) => ({ country, ...rest }); // ({country, ...rest}) spread 문법사용
 
 console.log(setCountry(user));
-
-{% endhighlight %}
+```
 
 ## 제너레이터(Generator)
 
@@ -394,7 +367,7 @@ console.log(setCountry(user));
 결과값을 여러번 내보낼 수 있다.
 Generator 문법이 나오면서 redux-saga, rsjx등 여러 라이브러리가 나오게 되었음
 
-{% highlight javascript %}
+```javascript
 function\* gen() {
 yield 1;
 yield 2;
@@ -443,39 +416,39 @@ listG.next();
 listG.next();
 //{value: undefined, done: true}
 
-{% endhighlight %}
+```
 
 ## 프로미스(Promise)
 
 ### create promises
 
-{% highlight javascript %}
+```javascript
 // async function
 const newPromise = new Promise((resolve, reject) => {
-setTimeout(resolve, 3000, 'I am new Promise');
+  setTimeout(resolve, 3000, 'I am new Promise');
 });
 
 console.log(newPromise);
 
 setInterval(console.log, 1000, newPromise);
-{% endhighlight %}
+```
 
 ### using promises
 
-{% highlight javascript %}
+```javascript
 const newPromise = new Promise((resolve, reject) => {
-setTimeout(resolve, 3000, 'I am new Promise');
+  setTimeout(resolve, 3000, 'I am new Promise');
 });
 
 // resolve : then, reject : catch 호출이며 단 하나만 호출이 된다.
 newPromise
-.then(value => console.log(value))
-.catch(err => console.log(`error ${err}`));
-{% endhighlight %}
+  .then(value => console.log(value))
+  .catch(err => console.log(`error ${err}`));
+```
 
 ### chaining promises
 
-{% highlight javascript %}
+```javascript
 const newPromise = new Promise((resolve, reject) => {
 resolve(2);
 });
@@ -490,22 +463,21 @@ newPromise
 .then(timesTwo)
 .then(timesTwo)
 .then(lastnumber => console.log(lastnumber));
-{% endhighlight %}
+```
 
 ## promises all/race
 
-{% highlight javascript %}
-
+```javascript
 const f1 = new Promise((resolve, reject) => {
-setTimeout(resolve, 3000, "first");
+  setTimeout(resolve, 3000, 'first');
 });
 
 const f2 = new Promise((resolve, reject) => {
-setTimeout(resolve, 5000, "secode");
+  setTimeout(resolve, 5000, 'secode');
 });
 
 const f3 = new Promise((resolve, reject) => {
-setTimeout(resolve, 7000, "third");
+  setTimeout(resolve, 7000, 'third');
 });
 
 // Promise.all 시간과 상관없이 순서에 맞게 값을 제공해준다.
@@ -515,7 +487,7 @@ fall.then(values => console.log(values));
 // Promise.race f1,f2,f3중 가장먼저 resolve, reject 되는 내용의 결과값을 제공해준다.
 const frace = Promise.race([f1, f2, f3]);
 fall.then(values => console.log(values));
-{% endhighlight %}
+```
 
 ## 모듈(ES Module)
 
@@ -523,7 +495,7 @@ fall.then(values => console.log(values));
 
 Named export는 한 파일에서 여러 번 할 수 있다. Named export를 통해 내보낸 것 들은 추후 다른 모듈에서 내보낼 때와 같은 이름으로 import 해야 한다.
 
-{% highlight javascript %}
+```javascript
 export const student = 'Park';
 export const student2 = 'Ted';
 
@@ -534,20 +506,19 @@ import {student, student2, student3} from 'students.js';
 import {student as park, student2 as ted, student3 as abby} from 'students.js';
 import \* as students from 'students.js';
 
-{% endhighlight %}
+```
 
 ### Default export
 
 반면에 Default export는 한 스크립트 파일당 한 개만 사용할 수 있다. 그리고 export default의 뒤에는 표현식만 허용되므로 var, let, const등의 키워드는 사용하지 못한다.
 
 이렇게 내보낸 객체들은 모듈들에서 접근할 수 있다. 그렇다면 지금부터는 모듈에서 export 한 객체들을 가져오는 import문을 살펴보자.
-{% highlight javascript %}
 
-export default 'Jack'
+```javascript
+export default 'Jack';
 
 import jack from 'studentJack';
-
-{% endhighlight %}
+```
 
 # ES2016(ES7)
 
@@ -558,8 +529,7 @@ import jack from 'studentJack';
 
 Array.prototype.includes(searchElement, ?fromindex);
 
-{% highlight javascript %}
-
+```javascript
 // before ES2016
 console.log([1, 2, 3].indexOf(4)); // -1
 
@@ -569,10 +539,9 @@ console.log([1, 2, 3].includes(4)); // false
 console.log([1, 2, NaN].includes(NaN)); // true
 console.log([1, 2, -0].includes(+0)); // true
 console.log([1, 2, +0].includes(-0)); // true
-console.log(["a", "b", "c"].includes("a")); // true
-console.log(["a", "b", "c"].includes("a", 1)); // false
-
-{% endhighlight %}
+console.log(['a', 'b', 'c'].includes('a')); // true
+console.log(['a', 'b', 'c'].includes('a', 1)); // false
+```
 
 ## Exponentiation operator
 
@@ -581,7 +550,7 @@ x \*\* y는 x의 y제곱을 의미하며, 이는 Math.pow(x, y)와 완전히 동
 
 number \*\* number
 
-{% highlight javascript %}
+```javascript
 
 // before ES2016
 console.log(Math.pow(2, 3)); // true
@@ -598,7 +567,7 @@ console.log(a); // 81 ( === a _ a _ a \* a )
 2 ** (3 ** 2); // 512
 (2 ** 3) \*\* 2; // 64
 
-{% endhighlight %}
+```
 
 # ES2017(ES8)
 
@@ -611,7 +580,7 @@ padStart는 문자열의 좌측에 여백을 지정하며, padEnd는 그 반대�
 String.prototype.padStart(maxLength[, padString])
 String.prototype.padEnd(maxLength[, padString])
 
-{% highlight javascript %}
+```javascript
 'abc'.padStart(10); // " abc" (두번째 파라미터 생략시 빈 문자열로 채운다)
 'abc'.padStart(10, '12'); // "1212121abc"
 'abc'.padStart(5, '1234567'); // "12abc"
@@ -620,19 +589,19 @@ String.prototype.padEnd(maxLength[, padString])
 'abc'.padEnd(10, '12'); // "abc1212121"
 'abc'.padEnd(5, '1234567'); // "abc12"
 'abcde'.padEnd(3, '12'); // "abcde"
-{% endhighlight %}
+```
 
 ## Object.values / Object.entries
 
 Object.values(object)
 Object.entries(obj)
 
-{% highlight javascript %}
-const obj = {a:1, b:2, c:3}
+```javascript
+const obj = { a: 1, b: 2, c: 3 };
 console.log(Object.keys(obj)); // [ "a", "b", "c" ]
 console.log(Object.values(obj)); // [ 1, 2, 3 ]
 console.log(Object.entries(obj)); // [ ["a", 1], ["b", 2], ["c", 3] ]
-{% endhighlight %}
+```
 
 ## Object.getOwnPropertyDescriptors
 
@@ -644,10 +613,10 @@ getOwnPropertyDescriptors는 속성명을 전달하지 않고 객체만 전달�
 
 Object.getOwnPropertyDescriptor(obj)
 
-{% highlight javascript %}
-const obj1 = {name: "Jhon", age: 24};
+```javascript
+const obj1 = { name: 'Jhon', age: 24 };
 
-console.log(Object.getOwnPropertyDescriptor(obj1, "name"));
+console.log(Object.getOwnPropertyDescriptor(obj1, 'name'));
 // Object {value: "Jhon", writable: true, enumerable: true, configurable: true}
 
 console.log(Object.getOwnPropertyDescriptors(obj1));
@@ -655,7 +624,7 @@ console.log(Object.getOwnPropertyDescriptors(obj1));
 // name: {value: "Jhon", writable: true, enumerable: true, configurable: true},
 // age: {value: 24, writable: true, enumerable: true, configurable: true}
 // }
-{% endhighlight %}
+```
 
 ## Trailing commas
 
@@ -665,89 +634,89 @@ const foo = (a, b, c,) => {}
 
 ## async/await
 
-{% highlight javascript %}
+```javascript
 // promise를 사용하게 되면 사용자가 얻고자하는 값이 여러개 일경우 then/then/then을 호출하게 되어서 코드가 복잡해진다.
 const getMoviesPromise = () => {
-fetch("https://yts.am/api/v2/list_movies.json")
-.then(response => response.json())
-.then(result => console.log(result))
-.catch(err => console.log(err));
+  fetch('https://yts.am/api/v2/list_movies.json')
+    .then(response => response.json())
+    .then(result => console.log(result))
+    .catch(err => console.log(err));
 };
 
-const getMoviesAsync = async( ) => {
-const response = await fetch("https://yts.lt/api/v2/list_movies.json");
-const json = await response.json();
-console.log(json);
+const getMoviesAsync = async () => {
+  const response = await fetch('https://yts.lt/api/v2/list_movies.json');
+  const json = await response.json();
+  console.log(json);
 };
 
 getMoviesAsync();
-{% endhighlight %}
+```
 
 ## Async Awaite(try catch finally)
 
-{% highlight javascript %}
+```javascript
 const getMoviesAsync = async () => {
-try {
-const response = await fetch("https://yts.lt/api/v2/list_movies.json");
-const json = await response.json();
-console.log(json);
-} catch(e) {
-console.log(`Error ${e}`);
-} finally {
-console.log("we are done");
-}
+  try {
+    const response = await fetch('https://yts.lt/api/v2/list_movies.json');
+    const json = await response.json();
+    console.log(json);
+  } catch (e) {
+    console.log(`Error ${e}`);
+  } finally {
+    console.log('we are done');
+  }
 };
 
 getMoviesAsync();
-{% endhighlight %}
+```
 
 ## Paraller Async Await
 
-{% highlight javascript %}
+```javascript
 const getMoviesAsync = async () => {
-try {
-const [moviesRespose, suggestionResponse] = await Promise.all([
-fetch("https://yts.lt/api/v2/list_movies.json"),
-fetch("https://yts.lt/api/v2/movie_suggestions.json")
-]);
-const [movies, suggestion] = await Promise.all([
-moviesRespose.json(),
-suggestionResponse.json()
-]);
-console.log(movies);
-console.log(suggestion);
-} catch(e) {
-console.log(`Error ${e}`);
-} finally {
-console.log("we are done");
-}
+  try {
+    const [moviesRespose, suggestionResponse] = await Promise.all([
+      fetch('https://yts.lt/api/v2/list_movies.json'),
+      fetch('https://yts.lt/api/v2/movie_suggestions.json'),
+    ]);
+    const [movies, suggestion] = await Promise.all([
+      moviesRespose.json(),
+      suggestionResponse.json(),
+    ]);
+    console.log(movies);
+    console.log(suggestion);
+  } catch (e) {
+    console.log(`Error ${e}`);
+  } finally {
+    console.log('we are done');
+  }
 };
 
 getMoviesAsync();
-
-{% endhighlight %}
+```
 
 # ES2018(ES9)
 
 ## Rest/Spread Properties
 
 기존의 배열에서 사용하던 rest/spread를 객체에서도 사용가능하게 되었습니다.
-{% highlight javascript %}
+
+```javascript
 // Spread
-const obj1 = {one, two, ... others};
+const obj1 = { one, two, ...others };
 console.log(obj); // {one: 1, two: 2, three: 3, four: 4, five: 5}
 
 const person1 = {
-name : 'hong',
-age : 33
+  name: 'hong',
+  age: 33,
 };
 
 const person2 = {
-name1 : 'park',
-age1: 33
+  name1: 'park',
+  age1: 33,
 };
 
-console.log({...person1, ...person2});
+console.log({ ...person1, ...person2 });
 // {name: "hong", age: 33, name1: "park", age1: 33}
 
 const friends = ['choi', 'kim'];
@@ -757,52 +726,51 @@ console.log(newfriends);
 // ["choi", "kim", "seyoung"]
 
 const choi = {
-username : 'choi'
+  username: 'choi',
 };
 
-console.log({...choi, password:'**_123_**'});
+console.log({ ...choi, password: '**_123_**' });
 //{username: "choi", password: "**_123_**"}
 
 // Rest
-const { one, two, ...others } = { one: 1, two: 2, three: 3, four: 4, five: 5 }
+const { one, two, ...others } = { one: 1, two: 2, three: 3, four: 4, five: 5 };
 console.log(one, two, others); // 1 2 {three: 3, four: 4, five: 5}
 
 const user1 = {
-NAME : 'hong',
-age : 36,
-password : '\*\*123'
+  NAME: 'hong',
+  age: 36,
+  password: '**123',
 };
 
 // const 변수를 새로만들듯이 새로운 변수를 세팅
-const rename = ({NAME:name, ...rest}) => ({name, ...rest});
+const rename = ({ NAME: name, ...rest }) => ({ name, ...rest });
 
 console.log(rename(user1));
-
-{% endhighlight %}
+```
 
 ## Promise.prototype.finally()
 
 then, catch, finally에서 Promise는 기존에 then과 catch만 가능했으나 이제 finally도 추가되었습니다.
 
-{% highlight javascript %}
+```javascript
 // resolve, reject이 호출되더라도 finally를 무조건 한번은 타도록 되어있음
 const p1 = new Promise((resolve, reject) => {
-setTimeout(resolve, 3000, "before finally");
+  setTimeout(resolve, 3000, 'before finally');
 })
-.then(value => console.log(value))
-.catch(err => console.log(err))
-.finally(() => console.log("call finally"));
-{% endhighlight %}
+  .then(value => console.log(value))
+  .catch(err => console.log(err))
+  .finally(() => console.log('call finally'));
+```
 
 ## Asynchronous iteration
 
 비동기 이터러블 객체를 순회하는 것이 가능해졌습니다.
 
-{% highlight javascript %}
+```javascript
 for await (const req of requests) {
-console.log(req)
+  console.log(req);
 }
-{% endhighlight %}
+```
 
 # ES2019(ES10)
 
@@ -811,69 +779,66 @@ console.log(req)
 문자열의 앞이나 뒤의 공백을 제거한다.
 앞을 제거하는 trimStart와 뒤를 제거하는 trimEnd가 있다.
 
-{% highlight javascript %}
-const s = " hello world";
-const e = "! ";
+```javascript
+const s = ' hello world';
+const e = '! ';
 
 console.log(s + e + ';');
 // " hello world! ;"
 
 console.log(s.trimStart() + e.trimEnd() + ';');
 // "hello world!;"
-{% endhighlight %}
+```
 
 ## Optional Catch Binding
 
 catch 매개변수 없이도 catch 블록을 사용할 수 있습니다.
 
-{% highlight javascript %}
+```javascript
 // Before ES2019
 try {
-// some code
-}
-catch (err) {
-// error handling code
+  // some code
+} catch (err) {
+  // error handling code
 }
 
 // After ES2019
 try {
-// some code
+  // some code
+} catch {
+  // error handling code
 }
-catch {
-// error handling code
-}
-
-{% endhighlight %}
+```
 
 ## Object.fromEntries()
 
 객체를 entries로 배열로 만들었다면 fromEntries로 다시 객체로 만들 수 있다는 이야기입니다. entires를 이해했다면 간단하게 아래 예제를 통해 알 수 있습니다.
 
-{% highlight javascript %}
-const obj1 = {name: "Jhon", age: 24};
+```javascript
+const obj1 = { name: 'Jhon', age: 24 };
 
 const entries = Object.entries(obj1);
 console.log(entries); // [["name", "Jhone"], ["age", 24]]
 
 const fromEntries = Object.fromEntries(entries);
 console.log(fromEntries); // {name: "Jhon", age: 24}
-{% endhighlight %}
+```
 
 ## Array.flat() & flatMap()
 
 flat 메소드는 배열안의 배열을 쉽게 합칠 수 있게 됩니다.
 
-{% highlight javascript %}
-const arr = [1,2,3];
+```javascript
+const arr = [1, 2, 3];
 
 const map = arr.map(v => [v]);
-const flatMap = arr.flatMap(v=> [v]);
+const flatMap = arr.flatMap(v => [v]);
 
 console.log(map); // [[1], [2], [3]]
 console.log(map.flat()); // [1, 2, 3]
 
 console.log(flatMap); // [1, 2, 3]
-{% endhighlight %}
+```
 
 # ES2020
 
@@ -881,50 +846,49 @@ console.log(flatMap); // [1, 2, 3]
 
 예전에는 브라우저의 전역객체는 window였고 Node.js의 전역객체는 global이었습니다. 둘이 달라서 분기처리를 해줘야 했던 경우가 많았는데 이제는 globalThis라는 것으로 통일되었습니다. 물론 기존 window나 global도 존재합니다.
 
-{% highlight javascript %}
+```javascript
 // 브라우저에서는
 globalThis === window; // true
 
 // 노드에서는
 globalThis === global; // true
-{% endhighlight %}
+```
 
 ## optional chaining
 
 자바스크립트에서 가장 많이 보는 에러가 cannot read property X of undefined 또는 cannot read property Y of undefined입니다.
 
-{% highlight javascript %}
+```javascript
 // 이를 방지하기 위해서
 if (a) {
-if (a.b) {
-console.log(a.b.c);
-}
+  if (a.b) {
+    console.log(a.b.c);
+  }
 }
 // 또는
 console.log(a && a.b && a.b.c);
 
 // optional chaining a.b가 없는경우 undefined 리턴됨
 console.log(a?.b?.c);
-{% endhighlight %}
+```
 
 ## Nullish Coalescing Operator
 
 null이나 undefined일 때만 b를 반환합니다.
 
-{% highlight javascript %}
+```javascript
 0 || 'A'; // A
 0 ?? 'A'; // 0
 
 0 ? 0 : 'A'; // A
 0 ?? 'A'; // 0
-
-{% endhighlight %}
+```
 
 ## Dynamic Import
 
 파일 import를 동적으로 할 수 있게 되었습니다.
 
-{% highlight javascript %}
+```javascript
 import config from './config.js';
 
 if(response) {
@@ -938,13 +902,13 @@ age = config.age;
 console.log(config);
 }
 }
-{% endhighlight %}
+```
 
 ## Promise.allSettled
 
 Promise.all()은 모든 작업이 성공(reslove)해야 실행되는 특징과 달리 Promise.allSettled()은 도중에 실패(reject)되더라도 모든 실행을 할 수 있습니다.
 
-{% highlight javascript %}
+```javascript
 const p1 = new Promise((resolve, reject) => resolve("p1, resolved"));
 const p2 = new Promise((resolve, reject) => resolve("p2, resolved"));
 const p3 = new Promise((resolve, reject) => reject("p3, rejected"));
@@ -970,7 +934,7 @@ console.log(err);
 console.log(err);
 p3, rejected
 _/
-{% endhighlight %}
+```
 
 ## 참고사이트
 

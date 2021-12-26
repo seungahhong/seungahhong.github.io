@@ -7,19 +7,28 @@ module.exports = {
     url: 'https://gmm117.github.io/hong-portfolio/',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-image',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `contents`,
+        name: 'contents',
         path: `${__dirname}/contents`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          formats: ['auto', 'webp'],
+          quality: 100,
+          placeholder: 'blurred',
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
@@ -37,7 +46,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 768,
+              maxWidth: 1024,
               quality: 100,
               withWebp: true,
             },
