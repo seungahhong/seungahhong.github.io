@@ -1,29 +1,25 @@
+import Footer from 'components/Common/Footer';
 import GlobalStyle from 'components/Common/GlobalStyle';
-import PostContent from 'components/Post/PostContent';
+import PostList from 'components/Main/PostList';
 import { SEO } from 'components/seo';
 import { graphql } from 'gatsby';
 import React, { FunctionComponent } from 'react';
+import styled from 'styled-components';
+import { PostListItemType } from 'types/PostItem';
 
 type IndexPageProps = {
   data: {
     allMarkdownRemark: {
-      edges: [
-        {
-          node: {
-            id: string;
-            frontmatter: {
-              title: string;
-              summary: string;
-              date: string;
-              categories: string[];
-            };
-            html: string;
-          };
-        },
-      ];
+      edges: PostListItemType[];
     };
   };
 };
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
 
 const IndexPage: FunctionComponent<IndexPageProps> = ({
   data: {
@@ -31,14 +27,12 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
   },
 }) => {
   return (
-    <>
+    <Container>
       <GlobalStyle />
       <SEO />
-      <div>hello hong tech blog</div>
-      {edges.map(({ node }, index) => (
-        <PostContent key={index} html={node.html} />
-      ))}
-    </>
+      <PostList posts={edges} />
+      <Footer />
+    </Container>
   );
 };
 
@@ -48,12 +42,15 @@ export const getPostList = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
-            date
+            date(formatString: "YYYY.MM.DD")
             categories
+            tags
           }
-          html
         }
       }
     }
