@@ -14,6 +14,10 @@ const MarkdownRenderer = styled.div`
   padding: 100px 0;
   word-break: break-all;
 
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
   // Markdown Style
   line-height: 1.8;
   font-size: 16px;
