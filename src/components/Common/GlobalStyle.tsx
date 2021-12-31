@@ -25,6 +25,11 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     cursor: pointer;
   }
+
+  // Utterances 댓글 작성 라이브러리 스타일 지정
+  .utterances {
+    max-width: 1024px;
+  }
 `;
 
 export default GlobalStyle;
