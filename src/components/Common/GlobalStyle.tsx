@@ -1,9 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
+import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
-  ${normalize}
+  ${reset}
   @import url('<https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap>');
 
   * {

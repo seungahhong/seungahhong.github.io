@@ -1,5 +1,6 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 import styled from 'styled-components';
+import Footer from './Footer';
 import GlobalStyle from './GlobalStyle';
 
 type TemplateProps = {
@@ -17,6 +18,7 @@ const Template: FunctionComponent<TemplateProps> = function ({ children }) {
     <Container>
       <GlobalStyle />
       {children}
+      <Footer />
     </Container>
   );
 };

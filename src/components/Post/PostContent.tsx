@@ -33,13 +33,18 @@ const MarkdownRenderer = styled.div`
   h2,
   h3 {
     font-weight: 800;
-    margin-bottom: 30px;
   }
 
-  * + h1,
-  * + h2,
-  * + h3 {
+  * + h1 {
     margin-top: 80px;
+  }
+
+  * + h2 {
+    margin-top: 60px;
+  }
+
+  * + h3 {
+    margin-top: 40px;
   }
 
   hr + h1,
