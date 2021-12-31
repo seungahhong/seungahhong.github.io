@@ -116,3 +116,5 @@ export const SEO = (props: Props) => {
     />
   );
 };
+
+export default SEO;

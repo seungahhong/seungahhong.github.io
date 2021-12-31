@@ -1,7 +1,7 @@
 import Footer from 'components/Common/Footer';
 import GlobalStyle from 'components/Common/GlobalStyle';
 import PostList from 'components/Main/PostList';
-import { SEO } from 'components/seo';
+import SEO from 'components/seo';
 import { graphql } from 'gatsby';
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
