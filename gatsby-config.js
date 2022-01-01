@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Hong's Tech Blog`,
-    description: `Welcome to Hong's Tech Blog`,
-    author: 'Hong SeungAh',
+    description: '홍승아 개발자 기술 블로그에 오신걸 환영합니다.',
+    author: '홍승아',
     type: 'website',
     siteUrl: 'https://seungahhong.github.io/',
   },
