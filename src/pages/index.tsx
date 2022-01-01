@@ -39,7 +39,14 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
 export const getPostList = graphql`
   query getPostList {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] }
+      sort: {
+        order: [DESC, DESC, ASC]
+        fields: [
+          frontmatter___category
+          frontmatter___date
+          frontmatter___title
+        ]
+      }
     ) {
       edges {
         node {
@@ -50,8 +57,13 @@ export const getPostList = graphql`
           frontmatter {
             title
             date(formatString: "YYYY.MM.DD")
-            categories
+            category
             tags
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(width: 768, height: 400)
+              }
+            }
           }
         }
       }

@@ -3,9 +3,10 @@ layout: post
 title: javascript
 date: 2020-05-29 00:00:00 +0200
 published: 2020-05-29 00:00:00 +0200
-categories: development
+category: development
 tags: ['ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'javascript']
 comments: true,
+thumbnail: './images/thumbnail.jpg'
 github: 'https://github.com/seungahhong/seungahhong.github.io'
 ---
 

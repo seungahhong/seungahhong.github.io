@@ -3,9 +3,10 @@ layout: post
 title: Front-End Performance
 date: 2020-09-12 00:00:00 +0200
 published: 2020-09-12 00:00:00 +0200
-categories: development
+category: common
 tags: ['front-end performance', 'blog']
 comments: true
+thumbnail: './images/frontend-performance/thumbnail.png'
 github: 'https://github.com/gmm117/gmm117.github.io'
 ---
 

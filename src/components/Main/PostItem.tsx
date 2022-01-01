@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { PostFrontmatterType } from 'types/PostItem';
@@ -62,15 +63,27 @@ const TagItem = styled.div`
   color: white;
 `;
 
+const ThumbnailImage = styled(GatsbyImage)`
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  border-bottom: 1px solid #2d2d2d;
+`;
+
 const PostItem: FunctionComponent<PostItemProps> = function ({
   title,
   date,
-  categories,
+  category,
+  thumbnail: {
+    childImageSharp: { gatsbyImageData },
+  },
   tags,
   link,
 }) {
   return (
     <PostItemWrapper to={link}>
+      <ThumbnailImage image={gatsbyImageData} alt="Post Item Image" />
       <PostItemContent>
         <Title>{title}</Title>
         <Date>{date}</Date>

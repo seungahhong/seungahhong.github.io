@@ -71,6 +71,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://seungahhong.github.io', // 중복된 페이지 중에서 가장 대표적으로 사용되는 URL 지정
+        stripQueryString: true,
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
