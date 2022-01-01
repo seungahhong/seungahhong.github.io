@@ -4,7 +4,7 @@ module.exports = {
     description: `Welcome to Hong's Tech Blog`,
     author: 'Hong SeungAh',
     type: 'blog',
-    url: 'https://gmm117.github.io/hong-portfolio/',
+    url: 'https://seungahhong.github.io/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
