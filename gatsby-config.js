@@ -3,8 +3,8 @@ module.exports = {
     title: `Hong's Tech Blog`,
     description: `Welcome to Hong's Tech Blog`,
     author: 'Hong SeungAh',
-    type: 'blog',
-    url: 'https://seungahhong.github.io/',
+    type: 'website',
+    siteUrl: 'https://seungahhong.github.io/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -78,6 +78,7 @@ module.exports = {
         stripQueryString: true,
       },
     },
+    'gatsby-plugin-sitemap',
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
