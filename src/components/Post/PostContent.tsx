@@ -16,6 +16,7 @@ const MarkdownRenderer = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    padding: 0 20px;
   }
 
   // Markdown Style
