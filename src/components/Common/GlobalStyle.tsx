@@ -1,17 +1,14 @@
 import React, { FunctionComponent } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
-import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
-  ${reset}
-  @import url('<https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap>');
+  ${normalize}
 
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Nanum Myeongjo', serif;
   }
 
   html,
