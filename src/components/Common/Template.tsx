@@ -1,6 +1,7 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
+import Header from './Header';
 import Footer from './Footer';
 import GlobalStyle from './GlobalStyle';
 
@@ -8,6 +9,7 @@ type TemplateProps = {
   title: string;
   description: string;
   url: string;
+  isVisibleHeader?: boolean;
   children: ReactNode;
 };
 
@@ -21,6 +23,7 @@ const Template: FunctionComponent<TemplateProps> = function ({
   title,
   description,
   url,
+  isVisibleHeader,
   children,
 }) {
   return (
@@ -50,8 +53,9 @@ const Template: FunctionComponent<TemplateProps> = function ({
         />
       </Helmet>
       <GlobalStyle />
+      {isVisibleHeader && <Header />}
       {children}
-      <Footer />
+      <Footer isVisibleHeader={isVisibleHeader} />
     </Container>
   );
 };

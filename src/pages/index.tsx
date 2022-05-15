@@ -1,5 +1,6 @@
 import Footer from 'components/Common/Footer';
 import GlobalStyle from 'components/Common/GlobalStyle';
+import Header from 'components/Common/Header';
 import Template from 'components/Common/Template';
 import PostList from 'components/Main/PostList';
 // import SEO from 'components/seo';
@@ -34,7 +35,12 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
   },
 }) => {
   return (
-    <Template title={title} description={description} url={siteUrl}>
+    <Template
+      title={title}
+      description={description}
+      url={siteUrl}
+      isVisibleHeader
+    >
       <PostList posts={edges} />
     </Template>
   );
