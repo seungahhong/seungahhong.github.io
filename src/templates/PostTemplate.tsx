@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
 import PostContent from 'components/Post/PostContent';
-import Template from 'components/Common/Template';
+import Template from 'components/Base/Template';
 import CommentWidget from 'components/Post/CommentWidget';
 
 type PostTemplateProps = {
@@ -13,6 +13,12 @@ type PostTemplateProps = {
         author: string;
         type: string;
         siteUrl: string;
+        social: {
+          facebook: string;
+          github: string;
+          notion: string;
+          linkedin: string;
+        };
       };
     };
     allMarkdownRemark: {
@@ -37,7 +43,7 @@ type PostTemplateProps = {
 const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
   data: {
     site: {
-      siteMetadata: { title, description, siteUrl },
+      siteMetadata: { title, description, siteUrl, social },
     },
     allMarkdownRemark: { edges },
   },
@@ -47,7 +53,12 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
   } = edges[0];
 
   return (
-    <Template title={title} description={description} url={siteUrl}>
+    <Template
+      title={title}
+      description={description}
+      url={siteUrl}
+      social={social}
+    >
       <PostContent html={html} />
       <CommentWidget />
     </Template>

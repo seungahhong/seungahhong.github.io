@@ -10,6 +10,12 @@ type TemplateProps = {
   description: string;
   url: string;
   isVisibleHeader?: boolean;
+  social: {
+    facebook: string;
+    github: string;
+    notion: string;
+    linkedin: string;
+  };
   children: ReactNode;
 };
 
@@ -23,6 +29,7 @@ const Template: FunctionComponent<TemplateProps> = function ({
   title,
   description,
   url,
+  social,
   isVisibleHeader,
   children,
 }) {
@@ -53,7 +60,7 @@ const Template: FunctionComponent<TemplateProps> = function ({
         />
       </Helmet>
       <GlobalStyle />
-      {isVisibleHeader && <Header />}
+      {isVisibleHeader && <Header social={social} />}
       {children}
       <Footer isVisibleHeader={isVisibleHeader} />
     </Container>

@@ -1,13 +1,9 @@
-import Footer from 'components/Common/Footer';
-import GlobalStyle from 'components/Common/GlobalStyle';
-import Header from 'components/Common/Header';
-import Template from 'components/Common/Template';
-import PostList from 'components/Main/PostList';
 // import SEO from 'components/seo';
 import { graphql } from 'gatsby';
 import React, { FunctionComponent } from 'react';
-import styled from 'styled-components';
 import { PostListItemType } from 'types/PostItem';
+import Template from 'components/Base/Template';
+import PostList from 'components/Post/PostList';
 
 type IndexPageProps = {
   data: {
@@ -18,6 +14,12 @@ type IndexPageProps = {
         author: string;
         type: string;
         siteUrl: string;
+        social: {
+          facebook: string;
+          github: string;
+          notion: string;
+          linkedin: string;
+        };
       };
     };
     allMarkdownRemark: {
@@ -29,7 +31,7 @@ type IndexPageProps = {
 const IndexPage: FunctionComponent<IndexPageProps> = ({
   data: {
     site: {
-      siteMetadata: { title, description, siteUrl },
+      siteMetadata: { title, description, siteUrl, social },
     },
     allMarkdownRemark: { edges },
   },
@@ -39,6 +41,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
       title={title}
       description={description}
       url={siteUrl}
+      social={social}
       isVisibleHeader
     >
       <PostList posts={edges} />
@@ -55,6 +58,12 @@ export const getPostList = graphql`
         author
         type
         siteUrl
+        social {
+          facebook
+          github
+          notion
+          linkedin
+        }
       }
     }
     allMarkdownRemark(

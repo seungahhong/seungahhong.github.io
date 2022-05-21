@@ -1,10 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Hong's Tech Blog`,
-    description: '홍승아 개발자 기술 블로그에 오신걸 환영합니다.',
+    title: '홍승아 기술 블로그',
+    description: '홍승아 기술 블로그에 오신걸 환영합니다.',
     author: '홍승아',
     type: 'website',
     siteUrl: 'https://seungahhong.github.io/',
+    social: {
+      facebook:
+        'https://www.facebook.com/people/%ED%99%8D%EC%8A%B9%EC%95%84/100002349562000/',
+      github: 'https://github.com/seungahhong',
+      notion:
+        'https://material-debt-c1c.notion.site/daa60481e37840ea9e1b7e1b12269942',
+      linkedin: 'https://www.linkedin.com/in/seungahhong/',
+    },
   },
   plugins: [
     'gatsby-plugin-react-helmet',

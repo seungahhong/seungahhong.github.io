@@ -23,6 +23,15 @@ type SocialImageType = {
   size: number;
 };
 
+type HeaderTypes = {
+  social: {
+    facebook: string;
+    github: string;
+    notion: string;
+    linkedin: string;
+  };
+};
+
 const HeaderWrapper = styled.div`
   position: fixed;
   left: 0;
@@ -30,6 +39,10 @@ const HeaderWrapper = styled.div`
   top: 0;
   bottom: 0;
   width: 20%;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const HeaderImage = styled(GatsbyImage)`
@@ -61,7 +74,7 @@ const HeaderContent = styled.div`
   color: #fff;
 
   & > h4 {
-    font-size: 35px;
+    font-size: 28px;
   }
 
   & > p {
@@ -87,19 +100,25 @@ const HeaderMenu = styled.div`
 `;
 
 const HeaderSocialWrapper = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px;
+  grid-gap: 8px;
   margin-top: 36px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 40px 40px;
+  }
 `;
 
-const HeaderSocialLink = styled(Link)<SocialImageType>`
+const HeaderSocialLink = styled.a<SocialImageType>`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 8px;
   background: rgba(255, 255, 255, 0.7);
   color: #161b21;
   width: 40px;
   height: 40px;
+  min-width: 40px;
   font-size: 20px;
   border: none;
   border-radius: 50%;
@@ -110,7 +129,7 @@ const HeaderSocialLink = styled(Link)<SocialImageType>`
   }
 `;
 
-const Header: FunctionComponent = () => {
+const Header: FunctionComponent<HeaderTypes> = ({ social }) => {
   const {
     allFile: { edges },
   } = useStaticQuery<HeaderImageType>(graphql`
@@ -150,6 +169,10 @@ const Header: FunctionComponent = () => {
     return edges.find(item => item.node?.name === 'notion');
   }, [edges]);
 
+  const linkedinImage = useMemo(() => {
+    return edges.find(item => item.node?.name === 'linkedin');
+  }, [edges]);
+
   return (
     <HeaderWrapper>
       {backgroundImage && (
@@ -177,22 +200,48 @@ const Header: FunctionComponent = () => {
           </ul>
         </HeaderMenu>
         <HeaderSocialWrapper>
-          {facebookImage && (
-            <HeaderSocialLink to="https://github.com/seungahhong" size={32}>
-              <img src={facebookImage.node.publicURL} alt="" />
-            </HeaderSocialLink>
-          )}
           {githubImage && (
-            <HeaderSocialLink to="https://github.com/seungahhong" size={40}>
+            <HeaderSocialLink
+              href={social?.github}
+              rel="noopener noreferrer"
+              title="github"
+              target="_blank"
+              size={40}
+            >
               <img src={githubImage.node.publicURL} alt="" />
             </HeaderSocialLink>
           )}
           {notionImage && (
             <HeaderSocialLink
-              to="https://material-debt-c1c.notion.site/daa60481e37840ea9e1b7e1b12269942"
+              href={social?.notion}
+              rel="noopener noreferrer"
+              title="notion"
+              target="_blank"
               size={30}
             >
               <img src={notionImage.node.publicURL} alt="" />
+            </HeaderSocialLink>
+          )}
+          {linkedinImage && (
+            <HeaderSocialLink
+              href={social?.linkedin}
+              rel="noopener noreferrer"
+              title="linkedin"
+              target="_blank"
+              size={38}
+            >
+              <img src={linkedinImage.node.publicURL} alt="" />
+            </HeaderSocialLink>
+          )}
+          {facebookImage && (
+            <HeaderSocialLink
+              href={social?.facebook}
+              rel="noopener noreferrer"
+              title="facebook"
+              target="_blank"
+              size={32}
+            >
+              <img src={facebookImage.node.publicURL} alt="" />
             </HeaderSocialLink>
           )}
         </HeaderSocialWrapper>
