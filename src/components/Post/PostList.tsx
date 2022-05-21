@@ -11,15 +11,14 @@ const PostListWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
-  margin-left: 20%;
-  padding: 50px 25px 100px;
+  margin-top: 20px;
+  padding-bottom: 100px;
 
   @media (max-width: 1200px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media (max-width: 1024px) {
-    margin-left: 0;
     grid-template-columns: 1fr 1fr;
   }
 

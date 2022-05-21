@@ -1,9 +1,11 @@
 // import SEO from 'components/seo';
 import { graphql } from 'gatsby';
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useState, useEffect } from 'react';
 import { PostListItemType } from 'types/PostItem';
 import Template from 'components/Base/Template';
 import PostList from 'components/Post/PostList';
+import PostFilter from 'components/Post/PostFilter';
+import styled from 'styled-components';
 
 type IndexPageProps = {
   data: {
@@ -28,6 +30,15 @@ type IndexPageProps = {
   };
 };
 
+const PostWrapper = styled.div`
+  margin-left: 20%;
+  padding: 0 24px;
+
+  @media (max-width: 1024px) {
+    margin-left: 0;
+  }
+`;
+
 const IndexPage: FunctionComponent<IndexPageProps> = ({
   data: {
     site: {
@@ -36,6 +47,17 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
     allMarkdownRemark: { edges },
   },
 }) => {
+  const [posts, setPosts] = useState<PostListItemType[]>(edges);
+  const [filter, setFilter] = useState<string>('ALL');
+
+  useEffect(() => {
+    setPosts(
+      edges.filter(({ node: { frontmatter } }) => {
+        return filter === 'ALL' || frontmatter.category === filter;
+      }),
+    );
+  }, [filter, edges]);
+
   return (
     <Template
       title={title}
@@ -44,7 +66,10 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
       social={social}
       isVisibleHeader
     >
-      <PostList posts={edges} />
+      <PostWrapper>
+        <PostFilter filter={filter} posts={edges} onFilter={setFilter} />
+        <PostList posts={posts} />
+      </PostWrapper>
     </Template>
   );
 };
@@ -68,11 +93,11 @@ export const getPostList = graphql`
     }
     allMarkdownRemark(
       sort: {
-        order: [DESC, DESC, ASC]
+        order: [DESC, ASC, DESC]
         fields: [
-          frontmatter___category
           frontmatter___date
           frontmatter___title
+          frontmatter___category
         ]
       }
     ) {

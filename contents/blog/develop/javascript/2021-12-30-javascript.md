@@ -3,7 +3,7 @@ layout: post
 title: javascript
 date: 2021-12-21
 published: 2021-12-21
-category: development
+category: javascript
 tags: ['ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'javascript']
 comments: true,
 thumbnail: './images/thumbnail.jpg'
