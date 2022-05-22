@@ -93,11 +93,11 @@ export const getPostList = graphql`
     }
     allMarkdownRemark(
       sort: {
-        order: [DESC, ASC, DESC]
+        order: [DESC, DESC, ASC]
         fields: [
           frontmatter___date
-          frontmatter___title
           frontmatter___category
+          frontmatter___title
         ]
       }
     ) {

@@ -14,6 +14,10 @@ const FooterWrapper = styled.div<FooterProps>`
   font-size: 15px;
   text-align: center;
   line-height: 1.5;
+
+  @media (max-width: 1024px) {
+    margin-left: 0;
+  }
 `;
 
 const Footer: FunctionComponent<FooterProps> = ({ isVisibleHeader }) => {

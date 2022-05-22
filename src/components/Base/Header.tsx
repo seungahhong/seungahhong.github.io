@@ -192,7 +192,7 @@ const Header: FunctionComponent<HeaderTypes> = ({ social }) => {
         <HeaderMenu>
           <ul>
             <li>
-              <Link to="/">Blog</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
