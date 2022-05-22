@@ -33,6 +33,7 @@ type PostTemplateProps = {
               tags: string[];
             };
             html: string;
+            tableOfContents: string;
           };
         },
       ];
@@ -49,7 +50,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
   },
 }) {
   const {
-    node: { html },
+    node: { html, tableOfContents },
   } = edges[0];
 
   return (
@@ -59,7 +60,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
       url={siteUrl}
       social={social}
     >
-      <PostContent html={html} />
+      <PostContent html={html} tableOfContents={tableOfContents} />
       <CommentWidget />
     </Template>
   );
@@ -88,6 +89,7 @@ export const queryMarkdownDataBySlug = graphql`
             category
             tags
           }
+          tableOfContents
         }
       }
     }

@@ -3,15 +3,44 @@ import styled from 'styled-components';
 
 interface PostContentProps {
   html: string;
+  tableOfContents: string;
 }
 
-const MarkdownRenderer = styled.div`
+const PostContentWrapper = styled.div`
+  display: grid;
+  position: relative;
+  grid-template-columns: 3fr 1fr;
+  margin: 0 auto;
+  padding: 100px 0;
+`;
+
+const TocRenderer = styled.aside`
+  display: inline-block;
+  margin-left: 10px;
+  position: sticky;
+  top: 0;
+  left: 10px;
+  max-height: 100vh;
+
+  & ul {
+    list-style: none;
+
+    & li {
+      font-weight: 700;
+      margin-top: 5px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+`;
+
+const MarkdownRenderer = styled.article`
   // Renderer Style
   display: flex;
   flex-direction: column;
   width: 1024px;
-  margin: 0 auto;
-  padding: 100px 0;
   word-break: break-all;
 
   @media (max-width: 768px) {
@@ -111,8 +140,16 @@ const MarkdownRenderer = styled.div`
   }
 `;
 
-const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
-  return <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
+const PostContent: FunctionComponent<PostContentProps> = function ({
+  html,
+  tableOfContents,
+}) {
+  return (
+    <PostContentWrapper>
+      <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />
+      <TocRenderer dangerouslySetInnerHTML={{ __html: tableOfContents }} />
+    </PostContentWrapper>
+  );
 };
 
 export default PostContent;
