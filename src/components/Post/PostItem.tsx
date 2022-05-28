@@ -4,7 +4,9 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { PostFrontmatterType } from 'types/PostItem';
 
-type PostItemProps = PostFrontmatterType & { link: string };
+type PostItemProps = PostFrontmatterType & { link: string } & {
+  excerpt: string;
+};
 
 const PostItemWrapper = styled(Link)`
   display: flex;
@@ -71,14 +73,19 @@ const ThumbnailImage = styled(GatsbyImage)`
   border-bottom: 1px solid #2d2d2d;
 `;
 
+const Summary = styled.span`
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 500;
+`;
+
 const PostItem: FunctionComponent<PostItemProps> = function ({
   title,
   date,
-  category,
   thumbnail: {
     childImageSharp: { gatsbyImageData },
   },
-  tags,
+  excerpt,
   link,
 }) {
   return (
@@ -91,11 +98,7 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
       <PostItemContent>
         <Title>{title}</Title>
         <Date>{date}</Date>
-        <Tags>
-          {tags.map(tag => (
-            <TagItem key={tag}>{tag}</TagItem>
-          ))}
-        </Tags>
+        <Summary>{excerpt}</Summary>
       </PostItemContent>
     </PostItemWrapper>
   );

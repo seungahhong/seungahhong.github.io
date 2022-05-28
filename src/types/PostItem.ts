@@ -20,6 +20,7 @@ export type PostListItemType = {
   node: {
     id: string;
     fields: PostFieldsSlugType;
+    excerpt: string;
     frontmatter: PostFrontmatterType;
   };
 };

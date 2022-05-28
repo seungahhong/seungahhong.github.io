@@ -3,7 +3,7 @@ layout: post
 title: Front-End Performance
 date: 2020-09-12
 published: 2020-09-12
-category: performance
+category: develop
 tags: ['front-end performance', 'blog']
 comments: true
 thumbnail: './images/frontend-performance/thumbnail.png'

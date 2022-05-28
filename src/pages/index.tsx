@@ -1,6 +1,11 @@
 // import SEO from 'components/seo';
 import { graphql } from 'gatsby';
-import React, { FunctionComponent, useState, useEffect } from 'react';
+import React, {
+  FunctionComponent,
+  useState,
+  useEffect,
+  useCallback,
+} from 'react';
 import { PostListItemType } from 'types/PostItem';
 import Template from 'components/Base/Template';
 import PostList from 'components/Post/PostList';
@@ -48,15 +53,27 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
   },
 }) => {
   const [posts, setPosts] = useState<PostListItemType[]>(edges);
+  const [type, setType] = useState<string>('CATEGORY');
   const [filter, setFilter] = useState<string>('ALL');
 
   useEffect(() => {
-    setPosts(
-      edges.filter(({ node: { frontmatter } }) => {
-        return filter === 'ALL' || frontmatter.category === filter;
-      }),
-    );
-  }, [filter, edges]);
+    setPosts(() => {
+      if (type === 'CATEGORY') {
+        return edges.filter(({ node: { frontmatter } }) => {
+          return filter === 'ALL' || frontmatter.category === filter;
+        });
+      }
+
+      return edges.filter(({ node: { frontmatter } }) => {
+        return filter === 'ALL' || frontmatter.tags.includes(filter);
+      });
+    });
+  }, [type, filter, edges]);
+
+  const handleType = useCallback((type: string) => {
+    setFilter('ALL');
+    setType(type);
+  }, []);
 
   return (
     <Template
@@ -67,7 +84,13 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
       isVisibleHeader
     >
       <PostWrapper>
-        <PostFilter filter={filter} posts={edges} onFilter={setFilter} />
+        <PostFilter
+          posts={edges}
+          filter={filter}
+          type={type}
+          handleType={handleType}
+          handleFilter={setFilter}
+        />
         <PostList posts={posts} />
       </PostWrapper>
     </Template>
@@ -118,6 +141,7 @@ export const getPostList = graphql`
               }
             }
           }
+          excerpt
         }
       }
     }
