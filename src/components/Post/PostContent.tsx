@@ -12,6 +12,7 @@ const PostContentWrapper = styled.div`
   grid-template-columns: 3fr 1fr;
   margin: 0 auto;
   padding: 100px 0;
+  align-items: start;
 `;
 
 const TocRenderer = styled.aside`
@@ -20,7 +21,6 @@ const TocRenderer = styled.aside`
   position: sticky;
   top: 0;
   left: 10px;
-  max-height: 100vh;
 
   & ul {
     list-style: none;
