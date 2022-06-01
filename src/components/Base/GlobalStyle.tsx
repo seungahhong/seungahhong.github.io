@@ -1,4 +1,3 @@
-import React, { FunctionComponent } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
@@ -32,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
   // Utterances 댓글 작성 라이브러리 스타일 지정
   .utterances {
     max-width: 1024px;
+    margin: 0 auto;
   }
 `;
 

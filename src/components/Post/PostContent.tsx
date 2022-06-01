@@ -1,18 +1,27 @@
-import React, { FunctionComponent } from 'react';
+import useScrollSpy from '../../helpers/hooks/useScrollSpy';
+import React, { FunctionComponent, useRef } from 'react';
 import styled from 'styled-components';
+import CommentWidget from './CommentWidget';
 
 interface PostContentProps {
   html: string;
   tableOfContents: string;
 }
 
-const PostContentWrapper = styled.div`
-  display: grid;
+const PostWrapper = styled.div`
+  display: flex;
   position: relative;
-  grid-template-columns: 3fr 1fr;
-  margin: 0 auto;
   padding: 100px 0;
+  margin: 0 auto;
   align-items: start;
+
+  @media (max-width: 1024px) {
+    margin: 0;
+  }
+`;
+
+const PostContentWrapper = styled.div`
+  width: 100%;
 `;
 
 const TocRenderer = styled.aside`
@@ -26,7 +35,6 @@ const TocRenderer = styled.aside`
     list-style: none;
 
     & li {
-      font-weight: 700;
       margin-top: 5px;
     }
   }
@@ -42,10 +50,12 @@ const MarkdownRenderer = styled.article`
   flex-direction: column;
   width: 1024px;
   word-break: break-all;
+  margin-bottom: 350px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     width: 100%;
     padding: 0 20px;
+    margin-bottom: 48px;
   }
 
   // Markdown Style
@@ -144,11 +154,26 @@ const PostContent: FunctionComponent<PostContentProps> = function ({
   html,
   tableOfContents,
 }) {
+  const tocRef = useRef<HTMLElement>(null);
+  const markdownRef = useRef<HTMLElement>(null);
+  useScrollSpy(tocRef, markdownRef);
+
   return (
-    <PostContentWrapper>
-      <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />
-      <TocRenderer dangerouslySetInnerHTML={{ __html: tableOfContents }} />
-    </PostContentWrapper>
+    <>
+      <PostWrapper>
+        <PostContentWrapper>
+          <MarkdownRenderer
+            ref={markdownRef}
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+          <CommentWidget />
+        </PostContentWrapper>
+        <TocRenderer
+          ref={tocRef}
+          dangerouslySetInnerHTML={{ __html: tableOfContents }}
+        />
+      </PostWrapper>
+    </>
   );
 };
 

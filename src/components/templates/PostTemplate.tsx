@@ -2,7 +2,6 @@ import React, { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
 import PostContent from 'components/Post/PostContent';
 import Template from 'components/Base/Template';
-import CommentWidget from 'components/Post/CommentWidget';
 
 type PostTemplateProps = {
   data: {
@@ -61,7 +60,6 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
       social={social}
     >
       <PostContent html={html} tableOfContents={tableOfContents} />
-      <CommentWidget />
     </Template>
   );
 };

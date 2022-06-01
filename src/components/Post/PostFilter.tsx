@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useMemo, useState } from 'react';
+import React, { FunctionComponent, useMemo } from 'react';
 import styled from 'styled-components';
 import { PostListItemType } from 'types/PostItem';
 
