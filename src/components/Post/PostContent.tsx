@@ -21,7 +21,11 @@ const PostWrapper = styled.div`
 `;
 
 const PostContentWrapper = styled.div`
-  width: 100%;
+  width: 80%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 const TocRenderer = styled.aside`
@@ -30,12 +34,21 @@ const TocRenderer = styled.aside`
   position: sticky;
   top: 0;
   left: 10px;
+  transition: all 0.125s esse-in 0s;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 0 0.75rem;
+  border-left: 2px solid gray;
 
   & ul {
     list-style: none;
 
     & li {
       margin-top: 5px;
+
+      & a.reach {
+        color: #000000;
+        transform: scale(1.05);
+      }
     }
   }
 
@@ -48,12 +61,12 @@ const MarkdownRenderer = styled.article`
   // Renderer Style
   display: flex;
   flex-direction: column;
-  width: 1024px;
   word-break: break-all;
   margin-bottom: 350px;
+  padding: 0 80px;
+  width: 100%;
 
   @media (max-width: 1024px) {
-    width: 100%;
     padding: 0 20px;
     margin-bottom: 48px;
   }

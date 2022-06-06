@@ -20,19 +20,14 @@ const PostFilterContainer = styled.section`
   z-index: 1;
   background-color: #ffffff;
   padding-top: 18px;
-
-  & ul {
-    overflow-x: auto;
-    list-style: none;
-  }
 `;
 
 const PostList = styled.ul`
   display: flex;
-  border: 1px solid #adb5bd;
-  padding: 6px 20px;
-  border-radius: 12px;
+  padding: 0 4px;
   margin-top: 8px;
+  overflow-x: auto;
+  list-style: none;
 
   // overflow-x: scroll;
   // scrollbar-height: none; /* Firefox */
@@ -55,6 +50,11 @@ const PostListItem = styled.li<PostProps>`
     props.active ? '1px solid #343a40' : '1px solid rgba(0, 0, 0, 0.1)'};
   color: ${props =>
     props.active ? '#ffffff' : '1px solid rgba(0, 0, 0, 0.05)'};
+`;
+
+const PostFilterWrapper = styled.div`
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 `;
 
 const PostFilterButton = styled.button<PostProps>`
@@ -101,7 +101,7 @@ const PostFilter: FunctionComponent<PostFilterProps> = ({
 
   return (
     <PostFilterContainer>
-      <div>
+      <PostFilterWrapper>
         <PostFilterButton
           onClick={() => handleType('CATEGORY')}
           active={type === 'CATEGORY'}
@@ -114,7 +114,7 @@ const PostFilter: FunctionComponent<PostFilterProps> = ({
         >
           TAGS
         </PostFilterButton>
-      </div>
+      </PostFilterWrapper>
       <PostList>
         {type === 'CATEGORY' &&
           categories.map((category, index) => {

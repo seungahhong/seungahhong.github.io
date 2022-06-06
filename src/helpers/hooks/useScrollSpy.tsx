@@ -12,13 +12,12 @@ const useScrollSpy = (
   const handleScroll = (event: Event, target: targetProps) => {
     const { headings, tocs } = target;
     headings.forEach(target => {
-      const diff = target.offsetTop - window.scrollY;
-      if (diff <= 20) {
+      if (target.offsetTop - window.scrollY <= 0) {
         tocs.forEach(toc => {
           if (decodeURIComponent(toc.hash.replace('#', '')) === target.id) {
-            toc.style.fontWeight = '700';
+            toc.classList.add('reach');
           } else {
-            toc.style.fontWeight = '';
+            toc.classList.remove('reach');
           }
         });
       }
