@@ -4,9 +4,9 @@ title: javascript
 date: 2021-12-21
 published: 2021-12-21
 category: develop
-tags: ['ecmascript']
+tags: ['javascript']
 comments: true,
-thumbnail: './images/thumbnail.jpg'
+thumbnail: './images/21/thumbnail.jpg'
 github: 'https://github.com/seungahhong/seungahhong.github.io'
 ---
 
