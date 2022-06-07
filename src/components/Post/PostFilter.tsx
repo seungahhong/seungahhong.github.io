@@ -122,6 +122,7 @@ const PostFilter: FunctionComponent<PostFilterProps> = ({
               <>
                 {index === 0 && (
                   <PostListItem
+                    key={`CATEGORYALL_${index}`}
                     onClick={() => handleFilter('ALL')}
                     active={filter === 'ALL'}
                   >
@@ -129,6 +130,7 @@ const PostFilter: FunctionComponent<PostFilterProps> = ({
                   </PostListItem>
                 )}
                 <PostListItem
+                  key={`CATEGORY_${index}`}
                   onClick={() =>
                     handleFilter(category.node.frontmatter.category)
                   }
@@ -145,6 +147,7 @@ const PostFilter: FunctionComponent<PostFilterProps> = ({
               <>
                 {index === 0 && (
                   <PostListItem
+                    key={`TAGSALL_${index}`}
                     onClick={() => handleFilter('ALL')}
                     active={filter === 'ALL'}
                   >
@@ -152,6 +155,7 @@ const PostFilter: FunctionComponent<PostFilterProps> = ({
                   </PostListItem>
                 )}
                 <PostListItem
+                  key={`TAGS_${index}`}
                   onClick={() => handleFilter(tag)}
                   active={filter === tag}
                 >
