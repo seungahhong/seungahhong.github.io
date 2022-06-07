@@ -12,7 +12,7 @@ const useScrollSpy = (
   const handleScroll = (event: Event, target: targetProps) => {
     const { headings, tocs } = target;
     headings.forEach(target => {
-      if (target.offsetTop - window.scrollY <= 0) {
+      if (target.offsetTop - window.scrollY <= 20) {
         tocs.forEach(toc => {
           if (decodeURIComponent(toc.hash.replace('#', '')) === target.id) {
             toc.classList.add('reach');

@@ -89,15 +89,15 @@ const MarkdownRenderer = styled.article`
   }
 
   * + h1 {
-    margin-top: 80px;
-  }
-
-  * + h2 {
     margin-top: 60px;
   }
 
-  * + h3 {
+  * + h2 {
     margin-top: 40px;
+  }
+
+  * + h3 {
+    margin-top: 20px;
   }
 
   hr + h1,
@@ -130,7 +130,7 @@ const MarkdownRenderer = styled.article`
   ol,
   ul {
     margin-left: 20px;
-    padding: 30px 0;
+    padding: 10px 0;
   }
 
   // Adjust Horizontal Rule style
@@ -160,6 +160,10 @@ const MarkdownRenderer = styled.article`
   code[class*='language-'],
   pre[class*='language-'] {
     tab-size: 2;
+  }
+
+  summary {
+    font-size: 24px;
   }
 `;
 

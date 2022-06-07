@@ -137,7 +137,7 @@ const Header: FunctionComponent<HeaderTypes> = ({ social }) => {
       allFile(
         filter: {
           extension: { regex: "/(jpg)|(jpeg)|(png)|(svg)/" }
-          relativeDirectory: { eq: "images/header" }
+          relativeDirectory: { eq: "images/header/assets" }
         }
       ) {
         edges {

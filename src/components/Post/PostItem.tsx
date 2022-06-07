@@ -27,6 +27,7 @@ const PostItemContent = styled.div`
   display: flex;
   flex-direction: column;
   padding: 15px;
+  word-break: break-word;
 `;
 
 const Title = styled.div`
@@ -46,23 +47,6 @@ const Date = styled.div`
   font-size: 14px;
   font-weight: 400;
   opacity: 0.7;
-`;
-
-const Tags = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 10px;
-  margin: 10px -5px;
-`;
-
-const TagItem = styled.div`
-  margin: 2.5px 5px;
-  padding: 3px 5px;
-  border-radius: 3px;
-  background: black;
-  font-size: 14px;
-  font-weight: 700;
-  color: white;
 `;
 
 const ThumbnailImage = styled(GatsbyImage)`
