@@ -7,7 +7,7 @@ category: 개발
 tags: ['react']
 comments: true,
 thumbnail: './assets/12/thumbnail.png'
-github: 'https://github.com/seungahhong/form-tutorial'
+github: 'https://github.com/seungahhong/react-router-tutorial'
 ---
 
 # v6
