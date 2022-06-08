@@ -1,0 +1,496 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta data-react-helmet="true" name="google-site-verification" content="DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"/><meta data-react-helmet="true" name="twitter:creator" content="seungah.hong"/><meta data-react-helmet="true" name="twitter:site" content="seungah.hong"/><meta data-react-helmet="true" name="twitter:description" content="홍승아 기술 블로그에 오신걸 환영합니다."/><meta data-react-helmet="true" name="twitter:title" content="홍승아 기술 블로그"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" property="og:site_name" content="홍승아 기술 블로그"/><meta data-react-helmet="true" property="og:url" content="https://seungahhong.github.io"/><meta data-react-helmet="true" property="og:description" content="홍승아 기술 블로그에 오신걸 환영합니다."/><meta data-react-helmet="true" property="og:title" content="홍승아 기술 블로그"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" http-equiv="Content-Type" content="text/html;charset=UTF-8"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0"/><meta data-react-helmet="true" name="description" content="홍승아 기술 블로그에 오신걸 환영합니다."/><meta name="generator" content="Gatsby 4.14.1"/><style data-href="/styles.0109ae7f897db2fecdd6.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><title data-react-helmet="true">홍승아 기술 블로그</title><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><style data-styled="" data-styled-version="5.3.5">html{line-height:1.15;-webkit-text-size-adjust:100%;}/*!sc*/
+body{margin:0;}/*!sc*/
+main{display:block;}/*!sc*/
+h1{font-size:2em;margin:0.67em 0;}/*!sc*/
+hr{box-sizing:content-box;height:0;overflow:visible;}/*!sc*/
+pre{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+a{background-color:transparent;}/*!sc*/
+abbr[title]{border-bottom:none;-webkit-text-decoration:underline;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}/*!sc*/
+b,strong{font-weight:bolder;}/*!sc*/
+code,kbd,samp{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+small{font-size:80%;}/*!sc*/
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}/*!sc*/
+sub{bottom:-0.25em;}/*!sc*/
+sup{top:-0.5em;}/*!sc*/
+img{border-style:none;}/*!sc*/
+button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}/*!sc*/
+button,input{overflow:visible;}/*!sc*/
+button,select{text-transform:none;}/*!sc*/
+button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}/*!sc*/
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}/*!sc*/
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}/*!sc*/
+fieldset{padding:0.35em 0.75em 0.625em;}/*!sc*/
+legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}/*!sc*/
+progress{vertical-align:baseline;}/*!sc*/
+textarea{overflow:auto;}/*!sc*/
+[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}/*!sc*/
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}/*!sc*/
+[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}/*!sc*/
+[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}/*!sc*/
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}/*!sc*/
+details{display:block;}/*!sc*/
+summary{display:list-item;}/*!sc*/
+template{display:none;}/*!sc*/
+[hidden]{display:none;}/*!sc*/
+*{padding:0;margin:0;box-sizing:border-box;}/*!sc*/
+html,body,#___gatsby{height:100%;word-break:keep-all;}/*!sc*/
+#gatsby-focus-wrapper{height:100%;}/*!sc*/
+a,a:hover{color:inherit;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}/*!sc*/
+.utterances{max-width:1024px;margin:0 auto;}/*!sc*/
+data-styled.g2[id="sc-global-cjihdH1"]{content:"sc-global-cjihdH1,"}/*!sc*/
+.kDOTWO{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;padding:100px 0;margin:0 auto;-webkit-align-items:start;-webkit-box-align:start;-ms-flex-align:start;align-items:start;}/*!sc*/
+@media (max-width:1024px){.kDOTWO{margin:0;}}/*!sc*/
+data-styled.g7[id="PostContent__PostWrapper-sc-9jovib-0"]{content:"kDOTWO,"}/*!sc*/
+.fXlSDu{width:80%;}/*!sc*/
+@media (max-width:1024px){.fXlSDu{width:100%;}}/*!sc*/
+data-styled.g8[id="PostContent__PostContentWrapper-sc-9jovib-1"]{content:"fXlSDu,"}/*!sc*/
+.hBuKed{display:inline-block;margin-left:10px;position:-webkit-sticky;position:sticky;top:0;left:10px;-webkit-transition:all 0.125s esse-in 0s;transition:all 0.125s esse-in 0s;color:rgba(0,0,0,0.4);padding:0 0.75rem;border-left:2px solid gray;}/*!sc*/
+.hBuKed ul{list-style:none;}/*!sc*/
+.hBuKed ul li{margin-top:5px;}/*!sc*/
+.hBuKed ul li a.reach{color:#000000;-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05);}/*!sc*/
+@media (max-width:1024px){.hBuKed{display:none;}}/*!sc*/
+data-styled.g9[id="PostContent__TocRenderer-sc-9jovib-2"]{content:"hBuKed,"}/*!sc*/
+.bNXqyF{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;word-break:break-all;margin-bottom:350px;padding:0 80px;width:100%;line-height:1.8;font-size:16px;font-weight:400;}/*!sc*/
+@media (max-width:1024px){.bNXqyF{padding:0 20px;margin-bottom:48px;}}/*!sc*/
+.bNXqyF p{padding:3px 0;}/*!sc*/
+.bNXqyF h1,.bNXqyF h2,.bNXqyF h3{font-weight:800;}/*!sc*/
+.bNXqyF * + h1{margin-top:60px;}/*!sc*/
+.bNXqyF * + h2{margin-top:40px;}/*!sc*/
+.bNXqyF * + h3{margin-top:20px;}/*!sc*/
+.bNXqyF hr + h1,.bNXqyF hr + h2,.bNXqyF hr + h3{margin-top:0;}/*!sc*/
+.bNXqyF h1{font-size:30px;}/*!sc*/
+.bNXqyF h2{font-size:25px;}/*!sc*/
+.bNXqyF h3{font-size:20px;}/*!sc*/
+.bNXqyF blockquote{margin:30px 0;padding:5px 15px;border-left:2px solid #000000;font-weight:800;}/*!sc*/
+.bNXqyF ol,.bNXqyF ul{margin-left:20px;padding:10px 0;}/*!sc*/
+.bNXqyF hr{border:1px solid #000000;margin:100px 0;}/*!sc*/
+.bNXqyF a{color:#4263eb;-webkit-text-decoration:underline;text-decoration:underline;}/*!sc*/
+.bNXqyF pre[class*='language-']{margin:30px 0;padding:15px;font-size:15px;}/*!sc*/
+.bNXqyF pre[class*='language-']::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.5);border-radius:3px;}/*!sc*/
+.bNXqyF code[class*='language-'],.bNXqyF pre[class*='language-']{tab-size:2;}/*!sc*/
+.bNXqyF summary{font-size:24px;}/*!sc*/
+data-styled.g10[id="PostContent__MarkdownRenderer-sc-9jovib-3"]{content:"bNXqyF,"}/*!sc*/
+.cKqBUF{display:grid;place-items:center;margin-top:auto;margin-left:0;padding:50px 0;font-size:15px;text-align:center;line-height:1.5;}/*!sc*/
+@media (max-width:1024px){.cKqBUF{margin-left:0;}}/*!sc*/
+data-styled.g18[id="Footer__FooterWrapper-sc-rphy7j-0"]{content:"cKqBUF,"}/*!sc*/
+.Kcdb{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;}/*!sc*/
+data-styled.g19[id="Template__Container-sc-1a9t0ug-0"]{content:"Kcdb,"}/*!sc*/
+</style><style type="text/css">
+    .custom-class.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .custom-class.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .custom-class svg,
+    h2 .custom-class svg,
+    h3 .custom-class svg,
+    h4 .custom-class svg,
+    h5 .custom-class svg,
+    h6 .custom-class svg {
+      visibility: hidden;
+    }
+    h1:hover .custom-class svg,
+    h2:hover .custom-class svg,
+    h3:hover .custom-class svg,
+    h4:hover .custom-class svg,
+    h5:hover .custom-class svg,
+    h6:hover .custom-class svg,
+    h1 .custom-class:focus svg,
+    h2 .custom-class:focus svg,
+    h3 .custom-class:focus svg,
+    h4 .custom-class:focus svg,
+    h5 .custom-class:focus svg,
+    h6 .custom-class:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="canonical" href="https://seungahhong.github.io/blog/2022/02/2022-02-13-react17/" data-baseprotocol="https:" data-basehost="seungahhong.github.io"/><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="Template__Container-sc-1a9t0ug-0 Kcdb"><div class="PostContent__PostWrapper-sc-9jovib-0 kDOTWO"><div class="PostContent__PostContentWrapper-sc-9jovib-1 fXlSDu"><article class="PostContent__MarkdownRenderer-sc-9jovib-3 bNXqyF"><h1 id="v17" style="position:relative;"><a href="#v17" aria-label="v17 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v17</h1>
+<h2 id="설치" style="position:relative;"><a href="#%EC%84%A4%EC%B9%98" aria-label="설치 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>설치</h2>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">npm install react@<span class="token number">17.0</span><span class="token number">.0</span> react<span class="token operator">-</span>dom@<span class="token number">17.0</span><span class="token number">.0</span>
+
+yarn add react@<span class="token number">17.0</span><span class="token number">.0</span> react<span class="token operator">-</span>dom@<span class="token number">17.0</span><span class="token number">.0</span>
+
+<span class="token comment">// CDN을 통해 React의 UMD 빌드를 제공</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">crossorigin</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/react@17.0.0/umd/react.production.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">crossorigin</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/react-dom@17.0.0/umd/react-dom.production.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre></div>
+<h2 id="no-more-import-react-" style="position:relative;"><a href="#no-more-import-react-" aria-label="no more import react  permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>No more ‘import React …’</h2>
+<p>JSX 를 사용하기 위해선 늘 React 를 import 해야 했다(그것을 명시적으로 사용하지 않더라도).</p>
+<p>JSX 코드는 babel, typescript 등을 통해 일반 javascript transpile 되었기 때문이다.</p>
+<ul>
+<li>
+<p>&#x3C;= v16</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">Hello World</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// JSX -> 일반 자바스크립트</span>
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'Hello world'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+</li>
+</ul>
+<p>v17 버전 이후부터는 더 이상 <strong>‘import React ~’</strong> 구문을 직접 입력하지 않아도 된다.</p>
+<ul>
+<li>
+<p>v17</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">Hello World</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Inserted by a compiler (don't import it yourself!)</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> jsx <span class="token keyword">as</span> _jsx <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react/jsx-runtime'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">_jsx</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> children<span class="token operator">:</span> <span class="token string">'Hello world'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+</li>
+</ul>
+<p>새 JSX 변환을 위해서 업그레이드 방법</p>
+<p>CRA: v4.0.0 +</p>
+<p>Next: v9.5.3 +</p>
+<p>Gastby: v2.24.5 +</p>
+<p>typescript: v4.1</p>
+<p>ESLint</p>
+<ul>
+<li>eslint-plugin-react
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  <span class="token string-property property">"rules"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+    <span class="token string-property property">"react/jsx-uses-react"</span><span class="token operator">:</span> <span class="token string">"off"</span><span class="token punctuation">,</span>
+    <span class="token string-property property">"react/react-in-jsx-scope"</span><span class="token operator">:</span> <span class="token string">"off"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+</li>
+</ul>
+<p>custom babel</p>
+<ul>
+<li>
+<p>@babel/plugin-transform-react-jsx</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"># <span class="token keyword">for</span> npm users
+npm update <span class="token decorator"><span class="token at operator">@</span><span class="token function">babel</span></span><span class="token operator">/</span>core <span class="token decorator"><span class="token at operator">@</span><span class="token function">babel</span></span><span class="token operator">/</span>plugin<span class="token operator">-</span>transform<span class="token operator">-</span>react<span class="token operator">-</span>jsx
+
+# <span class="token keyword">for</span> yarn users
+yarn upgrade <span class="token decorator"><span class="token at operator">@</span><span class="token function">babel</span></span><span class="token operator">/</span>core <span class="token decorator"><span class="token at operator">@</span><span class="token function">babel</span></span><span class="token operator">/</span>plugin<span class="token operator">-</span>transform<span class="token operator">-</span>react<span class="token operator">-</span>jsx</code></pre></div>
+</li>
+<li>
+<p>@babel/preset-react</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"># <span class="token keyword">for</span> npm users
+npm update <span class="token decorator"><span class="token at operator">@</span><span class="token function">babel</span></span><span class="token operator">/</span>core <span class="token decorator"><span class="token at operator">@</span><span class="token function">babel</span></span><span class="token operator">/</span>preset<span class="token operator">-</span>react
+
+# <span class="token keyword">for</span> yarn users
+yarn upgrade <span class="token decorator"><span class="token at operator">@</span><span class="token function">babel</span></span><span class="token operator">/</span>core <span class="token decorator"><span class="token at operator">@</span><span class="token function">babel</span></span><span class="token operator">/</span>preset<span class="token operator">-</span>react</code></pre></div>
+</li>
+<li>
+<p>babel config</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// If you are using @babel/preset-react</span>
+<span class="token punctuation">{</span>
+  <span class="token string-property property">"presets"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">"@babel/preset-react"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">"runtime"</span><span class="token operator">:</span> <span class="token string">"automatic"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// If you're using @babel/plugin-transform-react-jsx</span>
+<span class="token punctuation">{</span>
+  <span class="token string-property property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">"@babel/plugin-transform-react-jsx"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">"runtime"</span><span class="token operator">:</span> <span class="token string">"automatic"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre></div>
+</li>
+</ul>
+<p>v17 버전 업한 이후에 불필요한 import 일괄삭제(선택)</p>
+<ul>
+<li>
+<p>react-codemod</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// general react</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">Hello World</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">--</span>transpile<span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">Hello World</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// custom hook</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>text<span class="token punctuation">,</span> setText<span class="token punctuation">]</span> <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">'Hello World'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token punctuation">{</span>text<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>text<span class="token punctuation">,</span> setText<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">'Hello World'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token punctuation">{</span>text<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+</li>
+</ul>
+<p>참고페이지: <a href="https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html" target="_blank" rel="nofollow">https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html</a></p>
+<h2 id="undefined를-return-할-경우-일관되게-에러-발생" style="position:relative;"><a href="#undefined%EB%A5%BC-return-%ED%95%A0-%EA%B2%BD%EC%9A%B0-%EC%9D%BC%EA%B4%80%EB%90%98%EA%B2%8C-%EC%97%90%EB%9F%AC-%EB%B0%9C%EC%83%9D" aria-label="undefined를 return 할 경우 일관되게 에러 발생 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>undefined를 return 할 경우 일관되게 에러 발생</h2>
+<p>16버전 이하에서는, 모든 컴포넌트에서 undefined를 리턴할 경우 항상 에러를 발생했다.</p>
+<p>하지만 코딩 실수로 인해, <code class="language-text">forwardRef</code> <code class="language-text">memo</code>컴포넌트 에서는 이러한 에러 처리가 누락되어 있었는데, 이제 부터 에러처리가 추가되었다.</p>
+<p>17버전부터는 <code class="language-text">forwardRef</code> <code class="language-text">memo</code>컴포넌트에서도 undefined를 리턴할 경우 에러 발생한다.</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token operator">&lt;=</span> v16
+<span class="token keyword">function</span> <span class="token function">Button</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span><span class="token punctuation">;</span> <span class="token comment">// Error: Nothing was returned from render</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">Button</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// We forgot to write return, so this component returns undefined.</span>
+  <span class="token comment">// React surfaces this as an error instead of ignoring it.</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+v17 <span class="token operator">+</span>
+<span class="token keyword">let</span> Button <span class="token operator">=</span> <span class="token function">forwardRef</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// We forgot to write return, so this component returns undefined.</span>
+  <span class="token comment">// React 17 surfaces this as an error instead of ignoring it.</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> Button <span class="token operator">=</span> <span class="token function">memo</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// We forgot to write return, so this component returns undefined.</span>
+  <span class="token comment">// React 17 surfaces this as an error instead of ignoring it.</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>의도적으로 렌더링하지 않으려면 null을 반환해야한다.</p>
+<h1 id="effect-cleanup-timing" style="position:relative;"><a href="#effect-cleanup-timing" aria-label="effect cleanup timing permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Effect Cleanup Timing</h1>
+<p><strong><code class="language-text">useEffect</code></strong> 라이프 사이클 메서드의 Cleanup 타이밍을 일관되게 동작하도록 만들고 있다.</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token operator">&lt;=</span> v16
+<span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// effect -> asynchronous</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token comment">// cleanup -> synchronous</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+v17 <span class="token operator">+</span>
+<span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// effect -> asynchronous</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token comment">// cleanup -> asynchronous</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>cleanup에 많은 동작을 수행해야할 경우, 페이지 전환 같은 동작에서 성능 저하를 유발하게 된다.</p>
+<p>(혹시, effect/cleanup 동기적으로 수행해야 할 경우는 useLayoutEffect를 사용)</p>
+<p>v17 버전이 적용된 이후에는 컴포넌트가 unmount → 컴포넌트/화면 업데이트 → cleanup 수행</p>
+<p>단, unmount → cleanup이 수행되다보니 페이지 전환이 일어난 경우 아래 코드가 문제가 발생할 수있다.</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  someRef<span class="token punctuation">.</span>current<span class="token punctuation">.</span><span class="token function">someSetupMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    someRef<span class="token punctuation">.</span>current<span class="token punctuation">.</span><span class="token function">someCleanupMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> instance <span class="token operator">=</span> someRef<span class="token punctuation">.</span>current <span class="token operator">-</span><span class="token operator">></span> closure를 통해서 unmounted 하더라도 gc가 사라지지 않게 처리
+  instance<span class="token punctuation">.</span><span class="token function">someSetupMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    instance<span class="token punctuation">.</span><span class="token function">someCleanupMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+<h2 id="no-event-pooling" style="position:relative;"><a href="#no-event-pooling" aria-label="no event pooling permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>No Event Pooling</strong></h2>
+<ul>
+<li>이벤트 풀링
+오래된 브라우저에서 이벤트 객체를 사용 시 성능 저하되는 이슈가 있어서 리액트에서는 Synthetic Event pool를 만들어서 관리하고 한다.
+<ul>
+<li>사용자가 특정 이벤트가 발생할 경우
+<ul>
+<li>Synthetic Event pool 에서 syn Synthetic Event 객체의 참조 넘겨줌(→ 객체 생성시간 축소)</li>
+<li>이벤트 정보의 Synthetic Event 객체를 넣어줌</li>
+<li>사용자가 정의한 이벤트 리스너 수행</li>
+<li>Synthetic Event 객체 초기화( → null 넣어줌으로써 GC 메모리 가져가도록 처리, 메모리 효율화를 위한 작업))
+해당 기능으로 인해서 인해서 비동기 동작에서 에러가 나는 경우가 생기기 됩니다.</li>
+</ul>
+</li>
+</ul>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">onChange<span class="token operator">=</span><span class="token punctuation">{</span>
+<span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">{</span>
+  <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>type<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>type<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 초기화로 인한 null</span>
+   <span class="token punctuation">}</span><span class="token punctuation">)</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+해당 이슈를 해결하기 위해서 React에서 persist 사용해서 이벤트풀에서 제거해서 기존 이벤트 방식으로 사용하면 동작에 문제는 없지만, 성능상 이점을 버리게 된다.</li>
+</ul>
+<p>v17 부터는 더 이상 구형 브라우저에서 성능 이슈 보완을 위한 동작을 지원하지 않기로 결정함</p>
+<p>단, event.persist() 메서드는 그대로 존재하지만, 호출하더라도 아무런 동작을 하지 않음(하위호환을 위한 작업)</p>
+<h2 id="이벤트-위임의-변화" style="position:relative;"><a href="#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%9C%84%EC%9E%84%EC%9D%98-%EB%B3%80%ED%99%94" aria-label="이벤트 위임의 변화 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>이벤트 위임의 변화</strong></h2>
+<p>먼저 리액트에서 이벤트 핸들러를 붙이는 코드를 살펴보자</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>handleClick<span class="token punctuation">}</span></span><span class="token punctuation">></span></span></code></pre></div>
+<p>바닐라 DOM에서는 이렇게 작동할 것이다.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx">myButton<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> handleClick<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>리액트에서는 이벤트 핸들러를 실제 선언된 DOM에 붙지 않고 document node에 추가한다.</p>
+<p>이런걸 이벤트 위임이라고 한다.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx">document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span> <span class="token comment">// 실행된 컴포넌트 찾게 됨 });</span></code></pre></div>
+<p>리액트 이벤트 위임 방식</p>
+<ul>
+<li>document에서 이벤트가 발생</li>
+<li>리액트 이벤트 시스템이 실제로 이벤트가 발생한 컴포넌트 찾음</li>
+<li>이벤트 버블링으로 상위 컴포넌트에 이벤트 전달</li>
+</ul>
+<p>문제점</p>
+<p>여러 리액트 컴포넌트가 중첩으로 수행될 경우 이벤트를 Block 하는 stopPropagation 동작하지 않는 문제점 발생</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token comment">// legacy react root</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span> <span class="token comment">// 16.12</span>
+<span class="token keyword">import</span> ReactDOM <span class="token keyword">from</span> <span class="token string">'react-dom'</span><span class="token punctuation">;</span> <span class="token comment">//16.12</span>
+
+<span class="token keyword">function</span> <span class="token function">modernReact</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+    React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>
+      <span class="token string">'div'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token function-variable function">onClick</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'modern react!'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token keyword">null</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'modernroot'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span> <span class="token comment">// 16.8</span>
+<span class="token keyword">import</span> ReactDOM <span class="token keyword">from</span> <span class="token string">'react-dom'</span><span class="token punctuation">;</span> <span class="token comment">// 16.8</span>
+
+<span class="token keyword">function</span> <span class="token function">legacyReact</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+    React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>
+      <span class="token string">'div'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token function-variable function">onClick</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'legacy react!'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token keyword">null</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'legacyroot'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>modernroot<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span><span class="token string">' '</span><span class="token punctuation">}</span><span class="token plain-text">
+        // click
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>legacyroot<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text"> // click -> stopPropagation&lt;/div>
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span class="token plain-text">;</span></code></pre></div>
+<ul>
+<li><strong>React 17 부터는 Event가 document 가 아닌 React Tree Root 로 delegate 된다.</strong></li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 840px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/cf2182d699e8d4f1e2ed17f8a0efbf2e/2d81a/Untitled.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.34374999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB8klEQVQoz5VSy3LbMAz0/39QL73kGk+bRxPHqZOREvkRySIlUnyIJACiY8tO2kwP7Q5mSAKzwJLc2bzDeYeXHVz1sBzwTuN3zZeHJEyl+WkPiwHvNV4rvDznZ/wJhKwrZuJ/wIwyZ2afqPdxMFbvq2H5JcgCos3MlA8BlNUIZgxqMFNmitPkzOy83zVtV92DWFEYUv9K0Z6LHFNqmn2zbw/nnE+TpwURjDFSyl5p9oKiI9+jbd8VGmOU1nVdfyZTzmPCgHl0tlJ+K2uOA0WLvssYD2OBAmTrw6btXxxJG4nyB9kFkDEXdVsKZYzEUWUY38khYR9wN4xfb6vnLjw1biPHD9kqwO1W3lT1zVYWr49heOOc0Qk+KgxIq1Z/e91fPGwuHjYjYqNDAJpND1J2ZiH9s+cXE5+LO+k9YkInp9ZihEXT3/XwZPN8O/zcK+ExTeRA/CjMsrNLoVdCrqqiUKO2HUKYWlcm3LT+SsT7Aedb+1D31ZBcPJokMF+vm1LZwlEhRKn9i0keYNJMzKXyV+v9OvCtiAsZSptEQKJ8uvObdqVypRqK3pSeZTr/xhE6YinVSsUfbSgc7QKl/Ns/55xVSBsX3wIqyPDZndknWDvYeJSJwrn6h7cxMxzd+lcQc8qckAARAJFoxv8JIkpwIBPRL3CZXxg+QVreAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/cf2182d699e8d4f1e2ed17f8a0efbf2e/4fae8/Untitled.webp 256w,
+/static/cf2182d699e8d4f1e2ed17f8a0efbf2e/2bf0f/Untitled.webp 512w,
+/static/cf2182d699e8d4f1e2ed17f8a0efbf2e/a1057/Untitled.webp 840w"
+              sizes="(max-width: 840px) 100vw, 840px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/cf2182d699e8d4f1e2ed17f8a0efbf2e/e3135/Untitled.png 256w,
+/static/cf2182d699e8d4f1e2ed17f8a0efbf2e/06341/Untitled.png 512w,
+/static/cf2182d699e8d4f1e2ed17f8a0efbf2e/2d81a/Untitled.png 840w"
+            sizes="(max-width: 840px) 100vw, 840px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/cf2182d699e8d4f1e2ed17f8a0efbf2e/2d81a/Untitled.png"
+            alt="Untitled"
+            title="Untitled"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<p>여러 리액트 컴포넌트 수행되더라도 기본이 되는 Root Element 이벤트를 처리하기 때문에 구조/이벤트 방식이 독립적으로 수행가능하다.</p>
+<p>리액트가 다른 기술과 사용하는 것을 더욱 용이하게 한다. 만약 외부에 jQuery가 존재하고, 내부에는 리액트가 존재한다면 이제 예상대로 이벤트 전파를 jQuery단까지 막을 수 있다.</p>
+<p>단, DOM에 **<code class="language-text">document.addEventListener</code>**를 활용하여 수동으로 이벤트를 붙여서 리액트의 모든 이벤트를 감지하는 코드가 존재할 수 있다. 리액트 16버전 에서는 이러한 코드가 가능했지만, 리액트 17 부터는 전파가 막히게 되므로 **<code class="language-text">document</code>**에서도 이벤트가 발생하는지 알 수 없기때문에 capturing 방식으로 변경이 필요하다.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token comment">// &lt;= v16</span>
+document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// This custom handler will no longer receive clicks</span>
+  <span class="token comment">// from React components that called e.stopPropagation()</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// v17+</span>
+document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span>
+  <span class="token string">'click'</span><span class="token punctuation">,</span>
+  <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Now this event handler uses the capture phase,</span>
+    <span class="token comment">// so it receives *all* click events below!</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">capture</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<h1 id="참고페이지" style="position:relative;"><a href="#%EC%B0%B8%EA%B3%A0%ED%8E%98%EC%9D%B4%EC%A7%80" aria-label="참고페이지 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>참고페이지</h1>
+<p><a href="https://reactjs.org/blog/2020/10/20/react-v17.html" target="_blank" rel="nofollow">https://reactjs.org/blog/2020/10/20/react-v17.html</a></p>
+<p><a href="https://leo.works/2012130" target="_blank" rel="nofollow">https://leo.works/2012130</a></p>
+<p><a href="https://yceffort.kr/2020/09/react-17-release-candidates#%EB%A6%AC%EC%95%A1%ED%8A%B8-17%EC%97%90%EC%84%9C%EB%8A%94-%EC%A0%90%EC%A7%84%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C%EA%B0%80-%EA%B0%80%EB%8A%A5%ED%95%98%EB%8B%A4" target="_blank" rel="nofollow">https://yceffort.kr/2020/09/react-17-release-candidates#리액트-17에서는-점진적으로-업그레이드가-가능하다</a></p></article><div></div></div><aside class="PostContent__TocRenderer-sc-9jovib-2 hBuKed"><ul>
+<li>
+<p><a href="#v17">v17</a></p>
+<ul>
+<li><a href="#%EC%84%A4%EC%B9%98">설치</a></li>
+<li><a href="#no-more-import-react-">No more ‘import React …’</a></li>
+<li><a href="#undefined%EB%A5%BC-return-%ED%95%A0-%EA%B2%BD%EC%9A%B0-%EC%9D%BC%EA%B4%80%EB%90%98%EA%B2%8C-%EC%97%90%EB%9F%AC-%EB%B0%9C%EC%83%9D">undefined를 return 할 경우 일관되게 에러 발생</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#effect-cleanup-timing">Effect Cleanup Timing</a></p>
+<ul>
+<li><a href="#no-event-pooling"><strong>No Event Pooling</strong></a></li>
+<li><a href="#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%9C%84%EC%9E%84%EC%9D%98-%EB%B3%80%ED%99%94"><strong>이벤트 위임의 변화</strong></a></li>
+</ul>
+</li>
+<li>
+<p><a href="#%EC%B0%B8%EA%B3%A0%ED%8E%98%EC%9D%B4%EC%A7%80">참고페이지</a></p>
+</li>
+</ul></aside></div><div class="Footer__FooterWrapper-sc-rphy7j-0 cKqBUF">Thank You for Visiting My Blog,<br/>© 2021 Developer SeungAh, Powered By Gatsby.</div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/2022/02/2022-02-13-react17/";window.___webpackCompilationHash="f3eec6541a71814b929c";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-5ffe91bb94451da1132f.js"],"app":["/app-815571ed6936671f5e71.js"],"component---src-components-templates-post-template-tsx":["/component---src-components-templates-post-template-tsx-f11d224c8a16262e6ce6.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-5ea3e011e85608487b0a.js"],"component---src-pages-about-tsx":["/component---src-pages-about-tsx-f486256a0ef87a358f3c.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-d0652109ecc9d9785c88.js"]};/*]]>*/</script><script src="/polyfill-5ffe91bb94451da1132f.js" nomodule=""></script><script src="/app-815571ed6936671f5e71.js" async=""></script><script src="/framework-cf882612f1d6d9e9b146.js" async=""></script><script src="/webpack-runtime-399e6f891d720da13698.js" async=""></script></body></html>
