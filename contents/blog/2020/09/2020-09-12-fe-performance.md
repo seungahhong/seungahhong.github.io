@@ -3,7 +3,7 @@ layout: post
 title: Front-End Performance
 date: 2020-09-12
 published: 2020-09-12
-category: develop
+category: 개발
 tags: ['fe-performance']
 comments: true
 thumbnail: './images/12/thumbnail.png'

@@ -1,18 +1,466 @@
 ---
 layout: post
 title: javascript
-date: 2021-12-21
-published: 2021-12-21
-category: develop
+date: 2022-03-28
+published: 2022-03-28
+category: 개발
 tags: ['javascript']
 comments: true,
-thumbnail: './images/21/thumbnail.jpg'
+thumbnail: './assets/21/thumbnail.jpg'
 github: 'https://github.com/seungahhong/seungahhong.github.io'
 ---
 
-# ES2020
+# ES2022(ES13)
 
-## globalThis
+- ES2022에 추가된 기능들
+
+[https://tc39.es/ecma262/](https://tc39.es/ecma262/)
+
+- Class Fields
+
+- babel 세팅
+
+```jsx
+npm install --save-dev @babel/plugin-proposal-private-property-in-object
+
+webpack.config.js
+{
+  "plugins": ["@babel/plugin-proposal-private-property-in-object"]
+}
+
+// babel.config.json
+{
+  "assumptions": {
+    "privateFieldsAsProperties": true,
+    "setPublicClassFields": true
+  }
+}
+```
+
+- Class Public Instance Fields & Private Instance Fields
+
+ES2015 이후로, 우리는 생성자를 통해 필드를 정의할 수 있었습니다. 일반적으로 클래스 메서드 외부에서 액세스하면 안 되는 필드에는 밑줄이 붙습니다. 하지만 이는 클래스를 사용하는 사람들을 막지 못했습니다.
+
+```jsx
+// ES2022 이전
+class a {
+  constructor() {
+    this.size = 0;
+  }
+}
+
+class b extends a {
+  constructor() {
+    super();
+    this.color = 'red';
+    this._clicked = false;
+  }
+}
+
+const button = new ColorButton();
+// Public fields can be accessed and changed by anyone
+button.color = 'blue';
+
+console.log(button._clicked);
+button._clicked = true; // noop!!
+
+// 이 기능의 첫번째 부분은 클래스 내의 필드를 좀 더 명확하게 정의할 수 있게 해줍니다.
+// 생성자 내에 정의하는 대신, 클래스의 최상단 레벨에 정의할 수 있습니다.
+// 두번째 부분은, private 필드를 좀 더 안전하게 숨길 수 있습니다.
+// 밑줄을 붙이는 기존의 방식과 달리 필드 이름 앞에 '#'을 붙여 외부의 액세스를 방지할 수 있습니다.
+class a {
+  #size = 0;
+}
+
+class b extends a {
+  color = 'red';
+  #clicked = false;
+
+  setClick(flag) {
+    this.#clicked = true;
+  }
+
+  getClick() {
+    return this.#clicked;
+  }
+}
+```
+
+- Private instance methods and accessors
+
+클래스의 몇몇 메소드나 변수는 클래스 내부적으로 기존에 의도했던 기능들을 수행해야 하는 중요도를 가지면서 외부에서 접근할 수 없어야 합니다. 이를 방지하기 위해, 메소드나 접근자 앞에 '#'을 붙일 수 있습니다.
+
+```jsx
+class Banner extends HTMLElement {
+  // Private variable that cannot be reached directly from outside, but can be modified by the methods inside:
+
+  #slogan = "Hello there!"
+  #counter = 0
+
+  // private getters and setters (accessors):
+
+  get #slogan() {return #slogan.toUpperCase()}
+  set #slogan(text) {this.#slogan = text.trim()}
+
+  get #counter() {return #counter}
+  set #counter(value) {this.#counter = value}
+
+  constructor() {
+    super();
+    this.onmouseover = this.#mouseover.bind(this);
+  }
+
+  // private method:
+  #mouseover() {
+    this.#counter = this.#counter++;
+    this.#slogan = `Hello there! You've been here ${this.#counter} times.`
+  }
+}
+```
+
+- Static class fields and private static methods
+
+정적 필드나 메소드는 프로토타입 내에서만 존재하도록 하는 데 있어 유용하지만, 주어진 클래스의 모든 인스턴스에 대해서는 그렇지 않습니다. 당신은 이 필드와 메소드들이 클래스 내에서만 액세스할 수 있도록 허용할 수 있습니다.
+
+```jsx
+class Circle {
+  // ES2015 이후로, 우리는 필드를 클래스 자체에 정의함으로서 정적 필드를 정의했습니다.
+  static #PI = 3.14
+
+  static #calculateArea(radius) {
+    return #PI * radius * radius
+  }
+
+  static calculateProperties(radius) {
+    return {
+      radius: radius,
+      area: #calculateArea(radius)
+    }
+  }
+
+}
+
+// Public static method, outputs {radius: 10, area: 314}
+console.log(Circle.calculateProperties(10))
+
+// SyntaxError - Private static field
+console.log(Circle.PI)
+
+// SyntaxError - Private static method
+console.log(Circle.calculateArea(5))
+```
+
+- Ergonomic brand checks for Private Fields
+
+public 필드에 대해, 클래스의 존재하지 않는 필드에 접근을 시도하면 `undefined`가 반환됩니다. 반면에, private 필드는 `undefined`대신 예외를 발생시킵니다.
+
+이를 방지하기 위해 `in` 키워드를 사용해 private 속성/메소드를 체크할 수 있습니다.
+
+```javascript
+class VeryPrivate {
+  constructor() {
+    super();
+  }
+
+  #variable;
+  #method() {}
+  get #getter() {}
+  set #setter(text) {
+    this.#variable = text;
+  }
+
+  static isPrivate(obj) {
+    return (
+      #variable in obj && #method in obj && #getter in obj && #setter in obj
+    );
+  }
+}
+
+const b = new VeryPrivate();
+console.log(VeryPrivate.isPrivate(b));
+```
+
+- RegExp Match Indices
+
+원본 입력에서 전체 일치의 위치에 대해 꽤 많은 정보를 제공하지만 하위 문자열 일치의 인덱스에 대한 정보는 부족합니다. 새로운 `/d` 를 사용하면, 일치한 그룹에 대해 시작, 끝 위치를 얻을 수 있습니다
+
+```javascript
+// v2022 이전
+const str = 'Ingredients: cocoa powder, cocoa butter, other stuff';
+const regex = /(cocoa) ([a-z]+)/g;
+const matches = [...str.matchAll(regex)];
+
+// 0: "cocoa powder", 1: "cocoa", 2: "powder"
+// index: 13
+// input: "Ingredients: cocoa powder, cocoa butter, other stuff"
+console.log(matches[0]);
+
+// 0: "cocoa butter", 1: "cocoa", 2: "butter"
+// index: 27
+// input: "Ingredients: cocoa powder, cocoa butter, other stuff"
+console.log(matches[1]);
+
+// vs2022 이후
+const str = 'Ingredients: cocoa powder, cocoa butter, other stuff';
+const regex = /(cocoa) ([a-z]+)/dg;
+const matches = [...str.matchAll(regex)];
+
+// 0: "cocoa powder", 1: "cocoa", 2: "powder"
+// index: 13
+// input: "Ingredients: cocoa powder, cocoa butter, other stuff"
+// indices: [[13,25],[13,18],[19,25]]
+console.log(matches[0]);
+
+// 0: "cocoa butter", 1: "cocoa", 2: "butter"
+// index: 27
+// input: "Ingredients: cocoa powder, cocoa butter, other stuff"
+// indices: [[27,39],[27,32],[33,39]]
+console.log(matches[1]);
+```
+
+- Top-level await
+
+이 기능 이전에는, await은 오직 async 함수 내에서만 사용할 수 있었습니다. 이는 모듈 최상단에서 await을 쓸 수 없다는 문제가 존재합니다.
+
+이제 `await`은 모듈 최상단에서 사용할 수 있으며, import, fallback 등을 만들 때 매우 유용합니다.
+
+[https://github.com/tc39/proposal-top-level-await](https://github.com/tc39/proposal-top-level-await)
+
+```javascript
+// Dynamic dependency pathing
+const strings = await import(`/i18n/${navigator.language}`);
+
+// Resource initialization
+const connection = await dbConnector();
+
+// Dependency fallbacks
+let jQuery;
+try {
+  jQuery = await import('https://cdn-a.com/jQuery');
+} catch {
+  jQuery = await import('https://cdn-b.com/jQuery');
+}
+```
+
+# ES2021(ES12)
+
+- String.prototype.replaceAll
+
+```javascript
+// 현재는 전역 정규식(/regexp/g)을 사용하지 않고서는 문자열에서 부분 문자열을 대체할 수 있는 방법은 없다.
+const fruits = '🍎+🍐+🍓+';
+const fruitsWithBanana = fruits.replace(/\+/g, '🍌');
+console.log(fruitsWithBanana); //🍎🍌🍐🍌🍓🍌
+
+//새로 replaceAll 메서드가 String 프로토타입에 추가되었다.
+const fruits = '🍎+🍐+🍓+';
+const fruitsWithBanana = fruits.replaceAll('+', '🍌');
+console.log(fruitsWithBanana); //🍎🍌🍐🍌🍓🍌
+```
+
+- Promise.any
+
+프라미스 중 하나가 이행되는 즉시 응답을 준다. 단, promise 모두가 에러일 경우 AggregateError를 주게 된다.
+
+```javascript
+const promise1 = Promise.reject(0);
+const promise2 = new Promise((resolve, reject) =>
+  setTimeout(reject, 100, 'quick'),
+);
+const promise3 = new Promise((resolve, reject) =>
+  setTimeout(resolve, 500, 'slow'),
+);
+
+const promises = [promise1, promise2, promise3];
+
+Promise.any(promises)
+  .then(value => console.log(value))
+  .catch(e => {
+    console.log(e);
+  });
+// slow
+
+const promise1 = Promise.reject(0);
+const promise2 = new Promise((resolve, reject) =>
+  setTimeout(reject, 100, 'quick'),
+);
+const promise3 = new Promise((resolve, reject) =>
+  setTimeout(reject, 500, 'slow'),
+);
+
+const promises = [promise1, promise2, promise3];
+
+Promise.any(promises)
+  .then(value => console.log(value))
+  .catch(e => {
+    console.log(e);
+  });
+// AggregateError: All promises were rejected
+```
+
+- Promise.any vs Promise.race vs Promise.all vs Promise.allSettled
+
+공통점: ES2017 이후 병렬처리
+
+```javascript
+// Promise.all
+// 배열 안 프라미스가 모두 처리되면 새로운 프라미스가 이행
+// 결과값을 담은 배열이 새로운 프라미스가 리턴
+Promise.all([
+  new Promise(resolve => setTimeout(() => resolve(1), 3000)), // 1
+  new Promise(resolve => setTimeout(() => resolve(2), 2000)), // 2
+  new Promise(resolve => setTimeout(() => resolve(3), 1000)), // 3
+]).then(data => console.log(data)); // [1, 2, 3]
+
+// 프라미스가 거부되면서 Promise.all 전체가 거부되고, .catch가 실행
+Promise.all([
+  new Promise((resolve, reject) => setTimeout(() => resolve(1), 1000)),
+  new Promise((resolve, reject) =>
+    setTimeout(() => reject(new Error('에러 발생!')), 2000),
+  ),
+  new Promise((resolve, reject) => setTimeout(() => resolve(3), 3000)),
+]).catch(err => console.log(err)); // Error: 에러 발생!
+
+// Promise.allSettled
+// 프라미스가 거부되더라도 모든 프라미스가 처리될 때까지 기다립니다.
+Promise.allSettled([
+  new Promise((resolve, reject) => setTimeout(() => resolve(1), 1000)),
+  new Promise((resolve, reject) =>
+    setTimeout(() => reject(new Error('에러 발생!')), 2000),
+  ),
+  new Promise((resolve, reject) => setTimeout(() => resolve(3), 3000)),
+]).then(data => console.log(data));
+// result
+// 0: {status: 'fulfilled', value: 1}
+// 1: {status: 'rejected', reason: Error: 에러 발생! at <anonymous>:3:60 at i (https://www.notion.so/890-97af8b4e61b9aaf1ef78.js:1…}
+// 2: {status: 'fulfilled', value: 3}
+
+// Promise.race
+// 가장 먼저 처리되는 프라미스의 결과(혹은 에러)를 반환합니다.(성공, 실패와 상관없음)
+Promise.race([
+  new Promise((resolve, reject) => setTimeout(() => resolve(1), 1000)),
+  new Promise((resolve, reject) =>
+    setTimeout(() => reject(new Error('에러 발생!')), 2000),
+  ),
+  new Promise((resolve, reject) => setTimeout(() => resolve(3), 3000)),
+])
+  .then(data => console.log(data))
+  .catch(err => console.error(err)); // 1
+
+// Promise.any
+// 가장 먼저 처리되는 프라미스의 결과를 반환합니다. 단, 실패 처리는 모든 Promise가 실패한 경우 AggregateError 발생시킨다.
+Promise.any([
+  new Promise((resolve, reject) => setTimeout(() => resolve(1), 1000)),
+  new Promise((resolve, reject) =>
+    setTimeout(() => reject(new Error('에러 발생!')), 100),
+  ),
+  new Promise((resolve, reject) => setTimeout(() => resolve(3), 3000)),
+])
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+```
+
+- 논리 할당 연산자
+
+논리 할당 연산자는 논리 연산자와 할당 표현식을 결합한다. 두가지 새로운 연산자가 있다.
+
+```javascript
+// Or Or Equals
+|   a   |   b   | a ||= b |      a (연산 후)     |
+| true  | true  |   true  |        true         |
+| true  | false |   true  |        true         |
+| false | true  |   true  |        true         |
+| false | false |   false |        false        |
+a ||= b
+// 아래와 동일
+a || (a = b);
+// And And Equals
+|   a   |   b   | a &&= b |      a (연산 후)     |
+| true  | true  |   true  |        true         |
+| true  | false |   false |        false        |
+| false | true  |   false |        false        |
+| false | false |   false |        false        |
+a &&= b
+// 아래와 동일
+a && (a = b);
+```
+
+- 숫자 구분자
+
+```javascript
+1_000_000_000; // 1,000,000,000(10억)
+const amount = 1_234_500; // 1,234,500
+```
+
+- WeakRef, FinalizationRegistry
+
+`WeakRef` 객체에는 *target* 또는 *referent*라고 하는 객체에 대한 약한 참조가 포함된다. 객체에 대한 *약한 참조*는 가비지 컬렉터에서 객체를 회수하는 것을 방지하지 않는 참조이다.
+
+FinalizationRegistry는 레지스트리에 등록된 객체가 *회수*(가비지 컬렉션)될 때 *정리 콜백*(_종료자_)을 호출하도록 요청하는 방법을 제공한다.
+
+콜백을 전달하는 registry를 만든다. (GC 메모리 해제 → FinalizationRegistry callback 호출)
+
+```javascript
+<div id="counter"></div>;
+
+const finalizer = new FinalizationRegistry(args => console.log(args));
+
+class Counter {
+  constructor(element) {
+    // DOM 요소에 대한 약한 참조 기억
+    this.ref = new WeakRef(element);
+    // this.ref1 = element; // 참조를 넘길경우 메모리 해제 X
+    this.start();
+  }
+
+  start() {
+    if (this.timer) {
+      return;
+    }
+
+    this.count = 0;
+
+    const tick = () => {
+      // 여전히 존재하는 경우 약한 참조에서 요소를 가져옵니다.
+      const element = this.ref.deref();
+      //   const element1 = this.ref1; // 참조를 넘길경우 메모리 해제 X
+      if (element) {
+        element.textContent = ++this.count;
+      } else {
+        // 더 이상 존재하지 않는 요소
+        console.log('The element is gone.');
+        this.stop();
+        this.ref = null;
+      }
+    };
+
+    tick();
+    this.timer = setInterval(tick, 1000);
+  }
+
+  stop() {
+    if (this.timer) {
+      clearInterval(this.timer);
+      this.timer = 0;
+    }
+  }
+}
+
+const counter = new Counter(document.getElementById('counter'));
+setTimeout(() => {
+  document.getElementById('counter').remove(); // element 삭제 시 WeakRef에 의해서 GC에 의해서 해제
+}, 5000);
+
+finalizer.register(document.getElementById('counter'), 'GC Memory Release');
+```
+
+[https://blog.shiren.dev/2021-08-30/](https://blog.shiren.dev/2021-08-30/)
+
+[https://runebook.dev/ko/docs/javascript/global_objects/weakref](https://runebook.dev/ko/docs/javascript/global_objects/weakref)
+
+# ES2020(ES11)
+
+- globalThis
 
 예전에는 브라우저의 전역객체는 window였고 Node.js의 전역객체는 global이었습니다. 둘이 달라서 분기처리를 해줘야 했던 경우가 많았는데 이제는 globalThis라는 것으로 통일되었습니다. 물론 기존 window나 global도 존재합니다.
 
@@ -24,7 +472,7 @@ globalThis === window; // true
 globalThis === global; // true
 ```
 
-## optional chaining
+- optional chaining
 
 자바스크립트에서 가장 많이 보는 에러가 cannot read property X of undefined 또는 cannot read property Y of undefined입니다.
 
@@ -42,7 +490,7 @@ console.log(a && a.b && a.b.c);
 console.log(a?.b?.c);
 ```
 
-## Nullish Coalescing Operator
+- Nullish Coalescing Operator
 
 null이나 undefined일 때만 b를 반환합니다.
 
@@ -54,7 +502,7 @@ null이나 undefined일 때만 b를 반환합니다.
 0 ?? 'A'; // 0
 ```
 
-## Dynamic Import
+- Dynamic Import
 
 파일 import를 동적으로 할 수 있게 되었습니다.
 
@@ -74,7 +522,7 @@ console.log(config);
 }
 ```
 
-## Promise.allSettled
+- Promise.allSettled
 
 Promise.all()은 모든 작업이 성공(reslove)해야 실행되는 특징과 달리 Promise.allSettled()은 도중에 실패(reject)되더라도 모든 실행을 할 수 있습니다.
 
@@ -106,7 +554,7 @@ p3, rejected
 _/
 ```
 
-## 참고사이트
+- 참고사이트
 
 <a href="https://gomugom.github.io/ecmascript-proposals-1-intro/" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">https://gomugom.github.io/ecmascript-proposals-1-intro/</a>
 <a href="https://junhobaik.github.io/es2016-es2020/" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">https://junhobaik.github.io/es2016-es2020/</a>
@@ -115,7 +563,7 @@ _/
 
 # ES2019(ES10)
 
-## String.trimStart() & trimEnd()
+- String.trimStart() & trimEnd()
 
 문자열의 앞이나 뒤의 공백을 제거한다.
 앞을 제거하는 trimStart와 뒤를 제거하는 trimEnd가 있다.
@@ -131,7 +579,7 @@ console.log(s.trimStart() + e.trimEnd() + ';');
 // "hello world!;"
 ```
 
-## Optional Catch Binding
+- Optional Catch Binding
 
 catch 매개변수 없이도 catch 블록을 사용할 수 있습니다.
 
@@ -151,7 +599,7 @@ try {
 }
 ```
 
-## Object.fromEntries()
+- Object.fromEntries()
 
 객체를 entries로 배열로 만들었다면 fromEntries로 다시 객체로 만들 수 있다는 이야기입니다. entires를 이해했다면 간단하게 아래 예제를 통해 알 수 있습니다.
 
@@ -165,7 +613,7 @@ const fromEntries = Object.fromEntries(entries);
 console.log(fromEntries); // {name: "Jhon", age: 24}
 ```
 
-## Array.flat() & flatMap()
+- Array.flat() & flatMap()
 
 flat 메소드는 배열안의 배열을 쉽게 합칠 수 있게 됩니다.
 
@@ -183,7 +631,7 @@ console.log(flatMap); // [1, 2, 3]
 
 # ES2018(ES9)
 
-## Rest/Spread Properties
+- Rest/Spread Properties
 
 기존의 배열에서 사용하던 rest/spread를 객체에서도 사용가능하게 되었습니다.
 
@@ -234,7 +682,7 @@ const rename = ({ NAME: name, ...rest }) => ({ name, ...rest });
 console.log(rename(user1));
 ```
 
-## Promise.prototype.finally()
+- Promise.prototype.finally()
 
 then, catch, finally에서 Promise는 기존에 then과 catch만 가능했으나 이제 finally도 추가되었습니다.
 
@@ -248,7 +696,7 @@ const p1 = new Promise((resolve, reject) => {
   .finally(() => console.log('call finally'));
 ```
 
-## Asynchronous iteration
+- Asynchronous iteration
 
 비동기 이터러블 객체를 순회하는 것이 가능해졌습니다.
 
@@ -260,7 +708,7 @@ for await (const req of requests) {
 
 # ES2017(ES8)
 
-## String padding
+- String padding
 
 최대 길이보다 짧은 문자열에 대해서 그 여백에 지정한 문자열을 반복하여 채우는 메소드이다.
 padStart는 문자열의 좌측에 여백을 지정하며, padEnd는 그 반대이다.
@@ -280,7 +728,7 @@ String.prototype.padEnd(maxLength[, padString])
 'abcde'.padEnd(3, '12'); // "abcde"
 ```
 
-## Object.values / Object.entries
+- Object.values / Object.entries
 
 Object.values(object)
 Object.entries(obj)
@@ -292,7 +740,7 @@ console.log(Object.values(obj)); // [ 1, 2, 3 ]
 console.log(Object.entries(obj)); // [ ["a", 1], ["b", 2], ["c", 3] ]
 ```
 
-## Object.getOwnPropertyDescriptors
+- Object.getOwnPropertyDescriptors
 
 getOwnPropertyDescriptor는 인자로 객체와 속성명을 전달해 해당 속성의 속성 설명자를 반환하는 메소드입니다.
 
@@ -315,13 +763,13 @@ console.log(Object.getOwnPropertyDescriptors(obj1));
 // }
 ```
 
-## Trailing commas
+- Trailing commas
 
 함수의 마지막 매개변수와 인자에도 콤마를 넣을 수 있습니다.
 
 const foo = (a, b, c,) => {}
 
-## async/await
+- async/await
 
 ```javascript
 // promise를 사용하게 되면 사용자가 얻고자하는 값이 여러개 일경우 then/then/then을 호출하게 되어서 코드가 복잡해진다.
@@ -341,7 +789,7 @@ const getMoviesAsync = async () => {
 getMoviesAsync();
 ```
 
-## Async Awaite(try catch finally)
+- Async Awaite(try catch finally)
 
 ```javascript
 const getMoviesAsync = async () => {
@@ -359,7 +807,7 @@ const getMoviesAsync = async () => {
 getMoviesAsync();
 ```
 
-## Paraller Async Await
+- Paraller Async Await
 
 ```javascript
 const getMoviesAsync = async () => {
@@ -386,7 +834,7 @@ getMoviesAsync();
 
 # ES2016(ES7)
 
-## Array.prototype.includes
+- Array.prototype.includes
 
 배열 내장 함수 includes가 추가되었습니다.
 아이템이 존재하는지 boolean 값으로 반환
@@ -407,7 +855,7 @@ console.log(['a', 'b', 'c'].includes('a')); // true
 console.log(['a', 'b', 'c'].includes('a', 1)); // false
 ```
 
-## Exponentiation operator
+- Exponentiation operator
 
 다른 프로그래밍 언어들에서 일반적으로 사용되는 문법을 도입하였다.
 x \*\* y는 x의 y제곱을 의미하며, 이는 Math.pow(x, y)와 완전히 동일하다.
@@ -435,7 +883,7 @@ console.log(a); // 81 ( === a _ a _ a \* a )
 
 # ES2015(ES6)
 
-## let, const의 장점
+- let, const의 장점
 
 ````javascript
 function sayHello(name) {
@@ -471,7 +919,7 @@ bar2: 'bar'
 foo2.bar2 = 'bar2'; // OK - foo2의 프로퍼티는 수정이 가능하다.
 ```
 
-## 화살표 함수(Arrow function)
+ * 화살표 함수(Arrow function)
 
 ```javascript
 const sum = (a, b) => {
@@ -479,9 +927,9 @@ return a + b;
 };
 ````
 
-## 클래스(Class)
+- 클래스(Class)
 
-### Instroduction classes
+* Instroduction classes
 
 ```javascript
 const MakeUser = {
@@ -512,7 +960,7 @@ console.log(user2.sayHello());
 console.log(user3.sayHello());
 ```
 
-## Extending classes
+- Extending classes
 
 ```javascript
 class User {
@@ -543,7 +991,7 @@ admin.sayHello();
 admin.sayAdmin();
 ```
 
-## WTF is this
+- WTF is this
 
 ```javascript
 class Counter {
@@ -571,7 +1019,7 @@ consoloe.log(this);
 }
 ```
 
-## 개선된 객체 리터럴(Object literal)
+- 개선된 객체 리터럴(Object literal)
 
 ```javascript
 // before ES2015
@@ -612,7 +1060,7 @@ const iMac = '아이맥';
 const appleProducts = { iPhone, iPad, iMac };
 ```
 
-## 템플릿 리터럴(Template literal)
+- 템플릿 리터럴(Template literal)
 
 ```javascript
 // before es2015
@@ -629,9 +1077,9 @@ const add = (prev, next) => prev + next;
 console.log(`prev plus next : ${add(3, 4)}`);
 ```
 
-## 디스트럭처링(Destructuring)
+- 디스트럭처링(Destructuring)
 
-### Object Destructuring
+* Object Destructuring
 
 ```javascript
 // 비구조화 할당
@@ -653,7 +1101,7 @@ const {
 console.log(unfollow, theme, data);
 ```
 
-### Array Destructuring
+- Array Destructuring
 
 ```javascript
 const days = ['Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat'];
@@ -672,7 +1120,7 @@ const [Mon, Tue, Wen, Thu, Fri, Sat, Sun = 'Sun'] = days;
 console.log(Mon, Tue, Wen, Thu, Fri, Sat, Sun);
 ```
 
-## 함수 매개변수의 디폴트 값 설정
+- 함수 매개변수의 디폴트 값 설정
 
 ```javascript
 const sayName = (name = 'World') => {
@@ -693,9 +1141,9 @@ console.log(sayHi());
 - 기존 JS6이전에는 aName이 undefined 여부를 체크한 이후에 다시 값을 세팅해야했는데, 인자에 대한 초기값 세팅이 가능해졌다.
   예) let defalutName = aName || "hong"
 
-## Rest 파라미터, Spread 표현식
+* Rest 파라미터, Spread 표현식
 
-### Spread
+* Spread
 
 ```javascript
 // Spread object/Array unpack
@@ -706,7 +1154,7 @@ console.log([...number, ...alpha]);
 //[1, 2, 3, 4, "a", "b", "c"]
 ```
 
-### Rest
+- Rest
 
 ```javascript
 const bestfriends = (one, ...friendsRest) =>
@@ -715,7 +1163,7 @@ const bestfriends = (one, ...friendsRest) =>
 bestfriends('kim', 'choi', 'seyoung');
 ```
 
-### Rest & Spread Destructure
+- Rest & Spread Destructure
 
 ```javascript
 // object 삭제 & 정리할경우 유용
@@ -735,7 +1183,7 @@ const setCountry = ({ country = 'kr', ...rest }) => ({ country, ...rest }); // (
 console.log(setCountry(user));
 ```
 
-## 제너레이터(Generator)
+- 제너레이터(Generator)
 
 함수의 흐름을 특정 구간에 멈춰놓았다가 다시 실행할 수 있다.
 결과값을 여러번 내보낼 수 있다.
@@ -792,9 +1240,9 @@ listG.next();
 
 ```
 
-## 프로미스(Promise)
+- 프로미스(Promise)
 
-### create promises
+* create promises
 
 ```javascript
 // async function
@@ -807,7 +1255,7 @@ console.log(newPromise);
 setInterval(console.log, 1000, newPromise);
 ```
 
-### using promises
+- using promises
 
 ```javascript
 const newPromise = new Promise((resolve, reject) => {
@@ -820,7 +1268,7 @@ newPromise
   .catch(err => console.log(`error ${err}`));
 ```
 
-### chaining promises
+- chaining promises
 
 ```javascript
 const newPromise = new Promise((resolve, reject) => {
@@ -839,7 +1287,7 @@ newPromise
 .then(lastnumber => console.log(lastnumber));
 ```
 
-## promises all/race
+- promises all/race
 
 ```javascript
 const f1 = new Promise((resolve, reject) => {
@@ -863,9 +1311,9 @@ const frace = Promise.race([f1, f2, f3]);
 fall.then(values => console.log(values));
 ```
 
-## 모듈(ES Module)
+- 모듈(ES Module)
 
-### Named export
+* Named export
 
 Named export는 한 파일에서 여러 번 할 수 있다. Named export를 통해 내보낸 것 들은 추후 다른 모듈에서 내보낼 때와 같은 이름으로 import 해야 한다.
 
@@ -882,7 +1330,7 @@ import \* as students from 'students.js';
 
 ```
 
-### Default export
+- Default export
 
 반면에 Default export는 한 스크립트 파일당 한 개만 사용할 수 있다. 그리고 export default의 뒤에는 표현식만 허용되므로 var, let, const등의 키워드는 사용하지 못한다.
 
@@ -943,7 +1391,7 @@ Object.defineProperty(person, 'fullName', {
 자바스크립트 strict 모드 지원 (더 깐깐한? 문법 검사를 한다.)
 JSON 지원 ( 과거에는 XML을 사용하다가, json이 뜨면서 지원하게 됨 )
 
-# HTML Fragments
+- HTML Fragments
 
 ```javascript
 // JS6이전
@@ -966,7 +1414,7 @@ let div = `
 body.innerHTML = div;
 ```
 
-# More String Implovements
+- More String Implovements
 
 ```javascript
 const isEmail = email => email.includes('@');
@@ -980,16 +1428,16 @@ console.log(name.startsWith('o'));
 console.log(name.endsWith('g'));
 ```
 
-# Array
+- Array
 
-## Array.of, Array.from
+* Array.of, Array.from
 
 ```javascript
 Array.of(1, 2, 3, false, 'hong');
 // Array.from => array-like object(HTMLCollection등등) 를 array 만들어줌
 ```
 
-## Array.find
+- Array.find
 
 ```javascript
 const friendEmails = ['a@gmail.com', 'b@naver.com', 'c@daum.net'];
@@ -1007,7 +1455,7 @@ console.log(friendEmails);
 // value : 배열을 채울 값, start 시작인덱스, end 끝인덱스(숫자의 -1인덱스))
 ```
 
-# For ... of
+- For ... of
 
 ```javascript
 const friends = ['kim', 'choi', 'seyoung', 'duhyun'];
@@ -1032,7 +1480,7 @@ for (const str of 'Helloo this is string') {
 }
 ```
 
-## fetch
+- fetch
 
 ```javascript
 // fetch의 return값을 promise를 리턴하도록 되어있음
@@ -1042,7 +1490,7 @@ fetch('https://yts.am/api/v2/list_movies.json')
   .catch(err => console.log(err));
 ```
 
-## Symbol
+- Symbol
 
 ```javascript
 // uniquie함을 보장해준다.
@@ -1061,7 +1509,7 @@ Object.keys(info);
 Object.getOwnPropertySymbols(info); // private을 보장하지 않는다.
 ```
 
-## Sets
+- Sets
 
 ```javascript
 // Sets
@@ -1075,7 +1523,7 @@ userset.size;
 userset.keys(); // return iterator
 ```
 
-## WeakSet
+- WeakSet
 
 ```javascript
 // weakset은 number, text 저장 불가능(단지 objects와 함께 동작)
@@ -1085,7 +1533,7 @@ const weakSet = new WeakSet();
 weakSet.add({ hi: true });
 ```
 
-## Map
+- Map
 
 ```javascript
 // map도 weakmap 존재
@@ -1097,7 +1545,7 @@ map.get('age');
 map.set('age', 1111); // 덮어쓰기 가능
 ```
 
-## Proxies
+- Proxies
 
 ```javascript
 // 속성조회,할당등에 대한 행위에 대한 사용자의 커스텀 동작을 정의할 떄 사용
@@ -1134,7 +1582,7 @@ filteredUser.username;
 
 # 그외
 
-## reduce
+- reduce
 
 **배열.reduce((누적값, 현잿값, 인덱스, 요소) => { return 결과 }, 초깃값);**
 
@@ -1160,11 +1608,9 @@ result = oneTwoThree.reduce((acc, cur, i) => {
 result; // 6
 ```
 
----
+# Javascript 정리
 
-> # Javascript 정리
-
-# IIFE
+- IIFE
 
 ```javascript
 // 숨기고 싶은 값이지만 브라우저에서 secretUsers에 접근이 가능하다.
@@ -1178,7 +1624,7 @@ console.log(secretUsers);
 })();
 ```
 
-# javascript를 통한 모듈번들러(웹팩,gulp) 기능 간단구현(ES6)
+- javascript를 통한 모듈번들러(웹팩,gulp) 기능 간단구현(ES6)
 
 ```html
 <!-- index.html -->
@@ -1218,6 +1664,6 @@ addUsers('seyoung');
 console.log(getUsers());
 ```
 
-# Javascript6~10 참고사이트
+- Javascript6~10 참고사이트
 
-- [Nomad Courses](https://academy.nomadcoders.co/)
+* [Nomad Courses](https://academy.nomadcoders.co/)

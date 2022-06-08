@@ -120,6 +120,7 @@ export const getPostList = graphql`
         fields: [
           frontmatter___date
           frontmatter___category
+          frontmatter___tags
           frontmatter___title
         ]
       }
