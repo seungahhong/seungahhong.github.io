@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import CommentWidget from './CommentWidget';
 
 interface PostContentProps {
+  title: string;
+  date: string;
   html: string;
   tableOfContents: string;
 }
@@ -19,12 +21,25 @@ const PostWrapper = styled.div`
     margin: 0;
   }
 `;
-
 const PostContentWrapper = styled.div`
   width: 80%;
 
   @media (max-width: 1024px) {
     width: 100%;
+  }
+`;
+
+const PostHeader = styled.header`
+  padding: 0 80px;
+  margin-bottom: 48px;
+
+  @media (max-width: 1024px) {
+    padding: 0 20px;
+  }
+
+  & > h1 {
+    margin-bottom: 8px;
+    font-size: 40px;
   }
 `;
 
@@ -162,12 +177,18 @@ const MarkdownRenderer = styled.article`
     tab-size: 2;
   }
 
+  img {
+    width: 100%;
+  }
+
   summary {
     font-size: 24px;
   }
 `;
 
 const PostContent: FunctionComponent<PostContentProps> = function ({
+  title,
+  date,
   html,
   tableOfContents,
 }) {
@@ -179,6 +200,10 @@ const PostContent: FunctionComponent<PostContentProps> = function ({
     <>
       <PostWrapper>
         <PostContentWrapper>
+          <PostHeader>
+            <h1>{title}</h1>
+            <time>{date}</time>
+          </PostHeader>
           <MarkdownRenderer
             ref={markdownRef}
             dangerouslySetInnerHTML={{ __html: html }}

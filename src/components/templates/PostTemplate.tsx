@@ -49,7 +49,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
   },
 }) {
   const {
-    node: { html, tableOfContents },
+    node: { html, tableOfContents, frontmatter },
   } = edges[0];
 
   return (
@@ -59,7 +59,11 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
       url={siteUrl}
       social={social}
     >
-      <PostContent html={html} tableOfContents={tableOfContents} />
+      <PostContent
+        {...frontmatter}
+        html={html}
+        tableOfContents={tableOfContents}
+      />
     </Template>
   );
 };

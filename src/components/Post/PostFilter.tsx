@@ -19,7 +19,10 @@ const PostFilterContainer = styled.section`
   top: 0;
   z-index: 1;
   background-color: #ffffff;
-  padding-top: 18px;
+  margin-top: 18px;
+  padding: 8px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 `;
 
 const PostList = styled.ul`
