@@ -16,21 +16,16 @@ const PostItemWrapper = styled(Link)`
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
   transition: 0.3s box-shadow;
   cursor: pointer;
-  min-height: 180px;
 
   &:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
-
-  @media (max-width: 768px) {
-    min-height: auto;
-  }
 `;
 
 const PostItemContent = styled.div`
-  flex: 1;
   display: flex;
   flex-direction: column;
+  flex: 1;
   padding: 15px;
   word-break: break-word;
 `;

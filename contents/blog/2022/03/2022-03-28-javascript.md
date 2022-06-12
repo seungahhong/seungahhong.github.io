@@ -6,7 +6,7 @@ published: 2022-03-28
 category: 개발
 tags: ['javascript']
 comments: true,
-thumbnail: './assets/21/thumbnail.jpg'
+thumbnail: './assets/28/thumbnail.jpg'
 github: 'https://github.com/seungahhong/seungahhong.github.io'
 ---
 
