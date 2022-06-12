@@ -55,6 +55,10 @@ const ThumbnailImage = styled(GatsbyImage)`
   border-radius: 10px 10px 0 0;
   object-fit: cover;
   border-bottom: 1px solid #2d2d2d;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Summary = styled.p`
@@ -71,18 +75,13 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
   excerpt,
   link,
 }) {
-  const isMobile = useIsMobile();
-
   return (
     <PostItemWrapper to={link}>
-      {!isMobile && (
-        <ThumbnailImage
-          image={gatsbyImageData}
-          alt="Post Item Image"
-          objectFit="contain"
-        />
-      )}
-
+      <ThumbnailImage
+        image={gatsbyImageData}
+        alt="Post Item Image"
+        objectFit="contain"
+      />
       <PostItemContent>
         <Title>{title}</Title>
         <Date>{date}</Date>
