@@ -180,7 +180,6 @@ npm install @reduxjs/toolkit react-redux
   import { combineReducers } from "redux";
   import reducers from "../reducers";
 
-  console.log(reducers);
   const rootReducers = () => combineReducers({
     counter: reducers.counter
   });

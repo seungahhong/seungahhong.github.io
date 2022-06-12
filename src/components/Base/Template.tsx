@@ -58,6 +58,10 @@ const Template: FunctionComponent<TemplateProps> = function ({
           name="google-site-verification"
           content="DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"
         />
+        <meta
+          name="naver-site-verification"
+          content="ab246841529a97bcf76ac7ed42d5a5c457a381bc"
+        />
       </Helmet>
       <GlobalStyle />
       {isVisibleHeader && <Header social={social} />}
