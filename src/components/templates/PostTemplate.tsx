@@ -38,6 +38,25 @@ type PostTemplateProps = {
       ];
     };
   };
+  pageContext: {
+    previous?: {
+      frontmatter: {
+        title: string;
+      };
+      fields: {
+        slug: string;
+      };
+    };
+    next?: {
+      frontmatter: {
+        title: string;
+      };
+      fields: {
+        slug: string;
+      };
+    };
+    slug: string;
+  };
 };
 
 const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
@@ -47,6 +66,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
     },
     allMarkdownRemark: { edges },
   },
+  pageContext,
 }) {
   const {
     node: { html, tableOfContents, frontmatter },
@@ -63,6 +83,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
         {...frontmatter}
         html={html}
         tableOfContents={tableOfContents}
+        pageContext={pageContext}
       />
     </Template>
   );

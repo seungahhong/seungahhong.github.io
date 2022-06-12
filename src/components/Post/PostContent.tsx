@@ -2,12 +2,32 @@ import useScrollSpy from '../../helpers/hooks/useScrollSpy';
 import React, { FunctionComponent, useRef } from 'react';
 import styled from 'styled-components';
 import CommentWidget from './CommentWidget';
+import { Link } from 'gatsby';
 
 interface PostContentProps {
   title: string;
   date: string;
   html: string;
   tableOfContents: string;
+  pageContext: {
+    previous?: {
+      frontmatter: {
+        title: string;
+      };
+      fields: {
+        slug: string;
+      };
+    };
+    next?: {
+      frontmatter: {
+        title: string;
+      };
+      fields: {
+        slug: string;
+      };
+    };
+    slug: string;
+  };
 }
 
 const PostWrapper = styled.div`
@@ -23,6 +43,7 @@ const PostWrapper = styled.div`
 `;
 const PostContentWrapper = styled.div`
   width: 80%;
+  max-width: 1024px;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -30,12 +51,8 @@ const PostContentWrapper = styled.div`
 `;
 
 const PostHeader = styled.header`
-  padding: 0 80px;
+  padding: 0 20px;
   margin-bottom: 48px;
-
-  @media (max-width: 1024px) {
-    padding: 0 20px;
-  }
 
   & > h1 {
     margin-bottom: 8px;
@@ -77,12 +94,11 @@ const MarkdownRenderer = styled.article`
   display: flex;
   flex-direction: column;
   word-break: break-all;
-  margin-bottom: 350px;
-  padding: 0 80px;
+  margin-bottom: 250px;
+  padding: 0 20px;
   width: 100%;
 
   @media (max-width: 1024px) {
-    padding: 0 20px;
     margin-bottom: 48px;
   }
 
@@ -186,11 +202,33 @@ const MarkdownRenderer = styled.article`
   }
 `;
 
+const PostNavigator = styled.section`
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 20px;
+
+  & h5 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  & a {
+    border-radius: 6px;
+    font-size: 20px;
+    color: #cc007a;
+    font-weight: 700;
+  }
+`;
+
 const PostContent: FunctionComponent<PostContentProps> = function ({
   title,
   date,
   html,
   tableOfContents,
+  pageContext,
 }) {
   const tocRef = useRef<HTMLElement>(null);
   const markdownRef = useRef<HTMLElement>(null);
@@ -208,6 +246,24 @@ const PostContent: FunctionComponent<PostContentProps> = function ({
             ref={markdownRef}
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          {(pageContext.previous || pageContext.next) && (
+            <PostNavigator>
+              {pageContext.previous && (
+                <Link to={pageContext.previous.fields.slug}>
+                  <h5>이전글</h5>
+                  <i>{'← '}</i>
+                  {pageContext.previous.frontmatter.title}
+                </Link>
+              )}
+              {pageContext.next && (
+                <Link to={pageContext.next.fields.slug}>
+                  <h5>다음글</h5>
+                  {pageContext.next.frontmatter.title}
+                  <i>{' →'}</i>
+                </Link>
+              )}
+            </PostNavigator>
+          )}
           <CommentWidget />
         </PostContentWrapper>
         <TocRenderer
