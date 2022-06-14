@@ -7,7 +7,7 @@ category: 개발
 tags: ['state']
 comments: true,
 thumbnail: './assets/26/thumbnail.png'
-github: 'https://github.com/seungahhong/seungahhong.github.io'
+github: 'https://github.com/seungahhong/states-todos'
 ---
 
 # 리덕스 툴킷이란?

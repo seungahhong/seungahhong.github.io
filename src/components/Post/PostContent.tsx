@@ -1,8 +1,9 @@
-import useScrollSpy from '../../helpers/hooks/useScrollSpy';
-import React, { FunctionComponent, useRef } from 'react';
+import React, { FunctionComponent, useRef, useMemo } from 'react';
 import styled from 'styled-components';
-import CommentWidget from './CommentWidget';
 import { Link } from 'gatsby';
+
+import CommentWidget from './CommentWidget';
+import useScrollSpy from '../../helpers/hooks/useScrollSpy';
 
 interface PostContentProps {
   title: string;
@@ -28,29 +29,73 @@ interface PostContentProps {
     };
     slug: string;
   };
+  social: {
+    facebook: string;
+    github: string;
+    notion: string;
+    linkedin: string;
+  };
+  allFile: {
+    edges: [
+      {
+        node: {
+          name: string;
+          childImageSharp: {
+            gatsbyImageData: IGatsbyImageData;
+          };
+          publicURL: string;
+        };
+      },
+    ];
+  };
 }
+
+type SocialImageType = {
+  size: number;
+};
 
 const PostWrapper = styled.div`
   display: flex;
   position: relative;
-  padding: 100px 0;
   margin: 0 auto;
   align-items: start;
+  max-width: 1024px;
 
   @media (max-width: 1024px) {
     margin: 0;
   }
 `;
+
+const PostHeadWrapper = styled.header`
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 auto;
+  min-width: 1024px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (max-width: 1024px) {
+    margin: 0;
+    min-width: auto;
+  }
+
+  & h1 {
+    font-size: 24px;
+    margin: 8px 0 4px;
+  }
+`;
+
 const PostContentWrapper = styled.div`
   width: 80%;
-  max-width: 1024px;
 
   @media (max-width: 1024px) {
     width: 100%;
   }
 `;
 
-const PostHeader = styled.header`
+const PostTitle = styled.div`
   padding: 0 20px;
   margin-bottom: 48px;
 
@@ -223,25 +268,64 @@ const PostNavigator = styled.section`
   }
 `;
 
+const SocialLink = styled.a<SocialImageType>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+  color: #161b21;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+
+  & > img {
+    width: ${props => `${props.size}px`};
+    height: ${props => `${props.size}px`};
+  }
+`;
+
 const PostContent: FunctionComponent<PostContentProps> = function ({
   title,
   date,
   html,
   tableOfContents,
   pageContext,
+  social,
+  allFile: { edges },
 }) {
   const tocRef = useRef<HTMLElement>(null);
   const markdownRef = useRef<HTMLElement>(null);
   useScrollSpy(tocRef, markdownRef);
 
+  const githubImage = useMemo(() => {
+    return edges.find(item => item.node?.name === 'github');
+  }, [edges]);
+
   return (
     <>
+      <PostHeadWrapper>
+        <Link to={'/'}>
+          <h1>홍승아블로그</h1>
+        </Link>
+        <SocialLink
+          href={social?.github}
+          rel="noopener noreferrer"
+          title="notion"
+          target="_blank"
+          size={35}
+        >
+          <img src={githubImage?.node.publicURL} alt="" />
+        </SocialLink>
+      </PostHeadWrapper>
       <PostWrapper>
         <PostContentWrapper>
-          <PostHeader>
+          <PostTitle>
             <h1>{title}</h1>
             <time>{date}</time>
-          </PostHeader>
+          </PostTitle>
           <MarkdownRenderer
             ref={markdownRef}
             dangerouslySetInnerHTML={{ __html: html }}

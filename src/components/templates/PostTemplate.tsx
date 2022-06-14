@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import PostContent from 'components/Post/PostContent';
 import Template from 'components/Base/Template';
 
@@ -37,6 +38,19 @@ type PostTemplateProps = {
         },
       ];
     };
+    allFile: {
+      edges: [
+        {
+          node: {
+            name: string;
+            childImageSharp: {
+              gatsbyImageData: IGatsbyImageData;
+            };
+            publicURL: string;
+          };
+        },
+      ];
+    };
   };
   pageContext: {
     previous?: {
@@ -64,13 +78,14 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
     site: {
       siteMetadata: { title, description, siteUrl, social },
     },
-    allMarkdownRemark: { edges },
+    allMarkdownRemark,
+    allFile,
   },
   pageContext,
 }) {
   const {
     node: { html, tableOfContents, frontmatter },
-  } = edges[0];
+  } = allMarkdownRemark?.edges[0];
 
   return (
     <Template
@@ -84,6 +99,8 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
         html={html}
         tableOfContents={tableOfContents}
         pageContext={pageContext}
+        social={social}
+        allFile={allFile}
       />
     </Template>
   );
@@ -100,6 +117,28 @@ export const queryMarkdownDataBySlug = graphql`
         author
         type
         siteUrl
+        social {
+          facebook
+          github
+          notion
+          linkedin
+        }
+      }
+    }
+    allFile(
+      filter: {
+        extension: { regex: "/(jpg)|(jpeg)|(png)|(svg)/" }
+        relativeDirectory: { eq: "images/header" }
+      }
+    ) {
+      edges {
+        node {
+          name
+          publicURL
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
     }
     allMarkdownRemark(filter: { fields: { slug: { eq: $slug } } }) {
