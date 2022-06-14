@@ -67,23 +67,26 @@ const PostWrapper = styled.div`
 `;
 
 const PostHeadWrapper = styled.header`
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  margin: 0 auto;
-  min-width: 1024px;
   border-bottom: 1px solid #e6e6e6;
 
-  @media (max-width: 1024px) {
-    margin: 0;
-    min-width: auto;
+  & > div {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 20px;
+
+    @media (max-width: 1024px) {
+      margin: 0;
+      min-width: auto;
+    }
   }
 
   & h1 {
     font-size: 24px;
-    margin: 8px 0 4px;
+    margin: 12px 0 8px;
   }
 `;
 
@@ -107,7 +110,7 @@ const PostTitle = styled.div`
 
 const TocRenderer = styled.aside`
   display: inline-block;
-  margin-left: 10px;
+  margin: 12px 0 0 10px;
   position: sticky;
   top: 0;
   left: 10px;
@@ -307,18 +310,20 @@ const PostContent: FunctionComponent<PostContentProps> = function ({
   return (
     <>
       <PostHeadWrapper>
-        <Link to={'/'}>
-          <h1>홍승아블로그</h1>
-        </Link>
-        <SocialLink
-          href={social?.github}
-          rel="noopener noreferrer"
-          title="notion"
-          target="_blank"
-          size={35}
-        >
-          <img src={githubImage?.node.publicURL} alt="" />
-        </SocialLink>
+        <div>
+          <Link to={'/'}>
+            <h1>홍승아블로그</h1>
+          </Link>
+          <SocialLink
+            href={social?.github}
+            rel="noopener noreferrer"
+            title="notion"
+            target="_blank"
+            size={35}
+          >
+            <img src={githubImage?.node.publicURL} alt="" />
+          </SocialLink>
+        </div>
       </PostHeadWrapper>
       <PostWrapper>
         <PostContentWrapper>
