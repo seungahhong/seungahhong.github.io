@@ -4,7 +4,7 @@ title: redux-toolkit
 date: 2022-03-26
 published: 2022-03-26
 category: 개발
-tags: ['state']
+tags: ['state', 'redux']
 comments: true,
 thumbnail: './assets/26/thumbnail.png'
 github: 'https://github.com/seungahhong/states-todos'

@@ -56,6 +56,7 @@ type SocialImageType = {
 
 const PostWrapper = styled.div`
   display: flex;
+  flex: 1;
   position: relative;
   margin: 0 auto;
   align-items: start;
@@ -115,6 +116,7 @@ const TocRenderer = styled.aside`
   top: 0;
   left: 10px;
   transition: all 0.125s esse-in 0s;
+  min-width: 200px;
   color: rgba(0, 0, 0, 0.4);
   padding: 0 0.75rem;
   border-left: 2px solid gray;
@@ -176,7 +178,7 @@ const MarkdownRenderer = styled.article`
   }
 
   * + h3 {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   hr + h1,
