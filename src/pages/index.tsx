@@ -21,6 +21,7 @@ type IndexPageProps = {
         author: string;
         type: string;
         siteUrl: string;
+        INIT_PER_PAGE_NUMBER: number;
         social: {
           facebook: string;
           github: string;
@@ -47,7 +48,13 @@ const PostWrapper = styled.div`
 const IndexPage: FunctionComponent<IndexPageProps> = ({
   data: {
     site: {
-      siteMetadata: { title, description, siteUrl, social },
+      siteMetadata: {
+        title,
+        description,
+        siteUrl,
+        INIT_PER_PAGE_NUMBER,
+        social,
+      },
     },
     allMarkdownRemark: { edges },
   },
@@ -91,7 +98,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
           handleType={handleType}
           handleFilter={setFilter}
         />
-        <PostList posts={posts} />
+        <PostList posts={posts} INIT_PER_PAGE_NUMBER={INIT_PER_PAGE_NUMBER} />
       </PostWrapper>
     </Template>
   );
@@ -106,6 +113,7 @@ export const getPostList = graphql`
         author
         type
         siteUrl
+        INIT_PER_PAGE_NUMBER
         social {
           facebook
           github

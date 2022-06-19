@@ -2,9 +2,11 @@ import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import PostItem from './PostItem';
 import { PostListItemType } from 'types/PostItem';
+import useInfinityScroll from '../../helpers/hooks/useInfinityScroll';
 
 type PostListProps = {
   posts: PostListItemType[];
+  INIT_PER_PAGE_NUMBER: number;
 };
 
 const PostListWrapper = styled.div`
@@ -27,10 +29,18 @@ const PostListWrapper = styled.div`
   }
 `;
 
-const PostList: FunctionComponent<PostListProps> = ({ posts }) => {
+const PostList: FunctionComponent<PostListProps> = ({
+  posts,
+  INIT_PER_PAGE_NUMBER,
+}) => {
+  const [currentRef, currentPosts] = useInfinityScroll(
+    posts,
+    INIT_PER_PAGE_NUMBER,
+  );
+
   return (
     <PostListWrapper>
-      {posts.map(
+      {currentPosts.map(
         ({
           node: {
             id,
@@ -42,6 +52,7 @@ const PostList: FunctionComponent<PostListProps> = ({ posts }) => {
           <PostItem {...frontmatter} excerpt={excerpt} link={link} key={id} />
         ),
       )}
+      <div ref={currentRef} />
     </PostListWrapper>
   );
 };

@@ -5,6 +5,7 @@ module.exports = {
     author: '홍승아',
     type: 'website',
     siteUrl: 'https://seungahhong.github.io/',
+    INIT_PER_PAGE_NUMBER: 8,
     social: {
       facebook:
         'https://www.facebook.com/people/%ED%99%8D%EC%8A%B9%EC%95%84/100002349562000/',
