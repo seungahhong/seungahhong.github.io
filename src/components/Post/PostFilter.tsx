@@ -1,6 +1,8 @@
-import React, { FunctionComponent, useMemo } from 'react';
+import React, { FunctionComponent, useMemo, useRef } from 'react';
 import styled from 'styled-components';
 import { PostListItemType } from 'types/PostItem';
+import useScrollAlign from '../../helpers/hooks/useScrollAlign';
+import PostFilterItem from './PostFilterItem';
 
 type PostFilterProps = {
   posts: PostListItemType[];
@@ -25,7 +27,7 @@ const PostFilterContainer = styled.section`
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 `;
 
-const PostList = styled.ul`
+const PostFilterList = styled.ul`
   display: flex;
   padding: 0 4px;
   margin-top: 8px;
@@ -37,22 +39,6 @@ const PostList = styled.ul`
   // &::-webkit-scrollbar {
   //   display: none; /* Chrome, Safari, Opera*/
   // }
-`;
-
-const PostListItem = styled.li<PostProps>`
-  display: flex;
-  align-items: center;
-  margin: 0.1em 12px 0.1em 0;
-  padding: 8px 12px;
-  border-radius: 15px;
-  cursor: pointer;
-  font-weight: 700;
-  background-color: ${props =>
-    props.active ? '#030303' : 'rgba(0, 0, 0, 0.05)'};
-  border: ${props =>
-    props.active ? '1px solid #343a40' : '1px solid rgba(0, 0, 0, 0.1)'};
-  color: ${props =>
-    props.active ? '#ffffff' : '1px solid rgba(0, 0, 0, 0.05)'};
 `;
 
 const PostFilterWrapper = styled.div`
@@ -82,6 +68,9 @@ const PostFilter: FunctionComponent<PostFilterProps> = ({
   handleType,
   handleFilter,
 }) => {
+  const containerRef = useRef<HTMLUListElement>(null);
+  const [scrollHorzCenter] = useScrollAlign(containerRef);
+
   const categories = useMemo(() => {
     return posts.filter(({ node: { frontmatter } }, index) => {
       return (
@@ -118,29 +107,31 @@ const PostFilter: FunctionComponent<PostFilterProps> = ({
           TAGS
         </PostFilterButton>
       </PostFilterWrapper>
-      <PostList>
+      <PostFilterList ref={containerRef}>
         {type === 'CATEGORY' &&
           categories.map((category, index) => {
             return (
               <>
                 {index === 0 && (
-                  <PostListItem
+                  <PostFilterItem
                     key={`CATEGORYALL_${index}`}
-                    onClick={() => handleFilter('ALL')}
+                    handleFilterClick={filter => handleFilter(filter)}
                     active={filter === 'ALL'}
+                    scrollHorzCenter={scrollHorzCenter}
                   >
                     ALL
-                  </PostListItem>
+                  </PostFilterItem>
                 )}
-                <PostListItem
+                <PostFilterItem
                   key={`CATEGORY_${index}`}
-                  onClick={() =>
+                  handleFilterClick={() =>
                     handleFilter(category.node.frontmatter.category)
                   }
                   active={filter === category.node.frontmatter.category}
+                  scrollHorzCenter={scrollHorzCenter}
                 >
                   {category.node.frontmatter.category}
-                </PostListItem>
+                </PostFilterItem>
               </>
             );
           })}
@@ -149,25 +140,27 @@ const PostFilter: FunctionComponent<PostFilterProps> = ({
             return (
               <>
                 {index === 0 && (
-                  <PostListItem
+                  <PostFilterItem
                     key={`TAGSALL_${index}`}
-                    onClick={() => handleFilter('ALL')}
+                    handleFilterClick={() => handleFilter('ALL')}
                     active={filter === 'ALL'}
+                    scrollHorzCenter={scrollHorzCenter}
                   >
                     ALL
-                  </PostListItem>
+                  </PostFilterItem>
                 )}
-                <PostListItem
+                <PostFilterItem
                   key={`TAGS_${index}`}
-                  onClick={() => handleFilter(tag)}
+                  handleFilterClick={() => handleFilter(tag)}
                   active={filter === tag}
+                  scrollHorzCenter={scrollHorzCenter}
                 >
                   {tag}
-                </PostListItem>
+                </PostFilterItem>
               </>
             );
           })}
-      </PostList>
+      </PostFilterList>
     </PostFilterContainer>
   );
 };
