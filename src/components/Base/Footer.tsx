@@ -9,7 +9,7 @@ const FooterWrapper = styled.div<FooterProps>`
   display: grid;
   place-items: center;
   margin-top: auto;
-  margin-left: ${props => (props.isVisibleHeader ? '25%' : '0')};
+  margin-left: ${props => (props.isVisibleHeader ? '20%' : '0')};
   padding: 50px 0;
   font-size: 15px;
   text-align: center;

@@ -23,15 +23,61 @@ type AboutPageProps = {
   };
 };
 
-const AboutWrapper = styled.div`
+const Container = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 80px;
+  margin-left: 20%;
+  flex-direction: column;
+  overflow: auto;
   height: 100%;
 
-  & > h4 {
-    font-size: 30px;
+  @media (max-width: 1024px) {
+    margin-left: 0;
   }
+`;
+
+const Content = styled.div`
+  & h2 {
+    font-size: 40px;
+  }
+
+  & ul {
+    & > li {
+      margin-left: 20px;
+      margin-top: 8px;
+      font-size: 20px;
+    }
+  }
+
+  margin: 0 120px;
+
+  @media (max-width: 1024px) {
+    margin: 0 20px;
+  }
+
+  @media (max-width: 414px) {
+    & h2 {
+      font-size: 30px;
+    }
+
+    & ul {
+      & > li {
+        font-size: 15px;
+      }
+    }
+  }
+`;
+
+const Section = styled.section`
+  padding: 20px 0 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+`;
+
+const Anchor = styled.a`
+  color: #0687f0;
+  text-decoration: none;
+  box-shadow: none;
+  word-break: break-all;
 `;
 
 const AboutPage: FunctionComponent<AboutPageProps> = ({
@@ -47,10 +93,53 @@ const AboutPage: FunctionComponent<AboutPageProps> = ({
       description={description}
       url={siteUrl}
       social={social}
+      isVisibleHeader
     >
-      <AboutWrapper>
-        <h4>Thank you for reading my skill blog</h4>
-      </AboutWrapper>
+      <Container>
+        <Content>
+          <Section>
+            <h2>홍승아</h2>
+            <ul>
+              <li>FrontEnd 기술에 관심이 많은 개발자입니다.</li>
+              <li>컴포넌트의 공통화, 확장성을 항상 고민하는 개발자입니다.</li>
+              <li>
+                개인만의 발전이 아닌 공통체가 발전할 수 있는 생태계(공유)를
+                만들고 싶은 개발자입니다.
+              </li>
+            </ul>
+          </Section>
+          <Section>
+            <h2>Skill Interested in</h2>
+            <ul>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>Typescript</li>
+              <li>C,C++</li>
+            </ul>
+          </Section>
+          <Section>
+            <h2>Link</h2>
+            <ul>
+              <li>
+                GitHub:
+                <Anchor href="https://github.com/seungahhong">
+                  https://github.com/seungahhong
+                </Anchor>
+              </li>
+              <li>
+                Blog:
+                <Anchor href="https://gmm117.github.io/hong-portfolio/">
+                  https://gmm117.github.io/hong-portfolio/
+                </Anchor>
+              </li>
+              <li>
+                Contact:
+                <Anchor href="mailto:gmm117@naver.com">gmm117@naver.com</Anchor>
+              </li>
+            </ul>
+          </Section>
+        </Content>
+      </Container>
     </Template>
   );
 };
