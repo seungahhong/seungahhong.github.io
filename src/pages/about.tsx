@@ -133,13 +133,16 @@ const AboutPage: FunctionComponent<AboutPageProps> = ({
             <ul>
               <li>
                 <span>GitHub:</span>
-                <Anchor href="https://github.com/seungahhong">
+                <Anchor href="https://github.com/seungahhong" target="_blank">
                   https://github.com/seungahhong
                 </Anchor>
               </li>
               <li>
                 <span>Blog:</span>
-                <Anchor href="https://gmm117.github.io/hong-portfolio/">
+                <Anchor
+                  href="https://gmm117.github.io/hong-portfolio/"
+                  target="_blank"
+                >
                   https://gmm117.github.io/hong-portfolio/
                 </Anchor>
               </li>
