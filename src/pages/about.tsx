@@ -114,7 +114,7 @@ const AboutPage: FunctionComponent<AboutPageProps> = ({
               <li>FrontEnd 기술에 관심이 많은 개발자입니다.</li>
               <li>컴포넌트의 공통화, 확장성을 항상 고민하는 개발자입니다.</li>
               <li>
-                개인만의 발전이 아닌 공통체가 발전할 수 있는 생태계(공유)를
+                개인만의 발전이 아닌 공동체가 발전할 수 있는 생태계(공유)를
                 만들고 싶은 개발자입니다.
               </li>
             </ul>
