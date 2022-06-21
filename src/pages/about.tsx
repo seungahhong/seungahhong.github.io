@@ -46,6 +46,11 @@ const Content = styled.div`
       margin-left: 20px;
       margin-top: 8px;
       font-size: 20px;
+
+      & > span {
+        display: inline-block;
+        width: 80px;
+      }
     }
   }
 
@@ -62,7 +67,12 @@ const Content = styled.div`
 
     & ul {
       & > li {
-        font-size: 15px;
+        font-size: 14px;
+
+        & > span {
+          display: inline-block;
+          width: 45px;
+        }
       }
     }
   }
@@ -74,6 +84,7 @@ const Section = styled.section`
 `;
 
 const Anchor = styled.a`
+  margin-left: 12px;
   color: #0687f0;
   text-decoration: none;
   box-shadow: none;
@@ -121,19 +132,19 @@ const AboutPage: FunctionComponent<AboutPageProps> = ({
             <h2>Link</h2>
             <ul>
               <li>
-                GitHub:
+                <span>GitHub:</span>
                 <Anchor href="https://github.com/seungahhong">
                   https://github.com/seungahhong
                 </Anchor>
               </li>
               <li>
-                Blog:
+                <span>Blog:</span>
                 <Anchor href="https://gmm117.github.io/hong-portfolio/">
                   https://gmm117.github.io/hong-portfolio/
                 </Anchor>
               </li>
               <li>
-                Contact:
+                <span>Contact:</span>
                 <Anchor href="mailto:gmm117@naver.com">gmm117@naver.com</Anchor>
               </li>
             </ul>
