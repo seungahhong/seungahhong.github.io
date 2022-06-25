@@ -176,6 +176,12 @@ command = "simple-http-server"
 args = ["-i", "./static/", "-p", "3000", "--nocache", "--try-file", "./static/index.html"]
 ```
 
+### webassembly 빌드
+
+```bash
+cargo make build
+```
+
 ### index.html 생성
 
 ```html
@@ -193,6 +199,12 @@ args = ["-i", "./static/", "-p", "3000", "--nocache", "--try-file", "./static/in
   </head>
   <body></body>
 </html>
+```
+
+### 서버실행
+
+```bash
+cargo make serve
 ```
 
 ### 예제코드
