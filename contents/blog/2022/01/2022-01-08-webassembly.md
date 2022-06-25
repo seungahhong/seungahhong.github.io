@@ -112,19 +112,98 @@ WSAM: 메모리 생성,해제를 명시적으로 해주고 있기 때문에 GC�
 
 [https://d2.naver.com/helloworld/8257914](https://d2.naver.com/helloworld/8257914)
 
-# 웹어셈블리는 어디에 사용되나?
+### 웹어셈블리는 어디에 사용되나?
 
 [https://madewithwebassembly.com/](https://madewithwebassembly.com/)
 
-### 예제코드를 살펴볼까??
+### 러스트 설치
 
-[https://frontdev.tistory.com/entry/Rust로-SPA-만들기-1-리스트-만들기](https://frontdev.tistory.com/entry/Rust%EB%A1%9C-SPA-%EB%A7%8C%EB%93%A4%EA%B8%B0-1-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+[Install Rust](https://www.rust-lang.org/tools/install)
 
-### Rust
+```bash
+# https://www.rust-lang.org/tools/install
+$ curl https://sh.rustup.rs -sSf | sh
+
+# rust version 확인 -> command창을 재실행
+$ rustc --version
+```
+
+### 패키지 설치
+
+```bash
+# 러스트를 웹어셈블리로 컴파일하고 JS interop code를 생성
+# 패키지를 빌드하기 위해, wasm-pack이라는 추가적인 툴이 필요합니다. 이것을 통해 코드를 WebAssembly로 컴파일하고, npm에 적합한 패키징을 생성합니다.
+$ cargo install wasm-pack
+
+# npm과 같은 task runner
+$ cargo install cargo-make
+
+# node에서 serve -s build와 같은 빌드 서버
+$ cargo install simple-http-server
+```
+
+### 프로젝트 생성
+
+```bash
+$ cargo new --lib [프로젝트명] && cd [프로젝트명]
+```
+
+### yew 라이브러리 추가
+
+```bash
+# UI컴퍼넌트를 빌드를 위해서 cargo.toml 의존성 추가
+
+...
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+yew = "0.17"
+wasm-bindgen = "0.2"
+```
+
+### build 환경설정 추가
+
+```bash
+[tasks.build]
+command = "wasm-pack"
+args = ["build", "--dev", "--target", "web", "--out-name", "wasm", "--out-dir", "./static"]
+watch = { ignore_pattern = "static/*" }
+
+[tasks.serve]
+command = "simple-http-server"
+args = ["-i", "./static/", "-p", "3000", "--nocache", "--try-file", "./static/index.html"]
+```
+
+### index.html 생성
+
+```html
+<!DOCTYPE html>
+<!-- 서버에서 호출될 index.html 생성(static 폴더하위에 생성) -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>[프로젝트명]</title>
+    <script type="module">
+      import init from '/wasm.js';
+      init();
+    </script>
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body></body>
+</html>
+```
+
+### 예제코드
+
+[https://github.com/seungahhong/webassembly-tutorial](https://github.com/seungahhong/webassembly-tutorial)
+
+### 추가설명
 
 Yew:
 
-[WebAssembly를](https://webassembly.org/) 사용하여 다중 스레드 프론트 엔드 웹 앱을 만들기 위한 최신 [Rust](https://www.rust-lang.org/) 프레임워크
+[WebAssembly](https://webassembly.org/)를 사용하여 다중 스레드 프론트 엔드 웹 앱을 만들기 위한 최신 [Rust](https://www.rust-lang.org/) 프레임워크
 
 DOM API 호출을 최소화
 
@@ -141,9 +220,9 @@ const rust = import("./wasm_greet"); // js -> rust
 rust.then(m => m.greet("World!"));
 ```
 
-[lib.rs](http://lib.rs) → rust에서 실행파일은 [main.rs](http://main.rs), 라이브러리로 생성 시 lib.rs 생성(cargo new --lib [프로젝트명])
+lib.rs → rust에서 실행파일은 main.rs, 라이브러리로 생성 시 lib.rs 생성(cargo new --lib [프로젝트명])
 
-[mod.rs](http://mod.rs) → javscript index.js
+mod.rs → javascript index.js
 
 문법
 
@@ -157,8 +236,10 @@ type → typescript type
 
 → 빌드 시 \_bg.wasm 최적화된 코드로 변경
 
-참고사항
+# 참고사항
 
+- [https://www.sheshbabu.com/posts/rust-wasm-yew-single-page-application/](https://www.sheshbabu.com/posts/rust-wasm-yew-single-page-application/)
+- [https://frontdev.tistory.com/entry/Rust로-SPA-만들기-1-리스트-만들기](https://frontdev.tistory.com/entry/Rust%EB%A1%9C-SPA-%EB%A7%8C%EB%93%A4%EA%B8%B0-1-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 - [https://johnresig.com/blog/asmjs-javascript-compile-target/](https://johnresig.com/blog/asmjs-javascript-compile-target/)
 - [https://m.blog.naver.com/z1004man/221914280533](https://m.blog.naver.com/z1004man/221914280533)
 - [https://d2.naver.com/helloworld/8257914](https://d2.naver.com/helloworld/8257914)

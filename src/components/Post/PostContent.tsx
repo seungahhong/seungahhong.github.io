@@ -127,9 +127,12 @@ const TocRenderer = styled.aside`
     & li {
       margin-top: 5px;
 
-      & a.reach {
-        color: #000000;
-        transform: scale(1.05);
+      & a {
+        display: inline-block;
+        &.reach {
+          color: #000000;
+          transform: scale(1.05);
+        }
       }
     }
   }
