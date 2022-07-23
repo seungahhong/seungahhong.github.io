@@ -179,7 +179,7 @@ args = ["-i", "./static/", "-p", "3000", "--nocache", "--try-file", "./static/in
 ### webassembly 빌드
 
 ```bash
-cargo make build
+$ argo make build
 ```
 
 ### index.html 생성
@@ -204,7 +204,7 @@ cargo make build
 ### 서버실행
 
 ```bash
-cargo make serve
+$ cargo make serve
 ```
 
 ### 예제코드
