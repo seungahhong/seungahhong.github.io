@@ -146,7 +146,7 @@ const MarkdownRenderer = styled.article`
   // Renderer Style
   display: flex;
   flex-direction: column;
-  word-break: break-all;
+  word-break: keep-all;
   margin-bottom: 250px;
   padding: 0 20px;
   width: 100%;
@@ -251,6 +251,7 @@ const MarkdownRenderer = styled.article`
   }
 
   summary {
+    cursor: pointer;
     font-size: 24px;
   }
 `;
