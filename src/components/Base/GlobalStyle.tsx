@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
   #___gatsby {
     height: 100%;
     word-break: keep-all;
+    overflow-wrap: break-word;
   }
   #gatsby-focus-wrapper {
     height: 100%;
