@@ -6,11 +6,13 @@ import React, {
   useEffect,
   useCallback,
 } from 'react';
+import styled from 'styled-components';
 import { PostListItemType } from 'types/PostItem';
 import Template from 'components/Base/Template';
 import PostList from 'components/Post/PostList';
-import PostFilter from 'components/Post/PostFilter';
-import styled from 'styled-components';
+import PostHeadTagFilter from 'components/Post/PostHeadTagFilter';
+import { useIsMobile } from '../helpers/hooks/useMedia';
+import PostAsideFilter from 'components/Post/PostAsideFilter';
 
 type IndexPageProps = {
   data: {
@@ -37,12 +39,20 @@ type IndexPageProps = {
 };
 
 const PostWrapper = styled.div`
+  display: flex;
   margin-left: 20%;
+  margin-top: 20px;
   padding: 0 24px;
 
   @media (max-width: 1024px) {
     margin-left: 0;
   }
+`;
+
+const PostContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 `;
 
 const IndexPage: FunctionComponent<IndexPageProps> = ({
@@ -62,6 +72,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
   const [posts, setPosts] = useState<PostListItemType[]>(edges);
   const [type, setType] = useState<string>('CATEGORY');
   const [filter, setFilter] = useState<string>('ALL');
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     setPosts(() => {
@@ -77,8 +88,20 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
     });
   }, [type, filter, edges]);
 
-  const handleType = useCallback((type: string) => {
-    setFilter('ALL');
+  useEffect(() => {
+    if (isMobile) {
+      setType(prev => {
+        if (prev === 'CATEGORY') {
+          setFilter('ALL');
+        }
+
+        return 'TAGS';
+      });
+    }
+  }, [isMobile]);
+
+  const handleFilter = useCallback((type, filter) => {
+    setFilter(filter);
     setType(type);
   }, []);
 
@@ -91,14 +114,24 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
       isVisibleHeader
     >
       <PostWrapper>
-        <PostFilter
-          posts={edges}
-          filter={filter}
-          type={type}
-          handleType={handleType}
-          handleFilter={setFilter}
-        />
-        <PostList posts={posts} INIT_PER_PAGE_NUMBER={INIT_PER_PAGE_NUMBER} />
+        <PostContent>
+          {isMobile && (
+            <PostHeadTagFilter
+              posts={edges}
+              filter={filter}
+              handleFilter={handleFilter}
+            />
+          )}
+          <PostList posts={posts} INIT_PER_PAGE_NUMBER={INIT_PER_PAGE_NUMBER} />
+        </PostContent>
+        {!isMobile && (
+          <PostAsideFilter
+            type={type}
+            posts={edges}
+            filter={filter}
+            handleFilter={handleFilter}
+          />
+        )}
       </PostWrapper>
     </Template>
   );
