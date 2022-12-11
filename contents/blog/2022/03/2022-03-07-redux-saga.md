@@ -4,7 +4,7 @@ title: redux-saga
 date: 2022-03-07
 published: 2022-03-07
 category: 개발
-tags: ['state', 'redux']
+tags: ['상태관리']
 comments: true,
 thumbnail: './assets/07/thumbnail.png'
 github: 'https://github.com/seungahhong/states-todos'

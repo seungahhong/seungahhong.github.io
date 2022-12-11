@@ -4,7 +4,7 @@ title: Front-End Performance
 date: 2020-09-12
 published: 2020-09-12
 category: 개발
-tags: ['fe-performance']
+tags: ['아카이브']
 comments: true
 thumbnail: './images/12/thumbnail.png'
 github: 'https://github.com/gmm117/gmm117.github.io'
