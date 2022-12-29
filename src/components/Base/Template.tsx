@@ -71,14 +71,14 @@ const Template: FunctionComponent<TemplateProps> = function ({
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
         <meta property="og:site_name" content={title} />
-        <meta property="og:image" content={childImageSharp.fluid.base64} />
+        <meta property="og:image" content={childImageSharp.fluid.src} />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:site" content="seungah.hong" />
         <meta name="twitter:creator" content="seungah.hong" />
-        <meta name="twitter:image" content={childImageSharp.fluid.base64} />
+        <meta name="twitter:image" content={childImageSharp.fluid.src} />
 
         <meta
           name="google-site-verification"
