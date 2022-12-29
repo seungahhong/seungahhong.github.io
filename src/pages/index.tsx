@@ -103,6 +103,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
   const handleFilter = useCallback((type, filter) => {
     setFilter(filter);
     setType(type);
+    window.scrollTo(0, 0);
   }, []);
 
   return (

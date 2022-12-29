@@ -1,6 +1,8 @@
 import React, { FunctionComponent, ReactNode } from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 import Header from './Header';
 import Footer from './Footer';
 import GlobalStyle from './GlobalStyle';
@@ -19,6 +21,14 @@ type TemplateProps = {
   children: ReactNode;
 };
 
+type HeaderImageType = {
+  file: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
+};
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -33,6 +43,20 @@ const Template: FunctionComponent<TemplateProps> = function ({
   isVisibleHeader,
   children,
 }) {
+  const {
+    file: { childImageSharp },
+  } = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "images/main.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <Container>
       <Helmet>
@@ -47,12 +71,14 @@ const Template: FunctionComponent<TemplateProps> = function ({
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
         <meta property="og:site_name" content={title} />
+        <meta property="og:image" content={childImageSharp.fluid.base64} />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:site" content="seungah.hong" />
         <meta name="twitter:creator" content="seungah.hong" />
+        <meta name="twitter:image" content={childImageSharp.fluid.base64} />
 
         <meta
           name="google-site-verification"
