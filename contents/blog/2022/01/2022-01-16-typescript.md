@@ -150,7 +150,7 @@ interface Props {
 const PrintName: React.FC<Props> = ({ name = '' }) => {
   return (
     <div>
-      <p style={{ fontWeight: props.priority ? 'bold' : 'normal' }}>{name}</p>
+      <p style={ fontWeight: props.priority ? 'bold' : 'normal' }>{name}</p>
     </div>
   );
 };
@@ -159,7 +159,7 @@ const PrintName: React.FC<Props> = ({ name = '' }) => {
 const PrintName2 = ({ name }: Props) => {
   return (
     <div>
-      <p style={{ fontWeight: props.priority ? 'bold' : 'normal' }}>{name}</p>
+      <p style={ fontWeight: props.priority ? 'bold' : 'normal' }>{name}</p>
     </div>
   );
 };

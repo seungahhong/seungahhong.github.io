@@ -246,7 +246,7 @@ React.useEffect(() => {
   <UseQuery
     key=“todos”
     fn={() => getTodos()}
-    options={{ staleTime: 5000 }}
+    options={ staleTime: 5000 }
   >
     {query => {. . .}}
   </UseQuery>
