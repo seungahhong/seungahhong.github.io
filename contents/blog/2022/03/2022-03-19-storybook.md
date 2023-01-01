@@ -66,30 +66,30 @@ export const ButtonComponent = () => {
       label={text('label', 'Button', 'Props')}
       onClick={action('clicked', 'Props')}
       date={new Date(date('date', new Date(21, 4, 29)))}
-      style={{
-        backgroundColor: color('bgColor', '#000000'),
-        borderRadius: number('circle', 90, {
-          range: true,
-          min: 0,
-          max: 100,
-          step: 1,
-        }),
-        opacity: number('opacity', 1, {
-          min: 0,
-          max: 1,
-          step: 0.1,
-        }),
-        margin: radios(
-          'align',
-          {
-            LeftAlign: '0',
-            RightAlign: '0 0 0 auto',
-            CenterAlign: '0 auto',
-          },
-          '0',
-        ),
-        ...customStyle,
-      }}
+      // style={{
+      //   backgroundColor: color('bgColor', '#000000'),
+      //   borderRadius: number('circle', 90, {
+      //     range: true,
+      //     min: 0,
+      //     max: 100,
+      //     step: 1,
+      //   }),
+      //   opacity: number('opacity', 1, {
+      //     min: 0,
+      //     max: 1,
+      //     step: 0.1,
+      //   }),
+      //   margin: radios(
+      //     'align',
+      //     {
+      //       LeftAlign: '0',
+      //       RightAlign: '0 0 0 auto',
+      //       CenterAlign: '0 auto',
+      //     },
+      //     '0',
+      //   ),
+      //   ...customStyle,
+      // }}
     />
   );
 };
