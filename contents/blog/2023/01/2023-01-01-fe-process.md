@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FE개발프로세스
+title: FE 개발 프로세스
 date: 2023-01-01
 published: 2023-01-01
 category: 개발

@@ -1,6 +1,7 @@
 import React, { FunctionComponent, useRef, useMemo } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 import CommentWidget from './CommentWidget';
 import useScrollSpy from '../../helpers/hooks/useScrollSpy';
@@ -331,7 +332,7 @@ const PostContent: FunctionComponent<PostContentProps> = function ({
             target="_blank"
             size={35}
           >
-            <img src={githubImage?.node.publicURL} alt="" />
+            <img src={githubImage?.node.publicURL} alt="Github Link Image" />
           </SocialLink>
         </div>
       </PostHeadWrapper>

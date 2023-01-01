@@ -12,12 +12,17 @@ const PostItemWrapper = styled(Link)`
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   transition: 0.3s box-shadow;
   cursor: pointer;
 
-  &:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  @media (min-width: 1024px) {
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
   }
 `;
 

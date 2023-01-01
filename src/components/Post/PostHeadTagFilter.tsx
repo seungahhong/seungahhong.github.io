@@ -11,14 +11,10 @@ type PostFilterProps = {
 };
 
 const PostFilterContainer = styled.section`
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: #ffffff;
   margin-bottom: 20px;
   padding: 8px 0;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
 `;
 
 const PostFilterList = styled.ul`
