@@ -135,6 +135,10 @@ const TocRenderer = styled.aside`
         }
       }
     }
+
+    & ul {
+      margin-left: 12px;
+    }
   }
 
   @media (max-width: 1024px) {

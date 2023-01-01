@@ -2,7 +2,6 @@ import React, { FunctionComponent } from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import { useIsMobile } from '../../helpers/hooks/useMedia';
 import { PostFrontmatterType } from 'types/PostItem';
 
 type PostItemProps = PostFrontmatterType & { link: string } & {
