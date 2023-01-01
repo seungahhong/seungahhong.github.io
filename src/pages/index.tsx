@@ -94,7 +94,8 @@ const SocialLink = styled.a<SocialImageType>`
   }
 `;
 
-const HeaderWrapper = styled.div`
+const MobileHeaderWrapper = styled.div`
+  display: none;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -103,6 +104,10 @@ const HeaderWrapper = styled.div`
   & h1 {
     font-size: 24px;
     margin: 12px 0 8px;
+  }
+
+  @media (max-width: 1024px) {
+    display: block;
   }
 `;
 
@@ -178,32 +183,30 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
     >
       <PostWrapper>
         <PostContent>
-          {isMobile && (
-            <HeaderWrapper>
-              <Header>
-                <Link to={'/'}>
-                  <h1>홍승아블로그</h1>
-                </Link>
-                <SocialLink
-                  href={social?.github}
-                  rel="noopener noreferrer"
-                  title="notion"
-                  target="_blank"
-                  size={35}
-                >
-                  <img
-                    src={githubImage?.node.publicURL}
-                    alt="Github Link Image"
-                  />
-                </SocialLink>
-              </Header>
-              <PostHeadTagFilter
-                posts={edges}
-                filter={filter}
-                handleFilter={handleFilter}
-              />
-            </HeaderWrapper>
-          )}
+          <MobileHeaderWrapper>
+            <Header>
+              <Link to={'/'}>
+                <h1>홍승아블로그</h1>
+              </Link>
+              <SocialLink
+                href={social?.github}
+                rel="noopener noreferrer"
+                title="notion"
+                target="_blank"
+                size={35}
+              >
+                <img
+                  src={githubImage?.node.publicURL}
+                  alt="Github Link Image"
+                />
+              </SocialLink>
+            </Header>
+            <PostHeadTagFilter
+              posts={edges}
+              filter={filter}
+              handleFilter={handleFilter}
+            />
+          </MobileHeaderWrapper>
           <PostList posts={posts} INIT_PER_PAGE_NUMBER={INIT_PER_PAGE_NUMBER} />
         </PostContent>
         {!isMobile && (
