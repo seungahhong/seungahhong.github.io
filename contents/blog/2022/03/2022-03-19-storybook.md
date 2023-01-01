@@ -127,7 +127,7 @@ export const Button = ({ primary, size, label, ...props }) => {
 
     - className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
 
-    ```
+    ```jsx
     // stories
     primary={boolean('Primary', true, 'Props')} // Props 그룹일경우
 
@@ -150,7 +150,7 @@ export const Button = ({ primary, size, label, ...props }) => {
 
   - style 동적생성
 
-    ```
+    ```jsx
     <Button
       primary={boolean('Primary', true, 'Props')}
       size={select('Size', ButtonSize, 'md', 'Props')}
@@ -170,15 +170,18 @@ export const Button = ({ primary, size, label, ...props }) => {
           max: 1,
           step: 0.1,
         }),
-        margin: radios('align', {
-          LeftAlign: '0',
-          RightAlign: '0 0 0 auto',
-          CenterAlign: '0 auto',
-        }, '0'),
+        margin: radios(
+          'align',
+          {
+            LeftAlign: '0',
+            RightAlign: '0 0 0 auto',
+            CenterAlign: '0 auto',
+          },
+          '0',
+        ),
         ...customStyle,
-     }}
+      }}
     />
-
     ```
 
 # addon-viewport 적용
