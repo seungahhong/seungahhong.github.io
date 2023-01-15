@@ -138,12 +138,12 @@ const AboutPage: FunctionComponent<AboutPageProps> = ({
                 </Anchor>
               </li>
               <li>
-                <span>Blog:</span>
+                <span>portfolio:</span>
                 <Anchor
-                  href="https://gmm117.github.io/hong-portfolio/"
+                  href="https://seungahhong-portfolio.vercel.app/"
                   target="_blank"
                 >
-                  https://gmm117.github.io/hong-portfolio/
+                  https://seungahhong-portfolio.vercel.app/
                 </Anchor>
               </li>
               <li>
