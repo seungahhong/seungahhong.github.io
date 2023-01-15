@@ -38,7 +38,7 @@ $ yarn deploy
 
 ## Download
 
-You can [download](https://github.com/seungahhong/seungahhong.github) the latest installable version of seungahhong.github.io.
+You can [download](https://github.com/seungahhong/seungahhong.github.io) the latest installable version of seungahhong.github.io.
 
 ## Emailware
 
