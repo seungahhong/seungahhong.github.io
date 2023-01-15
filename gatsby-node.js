@@ -4,6 +4,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 // Setup Import Alias
 exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
   const output = getConfig().output || {};
+  const devtool = getConfig().mode === 'production' ? { devtool: false } : {}; // production mode disabled sourcemap
 
   actions.setWebpackConfig({
     output,
@@ -14,6 +15,7 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
         hooks: path.resolve(__dirname, 'src/hooks'),
       },
     },
+    ...devtool,
   });
 };
 
