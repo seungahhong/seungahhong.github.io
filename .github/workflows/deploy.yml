@@ -39,10 +39,12 @@ jobs:
 
       # gh-pages deploy
       - name: Deploy
-        uses: maxheld83/ghpages@v0.3.0
+        uses: peaceiris/actions-gh-pages@v2
         env:
-          BUILD_DIR: public/
-          GH_PAT: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./public    
+          
 
       # e2e(playwright) 테스트 툴을 설치합니다.
       - name: Install playwright browsers
