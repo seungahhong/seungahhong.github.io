@@ -39,11 +39,10 @@ jobs:
 
       # gh-pages deploy
       - name: Deploy
-        uses: enriikke/gatsby-gh-pages-action@v3
+        uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
-          gatsby-args: --prefix-paths
 
       # e2e(playwright) 테스트 툴을 설치합니다.
       - name: Install playwright browsers
