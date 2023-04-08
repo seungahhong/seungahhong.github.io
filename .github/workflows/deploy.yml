@@ -43,7 +43,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./public
 
       # e2e(playwright) 테스트 툴을 설치합니다.
       - name: Install playwright browsers
