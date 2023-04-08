@@ -39,13 +39,10 @@ jobs:
 
       # gh-pages deploy
       - name: Deploy
-        uses: Cecilapp/GitHub-Pages-deploy@v3
+        uses: maxheld83/ghpages@v0.3.0
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        with:
-          email: ssinga0425@gmail.com
-          build_dir: public
-          branch: master
+          BUILD_DIR: public/
+          GH_PAT: ${{ secrets.ACCESS_TOKEN }}
 
       # e2e(playwright) 테스트 툴을 설치합니다.
       - name: Install playwright browsers
