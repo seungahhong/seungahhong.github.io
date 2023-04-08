@@ -1,0 +1,50 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  ci:
+    name: Run deploy
+    runs-on: ubuntu-latest
+    steps:
+      # 해당 저장소의 코드를 가져옵니다.
+      - name: Git checkout
+        uses: actions/checkout@v3
+
+      # node를 설치합니다.
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # node_modules 캐싱을 이용합니다.
+      - name: Cache yarn dependencies
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # 패키지를 설치합니다.
+      - name: Install dependencies
+        run: gatsby build
+
+      # e2e(playwright) 테스트 툴을 설치합니다.
+      - name: Install playwright browsers
+        run: npx playwright install --with-deps
+
+      # e2e 테스트를 수행합니다.
+      - name: Run e2e tests
+        run: yarn e2e:ci
+
+      # gh-pages deploy
+      - name: Deploy
+        uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: gh-pages
+          gatsby-args: --prefix-paths
