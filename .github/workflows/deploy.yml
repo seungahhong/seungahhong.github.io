@@ -33,14 +33,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      # e2e(playwright) 테스트 툴을 설치합니다.
-      - name: Install playwright browsers
-        run: npx playwright install --with-deps
-
-      # e2e 테스트를 수행합니다.
-      - name: Run e2e tests
-        run: yarn e2e:ci
-
       # gatsby build
       - name: Build gatsby
         run: yarn gatsby build
@@ -52,3 +44,11 @@ jobs:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
+
+      # e2e(playwright) 테스트 툴을 설치합니다.
+      - name: Install playwright browsers
+        run: npx playwright install --with-deps
+
+      # e2e 테스트를 수행합니다.
+      - name: Run e2e tests
+        run: yarn e2e:ci
