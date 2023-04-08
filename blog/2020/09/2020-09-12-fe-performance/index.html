@@ -1,0 +1,968 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta data-react-helmet="true" name="naver-site-verification" content="ab246841529a97bcf76ac7ed42d5a5c457a381bc"/><meta data-react-helmet="true" name="google-site-verification" content="DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"/><meta data-react-helmet="true" name="twitter:image" content="https://seungahhong.github.io/static/b830d53e6576e2d3cb683d59816de81a/ee604/main.png"/><meta data-react-helmet="true" name="twitter:creator" content="seungah.hong"/><meta data-react-helmet="true" name="twitter:site" content="seungah.hong"/><meta data-react-helmet="true" name="twitter:description" content="홍승아 기술 블로그에 오신걸 환영합니다."/><meta data-react-helmet="true" name="twitter:title" content="홍승아 기술 블로그"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" property="og:image" content="https://seungahhong.github.io/static/b830d53e6576e2d3cb683d59816de81a/ee604/main.png"/><meta data-react-helmet="true" property="og:site_name" content="홍승아 기술 블로그"/><meta data-react-helmet="true" property="og:url" content="https://seungahhong.github.io"/><meta data-react-helmet="true" property="og:description" content="홍승아 기술 블로그에 오신걸 환영합니다."/><meta data-react-helmet="true" property="og:title" content="홍승아 기술 블로그"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" http-equiv="Content-Type" content="text/html;charset=UTF-8"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0"/><meta data-react-helmet="true" name="description" content="홍승아 기술 블로그에 오신걸 환영합니다."/><meta name="generator" content="Gatsby 4.14.1"/><style data-href="/styles.0109ae7f897db2fecdd6.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><title data-react-helmet="true">홍승아 기술 블로그</title><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><style data-styled="" data-styled-version="5.3.5">.pcuhR{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:1;-ms-flex:1;flex:1;position:relative;margin:0 auto;-webkit-align-items:start;-webkit-box-align:start;-ms-flex-align:start;align-items:start;max-width:1024px;}/*!sc*/
+@media (max-width:1024px){.pcuhR{margin:0;}}/*!sc*/
+data-styled.g1[id="PostContent__PostWrapper-sc-9jovib-0"]{content:"pcuhR,"}/*!sc*/
+.cHdfpx{border-bottom:1px solid #e6e6e6;}/*!sc*/
+.cHdfpx > div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:1;-ms-flex:1;flex:1;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin:0 auto;max-width:1024px;padding:0 20px;}/*!sc*/
+@media (max-width:1024px){.cHdfpx > div{margin:0;min-width:auto;}}/*!sc*/
+.cHdfpx h1{font-size:24px;margin:12px 0 8px;}/*!sc*/
+data-styled.g2[id="PostContent__PostHeadWrapper-sc-9jovib-1"]{content:"cHdfpx,"}/*!sc*/
+.kEmWTx{width:80%;}/*!sc*/
+@media (max-width:1024px){.kEmWTx{width:100%;}}/*!sc*/
+data-styled.g3[id="PostContent__PostContentWrapper-sc-9jovib-2"]{content:"kEmWTx,"}/*!sc*/
+.dlUvrB{padding:0 20px;margin-bottom:48px;}/*!sc*/
+.dlUvrB > h1{margin-bottom:8px;font-size:40px;}/*!sc*/
+data-styled.g4[id="PostContent__PostTitle-sc-9jovib-3"]{content:"dlUvrB,"}/*!sc*/
+.bIaAsx{display:inline-block;margin:12px 0 0 10px;position:-webkit-sticky;position:sticky;top:0;left:10px;-webkit-transition:all 0.125s esse-in 0s;transition:all 0.125s esse-in 0s;min-width:200px;color:rgba(0,0,0,0.4);padding:0 0.75rem;border-left:2px solid gray;}/*!sc*/
+.bIaAsx ul{list-style:none;}/*!sc*/
+.bIaAsx ul li{margin-top:5px;}/*!sc*/
+.bIaAsx ul li a{display:inline-block;}/*!sc*/
+.bIaAsx ul li a.reach{color:#000000;-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05);}/*!sc*/
+.bIaAsx ul ul{margin-left:12px;}/*!sc*/
+@media (max-width:1024px){.bIaAsx{display:none;}}/*!sc*/
+data-styled.g5[id="PostContent__TocRenderer-sc-9jovib-4"]{content:"bIaAsx,"}/*!sc*/
+.Lmopp{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;word-break:keep-all;margin-bottom:250px;padding:0 20px;width:100%;line-height:1.8;font-size:16px;font-weight:400;}/*!sc*/
+@media (max-width:1024px){.Lmopp{margin-bottom:48px;}}/*!sc*/
+.Lmopp p{padding:3px 0;}/*!sc*/
+.Lmopp h1,.Lmopp h2,.Lmopp h3{font-weight:800;}/*!sc*/
+.Lmopp * + h1{margin-top:60px;}/*!sc*/
+.Lmopp * + h2{margin-top:40px;}/*!sc*/
+.Lmopp * + h3{margin-top:30px;}/*!sc*/
+.Lmopp hr + h1,.Lmopp hr + h2,.Lmopp hr + h3{margin-top:0;}/*!sc*/
+.Lmopp h1{font-size:30px;}/*!sc*/
+.Lmopp h2{font-size:25px;}/*!sc*/
+.Lmopp h3{font-size:20px;}/*!sc*/
+.Lmopp blockquote{margin:30px 0;padding:5px 15px;border-left:2px solid #000000;font-weight:800;}/*!sc*/
+.Lmopp ol,.Lmopp ul{margin-left:20px;padding:10px 0;}/*!sc*/
+.Lmopp hr{border:1px solid #000000;margin:100px 0;}/*!sc*/
+.Lmopp a{color:#4263eb;-webkit-text-decoration:underline;text-decoration:underline;}/*!sc*/
+.Lmopp pre[class*='language-']{margin:30px 0;padding:15px;font-size:15px;}/*!sc*/
+.Lmopp pre[class*='language-']::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.5);border-radius:3px;}/*!sc*/
+.Lmopp code[class*='language-'],.Lmopp pre[class*='language-']{tab-size:2;}/*!sc*/
+.Lmopp img{width:100%;}/*!sc*/
+.Lmopp summary{cursor:pointer;font-size:24px;}/*!sc*/
+data-styled.g6[id="PostContent__MarkdownRenderer-sc-9jovib-5"]{content:"Lmopp,"}/*!sc*/
+.ffkTpb{margin:40px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;list-style:none;padding:0 20px;}/*!sc*/
+.ffkTpb h5{font-size:24px;margin-bottom:8px;}/*!sc*/
+.ffkTpb a{border-radius:6px;font-size:20px;color:#cc007a;font-weight:700;}/*!sc*/
+data-styled.g7[id="PostContent__PostNavigator-sc-9jovib-6"]{content:"ffkTpb,"}/*!sc*/
+.eIcbrr{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;background:rgba(255,255,255,0.7);color:#161b21;width:40px;height:40px;min-width:40px;font-size:20px;border:none;border-radius:50%;}/*!sc*/
+.eIcbrr > img{width:35px;height:35px;}/*!sc*/
+data-styled.g8[id="PostContent__SocialLink-sc-9jovib-7"]{content:"eIcbrr,"}/*!sc*/
+.cKqBUF{display:grid;place-items:center;margin-top:auto;margin-left:0;padding:50px 0;font-size:15px;text-align:center;line-height:1.5;}/*!sc*/
+@media (max-width:1024px){.cKqBUF{margin-left:0;}}/*!sc*/
+data-styled.g16[id="Footer__FooterWrapper-sc-rphy7j-0"]{content:"cKqBUF,"}/*!sc*/
+html{line-height:1.15;-webkit-text-size-adjust:100%;}/*!sc*/
+body{margin:0;}/*!sc*/
+main{display:block;}/*!sc*/
+h1{font-size:2em;margin:0.67em 0;}/*!sc*/
+hr{box-sizing:content-box;height:0;overflow:visible;}/*!sc*/
+pre{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+a{background-color:transparent;}/*!sc*/
+abbr[title]{border-bottom:none;-webkit-text-decoration:underline;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}/*!sc*/
+b,strong{font-weight:bolder;}/*!sc*/
+code,kbd,samp{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+small{font-size:80%;}/*!sc*/
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}/*!sc*/
+sub{bottom:-0.25em;}/*!sc*/
+sup{top:-0.5em;}/*!sc*/
+img{border-style:none;}/*!sc*/
+button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}/*!sc*/
+button,input{overflow:visible;}/*!sc*/
+button,select{text-transform:none;}/*!sc*/
+button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}/*!sc*/
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}/*!sc*/
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}/*!sc*/
+fieldset{padding:0.35em 0.75em 0.625em;}/*!sc*/
+legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}/*!sc*/
+progress{vertical-align:baseline;}/*!sc*/
+textarea{overflow:auto;}/*!sc*/
+[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}/*!sc*/
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}/*!sc*/
+[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}/*!sc*/
+[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}/*!sc*/
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}/*!sc*/
+details{display:block;}/*!sc*/
+summary{display:list-item;}/*!sc*/
+template{display:none;}/*!sc*/
+[hidden]{display:none;}/*!sc*/
+*{padding:0;margin:0;box-sizing:border-box;}/*!sc*/
+html,body,#___gatsby{height:100%;word-break:keep-all;overflow-wrap:break-word;}/*!sc*/
+#gatsby-focus-wrapper{height:100%;}/*!sc*/
+a,a:hover{color:inherit;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}/*!sc*/
+.utterances{max-width:1024px;margin:0 auto;}/*!sc*/
+data-styled.g18[id="sc-global-dhQtTb1"]{content:"sc-global-dhQtTb1,"}/*!sc*/
+.Kcdb{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;}/*!sc*/
+data-styled.g19[id="Template__Container-sc-1a9t0ug-0"]{content:"Kcdb,"}/*!sc*/
+</style><style type="text/css">
+    .custom-class.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .custom-class.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .custom-class svg,
+    h2 .custom-class svg,
+    h3 .custom-class svg,
+    h4 .custom-class svg,
+    h5 .custom-class svg,
+    h6 .custom-class svg {
+      visibility: hidden;
+    }
+    h1:hover .custom-class svg,
+    h2:hover .custom-class svg,
+    h3:hover .custom-class svg,
+    h4:hover .custom-class svg,
+    h5:hover .custom-class svg,
+    h6:hover .custom-class svg,
+    h1 .custom-class:focus svg,
+    h2 .custom-class:focus svg,
+    h3 .custom-class:focus svg,
+    h4 .custom-class:focus svg,
+    h5 .custom-class:focus svg,
+    h6 .custom-class:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="canonical" href="https://seungahhong.github.io/blog/2020/09/2020-09-12-fe-performance/" data-baseprotocol="https:" data-basehost="seungahhong.github.io"/><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'G-TYGQRJE1B8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><link rel="preconnect" href="https://www.googletagmanager.com"/><link rel="dns-prefetch" href="https://www.googletagmanager.com"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-G8Z1HZWWYL"></script><script>
+      
+      
+      if(true) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-G8Z1HZWWYL', {"send_page_view":false});
+      }
+      </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="Template__Container-sc-1a9t0ug-0 Kcdb"><header class="PostContent__PostHeadWrapper-sc-9jovib-1 cHdfpx"><div><a href="/"><h1>홍승아블로그</h1></a><a href="https://github.com/seungahhong" rel="noopener noreferrer" title="notion" target="_blank" size="35" class="PostContent__SocialLink-sc-9jovib-7 eIcbrr"><img src="/static/4a6687a74051de2b3536e95d0b6c992a/github.svg" alt="Github Link Image"/></a></div></header><div class="PostContent__PostWrapper-sc-9jovib-0 pcuhR"><div class="PostContent__PostContentWrapper-sc-9jovib-2 kEmWTx"><div class="PostContent__PostTitle-sc-9jovib-3 dlUvrB"><h1>Front-End Performance</h1><time>2020.09.12</time></div><article class="PostContent__MarkdownRenderer-sc-9jovib-5 Lmopp"><h1 style="font-weight:bold">javascript 메모리 누수</h1>
+<h2 id="의도치-않은-전역-변수" style="position:relative;"><a href="#%EC%9D%98%EB%8F%84%EC%B9%98-%EC%95%8A%EC%9D%80-%EC%A0%84%EC%97%AD-%EB%B3%80%EC%88%98" aria-label="의도치 않은 전역 변수 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>의도치 않은 전역 변수</h2>
+<ul>
+<li>전역변수는 메모리를 해제할 수가 없다.(null 처리 또는 재할당 되지 않는 경우)</li>
+</ul>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// 브라우저의 경우 글로벌 객체는 window다.</span>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">arg</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  bar <span class="token operator">=</span> <span class="token string">'this is a hidden global variable'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>variable <span class="token operator">=</span> <span class="token string">'potential accidental global'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Foo가 호출되면, this는 글로벌 객체인 윈도우를 가리키게 된다.</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// use strict 엄격한 모드로 선언해서 실수를 방지한다.</span></code></pre></div>
+<h2 id="잊혀진-타이머-또는-콜백" style="position:relative;"><a href="#%EC%9E%8A%ED%98%80%EC%A7%84-%ED%83%80%EC%9D%B4%EB%A8%B8-%EB%98%90%EB%8A%94-%EC%BD%9C%EB%B0%B1" aria-label="잊혀진 타이머 또는 콜백 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>잊혀진 타이머 또는 콜백</h2>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> someResource <span class="token operator">=</span> <span class="token function">getData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> node <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'Node'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Do stuff with node and someResource.</span>
+        node<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>someResource<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// 이 element는 onClick에서 참조됨</span>
+<span class="token comment">// 과거 특정 브라우저 (IE6)가 순환 참조를 잘 관리하지 못했기 때문에 이 부분은 특히 중요</span>
+<span class="token keyword">var</span> element <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    element<span class="token punctuation">.</span>innerHtml <span class="token operator">=</span> <span class="token string">'text'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> onClick<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 객체를 없애기전에 이러한 observer를 명시적으로 제거하는 것은 좋은 관례</span>
+element<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> onClick<span class="token punctuation">)</span><span class="token punctuation">;</span>
+element<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<h2 id="dom-외부에서의-참조" style="position:relative;"><a href="#dom-%EC%99%B8%EB%B6%80%EC%97%90%EC%84%9C%EC%9D%98-%EC%B0%B8%EC%A1%B0" aria-label="dom 외부에서의 참조 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DOM 외부에서의 참조</h2>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">//</span>
+<span class="token keyword">var</span> elements <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">button</span><span class="token operator">:</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">image</span><span class="token operator">:</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'image'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">text</span><span class="token operator">:</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'text'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">doStuff</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  image<span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token string">'http://some.url/image'</span><span class="token punctuation">;</span>
+  button<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>text<span class="token punctuation">.</span>innerHTML<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">removeButton</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 이 시점에서도 여전히 elements에서 button의 참조를 가지고 있다.</span>
+  <span class="token comment">// 이 경우 button element는 여전히 메모리에 있으며, GC에 의해 해제 될 수 없다.</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h1 style="font-weight:bold">프론트엔드 성능 최적화</h1>
+<h2 style="color:#ff6b6b">렌더링 최적화 - Reflow, Repaint 줄이기</h2>
+지금까지 웹 페이지가 렌더링되는 과정을 알아보았습니다. 그렇다면 웹 성능 최적화를 어떻게 할 수 있을까요? 이를 알려면 Reflow와 Repaint에 대해 먼저 짚고 넘어가야 합니다.
+<h2 style="color:#ff6b6b">Reflow (Layout)</h2>
+위에서 언급된 렌더링 과정을 거친 뒤에 최종적으로 페이지가 그려진다고 해서 렌더링 과정이 다 끝난것이 아닙니다. 어떠한 액션이나 이벤트에 따라 html 요소의 크기나 위치등 레이아웃 수치를 수정하면 그에 영향을 받는 자식 노드나 부모 노드들을 포함하여 Layout 과정을 다시 수행하게 됩니다. 이렇게 되면 Render Tree와 각 요소들의 크기와 위치를 다시 계산하게 됩니다. 이러한 과정을 Reflow라고 합니다.
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// reflow 발생 예제</span>
+<span class="token keyword">function</span> <span class="token function">reflow</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'content'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>width <span class="token operator">=</span> <span class="token string">'600px'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3 style="color:#ff6b6b">Reflow가 일어나는 대표적인 경우는 아래와 같습니다.</h3>
+- 페이지 초기 렌더링 시(최초 Layout 과정)
+- 윈도우 리사이징 시 (Viewport 크기 변경시)
+- 노드 추가 또는 제거
+- 요소의 위치, 크기 변경 (left, top, margin, padding, border, width, height, 등..)
+- 폰트 변경 과(텍스트 내용) 이미지 크기 변경(크기가 다른 이미지로 변경 시)
+<h2 style="color:#ff6b6b">Repaint (Paint)</h2>
+<p>Reflow만 수행되면 실제 화면에 반영되지 않습니다. 위에서 언급된 렌더링 과정과 같이 Render Tree를 다시 화면에 그려주는 과정이 필요합니다. 결국은 Paint 단계가 다시 수행되는 것이며 이를 Repaint 라고 합니다.</p>
+<p>하지만 무조건 Reflow가 일어나야 Repaint가 일어나는것은 아닙니다. background-color, visibility와 같이 레이아웃에는 영향을 주지 않는 스타일 속성이 변경되었을 때는 Reflow를 수행할 필요가 없기 때문에 Repaint만 수행하게 됩니다.</p>
+<h2 style="color:#ff6b6b">Reflow, Repaint 줄이기</h2>
+<p>이번 포스팅에서 다룰 성능 최적화는 단순히 Reflow, Repaint 연산을 줄이는 방법에 대해 소개하고자 합니다. 아래 내용은 현재까지 조사된 부분만 소개하였습니다. 또한 실제 테스트해본 것이 아닌 이론적인 내용 및 발췌해 온 내용이므로 검증이 필요합니다. 하위 내용은 지속적으로 업데이트 하겠습니다.</p>
+<h2 style="color:#ff6b6b">사용하지 않는 노드에는 visibilty: invisible 보다 display: none을 사용하기</h2>
+visibility invisible은 레이아웃 공간을 차지하기 때문에 reflow의 대상이 됩니다. 하지만  display none은 Layout 공간을 차지하지 않아 Render Tree에서 아예 제외됩니다.
+<h2 style="color:#ff6b6b">Reflow, Repaint 가 발생하는 속성 사용 피하기</h2>
+아래는 각각 Reflow, Repaint가 일어나는 CSS 속성들 입니다. Reflow가 일어나면 Repaint는 필연적으로 일어나야 하기 때문에 가능하다면 Reflow가 발생하는 속성보다 Repaint 만 발생하는 속성을 사용하는것이 좋습니다.
+<h3 style="color:#ff6b6b">Reflow가 일어나는 대표적인 속성</h3>
+<table>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid #444444; padding: 2px;">position</td>
+            <td style="border: 1px solid #444444; padding: 2px;">width</td>
+            <td style="border: 1px solid #444444; padding: 2px;">height</td>
+            <td style="border: 1px solid #444444; padding: 2px;">left</td>
+            <td style="border: 1px solid #444444; padding: 2px;">top</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #444444; padding: 2px;">right</td>
+            <td style="border: 1px solid #444444; padding: 2px;">bottom</td>
+            <td style="border: 1px solid #444444; padding: 2px;">margin</td>
+            <td style="border: 1px solid #444444; padding: 2px;">padding</td>
+            <td style="border: 1px solid #444444; padding: 2px;">border</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #444444; padding: 2px;">border-width</td>
+            <td style="border: 1px solid #444444; padding: 2px;">clear</td>
+            <td style="border: 1px solid #444444; padding: 2px;">display</td>
+            <td style="border: 1px solid #444444; padding: 2px;">float</td>
+            <td style="border: 1px solid #444444; padding: 2px;">font-family</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #444444; padding: 2px;">font-size</td>
+            <td style="border: 1px solid #444444; padding: 2px;">font-weight</td>
+            <td style="border: 1px solid #444444; padding: 2px;">line-height</td>
+            <td style="border: 1px solid #444444; padding: 2px;">min-height</td>
+            <td style="border: 1px solid #444444; padding: 2px;">overflow</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #444444; padding: 2px;">text-align</td>
+            <td style="border: 1px solid #444444; padding: 2px;">vertical-align</td>
+            <td style="border: 1px solid #444444; padding: 2px;">white-space</td>
+            <td style="border: 1px solid #444444; padding: 2px;">...</td>
+        </tr>
+    </tbody>
+</table>
+<h3 style="color:#ff6b6b">Repaint가 일어나는 대표적인 속성</h3>
+<table>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid #444444; padding: 2px;">background</td>
+            <td style="border: 1px solid #444444; padding: 2px;">background-image</td>
+            <td style="border: 1px solid #444444; padding: 2px;">background-position</td>
+            <td style="border: 1px solid #444444; padding: 2px;">background-repeat</td>
+            <td style="border: 1px solid #444444; padding: 2px;">background-size</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #444444; padding: 2px;">border-radius</td>
+            <td style="border: 1px solid #444444; padding: 2px;">border-style</td>
+            <td style="border: 1px solid #444444; padding: 2px;">box-shadow</td>
+            <td style="border: 1px solid #444444; padding: 2px;">color</td>
+            <td style="border: 1px solid #444444; padding: 2px;">line-style</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #444444; padding: 2px;">outline</td>
+            <td style="border: 1px solid #444444; padding: 2px;">outline-color</td>
+            <td style="border: 1px solid #444444; padding: 2px;">outline-style</td>
+            <td style="border: 1px solid #444444; padding: 2px;">outline-width</td>
+            <td style="border: 1px solid #444444; padding: 2px;">text-decoration</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #444444; padding: 2px;">visibility</td>
+            <td style="border: 1px solid #444444; padding: 2px;">....</td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+<li><a href="https://csstriggers.com/" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">CSS Trigger</a></li>
+<li><a href="https://docs.google.com/spreadsheets/u/0/d/1Hvi0nu2wG3oQ51XRHtMv-A_ZlidnwUYwgQsPQUg1R2s/pub?single=true&gid=0&output=html"  target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">Reflow &#x26; Repaint</a></li>
+</ul>
+<p>또한 Reflow Repaint가 일어나지 않는 transform, opacitiy와 같은 속성도 있습니다. 따라서 left, right, width, height 보다 transform을, visibility/display 보다 opacitiy를 사용하는 것이 성능 개선에 도움이 됩니다.</p>
+<h2 style="color:#ff6b6b">영향을 주는 노드 줄이기</h2>
+Javascript + Css를 조합하여 애니메이션이 많거나 레이아웃 변화가 많은 요소의 경우 position을 absolute 또는 fixed를 사용하여 영향을 받는 주변 노드들을 줄일 수 있습니다. fixed와 같이 영향을 받는 노드가 전혀 없는 경우 reflow과정이 전혀 필요가 없어지기 때문에 Repaint 연산비용만 들게 됩니다.
+<p>또다른 방법은 애니메이션 시작시 요소를 absolute, fixed로 변경 후 애니메이션이 종료되었을 때 원상복구 하는 방법도 Reflow, Repaint 연산을 줄이는대에 도움이 됩니다.</p>
+<h2 style="color:#ff6b6b">프레임 줄이기</h2>
+단순히 생각하면 0.1초에 1px씩 이동하는 요소보다 3px씩 이동하는 요소가 Reflow, Repaint 연산비용이 3배가 줄어든다고 볼 수 있습니다. 따라서 부드러운 효과를 조금 줄여 성능을 개선할 수 있습니다.
+<h1 id="reflow를-피하거나-최소화하는-방법" style="position:relative;"><a href="#reflow%EB%A5%BC-%ED%94%BC%ED%95%98%EA%B1%B0%EB%82%98-%EC%B5%9C%EC%86%8C%ED%99%94%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95" aria-label="reflow를 피하거나 최소화하는 방법 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>reflow를 피하거나 최소화하는 방법</h1>
+<ul>
+<li>
+<p>클래스 변화에 따른 스타일 변화를 원할 경우, 최대한 DOM 구조 상 끝단에 위치한 노드에 추가합니다.</p>
+</li>
+<li>
+<p>DOM 트리에서 가장 말단에 있는 노드에 클래스를 추가</p>
+</li>
+<li>
+<p>애니메이션이 들어간 엘리먼트는 가급적 position: fixed 또는 position: absolute로 지정</p>
+<ul>
+<li>위치 이동을 구현한 애니메이션(넓이나 높이값 변경 등)은 reflow가 짧은 시간 내 반복적으로 일어나게 됩니다. 그래서 사용하지 않는 것이 가장 바람직하나 반드시 사용해야 한다면 애니메이션이 들어간 요소에 position: absolute 혹은 position: fixed 속성을 적용합니다. 다른 요소에는 영향을 끼치지 않으므로 페이지 전체가 아닌 해당 요소만 reflow가 발생합니다.</li>
+</ul>
+</li>
+<li>
+<p>JS를 통해 스타일변화를 주어야 할 경우, 가급적 한번에 처리</p>
+</li>
+</ul>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// style을 여러번 호출(7.7ms), 클래스를 통하여 스타일 변화(5.3ms)</span>
+<span class="token keyword">var</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> div<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  div<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token string">'80px'</span><span class="token punctuation">;</span>
+  div<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span> <span class="token string">'#00f'</span><span class="token punctuation">;</span>
+  div<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>display <span class="token operator">=</span> <span class="token string">'inline-block'</span><span class="token punctuation">;</span>
+  div<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>overflow <span class="token operator">=</span> <span class="token string">'hidden'</span><span class="token punctuation">;</span>
+  div<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>fontSize <span class="token operator">=</span> <span class="token string">'40px'</span><span class="token punctuation">;</span>
+  div<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>color <span class="token operator">=</span> <span class="token string">'#fff'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> div<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  div<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>className <span class="token operator">=</span> <span class="token string">'block'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>인라인 스타일을 최대한 배제
+<ul>
+<li>인라인 스타일(Inline Style): 한 줄짜리 짤막한 스타일, 태그 안에 직접 지정하여 사용. HTML과 섞어서 사용</li>
+</ul>
+</li>
+</ul>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>p style<span class="token operator">=</span><span class="token string">"color:#ff0a00"</span><span class="token operator">></span>이 문장은 인라인 스타일이 적용되었습니다<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span></code></pre></div>
+<ul>
+<li>테이블 레이아웃을 피해야한다.
+<ul>
+<li>테이블 레이아웃을 사용하게 되면 테이블 값에 따라 넓이를 계산하므로 랜더링이 느려집니다. 그러므로 꼭 필요한 경우를 제외하고는 테이블 레이아웃을 사용하지 않는 것이 좋습니다. 만약 사용한다면 CSS 속성 table-layout:fixed를 사용하면 랜더링을 조금 더 빠르게 할 수 있습니다.</li>
+</ul>
+</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">10×10 테이블
+table-layout: fixed 미 적용
+table-layout: fixed 적용
+table-layout: fixed 미 적용(0.6ms) &lt; table-layout: fixed 적용(0.4ms)
+
+100×100 테이블
+table-layout: fixed 미 적용
+table-layout: fixed 적용
+table-layout:fixed 미 적용(35.4ms) &lt; table-layout:fixed 적용(27.1ms)</code></pre></div>
+<ul>
+<li>CSS 하위선택자는 필요한 만큼 정리하는 것이 좋습니다.
+<ul>
+<li>reflow 자체보다는 reflow가 유발시키는 CSS Recalculation에 필요한 내용입니다. CSS 규칙은 오른쪽에서 왼쪽으로 이동합니다. 이 과정에서는 더 이상 일치하는 규칙이 없거나 잘못된 규칙이 나올 때 까지 계속됩니다. 그러므로 불필요한 선택자를 사용하는 것은 성능을 저하시킬 수 있습니다.</li>
+</ul>
+</li>
+</ul>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>reflow_box<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>reflow_list<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>버튼<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>버튼<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+/_ 잘못된 예 _/ .reflow_box .reflow_list li .btn{ display:block; } /_ 올바른 예
+_/ .reflow_list .btn { display:block; }</code></pre></div>
+<ul>
+<li>IE의 경우, CSS에서의 JS표현식을 피하라.
+<ul>
+<li>CSS 표현식(expression)의 비용이 매우 높은 이유는, 문서 전체 또는 문서 중 일부가 Reflow될 때마다 표현식이 다시계산되기 때문이다.</li>
+<li>결국 애니메이션과 같은 변화에 의해 리플로우가 발생했을 때, 경우에 따라 초당 수천, 수만번의 표현식 계산이 진행될 수 있다는 것을 의미한다.</li>
+</ul>
+</li>
+</ul>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">.expression</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">expression</span><span class="token punctuation">(</span>
+    document.documentElement.clientWidth > 0 ? <span class="token string">'1000px'</span><span class="token punctuation">:</span> <span class="token string">'auto'</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>캐쉬를 활용한 Reflow 최소화</li>
+</ul>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token punctuation">.</span>expression <span class="token punctuation">{</span> <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token function">expression</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientWidth <span class="token operator">></span> <span class="token number">0</span> <span class="token operator">?</span> <span class="token string">'1000px'</span> <span class="token operator">:</span> <span class="token string">'auto'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">collect</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> elem <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'container'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> cw <span class="token operator">=</span> elem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>width<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>cw<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>cw <span class="token operator">+</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientWidth<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>DOM 사용 최소화 하기
+<ul>
+<li>노드 조각(document.createDocumentFragment), 노드 사본(elem.cloneNode), 문자 배열([])을 활용한 노드 추가 시 아래와 코드와 같이 DOM 접근을 최소화 하여 비용을 줄일 수 있다.</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>기본적인 엘리먼트 추가 방법.</li>
+</ol>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">notReflow</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> elem <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'container'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> a <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    a<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">'#'</span><span class="token punctuation">;</span>
+    a<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span><span class="token string">'test'</span> <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    elem<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ol start="2">
+<li>노드 조각을 활용한 엘리먼트 추가 방법</li>
+</ol>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">notReflow</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> frag <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createDocumentFragment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> a <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    a<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">'#'</span><span class="token punctuation">;</span>
+    a<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span><span class="token string">'test'</span> <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    frag<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'container'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>frag<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ol start="3">
+<li>노드 사본을 활용한 엘리먼트 추가 방법</li>
+</ol>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">notReflow</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> elem <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'container'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> clone <span class="token operator">=</span> elem<span class="token punctuation">.</span><span class="token function">cloneNode</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> a <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    a<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">'#'</span><span class="token punctuation">;</span>
+    a<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span><span class="token string">'test'</span> <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    clone<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  elem<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>clone<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ol start="4">
+<li>문자 배열을 활용한 엘리먼트 추가 방법</li>
+</ol>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">notReflow</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> h <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    h<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'test'</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'container'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> h<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>상황별 테스트 결과:</p>
+<p>첫 번째 상황: 153ms
+두 번째 상황: 136ms
+세 번째 상황: 129ms
+네 번째 상황: 127ms</p>
+<ul>
+<li>첫 번째 상황을 제외한 나머지 상황들은 성능 상 큰 차이를 보이지 않았지만, 객체 맴버(조각, 사본)를 사용한 방법보다 엘리먼트 속성인 innerHTML을 활용한 문자 배열 추가 방식이 좀 더 빠른 결과를 가져왔다.</li>
+</ul>
+<h1 style="font-weight:bold">참고사이트</h1>
+<ul>
+<li><a href="https://mohwaproject.tistory.com/entry/ReflowLayout-%EA%B3%BC-Repaint-%EA%B3%BC%EC%A0%95-%EB%B0%8F-%EC%B5%9C%EC%A0%81%ED%99%94" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="https://mohwaproject.tistory.com/entry/ReflowLayout-%EA%B3%BC-Repaint-%EA%B3%BC%EC%A0%95-%EB%B0%8F-%EC%B5%9C%EC%A0%81%ED%99%94" target="_blank" rel="nofollow">https://mohwaproject.tistory.com/entry/ReflowLayout-%EA%B3%BC-Repaint-%EA%B3%BC%EC%A0%95-%EB%B0%8F-%EC%B5%9C%EC%A0%81%ED%99%94</a></a></li>
+<li><a href="https://wit.nts-corp.com/2017/06/05/4571" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="https://wit.nts-corp.com/2017/06/05/4571" target="_blank" rel="nofollow">https://wit.nts-corp.com/2017/06/05/4571</a></a></li>
+<li><a href="https://mohwaproject.tistory.com/entry/DOM-%EC%82%AC%EC%9A%A9-%EC%B5%9C%EC%86%8C%ED%99%94-%ED%95%98%EA%B8%B0" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="https://mohwaproject.tistory.com/entry/DOM-%EC%82%AC%EC%9A%A9-%EC%B5%9C%EC%86%8C%ED%99%94-%ED%95%98%EA%B8%B0" target="_blank" rel="nofollow">https://mohwaproject.tistory.com/entry/DOM-%EC%82%AC%EC%9A%A9-%EC%B5%9C%EC%86%8C%ED%99%94-%ED%95%98%EA%B8%B0</a></a></li>
+</ul>
+<h1 style="font-weight:bold">프론트엔드 성능을 향상시키는 코딩방법</h1>
+<ul>
+<li>배열 대신 객체/맵을 사용
+<ul>
+<li><a href="https://jsperf.com/finding-element-object-vs-map-vs-array/1" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">참고사이트</a></li>
+</ul>
+</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 961px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/042619a299649670746f9f3a81adcaaf/4f70e/performance1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 73.828125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC7UlEQVR42o2SyW/bRhjF9cf20FMPPRTJwT0kcW4FivZQoOiS9OAkiFu5aIHC6YraWQrItR3Zki3JFrWQHA6HO01K3H4FqShpjB76AQ8zBGfevPe+r7X5cJ+7j56x+egpdx7scefBPpsPn/Lh/d/44POfuP3Nz2x8/YQbX+xy86sn3Pxyl437vzbnbm/tNbi1tcenOy/4aPsZrc/+GPPx7hmf/DLk3nOd7UPJ478l7ZcOj49tfjhx2Okqtg9tvjsQtI8U358G7HS912h3XdqdOd92dFpz0+Kk12M01vA9l0DqXHmSPHbx1QxlTvDUjNixiHWNVJlUiwiKlDIJoN4DrjKJQ4fWYCa5FB6DuY1ue6SLBXGSki6WxGlCnKyRchXFJEnKMsvfoCxZOgHpQZ/F0Tmts4nJfueYg96IqSG5HI0wTRPHUczNGdpUQ5uN0XUdcXGBOZ0SxTFxHBMGAWGagOUwu9dGbP1YK7Q40wz6ExPdUizTtLFQFAVVWVGWZbNWVUUFlFVFnucrZBl5/a08gt//IvqzQ2uk21wYiuHcZi4dpJQopVguF/ixhx96uKGL63qEep2vx/WqH11XaziX1CrrLGfC5mI0QloWURBgSQvbtgnDkCzLqBq1by7Xqtdr/b921To+H/P88JQXRz1UEBNFEb1+n8lkgqZpjdokSd5S1Nj/F+qazqaYprGyXKs8n1kIJ6AsileWl01O/6sqKJcVVVatLF+aDoO5RCj/v89fU1RntkZNluRXyFJgV3JF2DkZcHo5R5culiWa3PzAw5QGlhR4kYfvB4RCcOX7Tbdr4qIqmgf7WZf3Bu/w/vDdFWF3qNHXDAzbbWarzjGMQvzAXzUkzxr7ZZ43wa/VFWXRKBxkfW4ZN7grNlYZvhyM6WkGpvKIwrAhTBcpfuTjhz5hHDTEsVKkUfSW7XqfVzmaGDOxNFr1DJ6MppxNBLp0EMJ8PYumZSAsQZzEpGnKMorIXg3+9aY4tkPoh/wDp4VY/4RBgrsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/042619a299649670746f9f3a81adcaaf/4fae8/performance1.webp 256w,
+/static/042619a299649670746f9f3a81adcaaf/2bf0f/performance1.webp 512w,
+/static/042619a299649670746f9f3a81adcaaf/c76fd/performance1.webp 961w"
+              sizes="(max-width: 961px) 100vw, 961px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/042619a299649670746f9f3a81adcaaf/e3135/performance1.png 256w,
+/static/042619a299649670746f9f3a81adcaaf/06341/performance1.png 512w,
+/static/042619a299649670746f9f3a81adcaaf/4f70e/performance1.png 961w"
+            sizes="(max-width: 961px) 100vw, 961px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/042619a299649670746f9f3a81adcaaf/4f70e/performance1.png"
+            alt="배열 대신 객체/맵을 사용"
+            title="배열 대신 객체/맵을 사용"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<ul>
+<li>예외를 먼저 처리하는 대신, IF문을 사용
+<ul>
+<li><a href="https://jsperf.com/try-catch-vs-conditions/1" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">참고사이트</a></li>
+</ul>
+</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 962px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b0287a8b0c55b5aa82887b0f9cae35f8/ef0cc/performance2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 42.96875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABnUlEQVR42pWPS08TYRSG51+6cEF04UoSV1qjiUHbtW4w8UZYEIq23KyFIUFDCyKIVTpDNS3amWlLK5eZoZ02vczlMfMhLExswkmePIvv5HzvK0Wns0Tj68Ti68KPprOMTa1x+1ma+69kHkwsE3mxTOT5kvDdl7J4j8azYjckNrPB4/lNnixuIY1nKoxnDJ6u6czkjphTT0nmLcGCarP0o0kibzGr2MwqFknFIrFrnvHthIRi80Yu8iH5FXl+F0mvVNEqVUzbpu+YOCcNYMClRjOwXi/C+49In9US22qJcsPEsk+pHdRpthxcz8fzA4H71/8idgD3e4XaZBrn3RaSfmgTUj44wvd98WFoz/MuPIwAOC4X0D+lqOZWkXKFfb4U9tF/m1iWhWEYtFotcTgIgqH4wVmAlDPHyN4VIsYtJKWkky9q6A2Tfr9Pp9NhMBhc6uBKL8Wodp2YeQ9pRy0SpvxVO6TX64mjobvd7kXt/+F6LmHndHOBmz+v8bAeQVrJbLK6sY1WPxZVz2m32yLFsDlPKHffcmPvKmONO/wBARaM7phCmDEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/b0287a8b0c55b5aa82887b0f9cae35f8/4fae8/performance2.webp 256w,
+/static/b0287a8b0c55b5aa82887b0f9cae35f8/2bf0f/performance2.webp 512w,
+/static/b0287a8b0c55b5aa82887b0f9cae35f8/7e5be/performance2.webp 962w"
+              sizes="(max-width: 962px) 100vw, 962px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/b0287a8b0c55b5aa82887b0f9cae35f8/e3135/performance2.png 256w,
+/static/b0287a8b0c55b5aa82887b0f9cae35f8/06341/performance2.png 512w,
+/static/b0287a8b0c55b5aa82887b0f9cae35f8/ef0cc/performance2.png 962w"
+            sizes="(max-width: 962px) 100vw, 962px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/b0287a8b0c55b5aa82887b0f9cae35f8/ef0cc/performance2.png"
+            alt="예외를 먼저 처리하는 대신, IF문을 사용"
+            title="예외를 먼저 처리하는 대신, IF문을 사용"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<ul>
+<li>가능한 한 반복문을 적게 사용
+<ul>
+<li><a href="https://jsperf.com/array-function-chains-vs-single-loop-filter-map/1" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">참고사이트</a></li>
+</ul>
+</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 961px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/020240973969f33352ec190c2df0469e/4f70e/performance3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.8125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACJklEQVR42oWS22vTcBTH84f6JIIgCD5tCBPF29DXoQ9T9EHcxXWrY7AVfNCpMN1Et2W9hKZpu66XZbk1l6ZJk3wk0YpzGx74cH5w+J3f95zvT7g//4mUB2le+MXd15tMzK4z9aLAnZcbTD7bYHJ2nZvPCxlpfXzv3txHHi5+ZmZ1i5m1bYQnHxo83WxmzH875s0PjdyewYposVa2KUgO+aLNatEmf2CxIprk9nSWdnVyuzpL+ybL6xUKizts5HcRShUJsVRG1TRi3+a4pdBtyhjdQ0aexcDSCB2DwDEgcCEJgIRTIdU4ebUM778gFJU2+3ILuX1CGMVYfRvNMDBMKzvrholp9bPsuB7DICQIR4SjiDDNSYIvNdHfbeF9FRGUro7SM6i1VTRNo29ZuK5LGIYkyT9KUm1JcoY4itJChrBzILEtStS7OrquU61WKRWLNBSFVqOBaZqnGp19AaI4QlZkvIGHUG50SFE6GkEQMBwO8Twvy77vMwwC/hsRDMwBSZAgVI9UUtKRR6n0cyKO43NJlRHDUXBIORKpjioItY5GRlul1+uhqip2v5+pHPh+pnK8zzO7S+LswZw3xw3rCtP2FML3ssyOKNHoGZkplUqFeq2W7bCpKDiOc6FB44Zv/UWuFi8xrd9CkJpdSvU29a6WjZE6nBrhOs4fpRe6+7thfrDA9dZlHlm3EdL/J7c1lM5JpuS8+Fvd+HyqobfAhHuNx+4dfgIud3QJL8lb7wAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/020240973969f33352ec190c2df0469e/4fae8/performance3.webp 256w,
+/static/020240973969f33352ec190c2df0469e/2bf0f/performance3.webp 512w,
+/static/020240973969f33352ec190c2df0469e/c76fd/performance3.webp 961w"
+              sizes="(max-width: 961px) 100vw, 961px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/020240973969f33352ec190c2df0469e/e3135/performance3.png 256w,
+/static/020240973969f33352ec190c2df0469e/06341/performance3.png 512w,
+/static/020240973969f33352ec190c2df0469e/4f70e/performance3.png 961w"
+            sizes="(max-width: 961px) 100vw, 961px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/020240973969f33352ec190c2df0469e/4f70e/performance3.png"
+            alt="가능한 한 반복문을 적게 사용"
+            title="가능한 한 반복문을 적게 사용"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<ul>
+<li>기본 반복문을 사용
+<ul>
+<li><a href="https://jsperf.com/for-loops-in-few-different-ways/" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">참고사이트</a></li>
+</ul>
+</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 961px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/345523c87657dc8acdfbee1c38db82b6/4f70e/performance4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.96875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChElEQVR42n2S208TQRTG9w/1wQcTH3zxyUuiRMV4SXySRBMkSmIEA4pWSagvJggmqEhCoRdKu2WXtvS292330u3+zIwCSsBJvszszpxzvu87R7k7u8IxVrn7epU7M1+4MrnEjedZbr3IcvVZlquTS1ybynJ96hO3Xy0zPrvC+MwKd2ZWuDf3lYnMGhMff6A8WdYQeLqsMbveYm6jw9ucybstm8WiS7bskSm4fCi4ZPIO7/MOC1sWCzlT4o14u1gg+/ob2cwmSmFnh82tbfR6AyKfA61Cs1amrVeJPJPAMRjYXULXIPEtCD1IAiD5AyBXojU9D8vfUYpai8Jekx29RZyM8PsDDMvCtGwc18Pz+3K3bEfC9Xz5T7wLg5BhCoOiivn5O8HPIspGocL6dhm12aPX69Fut3EcR8IwDFqtFqZp4nke/X5fQty5rovveYRBQDwcouu63JVirUFerVNtdPBcF9u2ZbAIEIGiiEgSx/ERoig6OidJQhAEdDodwjBEUQ8MBKqNLoZhygSObROHIaM0JU1T/rfE/Wg0OvpW1vNl1jYLUrJl2aiqyk6pRF3XaezvS3aHgadBrCiOKFfKhFGIIppR0g4kQyFF0BdSozDE9/1/qp/JMk7xTR9iUHbrHQQq9Q5hFJ0p6SykSUo90imPiqjDCkql0aXa7EmGnW5Xmus7jvRQFBBGD4fDU+WO0t/sX/pTXHYv8NAbQ8mV9xCjUzsQY2NQKpXYq1bZU1Vq1aqULbp5sjkpxx7O+tNc2j3PI2ccpVBrktvVEEyHSSL963a7csbE+TDo7yacbIpgeFE9xwNnDEVrm2htC61lEMXxqR6eTHayQGYwz/3BTSb7j/kF+F4MXBd9U48AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/345523c87657dc8acdfbee1c38db82b6/4fae8/performance4.webp 256w,
+/static/345523c87657dc8acdfbee1c38db82b6/2bf0f/performance4.webp 512w,
+/static/345523c87657dc8acdfbee1c38db82b6/c76fd/performance4.webp 961w"
+              sizes="(max-width: 961px) 100vw, 961px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/345523c87657dc8acdfbee1c38db82b6/e3135/performance4.png 256w,
+/static/345523c87657dc8acdfbee1c38db82b6/06341/performance4.png 512w,
+/static/345523c87657dc8acdfbee1c38db82b6/4f70e/performance4.png 961w"
+            sizes="(max-width: 961px) 100vw, 961px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/345523c87657dc8acdfbee1c38db82b6/4f70e/performance4.png"
+            alt="기본 반복문을 사용"
+            title="기본 반복문을 사용"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<ul>
+<li>내장 DOM 메소드를 사용
+<ul>
+<li><a href="https://jsperf.com/native-dom-functions-vs-jquery/1" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">참고사이트</a></li>
+</ul>
+</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 961px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/6f7d14dc2126c0ac29eea9be19dd435d/4f70e/performance5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 96.09374999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADC0lEQVR42nVUyW4TURCcn+TOhTObUBBBwJVTjhwAsQcOXFgkJEQISkLsKAECzuJ1Vo/nzebYs++F+hkH45gnlfp5plVd1d1j4cbzbdx8uYPl1TpuvKjxO2Hp6RYu3l/DrecbuP74Cy4/+IyrD9dx5eE6lp5sYnm1xvMJyy9qWHmzh5W33yG83tPxbLOD1W0J734yrB1Z+NJ0sNUb4avkY0cJUFcCbEs+tmUfO2rIUVdmEeBTQ0ddPIGgmzYOmi20RRnucIjYc5F4Q6TBCHnkoUxDIIs4yiQAkOPsqeCwPvLYh9DSTIjGEO2+DZW5iOIYSZIiy3KkWY68KJAX5QyKOZQ8N+O5JYSubuP7URe/Ogo004UkieirKkzG4Hke8nyRorOHmSbCKILQ6VtoqwxNhWFgn5wmlGU5MVNV/0dZ8pinGcaOi9gPIHQ0E5xUs6AyG47jwPc8pGmKOI65QiJfiKIAlS1UA8X6LsqdxsTyj2YPja4K3T4BYwaYYcCyLPhBgKIo/u+zqiZRMqA/eovwQ21imdBSGSf8m1v9cycsUkgnUGVoH9/Dqm2QQgtNxeCEGnNg2xYi30eR50iShNsm+6R0vod5mdPGYCtZxyXrAu6O70DoDRwc9DQcywP0rSEs04Rj2XBsG0EQ8ElHUbTQelFNnm1kazjfPofb1rWJZSKloUwtVzNTnrU9b3mq8Gf8DfeCFbyKHkNoayaaygDHigHVsGHTMMZjbjNMQsRJhDAM+bQX9pEKl0CRFjwKNN36/hFqPw4h9RlfbFEUIcsyunIHzDRgmiZGoxF83+egAtQKAvW5rErIisxz+NqIhouObmPg/Gu5KqsztudV0m/q73RfhWNJx35LxH5L4os9HLrcchLHfBgx/7YT3gKKWZadEs2Sjv+0STjsadhttLB70OJr43lj/pImPI1ETGR0pwJTkilIoa7rvB0C7d9BV8Wh2IfKHE4Sh+GpKlJEdihO1c2DCOnLosJCW2PYazSx3xTRt1y4roPxaMSJCTQASiSQwkX/PqRyMBhwhb8ByEaUxlxaC4cAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/6f7d14dc2126c0ac29eea9be19dd435d/4fae8/performance5.webp 256w,
+/static/6f7d14dc2126c0ac29eea9be19dd435d/2bf0f/performance5.webp 512w,
+/static/6f7d14dc2126c0ac29eea9be19dd435d/c76fd/performance5.webp 961w"
+              sizes="(max-width: 961px) 100vw, 961px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/6f7d14dc2126c0ac29eea9be19dd435d/e3135/performance5.png 256w,
+/static/6f7d14dc2126c0ac29eea9be19dd435d/06341/performance5.png 512w,
+/static/6f7d14dc2126c0ac29eea9be19dd435d/4f70e/performance5.png 961w"
+            sizes="(max-width: 961px) 100vw, 961px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/6f7d14dc2126c0ac29eea9be19dd435d/4f70e/performance5.png"
+            alt="내장 DOM 메소드를 사용"
+            title="내장 DOM 메소드를 사용"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<h1 style="font-weight:bold">참고사이트</h1>
+<ul>
+<li><a href="https://gloriajun.github.io/frontend/2018/10/23/frontend-reflow-repaint.html" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="https://gloriajun.github.io/frontend/2018/10/23/frontend-reflow-repaint.html" target="_blank" rel="nofollow">https://gloriajun.github.io/frontend/2018/10/23/frontend-reflow-repaint.html</a></a></li>
+<li><a href="https://junwoo45.github.io/2019-10-05-frontend-performance/" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="https://junwoo45.github.io/2019-10-05-frontend-performance/" target="_blank" rel="nofollow">https://junwoo45.github.io/2019-10-05-frontend-performance/</a></a></li>
+<li><a href="https://www.slideshare.net/NHNFORWARD/2018-130108045" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="https://www.slideshare.net/NHNFORWARD/2018-130108045" target="_blank" rel="nofollow">https://www.slideshare.net/NHNFORWARD/2018-130108045</a></a></li>
+<li><a href="https://ideveloper2.dev/blog/2019-05-18--front-end-%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94-%EA%B8%B0%EB%B3%B8/" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="https://ideveloper2.dev/blog/2019-05-18--front-end-%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94-%EA%B8%B0%EB%B3%B8/" target="_blank" rel="nofollow">https://ideveloper2.dev/blog/2019-05-18–front-end-%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94-%EA%B8%B0%EB%B3%B8/</a></a></li>
+<li><a href="https://ui.toast.com/fe-guide/ko_PERFORMANCE/#%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83%EA%B3%BC-%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8A%B8" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="https://ui.toast.com/fe-guide/ko_PERFORMANCE/#%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83%EA%B3%BC-%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8A%B8" target="_blank" rel="nofollow">https://ui.toast.com/fe-guide/ko_PERFORMANCE/#%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83%EA%B3%BC-%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8A%B8</a></a></li>
+<li><a href="https://boxfoxs.tistory.com/408" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="https://boxfoxs.tistory.com/408" target="_blank" rel="nofollow">https://boxfoxs.tistory.com/408</a></a></li>
+<li><a href="http://bit.ly/2SQXLzY" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="http://bit.ly/2SQXLzY" target="_blank" rel="nofollow">http://bit.ly/2SQXLzY</a></a></li>
+<li><a href="https://github.com/wonism/TIL/blob/master/front-end/browser/reflow-repaint.md" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="https://github.com/wonism/TIL/blob/master/front-end/browser/reflow-repaint.md" target="_blank" rel="nofollow">https://github.com/wonism/TIL/blob/master/front-end/browser/reflow-repaint.md</a></a></li>
+<li><a href="https://gist.github.com/faressoft/36cdd64faae21ed22948b458e6bf04d5" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="https://gist.github.com/faressoft/36cdd64faae21ed22948b458e6bf04d5" target="_blank" rel="nofollow">https://gist.github.com/faressoft/36cdd64faae21ed22948b458e6bf04d5</a></a></li>
+</ul>
+<h1 style="font-weight:bold">Canvas 성능향상</h1>
+<h2 style="color:#ff6b6b">오프스크린 캔버스로 미리 랜더링 해라</h2>
+이건 뭐 이미지프로세싱 프로그래밍 해보신 분은 다 아시는 부분일텐데, canvas를 바로바로 렌더링 하지 말고 일단 이미지 버퍼나 더블버퍼링같은 원리처럼 렌더링은 RequestAnimationFrame를 사용해서 렌더링 하라는 뜻입니다.
+<h2 style="color:#ff6b6b">일괄적인 드로잉 작업은 한번에 호출해라</h2>
+예를 들어 캔버스에 사각형 같은 라인을 그릴때, 라인마다 beginPath()와 stroke()를 호출하지 말고, beginPath() 호출 후 moveTo와 lineTo를 이용하여 모든 드로잉 작업을 끝낸 후 stroke()를 호출하라는 뜻입니다. 이건 샘플코드를 보시면 단박에 이해가 가실겁니다.
+<h2 style="color:#ff6b6b">불필요한 캔버스 상태 변경을 피해라</h2>
+불필요한 연산을 피하라는... 위와 비슷한 얘기입니다.
+<h2 style="color:#ff6b6b">변경된 부분의 캔버스 상태만 렌더링해라</h2>
+이미지가 변경된 부분의 Bounding box를 구해서 그 부분만 렌더링 하라는 뜻입니다.
+<h2 style="color:#ff6b6b">복잡한 장면엔 캔버스를 레이어로 구성해라</h2>
+이건 맨처음 얘기한 오프스크린 캔버스 얘기와도 비슷한 얘기이기도 하고, 추가로 canvas를 겹쳐서 구성해서 렌더링시켜도 GPU에선 알파 합성을 통해 한번에 렌더링되므로 이득이라고 하네요.
+<h2 style="color:#ff6b6b">쉐도우 블러(Blur) 이펙트를 피해라</h2>
+당연한 얘기지만 blur나 shadow 효과를 끄라는 뜻입니다. 그나저나 canvas에서 이걸 기본 지원하는건 몰랐넹..
+<h2 style="color:#ff6b6b">캔버스를 클리어하는 다양한 방법을 알아둬라</h2>
+HTML5의 캔버스는 Immediate mode라고 해서 이미지 버퍼링 없이 바로바로 디스플레이에 출력됩니다. 애니메이션같은걸 만들땐 다음 프레임을 그리기 위해 이전 프레임을 지워줘야 하는데... 이때 캔버스 전체를 지우지 말고 위에서 말한것 처럼 이미지가 변경된 부분의 bounding box를 추적해서 clearRect 같은걸 해주라는 뜻입니다.
+<h2 style="color:#ff6b6b">부동 소수점 좌표는 피해라</h2>
+이미지를 배치시킬때 좌표가 부동소수점이면 자동으로 anti-aliasing이 먹어버립니다. 위에서 blur효과는 피하라고 했으니 좌표는 항상 정수로 찍히는게 좋습니다.
+<h2 style="color:#ff6b6b">RequestAnimationFrame을 사용하여 최적화해라</h2>
+윈도우 프로그래밍 해보신분이라면 눈치채셨을텐데 UIThread라고 보시면 됩니다. 다만 모든 브라우저에서 지원하는게 아니라서 안타깝네요..
+<h2 style="color:#ff6b6b">DOM(Document Object Model), CSSOM(CSS Object Model) 생성</h2>
+가장 첫번째 단계는 서버로부터 받은 HTML, CSS를 다운로드 받습니다. 그리고 HTML, CSS파일은 단순한 텍스트이므로 연산과 관리가 유리하도록 Object Model로 만들게 됩니다. HTML CSS 파일은 각각 DOM Tree와 CSSOM으로 만들어집니다.
+<ul>
+<li><a href="https://kuimoani.tistory.com/entry/HTML5-Canvas-%EC%84%B1%EB%8A%A5-%ED%96%A5%EC%83%81" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"><a href="https://kuimoani.tistory.com/entry/HTML5-Canvas-%EC%84%B1%EB%8A%A5-%ED%96%A5%EC%83%81" target="_blank" rel="nofollow">https://kuimoani.tistory.com/entry/HTML5-Canvas-%EC%84%B1%EB%8A%A5-%ED%96%A5%EC%83%81</a></a></li>
+</ul>
+<h1 style="font-weight:bold">렌더링 과정</h1>
+<h2 style="color:#ff6b6b">DOM(Document Object Model), CSSOM(CSS Object Model) 생성</h2>
+가장 첫번째 단계는 서버로부터 받은 HTML, CSS를 다운로드 받습니다. 그리고 HTML, CSS파일은 단순한 텍스트이므로 연산과 관리가 유리하도록 Object Model로 만들게 됩니다. HTML CSS 파일은 각각 DOM Tree와 CSSOM으로 만들어집니다.
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 665px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d2d1cc118210528da72cc1e2ef152eec/a300e/rendering_dom.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 42.578125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACu0lEQVR42l2S60tTARiH32mW1pKoRBKKPggh+A9kX8wgTQo/hF2wkiRsZkqJ5iXd8JKoKxQEY2qiiNdczMuW0i7O7exs5+y4teM2N8+Gu7nIxFuWEvKGfqvfH/B7ng8PpDesAiIAy8pgVGsF1tTOgzyE1DcISdUIAAi4nAMBpqbaO5cf8BtLSIbsTPRaxMCZannw/9D/mHdwSDvNx5uVGPWV7joEpDXuR6U17h8TvPfGRBUiX6nszjYomwY54+sSipDELpnFoJjp5aXUI8ypO3huUz1PMdML8GepFIIWkdClKdjz6ou9shnpVQCMvN+2GntTvHMyqQpjEPngoYQtNmXxmtdQplNphxJJfc8hOLkGYXK6H+xkC3RJpwBax+hzo3LpDZ+h6M6CTvSgb3wyfXa2/7zVxhwBuAV77qrork/TyWqlJOubMf/RIiG63TDkSshqxdO5HT9PXarCExPTA/F2Y8sFyZg8GjitAL3Ey4DGrItbZuoFHt1zDBoLlj1kYTKiHELmV6ow/QJ9dPXwgRFDSYFhOXBxYdheUcNHxfiVAFW24Dc82wwwIjG4dKUZbqIy1Ux08Od1b+N8dMVll3OuUm1yCxT0RpnForznMtQ0WXRiCaFuSxvRb2VO6INFpNX7xObZSpkezY5eMtWKHETtIEfVXYew6Sn4jSWg1X4AqawNMNwMTv+uxmxd3GTdK6zG/jvDp8/tZGfyfoTI3CbCsS1kbO5dkrGH5t1bws/yuotBqtTKaQXrPrOwGQLG4kgPWR4hV8mA0ndCyPAwol+5zJ8K4dH4Goyh2GC5jl5s/mJw9BOM5x3t+F45YsWzuFcBiKvg1NwFiUwbw1B9Zw4S+zch/AXr6xvQo94BLYcgt2HCgtvvmLct+iwsR5oYu2reEWy/JsHIzGEExDWe35ADA3IFWKlugHiEvzgdneAhTFCdAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/d2d1cc118210528da72cc1e2ef152eec/4fae8/rendering_dom.webp 256w,
+/static/d2d1cc118210528da72cc1e2ef152eec/2bf0f/rendering_dom.webp 512w,
+/static/d2d1cc118210528da72cc1e2ef152eec/3b141/rendering_dom.webp 665w"
+              sizes="(max-width: 665px) 100vw, 665px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/d2d1cc118210528da72cc1e2ef152eec/e3135/rendering_dom.png 256w,
+/static/d2d1cc118210528da72cc1e2ef152eec/06341/rendering_dom.png 512w,
+/static/d2d1cc118210528da72cc1e2ef152eec/a300e/rendering_dom.png 665w"
+            sizes="(max-width: 665px) 100vw, 665px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/d2d1cc118210528da72cc1e2ef152eec/a300e/rendering_dom.png"
+            alt="렌더링 과정"
+            title="렌더링 과정"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<ul>
+<li><a href="http://bit.ly/3137pmh" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">DOM(좌) CSSOM(우)을 시각화 한 그림(출처 : <a href="http://bit.ly/3137pmh)" target="_blank" rel="nofollow">http://bit.ly/3137pmh)</a></a></li>
+</ul>
+<p>각 문서(HTML, CSS)가 어떻게 파싱되고 어떻게 DOM Tree가 되는지 자세한 과정은 Google 개발자 문서를 통해 확인할 수 있습니다.</p>
+<p>여기서 좀더 TMI를 추가하자면 렌더링 엔진은 더 나은 사용자경험을 위해 가능한 빠르게 내용을 표시하게 만들어졌습니다. 따라서 모든 HTML 파싱이 끝나기도 전에 이후의 과정을 수행하여 미리 사용자에게 보여줄 수 있는 일부 내용들을 출력하게 됩니다.</p>
+<h2 style="color:#ff6b6b">Render Tree 생성</h2>
+DOM Tree와 CSSOM Tree가 만들어졌으면 그 다음으로는 이 둘을 이용하여 Render Tree를 생성합니다. 순수한 요소들의 구조와 텍스트만 존재하는 DOM Tree와는 달리 Render Tree에는 스타일 정보가 설정되어 있으며 실제 화면에 표현되는 노드들로만 구성됩니다.
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0c389301ba794f3ca7b491572d73971d/26e62/rendering_rendertree.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACzUlEQVR42j1NW0iTARj9XNRQzDIo7SYSGGJBRTfqxR58qQfJh5lR4R62wthUsqZbalomMdM0NdSmGaIlmdjIqekubv/+Xf792/6Lc5d/c1OnDS/FMjCw/tAHz8M5cM7hHAiZH0LE8ShRLMw6DMmd3D/G82BR12a79GV9jLMjfnysAebpDvCvsLENLZ2Xu3oGzlWzLMejLTg8j0mSGe0t6O8Tg0eTD+wwADjRxv1TeqmcNlRWybtq4l50vI7FdC/5tLakEqCbI38/yI0ipxNs0wunSM/iW4cr9FRtsmbRkzKZXfNY1P9RdrBFUZngmeAdY3MhBtyGUhGlK7vvRqulhKX32ZS1Xew1FHZ2KY0pX4y/ztiMips+pGTc4+xNc/p+p03Yl8960XKFS1vAN6GDVym0WYfbVDdItHWUco5lAz2SA4jFCJMBNhFzLddYCF+pw9A0guFoi5FcqSHwoeuMXiCmpqey7RQTthIzZhzX1tPmtkHSG9ZZicCow7vaZCODE2ZnsAOKC+9xpDLZzp/TCg5JugCxB3kIPisfNzE5S5EIrK2vAbvaAyzLwiaUOioJp2ZUKM5oMDp8Z+3flh+zSVud4iIRh8/P52ZknEjMzMw8sBksr2/AwGdkn8mMXxjSzaYO6+cO2R3ENdSg3suy49vjAMCpe9UQV1hUzBWLRNzyiopdIBQKgcfjbYa7ASChpLo6zuQPHCeY+U8Us9hvI3CB16XOnQ8v1NoCG0cYw92UH7T0aGtfO6gsGhi1GuCJvA6uXLoI+fm3AQQCAeTl5W3dNXYrYJT2p+tIZPYbPkn3m+f4Pku93G+Tf3inJFLbUDZ2xiRRhiySN80WNhFxYSe1tCP9q9O94zvLQqNCAdtISknb0qpeitOqIvcAmGIob+S53b1Ui3miEowK9iDuv2khc7HMjzwQaD1MuZ4yRNWkbRhbisabFlZB73XDf+zwj+/1PmW+AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/0c389301ba794f3ca7b491572d73971d/4fae8/rendering_rendertree.webp 256w,
+/static/0c389301ba794f3ca7b491572d73971d/2bf0f/rendering_rendertree.webp 512w,
+/static/0c389301ba794f3ca7b491572d73971d/d71bc/rendering_rendertree.webp 1024w,
+/static/0c389301ba794f3ca7b491572d73971d/2f8f5/rendering_rendertree.webp 1150w"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/0c389301ba794f3ca7b491572d73971d/e3135/rendering_rendertree.png 256w,
+/static/0c389301ba794f3ca7b491572d73971d/06341/rendering_rendertree.png 512w,
+/static/0c389301ba794f3ca7b491572d73971d/42a19/rendering_rendertree.png 1024w,
+/static/0c389301ba794f3ca7b491572d73971d/26e62/rendering_rendertree.png 1150w"
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/0c389301ba794f3ca7b491572d73971d/42a19/rendering_rendertree.png"
+            alt="Render Tree 구조도"
+            title="Render Tree 구조도"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<ul>
+<li><a href="http://bit.ly/2Okn0fG" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">Render Tree 구조도(출처 : <a href="http://bit.ly/2Okn0fG)" target="_blank" rel="nofollow">http://bit.ly/2Okn0fG)</a></a></li>
+</ul>
+<p>그러면 여기서 각 요소에 스타일 정보들이 설정되어 있는건 이해할 수 있겠는데 실제 화면에 표현되는 노드들로만 구성된다는 이야기에 “모든 요소는 다 화면에 표현되는거 아닌가?” 라는 의문을 가지실 것 같습니다.</p>
+<p>결론을 말하면 네, 아닙니다. 간단한 예로 display: none 속성이 설정된 노드는 화면에 어떠한 공간도 차지하지 않기 때문에 Render Tree를 만드는 과정에서 제외됩니다. 여기서 조금만 더 팁을 드리자면 visibility: invisible 은 display: none과 비슷하게 동작하지만, 공간은 차지하고 요소가 보이지 않게만 하기 때문에 Render Tree에 포함됩니다.</p>
+<h2 style="color:#ff6b6b">Layout</h2>
+Layout 단계는 브라우저의 뷰포트(Viewport) 내에서 각 노드들의 정확한 위치와 크기를 계산합니다. 풀어서 얘기하자면 생성된 Render Tree 노드들이 가지고 있는 스타일과 속성에 따라서 브라우저 화면의 어느위치에 어느크기로 출력될지 계산하는 단계라고 할 수 있습니다. Layout 단계를 통해 %, vh, vw와 같이 상대적인 위치, 크기 속성은 실제 화면에 그려지는 pixel단위로 변환됩니다.
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 616px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a31ee7ea688ce56e1cc519201506fefb/274fb/rendering_layout.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.70312499999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABX0lEQVR42q2M60rjUBRG8/6vMaCM+FcRBxWkY6xIa6r1tLFOT0JzObckTU8K2ux8kk7RIs4I4obFty/s5fiDwVlp9EMuxX0uBWvJRMoyIVhRFExrxXzfZ6PRiCVJwozWTCUJk3G8zVAnyZT1+z+dyY2XmlRDzBKoSKzJUgmb5bDVEkJKRFGMvCiwWCyApgEtl6itfWVlLaiqEI3HPef45IgHkw6CSaceeifkXR/SxXWXrh4NuSyi85s/9Ks7pGK+IABETbPObRpgBQA6z13n8GA/vLvaw8Ddpf7vHaQPB+h5Ls6ZhusrXE4ynHohTF62P2ia5iPq9qak7Dq3d8MwCENM+ZSmAQcPOMJZjFgViFW+zpkweHp6fhVu56b/K1Sq68zn83CzJ3xS25J3+zehVIq3Q13XKyKq/0X79B+eN0LXybJM4ZvKGOM5QRAcVVV1W5ZlryzL/hfpWWsZ5/zHCwnypGCicgtlAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/a31ee7ea688ce56e1cc519201506fefb/4fae8/rendering_layout.webp 256w,
+/static/a31ee7ea688ce56e1cc519201506fefb/2bf0f/rendering_layout.webp 512w,
+/static/a31ee7ea688ce56e1cc519201506fefb/cec2c/rendering_layout.webp 616w"
+              sizes="(max-width: 616px) 100vw, 616px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/a31ee7ea688ce56e1cc519201506fefb/e3135/rendering_layout.png 256w,
+/static/a31ee7ea688ce56e1cc519201506fefb/06341/rendering_layout.png 512w,
+/static/a31ee7ea688ce56e1cc519201506fefb/274fb/rendering_layout.png 616w"
+            sizes="(max-width: 616px) 100vw, 616px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/a31ee7ea688ce56e1cc519201506fefb/274fb/rendering_layout.png"
+            alt="Render Tree 구조도"
+            title="Render Tree 구조도"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<ul>
+<li><a href="http://bit.ly/3137pmh" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">Viewport 에 상대적인 요소 연산(출처 : <a href="http://bit.ly/3137pmh)" target="_blank" rel="nofollow">http://bit.ly/3137pmh)</a></a></li>
+</ul>
+<p>여기서 뷰포트(Viewport)란 그래픽이 표시되는 브라우저의 영역, 크기를 말합니다. 뷰포트는 모바일의 경우 디스플레이의 크기, PC의 경우 브라우저 창의 크기에 따라 달라집니다. 그리고 화면에 그려지는 각 요소들의 크기와 위치는 %, vh, vw와 같이 상대적으로 계산하여 그려지는 경우가 많기 때문에 viewport 크기가 달라질 경우 매번 계산을 다시해야 합니다.</p>
+<h2 style="color:#ff6b6b">Paint</h2>
+Layout 계산이 완료되면 이제 요소들을 실제 화면을 그리게 됩니다. 이전 단계에서 이미 요소들의 위치와 크기, 스타일 계산이 완료된 Render Tree 를 이용해 실제 픽셀 값을 채워넣게 됩니다. 이 때 텍스트, 색, 이미지, 그림자 효과등이 모두 처리되어 그려집니다.
+<p>이 때 처리해야 하는 스타일이 복잡할수록 Paint 단계에 소요되는 시간이 늘어나게 됩니다. 간단한 예시로 단순한 단색 background-color의 경우 paint 속도가 빠르지만 그라데이션이나 그림자 효과등은 painting 소요시간이 비교적 더 오래 소요됩니다.</p></article><section class="PostContent__PostNavigator-sc-9jovib-6 ffkTpb"><a href="/blog/2021/12/2021-12-01-deno/"><h5>이전글</h5><i>← </i>deno</a><a href="/blog/2020/06/2020-06-28-concept/"><h5>다음글</h5>concept<i> →</i></a></section><div></div></div><aside class="PostContent__TocRenderer-sc-9jovib-4 bIaAsx"><ul>
+<li>
+<ul>
+<li><a href="#%EC%9D%98%EB%8F%84%EC%B9%98-%EC%95%8A%EC%9D%80-%EC%A0%84%EC%97%AD-%EB%B3%80%EC%88%98">의도치 않은 전역 변수</a></li>
+<li><a href="#%EC%9E%8A%ED%98%80%EC%A7%84-%ED%83%80%EC%9D%B4%EB%A8%B8-%EB%98%90%EB%8A%94-%EC%BD%9C%EB%B0%B1">잊혀진 타이머 또는 콜백</a></li>
+<li><a href="#dom-%EC%99%B8%EB%B6%80%EC%97%90%EC%84%9C%EC%9D%98-%EC%B0%B8%EC%A1%B0">DOM 외부에서의 참조</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#reflow%EB%A5%BC-%ED%94%BC%ED%95%98%EA%B1%B0%EB%82%98-%EC%B5%9C%EC%86%8C%ED%99%94%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95">reflow를 피하거나 최소화하는 방법</a></p>
+</li>
+</ul></aside></div><div class="Footer__FooterWrapper-sc-rphy7j-0 cKqBUF">Thank You for Visiting My Blog,<br/>© 2021 Developer SeungAh, Powered By Gatsby.</div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/2020/09/2020-09-12-fe-performance/";window.___webpackCompilationHash="574edc59b0f831a4be0d";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-fe391ba76f4d664b34c5.js"],"app":["/app-cf78e816de5fd78a93fa.js"],"component---src-components-templates-post-template-tsx":["/component---src-components-templates-post-template-tsx-721999ce693fdd12d985.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-fba53f0d04df82788e46.js"],"component---src-pages-about-tsx":["/component---src-pages-about-tsx-e970490fffd6fb6cd37c.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-aced441a8b78c665c231.js"]};/*]]>*/</script><script src="/polyfill-fe391ba76f4d664b34c5.js" nomodule=""></script><script src="/app-cf78e816de5fd78a93fa.js" async=""></script><script src="/framework-af486daeee2ef6d64e8f.js" async=""></script><script src="/webpack-runtime-d28c414343b31c9f2b92.js" async=""></script></body></html>

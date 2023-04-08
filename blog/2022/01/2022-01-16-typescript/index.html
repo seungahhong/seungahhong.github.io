@@ -1,0 +1,877 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta data-react-helmet="true" name="naver-site-verification" content="ab246841529a97bcf76ac7ed42d5a5c457a381bc"/><meta data-react-helmet="true" name="google-site-verification" content="DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"/><meta data-react-helmet="true" name="twitter:image" content="https://seungahhong.github.io/static/b830d53e6576e2d3cb683d59816de81a/ee604/main.png"/><meta data-react-helmet="true" name="twitter:creator" content="seungah.hong"/><meta data-react-helmet="true" name="twitter:site" content="seungah.hong"/><meta data-react-helmet="true" name="twitter:description" content="홍승아 기술 블로그에 오신걸 환영합니다."/><meta data-react-helmet="true" name="twitter:title" content="홍승아 기술 블로그"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" property="og:image" content="https://seungahhong.github.io/static/b830d53e6576e2d3cb683d59816de81a/ee604/main.png"/><meta data-react-helmet="true" property="og:site_name" content="홍승아 기술 블로그"/><meta data-react-helmet="true" property="og:url" content="https://seungahhong.github.io"/><meta data-react-helmet="true" property="og:description" content="홍승아 기술 블로그에 오신걸 환영합니다."/><meta data-react-helmet="true" property="og:title" content="홍승아 기술 블로그"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" http-equiv="Content-Type" content="text/html;charset=UTF-8"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0"/><meta data-react-helmet="true" name="description" content="홍승아 기술 블로그에 오신걸 환영합니다."/><meta name="generator" content="Gatsby 4.14.1"/><style data-href="/styles.0109ae7f897db2fecdd6.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><title data-react-helmet="true">홍승아 기술 블로그</title><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><style data-styled="" data-styled-version="5.3.5">.pcuhR{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:1;-ms-flex:1;flex:1;position:relative;margin:0 auto;-webkit-align-items:start;-webkit-box-align:start;-ms-flex-align:start;align-items:start;max-width:1024px;}/*!sc*/
+@media (max-width:1024px){.pcuhR{margin:0;}}/*!sc*/
+data-styled.g1[id="PostContent__PostWrapper-sc-9jovib-0"]{content:"pcuhR,"}/*!sc*/
+.cHdfpx{border-bottom:1px solid #e6e6e6;}/*!sc*/
+.cHdfpx > div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:1;-ms-flex:1;flex:1;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin:0 auto;max-width:1024px;padding:0 20px;}/*!sc*/
+@media (max-width:1024px){.cHdfpx > div{margin:0;min-width:auto;}}/*!sc*/
+.cHdfpx h1{font-size:24px;margin:12px 0 8px;}/*!sc*/
+data-styled.g2[id="PostContent__PostHeadWrapper-sc-9jovib-1"]{content:"cHdfpx,"}/*!sc*/
+.kEmWTx{width:80%;}/*!sc*/
+@media (max-width:1024px){.kEmWTx{width:100%;}}/*!sc*/
+data-styled.g3[id="PostContent__PostContentWrapper-sc-9jovib-2"]{content:"kEmWTx,"}/*!sc*/
+.dlUvrB{padding:0 20px;margin-bottom:48px;}/*!sc*/
+.dlUvrB > h1{margin-bottom:8px;font-size:40px;}/*!sc*/
+data-styled.g4[id="PostContent__PostTitle-sc-9jovib-3"]{content:"dlUvrB,"}/*!sc*/
+.bIaAsx{display:inline-block;margin:12px 0 0 10px;position:-webkit-sticky;position:sticky;top:0;left:10px;-webkit-transition:all 0.125s esse-in 0s;transition:all 0.125s esse-in 0s;min-width:200px;color:rgba(0,0,0,0.4);padding:0 0.75rem;border-left:2px solid gray;}/*!sc*/
+.bIaAsx ul{list-style:none;}/*!sc*/
+.bIaAsx ul li{margin-top:5px;}/*!sc*/
+.bIaAsx ul li a{display:inline-block;}/*!sc*/
+.bIaAsx ul li a.reach{color:#000000;-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05);}/*!sc*/
+.bIaAsx ul ul{margin-left:12px;}/*!sc*/
+@media (max-width:1024px){.bIaAsx{display:none;}}/*!sc*/
+data-styled.g5[id="PostContent__TocRenderer-sc-9jovib-4"]{content:"bIaAsx,"}/*!sc*/
+.Lmopp{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;word-break:keep-all;margin-bottom:250px;padding:0 20px;width:100%;line-height:1.8;font-size:16px;font-weight:400;}/*!sc*/
+@media (max-width:1024px){.Lmopp{margin-bottom:48px;}}/*!sc*/
+.Lmopp p{padding:3px 0;}/*!sc*/
+.Lmopp h1,.Lmopp h2,.Lmopp h3{font-weight:800;}/*!sc*/
+.Lmopp * + h1{margin-top:60px;}/*!sc*/
+.Lmopp * + h2{margin-top:40px;}/*!sc*/
+.Lmopp * + h3{margin-top:30px;}/*!sc*/
+.Lmopp hr + h1,.Lmopp hr + h2,.Lmopp hr + h3{margin-top:0;}/*!sc*/
+.Lmopp h1{font-size:30px;}/*!sc*/
+.Lmopp h2{font-size:25px;}/*!sc*/
+.Lmopp h3{font-size:20px;}/*!sc*/
+.Lmopp blockquote{margin:30px 0;padding:5px 15px;border-left:2px solid #000000;font-weight:800;}/*!sc*/
+.Lmopp ol,.Lmopp ul{margin-left:20px;padding:10px 0;}/*!sc*/
+.Lmopp hr{border:1px solid #000000;margin:100px 0;}/*!sc*/
+.Lmopp a{color:#4263eb;-webkit-text-decoration:underline;text-decoration:underline;}/*!sc*/
+.Lmopp pre[class*='language-']{margin:30px 0;padding:15px;font-size:15px;}/*!sc*/
+.Lmopp pre[class*='language-']::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.5);border-radius:3px;}/*!sc*/
+.Lmopp code[class*='language-'],.Lmopp pre[class*='language-']{tab-size:2;}/*!sc*/
+.Lmopp img{width:100%;}/*!sc*/
+.Lmopp summary{cursor:pointer;font-size:24px;}/*!sc*/
+data-styled.g6[id="PostContent__MarkdownRenderer-sc-9jovib-5"]{content:"Lmopp,"}/*!sc*/
+.ffkTpb{margin:40px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;list-style:none;padding:0 20px;}/*!sc*/
+.ffkTpb h5{font-size:24px;margin-bottom:8px;}/*!sc*/
+.ffkTpb a{border-radius:6px;font-size:20px;color:#cc007a;font-weight:700;}/*!sc*/
+data-styled.g7[id="PostContent__PostNavigator-sc-9jovib-6"]{content:"ffkTpb,"}/*!sc*/
+.eIcbrr{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;background:rgba(255,255,255,0.7);color:#161b21;width:40px;height:40px;min-width:40px;font-size:20px;border:none;border-radius:50%;}/*!sc*/
+.eIcbrr > img{width:35px;height:35px;}/*!sc*/
+data-styled.g8[id="PostContent__SocialLink-sc-9jovib-7"]{content:"eIcbrr,"}/*!sc*/
+.cKqBUF{display:grid;place-items:center;margin-top:auto;margin-left:0;padding:50px 0;font-size:15px;text-align:center;line-height:1.5;}/*!sc*/
+@media (max-width:1024px){.cKqBUF{margin-left:0;}}/*!sc*/
+data-styled.g16[id="Footer__FooterWrapper-sc-rphy7j-0"]{content:"cKqBUF,"}/*!sc*/
+html{line-height:1.15;-webkit-text-size-adjust:100%;}/*!sc*/
+body{margin:0;}/*!sc*/
+main{display:block;}/*!sc*/
+h1{font-size:2em;margin:0.67em 0;}/*!sc*/
+hr{box-sizing:content-box;height:0;overflow:visible;}/*!sc*/
+pre{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+a{background-color:transparent;}/*!sc*/
+abbr[title]{border-bottom:none;-webkit-text-decoration:underline;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}/*!sc*/
+b,strong{font-weight:bolder;}/*!sc*/
+code,kbd,samp{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+small{font-size:80%;}/*!sc*/
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}/*!sc*/
+sub{bottom:-0.25em;}/*!sc*/
+sup{top:-0.5em;}/*!sc*/
+img{border-style:none;}/*!sc*/
+button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}/*!sc*/
+button,input{overflow:visible;}/*!sc*/
+button,select{text-transform:none;}/*!sc*/
+button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}/*!sc*/
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}/*!sc*/
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}/*!sc*/
+fieldset{padding:0.35em 0.75em 0.625em;}/*!sc*/
+legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}/*!sc*/
+progress{vertical-align:baseline;}/*!sc*/
+textarea{overflow:auto;}/*!sc*/
+[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}/*!sc*/
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}/*!sc*/
+[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}/*!sc*/
+[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}/*!sc*/
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}/*!sc*/
+details{display:block;}/*!sc*/
+summary{display:list-item;}/*!sc*/
+template{display:none;}/*!sc*/
+[hidden]{display:none;}/*!sc*/
+*{padding:0;margin:0;box-sizing:border-box;}/*!sc*/
+html,body,#___gatsby{height:100%;word-break:keep-all;overflow-wrap:break-word;}/*!sc*/
+#gatsby-focus-wrapper{height:100%;}/*!sc*/
+a,a:hover{color:inherit;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}/*!sc*/
+.utterances{max-width:1024px;margin:0 auto;}/*!sc*/
+data-styled.g18[id="sc-global-dhQtTb1"]{content:"sc-global-dhQtTb1,"}/*!sc*/
+.Kcdb{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;}/*!sc*/
+data-styled.g19[id="Template__Container-sc-1a9t0ug-0"]{content:"Kcdb,"}/*!sc*/
+</style><style type="text/css">
+    .custom-class.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .custom-class.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .custom-class svg,
+    h2 .custom-class svg,
+    h3 .custom-class svg,
+    h4 .custom-class svg,
+    h5 .custom-class svg,
+    h6 .custom-class svg {
+      visibility: hidden;
+    }
+    h1:hover .custom-class svg,
+    h2:hover .custom-class svg,
+    h3:hover .custom-class svg,
+    h4:hover .custom-class svg,
+    h5:hover .custom-class svg,
+    h6:hover .custom-class svg,
+    h1 .custom-class:focus svg,
+    h2 .custom-class:focus svg,
+    h3 .custom-class:focus svg,
+    h4 .custom-class:focus svg,
+    h5 .custom-class:focus svg,
+    h6 .custom-class:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="canonical" href="https://seungahhong.github.io/blog/2022/01/2022-01-16-typescript/" data-baseprotocol="https:" data-basehost="seungahhong.github.io"/><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'G-TYGQRJE1B8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><link rel="preconnect" href="https://www.googletagmanager.com"/><link rel="dns-prefetch" href="https://www.googletagmanager.com"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-G8Z1HZWWYL"></script><script>
+      
+      
+      if(true) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-G8Z1HZWWYL', {"send_page_view":false});
+      }
+      </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="Template__Container-sc-1a9t0ug-0 Kcdb"><header class="PostContent__PostHeadWrapper-sc-9jovib-1 cHdfpx"><div><a href="/"><h1>홍승아블로그</h1></a><a href="https://github.com/seungahhong" rel="noopener noreferrer" title="notion" target="_blank" size="35" class="PostContent__SocialLink-sc-9jovib-7 eIcbrr"><img src="/static/4a6687a74051de2b3536e95d0b6c992a/github.svg" alt="Github Link Image"/></a></div></header><div class="PostContent__PostWrapper-sc-9jovib-0 pcuhR"><div class="PostContent__PostContentWrapper-sc-9jovib-2 kEmWTx"><div class="PostContent__PostTitle-sc-9jovib-3 dlUvrB"><h1>typescript</h1><time>2022.01.16</time></div><article class="PostContent__MarkdownRenderer-sc-9jovib-5 Lmopp"><h1 id="타입스크립트는-왜-사용해야하는-걸까" style="position:relative;"><a href="#%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC%ED%95%98%EB%8A%94-%EA%B1%B8%EA%B9%8C" aria-label="타입스크립트는 왜 사용해야하는 걸까 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>타입스크립트는 왜 사용해야하는 걸까??</h1>
+<p><strong>Typescript는 코드를 보다 읽기 쉽게 만든다.</strong></p>
+<ul>
+<li>변수,리턴,인터페이스 등등 타입을 명시함으로써 코드에 대한 이해가 쉬워진다.
+<strong>Typescript는 개발자의 실수를 줄여준다.</strong></li>
+<li>코드 작성 중/컴파일 단계에서 에러 발견이 쉽다.</li>
+<li>에러에 대한 대응을 빠르게 가능하며, 사이드 이펙트를 최소화 가능하다.
+<strong>IDE 를 더욱 더 적극적으로 활용 (자동완성, 타입확인)</strong></li>
+<li>TypeScript 를 사용하면 자동완성이 굉장히 잘됩니다.</li>
+<li>함수를 사용 할 때 해당 함수가 어떤 파라미터를 필요로 하는지, 그리고 어떤 값을 반환하는지 코드를 따로 열어보지 않아도 알 수 있습니다.</li>
+<li>리액트 컴포넌트의 경우 props/state 값을 미리 알 수 있다.
+<strong>객체지향 프로그래밍 지원</strong></li>
+<li>인터페이스, 제네릭, 오버로딩/오버라이딩 등과 같은 강력한 객체지향 프로그래밍 지원은 크고 복잡한 프로젝트의 코드 기반을 쉽게 구성이 가능하다.</li>
+</ul>
+<h1 id="타입스크립트-디렉토리-구조" style="position:relative;"><a href="#%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%A1%B0" aria-label="타입스크립트 디렉토리 구조 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>타입스크립트 디렉토리 구조</h1>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">┣ components
+ ┃ ┣ types // 다중 component type을 지정할 경우 types folder,
+ ┃ ┃ ┗ todos.ts
+ ┃ ┗ TodosContentItemComponent.tsx // 컴포넌트에 제한이 된다면 Component 자체에서 명시한다.
+ ┣ containers
+ ┃ ┣ types // 다중 container type을 지정할 경우 types folder
+ ┃ ┃ ┗ todos.ts
+ ┃ ┣ RootContainer.tsx
+ ┃ ┗ TodoContentContainer.tsx // 컨테이너에 제한이 된다면 Container 자체에서 명시한다.
+ ┣ services
+ ┃ ┣ __test__
+ ┃ ┃ ┗ todo.service.tsx
+ ┃ ┗ index.jsx
+ ┣ states
+ ┃ ┣ constants
+ ┃ ┃ ┗ index.ts
+ ┃ ┣ features
+ ┃ ┃ ┣ __test__
+ ┃ ┃ ┃ ┗ Todo.test.tsx
+ ┃ ┃ ┗ index.ts
+ ┃ ┣ store
+ ┃ ┃ ┗ index.ts
+ ┃ ┗ types // state types folder
+ ┃ ┃ ┗ index.ts
+ ┗ types
+ ┃ ┗ index.ts // root path types folder</code></pre></div>
+<p>참고페이지</p>
+<ul>
+<li><a href="https://github.com/react-hook-form/react-hook-form/tree/master/src/types" target="_blank" rel="nofollow">https://github.com/react-hook-form/react-hook-form/tree/master/src/types</a></li>
+<li><a href="https://github.com/mobxjs/mobx/blob/main/packages/mobx/flow-typed/mobx.js" target="_blank" rel="nofollow">https://github.com/mobxjs/mobx/blob/main/packages/mobx/flow-typed/mobx.js</a></li>
+</ul>
+<h1 id="interface-vs-type" style="position:relative;"><a href="#interface-vs-type" aria-label="interface vs type permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>interface vs type</h1>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// type</span>
+<span class="token punctuation">(</span><span class="token constant">O</span><span class="token punctuation">)</span> <span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token class-name">PrimitiveType</span> <span class="token operator">=</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token builtin">number</span> <span class="token operator">|</span> <span class="token builtin">boolean</span> <span class="token operator">|</span> <span class="token keyword">undefined</span> <span class="token operator">|</span> <span class="token keyword">null</span> <span class="token operator">|</span> <span class="token builtin">symbol</span><span class="token punctuation">;</span>
+<span class="token punctuation">(</span><span class="token constant">X</span><span class="token punctuation">)</span> <span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token class-name">SomeMembmerType</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  address<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  tier<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>
+
+<span class="token comment">// interface</span>
+<span class="token punctuation">(</span><span class="token constant">O</span><span class="token punctuation">)</span> <span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">ISomeMemberInterface</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  address<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  tier<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>어떤 상황일 때 type, interface로 사용할 지 여부를 결정해보자!!
+<ul>
+<li>lastest 버전의 tslint에서 가이드를 제공해주고 있다.
+<ul>
+<li>Use an interface instead of a type literal.tslint(interface-over-type-literal)
+<ul>
+<li>타입은 리터럴 타입에서만 사용하고 Object 형태의 타입은 인터페이스를 쓰라는 가이드가 추가되었습니다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>리터럴 타입(즉, primitive type, custom value)외에는 interface를 사용해 봅시다.</strong></li>
+<li>참고페이지: <a href="https://luckyyowu.tistory.com/401" target="_blank" rel="nofollow">https://luckyyowu.tistory.com/401</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>동일한점</strong></p>
+<ul>
+<li>명명된 타입은 Type, Interface 동일하게 사용됨</li>
+<li>인덱스 시그니처 사용 가능</li>
+<li>함수 타입 선언 가능</li>
+<li>제네릭 사용가능</li>
+<li>확장 가능
+<ul>
+<li>interface는 extends 키워드로 type은 &#x26; 로 확장</li>
+</ul>
+</li>
+</ul>
+<p><strong>다른점</strong></p>
+<ul>
+<li>
+<p>유니온 타입</p>
+<ul>
+<li>Type으로는 가능 하지만, Interface는 할 수 없음
+<ul>
+<li>type yesOrNo = ‘yes’ | ‘no’</li>
+</ul>
+</li>
+<li>유니온 타입을 확장하고 싶을때 interface로는 안됨</li>
+</ul>
+</li>
+<li>
+<p>튜플과 배열 타입</p>
+<ul>
+<li>type : 사용하기 쉽고 확장이 편함, interface: 다소 복잡하고 불편함</li>
+</ul>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">type</span> <span class="token class-name">Pair</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">number</span><span class="token punctuation">,</span> <span class="token builtin">number</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">type</span> <span class="token class-name">StringList</span> <span class="token operator">=</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">type</span> <span class="token class-name">NamedNums</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">,</span> …<span class="token builtin">number</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">Tuple</span> <span class="token punctuation">{</span>
+  <span class="token number">0</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  <span class="token number">1</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  length<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> t<span class="token operator">:</span> Tuple <span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">]</span></code></pre></div>
+</li>
+<li>
+<p>보강 augment 기능:</p>
+<ul>
+<li>인터페이스에만 있는 기능으로 속성을 추가할 수 있음.</li>
+</ul>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">interface</span> <span class="token class-name">IState</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  capital<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">interface</span> <span class="token class-name">IState</span> <span class="token punctuation">{</span>
+  population<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 이렇게 하면 name, capital, population 세개를 모두 포함하게 됨</span></code></pre></div>
+</li>
+</ul>
+<h1 id="reactfc-vs-function-component" style="position:relative;"><a href="#reactfc-vs-function-component" aria-label="reactfc vs function component permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>React.FC vs Function Component</h1>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">interface</span> <span class="token class-name">Props</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// React.FC(0)</span>
+<span class="token comment">// defaultprops 동작하지 않음(</span>
+<span class="token keyword">const</span> PrintName<span class="token operator">:</span> React<span class="token punctuation">.</span><span class="token constant">FC</span><span class="token operator">&lt;</span>Props<span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> name <span class="token operator">=</span> <span class="token string">''</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span> fontWeight<span class="token operator">:</span> props<span class="token punctuation">.</span>priority <span class="token operator">?</span> <span class="token string">'bold'</span> <span class="token operator">:</span> <span class="token string">'normal'</span> <span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token punctuation">{</span>name<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// React function</span>
+<span class="token keyword">const</span> <span class="token function-variable function">PrintName2</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> name <span class="token punctuation">}</span><span class="token operator">:</span> Props<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span> fontWeight<span class="token operator">:</span> props<span class="token punctuation">.</span>priority <span class="token operator">?</span> <span class="token string">'bold'</span> <span class="token operator">:</span> <span class="token string">'normal'</span> <span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token punctuation">{</span>name<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+PrintName2<span class="token punctuation">.</span>defaultProps <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p><strong>React.FC 의 장단점</strong></p>
+<ul>
+<li>장점
+<ul>
+<li>props 에 기본적으로 children 이 들어가 있다는 것 있음
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c449bac2af11674b8bc34dd95f9280aa/00f4c/Untitled.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 36.32812499999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABa0lEQVR42nWQXU8aQRSG91c0tJXKfrLOLjv7JQu0jdGmUkGR5TMoJijWxHjRpjdtb9Qbf/djdqDUNOnFk3fOzHveMzPaz98PHLb75PmUbm9Eu5vz+ajP4R86L9b/4Us3Z+9Th5vbb2gXixssJ8CPmzhehOWG2DuhUrMq0e0Aw5Ev+LeWyvtmu8rR8RBt+fUO4SWE2T5J/SNx2iJMmgRxk7R1QJh+QAR1RJCtVGYIWdTpml1qUQPd9jnJp2iX13dYdkgUNqhFTXZquzgiwRExMn1P1YuoWALD8TEcD932sFypzh0RKVw/4Z0hOD6doC2Wt+pZfthY36SuphbBUdpCxhlmdRW2Qqghha/wFOrJTH3F6WCGNptf8eqtqTYqlr9h2/Rx/QgvSFTQ67JJqWxQ2tIp6y4Vu7bxFr2lLZt2J0e7f3yiczJiOLkgH5//ZXTOaDrfMBif0csniv5wxmDtKbzDyZxub8z3H794BvFG6jVMGUEoAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/c449bac2af11674b8bc34dd95f9280aa/4fae8/Untitled.webp 256w,
+/static/c449bac2af11674b8bc34dd95f9280aa/2bf0f/Untitled.webp 512w,
+/static/c449bac2af11674b8bc34dd95f9280aa/d71bc/Untitled.webp 1024w,
+/static/c449bac2af11674b8bc34dd95f9280aa/f3efb/Untitled.webp 1536w,
+/static/c449bac2af11674b8bc34dd95f9280aa/7ac34/Untitled.webp 1568w"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/c449bac2af11674b8bc34dd95f9280aa/e3135/Untitled.png 256w,
+/static/c449bac2af11674b8bc34dd95f9280aa/06341/Untitled.png 512w,
+/static/c449bac2af11674b8bc34dd95f9280aa/42a19/Untitled.png 1024w,
+/static/c449bac2af11674b8bc34dd95f9280aa/e8464/Untitled.png 1536w,
+/static/c449bac2af11674b8bc34dd95f9280aa/00f4c/Untitled.png 1568w"
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/c449bac2af11674b8bc34dd95f9280aa/42a19/Untitled.png"
+            alt="Untitled"
+            title="Untitled"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></li>
+<li>defaultProps, propTypes, contextTypes 를 설정 할 때 자동완성 됨
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/119922e703f8e0bda604c6ab78875014/b5cb9/Untitled1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 33.203125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABB0lEQVR42oXR2W7CMBAFUP9HQc3i2MF2MAk0QBayoIikUvtA+/+/cqsxBYQqlYejsUfW9Vhm0/sZ/fiF/vSJqptQteNfv/3iMKBoBld31fGuvlTqMy6XSLIDtmUHoSw8ruBF+o4rBCKB1Blis0JsUieUxvH4AnNfOHSWCZXBpjXWeYVQanfAjxT86FJpHwiNRfLmQq9is3ZoTRmE1kyoFGZ9QJqXkNrebr2EXgMN1DJHbDY3kujNQ4+wWGcweeeevCsbqCS7TUUoNJQJtN26KZ9hPjcQtoDdFODSYOYJvLzyBzNfIIxXCIR9ilXNgG48Y/r4RtOP2NNv1Y/29RFlM6BuR9Tt6V8/xz/bjXMn8xkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/119922e703f8e0bda604c6ab78875014/4fae8/Untitled1.webp 256w,
+/static/119922e703f8e0bda604c6ab78875014/2bf0f/Untitled1.webp 512w,
+/static/119922e703f8e0bda604c6ab78875014/d71bc/Untitled1.webp 1024w,
+/static/119922e703f8e0bda604c6ab78875014/aa71c/Untitled1.webp 1532w"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/119922e703f8e0bda604c6ab78875014/e3135/Untitled1.png 256w,
+/static/119922e703f8e0bda604c6ab78875014/06341/Untitled1.png 512w,
+/static/119922e703f8e0bda604c6ab78875014/42a19/Untitled1.png 1024w,
+/static/119922e703f8e0bda604c6ab78875014/b5cb9/Untitled1.png 1532w"
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/119922e703f8e0bda604c6ab78875014/42a19/Untitled1.png"
+            alt="Untitled"
+            title="Untitled"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></li>
+</ul>
+</li>
+<li>단점
+<ul>
+<li>children이 무조건 들어가 있기 때문에 타입이 명백하지 않음</li>
+<li>defaultProps 동작하지 않음</li>
+</ul>
+</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">const Greetings: React.FC&lt;GreetingsProps> = ({ name, mark = '!' }) => (
+  &lt;div>
+    Hello, {name} {mark}
+  &lt;/div>
+);
+</code></pre></div>
+<ul>
+<li>참고페이지: <a href="https://velog.io/@velopert/create-typescript-react-component" target="_blank" rel="nofollow">https://velog.io/@velopert/create-typescript-react-component</a></li>
+</ul>
+<h1 id="typescript-공식페이지-dos-and-donts-가이드" style="position:relative;"><a href="#typescript-%EA%B3%B5%EC%8B%9D%ED%8E%98%EC%9D%B4%EC%A7%80-dos-and-donts-%EA%B0%80%EC%9D%B4%EB%93%9C" aria-label="typescript 공식페이지 dos and donts 가이드 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>typescript 공식페이지: Do’s and Don’ts 가이드</h1>
+<p><strong>General Types</strong></p>
+<ul>
+<li>Don’t
+<ul>
+<li>Number, String, Boolean 또는 Object 타입을 절대 사용하지 마라. 이 타입들은 JavaScript 코드에서 대부분 적절하지 않게 사용되는 non-primitive boxed object1들을 의미한다.</li>
+</ul>
+</li>
+<li>Do
+<ul>
+<li>number, string 그리고 boolean을 사용하라.</li>
+</ul>
+</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">/* WRONG */
+function reverse(s: String): String;
+
+/* OK */
+function reverse(s: string): string;</code></pre></div>
+<p><strong>Callback Types</strong>
+<strong>Return Types of Callbacks</strong></p>
+<ul>
+<li>Don’t
+<ul>
+<li>값이 무시될 콜백의 리턴타입으로 any를 사용하지 마라.</li>
+</ul>
+</li>
+<li>Do
+<ul>
+<li>값이 무시될 콜백의 리턴타입으로 void를 사용하라.</li>
+</ul>
+</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">/* WRONG */
+function fn(x: () => any) {
+  x();
+}
+
+/* OK */
+function fn(x: () => void) {
+  x();
+}
+
+// 이유는? 확인되지 않는 방법으로 x의 리턴타입을 사용하는 실수를 방지해주기 때문에 void를 사용하는 것이 더 안전하다.
+function fn(x: () => void) {
+  var k = x(); // oops! meant to do something else
+  k.doSomething(); // error, but would be OK if the return type had been 'any'
+}
+</code></pre></div>
+<p><strong>Function Overloads</strong></p>
+<ul>
+<li>Don’t
+<ul>
+<li>더 구체적인 시그니처 전에 일반적인 시그니처를 두지 마라.</li>
+</ul>
+</li>
+<li>Do
+<ul>
+<li>더 구체적인 시그니처 다음에 일반적인 시그니처를 두도록 정렬하라.</li>
+</ul>
+</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">/* WRONG */
+declare function fn(x: unknown): unknown;
+declare function fn(x: HTMLElement): number;
+declare function fn(x: HTMLDivElement): string;
+var myElem: HTMLDivElement;
+var x = fn(myElem); // x: unknown, wat?
+
+/* OK */
+declare function fn(x: HTMLDivElement): string;
+declare function fn(x: HTMLElement): number;
+declare function fn(x: unknown): unknown;
+var myElem: HTMLDivElement;
+var x = fn(myElem); // x: string, :)</code></pre></div>
+<p><strong>Use Optional Parameters</strong></p>
+<ul>
+<li>Don’t
+<ul>
+<li>뒤에 나오는 매개변수들만 다른 경우 여러 시그니처를 작성하지 마라.</li>
+</ul>
+</li>
+<li>Do
+<ul>
+<li>가능한 경우에는 선택적 매개변수를 사용하라.</li>
+</ul>
+</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">/* WRONG */
+interface Example {
+  diff(one: string): number;
+  diff(one: string, two: string): number;
+  diff(one: string, two: string, three: boolean): number;
+}
+
+/* OK */
+interface Example {
+  diff(one: string, two?: string, three?: boolean): number;
+}</code></pre></div>
+<p>이 방법은 모든 시그니처의 리턴타입이 같은 경우에만 가능하다는 것을 주의!!</p>
+<h3 id="use-union-types" style="position:relative;"><a href="#use-union-types" aria-label="use union types permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Use Union Types</h3>
+<ul>
+<li>Don’t
+<ul>
+<li>오직 하나의 매개변수 타입이 다른 경우에는 오버로딩을 사용하지 마라.</li>
+</ul>
+</li>
+<li>Do
+<ul>
+<li>가능한 경우에는 유니온 타입을 사용하라.</li>
+</ul>
+</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">/* WRONG */
+interface Moment {
+  utcOffset(): number;
+  utcOffset(b: number): Moment;
+  utcOffset(b: string): Moment;
+}
+
+/* OK */
+interface Moment {
+  utcOffset(): number;
+  utcOffset(b: number | string): Moment;
+}</code></pre></div>
+<ul>
+<li>
+<p>참고페이지:</p>
+<ul>
+<li><a href="https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html" target="_blank" rel="nofollow">https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html</a></li>
+<li><a href="https://nukeguys.github.io/dev/ts-do-and-dont/" target="_blank" rel="nofollow">https://nukeguys.github.io/dev/ts-do-and-dont/</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="type-assertion" style="position:relative;"><a href="#type-assertion" aria-label="type assertion permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>type assertion</h1>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 속성이 하나도 없는 빈 객체로 타입 추론이 되기 때문..</span>
+<span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+foo<span class="token punctuation">.</span>bar <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span> <span class="token comment">// 오류: 속성 'bar'가 `{}`에 존재하지 않음</span>
+foo<span class="token punctuation">.</span>bas <span class="token operator">=</span> <span class="token string">'hello'</span><span class="token punctuation">;</span> <span class="token comment">// 오류: 속성 'bar'가 `{}`에 존재하지 않음</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">Foo</span> <span class="token punctuation">{</span>
+  bar<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  bas<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token keyword">as</span> Foo<span class="token punctuation">;</span> <span class="token comment">// type assertion(타입 표명) 해결</span>
+foo<span class="token punctuation">.</span>bar <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+foo<span class="token punctuation">.</span>bas <span class="token operator">=</span> <span class="token string">'hello'</span><span class="token punctuation">;</span></code></pre></div>
+<h1 id="interface" style="position:relative;"><a href="#interface" aria-label="interface permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>interface</h1>
+<p><strong>interface generic</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">interface</span> <span class="token class-name">Dropdown<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token punctuation">,</span> <span class="token constant">G</span><span class="token operator">></span></span> <span class="token punctuation">{</span>
+  value<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">;</span>
+  selected<span class="token operator">:</span> <span class="token constant">G</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> obj2<span class="token operator">:</span> Dropdown<span class="token operator">&lt;</span><span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token builtin">boolean</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">{</span> value<span class="token operator">:</span> <span class="token string">'abc'</span><span class="token punctuation">,</span> selected<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>interface extends</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">interface</span> <span class="token class-name">Drinker</span> <span class="token keyword">extends</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+  drink<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">interface</span> <span class="token class-name">Developer</span> <span class="token keyword">extends</span> <span class="token class-name">Drinker</span> <span class="token punctuation">{</span>
+  skill<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> fe <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token keyword">as</span> Developer<span class="token punctuation">;</span>
+fe<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'hong'</span><span class="token punctuation">;</span>
+fe<span class="token punctuation">.</span>skill <span class="token operator">=</span> <span class="token string">'TypeScript'</span><span class="token punctuation">;</span>
+fe<span class="token punctuation">.</span>drink <span class="token operator">=</span> <span class="token string">'Beer'</span><span class="token punctuation">;</span></code></pre></div>
+<p>interface readonly</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">interface</span> <span class="token class-name">ReadOnly</span> <span class="token punctuation">{</span>
+  <span class="token keyword">readonly</span> test<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> params<span class="token operator">:</span> ReadOnly <span class="token operator">=</span> <span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token string">'test3'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+params<span class="token punctuation">.</span>test <span class="token operator">=</span> <span class="token string">'test4'</span><span class="token punctuation">;</span> <span class="token comment">// error!</span></code></pre></div>
+<h1 id="type-aliases타입-별칭" style="position:relative;"><a href="#type-aliases%ED%83%80%EC%9E%85-%EB%B3%84%EC%B9%AD" aria-label="type aliases타입 별칭 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>type-aliases(타입 별칭)</h1>
+<p><strong>generic</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">type</span> <span class="token class-name">Developer</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  skill<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">type</span> <span class="token class-name">typeGeneric<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">></span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>타입 별칭은 새로운 타입 값을 하나 생성하는 것이 아니라 정의한 타입에 대해 개발자가 쉽게 관찰하도록 이름을 부여하는 것과 같습니다.
+그래서 interface를 정의하고 커서를 hover하면 interface xx 이렇게 나오지만 type은 type xx = {xx: xx}이렇게 상세하게 나오게 됩니다.
+확장</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">type</span> <span class="token class-name">test1</span> <span class="token operator">=</span> <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">type</span> <span class="token class-name">test2</span> <span class="token operator">=</span> test1 <span class="token operator">&amp;</span> <span class="token punctuation">{</span> age<span class="token operator">:</span> <span class="token builtin">number</span> <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>속성 제거</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">type</span> <span class="token class-name"><span class="token constant">XYZ</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  x<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  y<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  z<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// y, z 속성을 제외하여 아래처럼 만들고 싶다</span>
+<span class="token keyword">type</span> <span class="token class-name"><span class="token constant">X</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span> x<span class="token operator">:</span> <span class="token builtin">number</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ts 3.5 이상은 omit</span>
+<span class="token keyword">type</span> <span class="token class-name"><span class="token constant">X</span></span> <span class="token operator">=</span> Omit<span class="token operator">&lt;</span><span class="token constant">XYZ</span><span class="token punctuation">,</span> <span class="token string">'x'</span> <span class="token operator">|</span> <span class="token string">'y'</span><span class="token operator">></span><span class="token punctuation">;</span></code></pre></div>
+<h1 id="nullundefined" style="position:relative;"><a href="#nullundefined" aria-label="nullundefined permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>null,undefined</h1>
+<p><strong>접미 ! : 연산자인 단언 연산자는 해당 피연산자가 null, undeifned가 아니라고 단언</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">this</span><span class="token punctuation">.</span>todosStore <span class="token operator">=</span> props<span class="token punctuation">.</span>store<span class="token operator">!</span><span class="token punctuation">;</span> <span class="token comment">// 접미에 붙는 느낌표(!) 연산자인 단언 연산자는 해당 피연산자가 null, undeifned가 아니라고 단언</span></code></pre></div>
+<p><strong>옵셔널체이닝</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">const</span> deathsList <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.deaths-list'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+deathsList<span class="token operator">?.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>li<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p><strong>타입 단언 사용 (type assertion)</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">const</span> deathsList <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.deaths-list'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+deathsList<span class="token operator">!</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span> <span class="token comment">// 타입 단언 ! 사용</span>
+
+<span class="token comment">// 또는 as를 이용해 강제로 타입을 주입하여 null이 아니라는 것을 ts에게 알려줍니다.</span>
+<span class="token keyword">const</span> deathsList <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.deaths-list'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> HTMLDivElement<span class="token punctuation">;</span>
+deathsList<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span> <span class="token comment">// 타입 단언 ! 사용</span></code></pre></div>
+<p><strong>if문으로 null 걸러냄</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">const</span> deathsList <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.deaths-list'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>deathsList<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+
+deathsList<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></code></pre></div>
+<h1 id="utility-type" style="position:relative;"><a href="#utility-type" aria-label="utility type permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>utility type</h1>
+<h2 id="partialt" style="position:relative;"><a href="#partialt" aria-label="partialt permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Partial<T></h2>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">특정 타입의 부분 집합을 만족하는 타입을 정의할 수 있습니다.
+
+```tsx
+interface Address {
+  email: string;
+  address: string;
+}
+
+type MyEmail = Partial&lt;Address>;
+const me: MyEmail = {}; // 가능
+const you: MyEmail = { email: 'gmm117@naver.com' }; // 가능
+const all: MyEmail = { email: 'gmm117@naver.com', address: 'seoul' }; // 가능
+```</code></pre></div>
+<h2 id="excludet-u" style="position:relative;"><a href="#excludet-u" aria-label="excludet u permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exclude&#x3C;T, U></h2>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">T에서 U에 할당할 수 있는 교집합 속성을 제외한 타입을 구성합니다.
+```tsx
+type T0 = Exclude&lt;'a' | 'b' | 'c', 'a'>; // "b" | "c"
+type T1 = Exclude&lt;'a' | 'b' | 'c', 'a' | 'b'>; // "c"
+type T2 = Exclude&lt;string | number | (() => void), Function>; // string | number
+```</code></pre></div>
+<h2 id="extractt-u" style="position:relative;"><a href="#extractt-u" aria-label="extractt u permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extract&#x3C;T, U></h2>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">T에서 U에 할당 할 수 있는 교집합 속성을 추출하여 타입을 구성합니다.
+```tsx
+type T0 = Extract&lt;'a' | 'b' | 'c', 'a' | 'f'>; // "a"
+type T1 = Extract&lt;string | number | (() => void), Function>; // () => void
+```</code></pre></div>
+<h2 id="nonnullablet" style="position:relative;"><a href="#nonnullablet" aria-label="nonnullablet permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NonNullable<T></h2>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">T에서 null 과 undefined를 제외한 타입을 구성합니다.
+```tsx
+type T0 = NonNullable&lt;string | number | undefined>; // string | number
+type T1 = NonNullable&lt;string[] | null | undefined>; // string[]
+```</code></pre></div>
+<h2 id="readonlyt" style="position:relative;"><a href="#readonlyt" aria-label="readonlyt permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Readonly<T></h2>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">T의 모든 프로퍼티를 읽기 전용(readonly)으로 설정한 타입을 구성합니다, 즉 생성된 타입의 프로퍼티는 재할당할 수 없습니다.
+
+```tsx
+interface Todo {
+  title: string;
+}
+
+const todo: Readonly&lt;Todo> = {
+  title: 'Delete inactive users',
+};
+
+todo.title = 'Hello'; // 오류: 읽기 전용 프로퍼티에 재할당할 수 없음
+```</code></pre></div>
+<h2 id="pickt" style="position:relative;"><a href="#pickt" aria-label="pickt permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pick<T></h2>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">특정 타입에서 몇 개의 속성을 선택하여 타입을 정의합니다
+
+```tsx
+interface Address {
+  email: string;
+  address: string;
+}
+
+type MyEmail = Pick&lt;Address, 'email'>;
+// email 속성 일부만 사용
+```</code></pre></div>
+<h2 id="omitt" style="position:relative;"><a href="#omitt" aria-label="omitt permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Omit<T></h2>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">특정 속성만 제거한 타입을 정의(pick 반대)
+
+```tsx
+interface Address {
+  email: string;
+  address: string;
+}
+
+type MyEmail = Omit&lt;Address, 'address'>;
+// address 속성을 제거
+```</code></pre></div>
+<h2 id="returntypet" style="position:relative;"><a href="#returntypet" aria-label="returntypet permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ReturnType<T></h2>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">함수 T의 반환 타입으로 구성된 타입을 만듭니다.
+```tsx
+declare function f1(): { a: number; b: string };
+type T0 = ReturnType&lt;() => string>; // string
+type T1 = ReturnType&lt;(s: string) => void>; // void
+type T2 = ReturnType&lt;&lt;T>() => T>; // {}
+type T3 = ReturnType&lt;&lt;T extends U, U extends number[]>() => T>; // number[]
+type T4 = ReturnType&lt;typeof f1>; // { a: number, b: string }
+type T5 = ReturnType&lt;any>; // any
+type T6 = ReturnType&lt;never>; // any
+```</code></pre></div>
+<ul>
+<li>
+<p>InstanceType<T>
+생성자 함수 타입 T의 인스턴스 타입으로 구성된 타입을 만듭니다.</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">class</span> <span class="token class-name"><span class="token constant">C</span></span> <span class="token punctuation">{</span>
+  x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">type</span> <span class="token class-name"><span class="token constant">T0</span></span> <span class="token operator">=</span> InstanceType<span class="token operator">&lt;</span><span class="token keyword">typeof</span> <span class="token constant">C</span><span class="token operator">></span><span class="token punctuation">;</span> <span class="token comment">// C</span>
+<span class="token keyword">type</span> <span class="token class-name"><span class="token constant">T1</span></span> <span class="token operator">=</span> InstanceType<span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">></span><span class="token punctuation">;</span> <span class="token comment">// any</span>
+<span class="token keyword">type</span> <span class="token class-name"><span class="token constant">T2</span></span> <span class="token operator">=</span> InstanceType<span class="token operator">&lt;</span><span class="token builtin">never</span><span class="token operator">></span><span class="token punctuation">;</span> <span class="token comment">// any</span></code></pre></div>
+</li>
+<li>
+<p>Required<T>
+T의 모든 프로퍼티가 필수로 설정된 타입을 구성합니다.</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">interface</span> <span class="token class-name">Props</span> <span class="token punctuation">{</span>
+  a<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  b<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> obj<span class="token operator">:</span> Props <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token operator">:</span> <span class="token number">5</span> <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// 성공</span>
+
+<span class="token keyword">const</span> obj2<span class="token operator">:</span> Required<span class="token operator">&lt;</span>Props<span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token operator">:</span> <span class="token number">5</span> <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// 오류: 프로퍼티 'b'가 없습니다</span></code></pre></div>
+</li>
+</ul>
+<h1 id="tsconfig-필수옵션-지정해보자" style="position:relative;"><a href="#tsconfig-%ED%95%84%EC%88%98%EC%98%B5%EC%85%98-%EC%A7%80%EC%A0%95%ED%95%B4%EB%B3%B4%EC%9E%90" aria-label="tsconfig 필수옵션 지정해보자 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>tsconfig 필수옵션 지정해보자</h1>
+<p>strictNullChecks option 킬 경우</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 컴파일러 옵션에서 --strictNullChecks 을 꺼둔 경우는 null과 undefined는 각각 다른 타입의 값으로 사용할 수 있습니다.</span>
+<span class="token string-property property">"compilerOptions"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">"strictNullChecks"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> a<span class="token operator">:</span> <span class="token keyword">null</span> <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> b<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">=</span> a<span class="token punctuation">;</span> <span class="token comment">// strictNullChecks를 켜둔 경우에러</span></code></pre></div>
+<p>noImplicitAny option 킬 경우</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 타입을 명시적으로 지정하지 않은경우, 타입스크립트가 추론을 'any'라고 판단하게 되면 컴파일 에러가 발생한다.</span>
+<span class="token string-property property">"compilerOptions"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">"noImplicitAny"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// error TS7006: Parameter 'a' implicitly has an 'any' type</span>
+<span class="token class-name"><span class="token keyword">function</span></span> <span class="token function">f3</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>a <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a<span class="token operator">*</span><span class="token number">38</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>noImplicitReturns option 킬 경우</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 함수 내에서 모든 코드가 값을 리턴하지 않으면, 컴파일 에러를 발생시킨다.</span>
+<span class="token string-property property">"compilerOptions"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">"noImplicitReturns"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 모든 코드에서 리턴을 직접해야한다.</span>
+<span class="token comment">// error TS7030: Not all code paths returns a value</span>
+<span class="token keyword">function</span> <span class="token function">f5</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>a <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a<span class="token operator">*</span><span class="token number">38</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h1 id="참고페이지" style="position:relative;"><a href="#%EC%B0%B8%EA%B3%A0%ED%8E%98%EC%9D%B4%EC%A7%80" aria-label="참고페이지 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>참고페이지</h1>
+<ul>
+<li><a href="https://radlohead.gitbook.io/typescript-deep-dive/type-system/type-assertion" target="_blank" rel="nofollow">https://radlohead.gitbook.io/typescript-deep-dive/type-system/type-assertion</a></li>
+<li><a href="https://typescript-kr.github.io/pages/utility-types.html#readonlyt" target="_blank" rel="nofollow">https://typescript-kr.github.io/pages/utility-types.html#readonlyt</a></li>
+</ul></article><section class="PostContent__PostNavigator-sc-9jovib-6 ffkTpb"><a href="/blog/2022/02/2022-02-13-react17/"><h5>이전글</h5><i>← </i>react17</a><a href="/blog/2022/01/2022-01-10-RxJS/"><h5>다음글</h5>RxJS<i> →</i></a></section><div></div></div><aside class="PostContent__TocRenderer-sc-9jovib-4 bIaAsx"><ul>
+<li>
+<p><a href="#%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC%ED%95%98%EB%8A%94-%EA%B1%B8%EA%B9%8C">타입스크립트는 왜 사용해야하는 걸까??</a></p>
+</li>
+<li>
+<p><a href="#%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%A1%B0">타입스크립트 디렉토리 구조</a></p>
+</li>
+<li>
+<p><a href="#interface-vs-type">interface vs type</a></p>
+</li>
+<li>
+<p><a href="#reactfc-vs-function-component">React.FC vs Function Component</a></p>
+</li>
+<li>
+<p><a href="#typescript-%EA%B3%B5%EC%8B%9D%ED%8E%98%EC%9D%B4%EC%A7%80-dos-and-donts-%EA%B0%80%EC%9D%B4%EB%93%9C">typescript 공식페이지: Do’s and Don’ts 가이드</a></p>
+<ul>
+<li>
+<ul>
+<li><a href="#use-union-types">Use Union Types</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#type-assertion">type assertion</a></p>
+</li>
+<li>
+<p><a href="#interface">interface</a></p>
+</li>
+<li>
+<p><a href="#type-aliases%ED%83%80%EC%9E%85-%EB%B3%84%EC%B9%AD">type-aliases(타입 별칭)</a></p>
+</li>
+<li>
+<p><a href="#nullundefined">null,undefined</a></p>
+</li>
+<li>
+<p><a href="#utility-type">utility type</a></p>
+<ul>
+<li><a href="#partialt">Partial<T></a></li>
+<li><a href="#excludet-u">Exclude&#x3C;T, U></a></li>
+<li><a href="#extractt-u">Extract&#x3C;T, U></a></li>
+<li><a href="#nonnullablet">NonNullable<T></a></li>
+<li><a href="#readonlyt">Readonly<T></a></li>
+<li><a href="#pickt">Pick<T></a></li>
+<li><a href="#omitt">Omit<T></a></li>
+<li><a href="#returntypet">ReturnType<T></a></li>
+</ul>
+</li>
+<li>
+<p><a href="#tsconfig-%ED%95%84%EC%88%98%EC%98%B5%EC%85%98-%EC%A7%80%EC%A0%95%ED%95%B4%EB%B3%B4%EC%9E%90">tsconfig 필수옵션 지정해보자</a></p>
+</li>
+<li>
+<p><a href="#%EC%B0%B8%EA%B3%A0%ED%8E%98%EC%9D%B4%EC%A7%80">참고페이지</a></p>
+</li>
+</ul></aside></div><div class="Footer__FooterWrapper-sc-rphy7j-0 cKqBUF">Thank You for Visiting My Blog,<br/>© 2021 Developer SeungAh, Powered By Gatsby.</div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/2022/01/2022-01-16-typescript/";window.___webpackCompilationHash="574edc59b0f831a4be0d";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-fe391ba76f4d664b34c5.js"],"app":["/app-cf78e816de5fd78a93fa.js"],"component---src-components-templates-post-template-tsx":["/component---src-components-templates-post-template-tsx-721999ce693fdd12d985.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-fba53f0d04df82788e46.js"],"component---src-pages-about-tsx":["/component---src-pages-about-tsx-e970490fffd6fb6cd37c.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-aced441a8b78c665c231.js"]};/*]]>*/</script><script src="/polyfill-fe391ba76f4d664b34c5.js" nomodule=""></script><script src="/app-cf78e816de5fd78a93fa.js" async=""></script><script src="/framework-af486daeee2ef6d64e8f.js" async=""></script><script src="/webpack-runtime-d28c414343b31c9f2b92.js" async=""></script></body></html>
