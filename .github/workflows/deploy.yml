@@ -31,7 +31,7 @@ jobs:
 
       # 패키지를 설치합니다.
       - name: Install dependencies
-        run: gatsby build
+        run: yarn gatsby build
 
       # e2e(playwright) 테스트 툴을 설치합니다.
       - name: Install playwright browsers
