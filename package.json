@@ -66,7 +66,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby clean & gatsby build && gh-pages -d public -b master",
+    "deploy": "gatsby clean & gatsby build && gh-pages -d public",
     "e2e:ci": "playwright test",
     "e2e:run": "cross-env PLAYWRIGHT_VIDEO=false playwright test",
     "e2e:debug": "cross-env PLAYWRIGHT_VIDEO=false playwright test --debug"
