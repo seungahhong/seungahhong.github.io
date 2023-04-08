@@ -12,6 +12,7 @@
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
     "babel-plugin-styled-components": "^2.0.2",
+    "cross-env": "^7.0.3",
     "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -47,7 +48,9 @@
     "typescript": "^4.5.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.32.2",
     "gh-pages": "^3.2.3",
+    "playwright": "^1.32.2",
     "prettier": "^2.5.1"
   },
   "keywords": [
@@ -63,7 +66,10 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby clean & gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby clean & gatsby build && gh-pages -d public -b master",
+    "e2e:ci": "playwright test",
+    "e2e:run": "cross-env PLAYWRIGHT_VIDEO=false playwright test",
+    "e2e:debug": "cross-env PLAYWRIGHT_VIDEO=false playwright test --debug"
   },
   "repository": {
     "type": "git",
