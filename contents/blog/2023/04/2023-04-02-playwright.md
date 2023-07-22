@@ -166,9 +166,7 @@ test.beforeEach(async ({ isMobile }) => {
 
 ## 멀티 플랫폼/브라우저 테스트
 
-- 와디즈 서비스만에 타겟 멀티 플랫폼/브라우저 전략을 세워야 할 것 같습니다.
-- 현재는 크롬(웹, 모웹)에 대해서만 테스트를 진행하고 있습니다.
-  - 서포터 사이드, 메이커 사이드별로 다른 타겟 지정이 필요
+- 서비스만에 타겟 멀티 플랫폼/브라우저 전략을 세워야 할 것 같습니다.
 - 다른 회사 사례
   - 하이퍼커넥트: safari를 필수로 테스트 진행
     - [https://hyperconnect.github.io/2022/01/28/e2e-test-with-playwright.html](https://hyperconnect.github.io/2022/01/28/e2e-test-with-playwright.html)
