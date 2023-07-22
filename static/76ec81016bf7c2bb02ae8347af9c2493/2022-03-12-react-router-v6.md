@@ -4,7 +4,7 @@ title: react-router-v6
 date: 2022-03-12
 published: 2022-03-12
 category: 개발
-tags: ['react']
+tags: ['react-router']
 comments: true,
 thumbnail: './assets/12/thumbnail.png'
 github: 'https://github.com/seungahhong/react-router-tutorial'
