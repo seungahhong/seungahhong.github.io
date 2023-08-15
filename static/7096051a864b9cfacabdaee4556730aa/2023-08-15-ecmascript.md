@@ -1,20 +1,155 @@
 ---
 layout: post
-title: javascript
-date: 2022-03-28
-published: 2022-03-28
+title: ecmascript
+date: 2023-08-15
+published: 2023-08-15
 category: 개발
 tags: ['javascript']
 comments: true,
-thumbnail: './assets/28/thumbnail.jpg'
+thumbnail: './assets/15/thumbnail.jpeg'
 github: 'https://github.com/seungahhong/seungahhong.github.io'
 ---
+
+# ES2023(ES14)
+
+**ES2023에 추가된 기능들**
+
+[ECMAScript® 2024 Language Specification](https://tc39.es/ecma262/)
+
+ECMAScript 2023, the 14th edition, introduced the `toSorted`, `toReversed`, `with`, `findLast`, and `findLastIndex` methods on `Array.prototype` and `TypedArray.prototype`, as well as the `toSpliced` method on `Array.prototype`; added support for `#!` comments at the beginning of files to better facilitate executable ECMAScript files; and allowed the use of most Symbols as keys in weak collections.
+
+**Array find from last**
+
+[tc39/proposal-array-find-from-last](https://github.com/tc39/proposal-array-find-from-last)
+
+배열의 값을 뒤로부터 찾을 수 있는 기능이 추가되었습니다.
+
+findLast, findLastIndex
+
+```tsx
+const array = [{ value: 1 }, { value: 2 }, { value: 3 }, { value: 4 }];
+
+array.find(n => n.value % 2 === 1); // { value: 1 }
+array.findIndex(n => n.value % 2 === 1); // 0
+
+// ======== Before the proposal ===========
+
+// find
+[...array].reverse().find(n => n.value % 2 === 1); // { value: 3 }
+
+// findIndex
+array.length - 1 - [...array].reverse().findIndex(n => n.value % 2 === 1); // 2
+array.length - 1 - [...array].reverse().findIndex(n => n.value === 42); // should be -1, but 4
+
+// ======== In the proposal ===========
+// find
+array.findLast(n => n.value % 2 === 1); // { value: 3 }
+
+// findIndex
+array.findLastIndex(n => n.value % 2 === 1); // 2
+array.findLastIndex(n => n.value === 42); // -1
+```
+
+**Change Array by Copy**
+
+[tc39/proposal-change-array-by-copy](https://github.com/tc39/proposal-change-array-by-copy)
+
+자바스크립트에서 배열을 변경 시 기존 배열을 얕은 복사하다보니 기존 배열이 변경되는 API들이 있는데요, 해당 API에 대한 깊은 복사(새로운 배열 객체)를 해주는 API들이 추가되었습니다.
+
+함수형 프로그래밍의 불변성(Immutable) 개념이 적용된 사례인거 같네요
+
+Array.prototype.toReversed() -> Array<br />
+Array.prototype.toSorted(compareFn) -> Array<br />
+Array.prototype.toSpliced(start, deleteCount, ...items) -> Array<br />
+Array.prototype.with(index, value) -> Array<br />
+TypedArray.prototype.toReversed() -> TypedArray<br />
+TypedArray.prototype.toSorted(compareFn) -> TypedArray<br />
+TypedArray.prototype.with(index, value) -> TypedArray<br />
+
+- **toReversed**
+
+기존 배열의 순서를 역전해 새로운 배열을 만들어 전달한다
+
+```tsx
+const sequence = [1, 2, 3];
+sequence.toReversed(); // => [3, 2, 1]
+sequence; // => [1, 2, 3]
+```
+
+- **toSorted( compare function )**
+
+비교 함수를 넣어 새로운 배열을 반환한다(default: 오름차순)
+
+```tsx
+const sequence = [3, 2, 3];
+sequence.toSorted(); // => [1, 2, 3]
+sequence; // => [3, 2, 1]
+
+const outOfOrder = new Uint8Array([3, 1, 2]);
+outOfOrder.toSorted(); // => Uint8Array [1, 2, 3]
+outOfOrder; // => Uint8Array [3, 1, 2]
+```
+
+- **toSpliced( start, delectCnt, ...item )**
+
+배열의 요소 삭제 또는 교체
+
+```tsx
+const sequence = [1, 2, 3];
+sequence.toSliced(0, 1); // => [2, 3]
+sequence; // => [1, 2, 3];
+```
+
+- **with( index, value )**
+
+배열의 인덱스 요소 value 교체
+
+```tsx
+const correctionNeeded = [1, 1, 3];
+correctionNeeded.with(1, 2); // => [1, 2, 3]
+correctionNeeded; // => [1, 1, 3]
+```
+
+- **Symbols as WeakMap keys**
+
+[tc39/proposal-symbols-as-weakmap-keys](https://github.com/tc39/proposal-symbols-as-weakmap-keys)
+
+제목에서 파악이 가능하듯이 WeakMap에 키에 Symbol을 넣을 수 있습니다. 2022까지는 문자(string)만 넣을 수 있었습니다.
+
+```tsx
+const weak = new WeakMap();
+
+// Pun not intended: being a symbol makes it become a more symbolic key
+const key = Symbol('my ref');
+const someObject = {
+  /* data data data */
+};
+
+weak.set(key, someObject);
+```
+
+**Hashbang Grammar**
+
+[tc39/proposal-hashbang](https://github.com/tc39/proposal-hashbang)
+
+Javascript 파일이 CLI에서 실행될 경우 HashBang(#!) 기호와 해당 라인이 무시됩니다. 단, 소소코드의 시작 부분에만 유효합니다.
+
+```tsx
+#!/usr/bin/env node
+// in the Script Goal
+'use strict';
+console.log(1);
+
+#!/usr/bin/env node
+// in the Module Goal
+export {};
+console.log(1);
+```
 
 # ES2022(ES13)
 
 - ES2022에 추가된 기능들
-
-[https://tc39.es/ecma262/](https://tc39.es/ecma262/)
+  [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
 
 - Class Fields
 
@@ -1579,91 +1714,3 @@ filteredUser.age;
 filteredUser.username;
 // "hong"
 ```
-
-# 그외
-
-- reduce
-
-**배열.reduce((누적값, 현잿값, 인덱스, 요소) => { return 결과 }, 초깃값);**
-
-```javascript
-const oneTwoThree = [1, 2, 3];
-// 초기값 세팅 O
-result = oneTwoThree.reduce((acc, cur, i) => {
-  console.log(acc, cur, i);
-  return acc + cur;
-}, 0);
-// 0 1 0
-// 1 2 1
-// 3 3 2
-result; // 6
-
-// 초기값 세팅 X
-result = oneTwoThree.reduce((acc, cur, i) => {
-  console.log(acc, cur, i);
-  return acc + cur;
-});
-// 1 2 1
-// 3 3 2
-result; // 6
-```
-
-# Javascript 정리
-
-- IIFE
-
-```javascript
-// 숨기고 싶은 값이지만 브라우저에서 secretUsers에 접근이 가능하다.
-const secretUsers = ['hong', 'kim', 'choi', 'seyoung'];
-console.log(secretUsers);
-
-// IIFE(Immediately-Invoked Function Expressions) 적용
-/*function()*/ (() => {
-  const secretUsers = ['hong', 'kim', 'choi', 'seyoung'];
-  console.log(secretUsers);
-})();
-```
-
-- javascript를 통한 모듈번들러(웹팩,gulp) 기능 간단구현(ES6)
-
-```html
-<!-- index.html -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- type:module로 인해서 import,export 구현가능 -->
-    <script type="module" src="app.js"></script>
-    <script type="module" src="app2.js"></script>
-  </body>
-</html>
-```
-
-```javascript
-// app.js
-let users = ['hong', 'kim', 'choi'];
-export const addUsers = user => (users = [...users, user]);
-
-export const getUsers = () => users;
-
-export const deleteUsers = user =>
-  (users = users.filter(aUser => aUser !== user));
-```
-
-```javascript
-//app2.js
-import { addUsers, getUsers } from './app.js';
-
-console.log(getUsers());
-addUsers('seyoung');
-console.log(getUsers());
-```
-
-- Javascript6~10 참고사이트
-
-* [Nomad Courses](https://academy.nomadcoders.co/)
