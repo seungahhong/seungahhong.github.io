@@ -10,6 +10,8 @@ thumbnail: './assets/16/thumbnail.jpeg'
 github: 'https://github.com/seungahhong/seungahhong.github.io'
 ---
 
+## 개요
+
 나무를 흔들어 잔가지를 털어내듯 **불필요한 코드를 제거**하는 최적화 작업
 
 - Webpack 4버전 이상을 사용하는 경우에는 ES6 모듈을 대상으로 기본적인 트리쉐이킹을 제공한다.(`import`, `export`를 사용하는 모듈)
