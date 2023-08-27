@@ -61,10 +61,12 @@ const PostWrapper = styled.div`
   position: relative;
   margin: 0 auto;
   align-items: start;
+  width: 1024px;
   max-width: 1024px;
 
   @media (max-width: 1024px) {
     margin: 0;
+    width: auto;
   }
 `;
 
