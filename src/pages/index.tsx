@@ -222,68 +222,58 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
   );
 };
 
-export const getPostList = graphql`
-  query getPostList {
-    site {
-      siteMetadata {
-        title
-        description
-        author
-        type
-        siteUrl
-        INIT_PER_PAGE_NUMBER
-        social {
-          facebook
-          github
-          notion
-          linkedin
-        }
+export const getPostList = graphql`query getPostList {
+  site {
+    siteMetadata {
+      title
+      description
+      author
+      type
+      siteUrl
+      INIT_PER_PAGE_NUMBER
+      social {
+        facebook
+        github
+        notion
+        linkedin
       }
     }
-    allMarkdownRemark(
-      sort: {
-        order: [DESC, DESC, ASC]
-        fields: [
-          frontmatter___date
-          frontmatter___category
-          frontmatter___tags
-          frontmatter___title
-        ]
-      }
-    ) {
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "YYYY.MM.DD")
-            category
-            tags
-            thumbnail {
-              childImageSharp {
-                gatsbyImageData(width: 768, height: 400)
-              }
+  }
+  allMarkdownRemark(
+    sort: [{frontmatter: {date: DESC}}, {frontmatter: {category: DESC}}, {frontmatter: {tags: ASC}}, {frontmatter: {title: ASC}}]
+  ) {
+    edges {
+      node {
+        id
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date(formatString: "YYYY.MM.DD")
+          category
+          tags
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(width: 768, height: 400)
             }
           }
-          excerpt
         }
+        excerpt
       }
     }
-    allFile {
-      edges {
-        node {
-          name
-          publicURL
-          childImageSharp {
-            gatsbyImageData(width: 768, height: 400)
-          }
+  }
+  allFile {
+    edges {
+      node {
+        name
+        publicURL
+        childImageSharp {
+          gatsbyImageData(width: 768, height: 400)
         }
       }
     }
   }
-`;
+}`;
 
 export default IndexPage;
