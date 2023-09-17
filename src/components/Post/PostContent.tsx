@@ -123,6 +123,8 @@ const TocRenderer = styled.aside`
   color: rgba(0, 0, 0, 0.4);
   padding: 0 0.75rem;
   border-left: 2px solid gray;
+  height: calc(100vh - 50px);
+  overflow: auto;
 
   & ul {
     list-style: none;
