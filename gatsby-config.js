@@ -164,4 +164,5 @@ module.exports = {
       },
     },
   ],
+  trailingSlash: 'always',
 };
