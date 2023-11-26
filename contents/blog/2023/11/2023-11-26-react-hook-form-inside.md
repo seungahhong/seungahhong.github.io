@@ -12,7 +12,7 @@ github: 'https://github.com/seungahhong/seungahhong.github.io'
 
 ![Untitled](./assets/26/Untitled.png)
 
-## Form 객체 생성
+# Form 객체 생성
 
 useForm에서 데이터를 최초 세팅 후 defaultValues 세팅 이후에 다시 변경 시 변경이 안되는 경우가 있는데 아래 코드 처럼 useRef 최초 1회 생성 시에만 defaultValues를 세팅함으로 변경이 안되는거 였다.
 
@@ -129,7 +129,7 @@ _formControl.current.formState = getProxyFormState(formState, control);
 return _formControl.current;
 ```
 
-## 최초 1회 Form 객체 생성 로직(createFormControl)
+# 최초 1회 Form 객체 생성 로직(createFormControl)
 
 createFormControl 함수에 대한 설명을 해보겠습니다.
 
@@ -202,7 +202,7 @@ const validationModeBeforeSubmit = getValidationModes(_options.mode);
 const validationModeAfterSubmit = getValidationModes(_options.reValidateMode);
 ```
 
-### register
+## register
 
 ```tsx
 const register: UseFormRegister<TFieldValues> = (name, options = {}) => {
@@ -387,9 +387,9 @@ const register: UseFormRegister<TFieldValues> = (name, options = {}) => {
   };
   ```
 
-## resolver
+# inside resolver
 
-### resolver 개요
+## resolver summary
 
 각 필드별로 builtin schema(register: required, min, max, minLength, maxLength.., control: rule)를 통해서 유효성 검증을 하는게 가능하지만, resolver를 통해서 object schema 사용 할 경우 schema를 하나로 통합해서 관리가 가능하며, 각 schema plugin 특성에 맞게 확장이 가능하기 때문에 react-hook-form resolver를 사용하기도 합니다.
 
@@ -452,7 +452,7 @@ const {
 
 **resolver 설명**
 
-![Untitled](./assets/17/Untitled1.png)
+![Untitled](./assets/26/Untitled1.png)
 
 - 직접 custom resolver 구현한다면..
 
@@ -520,30 +520,30 @@ const {
 
 - react-hook-form에서 지원해주는 resovler(총 14개)
 
-[](https://github.com/react-hook-form/resolvers/blob/master/yup/src/yup.ts)
+[https://github.com/react-hook-form/resolvers#yup](https://github.com/react-hook-form/resolvers/blob/master/yup/src/yup.ts)
 
 - react-hook-form 지원하는 validation library 비교
-  ajv
-  - AJV는 JSON 스키마를 사용하여 데이터의 유효성을 검사하며, 이는 다양한 언어로 수행될 수 있습니다.
-  - Github에 별이 12,000개에 달하고 매주 npm 다운로드가 8,500만 건에 달하는 대규모 커뮤니티입니다.
-  - AJV는 현재 json-schema-benchmarks에 따르면 가장 빠른 json 스키마 유효성 검사기 라이브러리입니다.
-    joi
-  - Github에서 약 19,000개의 스타를 보유한 최대 규모의 커뮤니티 및 지원을 제공합니다.
-  - 번들 크기는 약 149kb로 축소되었습니다.
-  - 서버측을 위해 더 많이 구축되었으며 서버측 작업 시 권장됩니다.
-  - Joi는 매우 큰 API를 가지고 있어 문서화가 잘 되어 있어 학습 곡선이 단축됩니다.
-    yup
-  - Schema는 Joi와 유사하며, 비슷한 방식을 가지고 있습니다.
-  - 주로 클라이언트 측에서 사용되며 클라이언트 측 유효성 검사를 지원합니다.
-  - ~60kb의 번들 크기가 축소되었습니다. 이는 AJV 및 Joi보다 낮지만 Zod보다 큽니다.
-  - 예, 정적 유형 추론을 지원하지만 반드시 TypeScript와 일치할 필요는 없습니다.
-    zod
-  - zod는 정적 유형 추론을 지원하며 TypeScript와 잘 작동합니다.
-  - 번들 크기는 약 45kb입니다.
+  - ajv
+    - AJV는 JSON 스키마를 사용하여 데이터의 유효성을 검사하며, 이는 다양한 언어로 수행될 수 있습니다.
+    - Github에 별이 12,000개에 달하고 매주 npm 다운로드가 8,500만 건에 달하는 대규모 커뮤니티입니다.
+    - AJV는 현재 json-schema-benchmarks에 따르면 가장 빠른 json 스키마 유효성 검사기 라이브러리입니다.
+  - joi
+    - Github에서 약 19,000개의 스타를 보유한 최대 규모의 커뮤니티 및 지원을 제공합니다.
+    - 번들 크기는 약 149kb로 축소되었습니다.
+    - 서버측을 위해 더 많이 구축되었으며 서버측 작업 시 권장됩니다.
+    - Joi는 매우 큰 API를 가지고 있어 문서화가 잘 되어 있어 학습 곡선이 단축됩니다.
+  - yup
+    - Schema는 Joi와 유사하며, 비슷한 방식을 가지고 있습니다.
+    - 주로 클라이언트 측에서 사용되며 클라이언트 측 유효성 검사를 지원합니다.
+    - ~60kb의 번들 크기가 축소되었습니다. 이는 AJV 및 Joi보다 낮지만 Zod보다 큽니다.
+    - 예, 정적 유형 추론을 지원하지만 반드시 TypeScript와 일치할 필요는 없습니다.
+  - zod
+    - zod는 정적 유형 추론을 지원하며 TypeScript와 잘 작동합니다.
+    - 번들 크기는 약 45kb입니다.
 
-### inside resolver
+## inside resolver
 
-### inside resolver initialize
+## inside resolver initialize
 
 ```tsx
 const validationSchema = yup
@@ -628,7 +628,7 @@ export const yupResolver: Resolver =
   };
 ```
 
-### inside resolver validation check
+## inside resolver validation check
 
 - 호출 동선
   - unregister, triggeer, resetField > \_updateValid > \_executeSchema
