@@ -30,7 +30,7 @@ const PostItemContent = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 15px;
+  padding: 16px;
   word-break: break-word;
 `;
 
@@ -53,16 +53,32 @@ const Date = styled.p`
   opacity: 0.7;
 `;
 
-const ThumbnailImage = styled(GatsbyImage)`
+const ThumbnailImageWrapper = styled.div`
+  position: relative;
   width: 100%;
-  height: 250px;
-  border-radius: 10px 10px 0 0;
-  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-bottom: 1px solid #2d2d2d;
+
+  &:before {
+    display: block;
+    padding-top: calc(9 / 16 * 100%);
+    content: '';
+  }
 
   @media (max-width: 768px) {
     display: none;
   }
+`;
+
+const ThumbnailImage = styled(GatsbyImage)`
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
 `;
 
 const Summary = styled.p`
@@ -81,11 +97,13 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
 }) {
   return (
     <PostItemWrapper to={link}>
-      <ThumbnailImage
-        image={gatsbyImageData}
-        alt="Post Item Image"
-        objectFit="contain"
-      />
+      <ThumbnailImageWrapper>
+        <ThumbnailImage
+          image={gatsbyImageData}
+          alt="Post Item Image"
+          objectFit="cover"
+        />
+      </ThumbnailImageWrapper>
       <PostItemContent>
         <Title>{title}</Title>
         <Date>{date}</Date>

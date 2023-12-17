@@ -59,7 +59,7 @@ type SocialImageType = {
 
 const PostWrapper = styled.div`
   display: flex;
-  margin-left: 20%;
+  margin-left: 15%;
   margin-top: 20px;
   padding: 0 20px;
 
@@ -222,58 +222,65 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
   );
 };
 
-export const getPostList = graphql`query getPostList {
-  site {
-    siteMetadata {
-      title
-      description
-      author
-      type
-      siteUrl
-      INIT_PER_PAGE_NUMBER
-      social {
-        facebook
-        github
-        notion
-        linkedin
+export const getPostList = graphql`
+  query getPostList {
+    site {
+      siteMetadata {
+        title
+        description
+        author
+        type
+        siteUrl
+        INIT_PER_PAGE_NUMBER
+        social {
+          facebook
+          github
+          notion
+          linkedin
+        }
       }
     }
-  }
-  allMarkdownRemark(
-    sort: [{frontmatter: {date: DESC}}, {frontmatter: {category: DESC}}, {frontmatter: {tags: ASC}}, {frontmatter: {title: ASC}}]
-  ) {
-    edges {
-      node {
-        id
-        fields {
-          slug
-        }
-        frontmatter {
-          title
-          date(formatString: "YYYY.MM.DD")
-          category
-          tags
-          thumbnail {
-            childImageSharp {
-              gatsbyImageData(width: 768, height: 400)
+    allMarkdownRemark(
+      sort: [
+        { frontmatter: { date: DESC } }
+        { frontmatter: { category: DESC } }
+        { frontmatter: { tags: ASC } }
+        { frontmatter: { title: ASC } }
+      ]
+    ) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date(formatString: "YYYY.MM.DD")
+            category
+            tags
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(width: 768, height: 400)
+              }
             }
           }
-        }
-        excerpt
-      }
-    }
-  }
-  allFile {
-    edges {
-      node {
-        name
-        publicURL
-        childImageSharp {
-          gatsbyImageData(width: 768, height: 400)
+          excerpt
         }
       }
     }
+    allFile {
+      edges {
+        node {
+          name
+          publicURL
+          childImageSharp {
+            gatsbyImageData(width: 768, height: 400)
+          }
+        }
+      }
+    }
   }
-}`;
+`;
 
 export default IndexPage;
