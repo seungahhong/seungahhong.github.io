@@ -38,7 +38,7 @@ const HeaderWrapper = styled.div`
   right: 0;
   top: 0;
   bottom: 0;
-  width: 20%;
+  width: 15%;
 
   @media (max-width: 1024px) {
     display: none;
