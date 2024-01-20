@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 type PostFilterItemProps = {
   active: boolean;
-  handleFilterClick: (filter: string) => void;
-  scrollHorzCenter: (tabRef: React.RefObject<HTMLElement>) => void;
+  handleFilterClick: () => void;
+  scrollHorzCenter: (event: any) => void;
   children: React.ReactChildren | React.ReactNode;
 };
 
@@ -35,16 +35,12 @@ const PostFilterItem: FunctionComponent<PostFilterItemProps> = ({
   scrollHorzCenter,
   children,
 }) => {
-  const currentRef = useRef(null);
-  const handleClick = (filter: string) => {
-    handleFilterClick(filter);
-    scrollHorzCenter(currentRef);
-  };
-
   return (
     <PostItem
-      ref={currentRef}
-      onClick={() => handleClick('ALL')}
+      onClick={event => {
+        handleFilterClick();
+        scrollHorzCenter(event);
+      }}
       active={active}
     >
       {children}

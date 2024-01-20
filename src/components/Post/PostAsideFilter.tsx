@@ -48,11 +48,14 @@ const PostAsideFilter: FunctionComponent<PostFilterProps> = ({
   filter,
   handleFilter,
 }) => {
-  const containerCategoryRef = useRef<HTMLUListElement>(null);
-  const [categoryScrollHorzCenter] = useScrollAlign(containerCategoryRef);
-
-  const containerTagsRef = useRef<HTMLUListElement>(null);
-  const [cateroryScrollHorzCenter] = useScrollAlign(containerTagsRef);
+  const {
+    ref: containerCategoryRef,
+    handleScrollHorzCenter: categoryScrollHorzCenter,
+  } = useScrollAlign();
+  const {
+    ref: containerTagsRef,
+    handleScrollHorzCenter: cateroryScrollHorzCenter,
+  } = useScrollAlign();
 
   const categories = useMemo(() => {
     return posts.filter(({ node: { frontmatter } }, index) => {
