@@ -1,4 +1,4 @@
-import React, { createRef, FunctionComponent, useEffect } from 'react';
+import { createRef, FunctionComponent, useEffect } from 'react';
 
 const src = 'https://utteranc.es/client.js';
 const repo = 'seungahhong/seungahhong.github.io'; // 자신 계정의 레포지토리로 설정

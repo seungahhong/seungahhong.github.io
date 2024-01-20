@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactNode } from 'react';
+import { FunctionComponent, ReactNode } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import styled from 'styled-components';

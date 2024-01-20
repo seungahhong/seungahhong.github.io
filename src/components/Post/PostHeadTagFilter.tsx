@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useMemo, useRef } from 'react';
+import { FunctionComponent, useMemo, useRef } from 'react';
 import styled from 'styled-components';
 import { PostListItemType } from 'types/PostItem';
 import useScrollAlign from '../../helpers/hooks/useScrollAlign';

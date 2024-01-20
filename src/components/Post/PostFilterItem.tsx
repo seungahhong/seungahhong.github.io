@@ -1,4 +1,5 @@
-import React, { FunctionComponent, useRef } from 'react';
+import { FunctionComponent, useRef } from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 
 type PostFilterItemProps = {

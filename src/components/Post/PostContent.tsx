@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useRef, useMemo } from 'react';
+import { FunctionComponent, useRef, useMemo } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
