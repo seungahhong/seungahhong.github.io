@@ -83,7 +83,7 @@
     "url": "https://github.com/seungahhong/seungahhong.github.io/issues"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md}": [
+    "*.{js,jsx,ts,tsx}": [
       "yarn lint",
       "yarn format"
     ]
