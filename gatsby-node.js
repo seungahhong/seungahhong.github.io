@@ -35,37 +35,37 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
   // Get All Markdown File For Paging
-  const queryAllMarkdownData = await graphql(
-    `{
-  allMarkdownRemark(
-    sort: [{frontmatter: {date: DESC}}, {frontmatter: {title: ASC}}]
-  ) {
-    edges {
-      node {
-        fields {
-          slug
-        }
-      }
-      previous {
-        fields {
-          slug
-        }
-        frontmatter {
-          title
-        }
-      }
-      next {
-        fields {
-          slug
-        }
-        frontmatter {
-          title
+  const queryAllMarkdownData = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: [{ frontmatter: { date: DESC } }, { frontmatter: { title: ASC } }]
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+          previous {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+            }
+          }
+          next {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+            }
+          }
         }
       }
     }
-  }
-}`,
-  );
+  `);
 
   // Handling GraphQL Query Error
   if (queryAllMarkdownData.errors) {

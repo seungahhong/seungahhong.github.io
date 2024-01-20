@@ -183,9 +183,7 @@ const handleClickRefetch = useCallback(() => {
 
 return (
   <div>
-    {data?.data.map((hero: Data) => (
-      <div key={hero.id}>{hero.name}</div>
-    ))}
+    {data?.data.map((hero: Data) => <div key={hero.id}>{hero.name}</div>)}
     <button onClick={handleClickRefetch}>Fetch Heroes</button>
   </div>
 );
