@@ -163,7 +163,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
     }
   }, [isMobile]);
 
-  const handleFilter = useCallback((type, filter) => {
+  const handleFilter = useCallback((type: string, filter: string) => {
     setFilter(filter);
     setType(type);
     window.scrollTo(0, 0);

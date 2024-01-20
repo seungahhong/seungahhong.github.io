@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
-import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 import PostContent from 'components/Post/PostContent';
 import Template from 'components/Base/Template';
 
@@ -85,7 +85,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
 }) {
   const {
     node: { html, tableOfContents, frontmatter },
-  } = allMarkdownRemark?.edges[0];
+  } = allMarkdownRemark.edges[0];
 
   return (
     <Template
