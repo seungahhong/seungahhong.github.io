@@ -1,12 +1,12 @@
-import { FunctionComponent, useRef } from 'react';
+import { FunctionComponent } from 'react';
 import * as React from 'react';
 import styled from 'styled-components';
 
 type PostFilterItemProps = {
   active: boolean;
   handleFilterClick: () => void;
-  scrollHorzCenter: (event: any) => void;
-  children: React.ReactChildren | React.ReactNode;
+  scrollHorzCenter: (event: MouseEvent) => void;
+  children: React.ReactNode;
 };
 
 type PostProps = {
@@ -37,7 +37,7 @@ const PostFilterItem: FunctionComponent<PostFilterItemProps> = ({
 }) => {
   return (
     <PostItem
-      onClick={event => {
+      onClick={(event: MouseEvent) => {
         handleFilterClick();
         scrollHorzCenter(event);
       }}

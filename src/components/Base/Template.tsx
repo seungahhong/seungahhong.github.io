@@ -2,7 +2,6 @@ import { FunctionComponent, ReactNode } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import styled from 'styled-components';
-import { IGatsbyImageData } from 'gatsby-plugin-image';
 import Header from './Header';
 import Footer from './Footer';
 import GlobalStyle from './GlobalStyle';
@@ -21,13 +20,15 @@ type TemplateProps = {
   children: ReactNode;
 };
 
-type HeaderImageType = {
+interface GatsbyImageType {
   file: {
     childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
+      fluid: {
+        src: string;
+      };
     };
   };
-};
+}
 
 const Container = styled.div`
   display: flex;
@@ -45,7 +46,7 @@ const Template: FunctionComponent<TemplateProps> = function ({
 }) {
   const {
     file: { childImageSharp },
-  } = useStaticQuery(graphql`
+  }: GatsbyImageType = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "images/main.png" }) {
         childImageSharp {

@@ -185,7 +185,7 @@ $ argo make build
 ### index.html 생성
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <!-- 서버에서 호출될 index.html 생성(static 폴더하위에 생성) -->
 <html lang="en">
   <head>

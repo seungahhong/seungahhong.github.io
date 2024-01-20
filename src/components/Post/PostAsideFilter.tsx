@@ -1,4 +1,4 @@
-import { FunctionComponent, useMemo, useRef } from 'react';
+import { FunctionComponent, useMemo } from 'react';
 import styled from 'styled-components';
 import { PostListItemType } from 'types/PostItem';
 import useScrollAlign from '../../helpers/hooks/useScrollAlign';
@@ -9,10 +9,6 @@ type PostFilterProps = {
   posts: PostListItemType[];
   filter: string;
   handleFilter: (type: string, filter: string) => void;
-};
-
-type PostProps = {
-  active: boolean;
 };
 
 const PostFilterContainer = styled.section`

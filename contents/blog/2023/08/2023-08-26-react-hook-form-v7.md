@@ -104,8 +104,8 @@ register 메서드를 더 이상 ref에 할당하지 않고, input props에 spre
 return the following props: `onChange`, `onBlur`, `name` and `ref`.
 
 ```tsx
-- <input ref={register({ required: true })} name="test" />
-+ <input {...register('test', { required: true })} />
+-(<input ref={register({ required: true })} name="test" />) +
+<input {...register('test', { required: true })} />;
 ```
 
 codemod library 적용

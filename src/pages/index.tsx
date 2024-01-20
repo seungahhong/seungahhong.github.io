@@ -1,6 +1,12 @@
 // import SEO from 'components/seo';
 import { graphql, Link } from 'gatsby';
-import { FunctionComponent, useState, useEffect, useCallback, useMemo } from 'react';
+import {
+  FunctionComponent,
+  useState,
+  useEffect,
+  useCallback,
+  useMemo,
+} from 'react';
 import styled from 'styled-components';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
 import { PostListItemType } from 'types/PostItem';
@@ -157,7 +163,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
     }
   }, [isMobile]);
 
-  const handleFilter = useCallback((type, filter) => {
+  const handleFilter = useCallback((type: string, filter: string) => {
     setFilter(filter);
     setType(type);
     window.scrollTo(0, 0);
