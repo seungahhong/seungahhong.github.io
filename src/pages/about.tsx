@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
 import Template from 'components/Base/Template';
 import styled from 'styled-components';

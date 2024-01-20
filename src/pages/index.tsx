@@ -1,12 +1,6 @@
 // import SEO from 'components/seo';
 import { graphql, Link } from 'gatsby';
-import React, {
-  FunctionComponent,
-  useState,
-  useEffect,
-  useCallback,
-  useMemo,
-} from 'react';
+import { FunctionComponent, useState, useEffect, useCallback, useMemo } from 'react';
 import styled from 'styled-components';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
 import { PostListItemType } from 'types/PostItem';
