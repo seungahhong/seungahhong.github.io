@@ -776,6 +776,25 @@ yarn install <span class="token operator">--</span>check<span class="token opera
         </picture>
   </a>
     </span></p>
+<h3 id="no-more-import-react-" style="position:relative;"><a href="#no-more-import-react-" aria-label="no more import react  permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>No more ‘import React …’</h3>
+<p>Import React 선언문 react 17버전 이후부터는 사용할 필요가 없어서 삭제 가능</p>
+<ul>
+<li>
+<p><strong>React 17 new JSX Transform: ReferenceError: React is not defined</strong></p>
+<p>Import React 선언문 삭제 후 Gastby 재실행 시 에러가 발생해서 babelrc에서 runtime: ‘automatic’ 속성을 추가해주셔야 합니다.</p>
+<p><a href="https://github.com/gatsbyjs/gatsby/issues/28657" target="_blank" rel="nofollow">https://github.com/gatsbyjs/gatsby/issues/28657</a></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token punctuation">{</span>
+  <span class="token string-property property">"presets"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">"babel-preset-gatsby"</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string-property property">"reactRuntime"</span><span class="token operator">:</span> <span class="token string">"automatic"</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre></div>
+</li>
+</ul>
 <h2 id="참고페이지" style="position:relative;"><a href="#%EC%B0%B8%EA%B3%A0%ED%8E%98%EC%9D%B4%EC%A7%80" aria-label="참고페이지 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>참고페이지</h2>
 <ul>
 <li><a href="https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v4-to-v5/" target="_blank" rel="nofollow">Migrating from v4 to v5 | Gatsby</a></li>
@@ -814,6 +833,7 @@ yarn install <span class="token operator">--</span>check<span class="token opera
 <li><a href="#unstable_sholdoncreatenode-which-is-not-a-known-api-%EC%97%90%EB%9F%AC%EA%B0%80-%EB%82%A0-%EA%B2%BD%EC%9A%B0">unstable_sholdOnCreateNode which is not a known API 에러가 날 경우</a></li>
 <li><a href="#cannot-find-module-buildreleasesharp-darwin-x64node-%EC%97%90%EB%9F%AC%EA%B0%80-%EB%82%A0-%EA%B2%BD%EC%9A%B0">cannot find module ‘../build/Release/sharp-darwin-x64.node 에러가 날 경우</a></li>
 <li><a href="#graphql-query%EC%97%90-%EC%97%90%EB%9F%AC">GraphQL Query에 에러</a></li>
+<li><a href="#no-more-import-react-">No more ‘import React …’</a></li>
 </ul>
 </li>
 <li>
