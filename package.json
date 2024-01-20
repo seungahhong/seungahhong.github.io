@@ -52,6 +52,7 @@
     "@playwright/test": "^1.38.0",
     "@types/react-helmet-async": "^1.0.3",
     "gh-pages": "^6.0.0",
+    "husky": "^8.0.3",
     "playwright": "^1.38.0",
     "prettier": "^3.0.3"
   },
@@ -80,5 +81,11 @@
   },
   "bugs": {
     "url": "https://github.com/seungahhong/seungahhong.github.io/issues"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md}": [
+      "yarn lint",
+      "yarn format"
+    ]
   }
 }
