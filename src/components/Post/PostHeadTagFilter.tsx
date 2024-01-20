@@ -29,8 +29,8 @@ const PostHeadTagFilter: FunctionComponent<PostFilterProps> = ({
   filter,
   handleFilter,
 }) => {
-  const containerRef = useRef<HTMLUListElement>(null);
-  const [scrollHorzCenter] = useScrollAlign(containerRef);
+  const { ref: containerRef, handleScrollHorzCenter: scrollHorzCenter } =
+    useScrollAlign();
 
   const tags = useMemo(() => {
     const datas = posts.reduce((acc, { node: { frontmatter } }) => {
