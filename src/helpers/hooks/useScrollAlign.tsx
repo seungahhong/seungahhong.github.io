@@ -1,8 +1,8 @@
 import { useCallback, useState, MouseEvent } from 'react';
 
 const useScrollAlign = () => {
-  const [element, setElement] = useState<HTMLElement>();
-  const ref = useCallback((el: HTMLElement) => {
+  const [element, setElement] = useState<HTMLElement | null>(null);
+  const ref: React.RefCallback<HTMLElement> = useCallback((el: HTMLElement) => {
     if (el) {
       setElement(el);
     }

@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, MouseEvent } from 'react';
 import * as React from 'react';
 import styled from 'styled-components';
 
