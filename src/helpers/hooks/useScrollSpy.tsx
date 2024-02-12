@@ -26,9 +26,7 @@ const useScrollSpy = (
 
   useEffect(() => {
     const markdownTarget: NodeListOf<HTMLHeadElement> | undefined =
-      markdownRef.current?.querySelectorAll<HTMLHeadElement>(
-        'h1, h2, h3, h4, h5, h6',
-      );
+      markdownRef.current?.querySelectorAll<HTMLHeadElement>('h1, h2');
 
     const tocTarget: NodeListOf<HTMLAnchorElement> | undefined =
       tocRef.current?.querySelectorAll<HTMLAnchorElement>('a');

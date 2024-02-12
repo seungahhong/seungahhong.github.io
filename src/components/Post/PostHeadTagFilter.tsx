@@ -47,10 +47,9 @@ const PostHeadTagFilter: FunctionComponent<PostFilterProps> = ({
       <PostFilterList ref={containerRef}>
         {tags.map((tag, index) => {
           return (
-            <>
+            <div key={`PostHeadTagFilterTags_${index}`}>
               {index === 0 && (
                 <PostFilterItem
-                  key={`TAGSALL_${index}`}
                   handleFilterClick={() => handleFilter('tag', 'ALL')}
                   active={filter === 'ALL'}
                   scrollHorzCenter={scrollHorzCenter}
@@ -59,14 +58,13 @@ const PostHeadTagFilter: FunctionComponent<PostFilterProps> = ({
                 </PostFilterItem>
               )}
               <PostFilterItem
-                key={`TAGS_${index}`}
                 handleFilterClick={() => handleFilter('tag', tag)}
                 active={filter === tag}
                 scrollHorzCenter={scrollHorzCenter}
               >
                 {tag}
               </PostFilterItem>
-            </>
+            </div>
           );
         })}
       </PostFilterList>

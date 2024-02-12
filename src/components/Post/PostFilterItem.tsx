@@ -9,11 +9,7 @@ type PostFilterItemProps = {
   children: React.ReactNode;
 };
 
-type PostProps = {
-  active: boolean;
-};
-
-const PostItem = styled.li<PostProps>`
+const PostItem = styled.li<{ $active: boolean }>`
   display: flex;
   align-items: center;
   margin: 0.1em 12px 0.1em 0;
@@ -22,11 +18,11 @@ const PostItem = styled.li<PostProps>`
   cursor: pointer;
   font-weight: 700;
   background-color: ${props =>
-    props.active ? '#030303' : 'rgba(0, 0, 0, 0.05)'};
+    props.$active ? '#030303' : 'rgba(0, 0, 0, 0.05)'};
   border: ${props =>
-    props.active ? '1px solid #343a40' : '1px solid rgba(0, 0, 0, 0.1)'};
+    props.$active ? '1px solid #343a40' : '1px solid rgba(0, 0, 0, 0.1)'};
   color: ${props =>
-    props.active ? '#ffffff' : '1px solid rgba(0, 0, 0, 0.05)'};
+    props.$active ? '#ffffff' : '1px solid rgba(0, 0, 0, 0.05)'};
 `;
 
 const PostFilterItem: FunctionComponent<PostFilterItemProps> = ({
@@ -41,7 +37,7 @@ const PostFilterItem: FunctionComponent<PostFilterItemProps> = ({
         handleFilterClick();
         scrollHorzCenter(event);
       }}
-      active={active}
+      $active={active}
     >
       {children}
     </PostItem>
