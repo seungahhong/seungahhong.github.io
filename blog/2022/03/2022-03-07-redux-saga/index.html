@@ -12,14 +12,14 @@ data-styled.g3[id="PostContent__PostContentWrapper-sc-9jovib-2"]{content:"ePnyzc
 .gHsRZM{padding:0 20px;margin-bottom:48px;}/*!sc*/
 .gHsRZM>h1{margin-bottom:8px;font-size:40px;}/*!sc*/
 data-styled.g4[id="PostContent__PostTitle-sc-9jovib-3"]{content:"gHsRZM,"}/*!sc*/
-.dLjeCT{display:inline-block;margin:12px 0 0 10px;position:sticky;top:0;left:10px;transition:all 0.125s esse-in 0s;min-width:200px;color:rgba(0,0,0,0.4);padding:0 0.75rem;border-left:2px solid gray;height:calc(100vh - 50px);overflow:auto;}/*!sc*/
-.dLjeCT ul{list-style:none;}/*!sc*/
-.dLjeCT ul li{margin-top:5px;}/*!sc*/
-.dLjeCT ul li a{display:inline-block;}/*!sc*/
-.dLjeCT ul li a.reach{color:#000000;transform:scale(1.05);}/*!sc*/
-.dLjeCT ul ul{margin-left:12px;}/*!sc*/
-@media (max-width:1024px){.dLjeCT{display:none;}}/*!sc*/
-data-styled.g5[id="PostContent__TocRenderer-sc-9jovib-4"]{content:"dLjeCT,"}/*!sc*/
+.kvlFve{display:inline-block;margin:12px 0 0 10px;position:sticky;top:20px;left:10px;transition:all 0.125s esse-in 0s;color:rgba(0,0,0,0.4);padding:0 0.75rem;border-left:2px solid gray;overflow-y:auto;overflow-x:hidden;}/*!sc*/
+.kvlFve ul{list-style:none;}/*!sc*/
+.kvlFve ul li{margin-top:5px;}/*!sc*/
+.kvlFve ul li a{display:inline-block;}/*!sc*/
+.kvlFve ul li a.reach{color:#000000;}/*!sc*/
+.kvlFve ul ul{margin-left:12px;}/*!sc*/
+@media (max-width:1024px){.kvlFve{display:none;}}/*!sc*/
+data-styled.g5[id="PostContent__TocRenderer-sc-9jovib-4"]{content:"kvlFve,"}/*!sc*/
 .gxaPGg{display:flex;flex-direction:column;word-break:keep-all;margin-bottom:250px;padding:0 20px;width:100%;line-height:1.8;font-size:16px;font-weight:400;}/*!sc*/
 @media (max-width:1024px){.gxaPGg{margin-bottom:48px;}}/*!sc*/
 .gxaPGg p{padding:3px 0;}/*!sc*/
@@ -1001,29 +1001,12 @@ thunk<span class="token punctuation">.</span>withExtraArgument <span class="toke
 <li><a href="https://blog.javarouka.me/2019/04/02/redux-saga-1/#Side-Effect" target="_blank" rel="nofollow">https://blog.javarouka.me/2019/04/02/redux-saga-1/#Side-Effect</a></li>
 <li><a href="https://github.com/reactkr/learn-react-in-korean/blob/master/translated/deal-with-async-process-by-redux-saga.md" target="_blank" rel="nofollow">https://github.com/reactkr/learn-react-in-korean/blob/master/translated/deal-with-async-process-by-redux-saga.md</a></li>
 <li><a href="https://ideveloper2.tistory.com/53" target="_blank" rel="nofollow">https://ideveloper2.tistory.com/53</a></li>
-</ul></article><section class="PostContent__PostNavigator-sc-9jovib-6 dOIBoi"><a href="/blog/2022/03/2022-03-12-react-router-v6/"><h5>이전글</h5><i>← </i>react-router-v6</a><a href="/blog/2022/02/2022-02-13-react17/"><h5>다음글</h5>react17<i> →</i></a></section><div></div></div><aside class="PostContent__TocRenderer-sc-9jovib-4 dLjeCT"><ul>
+</ul></article><section class="PostContent__PostNavigator-sc-9jovib-6 dOIBoi"><a href="/blog/2022/03/2022-03-12-react-router-v6/"><h5>이전글</h5><i>← </i>react-router-v6</a><a href="/blog/2022/02/2022-02-13-react17/"><h5>다음글</h5>react17<i> →</i></a></section><div></div></div><aside class="PostContent__TocRenderer-sc-9jovib-4 kvlFve"><ul>
 <li>
 <ul>
-<li>
-<p><a href="#redux-saga%EB%9E%80">redux-saga란?</a></p>
-</li>
-<li>
-<p><a href="#%EC%84%A4%EC%B9%98">설치</a></p>
-<ul>
-<li>
-<ul>
-<li><a href="#typesafe-actions-%EC%84%A4%EC%B9%98-v5--%EC%84%A0%ED%83%9D">typesafe-actions 설치 (v5) → 선택</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="#generator">Generator</a></p>
-<ul>
-<li><a href="#side-effect%EB%B6%80%EC%88%98%ED%9A%A8%EA%B3%BC">Side Effect(부수효과)</a></li>
-<li><a href="#redux-sagaeffects">redux-saga/effects</a></li>
-</ul>
-</li>
+<li><a href="#redux-saga%EB%9E%80">redux-saga란?</a></li>
+<li><a href="#%EC%84%A4%EC%B9%98">설치</a></li>
+<li><a href="#generator">Generator</a></li>
 </ul>
 </li>
 <li>
@@ -1040,33 +1023,12 @@ thunk<span class="token punctuation">.</span>withExtraArgument <span class="toke
 <li>
 <p><a href="#%EB%B6%80%EC%88%98%EC%A0%81-%EA%B0%9C%EB%85%90">부수적 개념</a></p>
 <ul>
-<li>
-<p><a href="#%EB%B3%91%EB%A0%AC-%ED%83%9C%EC%8A%A4%ED%81%AC">병렬 태스크</a></p>
-<ul>
-<li><a href="#all"><strong>all</strong></a></li>
-<li><a href="#%EB%B3%91%EB%A0%AC%EC%B2%98%EB%A6%AC1">병렬처리1</a></li>
-<li><a href="#%EB%B3%91%EB%A0%AC%EC%B2%98%EB%A6%AC2">병렬처리2</a></li>
-</ul>
-</li>
-<li>
-<p><a href="#%EC%95%A1%EC%85%98%ED%8F%B4%EB%A7%81">액션폴링</a></p>
-<ul>
-<li><a href="#takeevery"><strong>takeEvery</strong></a></li>
-<li><a href="#takelatest"><strong>takeLatest</strong></a></li>
-<li><a href="#takeleading"><strong>takeLeading</strong></a></li>
-</ul>
-</li>
+<li><a href="#%EB%B3%91%EB%A0%AC-%ED%83%9C%EC%8A%A4%ED%81%AC">병렬 태스크</a></li>
+<li><a href="#%EC%95%A1%EC%85%98%ED%8F%B4%EB%A7%81">액션폴링</a></li>
 </ul>
 </li>
 <li>
 <p><a href="#redux-thunk-vs-redux-saga-%EC%B0%A8%EC%9D%B4%EC%A0%90">Redux Thunk vs Redux Saga 차이점</a></p>
-<ul>
-<li>
-<ul>
-<li><a href="#redux-thunk-vs-redux-saga-%EB%B9%84%EA%B5%90">redux-thunk vs redux-saga 비교</a></li>
-</ul>
-</li>
-</ul>
 </li>
 <li>
 <p><a href="#redux-thunk-vs-redux-saga-%EB%B9%84%EA%B5%90%EC%BD%94%EB%93%9C">Redux Thunk vs Redux Saga 비교코드</a></p>
@@ -1074,19 +1036,9 @@ thunk<span class="token punctuation">.</span>withExtraArgument <span class="toke
 <li>
 <p><a href="#redux-thunk-vs-redux-saga">redux-thunk vs redux-saga</a></p>
 <ul>
-<li>
-<p><a href="#redux-logic">redux logic</a></p>
-</li>
-<li>
-<p><a href="#redux-thunk-redux-saga-logic">redux-thunk, redux-saga logic</a></p>
-</li>
-<li>
-<p><a href="#redux-thunk">redux-thunk</a></p>
-<ul>
-<li><a href="#redux-thunk-%EA%B5%AC%ED%98%84%EC%B2%B4">redux-thunk 구현체</a></li>
-<li><a href="#redux-thunk-%EC%98%88%EC%A0%9C%EC%BD%94%EB%93%9C">redux-thunk 예제코드</a></li>
-</ul>
-</li>
+<li><a href="#redux-logic">redux logic</a></li>
+<li><a href="#redux-thunk-redux-saga-logic">redux-thunk, redux-saga logic</a></li>
+<li><a href="#redux-thunk">redux-thunk</a></li>
 </ul>
 </li>
 <li>
@@ -1096,6 +1048,6 @@ thunk<span class="token punctuation">.</span>withExtraArgument <span class="toke
           <script
             id="gatsby-chunk-mapping"
           >
-            window.___chunkMapping="{\"app\":[\"/app-70cb1d1a18904d71fc35.js\"],\"component---src-components-templates-post-template-tsx\":[\"/component---src-components-templates-post-template-tsx-673b0dc79cae9ac24116.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-d6b04f1724c83b1a046f.js\"],\"component---src-pages-about-tsx\":[\"/component---src-pages-about-tsx-649860f78c01cc19d39b.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-d56b77357b1b9f1fe21d.js\"]}";
+            window.___chunkMapping="{\"app\":[\"/app-70cb1d1a18904d71fc35.js\"],\"component---src-components-templates-post-template-tsx\":[\"/component---src-components-templates-post-template-tsx-ef5627eeb2d76b1792df.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-d6b04f1724c83b1a046f.js\"],\"component---src-pages-about-tsx\":[\"/component---src-pages-about-tsx-649860f78c01cc19d39b.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-4f5d3306af1de950405b.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="0aa6f77a6c72b248ff33";</script><script src="/webpack-runtime-a78fb531ae787ab6f50b.js" async></script><script src="/framework-e3b8251522eaf5bb7919.js" async></script><script src="/app-70cb1d1a18904d71fc35.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="2865b4e51e42107985a1";</script><script src="/webpack-runtime-5fa420cd48d23c173784.js" async></script><script src="/framework-e3b8251522eaf5bb7919.js" async></script><script src="/app-70cb1d1a18904d71fc35.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
