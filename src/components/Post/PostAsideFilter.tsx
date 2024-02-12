@@ -79,10 +79,9 @@ const PostAsideFilter: FunctionComponent<PostFilterProps> = ({
       <PostFilterList ref={containerCategoryRef}>
         {categories.map((category, index) => {
           return (
-            <>
+            <div key={`PostAsideFilterTagsCategory_${index}`}>
               {index === 0 && (
                 <PostFilterItem
-                  key={`CATEGORYALL_${index}`}
                   handleFilterClick={() => handleFilter('CATEGORY', 'ALL')}
                   active={type === 'CATEGORY' && filter === 'ALL'}
                   scrollHorzCenter={categoryScrollHorzCenter}
@@ -91,7 +90,6 @@ const PostAsideFilter: FunctionComponent<PostFilterProps> = ({
                 </PostFilterItem>
               )}
               <PostFilterItem
-                key={`CATEGORY_${index}`}
                 handleFilterClick={() =>
                   handleFilter('CATEGORY', category.node.frontmatter.category)
                 }
@@ -103,7 +101,7 @@ const PostAsideFilter: FunctionComponent<PostFilterProps> = ({
               >
                 {category.node.frontmatter.category}
               </PostFilterItem>
-            </>
+            </div>
           );
         })}
       </PostFilterList>
@@ -111,10 +109,9 @@ const PostAsideFilter: FunctionComponent<PostFilterProps> = ({
       <PostFilterList ref={containerTagsRef}>
         {tags.map((tag, index) => {
           return (
-            <>
+            <div key={`PostAsideFilterTagsAll_${index}`}>
               {index === 0 && (
                 <PostFilterItem
-                  key={`TAGSALL_${index}`}
                   handleFilterClick={() => handleFilter('TAGS', 'ALL')}
                   active={type === 'TAGS' && filter === 'ALL'}
                   scrollHorzCenter={cateroryScrollHorzCenter}
@@ -123,14 +120,13 @@ const PostAsideFilter: FunctionComponent<PostFilterProps> = ({
                 </PostFilterItem>
               )}
               <PostFilterItem
-                key={`TAGS_${index}`}
                 handleFilterClick={() => handleFilter('TAGS', tag)}
                 active={type === 'TAGS' && filter === tag}
                 scrollHorzCenter={cateroryScrollHorzCenter}
               >
                 {tag}
               </PostFilterItem>
-            </>
+            </div>
           );
         })}
       </PostFilterList>

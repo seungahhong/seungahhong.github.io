@@ -10,7 +10,7 @@ thumbnail: './assets/27/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'
 ---
 
-# React v16 → 18 '마이그레이션 가이드(with Best Practice Code)'
+# React v16 to v18 마이그레이션 가이드(with Best Practice Code)
 
 ## Updates to Client Rendering APIs Migration
 

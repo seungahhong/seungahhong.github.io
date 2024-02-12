@@ -10,7 +10,7 @@ thumbnail: './assets/20/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'
 ---
 
-## Update React
+# Update React
 
 ### Installation
 
@@ -25,7 +25,7 @@ yarn add react@latest react-dom@latest @types/react-dom@latest
 ![Untitled](./assets/20/Untitled1.png)
 @types/react@latest 최신 버전을 올릴 경우 nextJS Component에 대한 타입 추가가 되지 않아서 나온 이슈여서 18.0.18 이하 버전으로 Installation하도록 처리(혹여 Installation가 된 경우에는 .lock 파일로 다시 롤백해서 재 Installation해주시기 바랍니다.)
 
-## Update Nextjs
+# Update Nextjs
 
 ### Installation
 
@@ -140,7 +140,7 @@ function Parent() {
 
 [SSR에서는 UseLayoutEffect 대신 useEffect를 사용하자!](https://velog.io/@khy226/SSR에서는-UseLayoutEffect-대신-useEffect를-사용하자)
 
-## Update ESlint
+# Update ESlint
 
 ### Installation
 
@@ -152,7 +152,7 @@ yarn add -D eslint-config-next@latest eslint@latest
 
 vscode 재 실행 후 eslint 서버에 재실행을 위해서 Command Palette(cmd+shift+p, ctrl+shift+p) 실행해서 ESLint: Restart ESLint Server 선택해주세요
 
-## Emotion → Tailwind CSS
+# Emotion → Tailwind CSS
 
 NextJS 13 버전 이후 부터는 Emotion 라이브러리를 지원을 하고 있지 않아서 app 디렉토리로 변경 시 스타일이 적용이 안되는 이슈가 있어서 Tailwind CSS 라이브러리로 변경을 합니다.
 

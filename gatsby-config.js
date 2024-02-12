@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: '.env',
+});
+
 module.exports = {
   siteMetadata: {
     title: '홍승아 기술 블로그',
@@ -45,6 +49,9 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
+        tableOfContents: {
+          maxDepth: 2,
+        },
         plugins: [
           {
             resolve: 'gatsby-remark-smartypants',

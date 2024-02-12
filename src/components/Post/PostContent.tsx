@@ -116,15 +116,14 @@ const TocRenderer = styled.aside`
   display: inline-block;
   margin: 12px 0 0 10px;
   position: sticky;
-  top: 0;
+  top: 20px;
   left: 10px;
   transition: all 0.125s esse-in 0s;
-  min-width: 200px;
   color: rgba(0, 0, 0, 0.4);
   padding: 0 0.75rem;
   border-left: 2px solid gray;
-  height: calc(100vh - 50px);
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 
   & ul {
     list-style: none;
@@ -136,7 +135,6 @@ const TocRenderer = styled.aside`
         display: inline-block;
         &.reach {
           color: #000000;
-          transform: scale(1.05);
         }
       }
     }

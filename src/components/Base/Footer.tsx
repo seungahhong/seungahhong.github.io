@@ -5,11 +5,11 @@ type FooterProps = {
   isVisibleHeader?: boolean;
 };
 
-const FooterWrapper = styled.div<FooterProps>`
+const FooterWrapper = styled.div<{ $isVisibleHeader: boolean | undefined }>`
   display: grid;
   place-items: center;
   margin-top: auto;
-  margin-left: ${props => (props.isVisibleHeader ? '20%' : '0')};
+  margin-left: ${props => (props.$isVisibleHeader ? '20%' : '0')};
   padding: 50px 0;
   font-size: 15px;
   text-align: center;
@@ -22,7 +22,7 @@ const FooterWrapper = styled.div<FooterProps>`
 
 const Footer: FunctionComponent<FooterProps> = ({ isVisibleHeader }) => {
   return (
-    <FooterWrapper isVisibleHeader={isVisibleHeader}>
+    <FooterWrapper $isVisibleHeader={isVisibleHeader}>
       Thank You for Visiting My Blog,
       <br />© 2021 Developer SeungAh, Powered By Gatsby.
     </FooterWrapper>
