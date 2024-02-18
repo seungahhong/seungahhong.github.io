@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, MouseEvent } from 'react';
 import * as React from 'react';
 import styled from 'styled-components';
 
@@ -12,7 +12,7 @@ type PostFilterItemProps = {
 const PostItem = styled.li<{ $active: boolean }>`
   display: flex;
   align-items: center;
-  margin: 0.1em 12px 0.1em 0;
+  margin: 0.3em 12px 0.3em 0;
   padding: 8px 12px;
   border-radius: 15px;
   cursor: pointer;
@@ -21,8 +21,7 @@ const PostItem = styled.li<{ $active: boolean }>`
     props.$active ? '#030303' : 'rgba(0, 0, 0, 0.05)'};
   border: ${props =>
     props.$active ? '1px solid #343a40' : '1px solid rgba(0, 0, 0, 0.1)'};
-  color: ${props =>
-    props.$active ? '#ffffff' : '1px solid rgba(0, 0, 0, 0.05)'};
+  color: ${props => (props.$active ? '#ffffff' : '#000000')};
 `;
 
 const PostFilterItem: FunctionComponent<PostFilterItemProps> = ({
