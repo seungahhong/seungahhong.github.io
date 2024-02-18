@@ -47,6 +47,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'ko',
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         tableOfContents: {
