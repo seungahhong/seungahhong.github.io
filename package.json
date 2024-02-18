@@ -1,7 +1,7 @@
 {
   "name": "hongseungah-tech-blog",
   "private": true,
-  "description": "Welcome to Hons's Tech Blog",
+  "description": "Welcome to Hong's Tech Blog",
   "version": "0.1.0",
   "author": "Hong SeungAh <gmm117@naver.com>",
   "dependencies": {
@@ -63,11 +63,11 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "yarn clean & gatsby build",
-    "develop": "yarn clean & gatsby develop",
+    "build": "pnpm clean & gatsby build",
+    "develop": "pnpm clean & gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
     "lint": "eslint './src/**/*.{js,jsx,ts,tsx}' --cache --fix",
-    "start": "yarn clean & gatsby develop",
+    "start": "pnpm clean & gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
@@ -85,8 +85,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "yarn lint",
-      "yarn format"
+      "pnpm lint",
+      "pnpm format"
     ]
   }
 }
