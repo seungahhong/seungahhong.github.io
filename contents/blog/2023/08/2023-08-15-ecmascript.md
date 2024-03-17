@@ -10,6 +10,192 @@ thumbnail: './assets/15/thumbnail.jpeg'
 github: 'https://github.com/seungahhong/seungahhong.github.io'
 ---
 
+# ES2024(ES15)
+
+**ES2024에 추가된 기능들**
+
+[ECMAScript® 2024 Language Specification](https://tc39.es/ecma262/)
+
+ECMAScript 2024, the 15th edition, added facilities for resizing and transferring ArrayBuffers and SharedArrayBuffers; added a new RegExp **`/v`** flag for creating RegExps with more advanced features for working with sets of strings; and introduced the **`Promise.withResolvers`** convenience method for constructing Promises, the **`Object.groupBy`** and **`Map.groupBy`** methods for aggregating data, the **`Atomics.waitAsync`** method for asynchronously waiting for a change to shared memory, and the **`String.prototype.isWellFormed`** and **`String.prototype.toWellFormed`** methods for checking and ensuring that strings contain only well-formed Unicode.
+
+**Promise.withResolvers**
+
+[tc39/proposal-promise-with-resolvers](https://github.com/tc39/proposal-promise-with-resolvers)
+
+[Promise.withResolvers() - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/withResolvers)
+
+Promise 확장 방법 중 하나로 새로운 `Promise` 인스턴스와 해당 Promise의 해결(resolve) 및 거부(reject) 함수를 반환합니다
+
+```tsx
+// Promise.withResolvers()다음 코드와 정확히 동일합니다
+let resolve, reject;
+const promise = new Promise((res, rej) => {
+  resolve = res;
+  reject = rej;
+});
+
+// 스트림을 비동기 반복 가능으로 변환
+async function* readableToAsyncIterable(stream) {
+  let { promise, resolve, reject } = Promise.withResolvers();
+  stream.on('error', error => reject(error));
+  stream.on('end', () => resolve());
+  stream.on('readable', () => resolve());
+
+  while (stream.readable) {
+    await promise;
+    let chunk;
+    while ((chunk = stream.read())) {
+      yield chunk;
+    }
+    ({ promise, resolve, reject } = Promise.withResolvers());
+  }
+}
+
+// Promise가 아닌 생성자에서 withResolvers() 호출
+class NotPromise {
+  constructor(executor) {
+    // The "resolve" and "reject" functions behave nothing like the native
+    // promise's, but Promise.withResolvers() just returns them, as is.
+    executor(
+      value => console.log('Resolved', value),
+      reason => console.log('Rejected', reason),
+    );
+  }
+}
+
+const { promise, resolve, reject } = Promise.withResolvers.call(NotPromise);
+resolve('hello');
+```
+
+**proposal-array-grouping**
+
+[tc39/proposal-array-grouping](https://github.com/tc39/proposal-array-grouping)
+
+배열의 아이템을 객체/Map 형식으로 그룹화 해주는 함수
+
+```tsx
+const array = [1, 2, 3, 4, 5];
+
+// `Object.groupBy` groups items by arbitrary key.
+// In this case, we're grouping by even/odd keys
+Object.groupBy(array, (num, index) => {
+  return num % 2 === 0 ? 'even' : 'odd';
+});
+// =>  { odd: [1, 3, 5], even: [2, 4] }
+
+// `Map.groupBy` returns items in a Map, and is useful for grouping
+// using an object key.
+const odd = { odd: true };
+const even = { even: true };
+Map.groupBy(array, (num, index) => {
+  return num % 2 === 0 ? even : odd;
+});
+// =>  Map { {odd: true}: [1, 3, 5], {even: true}: [2, 4] }
+```
+
+**Atomics.waitAsync**
+
+[tc39/proposal-atomics-wait-async](https://github.com/tc39/proposal-atomics-wait-async)
+
+[Atomics.waitAsync() - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Atomics/waitAsync)
+
+정적 메서드는 공유 메모리 위치에서 비동기적으로 대기하고 Promise를 반환하는 함수
+
+- 참고로 위 메소드는 Int32Array 혹은 BigInt64Array에서만 동작
+
+```tsx
+const sab = new SharedArrayBuffer(1024);
+const int32 = new Int32Array(sab);
+
+// 읽기 스레드가 0이 될 것으로 예상되는 위치 0에서 기대하며, 1000ms 대기합니다.
+// result.value은 프로미스입니다.
+const result = Atomics.waitAsync(int32, 0, 0, 1000);
+// { async: true, value: Promise {<pending>} }
+
+// 읽기 스레드 또는 다른 스레드에서 메모리 위치 0이 호출되고 이행 결과 "ok" 문자열을 확인
+Atomics.notify(int32, 0);
+// { async: true, value: Promise {<fulfilled>: 'ok'} }
+```
+
+**RegExp `/v` flag**
+
+[tc39/proposal-regexp-v-flag](https://github.com/tc39/proposal-regexp-v-flag)
+
+정규표현식의 패턴 매칭을 통해 유니코드 이모지를 /u flag 값으로 검색이 가능하지만, 조합된 이모지 코드값으로는 검색이 가능하도록 /v flag 값 설정 추가
+
+```tsx
+// Unicode defines a character property named “Emoji”.
+const re = /^\p{Emoji}$/u;
+
+// Match an emoji that consists of just 1 code point:
+re.test('⚽'); // '\u26BD'
+// → true ✅
+
+// Match an emoji that consists of multiple code points:
+re.test('👨🏾‍⚕️'); // '\u{1F468}\u{1F3FE}\u200D\u2695\uFE0F'
+// → false ❌
+
+const re = /^\p{RGI_Emoji}$/v;
+
+// Match an emoji that consists of just 1 code point:
+re.test('⚽'); // '\u26BD'
+// → true ✅
+
+// Match an emoji that consists of multiple code points:
+re.test('👨🏾‍⚕️'); // '\u{1F468}\u{1F3FE}\u200D\u2695\uFE0F'
+// → true ✅
+```
+
+**올바른 형식의 유니코드 문자열**
+
+surrogates 란?
+
+- 유니코드에서 surrogate는 기본 다국어 평면(Basic Multilingual Plane, BMP)에 속하지 않는 문자를 나타내기 위해 사용되는 코드 포인트입니다.
+
+```tsx
+high surrogate: U+D800 ~ U+DBFF
+log surrogate: U+DC00 ~ U+DFFF
+```
+
+surrogates 문자열을 유니코드 대체 문자 U+FFFD로 대체되는 `[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)`문자열을 반환 처리
+
+- surrogates 문자열은 항상 `leading`과 `trailing`이 pair로 이루어져야 하지만, 쌍을 이루지 않을 경우에는 오류가 발생하고, 서버와 통신으로 문자열 전달 시 오류가 발생함으로 꼭 toWellFormed로 변경해서 보내야함.
+
+```tsx
+const strings = [
+  // Lone leading surrogate
+  'ab\uD800',
+  'ab\uD800c',
+  // Lone trailing surrogate
+  '\uDFFFab',
+  'c\uDFFFab',
+  // Well-formed
+  'abc',
+  'ab\uD83D\uDE04c',
+];
+
+for (const str of strings) {
+  console.log(str.toWellFormed());
+}
+// Logs:
+// "ab�"
+// "ab�c"
+// "�ab"
+// "c�ab"
+// "abc"
+// "ab😄c"
+
+const illFormed = 'https://example.com/search?q=\uD800';
+
+try {
+  encodeURI(illFormed);
+} catch (e) {
+  console.log(e); // URIError: URI malformed
+}
+
+console.log(encodeURI(illFormed.toWellFormed())); // "https://example.com/search?q=%EF%BF%BD"
+```
+
 # ES2023(ES14)
 
 **ES2023에 추가된 기능들**
