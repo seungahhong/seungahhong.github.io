@@ -40,7 +40,7 @@ import { unique, implode, explode } from 'array-utils';
 ## **내보낼 모듈에 대해서는 export 하기**
 
 - 내보낼 모듈에 대해서는 각각 export 하고 필요로한 컴포넌트에 import 할 경우 tree shaking이 가능합니다.
-  - 그렇다면 궁금한 점?? 와디즈 서비스에 보면 re-export 구문으로 설정되어 있는 경우에도 tree shaking이 가능할까?
+  - 그렇다면 궁금한 점?? re-export 구문으로 설정되어 있는 경우에도 tree shaking이 가능할까?
   - 결론은 됩니다. 그 이유는?? webpack 4 이후부터는 production 빌드 시 optimization 설정 중 providedExports 기본값이 true로 설정됨에 따라서 webpack 빌드 시 구문을 분석해서 최적화 처리를 해줍니다.
 
 ```tsx
