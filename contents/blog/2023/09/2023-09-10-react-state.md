@@ -104,12 +104,12 @@ github: 'https://github.com/seungahhong/seungahhong.github.io'
 
 **비즈니스 로직을 리액트 컴포넌트에서 분리할 목적으로 사용할 경우**
 
-- Redux
+- [Redux](https://seungahhong.github.io/blog/2021/12/2021-12-30-redux/), [Redux-Toolkit](https://seungahhong.github.io/blog/2022/03/2022-03-26-redux-toolkit/)
   - Redux는 오직 하나의 store만 가지며, 하나의 객체 트리를 가지기 때문에 디버깅이 용이하다.
   - store 내부 상태는 action 객체에 의해서만 변경이 가능하다. 모든 state 변화들이 하나의 store에만 집중되어 있고 단방향으로 일어나기 때문에 예측 가능한 결과가 나타난다.
   - reducer는 순수함수이기 때문에 상태를 변경하는 것이 아닌 새로운 상태를 반환한다.
   - 보일러플레이트 코드가 많다는 단점이 있지만, 해당 이슈를 보완하기 위해서 redux-toolkit이 나오게 되었다.
-- Zustand
+- [Zustand](https://seungahhong.github.io/blog/2023/07/2023-07-22-zustand/)
   - store 구현 방식 및 변경 방식이 간단함(redux에 비해 보일러플레이트 코드가 적다)
   - Provider로 래핑할 필요가 없다.
   - 다양한 middleware 라이브러리를 제공(redux, immer, selector(상태변경 시 자동 호출), redux-devtools)
@@ -120,14 +120,14 @@ github: 'https://github.com/seungahhong/seungahhong.github.io'
 
 ![Untitled](./assets/10/Untitled10.png)
 
-- jotai
+- [jotai](https://seungahhong.github.io/blog/2022/06/2022-06-14-jotai/)
   - 1달에 한번씩 버전 업데이트가 이루어지며 신기능, 버그 수정이 빠름 (열린 PR이 없는 정도)
   - Recoil에 비해 용량이 매우 적음
   - Typescript 기반
   - unique 한 키 값을 생성하지 않아도 된다.(내부에서는 weakMap사용)
   - suspense 지원
   - devtool 강력함.
-- recoil
+- [recoil](https://seungahhong.github.io/blog/2022/03/2022-03-22-recoil/)
   - facebook에서 개발
   - 리액트 "외부 요인" 으로써의 상태가 아니라 내부 state를 이용하기 때문에 스케줄러에 접근 가능
   - snapshot 기능을 제공하고 있으며, 이전 상태값으로 변경이 가능하다.
@@ -147,7 +147,7 @@ github: 'https://github.com/seungahhong/seungahhong.github.io'
   - 렌더링 최적화 방식을 Hooks 사용
   - [https://itchallenger.tistory.com/631](https://itchallenger.tistory.com/631)
   - [https://itchallenger.tistory.com/632](https://itchallenger.tistory.com/632)
-- Mobx
+- [Mobx](https://seungahhong.github.io/blog/2021/12/2021-12-31-mobx/)
   - 고차함수(hoc) 함수를 사용
 
 ## Server State(react-query, swr)
@@ -412,6 +412,21 @@ github: 'https://github.com/seungahhong/seungahhong.github.io'
 - swr: 먼저 캐시에서 데이터를 반환한 다음, 서버에 데이터를 가져오는 요청을 보내고, 마지막으로 최신 데이터를 제공하는 전략이다. nextjs 환경 세팅이 용이하다.
 
 ## GrpahQL 개발 환경인 경우 → Apollo Client 👍
+
+# 내부 참고페이지
+
+- [react-query-v5](https://seungahhong.github.io/blog/2023/07/2023-07-23-react-query-v5/)
+- [react-query-v4](https://seungahhong.github.io/blog/2023/06/2023-06-30-react-query-v4/)
+- [react-query](https://seungahhong.github.io/blog/2022/12/2022-12-30-react-query/)
+- [zustand](https://seungahhong.github.io/blog/2023/07/2023-07-22-zustand/)
+- [jotai](https://seungahhong.github.io/blog/2022/06/2022-06-14-jotai/)
+- [swr](https://seungahhong.github.io/blog/2022/03/2022-03-30-SWR/)
+- [redux-toolkit](https://seungahhong.github.io/blog/2022/03/2022-03-26-redux-toolkit/)
+- [redux](https://seungahhong.github.io/blog/2021/12/2021-12-30-redux/)
+- [redux-saga](https://seungahhong.github.io/blog/2022/03/2022-03-07-redux-saga/)
+- [mobx](https://seungahhong.github.io/blog/2021/12/2021-12-31-mobx/)
+- [recoil](https://seungahhong.github.io/blog/2022/03/2022-03-22-recoil/)
+- [graphql](https://seungahhong.github.io/blog/2022/01/2022-01-09-graphql/)
 
 # 참고페이지
 
