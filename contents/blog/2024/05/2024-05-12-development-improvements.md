@@ -337,7 +337,7 @@ npm, yarn classic 패키지 매니저에서 패키지 성능 개선을 위해서
 - 프로덕션 빌드 → rollup 번들러 사용(TreeShaking, 지연로딩, 파일 분할등의 다수 이점 제공)
   ![Untitled](./assets/12/Untitled22.png)
 
-## [vite 설명](https://www.notion.so/vite-1f8c5c95210e49e6bcecc04c53f77118?pvs=21)
+## [vite 설명](https://seungahhong.github.io/blog/2024/05/2024-05-06-vite/)
 
 # 참고페이지
 
