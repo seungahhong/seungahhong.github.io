@@ -4,7 +4,7 @@ title: 미사용 의존성 제거
 date: 2024-03-17
 published: 2024-03-17
 category: 개발
-tags: ['refactor']
+tags: ['performance']
 comments: true
 thumbnail: './assets/17/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'
