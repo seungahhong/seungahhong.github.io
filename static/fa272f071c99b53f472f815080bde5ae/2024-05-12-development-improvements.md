@@ -192,22 +192,33 @@ yarn add -D speed-measure-webpack-plugin
 ## babel-loader vs ts-loader vs esbuild-loader 중 어떤게 더 좋을까?? → esbuild-loader 선택
 
 - babel-loader vs ts-loader vs esbuild-loader 비교
+
   - type 체킹을 위해서 fork-ts-checker-webpack-plugin 추가 후 테스트
   - babel-loader, esbuild-loader → Running tsc --noEmit command 체킹 가능
-    | | babel-loader | ts-loader | esbuild-loader |
-    | --------- | ------------ | ------------ | -------------- |
-    | 빌드 시간 | 19초 | 17초 (2초👇) | 14초 (5초👇) |
-    (참고: [https://victor-log.vercel.app/post/build-speed-optimization-with-loader/](https://victor-log.vercel.app/post/build-speed-optimization-with-loader/))
+  - 빌드 시간
+
+    - babel-loader: 19초
+    - ts-loader: 17초 (2초👇)
+    - esbuild-loader: 14초 (5초👇)
+
+      (참고: [victor 블로그](https://victor-log.vercel.app/post/build-speed-optimization-with-loader/))
+
 - babel-loader + terser minify vs esbuild-loader + esbuild-minify 비교
-  (참고 : [https://fe-developers.kakaoent.com/2022/220707-webpack-esbuild-loader/](https://fe-developers.kakaoent.com/2022/220707-webpack-esbuild-loader/))
+
+  (참고 : [카카오엔터 블로그](https://fe-developers.kakaoent.com/2022/220707-webpack-esbuild-loader/))
+
   - Dev Server: 3399.80ms → 2031.40ms **(1.3s 👇)**
   - HMR: 199.20ms → 102.00ms **(97ms 👇)**
   - Production Build: 5617.40ms → 2238.20ms **(3.3s 👇)**
     ![Untitled](./assets/12/Untitled7.png)
     ![Untitled](./assets/12/Untitled8.png)
     ![Untitled](./assets/12/Untitled9.png)
+
 - ts-loader vs esbuild-loader 비교
-  ts-loader vs esbuild-loader ( 참고 : votogeter 블로그 )
+  ts-loader vs esbuild-loader
+
+  ( 참고 : [votogeter 블로그](https://velog.io/@votogether2023/ts-loader%EB%A5%BC-esbuild-loader%EB%A1%9C-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98%ED%95%B4%EB%B3%B4%EC%9E%90) )
+
 - speed-measure-plugin 설치: 23s → 4s **(19s👇)**
   - ts-loader
     ![Untitled](./assets/12/Untitled10.png)
