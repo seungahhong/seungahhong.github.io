@@ -810,46 +810,197 @@ About.defaultProps = {};
 export default About;
 ```
 
-## history.listen 미지원
+# Migrating to RouterProvider(with createBrowserRouter)
 
-- 추가 구현은 가능하나 마이그레이션 할 시 고민해봐야함.
+도입배경
 
-```tsx
-// v6 이전
-useEffect(() => {
-  const unlisten = history.listen((location, action) => {
-    console.log(location);
-    console.log(action);
-    return () => {
-      unlisten();
-    };
-  });
-}, []);
+createBrowserRouter가 도입된 이유와 장점입니다:
 
-// v6 이후
-const history = createBrowserHistory();
-const navigation = useContext(NavigationContext).navigator as BrowserHistory;
-useEffect(() => {
-  const unlisten = navigation.listen(({ location, action }) => {
-    // history.listen~~
-    console.log(location);
-    console.log(action);
-    return () => {
-      unlisten();
-    };
-  });
-}, []);
-```
+1. **단순화된 라우팅 설정**: createBrowserRouter를 사용하면 라우트 구성을 하나의 객체로 선언할 수 있습니다. 이로 인해 라우트 설정을 보다 간단하고 일관성 있게 관리할 수 있습니다.
+2. **라우트 데이터 로딩**: createBrowserRouter는 데이터 로딩을 더 쉽게 처리할 수 있는 기능을 제공합니다. 라우트마다 데이터를 로드하고, 이를 loader 함수를 통해 처리할 수 있습니다. 이로 인해 데이터와 라우트 설정을 한 곳에서 관리할 수 있습니다.
+3. **중첩 라우트의 간편한 관리**: 중첩 라우트(nested routes)를 설정하는 것도 더 직관적입니다. createBrowserRouter는 중첩 라우트를 선언적이고 명확하게 관리할 수 있는 구조를 제공합니다.
+4. **에러 경계(Error Boundaries)**: 각 라우트에 에러 경계를 쉽게 추가할 수 있습니다. createBrowserRouter를 사용하면 특정 라우트에서 발생하는 오류를 처리하기 위해 에러 경계를 설정하는 것이 간편해집니다.
+5. **경량화 및 최적화**: React Router v6는 성능과 사용성을 고려하여 많은 부분이 최적화되었습니다. createBrowserRouter는 이러한 최신 최적화를 활용할 수 있는 구조를 제공합니다.
 
-## 결론
+- Add RouterProvider with a root splat route
 
-- History 기능 미지원
-  - React Router History에 대한 기능이 미지원 되면서, listen/block/prompt 등의 여러가지 기능을 사용할 수 없다.
-    - 단, 이전 버전에 대한 호환을 위해서 UNSAFE_NavigationContext, createBrowserHistory를 제공하긴 함.
-  - 아직은 업그레이드 하는 건 어려울 것 같긴하나 추후에는 지원한다는 계획이 있어서 History에 대한 기능 지원을 한다면 충분히 업그레이드가 가능하다.
-- 구 브라우저에 대한 미지원 검토(특히, IE11 ~~)
-  - React Router v6에 라이브러리 코드를 확인해보니 ECMA2015 이상의 문법을 사용하고 있어서 끝내 polyfill이 추가되야한다.
-  - v6 이상부터 구 브라우저를 미지원을 목표로 해서 번들링 사이즈도 적어졌는데, polyfill을 사용한다면 장점이 희석되는 것 같습니다.
+  ```tsx
+  import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+
+  export default function App() {
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog/*" element={<BlogApp />} />
+          <Route path="/users/*" element={<UserApp />} />
+        </Routes>
+      </BrowserRouter>
+    );
+  }
+
+  function Home() {
+    return (
+      <>
+        <h1>Welcome!</h1>
+        <p>
+          Check out the <Link to="/blog">blog</Link> or the{' '}
+          <Link to="users">users</Link> section
+        </p>
+      </>
+    );
+  }
+
+  function BlogApp() {
+    return (
+      <Routes>
+        <Route index element={<h1>Blog Index</h1>} />
+        <Route path="posts" element={<h1>Blog Posts</h1>} />
+      </Routes>
+    );
+  }
+
+  function UserApp() {
+    return (
+      <Routes>
+        <Route index element={<h1>Users Index</h1>} />
+      </Routes>
+    );
+  }
+
+  import {
+    createBrowserRouter,
+    Link,
+    Route,
+    RouterProvider,
+    Routes,
+  } from 'react-router-dom';
+
+  // 3️⃣ Router singleton created
+  const router = createBrowserRouter([{ path: '*', element: <Root /> }]);
+
+  // 4️⃣ RouterProvider added
+  export default function App() {
+    return <RouterProvider router={router} />;
+  }
+
+  // 1️⃣ Changed from App to Root
+  function Root() {
+    // 2️⃣ `BrowserRouter` component removed, but the <Routes>/<Route>
+    // component below are unchanged
+    return (
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog/*" element={<BlogApp />} />
+        <Route path="/users/*" element={<UserApp />} />
+      </Routes>
+    );
+  }
+
+  function Home() {
+    /* Unchanged */
+  }
+  function BlogApp() {
+    /* Unchanged */
+  }
+  function UserApp() {
+    /* Unchanged */
+  }
+  ```
+
+- Start lifting routes and leveraging the data APIs
+
+  ```tsx
+  // routes/root.jsx
+  import { getContacts } from '../contacts';
+
+  export async function loader() {
+    const contacts = await getContacts();
+    return { contacts };
+  }
+
+  export async function action() {
+    const contact = await createContact();
+    return { contact };
+  }
+
+  return (
+    <>
+      <Form method="post">
+        <button type="submit">New</button>
+      </Form>
+    </>
+  );
+
+  /* previous imports */
+  import ErrorPage from './error-page';
+  import { Outlet, useLoaderData, Form } from 'react-router-dom';
+  import { loader as rootLoader } from './routes/root';
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />,
+    },
+    {
+      // Lifted blog splat route
+      path: '/blog/*',
+      children: [
+        // New blog index route
+        { index: true, element: <h1>Blog Index</h1> },
+        // Blog subapp splat route added for /blog/posts matching
+        { path: '*', element: <BlogApp /> },
+      ],
+    },
+    {
+      path: '*',
+      element: (
+        <Suspense fallback={<Loading />}>
+          <Home />
+        </Suspense>
+      ),
+      loader: rootLoader,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: 'contacts/:contactId',
+          element: <Contact />,
+        },
+      ],
+    },
+  ]);
+
+  export default function App() {
+    return <RouterProvider router={router} />;
+  }
+
+  function Root() {
+    const { contacts } = useLoaderData();
+
+    return (
+      <Routes>
+        {/* ⬆️ Home route lifted up to the data router */}
+        <Route path="/blog/*" element={<BlogApp />} />
+        <Route path="/users/*" element={<UserApp />} />
+        <Outlet />
+      </Routes>
+    );
+  }
+
+  function BlogApp() {
+    return (
+      <Routes>
+        {/* ⬆️ Blog index route lifted */}
+        <Route path="posts" element={<h1>Blog Posts</h1>} />
+      </Routes>
+    );
+  }
+  ```
+
+* [optimistic-ui](https://reactrouter.com/en/main/start/tutorial#optimistic-ui)
+* [not-found-data](https://reactrouter.com/en/main/start/tutorial#not-found-data)
+* [pathless-routes](https://reactrouter.com/en/main/start/tutorial#pathless-routes)
+* [jsx-routes](https://reactrouter.com/en/main/start/tutorial#jsx-routes)
 
 ## 참고페이지
 
