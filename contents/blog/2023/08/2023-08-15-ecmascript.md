@@ -99,6 +99,8 @@ Map.groupBy(array, (num, index) => {
 
 [Atomics.waitAsync() - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Atomics/waitAsync)
 
+[ArrayBuffer/SharedArrayBuffer](http://hacks.mozilla.or.kr/2017/11/a-cartoon-intro-to-arraybuffers-and-sharedarraybuffers/)
+
 정적 메서드는 공유 메모리 위치에서 비동기적으로 대기하고 Promise를 반환하는 함수
 
 - 참고로 위 메소드는 Int32Array 혹은 BigInt64Array에서만 동작
@@ -148,6 +150,9 @@ re.test('👨🏾‍⚕️'); // '\u{1F468}\u{1F3FE}\u200D\u2695\uFE0F'
 
 **올바른 형식의 유니코드 문자열**
 
+- [문자열 메서드 .isWellFormed()](https://exploringjs.com/js/book/ch_strings.html#qref-String.prototype.isWellFormed)는 자바스크립트 문자열이 *올바른 형식*이고 [론 서로게이트(lone surrogate)](https://exploringjs.com/js/book/ch_unicode.html#unicode-lone-surrogate)를 포함하고 있지 않은지 검사합니다.
+- [문자열 메서드 .toWellFormed()](https://exploringjs.com/js/book/ch_strings.html#qref-String.prototype.isWellFormed)는 론 서로게이트를 코드 유닛 0xFFFD로 교체한 문자열의 복사본을 반환합니다(0xFFFD는 같은 수의 코드 포인트를 나타내며 이름은 "대체 문자" 입니다). 따라서 결괏값은 올바른 형식입니다.
+
 surrogates 란?
 
 - 유니코드에서 surrogate는 기본 다국어 평면(Basic Multilingual Plane, BMP)에 속하지 않는 문자를 나타내기 위해 사용되는 코드 포인트입니다.
@@ -156,6 +161,11 @@ surrogates 란?
 high surrogate: U+D800 ~ U+DBFF
 log surrogate: U+DC00 ~ U+DFFF
 ```
+
+lone surrogate란?
+
+- 서로게이트 페어에서 하나만 남은 경우를 가리킨다. 고위 서로게이트가 있고, 저위 서로게이트가 없거나, 그 반대의 경우를 의미한다. 이러한 상황은 올바른 UTF-16 표현이 아니며, 유효한 문자를 나타내지 않는다.파일 전송이나 텍스트 처리 중에 문제가 발생할 수 있다.
+- unicode 표준은 이러한 상황을 처리하는 규칙을 제공하고 있다.
 
 surrogates 문자열을 유니코드 대체 문자 U+FFFD로 대체되는 `[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)`문자열을 반환 처리
 
