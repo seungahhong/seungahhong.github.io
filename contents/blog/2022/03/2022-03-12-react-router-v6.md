@@ -51,7 +51,7 @@ v5.1 버전의 크기는 9.4kb → v6 버전의 크기는 2.9kb로 감소했습�
     - polyfill 추가
       - react-app-polyfill(facebook 제공)
         - 리액트 개발에서 사용하는 다양한 문법을 변환해주는 라이브러리
-        - **Promise, window.fetch, Symbol, Object.assign, Array.from + [ IE9 Map, Set ]**와 같은 필요한 것만 포함하고 있어 사이즈가 작아 가벼운 게 특징
+        - Promise, window.fetch, Symbol, Object.assign, Array.from + [ IE9 Map, Set ]와 같은 필요한 것만 포함하고 있어 사이즈가 작아 가벼운 게 특징
       ```tsx
       // src/index.tsx
       // 첫번째 라인에 추가
@@ -726,90 +726,6 @@ function App() {
 }
 ```
 
-## Prompt, history.block 미지원
-
-- 현재 최신버전에서는 Prompt 미지원하나 추후에 적용예정
-- 추가 구현은 가능하나 마이그레이션 할 시 고민해봐야함.
-- history.block → useBlocker 커스텀 훅으로 변환가능
-
-```tsx
-// v6 이전
-const About = () => {
-  const location = useLocation();
-
-  return (
-    <>
-      <h1>About</h1>
-      <p>{location.search}</p>
-      <Prompt when={true} message="페이지를 떠나시겠습니까?" />
-    </>
-  );
-};
-
-// v6 이후
-// Block.jsx
-import { BrowserHistory, Blocker } from 'history';
-import { useContext, useEffect, useCallback } from 'react';
-import { UNSAFE_NavigationContext as NavigationContext } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
-
-export function useBlocker(blocker: Blocker, when = true) {
-  const navigation = useContext(NavigationContext).navigator as BrowserHistory;
-  const history = createBrowserHistory();
-
-  useEffect(() => {
-    if (!when) return;
-
-    const unblock = navigation.block(tx => {
-      // history.block
-      const autoUnblockingTx = {
-        ...tx,
-        retry() {
-          unblock();
-          tx.retry();
-        },
-      };
-      blocker(autoUnblockingTx);
-    });
-    return unblock;
-  }, [navigator, blocker, when]);
-}
-
-export function usePrompt(message: string, when = true) {
-  const blocker = useCallback(
-    tx => {
-      //   eslint-disable-next-line no-alert
-      if (window.confirm(message)) tx.retry();
-    },
-    [message],
-  );
-
-  useBlocker(blocker, when);
-}
-
-// App.tsx
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { usePrompt } from '../utils/Block';
-
-const About = () => {
-  const location = useLocation();
-  usePrompt('Leave screen?', true);
-
-  return (
-    <>
-      <Prompt when />
-      <h1>About</h1>
-      <p>{location.search}</p>
-    </>
-  );
-};
-
-About.defaultProps = {};
-
-export default About;
-```
-
 # Migrating to RouterProvider(with createBrowserRouter)
 
 도입배경
@@ -822,185 +738,522 @@ createBrowserRouter가 도입된 이유와 장점입니다:
 4. **에러 경계(Error Boundaries)**: 각 라우트에 에러 경계를 쉽게 추가할 수 있습니다. createBrowserRouter를 사용하면 특정 라우트에서 발생하는 오류를 처리하기 위해 에러 경계를 설정하는 것이 간편해집니다.
 5. **경량화 및 최적화**: React Router v6는 성능과 사용성을 고려하여 많은 부분이 최적화되었습니다. createBrowserRouter는 이러한 최신 최적화를 활용할 수 있는 구조를 제공합니다.
 
-- Add RouterProvider with a root splat route
+## client side routing
 
+```tsx
+import * as React from 'react';
+import { createRoot } from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from 'react-router-dom';
+
+// v5 이전
+// router components
+<BrowserRouter>
+  <Switch>
+    <Route
+      path="/"
+      component={
+        <div>
+          <h1>Hello World</h1>
+          <Link to="about">About Us</Link>
+        </div>
+      }
+    />
+    <Route exact path="/about" component={<div>About</div>} />
+  </Switch>
+</BrowserRouter>;
+
+// v6
+// client routers
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: (
+      <div>
+        <h1>Hello World</h1>
+        <Link to="about">About Us</Link>
+      </div>
+    ),
+  },
+  {
+    path: 'about',
+    element: <div>About</div>,
+  },
+]);
+
+createRoot(document.getElementById('root')).render(
+  <RouterProvider router={router} />,
+);
+```
+
+## Nested Routes
+
+path 지정 시에 상대경로를 지정해줄 수 있게 되면서 중첩 라우팅 구현이 가능하며, 자식 패스는 부모 패스의 상대 경로로 설정됩니다.
+
+- createRoutesFromElements(Configure nested routes with JSX)
   ```tsx
-  import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-
-  export default function App() {
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog/*" element={<BlogApp />} />
-          <Route path="/users/*" element={<UserApp />} />
-        </Routes>
-      </BrowserRouter>
-    );
-  }
-
-  function Home() {
-    return (
-      <>
-        <h1>Welcome!</h1>
-        <p>
-          Check out the <Link to="/blog">blog</Link> or the{' '}
-          <Link to="users">users</Link> section
-        </p>
-      </>
-    );
-  }
-
-  function BlogApp() {
-    return (
-      <Routes>
-        <Route index element={<h1>Blog Index</h1>} />
-        <Route path="posts" element={<h1>Blog Posts</h1>} />
-      </Routes>
-    );
-  }
-
-  function UserApp() {
-    return (
-      <Routes>
-        <Route index element={<h1>Users Index</h1>} />
-      </Routes>
-    );
-  }
-
-  import {
-    createBrowserRouter,
-    Link,
-    Route,
-    RouterProvider,
-    Routes,
-  } from 'react-router-dom';
-
-  // 3️⃣ Router singleton created
-  const router = createBrowserRouter([{ path: '*', element: <Root /> }]);
-
-  // 4️⃣ RouterProvider added
-  export default function App() {
-    return <RouterProvider router={router} />;
-  }
-
-  // 1️⃣ Changed from App to Root
-  function Root() {
-    // 2️⃣ `BrowserRouter` component removed, but the <Routes>/<Route>
-    // component below are unchanged
-    return (
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog/*" element={<BlogApp />} />
-        <Route path="/users/*" element={<UserApp />} />
-      </Routes>
-    );
-  }
-
-  function Home() {
-    /* Unchanged */
-  }
-  function BlogApp() {
-    /* Unchanged */
-  }
-  function UserApp() {
-    /* Unchanged */
-  }
-  ```
-
-- Start lifting routes and leveraging the data APIs
-
-  ```tsx
-  // routes/root.jsx
-  import { getContacts } from '../contacts';
-
-  export async function loader() {
-    const contacts = await getContacts();
-    return { contacts };
-  }
-
-  export async function action() {
-    const contact = await createContact();
-    return { contact };
-  }
-
-  return (
-    <>
-      <Form method="post">
-        <button type="submit">New</button>
-      </Form>
-    </>
+  // Configure nested routes with JSX
+  createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Root />}>
+        <Route path="contact" element={<Contact />} />
+        <Route
+          path="dashboard"
+          element={<Dashboard />}
+          loader={({ request }) =>
+            fetch('/api/dashboard.json', {
+              signal: request.signal,
+            })
+          }
+        />
+        <Route element={<AuthLayout />}>
+          <Route path="login" element={<Login />} loader={redirectIfUser} />
+          <Route path="logout" action={logoutUser} />
+        </Route>
+      </Route>,
+    ),
   );
-
-  /* previous imports */
-  import ErrorPage from './error-page';
-  import { Outlet, useLoaderData, Form } from 'react-router-dom';
-  import { loader as rootLoader } from './routes/root';
-
-  const router = createBrowserRouter([
+  ```
+- use plain objects
+  ```tsx
+  createBrowserRouter([
     {
       path: '/',
-      element: <Home />,
-    },
-    {
-      // Lifted blog splat route
-      path: '/blog/*',
-      children: [
-        // New blog index route
-        { index: true, element: <h1>Blog Index</h1> },
-        // Blog subapp splat route added for /blog/posts matching
-        { path: '*', element: <BlogApp /> },
-      ],
-    },
-    {
-      path: '*',
-      element: (
-        <Suspense fallback={<Loading />}>
-          <Home />
-        </Suspense>
-      ),
-      loader: rootLoader,
-      errorElement: <ErrorPage />,
+      element: <Root />,
       children: [
         {
-          path: 'contacts/:contactId',
+          path: 'contact',
           element: <Contact />,
+        },
+        {
+          path: 'dashboard',
+          element: <Dashboard />,
+          loader: ({ request }) =>
+            fetch('/api/dashboard.json', {
+              signal: request.signal,
+            }),
+        },
+        {
+          element: <AuthLayout />,
+          children: [
+            {
+              path: 'login',
+              element: <Login />,
+              loader: redirectIfUser,
+            },
+            {
+              path: 'logout',
+              action: logoutUser,
+            },
+          ],
         },
       ],
     },
   ]);
-
-  export default function App() {
-    return <RouterProvider router={router} />;
-  }
-
-  function Root() {
-    const { contacts } = useLoaderData();
-
-    return (
-      <Routes>
-        {/* ⬆️ Home route lifted up to the data router */}
-        <Route path="/blog/*" element={<BlogApp />} />
-        <Route path="/users/*" element={<UserApp />} />
-        <Outlet />
-      </Routes>
-    );
-  }
-
-  function BlogApp() {
-    return (
-      <Routes>
-        {/* ⬆️ Blog index route lifted */}
-        <Route path="posts" element={<h1>Blog Posts</h1>} />
-      </Routes>
-    );
-  }
   ```
 
-* [optimistic-ui](https://reactrouter.com/en/main/start/tutorial#optimistic-ui)
-* [not-found-data](https://reactrouter.com/en/main/start/tutorial#not-found-data)
-* [pathless-routes](https://reactrouter.com/en/main/start/tutorial#pathless-routes)
-* [jsx-routes](https://reactrouter.com/en/main/start/tutorial#jsx-routes)
+## dynamicsegments
+
+```tsx
+<Route path="projects/:projectId/tasks/:taskId" />
+
+// If the current location is /projects/abc/tasks/3
+<Route
+  // sent to loaders
+  loader={({ params }) => {
+    params.projectId; // abc
+    params.taskId; // 3
+  }}
+  // and actions
+  action={({ params }) => {
+    params.projectId; // abc
+    params.taskId; // 3
+  }}
+  element={<Task />}
+/>;
+
+function Task() {
+  // returned from `useParams`
+  const params = useParams();
+  params.projectId; // abc
+  params.taskId; // 3
+}
+
+function Random() {
+  const match = useMatch(
+    "/projects/:projectId/tasks/:taskId"
+  );
+  match.params.projectId; // abc
+  match.params.taskId; // 3
+}
+```
+
+## ranked routematching
+
+teams/new 링크 이동 시 2개 라우터가 같이 매칭되지만 랭킹 알고리즘에 의해서 /teams/new 라우터로 연결됩니다.
+
+```tsx
+<Route path="/teams/:teamId" />
+<Route path="/teams/new" />
+```
+
+## active links
+
+```tsx
+// isActive: user knows where they are (isActive)
+// isPending: where they're going (isPending)
+<NavLink
+  style={({ isActive, isPending }) => {
+    return {
+      color: isActive ? 'red' : 'inherit',
+    };
+  }}
+  className={({ isActive, isPending }) => {
+    return isActive ? 'active' : isPending ? 'pending' : '';
+  }}
+/>;
+
+function SomeComp() {
+  const match = useMatch('/messages');
+  return <li className={Boolean(match) ? 'active' : ''} />;
+}
+```
+
+## relative links
+
+```tsx
+<Route path="home" element={<Home />}>
+  <Route path="project/:projectId" element={<Project />}>
+    <Route path=":taskId" element={<Task />} />
+  </Route>
+</Route>
+```
+
+| **In `<Project>` @ `/home/project/123`** | **Resolved `<a href>`** |
+| ---------------------------------------- | ----------------------- |
+| `<Link to="abc">`                        | `/home/project/123/abc` |
+| `<Link to=".">`                          | `/home/project/123`     |
+| `<Link to="..">`                         | `/home`                 |
+| `<Link to=".." relative="path">`         | `/home/project`         |
+
+## data loading
+
+navigation 동안에 데이터의 로딩을 loader를 통해서 제공하고 있습니다.
+
+또한, loader를 통해서 리턴한 값을 각 element에서는 useLoaderData를 통해서 얻어 올 수 있습니다.
+
+```tsx
+// loader
+<Route
+  path="/"
+  loader={async ({ request }) => {
+    // loaders can be async functions
+    const res = await fetch('/api/user.json', {
+      signal: request.signal,
+    });
+    const user = await res.json();
+    return user;
+  }}
+  element={<Root />}
+>
+  <Route
+    path=":teamId"
+    // loaders understand Fetch Responses and will automatically
+    // unwrap the res.json(), so you can simply return a fetch
+    loader={({ params }) => {
+      return fetch(`/api/teams/${params.teamId}`);
+    }}
+    element={<Team />}
+  >
+    <Route
+      path=":gameId"
+      loader={({ params }) => {
+        // of course you can use any data store
+        return fakeSdk.getTeam(params.gameId);
+      }}
+      element={<Game />}
+    />
+  </Route>
+</Route>;
+
+// useLoaderData
+function Root() {
+  const user = useLoaderData();
+  // data from <Route path="/">
+}
+
+function Team() {
+  const team = useLoaderData();
+  // data from <Route path=":teamId">
+}
+
+function Game() {
+  const game = useLoaderData();
+  // data from <Route path=":gameId">
+}
+```
+
+## redirects
+
+데이터를 로딩/변경되는 동안 라우팅을 변경할 경우 redirect 메서드를 사용해서 이동이 가능합니다.
+
+```tsx
+<Route
+  path="dashboard"
+  loader={async () => {
+    const user = await fake.getUser();
+    if (!user) {
+      // if you know you can't render the route, you can
+      // throw a redirect to stop executing code here,
+      // sending the user to a new route
+      throw redirect("/login");
+    }
+
+    // otherwise continue
+    const stats = await fake.getDashboardStats();
+    return { user, stats };
+  }}
+/>
+
+<Route
+  path="project/new"
+  action={async ({ request }) => {
+    const data = await request.formData();
+    const newProject = await createProject(data);
+    // it's common to redirect after actions complete,
+    // sending the user to the new record
+    return redirect(`/projects/${newProject.id}`);
+  }}
+/>
+
+```
+
+## pending navigation ui
+
+다음 페이지를 렌더링 하기 전에 펜딩 UI를 표기하기 위해서 navigation.state를 사용하면 됩니다.
+
+```tsx
+function Root() {
+  const navigation = useNavigation();
+  return (
+    <div>
+      {navigation.state === 'loading' && <GlobalSpinner />}
+      <FakeSidebar />
+      <Outlet />
+      <FakeFooter />
+    </div>
+  );
+}
+```
+
+## skeleton-ui-with-suspense
+
+페이지 이동 시 데이터를 얻어오는 중간에 defer 메서드를 사용 시 Suspense, Await 메서드 사용해서 로딩/스켈레톤 UI 사용이 가능합니다.
+
+```tsx
+<Route
+  path="issue/:issueId"
+  element={<Issue />}
+  loader={async ({ params }) => {
+    // these are promises, but *not* awaited
+    const comments = fake.getIssueComments(params.issueId);
+    const history = fake.getIssueHistory(params.issueId);
+    // the issue, however, *is* awaited
+    const issue = await fake.getIssue(params.issueId);
+
+    // defer enables suspense for the un-awaited promises
+    return defer({ issue, comments, history });
+  }}
+/>;
+
+function Issue() {
+  const { issue, history, comments } = useLoaderData();
+  return (
+    <div>
+      <IssueDescription issue={issue} />
+
+      {/* Suspense provides the placeholder fallback */}
+      <Suspense fallback={<IssueHistorySkeleton />}>
+        {/* Await manages the deferred data (promise) */}
+        <Await resolve={history}>
+          {/* this calls back when the data is resolved */}
+          {resolvedHistory => <IssueHistory history={resolvedHistory} />}
+        </Await>
+      </Suspense>
+
+      <Suspense fallback={<IssueCommentsSkeleton />}>
+        <Await resolve={comments}>
+          {/* ... or you can use hooks to access the data */}
+          <IssueComments />
+        </Await>
+      </Suspense>
+    </div>
+  );
+}
+
+function IssueComments() {
+  const comments = useAsyncValue();
+  return <div>{/* ... */}</div>;
+}
+```
+
+## form data mutations
+
+form action을 사용해서 form 안에 데이터(name)를 얻어올 수 있습니다.
+
+```tsx
+<Form action="/project/new">
+  <label>
+    Project title
+    <br />
+    <input type="text" name="title" />
+  </label>
+
+  <label>
+    Target Finish Date
+    <br />
+    <input type="date" name="due" />
+  </label>
+</Form>
+
+<Route
+  path="project/new"
+  action={async ({ request }) => {
+    const formData = await request.formData();
+    const newProject = await createProject({
+      title: formData.get("title"),
+      due: formData.get("due"),
+    });
+    return redirect(`/projects/${newProject.id}`);
+  }}
+/>
+```
+
+## error-handling
+
+에러가 생길 경우 errorElement 선언된 컴포넌트 렌더링이 가능합니다.
+
+또한 자식 라우트에서 errorElement가 없는경우 부모 errorElement 따라가게 됩니다.
+
+```tsx
+<Route
+  path="/"
+  loader={() => {
+    something.that.throws.an.error();
+  }}
+  // this will not be rendered
+  element={<HappyPath />}
+  // but this will instead
+  errorElement={<ErrorBoundary />}
+/>
+
+<Route
+  path="/"
+  element={<HappyPath />}
+  errorElement={<ErrorBoundary />}
+>
+  {/* Errors here bubble up to the parent route */}
+  <Route path="login" element={<Login />} />
+</Route>
+```
+
+## opts.basename
+
+BaseURL 설정을 해야하는 경우 createBrowserRouter 2번쨰 인자에 옵션으로 설정이 가능합니다.
+
+단, createBrowserRouter 선언 컴포넌트에서 동적 param을 basename으로 설정을 해야하는 경우 window.location.pathname을 통해서 동적 param을 얻어와서 정적 baseURL을 얻어올 수 있습니다.
+
+```tsx
+createBrowserRouter(routes, {
+  basename: '/teams',
+});
+
+// /teams/:teamId
+export const getBaseURLInfo = () => {
+  const pathname = window.location.pathname;
+  const prefix = '/teams';
+  const params = pathname
+    .replace(prefix, '')
+    .split('/')
+    .filter(param => param.length > 0);
+  if (params.length > 0) {
+    return {
+      baseName: `${prefix}/${params[0]}`,
+      baseParam: params[0],
+    };
+  }
+
+  return {
+    baseName: `${prefix}/${params[0]}`,
+    baseParam: '',
+  };
+};
+```
+
+## Prompt 재구현(useBlocker)
+
+```tsx
+function ImportantForm() {
+  let [value, setValue] = React.useState('');
+
+  // Block navigating elsewhere when data has been entered into the input
+  let blocker = useBlocker(
+    ({ currentLocation, nextLocation }) =>
+      value !== '' && currentLocation.pathname !== nextLocation.pathname,
+  );
+
+  return (
+    <Form method="post">
+      <label>
+        Enter some important data:
+        <input
+          name="data"
+          value={value}
+          onChange={e => setValue(e.target.value)}
+        />
+      </label>
+      <button type="submit">Save</button>
+
+      {blocker.state === 'blocked' ? (
+        <div>
+          <p>Are you sure you want to leave?</p>
+          <button onClick={() => blocker.proceed()}>Proceed</button>
+          <button onClick={() => blocker.reset()}>Cancel</button>
+        </div>
+      ) : null}
+    </Form>
+  );
+}
+```
+
+## Outlet, useOutletContext
+
+패스별로 자식 컴포넌트를 선언을 다르게 해야할 경우 location pathname 분기 후 outlet을 처리를 진행할 수 있습니다.
+
+또한 자식 컴포넌트에 데이터를 넘길 경우 context props 넘기고 자식 라우터 컴포넌트는 useOutletContext에서 값을 얻어올 수 있습니다.
+
+```tsx
+{
+  location.pathname.indexOf('/a') > -1 ? (
+    <Outlet context={{ type: 'a' }} />
+  ) : (
+    <Outlet context={{ type: 'b' }} />
+  );
+}
+
+export const B = () => {
+  const { type } = useOutletContext<{ type: string }>();
+};
+```
+
+- [optimistic-ui](https://reactrouter.com/en/main/start/tutorial#optimistic-ui)
+- [not-found-data](https://reactrouter.com/en/main/start/tutorial#not-found-data)
+- [pathless-routes](https://reactrouter.com/en/main/start/tutorial#pathless-routes)
+- [jsx-routes](https://reactrouter.com/en/main/start/tutorial#jsx-routes)
 
 ## 참고페이지
 
