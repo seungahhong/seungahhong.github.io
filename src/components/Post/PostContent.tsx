@@ -117,13 +117,13 @@ const TocRenderer = styled.aside`
   margin: 12px 0 0 10px;
   position: sticky;
   top: 20px;
-  left: 10px;
+  left: 100%;
   transition: all 0.125s esse-in 0s;
   color: rgba(0, 0, 0, 0.4);
-  padding: 0 0.75rem;
+  padding: 0.25rem 0.75rem;
   border-left: 2px solid gray;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden auto;
+  max-height: calc(-128px + 100vh);
 
   & ul {
     list-style: none;
