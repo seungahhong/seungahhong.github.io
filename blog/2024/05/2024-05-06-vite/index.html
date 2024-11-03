@@ -170,10 +170,10 @@ data-styled.g19[id="Template__Container-sc-1a9t0ug-0"]{content:"euGsKB,"}/*!sc*/
         gtag('config', 'G-G8Z1HZWWYL', {"send_page_view":false});
       }
       </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="Template__Container-sc-1a9t0ug-0 euGsKB"><header class="PostContent__PostHeadWrapper-sc-9jovib-1 fvayrr"><div><a href="/"><h1>홍승아블로그</h1></a><a href="https://github.com/seungahhong" rel="noopener noreferrer" title="notion" target="_blank" size="35" class="PostContent__SocialLink-sc-9jovib-7 dDJNdx"><img src="/static/4a6687a74051de2b3536e95d0b6c992a/github.svg" alt="Github Link Image"/></a></div></header><div class="PostContent__PostWrapper-sc-9jovib-0 fUzwlf"><div class="PostContent__PostContentWrapper-sc-9jovib-2 enXUov"><div class="PostContent__PostTitle-sc-9jovib-3 clFxXf"><h1>vite</h1><time>2024.05.06</time></div><article class="PostContent__MarkdownRenderer-sc-9jovib-5 iXorBb"><h1 id="vite를-사용해야-하는-이유" style="position:relative;"><a href="#vite%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0" aria-label="vite를 사용해야 하는 이유 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Vite를 사용해야 하는 이유</h1>
-<h2 id="기존-모듈-번들러-문제점" style="position:relative;"><a href="#%EA%B8%B0%EC%A1%B4-%EB%AA%A8%EB%93%88-%EB%B2%88%EB%93%A4%EB%9F%AC-%EB%AC%B8%EC%A0%9C%EC%A0%90" aria-label="기존 모듈 번들러 문제점 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>기존 모듈 번들러 문제점</h2>
+<h3 id="기존-모듈-번들러-문제점" style="position:relative;"><a href="#%EA%B8%B0%EC%A1%B4-%EB%AA%A8%EB%93%88-%EB%B2%88%EB%93%A4%EB%9F%AC-%EB%AC%B8%EC%A0%9C%EC%A0%90" aria-label="기존 모듈 번들러 문제점 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>기존 모듈 번들러 문제점</h3>
 <ul>
 <li>
-<p>브라우저에서 Native ESM 방식을 지원하기 전까지는 Javascript 모듈화를 브라우저 레벨에서 진행할 수 없었고, 해당 소스 모듈을 브라우저에서 지원하기 위해서 require/IIFE/import,expor를 통한 모듈화 문법을 이용하여서 여러개의 파일로 합쳐주거나 의미 있는 단위로 묶어주는 기능을 번들링이라고 하며, 현재는 <a href="https://webpack.js.org/" target="_blank" rel="nofollow">Webpack</a>, <a href="https://rollupjs.org/" target="_blank" rel="nofollow">Rollup</a> 그리고 <a href="https://parceljs.org/" target="_blank" rel="nofollow">Parcel</a>을 도구들이 지원하고 있습니다.</p>
+<p>브라우저에서 Native ESM 방식을 지원하기 전까지는 Javascript 모듈화를 브라우저 레벨에서 진행할 수 없었고, 해당 소스 모듈을 브라우저에서 지원하기 위해서 require/IIFE/import,expor를 통한 모듈화 문법을 이용하여서 여러개의 파일로 합쳐주거나 의미 있는 단위로 묶어주는 기능을 번들링이라고 하며, 현재는 <a href="https://webpack.js.org/" target="_blank" rel="nofollow"><strong>Webpack</strong></a>, <a href="https://rollupjs.org/" target="_blank" rel="nofollow"><strong>Rollup</strong></a> 그리고 <a href="https://parceljs.org/" target="_blank" rel="nofollow"><strong>Parcel</strong></a>을 도구들이 지원하고 있습니다.</p>
 </li>
 <li>
 <p>하지만 애플리케이션이 점점 더 발전함에 따라서 JS 도구들의 성능 병목 현상이 발생, HMR 사용하더라도 변경된 파일 적용 시 수초가 걸려서 개발자 생산성을 떨어뜨는 문제가 발생하고 있습니다.</p>
@@ -236,7 +236,7 @@ data-styled.g19[id="Template__Container-sc-1a9t0ug-0"]{content:"euGsKB,"}/*!sc*/
 <div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"module"</span> src<span class="token operator">=</span>"app<span class="token punctuation">.</span>mjs<span class="token operator">></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre></div>
 </li>
 </ul>
-<h2 id="vite-특징" style="position:relative;"><a href="#vite-%ED%8A%B9%EC%A7%95" aria-label="vite 특징 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Vite 특징</h2>
+<h3 id="vite-특징" style="position:relative;"><a href="#vite-%ED%8A%B9%EC%A7%95" aria-label="vite 특징 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Vite 특징</h3>
 <ul>
 <li>
 <p>콜드 스타트 방식의 개발 서버 구동에 대한 성능 개선
@@ -360,222 +360,252 @@ HTTP 헤더를 활용하여 페이지 로드 속도 개선(요청 횟수 최소�
 <ul>
 <li>가장 빠른 성능을 자랑하는 esbuild이지만 아쉬운 생태계와 브라우저용 번들링에서는 안정성이 떨어진다는 평가가 있어서 vite에서는 프로덕션 환경에서 Rollup 번들러를 사용(트리 셰이킹, 지연로딩, 파일 분활 등 성능 이점 제공)</li>
 <li>Rollup은 v4에서 파서를 SWC 전환 → Rust 포팅인 Rolldown 만드는 작업을 진행 중이며 개발이 완료된다면 esbuild를 모두 대체 가능(개발/빌드 사이에 불이치 제거 목표)</li>
+<li><a href="https://www.youtube.com/watch?v=EKvvptbTx6k" target="_blank" rel="nofollow">https://www.youtube.com/watch?v=EKvvptbTx6k</a></li>
 </ul>
 </li>
 </ul>
 <h1 id="cra-to-vite-migration" style="position:relative;"><a href="#cra-to-vite-migration" aria-label="cra to vite migration permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CRA to Vite Migration</h1>
-<h3 id="setting-the-stage-with-vite-installation" style="position:relative;"><a href="#setting-the-stage-with-vite-installation" aria-label="setting the stage with vite installation permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Setting the Stage with Vite Installation</strong></h3>
+<h2 id="base" style="position:relative;"><a href="#base" aria-label="base permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>base</h2>
 <ul>
-<li>@vitejs/plugin-react : @vitejs/plugin-react는 Vite에서 React를 사용할 때 필요한 구성을 추가하여 React 애플리케이션의 빠른 개발 및 번들링을 지원</li>
-<li>vite-tsconfig-paths : tsconfig.json 파일에 설정된 경로 별칭을 Vite에서도 적용할 수 있도록 지원. vite-tsconfig-paths를 사용하면 TypeScript 설정에 정의된 경로 별칭이 Vite에서도 인식되어 모듈 경로를 해석할 때 사용 가능</li>
-<li>@svgr/rollup : SVGR을 Rollup 번들러에서 사용할 수 있도록 지원. SVGR은 SVG 파일을 React 컴포넌트로 변환하여, JSX로 SVG를 쉽게 조작하고 스타일링. @svgr/rollup은 Rollup의 플러그인으로서 SVGR을 프로젝트에 통합하여 SVG 파일을 React 컴포넌트로 자동으로 변환할 수 있도록 지원</li>
-</ul>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">npm install vite <span class="token decorator"><span class="token at operator">@</span><span class="token function">vitejs</span></span><span class="token operator">/</span>plugin<span class="token operator">-</span>react vite<span class="token operator">-</span>tsconfig<span class="token operator">-</span>paths <span class="token decorator"><span class="token at operator">@</span><span class="token function">svgr</span></span><span class="token operator">/</span>rollup vite<span class="token operator">-</span>plugin<span class="token operator">-</span>minify
+<li>
+<p><strong>Remove CRA package for Vite</strong>
+기존 CRA 환경에서 사용되는 패키지 삭제
+기존에 설치된 node_modules가 있는경우 폴더 자체를 삭제</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">yarn</span> remove react-scripts react-app-rewired babel-loader webpack-merge tsconfig-paths-webpack-plugin
 
-npm uninstall react<span class="token operator">-</span>scripts</code></pre></div>
-<h3 id="updating-packagejson-for-vite-commands" style="position:relative;"><a href="#updating-packagejson-for-vite-commands" aria-label="updating packagejson for vite commands permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Updating package.json for Vite Commands</strong></h3>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token string-property property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-  <span class="token string-property property">"start"</span><span class="token operator">:</span> <span class="token string">"vite"</span><span class="token punctuation">,</span>
-  <span class="token string-property property">"build"</span><span class="token operator">:</span> <span class="token string">"vite build"</span><span class="token punctuation">,</span>
-  <span class="token string-property property">"preview"</span><span class="token operator">:</span> <span class="token string">"vite preview"</span>
-<span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
-<h3 id="renaming-file-extensions-to-jsx-or-tsx" style="position:relative;"><a href="#renaming-file-extensions-to-jsx-or-tsx" aria-label="renaming file extensions to jsx or tsx permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Renaming File Extensions to .jsx or .tsx</strong></h3>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">mv src<span class="token operator">/</span>App<span class="token punctuation">.</span>js src<span class="token operator">/</span>App<span class="token punctuation">.</span>jsx
-mv src<span class="token operator">/</span>index<span class="token punctuation">.</span>js src<span class="token operator">/</span>index<span class="token punctuation">.</span>jsx</code></pre></div>
-<h3 id="crafting-the-vite-configuration" style="position:relative;"><a href="#crafting-the-vite-configuration" aria-label="crafting the vite configuration permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Crafting the Vite Configuration</strong></h3>
+<span class="token function">rm</span> <span class="token parameter variable">-rf</span> node_modules</code></pre></div>
+</li>
+<li>
+<p><strong>Setting the Stage with Vite Installation</strong>
+<strong>vite: 모던 웹 프로젝트 빌드 도구</strong></p>
 <ul>
-<li>define: { global: ’{}’ }
+<li>@vitejs/plugin-react: @vitejs/plugin-react는 vite에서 React를 사용할 때 필요한 구성을 추가하여 React 애플리케이션의 빠른 개발 및 번들링을 지원</li>
+<li>vite-tsconfig-paths: tsconfig.json 파일에 설정된 경로 별칭을 Vite에서도 적용할 수 있도록 지원. vite-tsconfig-paths를 사용하면 TypeScript 설정에 정의된 경로 별칭이 Vite에서도 인식되어 모듈 경로를 해석할 때 사용 가능</li>
+<li>vite-plugin-svgr
 <ul>
-<li>Node.js 환경에서 사용되는 global 객체를 웹 환경에서도 사용할 수 있도록 하여 호환성을 보장하고, 라이브러리나 모듈의 원활한 사용을 지원하기 위한 것</li>
+<li>SVG를 React 컴포넌트로 변환하는 Vite 플러그인</li>
+<li>단, 3.3.0 이후 버전 설치 시 빌드, 타입 에러 발생(3.3.0 사용 시 아래와 같은 svgr을 리액트 컴포넌트로 변경 가능)</li>
+</ul>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">import</span> <span class="token punctuation">{</span> ReactComponent as ChannelLogo <span class="token punctuation">}</span> from <span class="token string">'../../assets/artwork-illust-pm-assign-info-channel-talk.svg'</span><span class="token punctuation">;</span></code></pre></div>
+</li>
+<li>vite-plugin-checker
+<ul>
+<li>vite를 사용하는 프로젝트에서 타입 체크, ESLint, VLS (Volar Language Server) 등을 포함한 여러 검사 기능을 제공하는 플러그인</li>
+<li>비동기로 체크를 하기 때문에 개발 서버 환경 로딩 속도에 영향을 주지 않는 장점이 있다.</li>
 </ul>
 </li>
 </ul>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// vite.config.js</span>
-<span class="token keyword">import</span> <span class="token punctuation">{</span> defineConfig <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vite'</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> react <span class="token keyword">from</span> <span class="token string">'@vitejs/plugin-react'</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> viteTsconfigPaths <span class="token keyword">from</span> <span class="token string">'vite-tsconfig-paths'</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> svgr <span class="token keyword">from</span> <span class="token string">'@svgr/rollup'</span><span class="token punctuation">;</span>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">yarn add vite @vitejs/plugin-react vite-tsconfig-paths vite-plugin-svgr@3.3.0
 
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineConfig</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token punctuation">{</span>
-    build<span class="token operator">:</span> <span class="token punctuation">{</span>
-      outDir<span class="token operator">:</span> <span class="token string">'build'</span><span class="token punctuation">,</span> <span class="token comment">// build 폴더명 변경(기본 dist)</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    define<span class="token operator">:</span> <span class="token punctuation">{</span>
-			global<span class="token operator">:</span> <span class="token string">'{}'</span><span class="token punctuation">,</span>  <span class="token comment">// 글로벌 객체를 빈 객체로 대체</span>
-		<span class="token punctuation">}</span><span class="token punctuation">,</span>vi
-    plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">react</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">viteTsconfigPaths</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">svgr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-    server<span class="token operator">:</span> <span class="token punctuation">{</span>
-        <span class="token comment">// this ensures that the browser opens upon server start</span>
-        open<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-        <span class="token comment">// this sets a default port to 3000</span>
-        port<span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<h3 id="create-avitetypes-file-reference" style="position:relative;"><a href="#create-avitetypes-file-reference" aria-label="create avitetypes file reference permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Create a Vite Types File Reference</strong></h3>
-<p>For client side code, <a href="https://vitejs.dev/guide/env-and-mode.html#intellisense-for-typescript" target="_blank" rel="nofollow">Vite provides the type definitions</a> in <a href="https://github.com/vitejs/vite/blob/main/packages/vite/client.d.ts" target="_blank" rel="nofollow"><code class="language-text">vite/client.d.ts</code></a>.</p>
+yarn add vite-plugin-checker -D</code></pre></div>
+</li>
+<li>
+<p><strong>Updating package.json for Vite Commands</strong></p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">scripts<span class="token string">": {
+  "</span>start<span class="token string">": "</span>vite<span class="token string">",
+  "</span>build<span class="token string">": "</span>vite build",
+<span class="token punctuation">}</span>,</code></pre></div>
+</li>
+<li>
+<p><strong>Renaming React File Extensions to .jsx or .tsx</strong></p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">mv</span> src/App.js src/App.jsx
+<span class="token function">mv</span> src/index.ts src/index.tsx</code></pre></div>
+</li>
+<li>
+<p><strong>Move the index.html File</strong></p>
 <ul>
-<li>create file src/vite-env.d.ts</li>
+<li>public 패스의 index.html 삭제하지 않을 경우 vite에서 개발 환경 로딩 시 public/index.html 선 로딩함으로 꼭 루트로 옮겨주세요!!</li>
 </ul>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">/// &lt;reference types="vite/client" /></span></code></pre></div>
-<h3 id="move-the-indexhtml-file" style="position:relative;"><a href="#move-the-indexhtml-file" aria-label="move the indexhtml file permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Move the index.html File</h3>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">mv <span class="token keyword">public</span><span class="token operator">/</span>index<span class="token punctuation">.</span>html <span class="token punctuation">.</span></code></pre></div>
-<h3 id="rehousing-the-indexhtml-file" style="position:relative;"><a href="#rehousing-the-indexhtml-file" aria-label="rehousing the indexhtml file permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Rehousing the index.html File</strong></h3>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">mv</span> public/index.html <span class="token builtin class-name">.</span></code></pre></div>
+</li>
+<li>
+<p><strong>Add module script to the bottom of the body tag</strong>
+초기 로딩 시 코드 진입점을 명시해주세요.</p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+  {/* others here */}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/src/index.tsx<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></code></pre></div>
+</li>
+<li>
+<p><strong>Update tsconfig.json</strong>
+isolatedModules 사용이유</p>
 <ul>
-<li>Remove %PUBLIC_URL%</li>
+<li><strong>모듈 간의 의존성 격리</strong>: 각 모듈이 서로의 타입에 의존하지 않도록 하여, 컴파일 시 모듈을 개별적으로 처리합니다. 이를 통해 TypeScript의 컴파일 시간이 줄어들 수 있습니다.</li>
+<li><strong>성능 향상</strong>: 독립적으로 모듈을 컴파일하면, 변화가 발생한 모듈만 다시 컴파일되므로 전체 컴파일 속도가 개선됩니다.</li>
+<li><strong>ESM 호환성</strong>: ES 모듈과의 호환성을 높여, 다양한 빌드 도구와의 통합 시 더 나은 결과를 제공합니다.</li>
+<li><strong>검사 오류 방지</strong>: 모든 모듈이 개별적으로 체크되므로, 한 모듈에서의 타입 오류가 다른 모듈에 영향을 미치는 것을 방지할 수 있습니다.
+include에 vite.config.js 패스 설정</li>
 </ul>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/src/index.jsx<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span> <span class="token operator">-</span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image/svg+xml<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>%PUBLIC_URL%/favicon.svg<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span> <span class="token operator">+</span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image/svg+xml<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/favicon.svg<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span></code></pre></div>
-<h3 id="add-module-script-to-the-bottom-of-the-body-tag" style="position:relative;"><a href="#add-module-script-to-the-bottom-of-the-body-tag" aria-label="add module script to the bottom of the body tag permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Add module script to the bottom of the body tag</strong></h3>
-<p>Vite treats <code class="language-text">index.html</code> <a href="https://vitejs.dev/guide/#index-html-and-project-root" target="_blank" rel="nofollow">as source code and part of the module graph</a></p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token plain-text">
-  </span><span class="token punctuation">{</span><span class="token comment">/* others here */</span><span class="token punctuation">}</span><span class="token plain-text">
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/src/index.tsx<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span class="token plain-text">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></code></pre></div>
-<h3 id="update-tsconfigjson" style="position:relative;"><a href="#update-tsconfigjson" aria-label="update tsconfigjson permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Update tsconfig.json</h3>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token punctuation">{</span>
-    <span class="token string-property property">"compilerOptions"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-        <span class="token string-property property">"lib"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"dom"</span><span class="token punctuation">,</span> <span class="token string">"dom.iterable"</span><span class="token punctuation">,</span> <span class="token string">"esnext"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-        <span class="token string-property property">"target"</span><span class="token operator">:</span> <span class="token string">"ESNext"</span><span class="token punctuation">,</span>
-         <span class="token string-property property">"types"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"vite/client"</span><span class="token punctuation">,</span> <span class="token string">"react"</span><span class="token punctuation">,</span> <span class="token string">"react-dom"</span><span class="token punctuation">,</span> <span class="token string">"node"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 추가</span>
-         <span class="token string-property property">"isolatedModules"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 추가</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
- <span class="token punctuation">}</span></code></pre></div>
-<h3 id="changeenv-variables-and-modes" style="position:relative;"><a href="#changeenv-variables-and-modes" aria-label="changeenv variables and modes permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>ChangeEnv Variables and Modes</strong></h3>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// .env Files</span>
-<span class="token punctuation">.</span>env                # loaded <span class="token keyword">in</span> all cases
-<span class="token punctuation">.</span>env<span class="token punctuation">.</span>local          # loaded <span class="token keyword">in</span> all cases<span class="token punctuation">,</span> ignored by git
-<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token punctuation">[</span>mode<span class="token punctuation">]</span>         # only loaded <span class="token keyword">in</span> specified mode
-<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token punctuation">[</span>mode<span class="token punctuation">]</span><span class="token punctuation">.</span>local   # only loaded <span class="token keyword">in</span> specified mode<span class="token punctuation">,</span> ignored by git
-
-<span class="token comment">// HTML Env Replacement(CRA 동일한 기능 제공)</span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">Vite is running in %MODE%</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">Using data from %VITE_API_URL%</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-
-<span class="token comment">// Modes</span>
-# <span class="token punctuation">.</span>env<span class="token punctuation">.</span>staging
-<span class="token constant">VITE_APP_TITLE</span><span class="token operator">=</span>My App
-
-<span class="token comment">// command mode option flag</span>
-vite build <span class="token operator">--</span>mode staging</code></pre></div>
-<h3 id="globalis-not-defined-error" style="position:relative;"><a href="#globalis-not-defined-error" aria-label="globalis not defined error permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>global is not defined error</strong></h3>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// vite.config.ts</span>
-<span class="token keyword">import</span> <span class="token punctuation">{</span> defineConfig <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vite'</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> react <span class="token keyword">from</span> <span class="token string">'@vitejs/plugin-react'</span><span class="token punctuation">;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  <span class="token comment">// ...</span>
-  define<span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token comment">// here is the main update</span>
-    global<span class="token operator">:</span> <span class="token string">'globalThis'</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<h3 id="update-processenvreact_app" style="position:relative;"><a href="#update-processenvreact_app" aria-label="update processenvreact_app permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Update process.env.REACT_APP</h3>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token operator">-</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">REACT_APP_VARIABLE</span>
-<span class="token operator">+</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">VITE_VARIABLE</span><span class="token punctuation">(</span>이름 변경은 선택<span class="token punctuation">)</span></code></pre></div>
-<h3 id="replace-reactapp-with-vite_" style="position:relative;"><a href="#replace-reactapp-with-vite_" aria-label="replace reactapp with vite_ permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Replace REACT<em>APP</em> with VITE_</h3>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token operator">-</span> <span class="token constant">REACT_APP_API_BASE</span>
-<span class="token operator">+</span> <span class="token constant">VITE_API_BASE</span><span class="token punctuation">(</span>이름 변경은 선택<span class="token punctuation">)</span></code></pre></div>
-<h3 id="modify-jest-configration" style="position:relative;"><a href="#modify-jest-configration" aria-label="modify jest configration permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Modify Jest Configration</h3>
-<ul>
-<li>
-<p><strong>Install Jest and TypeScript-related Dependencies</strong></p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">yarn add <span class="token operator">-</span><span class="token constant">D</span> jest <span class="token decorator"><span class="token at operator">@</span><span class="token function">types</span></span><span class="token operator">/</span>jest ts<span class="token operator">-</span>jest jest<span class="token operator">-</span>environment<span class="token operator">-</span>jsdom
-
-<span class="token constant">OR</span>
-
-npm install <span class="token operator">--</span>save<span class="token operator">-</span>dev jest <span class="token decorator"><span class="token at operator">@</span><span class="token function">types</span></span><span class="token operator">/</span>jest ts<span class="token operator">-</span>jest jest<span class="token operator">-</span>environment<span class="token operator">-</span>jsdom</code></pre></div>
-</li>
-<li>
-<p><strong>Update Jest Config</strong></p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// package.json</span>
-<span class="token string-property property">"jest"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-  <span class="token string-property property">"preset"</span><span class="token operator">:</span> <span class="token string">"ts-jest/presets/js-with-ts"</span><span class="token punctuation">,</span>
-  <span class="token string-property property">"testEnvironment"</span><span class="token operator">:</span> <span class="token string">"jest-environment-jsdom"</span><span class="token punctuation">,</span>
-  <span class="token string-property property">"moduleNameMapper"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token string-property property">"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$"</span><span class="token operator">:</span> <span class="token string">"&lt;rootDir>/__mocks__/fileMock.js"</span><span class="token punctuation">,</span>
-    <span class="token string-property property">"\\.(css|less)$"</span><span class="token operator">:</span> <span class="token string">"&lt;rootDir>/__mocks__/styleMock.js"</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token string-property property">"modulePaths"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-    <span class="token comment">// you can update this to match your application setup</span>
-    <span class="token string">"&lt;rootDir>/src"</span>
-  <span class="token punctuation">]</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
-</li>
-<li>
-<p><strong>Add the <strong>mocks</strong> Directory to the Root of Your Project</strong></p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// __mocks__//styleMock.js</span>
-module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-<span class="token comment">// __mocks__//fileMock.js</span>
-module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token string">'test-file-stub'</span><span class="token punctuation">;</span></code></pre></div>
-</li>
-<li>
-<p><strong>Update the package.json Scripts</strong></p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// Before</span>
-<span class="token string-property property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token string-property property">"test"</span><span class="token operator">:</span> <span class="token string">"react-app-rewired test"</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment">// After</span>
-<span class="token string-property property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token string-property property">"test"</span><span class="token operator">:</span> <span class="token string">"jest test"</span>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token punctuation">{</span>
+  <span class="token string">"extends"</span><span class="token builtin class-name">:</span> <span class="token string">"./tsconfig.extend.json"</span>,
+  <span class="token string">"compilerOptions"</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+    <span class="token string">"lib"</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">"dom"</span>, <span class="token string">"dom.iterable"</span>, <span class="token string">"es2020"</span><span class="token punctuation">]</span>,
+    <span class="token string">"target"</span><span class="token builtin class-name">:</span> <span class="token string">"ES6"</span>,
+    <span class="token string">"types"</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">"vite/client"</span>, <span class="token string">"react"</span>, <span class="token string">"react-dom"</span>, <span class="token string">"node"</span><span class="token punctuation">]</span>,
+    <span class="token string">"isolatedModules"</span><span class="token builtin class-name">:</span> <span class="token boolean">true</span> // 추가
+  <span class="token punctuation">}</span>,
+  <span class="token string">"include"</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"./src/**/*"</span>,
+    <span class="token string">"vite.config.js"</span>
+  <span class="token punctuation">]</span>,
+  <span class="token string">"exclude"</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"node_modules"</span>
+  <span class="token punctuation">]</span>
 <span class="token punctuation">}</span></code></pre></div>
 </li>
 <li>
-<p><strong>TroubleShooting</strong>
-<strong>unexpected Warning: ReactDOMTestUtils.act is deprecated in favor of React.act.</strong>
-<a href="https://github.com/facebook/react/issues/29000" target="_blank" rel="nofollow">https://github.com/facebook/react/issues/29000</a></p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// upgrade @testing-library/react (>=v15.0.6)</span>
-<span class="token string-property property">"@testing-library/react"</span><span class="token operator">:</span> <span class="token string">"^15.0.6"</span><span class="token punctuation">,</span></code></pre></div>
-<p><strong>Property ‘toBeInTheDocument’ does not exist on type ‘JestMatchers<HTMLElement>’</strong></p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// create ./jest-setup.ts</span>
-<span class="token keyword">import</span> <span class="token string">'@testing-library/jest-dom'</span><span class="token punctuation">;</span>
+<p><strong>Add module html minify</strong>
+CRA 프로젝트에서는 내장된 plugins중에 HtmlWebpackPlugin 통해서 html minify를 해주고 있는데, vite에서 내장이 되어 있지 않아서 직접 설치후에 환경 설정을 추가해줘야 합니다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">// Installation
+<span class="token function">yarn</span> <span class="token function">add</span> vite-plugin-html
 
-<span class="token comment">// package.json</span>
-<span class="token string-property property">"testEnvironment"</span><span class="token operator">:</span> <span class="token string">"jest-environment-jsdom"</span> <span class="token comment">// 추가</span></code></pre></div>
+// vite.config.js
+createHtmlPlugin<span class="token punctuation">(</span><span class="token punctuation">{</span>
+  // input <span class="token operator">&lt;</span>https://www.npmjs.com/package/html-minifier-terser<span class="token operator">></span> options
+  minify: true,
+<span class="token punctuation">}</span><span class="token punctuation">)</span>,</code></pre></div>
 </li>
 </ul>
-<h3 id="storybook-for-vite" style="position:relative;"><a href="#storybook-for-vite" aria-label="storybook for vite permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Storybook for Vite</h3>
+<h2 id="configuration" style="position:relative;"><a href="#configuration" aria-label="configuration permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configuration</h2>
 <ul>
 <li>
-<p>Setup</p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// install</span>
-yarn add <span class="token operator">--</span>dev <span class="token decorator"><span class="token at operator">@</span><span class="token function">storybook</span></span><span class="token operator">/</span>builder<span class="token operator">-</span>vite
+<p><strong>Crafting the Vite Configuration</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// &lt;root>/vite.config.js</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> defineConfig<span class="token punctuation">,</span> loadEnv <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vite'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> path <span class="token keyword">from</span> <span class="token string">'path'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> react <span class="token keyword">from</span> <span class="token string">'@vitejs/plugin-react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> viteTsconfigPaths <span class="token keyword">from</span> <span class="token string">'vite-tsconfig-paths'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> svgr <span class="token keyword">from</span> <span class="token string">'vite-plugin-svgr'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createHtmlPlugin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vite-plugin-html'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> checker <span class="token keyword">from</span> <span class="token string">'vite-plugin-checker'</span><span class="token punctuation">;</span>
 
-<span class="token comment">// include the builder</span>
-<span class="token comment">//// .storybook/main.ts</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-  stories<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'../src/**/*.mdx'</span><span class="token punctuation">,</span> <span class="token string">'../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-  addons<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@storybook/addon-links'</span><span class="token punctuation">,</span> <span class="token string">'@storybook/addon-essentials'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-  core<span class="token operator">:</span> <span class="token punctuation">{</span>
-    builder<span class="token operator">:</span> <span class="token string">'@storybook/builder-vite'</span><span class="token punctuation">,</span> <span class="token comment">// 👈 The builder enabled here.</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token keyword">async</span> <span class="token function">viteFinal</span><span class="token punctuation">(</span>config<span class="token punctuation">,</span> <span class="token punctuation">{</span> configType <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// configuration</span>
-    <span class="token comment">// Merge custom configuration into the default config</span>
-    <span class="token keyword">const</span> <span class="token punctuation">{</span> mergeConfig <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'vite'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineConfig</span><span class="token punctuation">(</span>config <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> env <span class="token operator">=</span> <span class="token function">loadEnv</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>mode<span class="token punctuation">,</span> process<span class="token punctuation">.</span><span class="token function">cwd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>configType <span class="token operator">===</span> <span class="token string">'DEVELOPMENT'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token comment">// Your development configuration goes here</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>configType <span class="token operator">===</span> <span class="token string">'PRODUCTION'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token comment">// Your production configuration goes here.</span>
-    <span class="token punctuation">}</span>
+  <span class="token keyword">const</span> generateSourceMap <span class="token operator">=</span> env<span class="token punctuation">.</span><span class="token constant">GENERATE_SOURCEMAP</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> shouldUseSourceMap <span class="token operator">=</span> generateSourceMap <span class="token operator">!==</span> <span class="token string">'false'</span><span class="token punctuation">;</span>
 
-    <span class="token keyword">return</span> <span class="token function">mergeConfig</span><span class="token punctuation">(</span>config<span class="token punctuation">,</span> <span class="token punctuation">{</span>
-      <span class="token comment">// Add dependencies to pre-optimization</span>
-      optimizeDeps<span class="token operator">:</span> <span class="token punctuation">{</span>
-        include<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'storybook-dark-mode'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    build<span class="token operator">:</span> <span class="token punctuation">{</span>
+      outDir<span class="token operator">:</span> <span class="token string">'build'</span><span class="token punctuation">,</span> <span class="token comment">// build 폴더명 변경(기본 dist)</span>
+      sourcemap<span class="token operator">:</span> shouldUseSourceMap<span class="token punctuation">,</span> <span class="token comment">// 소스맵 생성 여부</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    define<span class="token operator">:</span> <span class="token punctuation">{</span>
+      global<span class="token operator">:</span> <span class="token string">'globalThis'</span><span class="token punctuation">,</span> <span class="token comment">// 글로벌 객체를 빈 객체로 대체(global is not defined error 에러에 대한 방어코드)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">react</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">viteTsconfigPaths</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">svgr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 </li>
 </ul>
-<h3 id="importmetaglob-dynamic-load" style="position:relative;"><a href="#importmetaglob-dynamic-load" aria-label="importmetaglob dynamic load permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>import.meta.glob dynamic load</h3>
-<p>Vite의 import.meta.glob을 사용하여 모든 아이콘을 동적으로 가져옴</p>
+<h2 id="environment-variables" style="position:relative;"><a href="#environment-variables" aria-label="environment variables permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Environment Variables</h2>
+<ul>
+<li>
+<p>VITE라는 prefix를 설정하지 않을 경우 import.meta.env 에서 값을 얻어 올 수 없습니다.</p>
+</li>
+<li>
+<p>기본적으로 속성값으로 DEV(vite), PROD(vite build)을 제공해줌으로 개발/빌드 환경 구분이 가능합니다.</p>
+</li>
+<li>
+<p><strong>ChangeEnv Variables and Modes</strong></p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token comment">// .env Files</span>
+.env                # loaded in all cases
+.env.local          # loaded in all cases<span class="token punctuation">,</span> ignored by git
+.env.<span class="token punctuation">[</span>mode<span class="token punctuation">]</span>         # only loaded in specified mode
+.env.<span class="token punctuation">[</span>mode<span class="token punctuation">]</span>.local   # only loaded in specified mode<span class="token punctuation">,</span> ignored by git
+
+<span class="token comment">// Modes</span>
+# .env.production.live
+VITE_ENVIRONMENT=live
+
+<span class="token comment">// command mode option flag</span>
+<span class="token property">"build:dev"</span><span class="token operator">:</span> <span class="token string">"yarn vite --mode production.dev"</span><span class="token punctuation">,</span>
+<span class="token property">"build:rc"</span><span class="token operator">:</span> <span class="token string">"yarn vite --mode production.rc"</span><span class="token punctuation">,</span>
+<span class="token property">"build:live"</span><span class="token operator">:</span> <span class="token string">"yarn vite --mode production.live"</span><span class="token punctuation">,</span></code></pre></div>
+</li>
+<li>
+<p><strong>Update process.env.REACT_APP</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token operator">-</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">REACT_APP_VARIABLE</span> <span class="token operator">+</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">VITE_VARIABLE</span><span class="token punctuation">;</span></code></pre></div>
+</li>
+</ul>
+<h2 id="ejs-variables" style="position:relative;"><a href="#ejs-variables" aria-label="ejs variables permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>EJS Variables</h2>
+<ul>
+<li>
+<p><strong>Update Configuration for Vite</strong>
+빌드 시 HTML CJS 문법이 치환되도록 처리하기 위해서 vite-plugin-html 이용해서 내보내기 처리 추가</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">createHtmlPlugin({
+  ....
+  inject: {
+    data: {
+      VITE_VARIABLE: env.VITE_VARIABLE,
+    },
+  },
+}),</code></pre></div>
+</li>
+<li>
+<p><strong>Replace EJS Variables for Vite</strong>
+문자만 치환할 경우</p>
+<ul>
+<li>“%” → “&#x3C;%= ~~ =>”</li>
+<li>예) <script src="/variable"></script> → 문자안에 글자를 치환할 경우</li>
+</ul>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html">// env VITE_VARIABLE='/variable' //
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>root</span>
+  <span class="token punctuation">></span></span>/index.html //// CRA
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>%REACT_APP_VARIABLE%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+  //// VITE
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>&lt;%= VITE_VARIABLE %><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span>
+<span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>root</span><span class="token punctuation">></span></span></code></pre></div>
+<p>엘리먼트(태그) 자체를 변경할 경우</p>
+<ul>
+<li>% → &#x3C;%- ~~ -></li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"> // env
+VITE_SCRIPT=&lt;script>(function ~~ )&lt;/script>
+
+// &lt;root>/index.html
+//// CRA
+%VITE_SCRIPT%
+
+//// VITE
+&lt;%- VITE_SCRIPT %></code></pre></div>
+</li>
+<li>
+<p><strong>Updating Vite Commands(with enviroment)</strong></p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token property">"start"</span><span class="token operator">:</span> <span class="token string">"vite"</span><span class="token punctuation">,</span>
+<span class="token property">"start:dev"</span><span class="token operator">:</span> <span class="token string">"yarn start --mode development.dev"</span><span class="token punctuation">,</span>
+<span class="token property">"start:rc"</span><span class="token operator">:</span> <span class="token string">"yarn start --mode development.rc"</span><span class="token punctuation">,</span>
+<span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"vite build"</span><span class="token punctuation">,</span>
+<span class="token property">"build:dev"</span><span class="token operator">:</span> <span class="token string">"yarn build --mode production.dev"</span><span class="token punctuation">,</span>
+<span class="token property">"build:rc"</span><span class="token operator">:</span> <span class="token string">"yarn build --mode production.rc"</span><span class="token punctuation">,</span>
+<span class="token property">"build:live"</span><span class="token operator">:</span> <span class="token string">"yarn build --mode production.live"</span><span class="token punctuation">,</span></code></pre></div>
+</li>
+</ul>
+<h2 id="vite-lint-typescript-checker" style="position:relative;"><a href="#vite-lint-typescript-checker" aria-label="vite lint typescript checker permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Vite Lint, Typescript Checker</h2>
+<ul>
+<li>
+<p><strong>Add module vite-plugin-checker</strong>
+CRA 환경에서 내부적으로 fork-ts-checker-webpack-plugin 플러그인을 바탕으로 비동기로 타입 체크를 해주고 있지만, VITE 환경에서는 vite-plugin-checker 직접 설치 후 vite.config.js 구성에 추가해줘야 합니다.</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// vite.config.js</span>
+<span class="token keyword">import</span> checker <span class="token keyword">from</span> <span class="token string">'vite-plugin-checker'</span><span class="token punctuation">;</span>
+
+<span class="token function">checker</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  typescript<span class="token operator">:</span> config<span class="token punctuation">.</span>mode<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'development'</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>
+  eslint<span class="token operator">:</span> config<span class="token punctuation">.</span>mode<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'development'</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">?</span> <span class="token punctuation">{</span>
+    lintCommand<span class="token operator">:</span> <span class="token string">'eslint "./src/**/*.{ts,tsx,js,jsx}"'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span> <span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  stylelint<span class="token operator">:</span> config<span class="token punctuation">.</span>mode<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'development'</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">?</span> <span class="token punctuation">{</span>
+    lintCommand<span class="token operator">:</span> <span class="token string">'stylelint "src/**/*.scss"'</span>
+  <span class="token punctuation">}</span> <span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span></code></pre></div>
+</li>
+</ul>
+<h1 id="cra-to-vite-migration-tip" style="position:relative;"><a href="#cra-to-vite-migration-tip" aria-label="cra to vite migration tip permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CRA to Vite Migration Tip</h1>
+<ul>
+<li>
+<p><strong>import.meta.glob dynamic load</strong>
+Vite의 import.meta.glob을 사용하여 모든 아이콘을 동적으로 가져올 수 있습니다.</p>
 <div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">const</span> icons <span class="token operator">=</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span><span class="token function">glob</span><span class="token punctuation">(</span><span class="token string">'./*Icon.tsx'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> iconComponentPath <span class="token operator">=</span> <span class="token string">'./aIcon.tsx'</span><span class="token punctuation">;</span>
@@ -589,18 +619,20 @@ yarn add <span class="token operator">--</span>dev <span class="token decorator"
           <span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">,</span>
       <span class="token punctuation">)</span>
     <span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">;</span></code></pre></div>
-<h3 id="sass-resources-loader--preprocessoroptionssass" style="position:relative;"><a href="#sass-resources-loader--preprocessoroptionssass" aria-label="sass resources loader  preprocessoroptionssass permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>sass-resources-loader → preprocessorOptions.sass</h3>
-<p>공통적으로 사용되는 스타일을 전역적으로 적용할 때 사용하는 sass-resources-loader를 vite에서는 preprocessorOptions.sass로 대체가 가능</p>
+</li>
+<li>
+<p><strong>sass-resources-loader(dart sass) → vite config preprocessorOptions.sass</strong>
+공통적으로 사용되는 스타일을 전역적으로 적용할 때 사용하는 sass-resources-loader를 vite에서는 preprocessorOptions.sass로 대체가 가능</p>
 <div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// CRA</span>
 rules<span class="token operator">:</span> <span class="token punctuation">[</span>
   <span class="token punctuation">{</span>
-    test<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.scss$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+    test<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\\.scss$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
     use<span class="token operator">:</span> <span class="token punctuation">[</span>
       <span class="token punctuation">{</span>
         loader<span class="token operator">:</span> <span class="token string">'sass-resources-loader'</span><span class="token punctuation">,</span>
         options<span class="token operator">:</span> <span class="token punctuation">{</span>
           resources<span class="token operator">:</span> <span class="token punctuation">[</span>
-            path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./index.scss'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./sass.scss'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
           <span class="token punctuation">]</span><span class="token punctuation">,</span>
         <span class="token punctuation">}</span><span class="token punctuation">,</span>
       <span class="token punctuation">}</span><span class="token punctuation">,</span>
@@ -616,67 +648,91 @@ css<span class="token operator">:</span> <span class="token punctuation">{</span
     scss<span class="token operator">:</span> <span class="token punctuation">{</span>
       <span class="token comment">// Next line will prepend the import in all you scss files as you did with your vite.config.js file</span>
       additionalData<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
-        @use './index.scss' as *;
+        @import "./sass.scss";
       </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
-<h3 id="vite-plugin-htmlcra-cjs-대체-html-minify" style="position:relative;"><a href="#vite-plugin-htmlcra-cjs-%EB%8C%80%EC%B2%B4-html-minify" aria-label="vite plugin htmlcra cjs 대체 html minify permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>vite-plugin-html(CRA CJS 대체, Html Minify)</h3>
-<p>CRA 내부적으로 지원하는 기능을 VITE에서는 vite-plugin-html 라이브러리를 통해서 지원이 가능합니다.</p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// CRA</span>
-<span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ko<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+<p><strong>단계별 에러 케이스 정리</strong>
+@forward rules must be written before any other rules 에러</p>
+<ul>
+<li>@forward 구문이 다른 모든 규칙(@import, @use, 스타일 선언) 보다 위에 위치하도록 수정
+@forward</li>
+<li>Dart Sass에서 도입된 Sass 모듈 시스템의 일부로, 모듈화된 스타일시트를 구성하고 관리하는 데 중요한 역할을 합니다.</li>
+<li>@import 방식과는 다르게, @forward는 Sass 코드의 모듈화와 재사용성을 더 쉽게 관리할 수 있도록 돕습니다.
+@use: 모듈을 가져오면서 네임스페이스를 사용해 충돌을 방지하고, 명시적으로 필요한 부분만 가져올 수 있습니다.
+@import는 파일을 단순히 포함하는 방식으로, 여러 번 포함될 수 있고 변수나 믹스인의 충돌 위험이 있습니다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// reset.scss</span>
+<span class="token decorator"><span class="token at operator">@</span><span class="token function">forward</span></span> <span class="token string">'reset'</span><span class="token punctuation">;</span>
 
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><span class="token plain-text">
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span><span class="token plain-text">테스트/title>
-  %CJS%
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><span class="token plain-text">
+<span class="token comment">// ./sass.scss</span>
+<span class="token decorator"><span class="token at operator">@</span><span class="token function">use</span></span> <span class="token string">'color'</span><span class="token punctuation">;</span>
 
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token plain-text">
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>noscript</span><span class="token punctuation">></span></span><span class="token plain-text">
-    You need to enable JavaScript to run this app.
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>noscript</span><span class="token punctuation">></span></span><span class="token plain-text">
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token plain-text">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span class="token plain-text">
+css<span class="token operator">:</span> <span class="token punctuation">{</span>
+  preprocessorOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    scss<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Next line will prepend the import in all you scss files as you did with your vite.config.js file</span>
+      additionalData<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+        @forward 'reset';
 
-// VITE
-&lt;!DOCTYPE html>
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ko<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
-
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><span class="token plain-text">
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span><span class="token plain-text">테스트/title>
-  &lt;%= CJS %> // 문자로 삽입
-  &lt;%- CJS %> // RAW 데이터 그대로 삽입
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><span class="token plain-text">
-
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token plain-text">
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>noscript</span><span class="token punctuation">></span></span><span class="token plain-text">
-    You need to enable JavaScript to run this app.
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>noscript</span><span class="token punctuation">></span></span><span class="token plain-text">
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token plain-text">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span class="token plain-text">
-
-//// vite.config.js
-import createHtmlPlugin from 'vite-plugin-html';
-
-createHtmlPlugin(</span><span class="token punctuation">{</span>
-  minify<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// html minify</span>
-  inject<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// CJS 대체</span>
-    data<span class="token operator">:</span> <span class="token punctuation">{</span>
-      <span class="token constant">CJS</span><span class="token operator">:</span> <span class="token string">'TEST'</span><span class="token punctuation">,</span>
+        @use './color.scss' as *;
+        @use './sass.scss' as *
+      </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token plain-text">),
-</span></code></pre></div>
-<h3 id="serverproxy-outside-file" style="position:relative;"><a href="#serverproxy-outside-file" aria-label="serverproxy outside file permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>server(proxy, outside file)</h3>
-<p>CRA proxy 설정을 VITE proxy로 대체가 가능합니다.</p>
-<p>VITE 환경 외에 외부 폴더/파일 접근 시 fs.allow 객체로 추가 시 dev server에서 접근이 가능</p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// CRA</span>
-<span class="token comment">//// setupProxy.js</span>
-<span class="token keyword">const</span> <span class="token punctuation">{</span> createProxyMiddleware <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">"http-proxy-middleware"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
+</li>
+<li>
+<p><strong>setting module scss name for Vite(선택)</strong>
+CRA에서는 SCSS 모듈을 사용할 때, 파일명과 클래스명을 결합해 고유한 클래스명을 자동으로 생성해주만, VITE 에서는 클래스명으로만 생성되는 규칙을 다르게 가져가고 있음</p>
+<ul>
+<li>규칙: [파일명]<em>[원래 클래스명]</em>[hash:base64:5]
+단, 서비스 내에서 module scss를 전역으로 선택하는 경우가 없다면 굳이 세팅을 해줄 필요가 없습니다.(내부적으로는 세팅을 하지 않을 시 [클래스명, hash]값을 토대로 유니크한 값으로 자동 변경)</li>
+</ul>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">import</span> styles <span class="token keyword">from</span> <span class="token string">'./Test.module.scss'</span><span class="token punctuation">;</span>
 
+<span class="token keyword">const</span> <span class="token function-variable function">Test</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token punctuation">(</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>container<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Test<span class="token punctuation">;</span>
+
+<span class="token comment">// 변경 전</span>
+<span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"Test_container__28qL6"</span>
+
+<span class="token comment">// 변경 후</span>
+<span class="token comment">//// vite.config.js</span>
+<span class="token keyword">const</span> namespaceUUID <span class="token operator">=</span> <span class="token function">v4</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+css<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 파일명과 클래스명을 포함한 고유한 이름 생성</span>
+    <span class="token function-variable function">generateScopedName</span><span class="token operator">:</span> <span class="token punctuation">(</span>name<span class="token punctuation">,</span> filename<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token comment">// 파일 경로 기반 고유한 해시 생성</span>
+      <span class="token keyword">const</span> file <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">basename</span><span class="token punctuation">(</span>filename<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">'.module'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.[^/.]+$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// UUID 생성 후 Base64 인코딩</span>
+      <span class="token keyword">const</span> hash <span class="token operator">=</span> Buffer<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token function">v5</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>file<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">_</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> namespaceUUID<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token string">'base64'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>file<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">_</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">__</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>hash<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
+</li>
+<li>
+<p><strong>server(proxy, outside file)</strong>
+CRA proxy 설정을 VITE proxy로 대체가 가능합니다.
+VITE 환경 외에 외부 폴더/파일 접근 시 fs.allow 객체로 추가 시 dev server에서 접근이 가능합니다.
+기존에는 proxy 패스를 배열로 관리했지만 vite에서는 각각 패스로 관리를 해줘야합니다.</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// CRA</span>
+<span class="token comment">//// 기존 패키지 삭제</span>
+yarn remove http<span class="token operator">-</span>proxy<span class="token operator">-</span>middleware
+
+<span class="token comment">//// setupProxy.js</span>
+<span class="token comment">// 수정 전</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> createProxyMiddleware <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'http-proxy-middleware'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">setupProxy</span><span class="token punctuation">(</span>app<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">createProxyMiddleware</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'/test'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
     changeOrigin<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
@@ -691,7 +747,9 @@ module<span class="token punctuation">.</span><span class="token function-variab
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-<span class="token comment">//// vite.config.js</span>
+<span class="token comment">// vite.config.js</span>
+<span class="token comment">//// 수정 후</span>
+<span class="token keyword">const</span> env <span class="token operator">=</span> <span class="token function">loadEnv</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>mode<span class="token punctuation">,</span> process<span class="token punctuation">.</span><span class="token function">cwd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 server<span class="token operator">:</span> <span class="token punctuation">{</span>
 	proxy<span class="token operator">:</span> <span class="token punctuation">{</span>
 		fs<span class="token operator">:</span> <span class="token punctuation">{</span>
@@ -707,40 +765,373 @@ server<span class="token operator">:</span> <span class="token punctuation">{</s
 		  autoRewrite<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
 	    target<span class="token operator">:</span> <span class="token string">'http://www.test.kr'</span><span class="token punctuation">,</span>
 	    <span class="token function-variable function">configure</span><span class="token operator">:</span> <span class="token punctuation">(</span>proxy<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-	      proxy<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'proxyRes'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>proxyRes<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+	      proxy<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'proxyRes'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>proxyRes<span class="token punctuation">,</span> env<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
 	        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>proxyRes<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-	      proxy<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'proxyReq'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>proxyReq<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+	      proxy<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'proxyReq'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>proxyReq<span class="token punctuation">,</span> env<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
 	        proxyReq<span class="token punctuation">.</span><span class="token function">setHeader</span><span class="token punctuation">(</span><span class="token string">'origin'</span><span class="token punctuation">,</span> <span class="token string">'http://www.test.kr'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	    <span class="token punctuation">}</span><span class="token punctuation">,</span>
 	  <span class="token punctuation">}</span><span class="token punctuation">,</span>
 	<span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
-<h3 id="support-svg" style="position:relative;"><a href="#support-svg" aria-label="support svg permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>support svg</h3>
-<p>CRA 환경에서는 내부적으로(react-scripts) SVG 파일을 import 시 리액트 컴포넌트로 변환해주지만, VITE에서는 외부 라이브리러를 사용해서 변경을 해줘야 합니다.</p>
-<p>@svgr/rollup: Rollup 번들러를 사용할 때 SVG 파일을 React 컴포넌트로 변환해주는 플러그인</p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// src/App.js</span>
-<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> <span class="token punctuation">{</span> ReactComponent <span class="token keyword">as</span> Icon <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./icon.svg'</span><span class="token punctuation">;</span> <span class="token comment">// SVG 파일을 React 컴포넌트로 가져오기</span>
-
-<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
-      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">Hello, SVG!</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">
-      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Icon</span></span> <span class="token attr-name">width</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">50</span><span class="token punctuation">}</span></span> <span class="token attr-name">height</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">50</span><span class="token punctuation">}</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>red<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token plain-text"> </span><span class="token punctuation">{</span><span class="token comment">/* SVG 속성 조정 */</span><span class="token punctuation">}</span><span class="token plain-text">
-    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span>
+</li>
+<li>
+<p><strong>external file link settings(alias)</strong>
+CRA에서 외부 파일내에 패스(tsconfig.json)를 접근 시 현재 프로젝트 환경 기준으로 패스를 바라보지만,
+VITE에서는 외부 파일 기준으로 패스를 접근하다보니 alias 처리에 이슈가 있어서 tsconfig path가 아닌 절대 경로 패스로 재 지정해야 합니다.</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// CRA</span>
+<span class="token keyword">const</span> modifiedConfig <span class="token operator">=</span> <span class="token function">aliasWebpack</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  tsconfig<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./tsconfig.json'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// vite.config.js</span>
-<span class="token keyword">import</span> svgr <span class="token keyword">from</span> <span class="token string">'@svgr/rollup'</span><span class="token punctuation">;</span>
-plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
-  <span class="token function">svgr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+  alias<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">'@outside'</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'../outside'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>setting external file access permissions</strong>
+CRA에서는 외부파일 접근 시 내부 config 파일에서 ModuleScopePlugin 플러그인에 추가해주는 번거로움이 있었지만,
+VITE에서는 빌드 과정에서는 외부 파일 접근이 자유로우나, 개발 환경에서는 외부 파일 패스 경로를 설정해줘야합니다.</p>
+<ul>
+<li>단, 파일 패스 설정 시 외부 파일 패스외에 내부 파일 패스도 같이 설정해줘야 합니다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">fs<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 허용할 디렉터리 추가 (여기에 외부 파일 경로를 추가)</span>
+  allow<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'../outside'</span><span class="token punctuation">,</span>
+    <span class="token string">'/'</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
+</li>
+<li>
+<p><strong>setting baseurl for Vite</strong>
+CRA에서는 내부적으로 BaseURL(PUBLIC_URL)을 기준으로 리소스 패스 경로를 설정해주지만, VITE에서는 해당 경로를 base 속성값으로 변경해줘야합니다.
+단, DEV 환경에서는 내부 리소스 패스로 설정해야함으로 패스를 지정하지 말아야합니다.</p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html">// CRA //// index.html
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shortcut icon<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>%PUBLIC_URL%/favicon.ico<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+
+// VITE //// env.production.dev VITE_PUBLIC_URL=https://test
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shortcut icon<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/favicon.ico<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+
+//// 결과물
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shortcut icon<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://test/favicon.ico<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span></code></pre></div>
+</li>
+</ul>
+<h1 id="cra-to-vite-migration-storybook" style="position:relative;"><a href="#cra-to-vite-migration-storybook" aria-label="cra to vite migration storybook permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CRA to Vite Migration Storybook</h1>
+<ul>
+<li>
+<p><strong>Installation</strong>
+이전 버전 Storybook 삭제</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">yarn</span> remove @storybook/addon-*<span class="token punctuation">(</span>knobs, controls 등등<span class="token punctuation">)</span></code></pre></div>
+<p>vite 연동을 위한 스토리북 패키지 추가
+기존 CRA 환경에서는 @storybook/react 패키지 명령어를 사용해서 문제가 없었지만,
+VITE에서는 @storybook/react-vite 패키지를 사용하면서 storybook 패키지를 추가적으로 설치가 필요합니다.
+또한, storybook 연동 패키지가 6버전 사용 시 ‘storybook-channel-mock.js:7 Uncaught TypeError: import_channels.default is not a constructor’ 와 같은 에러가 발생하게 됩니다.
+꼭 최신 버전인 8버전 이상에 패키지를 설치를 해주세요</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">yarn</span> <span class="token function">add</span> @storybook/builder-vite @storybook/react @storybook/react-vite storybook <span class="token parameter variable">-D</span></code></pre></div>
+</li>
+<li>
+<p><strong>setting</strong>
+.storybook/main
+addon 설정</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"> addons<span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token string">'@storybook/addon-links'</span><span class="token punctuation">,</span>
+  <span class="token string">'@storybook/addon-essentials'</span><span class="token punctuation">,</span>
 <span class="token punctuation">]</span><span class="token punctuation">,</span></code></pre></div>
-<h2 id="결과" style="position:relative;"><a href="#%EA%B2%B0%EA%B3%BC" aria-label="결과 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>결과</h2>
+<p>builder, framework 지정</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx">core<span class="token operator">:</span> <span class="token punctuation">{</span>
+  builder<span class="token operator">:</span> <span class="token string">'@storybook/builder-vite'</span><span class="token punctuation">,</span> <span class="token comment">// 👈 The builder enabled here.</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+framework<span class="token operator">:</span> <span class="token string">'@storybook/react-vite'</span><span class="token punctuation">,</span></code></pre></div>
+<p>base static path 지정</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// CRA - @storybook/react</span>
+<span class="token string-property property">"storybook"</span><span class="token operator">:</span> <span class="token string">"start-storybook -p 9009 -s public"</span><span class="token punctuation">,</span>
+
+<span class="token comment">// VITE - @storybook/vite</span>
+staticDirs<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'../public'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 이전 버전(v6) -s public 옵션과 동일</span></code></pre></div>
+<p>webpackFinal → ViteFinal 마이그레이션</p>
+<ul>
+<li>Preprocess SCSS, 허용할 파일 패스 연동</li>
+</ul>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// webpack</span>
+config<span class="token punctuation">.</span>module<span class="token punctuation">.</span>rules<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.scss$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+  use<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      loader<span class="token operator">:</span> <span class="token string">'sass-resources-loader'</span><span class="token punctuation">,</span>
+      options<span class="token operator">:</span> <span class="token punctuation">{</span>
+        resources<span class="token operator">:</span> <span class="token punctuation">[</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'../sass.scss'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  include<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'../src'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  exclude<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">node_modules</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Vite</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> mergeConfig <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'vite'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">return</span> <span class="token function">mergeConfig</span><span class="token punctuation">(</span>config<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Merge custom configuration into the default config</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> mergeConfig <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'vite'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  css<span class="token operator">:</span> <span class="token punctuation">{</span>
+    preprocessorOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+      scss<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Next line will prepend the import in all you scss files as you did with your vite.config.js file</span>
+      additionalData<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+        @forward 'reset';
+
+        @use './color.scss' as *;
+        @use './sass.scss' as *
+      </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
+<ul>
+<li>외부 파일 접근</li>
+</ul>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// VITE</span>
+server<span class="token operator">:</span> <span class="token punctuation">{</span>
+  fs<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 허용할 디렉터리 추가 (여기에 외부 파일 경로를 추가)</span>
+    allow<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'../outside'</span><span class="token punctuation">,</span>
+      <span class="token string">'/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
+</li>
+<li>
+<p><strong>storybook code migration processing</strong>
+8 버전 업데이트가 되면서 argTypes에서 기본값 세팅을 할 수 없고 args에서 세팅하는걸로 변경되었습니다. 빌드 에러가 발생하진 않지만, 확인해보시면 undefined 설정되서 들어가게 되니 꼭 마이그레이션 시 변경 해주세요.</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// CRA - storybook</span>
+argTypes<span class="token operator">:</span> <span class="token punctuation">{</span>
+  isAIRecommendationModalOpened<span class="token operator">:</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'모달 오픈여부'</span><span class="token punctuation">,</span>
+    defaultValue<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    control<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token string">'boolean'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+<span class="token comment">// VITE - storybook</span>
+argTypes<span class="token operator">:</span> <span class="token punctuation">{</span>
+  isAIRecommendationModalOpened<span class="token operator">:</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'모달 오픈여부'</span><span class="token punctuation">,</span>
+    control<span class="token operator">:</span> <span class="token string">'boolean'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+args<span class="token operator">:</span> <span class="token punctuation">{</span>
+  isAIRecommendationModalOpened<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
+</li>
+<li>
+<p><strong>package.json storybook command</strong></p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token comment">// CRA</span>
+<span class="token property">"storybook"</span><span class="token operator">:</span> <span class="token string">"start-storybook -p 9009 -s public"</span><span class="token punctuation">,</span>
+<span class="token property">"build-storybook"</span><span class="token operator">:</span> <span class="token string">"build-storybook -s public -o .storybook/build --quiet"</span><span class="token punctuation">,</span>
+
+<span class="token comment">// VITE</span>
+<span class="token property">"storybook"</span><span class="token operator">:</span> <span class="token string">"storybook dev -p 9009"</span><span class="token punctuation">,</span>
+<span class="token property">"build-storybook"</span><span class="token operator">:</span> <span class="token string">"storybook build -o .storybook/build --quiet"</span></code></pre></div>
+</li>
+</ul>
+<h1 id="jest-to-vitest-migration" style="position:relative;"><a href="#jest-to-vitest-migration" aria-label="jest to vitest migration permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Jest to Vitest Migration</h1>
+<ul>
+<li>
+<p><strong>Installation</strong></p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">yarn</span> <span class="token function">add</span> <span class="token parameter variable">-D</span> vitest jsdom @testing-library/dom @testing-library/jest-dom @testing-library/react @testing-library/user-event</code></pre></div>
+</li>
+<li>
+<p><strong>setting</strong>
+기존에 package.json/jest.setup.js 설정된 테스트 구성을 vitest.config.js로 이전</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 변경 전</span>
+<span class="token comment">//// package.json</span>
+<span class="token string-property property">"jest"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token string-property property">"collectCoverageFrom"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"!&lt;rootDir>/node_modules/"</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"moduleNameMapper"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">"lodash-es"</span><span class="token operator">:</span> <span class="token string">"lodash"</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"transformIgnorePatterns"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"/node_modules/"</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"setupFilesAfterEnv"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"&lt;rootDir>/jest.setup.js"</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+<span class="token comment">// 변경 후</span>
+<span class="token comment">//// vitest.config.js</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    alias<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">"lodash-es"</span><span class="token operator">:</span> <span class="token string">"lodash"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token function">react</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">viteTsconfigPaths</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// tsconfig 파일 패스 연동</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  test<span class="token operator">:</span> <span class="token punctuation">{</span>
+    environment<span class="token operator">:</span> <span class="token string">'jsdom'</span><span class="token punctuation">,</span> <span class="token comment">// React 테스트 환경을 위해 설정</span>
+    globals<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>        <span class="token comment">// Jest와 동일한 글로벌 변수를 사용</span>
+    setupFiles<span class="token operator">:</span> <span class="token string">'./src/setupTests.ts'</span><span class="token punctuation">,</span> <span class="token comment">// setup 파일</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// src/setupTest.ts</span>
+<span class="token keyword">import</span> <span class="token string">'@testing-library/jest-dom'</span><span class="token punctuation">;</span></code></pre></div>
+<p>기존 리액트 테스트 환경 테스트를 위해서 test 환경을 꼭 json 으로 설정해주세요.
+타입스크립트 타입에 vitest 추가해주세요.</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token comment">// tsconfig.json</span>
+<span class="token property">"compilerOptions"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">"lib"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"dom"</span><span class="token punctuation">,</span> <span class="token string">"dom.iterable"</span><span class="token punctuation">,</span> <span class="token string">"es2020"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">"target"</span><span class="token operator">:</span> <span class="token string">"ES6"</span><span class="token punctuation">,</span>
+  <span class="token property">"types"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"vite/client"</span><span class="token punctuation">,</span> <span class="token string">"react"</span><span class="token punctuation">,</span> <span class="token string">"react-dom"</span><span class="token punctuation">,</span> <span class="token string">"node"</span><span class="token punctuation">,</span> <span class="token string">"vitest/globals"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// vitest/globals 추가</span>
+  <span class="token property">"isolatedModules"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
+<p>eslint 글로벌 체크 타입 변수에 vi 추가</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// .eslint.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  globals<span class="token operator">:</span> <span class="token punctuation">{</span>
+    context<span class="token operator">:</span> <span class="token string">'readonly'</span><span class="token punctuation">,</span>
+    vi<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// vi 추가</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+</li>
+<li>
+<p><strong>jest code migration processing</strong>
+<strong>module mocks</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 변경 전</span>
+jest<span class="token punctuation">.</span><span class="token function">mock</span><span class="token punctuation">(</span><span class="token string">'./some-path'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token string">'hello'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 변경 후</span>
+vi<span class="token punctuation">.</span><span class="token function">mock</span><span class="token punctuation">(</span><span class="token string">'./some-path'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token string">'hello'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p><strong>Importing the Original of a Mocked Package</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 변경 전</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> cloneDeep <span class="token punctuation">}</span> <span class="token operator">=</span> jest<span class="token punctuation">.</span><span class="token function">requireActual</span><span class="token punctuation">(</span><span class="token string">'lodash/cloneDeep'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 변경 후</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> cloneDeep <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> vi<span class="token punctuation">.</span><span class="token function">importActual</span><span class="token punctuation">(</span><span class="token string">'lodash/cloneDeep'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+</li>
+<li>
+<p><strong>package.json test commands</strong></p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token string">"test"</span><span class="token builtin class-name">:</span> <span class="token string">"vitest"</span>,
+<span class="token string">"test:run"</span><span class="token builtin class-name">:</span> <span class="token string">"vitest run"</span>,</code></pre></div>
+</li>
+</ul>
+<h1 id="msw-migration-guide" style="position:relative;"><a href="#msw-migration-guide" aria-label="msw migration guide permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MSW Migration Guide</h1>
+<ul>
+<li>
+<p>vitest 테스트와 msw 0.43.1 버전 같이 사용 시 아래 같은 문구에 에러가 발생</p>
+</li>
+<li>
+<p>vitest에서 ECMAscript 모듈을 지원하고 있고 msw 이전버전에서는 미지원함에 따른 에러 발생으로 추측(버전을 최신 버전으로 변경해서 수정)</p>
+</li>
+<li>
+<p>vitest Package subpath ‘./lib’ is not defined by “exports” in funding/node_modules/headers-polyfill/package.json</p>
+</li>
+<li>
+<p><strong>Installation</strong></p>
+<ul>
+<li>msw 버전을 최신버전으로 업그레이드 함에 따른 storybook에 사용되는 storybook-addon도 동일하게 업그레이드 처리해야 합니다.</li>
+<li>msw-storybook-addon 관련 스토리부 설정을 기존과 동일합니다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">yarn</span> <span class="token function">add</span> <span class="token parameter variable">-D</span> msw@2.4.11 msw-storybook-addon@2.0.3</code></pre></div>
+</li>
+<li>
+<p><strong>msw code migration processing</strong>
+<strong>worker-imports</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 변경 전</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> setupWorker <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'msw'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 변경 후</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> setupWorker <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'msw/browser'</span><span class="token punctuation">;</span></code></pre></div>
+<p><strong>Response resolver arguments</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 변경 전</span>
+rest<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/resource'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> ctx<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 변경 후</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> http <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'msw'</span><span class="token punctuation">;</span>
+http<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/resource'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> request <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token constant">URL</span></span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> productId <span class="token operator">=</span> url<span class="token punctuation">.</span>searchParams<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p><strong>Response declaration</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 변경 전</span>
+rest<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/resource'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> ctx<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">res</span><span class="token punctuation">(</span>ctx<span class="token punctuation">.</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span> ctx<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">{</span> id<span class="token operator">:</span> <span class="token string">'abc-123'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 변경 후</span>
+
+<span class="token comment">// 변경 후 2</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> http<span class="token punctuation">,</span> HttpResponse <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'msw'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> handlers <span class="token operator">=</span> <span class="token punctuation">[</span>
+  http<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/resource'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> HttpResponse<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">{</span> id<span class="token operator">:</span> <span class="token string">'abc-123'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> status<span class="token operator">:</span> <span class="token number">200</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre></div>
+<p><strong>Request params</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 변경 전</span>
+rest<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/post/:id'</span><span class="token punctuation">,</span> req <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> id <span class="token punctuation">}</span> <span class="token operator">=</span> req<span class="token punctuation">.</span>params<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 변경 후</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> http <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'msw'</span><span class="token punctuation">;</span>
+
+http<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/post/:id'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> params <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> id <span class="token punctuation">}</span> <span class="token operator">=</span> params<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p><strong>Request cookies</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 변경 전</span>
+rest<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/resource'</span><span class="token punctuation">,</span> req <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> token <span class="token punctuation">}</span> <span class="token operator">=</span> req<span class="token punctuation">.</span>cookies<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 변경 후</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> http <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'msw'</span><span class="token punctuation">;</span>
+
+http<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/resource'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> cookies <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> token <span class="token punctuation">}</span> <span class="token operator">=</span> cookies<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p><strong>Request Body</strong></p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 변경 전</span>
+rest<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/resource'</span><span class="token punctuation">,</span> req <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// The library would assume a JSON request body</span>
+  <span class="token comment">// based on the request's "Content-Type" header.</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> id <span class="token punctuation">}</span> <span class="token operator">=</span> req<span class="token punctuation">.</span>body<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 변경 후</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> http <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'msw'</span><span class="token punctuation">;</span>
+
+http<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> request <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// Read the request body as JSON.</span>
+  <span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> request<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> id <span class="token punctuation">}</span> <span class="token operator">=</span> user<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+</li>
+</ul>
+<h1 id="결과" style="position:relative;"><a href="#%EA%B2%B0%EA%B3%BC" aria-label="결과 permalink" class="custom-class before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>결과</h1>
 <p>빌드 성능: <strong>6.16s → 2.49s ( 3.67s 빠름 )</strong></p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -889,19 +1280,43 @@ plugins<span class="token operator">:</span> <span class="token punctuation">[</
 <li>
 <p><a href="https://nyagm.tistory.com/280" target="_blank" rel="nofollow">[vite] 프론트엔드 개발자를 위한 Vite 101</a></p>
 </li>
+<li>
+<p><a href="https://www.freecodecamp.org/news/how-to-migrate-from-create-react-app-to-vite/" target="_blank" rel="nofollow">How to Migrate from create-react-app to Vite using Jest and Browserslist</a></p>
+</li>
+<li>
+<p><a href="https://eun-jee.com/post/front-end/CRA_to_Vite/" target="_blank" rel="nofollow">CRA에서 Vite로 마이그레이션하기 (feat. 배포 시간 줄이기)</a></p>
+</li>
+<li>
+<p><a href="https://storybook.js.org/docs/builders/vite" target="_blank" rel="nofollow">Docs | Storybook</a></p>
+</li>
 </ul></article><section class="PostContent__PostNavigator-sc-9jovib-6 jtbptF"><a href="/blog/2024/05/2024-05-12-development-improvements/"><h5>이전글</h5><i>← </i>개발 생산성 &amp; 빌드 성능 개선</a><a href="/blog/2024/04/2024-04-28-esbuild/"><h5>다음글</h5>esbuild<i> →</i></a></section><div></div></div><aside class="PostContent__TocRenderer-sc-9jovib-4 kEEMJh"><ul>
 <li>
 <p><a href="#vite%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0">Vite를 사용해야 하는 이유</a></p>
-<ul>
-<li><a href="#%EA%B8%B0%EC%A1%B4-%EB%AA%A8%EB%93%88-%EB%B2%88%EB%93%A4%EB%9F%AC-%EB%AC%B8%EC%A0%9C%EC%A0%90">기존 모듈 번들러 문제점</a></li>
-<li><a href="#vite-%ED%8A%B9%EC%A7%95">Vite 특징</a></li>
-</ul>
 </li>
 <li>
 <p><a href="#cra-to-vite-migration">CRA to Vite Migration</a></p>
 <ul>
-<li><a href="#%EA%B2%B0%EA%B3%BC">결과</a></li>
+<li><a href="#base">base</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#environment-variables">Environment Variables</a></li>
+<li><a href="#ejs-variables">EJS Variables</a></li>
+<li><a href="#vite-lint-typescript-checker">Vite Lint, Typescript Checker</a></li>
 </ul>
+</li>
+<li>
+<p><a href="#cra-to-vite-migration-tip">CRA to Vite Migration Tip</a></p>
+</li>
+<li>
+<p><a href="#cra-to-vite-migration-storybook">CRA to Vite Migration Storybook</a></p>
+</li>
+<li>
+<p><a href="#jest-to-vitest-migration">Jest to Vitest Migration</a></p>
+</li>
+<li>
+<p><a href="#msw-migration-guide">MSW Migration Guide</a></p>
+</li>
+<li>
+<p><a href="#%EA%B2%B0%EA%B3%BC">결과</a></p>
 </li>
 <li>
 <p><a href="#%EC%B0%B8%EA%B3%A0%ED%8E%98%EC%9D%B4%EC%A7%80">참고페이지</a></p>
@@ -910,6 +1325,6 @@ plugins<span class="token operator">:</span> <span class="token punctuation">[</
           <script
             id="gatsby-chunk-mapping"
           >
-            window.___chunkMapping="{\"app\":[\"/app-ca5278296588e01e1ff1.js\"],\"component---src-components-templates-post-template-tsx\":[\"/component---src-components-templates-post-template-tsx-b7af14bd68ed907e6180.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-4d52495227296e18c78a.js\"],\"component---src-pages-about-tsx\":[\"/component---src-pages-about-tsx-ed4d3b150f6b0138dbea.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-95992269d7f74c02239a.js\"]}";
+            window.___chunkMapping="{\"app\":[\"/app-9671fae7c94c032ebf28.js\"],\"component---src-components-templates-post-template-tsx\":[\"/component---src-components-templates-post-template-tsx-b7af14bd68ed907e6180.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-4d52495227296e18c78a.js\"],\"component---src-pages-about-tsx\":[\"/component---src-pages-about-tsx-ed4d3b150f6b0138dbea.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-95992269d7f74c02239a.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="db1a12305578f910a1ec";</script><script src="/webpack-runtime-0ecd177b7a0cd572c3a4.js" async></script><script src="/framework-a96385c61229616bc6a1.js" async></script><script src="/app-ca5278296588e01e1ff1.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="e34330c60c89daf8d68d";</script><script src="/webpack-runtime-d25f01a4044e29014cd5.js" async></script><script src="/framework-a96385c61229616bc6a1.js" async></script><script src="/app-9671fae7c94c032ebf28.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
