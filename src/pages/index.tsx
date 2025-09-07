@@ -15,6 +15,7 @@ import PostList from 'components/Post/PostList';
 import PostHeadTagFilter from 'components/Post/PostHeadTagFilter';
 import { useIsMobile } from '../helpers/hooks/useMedia';
 import PostAsideFilter from 'components/Post/PostAsideFilter';
+import SearchInput from 'components/Post/SearchInput';
 
 type IndexPageProps = {
   data: {
@@ -135,21 +136,39 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
   const [posts, setPosts] = useState<PostListItemType[]>(edges);
   const [type, setType] = useState<string>('CATEGORY');
   const [filter, setFilter] = useState<string>('ALL');
+  const [searchQuery, setSearchQuery] = useState<string>('');
   const isMobile = useIsMobile();
 
   useEffect(() => {
     setPosts(() => {
+      let filteredPosts = edges;
+
+      // 카테고리/태그 필터링
       if (type === 'CATEGORY') {
-        return edges.filter(({ node: { frontmatter } }) => {
+        filteredPosts = edges.filter(({ node: { frontmatter } }) => {
           return filter === 'ALL' || frontmatter.category === filter;
+        });
+      } else {
+        filteredPosts = edges.filter(({ node: { frontmatter } }) => {
+          return filter === 'ALL' || frontmatter.tags.includes(filter);
         });
       }
 
-      return edges.filter(({ node: { frontmatter } }) => {
-        return filter === 'ALL' || frontmatter.tags.includes(filter);
-      });
+      // 검색어 필터링 (제목과 설명에서 부분 일치 검색)
+      if (searchQuery.trim()) {
+        const query = searchQuery.toLowerCase().trim();
+        filteredPosts = filteredPosts.filter(
+          ({ node: { frontmatter, excerpt } }) => {
+            const title = frontmatter.title?.toLowerCase() || '';
+            const description = excerpt?.toLowerCase() || '';
+            return title.includes(query) || description.includes(query);
+          },
+        );
+      }
+
+      return filteredPosts;
     });
-  }, [type, filter, edges]);
+  }, [type, filter, edges, searchQuery]);
 
   useEffect(() => {
     if (isMobile) {
@@ -169,6 +188,13 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
     window.scrollTo(0, 0);
   }, []);
 
+  const handleSearch = useCallback((query: string) => {
+    setSearchQuery(query);
+    if (query.trim()) {
+      setFilter('ALL');
+    }
+  }, []);
+
   const githubImage = useMemo(() => {
     return fileEdges.find(item => item.node?.name === 'github');
   }, [fileEdges]);
@@ -183,6 +209,13 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
     >
       <PostWrapper>
         <PostContent>
+          {!isMobile && (
+            <SearchInput
+              value={searchQuery}
+              onChange={handleSearch}
+              placeholder="제목 또는 내용으로 검색..."
+            />
+          )}
           <MobileHeaderWrapper>
             <Header>
               <Link to={'/'}>
@@ -201,6 +234,11 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
                 />
               </SocialLink>
             </Header>
+            <SearchInput
+              value={searchQuery}
+              onChange={handleSearch}
+              placeholder="제목 또는 내용으로 검색..."
+            />
             <PostHeadTagFilter
               posts={edges}
               filter={filter}
