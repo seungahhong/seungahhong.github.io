@@ -10,7 +10,6 @@ thumbnail: './assets/28/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'
 ---
 
-
 # 개발 환경
 
 - VSCode 버전: 1.99 이상
@@ -58,9 +57,9 @@ MCP를 Figma와 통합하려면 API 액세스 토큰이 필요합니다. 이 토
 1. **보안으로 가기:** 설정 메뉴에서 **보안** 탭을 찾아 클릭하세요.
 2. **개인 액세스 토큰 찾기:** **개인 액세스 토큰** 섹션으로 스크롤하세요.
 3. **새 토큰 생성:**
-    1. **“새 토큰 생성” 클릭:** 새 토큰을 생성하기 위한 프롬프트가 열립니다.
-    2. **토큰 이름 지정:** `Figma_MCP`와 같이 목적을 쉽게 식별할 수 있는 설명적인 이름을 부여하세요.
-    3. **토큰 생성:** **생성** 버튼을 클릭하여 API 액세스 토큰을 생성하세요.
+   1. **“새 토큰 생성” 클릭:** 새 토큰을 생성하기 위한 프롬프트가 열립니다.
+   2. **토큰 이름 지정:** `Figma_MCP`와 같이 목적을 쉽게 식별할 수 있는 설명적인 이름을 부여하세요.
+   3. **토큰 생성:** **생성** 버튼을 클릭하여 API 액세스 토큰을 생성하세요.
 
 ![image.png](./assets/28/image1.png)
 
@@ -95,22 +94,22 @@ MCP를 Figma와 통합하려면 API 액세스 토큰이 필요합니다. 이 토
 2. Figma MCP 선택
 3. 서버 시작
 4. 출력 확인
-    1. 단, claude mcp 연동하고 같이 실행 시 API 호출 시 에러가 발생함으로 꼭 claude_desktop_config.json 파일은 빈 객체로 두세요.
+   1. 단, claude mcp 연동하고 같이 실행 시 API 호출 시 에러가 발생함으로 꼭 claude_desktop_config.json 파일은 빈 객체로 두세요.
 
 ![image.png](./assets/28/image2.png)
 
 ## Copliot → Figma Mcp Server
 
 1. 채팅 화면에서 Agent 모드로 변경해 주세요.
-    1. 혹여 여러개의 mcp 서버를 실행 시 사용하고자 하는 mcp 실행 시켜주세요.
-    2. 확인 방법: CMD+Shift+P > MCPL List Servers > Figma MCP 실행
-    
-    ![image.png](./assets/28/image3.png)
-    
-    ![image.png](./assets/28/image4.png)
-    
-    ![image.png](./assets/28/image5.png)
-    
+
+   1. 혹여 여러개의 mcp 서버를 실행 시 사용하고자 하는 mcp 실행 시켜주세요.
+   2. 확인 방법: CMD+Shift+P > MCPL List Servers > Figma MCP 실행
+
+   ![image.png](./assets/28/image3.png)
+
+   ![image.png](./assets/28/image4.png)
+
+   ![image.png](./assets/28/image5.png)
 
 1. 채팅 작성하기(dev 모드가 아닌 링크를 공유해주셔야합니다.)
 
