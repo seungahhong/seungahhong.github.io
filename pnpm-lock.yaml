@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@types/lodash-es':
+    specifier: ^4.17.12
+    version: 4.17.12
   '@types/react':
     specifier: ^18.2.21
     version: 18.2.56
@@ -104,6 +107,9 @@ dependencies:
   gatsby-transformer-sharp:
     specifier: ^5.12.0
     version: 5.13.1(gatsby-plugin-sharp@5.13.1)(gatsby@5.13.3)(graphql@16.8.1)
+  lodash-es:
+    specifier: ^4.17.21
+    version: 4.17.21
   prismjs:
     specifier: ^1.29.0
     version: 1.29.0
@@ -2982,6 +2988,12 @@ packages:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
       '@types/node': 20.11.19
+    dev: false
+
+  /@types/lodash-es@4.17.12:
+    resolution: {integrity: sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==}
+    dependencies:
+      '@types/lodash': 4.14.202
     dev: false
 
   /@types/lodash@4.14.202:
@@ -8814,6 +8826,10 @@ packages:
 
   /lock@1.1.0:
     resolution: {integrity: sha512-NZQIJJL5Rb9lMJ0Yl1JoVr9GSdo4HTPsUEWsSFzB8dE8DSoiLCVavWZPi7Rnlv/o73u6I24S/XYc/NmG4l8EKA==}
+    dev: false
+
+  /lodash-es@4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
     dev: false
 
   /lodash._reinterpolate@3.0.0:

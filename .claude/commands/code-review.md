@@ -85,6 +85,7 @@ gh pr review $PR_NUMBER --request-changes --body "[리뷰 내용]"  # 변경 요
 ```
 
 Remember to:
+
 1. First find the PR from current branch to target branch
 2. If no PR exists, prompt to create one first
 3. Use the GitHub CLI (`gh`) for all GitHub-related tasks
