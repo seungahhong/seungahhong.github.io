@@ -58,6 +58,9 @@ typings/
 .cache/
 public
 
+# Playwright test results
+test-results/
+
 # Mac files
 .DS_Store
 
