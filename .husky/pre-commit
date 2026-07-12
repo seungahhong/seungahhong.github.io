@@ -1,0 +1,19 @@
+echo "▶ [1/3] ESLint 검사..."
+pnpm lint || {
+  echo "✖ ESLint 에러로 커밋이 중단되었습니다. 'pnpm lint:fix'로 수정 후 다시 시도하세요."
+  exit 1
+}
+
+echo "▶ [2/3] 단위 테스트(vitest)..."
+pnpm test || {
+  echo "✖ 단위 테스트 실패로 커밋이 중단되었습니다."
+  exit 1
+}
+
+echo "▶ [3/3] E2E 테스트(Playwright)..."
+pnpm e2e || {
+  echo "✖ E2E 테스트 실패로 커밋이 중단되었습니다."
+  exit 1
+}
+
+echo "✔ 모든 검사를 통과했습니다."
