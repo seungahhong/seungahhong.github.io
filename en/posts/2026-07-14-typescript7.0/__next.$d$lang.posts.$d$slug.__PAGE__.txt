@@ -1,0 +1,301 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+4:I[66272,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],""]
+d:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+e:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+2:T4f6,{"@context":"https://schema.org","@type":"BlogPosting","headline":"TypeScript 7.0","description":"TypeScript 7.0 Release: A Native Compiler Rewritten in Go TypeScript 7.0 has been officially released. The heart of this major version is a complete native…","datePublished":"2026-07-14","dateModified":"2026-07-14","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-07-14-typescript7.0/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-07-14-typescript7.0/"},"image":"https://seungahhong.github.io/blog-assets/2026/07/assets/14/thumbnail.png","keywords":["typescript"],"articleSection":"Development","author":{"@type":"Person","name":"SeungAh Hong","url":"https://seungahhong-portfolio.vercel.app/","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungahhong-portfolio.vercel.app/","https://material-debt-c1c.notion.site/daa60481e37840ea9e1b7e1b12269942"]},"publisher":{"@type":"Person","name":"SeungAh Hong","url":"https://seungahhong-portfolio.vercel.app/","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungahhong-portfolio.vercel.app/","https://material-debt-c1c.notion.site/daa60481e37840ea9e1b7e1b12269942"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"TypeScript 7.0\",\"item\":\"https://seungahhong.github.io/en/posts/2026-07-14-typescript7.0/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"TypeScript 7.0"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"TypeScript 7.0"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-07-14","className":"meta-mono","children":"07/14/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],"$L5"]}],false,"$L6"]}],"$L7","$L8"]}],"$L9"]}]}]],["$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"OunwO_Xtr_Qm-MnvvKCtW"}
+5:["$","span",null,{"className":"meta-mono","children":[7,"min read"]}]
+6:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","typescript",{"children":["$","$L4",null,{"href":"/en/tags?tag=typescript","className":"tag-pill","children":"typescript"}]}]]}]
+c:T6f93,<h2 id="typescript-70-release-a-native-compiler-rewritten-in-go">TypeScript 7.0 Release: A Native Compiler Rewritten in Go<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#typescript-70-release-a-native-compiler-rewritten-in-go"><span class="icon icon-link"></span></a></h2>
+<p>TypeScript 7.0 has been officially released. The heart of this major version is a <strong>complete native port of the compiler to Go</strong>. By moving <code>tsc</code> — written in JavaScript for over a decade — to native code, it achieves <strong>8–12x faster builds</strong> and <strong>up to 26% lower memory usage</strong> on large projects, while keeping type-checking fully compatible with prior versions.</p>
+<h3 id="-table-of-contents">📋 Table of Contents<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-table-of-contents"><span class="icon icon-link"></span></a></h3>
+<ol>
+<li><a href="#background-why-rewrite-in-go">Background: Why Rewrite in Go</a></li>
+<li><a href="#results-the-benchmarks">Results: The Benchmarks</a></li>
+<li><a href="#real-world-adoption">Real-World Adoption</a></li>
+<li><a href="#parallelization-flags">Parallelization Flags</a></li>
+<li><a href="#language--behavior-changes">Language &#x26; Behavior Changes</a></li>
+<li><a href="#typescript-60-transition--config-changes">TypeScript 6.0 Transition &#x26; Config Changes</a></li>
+<li><a href="#migration-guide">Migration Guide</a></li>
+<li><a href="#editor--tooling">Editor &#x26; Tooling</a></li>
+<li><a href="#future-roadmap">Future Roadmap</a></li>
+</ol>
+<h3 id="background-why-rewrite-in-go">Background: Why Rewrite in Go<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#background-why-rewrite-in-go"><span class="icon icon-link"></span></a></h3>
+<p>TypeScript has always been implemented in JavaScript. That choice paid off in portability and ecosystem integration, but on large codebases, type-checking and build times increasingly became a bottleneck. The team decided to natively port the compiler to Go, targeting an <strong>order-of-magnitude performance increase</strong> rather than a small incremental gain.</p>
+<p>The port was done "as faithfully as possible" — preserving the structure and logic of the original compiler while gaining the advantages of a native language:</p>
+<ul>
+<li><strong>Native code speed</strong> — a compiled Go binary runs faster than interpreted JavaScript.</li>
+<li><strong>Shared-memory multithreading</strong> — type-checking and file processing can run in parallel, free of JavaScript's single-threaded event loop.</li>
+<li><strong>Cross-platform optimization</strong> — Parcel's C++ file watcher was ported to idiomatic Go for better per-platform file watching.</li>
+</ul>
+<p>Despite being a new codebase, results remain consistent and compatible between the Go and original implementations.</p>
+<h3 id="results-the-benchmarks">Results: The Benchmarks<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#results-the-benchmarks"><span class="icon icon-link"></span></a></h3>
+<h4 id="build-times">Build Times<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#build-times"><span class="icon icon-link"></span></a></h4>
+<p>Measured against real open-source codebases:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Project</th><th>TS 6</th><th>TS 7</th><th>Speedup</th></tr></thead><tbody><tr><td>VSCode</td><td>125.7s</td><td>10.6s</td><td>11.9x</td></tr><tr><td>Sentry</td><td>139.8s</td><td>15.7s</td><td>8.9x</td></tr><tr><td>Bluesky</td><td>24.3s</td><td>2.8s</td><td>8.7x</td></tr><tr><td>Playwright</td><td>12.8s</td><td>1.47s</td><td>8.7x</td></tr><tr><td>Tldraw</td><td>11.2s</td><td>1.46s</td><td>7.7x</td></tr></tbody></table>
+<p>Default builds are <strong>8–12x</strong> faster; with <code>--checkers 8</code>, some projects reach <strong>up to 16.7x</strong>.</p>
+<h4 id="memory-usage">Memory Usage<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#memory-usage"><span class="icon icon-link"></span></a></h4>
+<p>Aggregate memory during builds generally decreased as well:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Project</th><th>TS 6</th><th>TS 7</th><th>Change</th></tr></thead><tbody><tr><td>VSCode</td><td>5.2GB</td><td>4.2GB</td><td>-18%</td></tr><tr><td>Sentry</td><td>4.9GB</td><td>4.6GB</td><td>-6%</td></tr><tr><td>Bluesky</td><td>1.8GB</td><td>1.3GB</td><td>-26%</td></tr><tr><td>Playwright</td><td>1.0GB</td><td>0.9GB</td><td>-11%</td></tr><tr><td>Tldraw</td><td>0.6GB</td><td>0.5GB</td><td>-15%</td></tr></tbody></table>
+<h4 id="editor-responsiveness">Editor Responsiveness<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#editor-responsiveness"><span class="icon icon-link"></span></a></h4>
+<p>Opening a file with errors in the VSCode codebase improved from roughly <strong>17.5s to under 1.3s</strong> — a 13x+ acceleration. Language server stability also improved, with an <strong>80% reduction in failing commands</strong> and a <strong>60% reduction in crashes</strong>.</p>
+<h3 id="real-world-adoption">Real-World Adoption<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#real-world-adoption"><span class="icon icon-link"></span></a></h3>
+<p>TypeScript 7.0 was validated against tens of thousands of existing tests accumulated over 10+ years, automated regression checks against top GitHub projects, and production use at major companies.</p>
+<ul>
+<li><strong>Slack</strong> — 40% reduction in merge queue time; CI type-checking dropped from 7.5 minutes to 1.25 minutes. Previously, local type-checking was described as "almost unusable" due to language server load.</li>
+<li><strong>Vanta</strong> — up to 9x faster builds on major projects.</li>
+<li><strong>Microsoft News Services</strong> — saved roughly 400 hours per month waiting on CI builds.</li>
+<li><strong>Canva</strong> — language service error detection went from ~58s to ~4.8s.</li>
+<li><strong>PowerBI</strong> — engineers called the editor experience "life-saving."</li>
+</ul>
+<h3 id="parallelization-flags">Parallelization Flags<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#parallelization-flags"><span class="icon icon-link"></span></a></h3>
+<p>One of the biggest wins of the Go port is true multithreading, controlled by new flags.</p>
+<h4 id="--checkers--type-checker-parallelization"><code>--checkers</code> — Type-Checker Parallelization<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#--checkers--type-checker-parallelization"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Default is 4 type-checking workers</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">tsc</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --checkers</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 8</span></span></code></pre></figure>
+<ul>
+<li>Default: 4 workers</li>
+<li>Configurable from 1 to N (higher values increase memory usage)</li>
+<li>Substantial speedups on multicore systems</li>
+</ul>
+<h4 id="--builders--project-reference-parallelization"><code>--builders</code> — Project Reference Parallelization<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#--builders--project-reference-parallelization"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Parallelize project-reference builds in a monorepo</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">tsc</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --build</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --checkers</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 4</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --builders</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 4</span></span></code></pre></figure>
+<ul>
+<li>Works with <code>--build</code> (project references)</li>
+<li>Multiplicative with <code>--checkers</code> — the example above allows up to 16 concurrent type-checkers.</li>
+</ul>
+<h4 id="--singlethreaded--single-threaded-mode"><code>--singleThreaded</code> — Single-Threaded Mode<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#--singlethreaded--single-threaded-mode"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">tsc</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --singleThreaded</span></span></code></pre></figure>
+<p>Disables all parallelization for debugging, comparing against TypeScript 6, or resource-constrained environments.</p>
+<h4 id="rebuilt-watch-mode">Rebuilt Watch Mode<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rebuilt-watch-mode"><span class="icon icon-link"></span></a></h4>
+<p><code>--watch</code> mode was rebuilt on a Go port of Parcel's file watcher. It addresses the limits of cross-platform file watching in Go's standard library and the overhead of pure polling, significantly reducing resource consumption during development cycles.</p>
+<h3 id="language--behavior-changes">Language &#x26; Behavior Changes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#language--behavior-changes"><span class="icon icon-link"></span></a></h3>
+<h4 id="unicode-code-point-preservation">Unicode Code Point Preservation<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#unicode-code-point-preservation"><span class="icon icon-link"></span></a></h4>
+<p>Template literal types now preserve Unicode code points naturally:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="typescript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> HeadTail</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">S</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">> </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> S</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> extends</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> `${</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">infer</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Head</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}${</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">infer</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Tail</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}`</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ?</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Head</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Tail</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> never</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Result</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> HeadTail</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'😀abc'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 7.0:      ["😀", "abc"]</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Previously: ["\ud83d", "\ude00abc"]</span></span></code></pre></figure>
+<p>This aligns template literal inference with <code>for...of</code> iteration and spread syntax.</p>
+<h4 id="javascript-support-reworked">JavaScript Support Reworked<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#javascript-support-reworked"><span class="icon icon-link"></span></a></h4>
+<p><code>.js</code> analysis was streamlined for consistency with <code>.ts</code> handling. Key changes:</p>
+<ul>
+<li>Values can no longer stand in for types → use <code>typeof</code></li>
+<li><code>@enum</code> is no longer auto-recognized</li>
+<li>Standalone <code>?</code> is no longer a type → use <code>any</code></li>
+<li><code>@class</code> no longer creates a constructor</li>
+<li>Postfix <code>!</code> (non-null assertion) unsupported</li>
+<li>Type names require <code>@typedef</code> tags (adjacent placement removed)</li>
+<li>Closure-style function syntax and prototype reassignment special-handling removed</li>
+</ul>
+<h3 id="typescript-60-transition--config-changes">TypeScript 6.0 Transition &#x26; Config Changes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#typescript-60-transition--config-changes"><span class="icon icon-link"></span></a></h3>
+<h4 id="side-by-side-execution">Side-by-Side Execution<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#side-by-side-execution"><span class="icon icon-link"></span></a></h4>
+<p>TypeScript 7.0 does not ship a public API at launch; API support arrives in <strong>7.1</strong>. In the meantime, the <code>@typescript/typescript6</code> compatibility package lets both versions coexist for tools that depend on the programmatic API (typescript-eslint, Volar, etc.).</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "devDependencies"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">    "typescript"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"npm:@typescript/typescript6@^6.0.2"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<blockquote>
+<p>Nightly builds moved from <code>@typescript/native-preview</code> to the standard <code>typescript@next</code> tag.</p>
+</blockquote>
+<h4 id="new-defaults-inherited-from-60">New Defaults (Inherited from 6.0)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#new-defaults-inherited-from-60"><span class="icon icon-link"></span></a></h4>
+<p>TypeScript 7.0 adopts the new defaults introduced in TypeScript 6.0:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Option</th><th>Default</th></tr></thead><tbody><tr><td><code>strict</code></td><td><code>true</code></td></tr><tr><td><code>module</code></td><td><code>esnext</code></td></tr><tr><td><code>target</code></td><td>current stable ECMAScript</td></tr><tr><td><code>noUncheckedSideEffectImports</code></td><td><code>true</code></td></tr><tr><td><code>stableTypeOrdering</code></td><td><code>true</code> (immutable)</td></tr><tr><td><code>rootDir</code></td><td><code>./</code></td></tr><tr><td><code>types</code></td><td><code>[]</code> (must be explicit)</td></tr></tbody></table>
+<p>Projects using external <code>@types</code> packages must now declare them explicitly in <code>tsconfig.json</code>.</p>
+<h4 id="removed-features-now-hard-errors">Removed Features (Now Hard Errors)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#removed-features-now-hard-errors"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><code>target: es5</code> unsupported</li>
+<li><code>downlevelIteration</code> removed</li>
+<li><code>moduleResolution: node / node10</code> removed → use <code>nodenext</code> or <code>bundler</code></li>
+<li><code>moduleResolution: classic</code> removed</li>
+<li><code>module: amd / umd / system / none</code> removed</li>
+<li><code>baseUrl</code> unsupported → use <code>paths</code></li>
+<li><code>esModuleInterop</code> and <code>allowSyntheticDefaultImports</code> must be <code>true</code></li>
+<li>Namespace <code>module</code> keyword prohibited</li>
+<li>Import <code>assert</code> replaced by the <code>with</code> keyword</li>
+<li><code>skipDefaultLibCheck</code> no longer respects <code>/// &#x3C;reference no-default-lib /></code></li>
+</ul>
+<h3 id="migration-guide">Migration Guide<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#migration-guide"><span class="icon icon-link"></span></a></h3>
+<h4 id="step-1-install">Step 1: Install<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-1-install"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -D</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> typescript</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npx</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> tsc</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --version</span></span></code></pre></figure>
+<h4 id="step-2-review-tsconfig">Step 2: Review tsconfig<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-2-review-tsconfig"><span class="icon icon-link"></span></a></h4>
+<p>Align your config with the new defaults. In particular, since <code>types: []</code> is now the default, declare the <code>@types</code> packages you relied on globally.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsonc" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsonc" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "compilerOptions"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">    "module"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"esnext"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">    "moduleResolution"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"bundler"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// node/node10 removed</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">    "esModuleInterop"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">    "types"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"node"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// now required</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // "baseUrl": "./",   // removed → use paths</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // "target": "es5",   // unsupported</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<h4 id="step-3-prepare-side-by-side-for-editorstooling">Step 3: Prepare Side-by-Side (for Editors/Tooling)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-3-prepare-side-by-side-for-editorstooling"><span class="icon icon-link"></span></a></h4>
+<p>Install 6.0 alongside for tools that depend on the programmatic API (Vue, Astro, Svelte, ...).</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "devDependencies"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">    "typescript6"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"npm:@typescript/typescript6@^6.0.2"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<p>This enables a hybrid setup: CLI type-checking (<code>tsc</code>) on TypeScript 7, editor support on TypeScript 6.0.</p>
+<h4 id="step-4-tune-parallelization">Step 4: Tune Parallelization<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-4-tune-parallelization"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Raise worker count on multicore CI</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">tsc</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --checkers</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 8</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Parallelize monorepo project-reference builds</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">tsc</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --build</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --checkers</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 4</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --builders</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 4</span></span></code></pre></figure>
+<h3 id="editor--tooling">Editor &#x26; Tooling<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#editor--tooling"><span class="icon icon-link"></span></a></h3>
+<h4 id="vs-code">VS Code<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vs-code"><span class="icon icon-link"></span></a></h4>
+<p>A dedicated <strong>TypeScript 7 extension</strong> is available in the Visual Studio Marketplace. It becomes the default on install and can be toggled via the command palette ("Disable/Enable TypeScript 7 Language Server").</p>
+<h4 id="visual-studio">Visual Studio<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#visual-studio"><span class="icon icon-link"></span></a></h4>
+<p>Recent versions automatically enable TypeScript 7 for workspaces based on configuration, with no manual step.</p>
+<h4 id="lsp-based-language-server">LSP-Based Language Server<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#lsp-based-language-server"><span class="icon icon-link"></span></a></h4>
+<p>The new language server is built on <strong>LSP (Language Server Protocol)</strong>, enabling multi-threaded request handling across editors. Features include auto-imports, expandable hovers, inlay hints, code lenses, go-to-source-definition, JSX linked editing and tag completions, semantic highlighting, sort imports, and remove-unused-imports.</p>
+<h4 id="embedded-language-limitations">Embedded Language Limitations<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#embedded-language-limitations"><span class="icon icon-link"></span></a></h4>
+<p>Vue, MDX, Astro, Svelte, and Angular templates can't yet leverage TypeScript 7 because it lacks a stable programmatic API; tools like Volar still depend on TypeScript 6.0. The recommended setup is <strong>TS 7 for the CLI, TS 6.0 for the editor</strong>. This limitation will be resolved by the 7.1 API support.</p>
+<h3 id="future-roadmap">Future Roadmap<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#future-roadmap"><span class="icon icon-link"></span></a></h3>
+<p>With 7.0 out, the team returns to feature work:</p>
+<ul>
+<li><strong>TypeScript 7.1</strong> — a programmatic API for the ecosystem</li>
+<li>Regular releases every 3–4 months</li>
+<li>Continued performance optimization and ergonomic improvements</li>
+</ul>
+<h3 id="wrap-up">Wrap-Up<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#wrap-up"><span class="icon icon-link"></span></a></h3>
+<p>TypeScript 7.0 isn't just a feature bump — it's a <strong>foundational shift of the compiler's execution engine from JavaScript to Go</strong>. It delivers 8–12x faster builds and lower memory usage while keeping type-checking compatible.</p>
+<p><strong>Key checklist:</strong></p>
+<ul>
+<li>✅ Install with <code>npm install -D typescript</code>, verify via <code>npx tsc --version</code></li>
+<li>✅ Declare <code>@types</code> explicitly to match the new <code>types: []</code> default</li>
+<li>✅ Clean up removed options (<code>es5</code>, <code>baseUrl</code>, <code>node/node10</code>, <code>classic</code>, ...)</li>
+<li>✅ Install <code>@typescript/typescript6</code> side-by-side for editors and embedded-language tooling</li>
+<li>✅ Tune <code>--checkers</code> / <code>--builders</code> for parallelization on multicore machines</li>
+</ul>
+<p>For full details, see the <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/">official announcement</a>.</p>7:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$c"}}]}]
+8:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/en/posts/2026-07-13-vite8.0","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Vite 8.0"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+9:["$","div",null,{"className":"hidden lg:block","children":["$","$Ld",null,{"headings":[{"id":"typescript-70-release-a-native-compiler-rewritten-in-go","text":"TypeScript 7.0 Release: A Native Compiler Rewritten in Go","depth":1},{"id":"-table-of-contents","text":"📋 Table of Contents","depth":2},{"id":"background-why-rewrite-in-go","text":"Background: Why Rewrite in Go","depth":2},{"id":"results-the-benchmarks","text":"Results: The Benchmarks","depth":2},{"id":"build-times","text":"Build Times","depth":3},{"id":"memory-usage","text":"Memory Usage","depth":3},{"id":"editor-responsiveness","text":"Editor Responsiveness","depth":3},{"id":"real-world-adoption","text":"Real-World Adoption","depth":2},{"id":"parallelization-flags","text":"Parallelization Flags","depth":2},{"id":"--checkers--type-checker-parallelization","text":"--checkers — Type-Checker Parallelization","depth":3},{"id":"--builders--project-reference-parallelization","text":"--builders — Project Reference Parallelization","depth":3},{"id":"--singlethreaded--single-threaded-mode","text":"--singleThreaded — Single-Threaded Mode","depth":3},{"id":"rebuilt-watch-mode","text":"Rebuilt Watch Mode","depth":3},{"id":"language--behavior-changes","text":"Language & Behavior Changes","depth":2},{"id":"unicode-code-point-preservation","text":"Unicode Code Point Preservation","depth":3},{"id":"javascript-support-reworked","text":"JavaScript Support Reworked","depth":3},{"id":"typescript-60-transition--config-changes","text":"TypeScript 6.0 Transition & Config Changes","depth":2},{"id":"side-by-side-execution","text":"Side-by-Side Execution","depth":3},{"id":"new-defaults-inherited-from-60","text":"New Defaults (Inherited from 6.0)","depth":3},{"id":"removed-features-now-hard-errors","text":"Removed Features (Now Hard Errors)","depth":3},{"id":"migration-guide","text":"Migration Guide","depth":2},{"id":"step-1-install","text":"Step 1: Install","depth":3},{"id":"step-2-review-tsconfig","text":"Step 2: Review tsconfig","depth":3},{"id":"step-3-prepare-side-by-side-for-editorstooling","text":"Step 3: Prepare Side-by-Side (for Editors/Tooling)","depth":3},{"id":"step-4-tune-parallelization","text":"Step 4: Tune Parallelization","depth":3},{"id":"editor--tooling","text":"Editor & Tooling","depth":2},{"id":"vs-code","text":"VS Code","depth":3},{"id":"visual-studio","text":"Visual Studio","depth":3},{"id":"lsp-based-language-server","text":"LSP-Based Language Server","depth":3},{"id":"embedded-language-limitations","text":"Embedded Language Limitations","depth":3},{"id":"future-roadmap","text":"Future Roadmap","depth":2},{"id":"wrap-up","text":"Wrap-Up","depth":2}],"title":"Contents"}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
+b:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+10:null

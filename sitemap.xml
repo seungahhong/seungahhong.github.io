@@ -1144,4 +1144,20 @@
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
+<url>
+<loc>https://seungahhong.github.io/ko/posts/2026-07-14-typescript7.0</loc>
+<xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/posts/2026-07-14-typescript7.0" />
+<xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/2026-07-14-typescript7.0" />
+<lastmod>2026-07-14</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://seungahhong.github.io/en/posts/2026-07-14-typescript7.0</loc>
+<xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/posts/2026-07-14-typescript7.0" />
+<xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/2026-07-14-typescript7.0" />
+<lastmod>2026-07-14</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
 </urlset>
