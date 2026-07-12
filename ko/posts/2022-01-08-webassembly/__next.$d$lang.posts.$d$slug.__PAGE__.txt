@@ -1,0 +1,168 @@
+1:"$Sreact.fragment"
+2:I[53403,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+3:I[66272,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],""]
+9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+4:T6d80,<h3 id="웹어셈블리-나온-이유">웹어셈블리 나온 이유<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#웹어셈블리-나온-이유"><span class="icon icon-link"></span></a></h3>
+<p>구글의 <a href="https://developer.chrome.com/native-client">NaCI</a>(Native Client), 모질라의 <a href="http://asmjs.org/">asm.js</a>(JavaScript 서브셋) 등 네이티브 머신 코드를 웹으로 가져오기 위한, 그리고 빠르게 실행하기 위한 시도들은 결과적으로 웹어셈블리(이하 'wasm'으로 표기)로 귀결되면서 개발이 시작되었다.</p>
+<p>2019년 12월, W3C는 현재 <a href="https://webassembly.github.io/spec/core/">1.1 버전</a> 상태인 wsam를 HTML, CSS 그리고 JavaScript에 이어 웹의 4번째 언어로 공식 권고함</p>
+<h3 id="웹어셈블리-구동방식">웹어셈블리 구동방식<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#웹어셈블리-구동방식"><span class="icon icon-link"></span></a></h3>
+<p>JavaScript 엔진 내에서 JavaScript 코드와 wasm의 실행 과정</p>
+<ul>
+<li>컴파일된 바이너리 포맷의 wasm 모듈은 JavaScript를 대신하거나 JavaScript 내에서 실행되지 않고, JavaScript와 같이 JavaScript 엔진 내에서 나란히 실행</li>
+</ul>
+<p><img src="/blog-assets/2022/01/assets/08/Untitled.png" alt="Untitled"></p>
+<p>Emscripten은 C/C++ 코드를 가져와 LLVM을 통해 전달하고 LLVM 생성 바이트 코드를 JavaScript(특히 JavaScript의 하위 집합인 Asm.js)로 변환합니다.</p>
+<p>WASM 생성과정</p>
+<ul>
+<li>C,C++ → [Clang툴(LLVM) → LLVM 바이트코드 생성 → Asm.js 변환]: Emscripten</li>
+</ul>
+<p><img src="http://i.imgur.com/1yoy1Fal.png" alt="http://i.imgur.com/1yoy1Fal.png"></p>
+<p>emscripten 변천</p>
+<ol>
+<li>wasm 컴파일은 <a href="https://github.com/emscripten-core/emscripten-fastcomp/">fastcomp</a>(LLVM plus Emscripten's asm.js backend)가 백엔드를 담당</li>
+<li>C/C++을 컴파일해 중간 표현식(IR)</li>
+<li>fastcomp를 통해 asm.js로 컴파일</li>
+<li><a href="https://github.com/WebAssembly/binaryen/blob/master/src/asm2wasm.h">asm2wasm</a>을 사용해 wasm으로 이어지는 컴파일 파이프라인</li>
+</ol>
+<p><img src="/blog-assets/2022/01/assets/08/Untitled3.png" alt="Untitled3"></p>
+<p>V8 팀은 Emscripten에서 불필요한 asm.js 컴파일 과정을 거치지 않고, 네이티브 LLVM wasm 백엔드가 기본 파이프라인이 되도록 개선해 많은 영역에서 성능 개선을 이뤄냈다고 밝혔다.</p>
+<p><a href="https://twitter.com/v8js/status/1145704863377981445">https://twitter.com/v8js/status/1145704863377981445</a></p>
+<h3 id="wasm을-왜-사용하는걸까">wasm을 왜 사용하는걸까?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#wasm을-왜-사용하는걸까"><span class="icon icon-link"></span></a></h3>
+<p>JavaScript 엔진의 단계별 작업 과정</p>
+<p><img src="/blog-assets/2022/01/assets/08/Untitled1.png" alt="Untitled"></p>
+<h4 id="fetching">Fetching<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#fetching"><span class="icon icon-link"></span></a></h4>
+<p>실행할 모듈/코드를 로딩하는 과정</p>
+<p>⇒ wasm은 바이너리 파일임으로, 자바스크립트 minify, magling을 하더라도 로딩속도는 향상</p>
+<h4 id="parse">Parse<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#parse"><span class="icon icon-link"></span></a></h4>
+<p>다운로드한 소스 코드를 파싱해 인터프리터가 이해할 수 있도록 만드는 과정</p>
+<p>Javacript: JS → AST → Javascript 엔진 이해할 수 있는 바이트코드 생성 → 실행</p>
+<p>WSAM: LLVM을 통한 중간표현식(asm.js) → 디코딩, 오류여부 파악 → 실행</p>
+<h4 id="compile--optimize">Compile + Optimize<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#compile--optimize"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>기준 및 최적화 컴파일러를 통해 컴파일되는 과정</li>
+</ul>
+<p>Javascript : <a href="https://en.wikipedia.org/wiki/Just-in-time_compilation">JIT</a>(Just-In-Time) 컴파일러를 통해 실행되는 동안 컴파일이 동시에 이뤄</p>
+<p><img src="/blog-assets/2022/01/assets/08/Untitled2.png" alt="Untitled"></p>
+<p>WSAM</p>
+<ol>
+<li>wasm 자체는 기계어에 가까우며, 명시적 타입(32 bit와 64 bit Float와 Integer로 구성된 <a href="https://webassembly.github.io/spec/core/syntax/types.html">4가지 원시 타입</a> - f32, f64, i32, i64)이 사용</li>
+<li>JS 엔진 컴파일 시 타입체킹X</li>
+<li>LLVM을 통해 여러 가지 최적화가 적용된 상태이므로, 컴파일과 최적화에 많은 작업을 수행할 필요가 없다.</li>
+</ol>
+<h4 id="re-optimize">Re-optimize<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#re-optimize"><span class="icon icon-link"></span></a></h4>
+<p>JIT 컴파일러의 예측이 틀렸을 때 재최적화하거나 최적화 코드를 구제해 다시 기준 코드로 전달하는 재조정 과정</p>
+<ul>
+<li>이전 변수의 타입이 직전 반복과 다른 경우, 다시 최적화가 필요한 경우</li>
+<li>WSAM: 최적화 상태이고, 타입에 대한 체크가 필요없어 재최적화 사이크 불필요</li>
+</ul>
+<h4 id="execute">Execute<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#execute"><span class="icon icon-link"></span></a></h4>
+<p>코드의 실행</p>
+<p>WSAM : 컴파일러를 타겟으로 디자인되어 있어 컴파일러 최적화된 결과물을 출력</p>
+<p>Javascript: 최적화된 코드사용은 개발자의 역량에 의존</p>
+<h4 id="gc">GC<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#gc"><span class="icon icon-link"></span></a></h4>
+<p>할당되었지만 더는 사용되지 않는 메모리 영역을 해제하는 과정</p>
+<p>WSAM: 메모리 생성,해제를 명시적으로 해주고 있기 때문에 GC가 불필요하다.</p>
+<p>그외에 좋아진 점</p>
+<p>사용 메모리 확장(2GB -> 4GB)</p>
+<p>데이터 공유(web worker간 데이터 공유 → ShareArrayBuffer),</p>
+<p>→ c++ pthread 이용해서 ipc 통신 가능</p>
+<p>....</p>
+<p><a href="https://d2.naver.com/helloworld/8257914">https://d2.naver.com/helloworld/8257914</a></p>
+<h4 id="웹어셈블리는-어디에-사용되나">웹어셈블리는 어디에 사용되나?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#웹어셈블리는-어디에-사용되나"><span class="icon icon-link"></span></a></h4>
+<p><a href="https://madewithwebassembly.com/">https://madewithwebassembly.com/</a></p>
+<h4 id="러스트-설치">러스트 설치<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#러스트-설치"><span class="icon icon-link"></span></a></h4>
+<p><a href="https://www.rust-lang.org/tools/install">Install Rust</a></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># https://www.rust-lang.org/tools/install</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> curl</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> https://sh.rustup.rs</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -sSf</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> sh</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># rust version 확인 -> command창을 재실행</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> rustc</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --version</span></span></code></pre></figure>
+<h4 id="패키지-설치">패키지 설치<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#패키지-설치"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 러스트를 웹어셈블리로 컴파일하고 JS interop code를 생성</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 패키지를 빌드하기 위해, wasm-pack이라는 추가적인 툴이 필요합니다. 이것을 통해 코드를 WebAssembly로 컴파일하고, npm에 적합한 패키징을 생성합니다.</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> cargo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> wasm-pack</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># npm과 같은 task runner</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> cargo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> cargo-make</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># node에서 serve -s build와 같은 빌드 서버</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> cargo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> simple-http-server</span></span></code></pre></figure>
+<h4 id="프로젝트-생성">프로젝트 생성<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#프로젝트-생성"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> cargo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> new</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --lib</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [프로젝트명] &#x26;&#x26; </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">cd</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [프로젝트명]</span></span></code></pre></figure>
+<h4 id="yew-라이브러리-추가">yew 라이브러리 추가<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#yew-라이브러리-추가"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># UI컴퍼넌트를 빌드를 위해서 cargo.toml 의존성 추가</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">...</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[lib]</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">crate-type</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"cdylib"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"rlib"]</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[dependencies]</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yew</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "0.17"</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">wasm-bindgen</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "0.2"</span></span></code></pre></figure>
+<h4 id="build-환경설정-추가">build 환경설정 추가<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#build-환경설정-추가"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[tasks.build]</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">command</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "wasm-pack"</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">args</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"build"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"--dev",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "--target",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "web",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "--out-name",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "wasm",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "--out-dir",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "./static"]</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">watch</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> {</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ignore_pattern</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "static/*"</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[tasks.serve]</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">command</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "simple-http-server"</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">args</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"-i"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"./static/",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "-p",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "3000",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "--nocache",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "--try-file",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "./static/index.html"]</span></span></code></pre></figure>
+<h4 id="webassembly-빌드">webassembly 빌드<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#webassembly-빌드"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> argo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> make</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> build</span></span></code></pre></figure>
+<h4 id="indexhtml-생성">index.html 생성<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#indexhtml-생성"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="html" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="html" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;!</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">doctype</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> html</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">&#x3C;!-- 서버에서 호출될 index.html 생성(static 폴더하위에 생성) --></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">html</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> lang</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"en"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">head</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">meta</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> charset</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"utf-8"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">title</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>[프로젝트명]&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">title</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> type</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"module"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> init </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '/wasm.js'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">      init</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">link</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> rel</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"shortcut icon"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> href</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"#"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">head</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">body</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">body</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">html</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
+<h4 id="서버실행">서버실행<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#서버실행"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> cargo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> make</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> serve</span></span></code></pre></figure>
+<h4 id="예제코드">예제코드<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#예제코드"><span class="icon icon-link"></span></a></h4>
+<p><a href="https://github.com/seungahhong/webassembly-tutorial">https://github.com/seungahhong/webassembly-tutorial</a></p>
+<h4 id="추가설명">추가설명<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#추가설명"><span class="icon icon-link"></span></a></h4>
+<p>Yew:</p>
+<p><a href="https://webassembly.org/">WebAssembly</a>를 사용하여 다중 스레드 프론트 엔드 웹 앱을 만들기 위한 최신 <a href="https://www.rust-lang.org/">Rust</a> 프레임워크</p>
+<p>DOM API 호출을 최소화</p>
+<p>wasm_bindgen</p>
+<p>js engine ↔ 웹어셈블리는 숫자타입만 지원가능(그외에 타입을 지원하기 위해서 추가)</p>
+<p>JavaScript 파일은 Rust를 호출할 때 사용될 인터페이스 역할</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="rust" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="rust" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">export function </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">greet</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(s</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> string); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// rust -> js</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> rust </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"./wasm_greet"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// js -> rust</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">rust</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">then</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(m </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> m</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">greet</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"World!"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">));</span></span></code></pre></figure>
+<p>lib.rs → rust에서 실행파일은 main.rs, 라이브러리로 생성 시 lib.rs 생성(cargo new --lib [프로젝트명])</p>
+<p>mod.rs → javascript index.js</p>
+<p>문법</p>
+<p>mod → javascript import</p>
+<p>pub → typescript publish</p>
+<p>use → import { Home } from 'home' 동일</p>
+<p>type → typescript type</p>
+<p>→ 빌드 시 _bg.wasm 최적화된 코드로 변경</p>
+<h2 id="참고사항">참고사항<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고사항"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li><a href="https://www.sheshbabu.com/posts/rust-wasm-yew-single-page-application/">https://www.sheshbabu.com/posts/rust-wasm-yew-single-page-application/</a></li>
+<li><a href="https://frontdev.tistory.com/entry/Rust%EB%A1%9C-SPA-%EB%A7%8C%EB%93%A4%EA%B8%B0-1-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0">https://frontdev.tistory.com/entry/Rust로-SPA-만들기-1-리스트-만들기</a></li>
+<li><a href="https://johnresig.com/blog/asmjs-javascript-compile-target/">https://johnresig.com/blog/asmjs-javascript-compile-target/</a></li>
+<li><a href="https://m.blog.naver.com/z1004man/221914280533">https://m.blog.naver.com/z1004man/221914280533</a></li>
+<li><a href="https://d2.naver.com/helloworld/8257914">https://d2.naver.com/helloworld/8257914</a></li>
+<li><a href="https://tech.kakao.com/2021/05/17/frontend-growth-08/">https://tech.kakao.com/2021/05/17/frontend-growth-08/</a></li>
+<li><a href="https://ui.toast.com/weekly-pick/ko_20180411">https://ui.toast.com/weekly-pick/ko_20180411</a></li>
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"webassembly"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"webassembly"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-01-08","className":"meta-mono","children":"2022.01.08"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[5,"분"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","webassembly",{"children":["$","$L3",null,{"href":"/ko/tags?tag=webassembly","className":"tag-pill","children":"webassembly"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+5:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/ko/posts/2021-12-31-mobx","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"mobx"}]]}],["$","$L3",null,{"href":"/ko/posts/2022-01-09-graphql","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["다음 글",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"graphql"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"웹어셈블리-나온-이유","text":"웹어셈블리 나온 이유","depth":2},{"id":"웹어셈블리-구동방식","text":"웹어셈블리 구동방식","depth":2},{"id":"wasm을-왜-사용하는걸까","text":"wasm을 왜 사용하는걸까?","depth":2},{"id":"fetching","text":"Fetching","depth":3},{"id":"parse","text":"Parse","depth":3},{"id":"compile--optimize","text":"Compile + Optimize","depth":3},{"id":"re-optimize","text":"Re-optimize","depth":3},{"id":"execute","text":"Execute","depth":3},{"id":"gc","text":"GC","depth":3},{"id":"웹어셈블리는-어디에-사용되나","text":"웹어셈블리는 어디에 사용되나?","depth":3},{"id":"러스트-설치","text":"러스트 설치","depth":3},{"id":"패키지-설치","text":"패키지 설치","depth":3},{"id":"프로젝트-생성","text":"프로젝트 생성","depth":3},{"id":"yew-라이브러리-추가","text":"yew 라이브러리 추가","depth":3},{"id":"build-환경설정-추가","text":"build 환경설정 추가","depth":3},{"id":"webassembly-빌드","text":"webassembly 빌드","depth":3},{"id":"indexhtml-생성","text":"index.html 생성","depth":3},{"id":"서버실행","text":"서버실행","depth":3},{"id":"예제코드","text":"예제코드","depth":3},{"id":"추가설명","text":"추가설명","depth":3},{"id":"참고사항","text":"참고사항","depth":1}],"title":"목차"}]}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
+8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+c:null

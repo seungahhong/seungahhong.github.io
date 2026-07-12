@@ -1,0 +1,1112 @@
+1:"$Sreact.fragment"
+2:I[53403,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+3:I[66272,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],""]
+9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+4:T2eac9,<h2 id="vite를-사용해야-하는-이유">Vite를 사용해야 하는 이유<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite를-사용해야-하는-이유"><span class="icon icon-link"></span></a></h2>
+<h4 id="기존-모듈-번들러-문제점">기존 모듈 번들러 문제점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#기존-모듈-번들러-문제점"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>
+<p>브라우저에서 Native ESM 방식을 지원하기 전까지는 Javascript 모듈화를 브라우저 레벨에서 진행할 수 없었고, 해당 소스 모듈을 브라우저에서 지원하기 위해서 require/IIFE/import,expor를 통한 모듈화 문법을 이용하여서 여러개의 파일로 합쳐주거나 의미 있는 단위로 묶어주는 기능을 번들링이라고 하며, 현재는 <a href="https://webpack.js.org/"><strong>Webpack</strong></a>, <a href="https://rollupjs.org/"><strong>Rollup</strong></a> 그리고 <a href="https://parceljs.org/"><strong>Parcel</strong></a>을 도구들이 지원하고 있습니다.</p>
+</li>
+<li>
+<p>하지만 애플리케이션이 점점 더 발전함에 따라서 JS 도구들의 성능 병목 현상이 발생, HMR 사용하더라도 변경된 파일 적용 시 수초가 걸려서 개발자 생산성을 떨어뜨는 문제가 발생하고 있습니다.</p>
+</li>
+<li>
+<p>ESM(ECMAScript Modules)</p>
+<ul>
+<li>ESM은 모듈화 문법인 import, export를 별도의 도구 없이 브라우저 자체에서 소화해 낼 수 있는 모듈 방식을 의미한다. 만약 아래와 같은 코드를 웹팩과 같은 번들러 없이 브라우저에서 실행하면 에러가 발생합니다.</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// app.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { sum } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'test.js'</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">sum</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">));</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> src</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"app.js>&#x3C;/script></span></span></code></pre></figure>
+<p><img src="/blog-assets/2024/11/assets/16/Untitled.png" alt="Untitled">
+예전에는 브라우저가 import와 export를 해석할 수 있는 능력이 없었지만 이제는 다음과 같이 속성을 추가하면 브라우저에서 import와 export를 소화할 수 있게 되었습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> type</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"module"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> src</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"app.mjs>&#x3C;/script></span></span></code></pre></figure>
+</li>
+</ul>
+<h4 id="vite-특징">Vite 특징<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite-특징"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>
+<p>콜드 스타트 방식의 개발 서버 구동에 대한 성능 개선
+<img src="/blog-assets/2024/11/assets/16/Untitled1.png" alt="Untitled"></p>
+<ul>
+<li>
+<p>Dependencies: node_modulesd와 같이 내용이 바뀌지 않는 소스코드에 대해서 esbuild 이용한 사전 번들링 기능 제공</p>
+<ul>
+<li>
+<p>esbuild는 webpack, parcel과 같은 기존의 번들러 대비 10-100배 빠른 속도를 제공</p>
+</li>
+<li>
+<p>esbuild 로 node_modules 의 모든 패키지를 사전 번들링하여 아래와 같이 serving 하고 캐시</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Dependencies package import 할 경우</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> dayjs </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'dayjs'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite esm 지원을 위한 변환/캐싱</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">/node_modules/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.vite</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">deps</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">dayjs.js</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">?</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">v</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">b09621d8</span></span></code></pre></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>Source code: Native ESM 방식을 적용해서 브라우저가 모듈을 직접 가져오고 변환 및 제공하도록 처리
+<img src="/blog-assets/2024/11/assets/16/Untitled2.png" alt="Untitled"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>HMR 성능 개선
+기존 번들러 기반에서는 소스 코드 변경 시 다시 번들링 과정을 다시 수행하다보니 성능이 느려지는 이슈를 Native ESM 방식을 사용하여 변경된 모듈만 교체해서 성능 개선
+HTTP 헤더를 활용하여 페이지 로드 속도 개선(요청 횟수 최소화)</p>
+<ul>
+<li>304 Not Modified: 클라이언트 캐시 사용</li>
+<li>Cache-Control: max-age=31536000, immutalble 이용한 캐시 사용</li>
+</ul>
+</li>
+<li>
+<p>프로덕션 환경 Rollup 사용</p>
+<ul>
+<li>가장 빠른 성능을 자랑하는 esbuild이지만 아쉬운 생태계와 브라우저용 번들링에서는 안정성이 떨어진다는 평가가 있어서 vite에서는 프로덕션 환경에서 Rollup 번들러를 사용(트리 셰이킹, 지연로딩, 파일 분활 등 성능 이점 제공)</li>
+<li>Rollup은 v4에서 파서를 SWC 전환 → Rust 포팅인 Rolldown 만드는 작업을 진행 중이며 개발이 완료된다면 esbuild를 모두 대체 가능(개발/빌드 사이에 불이치 제거 목표)</li>
+<li><a href="https://www.youtube.com/watch?v=EKvvptbTx6k">https://www.youtube.com/watch?v=EKvvptbTx6k</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="cra-to-vite-migration">CRA to Vite Migration<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cra-to-vite-migration"><span class="icon icon-link"></span></a></h2>
+<h3 id="base">base<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#base"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>
+<p><strong>Remove CRA package for Vite</strong>
+기존 CRA 환경에서 사용되는 패키지 삭제
+기존에 설치된 node_modules가 있는경우 폴더 자체를 삭제</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> remove</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-scripts</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-app-rewired</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> babel-loader</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> webpack-merge</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> tsconfig-paths-webpack-plugin</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">rm</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -rf</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> node_modules</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>Setting the Stage with Vite Installation</strong>
+<strong>vite: 모던 웹 프로젝트 빌드 도구</strong></p>
+<ul>
+<li>@vitejs/plugin-react: @vitejs/plugin-react는 vite에서 React를 사용할 때 필요한 구성을 추가하여 React 애플리케이션의 빠른 개발 및 번들링을 지원</li>
+<li>vite-tsconfig-paths: tsconfig.json 파일에 설정된 경로 별칭을 Vite에서도 적용할 수 있도록 지원. vite-tsconfig-paths를 사용하면 TypeScript 설정에 정의된 경로 별칭이 Vite에서도 인식되어 모듈 경로를 해석할 때 사용 가능</li>
+<li>vite-plugin-svgr
+<ul>
+<li>SVG를 React 컴포넌트로 변환하는 Vite 플러그인</li>
+<li>단, 3.3.0 이후 버전 설치 시 빌드, 타입 에러 발생(3.3.0 사용 시 아래와 같은 svgr을 리액트 컴포넌트로 변경 가능)</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">import</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> {</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ReactComponent</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> as</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ChannelLogo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> }</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '../../assets/artwork-illust-pm-assign-info-channel-talk.svg'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+</li>
+<li>vite-plugin-checker
+<ul>
+<li>vite를 사용하는 프로젝트에서 타입 체크, ESLint, VLS (Volar Language Server) 등을 포함한 여러 검사 기능을 제공하는 플러그인</li>
+<li>비동기로 체크를 하기 때문에 개발 서버 환경 로딩 속도에 영향을 주지 않는 장점이 있다.</li>
+</ul>
+</li>
+</ul>
+<pre><code>yarn add vite @vitejs/plugin-react vite-tsconfig-paths vite-plugin-svgr@3.3.0
+
+yarn add vite-plugin-checker -D
+</code></pre>
+</li>
+<li>
+<p><strong>Updating package.json for Vite Commands</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">scripts</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">": {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  "</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">start</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">": "</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">vite</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">", // dev-server</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  "</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">build</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">": "</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">vite</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> build", // build</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">},</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>Renaming React File Extensions to .jsx or .tsx</strong>
+React JSX 문법을 사용하는 파일에 대해서만, jsx/tsx로 변경해주시면 됩니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">mv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src/App.js</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src/App.jsx</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">mv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src/index.ts</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src/index.tsx</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>Move the index.html File</strong></p>
+<ul>
+<li>public 패스의 index.html 삭제하지 않을 경우 vite에서 개발 환경 로딩 시 public/index.html 선 로딩함으로 꼭 루트로 옮겨주세요!!</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">mv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> public/index.html</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> .</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>Add module script to the bottom of the body tag</strong>
+초기 로딩 시 코드 진입점을 명시해주세요.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="html" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="html" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">body</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  {/* others here */}</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> type</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"module"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> src</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/src/index.tsx"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">body</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>Update tsconfig.json</strong>
+isolatedModules 사용이유</p>
+<ul>
+<li><strong>모듈 간의 의존성 격리</strong>: 각 모듈이 서로의 타입에 의존하지 않도록 하여, 컴파일 시 모듈을 개별적으로 처리합니다. 이를 통해 TypeScript의 컴파일 시간이 줄어들 수 있습니다.</li>
+<li><strong>성능 향상</strong>: 독립적으로 모듈을 컴파일하면, 변화가 발생한 모듈만 다시 컴파일되므로 전체 컴파일 속도가 개선됩니다.</li>
+<li><strong>ESM 호환성</strong>: ES 모듈과의 호환성을 높여, 다양한 빌드 도구와의 통합 시 더 나은 결과를 제공합니다.</li>
+<li><strong>검사 오류 방지</strong>: 모든 모듈이 개별적으로 체크되므로, 한 모듈에서의 타입 오류가 다른 모듈에 영향을 미치는 것을 방지할 수 있습니다.
+include에 vite.config.js 패스 설정</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  "extends"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "./tsconfig.extend.json",</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  "compilerOptions"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "lib"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dom"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dom.iterable",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "es2020"],</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "target"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "ES6",</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "types"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"vite/client"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"react",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "react-dom",</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "node"],</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "isolatedModules"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> true</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> //</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 추가</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  "include"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "./src/**/*"</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "vite.config.js"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ],</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  "exclude"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "node_modules"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ]</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>Add module html minify</strong>
+CRA 프로젝트에서는 내장된 plugins중에 HtmlWebpackPlugin 통해서 html minify를 해주고 있는데, vite에서 내장이 되어 있지 않아서 직접 설치후에 환경 설정을 추가해줘야 합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">//</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Installation</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> vite-plugin-html</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">//</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">createHtmlPlugin(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">{</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  //</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> input</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> &#x3C;</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">https://www.npmjs.com/package/html-minifier-terse</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">r</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> options</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  minify:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> true</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}),</span></span></code></pre></figure>
+</li>
+</ul>
+<h3 id="configuration">Configuration<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#configuration"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>
+<p><strong>Crafting the Vite Configuration</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// &#x3C;root>/vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { defineConfig, loadEnv } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> path </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'path'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> react </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@vitejs/plugin-react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> viteTsconfigPaths </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vite-tsconfig-paths'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> svgr </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vite-plugin-svgr'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { createHtmlPlugin } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vite-plugin-html'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> checker </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vite-plugin-checker'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> defineConfig</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">(config </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> env</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> loadEnv</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(config.mode, process.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">cwd</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(), </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">''</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    build: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      outDir: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'build'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// build 폴더명 변경(기본 dist)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      target: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'es2015'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// es6 target transpile</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      sourcemap: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">false</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 소스맵 생성 여부</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      rollupOptions: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        output: {</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">          manualChunks</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">id</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">            // chunks 파일을 만들 경우 아래와 같이 청크명과 필터를 걸어주세요.</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">            if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (id.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">includes</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">              return</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'venders'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">            }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        },</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">        onwarn</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">warning</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">defaultHandler</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">          // sourcemap: true 설정할 경우 node_modules에 소스맵 없는 경우에 대한 경고 무시를 위해 추가</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">          if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (warning.code </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'SOURCEMAP_ERROR'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">            return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          }</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">          defaultHandler</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(warning);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    define: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      global: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'globalThis'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 글로벌 객체를 빈 객체로 대체(global is not defined error 에러에 대한 방어코드)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    plugins: [</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">react</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(), </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">viteTsconfigPaths</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(), </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">svgr</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()],</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  };</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">)</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+</li>
+</ul>
+<h3 id="environment-variables">Environment Variables<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#environment-variables"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>
+<p>VITE라는 prefix를 설정하지 않을 경우 import.meta.env 에서 값을 얻어 올 수 없습니다.</p>
+</li>
+<li>
+<p>기본적으로 속성값으로 DEV(vite), PROD(vite build)을 제공해줌으로 개발/빌드 환경 구분이 가능합니다.</p>
+</li>
+<li>
+<p><strong>ChangeEnv Variables and Modes</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// .env Files</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.env                # loaded in all cases</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.env.local          # loaded in all cases, ignored by git</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.env.[</span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">mode</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]         # only loaded in specified mode</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.env.[</span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">mode</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">].local   # only loaded in specified mode, ignored by git</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Modes</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"># .env.production.live</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">VITE_ENVIRONMENT=live</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// command mode option flag</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"build:dev"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"yarn vite --mode production.dev"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"build:rc"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"yarn vite --mode production.rc"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"build:live"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"yarn vite --mode production.live"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>Update process.env.REACT_APP</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">process.env.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">REACT_APP_VARIABLE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> +</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">meta</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.env.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">VITE_VARIABLE</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+</li>
+</ul>
+<h3 id="ejs-variables">EJS Variables<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#ejs-variables"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>
+<p><strong>Update Configuration for Vite</strong>
+빌드 시 HTML CJS 문법이 치환되도록 처리하기 위해서 vite-plugin-html 이용해서 내보내기 처리 추가</p>
+<pre><code>createHtmlPlugin({
+  ....
+  inject: {
+    data: {
+      VITE_VARIABLE: env.VITE_VARIABLE,
+    },
+  },
+}),
+</code></pre>
+</li>
+<li>
+<p><strong>Replace EJS Variables for Vite</strong>
+문자만 치환할 경우</p>
+<ul>
+<li>“%” → “&#x3C;%= ~~ =>”</li>
+<li>예) <script src="/variable"></script> → 문자안에 글자를 치환할 경우</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="html" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="html" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">// env VITE_VARIABLE='/variable' //</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">root</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  >/index.html //// CRA</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> src</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"%REACT_APP_VARIABLE%"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  //// VITE</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> src</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"&#x3C;%= VITE_VARIABLE %>"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>&#x3C;/script</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>&#x3C;/root></span></span></code></pre></figure>
+<p>엘리먼트(태그) 자체를 변경할 경우</p>
+<ul>
+<li>% → &#x3C;%- ~~ -></li>
+</ul>
+<pre><code> // env
+VITE_SCRIPT=&#x3C;script>(function ~~ )&#x3C;/script>
+
+// &#x3C;root>/index.html
+//// CRA
+%VITE_SCRIPT%
+
+//// VITE
+&#x3C;%- VITE_SCRIPT %>
+</code></pre>
+</li>
+<li>
+<p><strong>Updating Vite Commands(with enviroment)</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"start"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"vite"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"start:dev"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"yarn start --mode development.dev"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"start:rc"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"yarn start --mode development.rc"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"build"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"vite build"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"build:dev"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"yarn build --mode production.dev"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"build:rc"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"yarn build --mode production.rc"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"build:live"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"yarn build --mode production.live"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span></code></pre></figure>
+</li>
+</ul>
+<h3 id="vite-lint-typescript-checker">Vite Lint, Typescript Checker<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite-lint-typescript-checker"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>
+<p><strong>Add module vite-plugin-checker</strong>
+CRA 환경에서 내부적으로 fork-ts-checker-webpack-plugin 플러그인을 바탕으로 비동기로 타입 체크를 해주고 있지만, VITE 환경에서는 vite-plugin-checker 직접 설치 후 vite.config.js 구성에 추가해줘야 합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> checker </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vite-plugin-checker'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">checker</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  typescript: config.mode.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">indexOf</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'development'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> -</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  eslint: config.mode.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">indexOf</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'development'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> -</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ?</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    lintCommand: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'eslint "./src/**/*.{ts,tsx,js,jsx}"'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> false</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  stylelint: config.mode.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">indexOf</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'development'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> -</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ?</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    lintCommand: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'stylelint "src/**/*.scss"'</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> false</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}),</span></span></code></pre></figure>
+</li>
+</ul>
+<h2 id="cra-to-vite-migration-tip">CRA to Vite Migration Tip<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cra-to-vite-migration-tip"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>
+<p><strong>import.meta.glob dynamic load</strong>
+Vite의 import.meta.glob을 사용하여 모든 아이콘을 동적으로 가져올 수 있습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> icons</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">meta</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">glob</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./*Icon.tsx'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> iconComponentPath</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> './aIcon.tsx'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Icon</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  icons </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x26;&#x26;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> icons[iconComponentPath </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">as</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    ?</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> lazy</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          icons[iconComponentPath </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">as</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">as</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Promise</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;{</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">            default</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ComponentType</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          }>,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      )</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    :</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> null</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>sass-resources-loader(dart sass) → vite config preprocessorOptions.sass</strong>
+공통적으로 사용되는 스타일을 전역적으로 적용할 때 사용하는 sass-resources-loader를 vite에서는 preprocessorOptions.sass로 대체가 가능</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// CRA</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">rules</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    test:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\\</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">.</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">scss</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    use: [</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        loader: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'sass-resources-loader'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        options: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          resources: [</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">            path.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(__dirname, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./sass.scss'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          ],</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ],</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    include: path.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(__dirname, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./src'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    exclude:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /node_modules/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">css</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  preprocessorOptions</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    scss</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">      // Next line will prepend the import in all you scss files as you did with your vite.config.js file</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">      additionalData</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        @import "./sass.scss";</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      `</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span></code></pre></figure>
+<p><strong>단계별 에러 케이스 정리</strong>
+@forward rules must be written before any other rules 에러</p>
+<ul>
+<li>@forward 구문이 다른 모든 규칙(@import, @use, 스타일 선언) 보다 위에 위치하도록 수정
+@forward</li>
+<li>Dart Sass에서 도입된 Sass 모듈 시스템의 일부로, 모듈화된 스타일시트를 구성하고 관리하는 데 중요한 역할을 합니다.</li>
+<li>@import 방식과는 다르게, @forward는 Sass 코드의 모듈화와 재사용성을 더 쉽게 관리할 수 있도록 돕습니다.
+@use: 모듈을 가져오면서 네임스페이스를 사용해 충돌을 방지하고, 명시적으로 필요한 부분만 가져올 수 있습니다.
+@import는 파일을 단순히 포함하는 방식으로, 여러 번 포함될 수 있고 변수나 믹스인의 충돌 위험이 있습니다.</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// reset.scss</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">@forward </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'reset'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ./sass.scss</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">@use </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'color'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">css</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  preprocessorOptions</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    scss</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">      // Next line will prepend the import in all you scss files as you did with your vite.config.js file</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">      additionalData</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        @forward 'reset';</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        @use './color.scss' as *;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        @use './sass.scss' as *</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      `</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>setting module scss name for Vite(선택)</strong>
+CRA에서는 SCSS 모듈을 사용할 때, 파일명과 클래스명을 결합해 고유한 클래스명을 자동으로 생성해주만, VITE 에서는 클래스명으로만 생성되는 규칙을 다르게 가져가고 있음</p>
+<ul>
+<li>규칙: [파일명]<em>[원래 클래스명]</em>[hash:base64:5]
+단, 서비스 내에서 module scss를 전역으로 선택하는 경우가 없다면 굳이 세팅을 해줄 필요가 없습니다.(내부적으로는 세팅을 하지 않을 시 [클래스명, hash]값을 토대로 유니크한 값으로 자동 변경)</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styles </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> './Test.module.scss'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Test</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">	return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">		&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> className</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">styles.container</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Test;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">class</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"Test_container__28qL6"</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> namespaceUUID</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> v4</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">css</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ...</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  modules</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // 파일명과 클래스명을 포함한 고유한 이름 생성</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    generateScopedName</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">name</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">filename</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">      // 파일 경로 기반 고유한 해시 생성</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> file</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> path.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">basename</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(filename).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">replace</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'.module'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">''</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">replace</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">/</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">[</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">^</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">/.]</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">''</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">      // UUID 생성 후 Base64 인코딩</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> hash</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Buffer.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">from</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">v5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">file</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}_${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">name</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, namespaceUUID)).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toString</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'base64'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">slice</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      return</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> `${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">file</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}_${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">name</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}__${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">hash</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>server(proxy, outside file)</strong>
+CRA proxy 설정을 VITE proxy로 대체가 가능합니다.
+VITE 환경 외에 외부 폴더/파일 접근 시 fs.allow 객체로 추가 시 dev server에서 접근이 가능합니다.
+기존에는 proxy 패스를 배열로 관리했지만 vite에서는 각각 패스로 관리를 해줘야합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// CRA</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// 기존 패키지 삭제</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">yarn remove http</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">proxy</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">middleware</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// setupProxy.js</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 수정 전</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">createProxyMiddleware</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> require</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'http-proxy-middleware'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">module</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">exports</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> setupProxy</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">app</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  app.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">use</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">createProxyMiddleware</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/test'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">], {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    changeOrigin: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	  logLevel: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'debug'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	  autoRewrite: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    target: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'http://www.test.kr'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">    onProxyRes</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">proxyRes</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(proxyRes);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }),</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">    onProxyReq</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">proxyReq</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      proxyReq.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">setHeader</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'origin'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'http://www.test.kr'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }));</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// 수정 후</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> env</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> loadEnv</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(config.mode, process.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">cwd</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(), </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">''</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">server</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">	proxy</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">		fs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">	    // 허용할 디렉터리 추가 (여기에 외부 파일 경로를 추가)</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">	    allow</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">	      '../../../outside'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">	      '/'</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	    ],</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	  },</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">		'/test'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	    changeOrigin: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">		  logLevel: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'debug'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">		  autoRewrite: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	    target: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'http://www.test.kr'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">	    configure</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">proxy</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	      proxy.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">on</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'proxyRes'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">proxyRes</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">env</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	        console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(proxyRes);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	      }),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	      proxy.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">on</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'proxyReq'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">proxyReq</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">env</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	        proxyReq.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">setHeader</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'origin'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'http://www.test.kr'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	      });</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	},</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>external file link settings(alias)</strong>
+CRA에서 외부 파일내에 패스(tsconfig.json)를 접근 시 현재 프로젝트 환경 기준으로 패스를 바라보지만,
+VITE에서는 외부 파일 기준으로 패스를 접근하다보니 alias 처리에 이슈가 있어서 tsconfig path가 아닌 절대 경로 패스로 재 지정해야 합니다.
+예)</p>
+<ul>
+<li>CRA(root)
+<ul>
+<li>outside/index.tsx 컴포넌트 위치 기준</li>
+</ul>
+</li>
+<li>VITE
+<ul>
+<li>root 위치 기준</li>
+</ul>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// CRA</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> modifiedConfig</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> aliasWebpack</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  tsconfig: path.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(__dirname, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./tsconfig.json'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">})(config);</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  alias</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    '@outside'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: path.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">join</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(__dirname, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'../outside'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// outside/index.tsx</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Button </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '../Button'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>setting external file access permissions</strong>
+CRA에서는 외부파일 접근 시 내부 config 파일에서 ModuleScopePlugin 플러그인에 추가해주는 번거로움이 있었지만,
+VITE에서는 빌드 과정에서는 외부 파일 접근이 자유로우나, 개발 환경에서는 외부 파일 패스 경로를 설정해줘야합니다.</p>
+<ul>
+<li>단, 파일 패스 설정 시 외부 파일 패스외에 내부 파일 패스도 같이 설정해줘야 합니다.</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">fs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // 허용할 디렉터리 추가 (여기에 외부 파일 경로를 추가)</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  allow</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    '../outside'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    '/'</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ],</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>setting baseurl for Vite</strong>
+CRA에서는 내부적으로 BaseURL(PUBLIC_URL)을 기준으로 리소스 패스 경로를 설정해주지만, VITE에서는 해당 경로를 base 속성값으로 변경해줘야합니다.(env 환경 변수에 base url 패스를 지정해주세요.)
+단, DEV 환경에서는 내부 리소스 패스로 설정해야함으로 패스를 지정하지 말아야합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="html" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="html" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">// CRA //// index.html</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">head</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">meta</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> charset</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"utf-8"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">link</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> rel</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"shortcut icon"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> href</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"%PUBLIC_URL%/favicon.ico"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">head</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">// VITE //// env.production.dev VITE_PUBLIC_URL=https://test ////</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">vite.config.js base: env.VITE_PUBLIC_URL || '/', //// index.html</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">head</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">meta</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> charset</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"utf-8"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">link</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> rel</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"shortcut icon"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> href</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/favicon.ico"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">head</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">//// index.html(결과물)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">head</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">meta</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> charset</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"utf-8"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">link</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> rel</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"shortcut icon"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> href</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"https://test/favicon.ico"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">head</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
+</li>
+<li></li>
+</ul>
+<h2 id="cra-to-vite-migration-storybook">CRA to Vite Migration Storybook<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cra-to-vite-migration-storybook"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>
+<p><strong>Installation</strong>
+이전 버전 Storybook 삭제</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> remove</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @storybook/addon-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">*</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">knobs,</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> controls</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 등등</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span></code></pre></figure>
+<p>vite 연동을 위한 스토리북 패키지 추가
+기존 CRA 환경에서는 @storybook/react 패키지 명령어를 사용해서 문제가 없었지만,
+VITE에서는 @storybook/react-vite 패키지를 사용하면서 storybook 패키지를 추가적으로 설치가 필요합니다.
+또한, storybook 연동 패키지가 6버전 사용 시 ‘storybook-channel-mock.js:7 Uncaught TypeError: import_channels.default is not a constructor’ 와 같은 에러가 발생하게 됩니다.
+꼭 최신 버전인 8버전 이상에 패키지를 설치를 해주세요</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @storybook/builder-vite</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @storybook/react</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @storybook/react-vite</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> storybook</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -D</span></span></code></pre></figure>
+<p>Major breaking changes</p>
+<ul>
+<li><a href="https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#dropping-support-for-nodejs-16">Node 18+ is now required</a></li>
+<li><a href="https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#new-addons-api">Addons API introduced in Storybook 7 is now required</a></li>
+<li>vite 환경일 경우 root 패스에 vite.config.js가 필수로 추가</li>
+</ul>
+</li>
+<li>
+<p><strong>setting</strong>
+.storybook/main
+addon 설정</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> addons</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  '@storybook/addon-links'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  '@storybook/addon-essentials'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">],</span></span></code></pre></figure>
+<p>builder, framework 지정</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">core</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  builder</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'@storybook/builder-vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 👈 The builder enabled here.</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">framework</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'@storybook/react-vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span></code></pre></figure>
+<p>base static path 지정</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// CRA - @storybook/react</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"storybook"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"start-storybook -p 9009 -s public"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// VITE - @storybook/vite</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">staticDirs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'../public'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">], </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 이전 버전(v6) -s public 옵션과 동일</span></span></code></pre></figure>
+<p>webpackFinal → ViteFinal 마이그레이션</p>
+<ul>
+<li>preprocess scss, 허용할 파일 패스 연동</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// webpack</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">config.module.rules.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">push</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  test:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">scss</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  use: [</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      loader: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'sass-resources-loader'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      options: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        resources: [path.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(__dirname, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'../sass.scss'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)],</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ],</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  include: path.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(__dirname, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'../src'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  exclude:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /node_modules/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Vite</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">mergeConfig</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">return</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> mergeConfig</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(config, {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // Merge custom configuration into the default config</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  const { mergeConfig } = await </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  css: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    preprocessorOptions: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      scss: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">      // Next line will prepend the import in all you scss files as you did with your vite.config.js file</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      additionalData: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        @forward 'reset';</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        @use './color.scss' as *;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        @use './sass.scss' as *</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      `</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span></code></pre></figure>
+<ul>
+<li>외부 파일 접근</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// VITE</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">server</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  fs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // 허용할 디렉터리 추가 (여기에 외부 파일 경로를 추가)</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    allow</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      '../outside'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      '/'</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ],</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>storybook code migration processing</strong>
+<strong>No longer inferring default values of args(v6.3)</strong>
+버전 업데이트가 되면서 argTypes에서 기본값 세팅을 할 수 없고 args에서 세팅하는걸로 변경되었습니다. 빌드 에러가 발생하진 않지만, 확인해보시면 undefined 설정되서 들어가게 되니 꼭 마이그레이션 시 변경 해주세요.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// CRA - storybook</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">argTypes</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  isModalOpened</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    name</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'모달 오픈여부'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    defaultValue</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    control</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">      type</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'boolean'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// VITE - storybook</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">argTypes</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  isModalOpened</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    name</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'모달 오픈여부'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    control</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'boolean'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">args</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  isModalOpened</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span></code></pre></figure>
+<p><strong>New parameters format for addon viewport(v8.3)</strong></p>
+<ul>
+<li>viewports → options 변경</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 이전</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> parameters</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  viewport: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    viewports: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      iphone5: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'phone'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        styles: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          width: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'320px'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          height: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'568px'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">       },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">     },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">export const parameters </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  viewport: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    options: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      iphone5: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'phone'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        styles: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          width: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'320px'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          height: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'568px'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">       },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">     },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<p><strong>Story type deprecated(v7.0)</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> type</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { Story } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@storybook/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> MyStory</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Story</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> type</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { StoryFn, StoryObj } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@storybook/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> MyCsf2Story</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> StoryFn</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> MyCsf3Story</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> StoryObj</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">  render</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
+<p><strong>start-storybook / build-storybook binaries removed(v7.0)</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">//</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 변경</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 전</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  "scripts"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "storybook"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "start-storybook &#x3C;some flags>",</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "build-storybook"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "build-storybook &#x3C;some flags>"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">//</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 변경</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 후</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  "scripts"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "storybook"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "storybook dev &#x3C;some flags>",</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "build-storybook"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "storybook build &#x3C;some flags>"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  "devDependencies"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "storybook"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "next"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<p><strong>Ignore story files from node_modules(v7.0)</strong></p>
+<ul>
+<li>기본적으로 node_modules 안에 스토리북은 무시하도록 변경</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  stories: [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"../**/*.stories.*"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 기존 glob.sync 처리는 굳이 안해줘도 됩니다.</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// const getStories = () => glob.sync(`${path.resolve(__dirname, '../')}/src/**/*.stories.@(js|jsx|ts|tsx)`);</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// stories: async () => getStories(),</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 펀딩 스튜디오 적용</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">stories</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"../src/**/*.stories.@(js|jsx|ts|tsx)"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">],</span></span></code></pre></figure>
+<p><strong>Removed deprecated shim packages(v8.0)</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Removal</th><th>Replacement</th></tr></thead><tbody><tr><td>@storybook/addons</td><td>@storybook/manager-api or @storyboook/preview-api</td></tr><tr><td>@storybook/channel-postmessage</td><td>@storybook/channels</td></tr><tr><td>@storybook/channel-websocket</td><td>@storybook/channels</td></tr><tr><td>@storybook/client-api</td><td>@storybook/preview-api</td></tr><tr><td>@storybook/core-client</td><td>@storybook/preview-api</td></tr><tr><td>@storybook/preview-web</td><td>@storybook/preview-api</td></tr><tr><td>@storybook/store</td><td>@storybook/preview-api</td></tr><tr><td>@storybook/api</td><td>@storybook/manager-api</td></tr><tr><td>@storybook/testing-library</td><td>@storybook/test</td></tr><tr><td><strong>Deprecated addon-knobs(v6.3) → static쪽도 버전 업하시려면 수정을 해주셔야합니다.</strong></td><td></td></tr><tr><td>addon-essentials 패키지 설치 후 knobs가 아닌 control을 사용</td><td></td></tr></tbody></table>
+<ol>
+<li><strong>Controls (</strong>@storybook/addon-controls**)**: 컴포넌트의 props를 UI에서 제어할 수 있도록 해줍니다.</li>
+<li><strong>Actions (</strong>@storybook/addon-actions**)**: 이벤트 핸들러를 디버깅하기 쉽게 로그로 출력합니다.</li>
+<li><strong>Docs (</strong>@storybook/addon-docs**)**: 컴포넌트의 문서를 자동 생성합니다.</li>
+<li><strong>Viewport (</strong>@storybook/addon-viewport**)**: 다양한 화면 크기에 따른 컴포넌트의 동작을 확인합니다.</li>
+<li>기타 애드온들 (e.g., Backgrounds, Toolbars &#x26; Icons 등).
+<a href="https://github.com/storybookjs/storybook/blob/next/MIGRATION.md">https://github.com/storybookjs/storybook/blob/next/MIGRATION.md</a></li>
+</ol>
+</li>
+<li>
+<p><strong>package.json storybook command</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// CRA</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"storybook"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"start-storybook -p 9009 -s public"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"build-storybook"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"build-storybook -s public -o .storybook/build --quiet"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// VITE</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"storybook"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"storybook dev -p 9009"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"build-storybook"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"storybook build -o .storybook/build --quiet"</span></span></code></pre></figure>
+</li>
+</ul>
+<h2 id="jest-to-vitest-migration">Jest to Vitest Migration<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#jest-to-vitest-migration"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>
+<p><strong>Why Vitest is better than Jest</strong></p>
+<ol>
+<li><strong>빠른 성능</strong>: esbuild 기반으로 Jest보다 빠른 테스트 실행.(jest: Babel)</li>
+<li><strong>ESM 지원</strong>: 최신 ES 모듈을 기본적으로 지원.(ES 방식 지원 가능하나 호환성 이슈 발생)</li>
+<li><strong>타입스크립트 통합</strong>: 추가 설정 없이 TypeScript와 자연스럽게 통합.</li>
+<li><strong>간단한 모킹 API</strong>: 직관적이고 쉽게 사용할 수 있는 mocking 기능 제공.</li>
+<li><strong>Vite와의 호환성</strong>: Vite 설정 및 플러그인을 그대로 활용.</li>
+<li><strong>현대적 기능</strong>: HMR과 빠른 watch 모드 지원.</li>
+<li><strong>작은 학습 곡선</strong>: Vite 사용자에게 친숙한 설정.</li>
+<li><strong>우수한 개발자 경험</strong>: 오류 보고 및 테스트 피드백이 현대적이고 상세함.</li>
+</ol>
+</li>
+<li>
+<p><strong>Installation</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -D</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> vitest</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> jsdom</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @testing-library/dom</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @testing-library/jest-dom</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @testing-library/react</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @testing-library/user-event</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">//</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 기존</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Jest</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 테스트</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 관련</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 패키지</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 삭제</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> remove</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> jest</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> babel-jest</span></span>
+<span data-line=""> </span></code></pre></figure>
+</li>
+<li>
+<p><strong>setting</strong>
+기존에 package.json/jest.setup.js 설정된 테스트 구성을 vitest.config.js로 이전</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// package.json</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"jest"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  "collectCoverageFrom"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    "!&#x3C;rootDir>/node_modules/"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ],</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  "moduleNameMapper"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    "lodash-es"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"lodash"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  "transformIgnorePatterns"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    "/node_modules/"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ],</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  "setupFilesAfterEnv"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    "&#x3C;rootDir>/jest.setup.js"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ]</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// vitest.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> defineConfig</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  resolve: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    alias: {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      "lodash-es"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"lodash"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  plugins: [</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">    react</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(),</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">    viteTsconfigPaths</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(), </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// tsconfig 파일 패스 연동</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ]</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  test: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    environment: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'jsdom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// React 테스트 환경을 위해 설정</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    globals: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,        </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Jest와 동일한 글로벌 변수를 사용</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    setupFiles: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./src/setupTests.ts'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// setup 파일</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">})</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// src/setupTest.ts</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@testing-library/jest-dom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>기존 리액트 테스트 환경 테스트를 위해서 test 환경을 꼭 json 으로 설정해주세요.
+타입스크립트 타입에 vitest 추가해주세요.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// tsconfig.json</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"compilerOptions"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "lib"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dom"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dom.iterable"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"es2020"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">],</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "target"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"ES6"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "types"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"vite/client"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"react"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"react-dom"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"node"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"vitest/globals"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">], </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vitest/globals 추가</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "isolatedModules"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span></code></pre></figure>
+<p>eslint 글로벌 체크 타입 변수에 vi 추가</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// .eslint.js</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">module</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">exports</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  globals: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    context: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'readonly'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    vi: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vi 추가</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>jest code migration processing</strong>
+<strong>module mocks</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">jest.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">mock</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./some-path'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'hello'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">vi.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">mock</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./some-path'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'hello'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
+<p><strong>Importing the Original of a Mocked Package</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">cloneDeep</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> jest.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">requireActual</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'lodash/cloneDeep'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">cloneDeep</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> vi.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">importActual</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'lodash/cloneDeep'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
+<p><strong>Replace property</strong>
+<a href="https://vitest.dev/guide/migration#replace-property">Vitest</a>
+<strong>Done Callback</strong></p>
+<ul>
+<li>Vitest v0.10.0 이후부터는 callback 스타일을 지원하지 않고 있어서 지원을 해야할 경우 Promise callback 함수로 변경 필요</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">it</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'should work'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">done</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {});</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">it</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'should work'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  new</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Promise</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">done</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // ...</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">    done</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }));</span></span></code></pre></figure>
+<p><strong>Hooks</strong>
+beforeAll/beforeEach hook에 대해서 null/undefined 외에 값을 반환해야합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">beforeEach</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> setActivePinia</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">createTestingPinia</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">())) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">  beforeEach</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">    setActivePinia</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">createTestingPinia</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">());</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  });</span></span></code></pre></figure>
+<p>jest hooks는 동기적으로 수행되고, vitest는 기본적으로 병렬로 진행하게 됩니다. 단, hooks 동기적으로 수행 시 sequence.hooks 속성을 지정해야합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vitest.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> defineConfig</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  test: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    sequence: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      hooks: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'list'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">})</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p><strong>Types</strong>
+vitest는 네임스페이스 속성을 지원하지 않기 때문에 직접 유형을 가져와야합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> fn</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> jest</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Mock</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> number</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> type</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { Mock } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vitest'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> fn</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Mock</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> number</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span></code></pre></figure>
+<p><strong>Timeout</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">jest.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">setTimeout</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5_000</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">vi.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">setConfig</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ testTimeout: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5_000</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> });</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>package.json test commands</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">"test"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "vitest",</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">"test:run"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "vitest run",</span></span></code></pre></figure>
+</li>
+</ul>
+<h2 id="msw-migration-guide">MSW Migration Guide<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#msw-migration-guide"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>vitest 테스트와 msw 0.43.1 버전 같이 사용 시 아래 같은 문구에 에러가 발생</li>
+<li>vitest에서 ECMAscript 모듈을 지원하고 있고 msw 이전버전에서는 미지원함에 따른 에러 발생으로 추측(버전을 최신 버전으로 변경해서 수정)</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">vitest Package subpath </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./lib'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> is not defined by </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"exports"</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> in</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> node_modules</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">headers</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">polyfill</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">package.json</span></span></code></pre></figure>
+<ul>
+<li><strong>Installation</strong>
+<ul>
+<li>msw 버전을 최신버전으로 업그레이드 함에 따른 storybook에 사용되는 storybook-addon도 동일하게 업그레이드 처리해야 합니다.</li>
+<li>msw-storybook-addon 관련 스토리부 설정을 기존과 동일합니다.</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">yarn add </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">D</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> msw@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2.4</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">11</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> msw</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">storybook</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">addon@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2.0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span></span></code></pre></figure>
+</li>
+<li><strong>msw code migration processing</strong>
+<strong>worker-imports</strong>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { setupWorker } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'msw'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { setupWorker } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'msw/browser'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<strong>Response resolver arguments</strong>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">rest.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">get</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/resource'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">req</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">res</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">ctx</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {});</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { http } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'msw'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">http.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">get</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/resource'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, ({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">request</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> url</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> URL</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(request.url);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> productId</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> url.searchParams.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">get</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'id'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<strong>Response declaration</strong>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">rest.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">get</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/resource'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">req</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">res</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">ctx</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> res</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">status</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">200</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">), ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">json</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ id: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'abc-123'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }));</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { http } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'msw'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">http.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">get</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/resource'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Response</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">JSON</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">stringify</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ id: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'abc-123'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }), {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    headers: {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      'Content-Type'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'application/json'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  });</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후 2</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { http, HttpResponse } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'msw'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> handlers</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  http.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">get</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/resource'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> HttpResponse.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">json</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ id: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'abc-123'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }, { status: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">200</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> });</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span></code></pre></figure>
+<strong>Request params</strong>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">rest.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">get</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/post/:id'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">req</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">id</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> req.params;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { http } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'msw'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">http.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">get</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/post/:id'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, ({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">params</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">id</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> params;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<strong>Request cookies</strong>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">rest.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">get</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/resource'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">req</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">token</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> req.cookies;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { http } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'msw'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">http.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">get</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/resource'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, ({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">cookies</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">token</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> cookies;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<strong>Request Body</strong>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">rest.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">post</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/resource'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">req</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // The library would assume a JSON request body</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // based on the request's "Content-Type" header.</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">id</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> req.body;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { http } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'msw'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">http.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">post</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/user'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">async</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">request</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // Read the request body as JSON.</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> user</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> request.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">json</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">id</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> user;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<a href="https://mswjs.io/docs/migrations/1.x-to-2.x/#resnetworkerror">1.x → 2.x</a></li>
+</ul>
+<h2 id="결과">결과<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#결과"><span class="icon icon-link"></span></a></h2>
+<p>빌드 성능: <strong>6.16s → 2.49s ( 3.67s 빠름 )</strong></p>
+<p><img src="/blog-assets/2024/11/assets/16/Untitled3.png" alt="Untitled"></p>
+<p><img src="/blog-assets/2024/11/assets/16/Untitled4.png" alt="Untitled"></p>
+<p>Dev Server 구동: <strong>167ms → 엄청 빠름^^</strong></p>
+<p><img src="/blog-assets/2024/11/assets/16/Untitled5.png" alt="Untitled"></p>
+<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>
+<p><a href="https://coreui.io/blog/how-to-migrate-create-react-app-to-vite/">How to Migrate from create-react-app to Vite? · CoreUI</a></p>
+</li>
+<li>
+<p><a href="https://www.freecodecamp.org/news/how-to-migrate-from-create-react-app-to-vite/">How to Migrate from create-react-app to Vite using Jest and Browserslist</a></p>
+</li>
+<li>
+<p><a href="https://nyagm.tistory.com/280">[vite] 프론트엔드 개발자를 위한 Vite 101</a></p>
+</li>
+<li>
+<p><a href="https://khys.tistory.com/31">[JS] 비트(Vite)란? - 비트 알아보기</a></p>
+</li>
+<li>
+<p><a href="https://engineering.ab180.co/stories/webpack-to-vite">Webpack → Vite: 번들러 마이그레이션 이야기</a></p>
+</li>
+<li>
+<p><a href="https://nyagm.tistory.com/280">[vite] 프론트엔드 개발자를 위한 Vite 101</a></p>
+</li>
+<li>
+<p><a href="https://www.freecodecamp.org/news/how-to-migrate-from-create-react-app-to-vite/">How to Migrate from create-react-app to Vite using Jest and Browserslist</a></p>
+</li>
+<li>
+<p><a href="https://eun-jee.com/post/front-end/CRA_to_Vite/">CRA에서 Vite로 마이그레이션하기 (feat. 배포 시간 줄이기)</a></p>
+</li>
+<li>
+<p><a href="https://storybook.js.org/docs/builders/vite">Docs | Storybook</a></p>
+</li>
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"CRA To Vite Migration"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"CRA To Vite Migration"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2024-11-16","className":"meta-mono","children":"2024.11.16"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[12,"분"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","bundler",{"children":["$","$L3",null,{"href":"/ko/tags?tag=bundler","className":"tag-pill","children":"bundler"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+5:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/ko/posts/2023-10-30-nextjs-v14","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Nextjs(v14)"}]]}],["$","$L3",null,{"href":"/ko/posts/2024-11-23-nextjs-v15-migration","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["다음 글",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"nextjs 15"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"vite를-사용해야-하는-이유","text":"Vite를 사용해야 하는 이유","depth":1},{"id":"기존-모듈-번들러-문제점","text":"기존 모듈 번들러 문제점","depth":3},{"id":"vite-특징","text":"Vite 특징","depth":3},{"id":"cra-to-vite-migration","text":"CRA to Vite Migration","depth":1},{"id":"base","text":"base","depth":2},{"id":"configuration","text":"Configuration","depth":2},{"id":"environment-variables","text":"Environment Variables","depth":2},{"id":"ejs-variables","text":"EJS Variables","depth":2},{"id":"vite-lint-typescript-checker","text":"Vite Lint, Typescript Checker","depth":2},{"id":"cra-to-vite-migration-tip","text":"CRA to Vite Migration Tip","depth":1},{"id":"cra-to-vite-migration-storybook","text":"CRA to Vite Migration Storybook","depth":1},{"id":"jest-to-vitest-migration","text":"Jest to Vitest Migration","depth":1},{"id":"msw-migration-guide","text":"MSW Migration Guide","depth":1},{"id":"결과","text":"결과","depth":1},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"목차"}]}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
+8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+c:null

@@ -1,0 +1,443 @@
+1:"$Sreact.fragment"
+2:I[53403,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+3:I[66272,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],""]
+9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+4:T11661,<h2 id="css-in-js-왜-만들어졌나">CSS-in-JS 왜 만들어졌나?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#css-in-js-왜-만들어졌나"><span class="icon icon-link"></span></a></h2>
+<p>CSS-in-JS는 단어 그대로 자바스크립트 코드에서 CSS를 작성하는 방식을 말합니다. 2014년 페이스북 개발자인 Christopher Chedeau aka Vjeux가 처음 소개하였습니다.</p>
+<p><img src="/blog-assets/2022/05/images/31/Untitled.png" alt="Untitled"></p>
+<p>Vjeux는 CSS를 작성하는 어려움을 다음과 같이 설명하였으며 CSS-in-JS로 이들 이슈를 모두 해결할 수 있다고 강조했습니다.</p>
+<ul>
+<li>
+<p>Global namespace: 글로벌 공간에 선언된 이름의 명명 규칙 필요</p>
+<ul>
+<li>Issue
+<ul>
+<li>CSS 처음부터 document를 스타일을 하기 위해 설계되었기 때문에 모듈형식의 scope 개념이 없음(전역 스코프/네임스페이스)</li>
+<li>CSS 방법론(BEM), Module/Scope 형식처럼 CSS rule이 여러 Element에 영향을 안받도록 했지만, 여전히 모듈단위 스코프를 지원하지 않음</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>CSS-in-JS는 style을 JS에서 정의하기 때문에 style variable이 lexical scope(컴포넌트 단위 스코프)에 한정</li>
+<li>CSS-in-JS는 style variable를 얼마든지 export/import 하여서 재사용이 가능합니다</li>
+</ul>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'styled-components'</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Container</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">div</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  display: flex;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  flex-direction: column;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  height: 100%;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Template</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> FunctionComponent</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">TemplateProps</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">> </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ({</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Container</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ...</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;/</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Container</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+</li>
+<li>
+<p>Implicit Dependencies: 의존 관계를 관리</p>
+<ul>
+<li>Issue
+<ul>
+<li>JS/CSS 모듈이 분리 되어 있어 className/attribute 관계가 명시적이지 않기 때문에 개발자가 기억해서 관리를 해줘야하는 어려움이 있음</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>CSS-in-JS는 CSS를 JS에 작성하기 때문에 정적 분석이 가능하고, IDE의 도움을 받아서 사용/미사용 여부를 관리가 쉬워짐</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Dead Code Elimination: 미사용 코드 검출</p>
+<ul>
+<li>Issue
+<ul>
+<li>의존 관계 관리가 어려워서 사용되고 있지 않는(dead code) 인지 파악하기 힘들다.</li>
+<li>구글 크롬의 coverage로 사용이 가능하지만, 추가적인 작업시간이 들어가게 된다.</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>CSS-in-JS 를 사용한다면 eslint, IDE에 도움을 받아서 미사용되는 코드를 간단히 제거가 가능함.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Non-deterministic Resolution</p>
+<ul>
+<li>Issue
+<ul>
+<li>CSS rule은 specificity가 높은 것이 적용된다. 그런데 만약 같은 specificity를 가진다면, 뒤에 정의된 rule이 적용된다.</li>
+<li>만약 같은 specificity를 갖는 CSS들을 async하게 불러오면 어떤 CSS rule이 적용될까? 답은 모른다.</li>
+<li>이를 Non-deterministic Resolution이라고 한다.
+<img src="/blog-assets/2022/05/images/31/Untitled1.png" alt="Untitled"></li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>HTML/CSS/JS를 모듈(컴포넌트) 단위로 강하게 결합시켜서 CSS 우선순위를 결정할 수 있게 처리가 가능하다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Minification: 클래스 이름의 최소화</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// module.css</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.DetailInfoHeader_titleInfo__2XYNF {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// styled-components</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.kuddxf {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ...</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+</li>
+<li>
+<p>Sharing Constants: JS와 CSS의 상태 공유</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// css-in-js 사용 전(css/js 상태 공유X)</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">/* common.css */</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">:root {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  --</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">primary</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: #</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2294e3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  --</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">border</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: #9a9a9a;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">/* app.tsx */</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> --</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">primary</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">-color</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '#2294e3'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">article</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> style</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> background: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`${</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">--</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">primary</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">color</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}`</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// css-in-js 사용 전(css/js 상태 공유O)</span></span>
+<span data-line=""><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">:root</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  --</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">primary</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">color: #</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2294e3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  --</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">border</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">color: #9a9a9a;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> ArticleWrapper</span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic"> =</span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic"> styled.article`</span></span>
+<span data-line=""><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">  background:</span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic"> var(--primary-color);</span></span>
+<span data-line=""><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">`;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">&#x3C;ArticleWrapper>&#x3C;/ArticleWrapper></span></span>
+<span data-line=""> </span></code></pre></figure>
+</li>
+<li>
+<p>Breaking Isolation: CSS의 외부 수정을 관리하기 어려운 문제</p>
+<ul>
+<li>기능의 재사용성과 커스텀 스타일을 쉽게 적용하기 위해서는 CSS/JS에 함께 관리되는 것이 더 효율적임</li>
+<li>Vue/Svelte 등의 경우에는 이를 single-file-component 방식으로 style/script/html 묶어서 관리</li>
+<li>React에서는 CSS in JS 방식으로 JS 생테계에서 묶어서 관리를 하자는 목적</li>
+</ul>
+</li>
+</ul>
+<h2 id="styled-components">styled-components<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#styled-components"><span class="icon icon-link"></span></a></h2>
+<details>
+  <summary>styled-components</summary>
+<p><strong>설치</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> styled-components</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># or</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> styled-components</span></span></code></pre></figure>
+<p>기본사용법( sass 문법 지원 )</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'styled-components'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Circle</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">div</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  width: 5rem;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  height: 5rem;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  background: black;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  border-radius: 50%;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  > a {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    color: #bfcbd9;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    text-decoration: none;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  &#x26;:hover {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    opacity: 0.1;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  }</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> AutoLayoutStyle</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> css</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  width: 100%;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  height: 100%;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Circle</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> App;</span></span></code></pre></figure>
+<p>Sass - lighten() 또는 darken() : polished</p>
+<pre><code>yarn add polished
+
+import React from 'react';
+import styled from 'styled-components';
+import { darken, lighten } from 'polished';
+
+const StyledButton = styled.button`
+  background: darken($w9-color-primary, 20%); - scss
+
+  /* 색상 */
+  background: #228be6;
+  &#x26;:hover {
+    background: ${lighten(0.1, '#228be6')}; - polished
+  }
+  &#x26;:active {
+    background: ${darken(0.1, '#228be6')}; - polished
+  }
+
+`;
+
+function Button({ children, ...rest }) {
+  return &#x3C;StyledButton {...rest}>{children}&#x3C;/StyledButton>;
+}
+
+export default Button;
+</code></pre>
+<p>전역스타일을 적용할 경우 ThemeProvider</p>
+<p>스타일링을 시작하기 앞서, 자주 사용하게 될 색상 코드, 사이즈, 폰트, 미디어 쿼리 등의 정보를 변수로 생성해 사용하면 일관적인 스타일 관리가 가능합니다</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled, { ThemeProvider } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'styled-components'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Button </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> './components/Button'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> AppBlock</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">div</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  width: 512px;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  margin: 0 auto;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  margin-top: 4rem;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  border: 1px solid black;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  padding: 1rem;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">ThemeProvider</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      theme</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        palette: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          blue: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'#228be6'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          gray: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'#495057'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          pink: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'#f06595'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        },</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">AppBlock</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Button</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> color</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"gray"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>BUTTON&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Button</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> color</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"gray"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>BUTTON&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Button</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> color</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"pink"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>BUTTON&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">AppBlock</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">ThemeProvider</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> App;</span></span></code></pre></figure>
+<p>컴포넌트 상속</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> TileDiv</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">div</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  display: flex;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  flex: 1;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  margin: 0 auto;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  max-width: 1550px;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { TileDiv } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> './styles/CommonStyle'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> ContactDiv</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> styled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(TileDiv)</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  flex-direction: column;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  padding: 5px;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  box-sizing: border-box;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>css 삽입</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> AutoLayoutStyle</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> css</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  width: 100%;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  height: 100%;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> DirectSizeStyle</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> css</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  width: ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">width</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  min-width: ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">width</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  height: ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">height</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  min-height: ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">height</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { AutoLayoutStyle } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> './styles/CommonStyle'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> IntroduceDiv</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">div</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">AutoLayoutStyle</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  ${</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">DirectSizeStyle</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">({ </span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">width: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'200px'</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">, </span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">height: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'200px'</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> })</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> CompItemContentTitleDiv</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">div</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  display: flex;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  color: #008073;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  font-size: 20px;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  font-weight: 600;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  ${</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">css</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    > span {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      cursor: pointer;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      height: 12px;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      padding-bottom: 10px;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      &#x26;:hover {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        border-bottom: 2px solid #008073;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      }</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    }</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  `}</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>데이터 삽입(특히, 이미지)</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> HomeImg </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '../../imgs/bg-home.jpg'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> HomeBody</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">div</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  background: url(${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">HomeImg</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}) no-repeat center center;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>props 전달 및 분기처리</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> SideBarDiv</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">div</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">AutoLayoutStyle</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  max-width: ${</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">props</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> (</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">props</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">isSidebarOpen</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ?</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '170px'</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> :</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '0px'</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">)</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  max-width: ${</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">props</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> (</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">props</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">isSidebarOpen</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ?</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '170px'</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> :</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '0px'</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">)</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> SideBar</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">isSidebarOpen</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">SideBarDiv</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> isSidebarOpen</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">isSidebarOpen</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<p>attribute 처리</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> circle </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '../../../imgs/circle.svg'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> ListItemCircleImg</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.img.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">attrs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  src: circle,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  alt: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">''</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">})</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  margin-right: 5px;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> PasswordInput</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.input.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">attrs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">props</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ({</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // Every &#x3C;PasswordInput /> should be type="password"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  type: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'password'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}))</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">``</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>전역스타일 처리(createGlobalStyle)</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "react"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled, { createGlobalStyle } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "styled-components"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> GlobalStyle</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createGlobalStyle</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">			*, *::before, *::after {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">			    box-sizing: border-box;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">			  }</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      body {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        margin: 50px;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        padding: 50px;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        background-color: black;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      }</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    `</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    ...</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Container</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">GlobalStyle</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>버튼1&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Button</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> color</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"red"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>버튼2&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Container</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      );</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    };</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> theme </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '/src/styles/theme'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">ThemeProvider</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> theme</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">theme</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">GlobalStyle</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Header</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> switchTheme</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">switchTheme</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Container</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> currentThemeText</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">currentThemeText</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">ThemeProvider</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> GlobalStyle</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createGlobalStyle</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">reset</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">customReset</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    html {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      font-size: 62.5%; //1rem = 10px;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    ${</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">({ </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">theme</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      return</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> css</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        body {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">          font-family: ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">theme</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">fonts</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">family</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">base</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">          font-weight: ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">theme</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">fonts</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">weight</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">normal</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">          font-size: ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">theme</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">fonts</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">size</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">base</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        }</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      `</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>animations</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Create the keyframes</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> rotate</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> keyframes</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  from {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    transform: rotate(0deg);</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  to {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    transform: rotate(360deg);</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  }</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Here we create a component that will rotate everything we pass in over two seconds</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Rotate</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">div</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  display: inline-block;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  animation: ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">rotate</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">} 2s linear infinite;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  padding: 2rem 1rem;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  font-size: 1.2rem;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">render</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Rotate</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x26;lt;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> 💅🏾 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x26;gt;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Rotate</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>);</span></span></code></pre></figure>
+<p>SCSS import 가능</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { createGlobalStyle, css } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'styled-components'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> reset </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'styled-reset'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> customReset </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> './customReset.scss'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// waffle에 scss 도입가능한지 확인??</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> GlobalStyle</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createGlobalStyle</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">reset</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">customReset</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    html {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      font-size: 62.5%; //1rem = 10px;</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    ${</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">({ </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">theme</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      return</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> css</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        body {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">          font-family: ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">theme</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">fonts</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">family</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">base</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">          font-weight: ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">theme</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">fonts</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">weight</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">normal</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">          font-size: ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">theme</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">fonts</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">size</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">base</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">};</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        }</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      `</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> GlobalStyle;</span></span></code></pre></figure>
+</details>
+<h2 id="emotion">Emotion<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#emotion"><span class="icon icon-link"></span></a></h2>
+<details>
+  <summary>Emotion</summary>
+<p><img src="/blog-assets/2022/05/images/31/Untitled2.png" alt="Untitled"></p>
+<ul>
+<li>styled-components 와 비슷한 CSS-in-JS 라이브러리</li>
+<li>material-ui(v5) - emotion 적용
+<ul>
+<li><a href="https://hoontae24.github.io/19">https://hoontae24.github.io/19</a></li>
+</ul>
+</li>
+<li><a href="https://www.howdy-mj.me/css/emotion.js-intro/">https://www.howdy-mj.me/css/emotion.js-intro/</a></li>
+<li><a href="https://emotion.sh/docs/introduction">https://emotion.sh/docs/introduction</a></li>
+<li><a href="https://hoontae24.github.io/19">https://hoontae24.github.io/19</a></li>
+</ul>
+</details>
+<h2 id="참고페이지"><strong>참고페이지</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li><a href="https://blog.eunsukim.me/posts/introducing-css-in-js">https://blog.eunsukim.me/posts/introducing-css-in-js</a></li>
+<li><a href="http://blog.vjeux.com/2014/javascript/react-css-in-js-nationjs.html">http://blog.vjeux.com/2014/javascript/react-css-in-js-nationjs.html</a></li>
+<li><a href="https://speakerdeck.com/vjeux/react-css-in-js?slide=23">https://speakerdeck.com/vjeux/react-css-in-js?slide=23</a></li>
+<li><a href="https://so-so.dev/web/css-in-js-whats-the-defference/">https://so-so.dev/web/css-in-js-whats-the-defference/</a></li>
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"css-in-js"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"css-in-js"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-05-31","className":"meta-mono","children":"2022.05.31"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[4,"분"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","css",{"children":["$","$L3",null,{"href":"/ko/tags?tag=css","className":"tag-pill","children":"css"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+5:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/ko/posts/2022-05-30-form","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"form"}]]}],["$","$L3",null,{"href":"/ko/posts/2022-06-08-react18","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["다음 글",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"react18"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"css-in-js-왜-만들어졌나","text":"CSS-in-JS 왜 만들어졌나?","depth":1},{"id":"styled-components","text":"styled-components","depth":1},{"id":"emotion","text":"Emotion","depth":1},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"목차"}]}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
+8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+c:null

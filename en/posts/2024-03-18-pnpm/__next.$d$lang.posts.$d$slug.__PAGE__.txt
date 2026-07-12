@@ -1,0 +1,302 @@
+1:"$Sreact.fragment"
+2:I[53403,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+3:I[66272,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],""]
+9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+4:Tae32,<h2 id="도입-배경">도입 배경<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#도입-배경"><span class="icon icon-link"></span></a></h2>
+<h3 id="npm-yarn-classic10-패키지-매니저-문제점">NPM, Yarn Classic(1.0) 패키지 매니저 문제점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#npm-yarn-classic10-패키지-매니저-문제점"><span class="icon icon-link"></span></a></h3>
+<h4 id="유령-의존성">유령 의존성<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#유령-의존성"><span class="icon icon-link"></span></a></h4>
+<p><img src="/blog-assets/2024/03/assets/18/Untitled.png" alt="Untitled"></p>
+<p><img src="/blog-assets/2024/03/assets/18/Untitled1.png" alt="Untitled"></p>
+<ul>
+<li>yarn classic(1.0), npm(v3~) 둘 다 중복 패키지에 대한 용량을 효율적으로 관리하기 위해서 호이스팅 &#x26; 병합을 기법을 사용해서 평탄화 작업 진행(놀랍게도 npm v2 까지는 모든 의존성을 중복 설치했다고 합니다.)</li>
+<li>내부의 중복된 패키지를 최소화하기 위해 각 패키지가 의존하고 있는 패키지를 최상단으로 올림</li>
+<li>결론은.. 내가 설치하지 않았는데 패키지가 최상단으로 올리다보니 라이브러리를 사용하게 되는 이슈 발생</li>
+</ul>
+<h4 id="용량-이슈">용량 이슈<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#용량-이슈"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>yarn 1.0, npm에서는 모든 라이버리를 node_modules에 설치하다보니 중복되는 패키지들이 package 별로 계속 설치되는 이슈</li>
+</ul>
+<h3 id="pnpm을-통해서-어떤걸-해결할-수-있을까">PNPM을 통해서 어떤걸 해결할 수 있을까??<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pnpm을-통해서-어떤걸-해결할-수-있을까"><span class="icon icon-link"></span></a></h3>
+<h4 id="유령-의존성-해결">유령 의존성 해결<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#유령-의존성-해결"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// package.json</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dependencies"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">	"foo"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"1.0.0"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// node_modules 폴더 구조</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">node_modules</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── foo </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> .</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.pnpm</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">foo@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1.0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">node_modules</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">foo </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// symbolic link</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">└── .pnpm</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ├── bar@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1.0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    │   └── node_modules</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    │       ├── bar </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">store</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>/bar // hard link</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    │       └── qar -> ../../qar@2.0.0/node_modules/qar // symbolic link</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ├── foo@1.0.0</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    │   └── node_modules</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    │       ├── foo -> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">store</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>/foo // hard link</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    │       ├── bar -> ../../bar@1.0.0/node_modules/bar // symbolic link</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    │       └── qar -> ../../qar@2.0.0/node_modules/qar // symbolic link</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    └── qar@2.0.0</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        └── node_modules</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">            └── qar -> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">store</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>/qar</span></span></code></pre></figure>
+<ul>
+<li>
+<p>pnpm 패키지를 호이스팅 대신, 글로벌 저장소(~/.pnpm-store)에 패키지를 글로벌하게 저장</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">$ pnpm store path</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Library</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">pnpm</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">store</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">v3 </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 글로벌 저장소 패스</span></span></code></pre></figure>
+</li>
+<li>
+<p>글로벌 저장소(~/.pnpm-store)에 설치된 패키지 경로와 가상 저장소(.pnpm) 하드 링크로 연결</p>
+<ul>
+<li>node_modules/.pnpm/~~</li>
+<li>패키지의 버전을 명시한 폴더명 생성(bar@1.0.0) 후 node_modules 하위에 링크 연결</li>
+<li>패키지 폴더와 심볼릭 링크 파일까지 추가됨에 따라서 node_modules에 용량을 늘어날 수 있음</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"># yarn 으로 설치한 용량</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">du </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">shL .</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">node_modules</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">3.0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">G</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"># pnpm 으로 설치한 용량</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">du </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">shL .</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">node_modules</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">3.4</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">G</span></span></code></pre></figure>
+<p><img src="/blog-assets/2024/03/assets/18/Untitled2.png" alt="Untitled"></p>
+</li>
+<li>
+<p>node_modules에서는 package.json 설치된 패키지를 하드 링크를 통해서 글로벌 패키지와 링크 설정</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ls </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">li </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">~/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Library</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">pnpm</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">store</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">v3</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">files</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">3c</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{package.json 해시값}</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">11136652</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> # inode가 같다</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ls </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">li node_modules</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.pnpm</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">gatsby</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">plugin</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">sharp@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5.13</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">node_modules</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">gatsby</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">plugin</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">sharp</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">package.json</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">11136652</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> # inode가 같다</span></span></code></pre></figure>
+</li>
+<li>
+<p>패키지와 의존한 서브 패키지에 대해서는 심볼릭 링크로 구성
+package.json 설치된 패키지 → node_modules 1depth에 폴더 추가 및 심볼릭 링크 연결</p>
+<ul>
+<li>node_modules 1depth → .pnpm 가상 저장소 심볼릭 링크
+.pnpm dependencies 패키지 → .pnpm 가상 저장소 심볼릭 링크</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ls </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">li .</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">node_modules</span></span></code></pre></figure>
+<p><img src="/blog-assets/2024/03/assets/18/Untitled3.png" alt="Untitled"></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ls </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">li .</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">/node_modules/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.pnpm</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">gh</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">pages@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">6.1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">node_modules</span></span></code></pre></figure>
+<p><img src="/blog-assets/2024/03/assets/18/Untitled4.png" alt="Untitled"></p>
+</li>
+<li>
+<p>node_modules 1depth 하위에는 package.json 설치된 패키지만 구성됨으로 유령 의존성은 제거
+패키지 hoisted 처리가 되지 않으므로 1 depth에 패키지가 설치가 안되고 프로젝트 실행 시 사용하지 않는 패키지 사용 시 에러 발생하게 됩니다.</p>
+</li>
+</ul>
+<p>→ 모든 패키지를 연관된 패키지만 묶기 때문에 관련 없는 패키지 접근을 차단할 수 있으며, 호이스팅 처럼 복잡한 작업을 굳이 할 필요가 없어서 관리가 쉬워진다.</p>
+<h4 id="용량-이슈-해결">용량 이슈 해결<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#용량-이슈-해결"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>글로벌 저장소(~/.pnpm-store)에 패키지를 한곳에 관리하고 하드링크/소프트링크를 통해서 node_modules를 구성하니 용량이 줄어들고 또한 성능/빌드속도 개선 가능</li>
+</ul>
+<h2 id="yarn-classic10--pnpm-migration">Yarn classic(1.0) → PNPM Migration<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#yarn-classic10--pnpm-migration"><span class="icon icon-link"></span></a></h2>
+<h3 id="node-version-check--change">Node Version Check &#x26; Change<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#node-version-check--change"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>PNPM 8 버전 이상에서는 Node 16 버전 이상 설치 필요</li>
+</ul>
+<p><img src="/blog-assets/2024/03/assets/18/Untitled5.png" alt="Untitled"></p>
+<ul>
+<li>nvm 활용한 노드 버전 설치 및 변경
+<ul>
+<li>nvm(node version manager) : 여러개의 노드 버전을 사용할 수 있는 도구</li>
+</ul>
+</li>
+<li>nvm 명령어</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">nvm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> v[설치버전]</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">## 설치 : nvm install v11.10.1</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">nvm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> uninstall</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> v[설치버전]</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">## 삭제 : nvm uninstall v11.10.1</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">nvm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> use</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> v[사용할</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 버전]</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">## 사용 : nvm use v6.10.1, .nvmrc가 명시되어있다면 그냥 nvm use만 하셔도됩니다.</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">## 버전만이 아닌 네이밍으로 선택이 가능합니다.</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">nvm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ls</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">nvm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> list</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">## 현재 설치된 노드 버전 리스트를 보여줍니다.</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">nvm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ls-remote</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">## 설치 가능한 원격 노드 버전까지 보여줍니다.</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">nvm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> alias</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> default</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> v[설치버전]</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">## 터미널 시작시 노드 기본버전 설정</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">node</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --v</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">## 노드 버전 확인</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">nvm</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --version</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">## nvm 버전 확인</span></span></code></pre></figure>
+<p><img src="/blog-assets/2024/03/assets/18/Untitled6.png" alt="Untitled"></p>
+<ul>
+<li>.nvmrc 버전 변경
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># .nvmrc 파일</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">## lts/fermium 변경</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">lts/hydrogen</span></span></code></pre></figure>
+<ul>
+<li>프로젝트의 경우, 각 프로젝트별로 요구하는 노드 버전이 다를 수 있기 때문에 매번 node를 재설치하고 삭제하기 보다는 NVM을 이용해 해당 프로젝트에서 쓸 노드 버전을 바뀌주면 편리하다.</li>
+<li>해당 프로젝트를 clone 받은 작업자는 아래 명령어만 입력하면 해당 노드 버전을 사용 가능합니다.</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">nvm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  //</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 만약</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 본인의</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> nvm에</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 해당</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 버전이</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 없다면</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 실행</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">nvm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> use</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      //</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 필수</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 실행</span></span></code></pre></figure>
+</li>
+</ul>
+<h3 id="설치">설치<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#설치"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Homebrew 사용하기</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">brew install pnpm</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// npm 사용하기</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">npm install </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">g pnpm</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">npm install </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">g @pnpm</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">exe</span></span></code></pre></figure>
+<h3 id="migration">Migration<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#migration"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>기존 yarn.lock 파일 삭제</li>
+<li>기존 node_modules 삭제
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">rm</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -rf</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> node_modules</span></span></code></pre></figure>
+</li>
+<li>패키지 설치
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">pnpm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span></span></code></pre></figure>
+<img src="/blog-assets/2024/03/assets/18/Untitled7.png" alt="Untitled"></li>
+<li>pnpm-lock.yaml 파일 생성 확인</li>
+<li>커맨드 명령어 실행
+<ul>
+<li>pnpm start</li>
+<li>pnpm build</li>
+<li>pnpm test</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+<h3 id="trouble-shooting">Trouble Shooting<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#trouble-shooting"><span class="icon icon-link"></span></a></h3>
+<h4 id="yarn-workspace--packagejson-설치-삭제">yarn workspace &#x26; package.json 설치 삭제<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#yarn-workspace--packagejson-설치-삭제"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// yarn workspace 설정된 package.json 삭제</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  "private"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  "name"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"workspace"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  "version"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"0.0.0"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// workspace 사용했던 지점의 package.json에서도 동일하게 삭제</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"devDependencies"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ...</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">	// "workspace": "0.0.0" -> 삭제</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<h4 id="workspace-삭제로-인한-alias-처리">workspace 삭제로 인한 alias 처리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#workspace-삭제로-인한-alias-처리"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// tsconfig.json -> typescript 사용</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"paths"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">	"workspace/*"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"./src/workspace/*"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">],</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// jest</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"jest"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  "moduleNameMapper"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">	  "workspace/(.*)"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"&#x3C;rootDir>/src/workspace/$1"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// storybook</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// .storybook/main.js</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">module</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">exports</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">	webpackFinal</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">config</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">		config.resolve.alias </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      ...</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(config.resolve.alias </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">||</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {}),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      workspace: path.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(__dirname, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'../src/workspace'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    };</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	},</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	return {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">		...</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">config,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	};</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
+<h4 id="storybook-실행-에러">storybook 실행 에러<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#storybook-실행-에러"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>
+<p>Cannot find module 'node_modules/config/webpack.config’</p>
+<ul>
+<li>패키지에서 getReactScriptsPath 함수 호출 시 npm/yarn, pnpm이 다른 패스에서 검색을 하게 됨에 따라서 config 파일을 못 찾는 이슈
+<ul>
+<li>npm, yarn classic(1.0): node_modules/.bin/react-script</li>
+<li>pnpm: node_modules</li>
+</ul>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// .storybook/main.js</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 전</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">addons</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">	'@storybook/preset-create-react-app'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">],</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 변경 후</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">addons</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	{</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'@storybook/preset-create-react-app'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    options: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">      // preset-create-react-app에 패키지명을 react-scripts로 지정해서 접근이 가능하도록 수정</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      scriptsPackageName: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"react-scripts"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">],</span></span>
+<span data-line=""> </span></code></pre></figure>
+<p><img src="/blog-assets/2024/03/assets/18/Untitled9.png" alt="Untitled"></p>
+<ul>
+<li><a href="https://github.com/storybookjs/presets/issues/242">https://github.com/storybookjs/presets/issues/242</a></li>
+</ul>
+</li>
+<li>
+<p>tsconfig에 path(alias) 세팅을 storybook 주입해도 alias 처리 안되는 이슈</p>
+<ul>
+<li>tsconfig.json에 지정된 alias 사용을 위한 TsconfigPathPlugin 설치해서 스토리북 웹팩에 주입했지만, 정상동작하지 않아서 개별 alias 처리로 대체</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// .storybook/main.js</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">module</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">exports</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">  stories</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">async</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> getStories</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(),</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">  webpackFinal</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">config</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">	  // 직접 alias 처리하도록 처리</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	  config.resolve.alias </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      ...</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(config.resolve.alias </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">||</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {}),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      workspace: path.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(__dirname, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'../src/workspace'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">	  // typescript path(alias) 스토리북에 주입하는 코드가 정상동작하지 않음</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">	  /* config.resolve.plugins.push(</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">      new TsconfigPathsPlugin({</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">        configFile: path.resolve(__dirname, '../tsconfig.json'),</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">        extensions: ['.ts', '.tsx', '.js', '.jsx'],</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">      }),</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    ); */</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">	    ...</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">config,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    };</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span></code></pre></figure>
+</li>
+</ul>
+<h4 id="msw-에러">msw 에러<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#msw-에러"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>Module System 방식이 달라서 에러 발생(msw-storybook-addon, msw)
+원인: storybook에서 msw 연동 시 필요한 패키지인 msw-storybook-addon이 commonJS 방식으로 구성되어 있고, msw 패키지 설치 시 종속성으로 걸려 있는 headers-polyfill은 ESM 방식으로 구성되어 있어 Module Parsing 에러 발생</li>
+<li>특히 msw 패키지에 headers-polyfill(^3.~)이 캐럿(^) 방식으로 설치하고 있어서 현재 최신 버전인 3.2.5 설치가 되다보니 ESM 방식의 모듈을 사용하게 되서 에러가 발생
+수정: headers-polyfill을 사용하지 않는 버전 중에 가장 최근 버전인 0.36.8 설치해서 해결
+<img src="/blog-assets/2024/03/assets/18/Untitled10.png" alt="Untitled">
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// MSW 버전 downgrade</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">pnpm install msw@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0.36</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">8</span></span></code></pre></figure>
+</li>
+</ul>
+<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li><a href="https://jeonghwan-kim.github.io/2023/10/20/pnpm#%EC%9A%A9%EB%9F%89-npm">pnpm</a></li>
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"PNPM"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"PNPM"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2024-03-18","className":"meta-mono","children":"03/18/2024"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[4,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","package manager",{"children":["$","$L3",null,{"href":"/en/tags?tag=package%20manager","className":"tag-pill","children":"package manager"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2024-03-17-remove-unused-dependencies","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"미사용 의존성 제거"}]]}],["$","$L3",null,{"href":"/en/posts/2024-04-28-esbuild","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"esbuild"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"도입-배경","text":"도입 배경","depth":1},{"id":"npm-yarn-classic10-패키지-매니저-문제점","text":"NPM, Yarn Classic(1.0) 패키지 매니저 문제점","depth":2},{"id":"유령-의존성","text":"유령 의존성","depth":3},{"id":"용량-이슈","text":"용량 이슈","depth":3},{"id":"pnpm을-통해서-어떤걸-해결할-수-있을까","text":"PNPM을 통해서 어떤걸 해결할 수 있을까??","depth":2},{"id":"유령-의존성-해결","text":"유령 의존성 해결","depth":3},{"id":"용량-이슈-해결","text":"용량 이슈 해결","depth":3},{"id":"yarn-classic10--pnpm-migration","text":"Yarn classic(1.0) → PNPM Migration","depth":1},{"id":"node-version-check--change","text":"Node Version Check & Change","depth":2},{"id":"설치","text":"설치","depth":2},{"id":"migration","text":"Migration","depth":2},{"id":"trouble-shooting","text":"Trouble Shooting","depth":2},{"id":"yarn-workspace--packagejson-설치-삭제","text":"yarn workspace & package.json 설치 삭제","depth":3},{"id":"workspace-삭제로-인한-alias-처리","text":"workspace 삭제로 인한 alias 처리","depth":3},{"id":"storybook-실행-에러","text":"storybook 실행 에러","depth":3},{"id":"msw-에러","text":"msw 에러","depth":3},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"Contents"}]}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
+8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+c:null

@@ -1,0 +1,320 @@
+1:"$Sreact.fragment"
+2:I[53403,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+3:I[66272,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],""]
+9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+4:Te965,<h2 id="v17">v17<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v17"><span class="icon icon-link"></span></a></h2>
+<h3 id="설치">설치<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#설치"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">npm install react@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">17.0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> react</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">dom@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">17.0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">yarn add react@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">17.0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> react</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">dom@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">17.0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// CDN을 통해 React의 UMD 빌드를 제공</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> crossorigin</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> src</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"https://unpkg.com/react@17.0.0/umd/react.production.min.js"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> crossorigin</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> src</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"https://unpkg.com/react-dom@17.0.0/umd/react-dom.production.min.js"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
+<h3 id="no-more-import-react-">No more ‘import React ...’<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#no-more-import-react-"><span class="icon icon-link"></span></a></h3>
+<p>JSX 를 사용하기 위해선 늘 React 를 import 해야 했다(그것을 명시적으로 사용하지 않더라도).</p>
+<p>JSX 코드는 babel, typescript 등을 통해 일반 javascript transpile 되었기 때문이다.</p>
+<ul>
+<li>
+<p>&#x3C;= v16</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">h1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>Hello World&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">h1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// JSX -> 일반 자바스크립트</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">createElement</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'h1'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">null</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Hello world'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+</li>
+</ul>
+<p>v17 버전 이후부터는 더 이상 <strong>‘import React ~’</strong> 구문을 직접 입력하지 않아도 된다.</p>
+<ul>
+<li>
+<p>v17</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">h1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>Hello World&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">h1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Inserted by a compiler (don't import it yourself!)</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { jsx </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">as</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> _jsx } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react/jsx-runtime'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> _jsx</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'h1'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, { children: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Hello world'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> });</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+</li>
+</ul>
+<p>새 JSX 변환을 위해서 업그레이드 방법</p>
+<p>CRA: v4.0.0 +</p>
+<p>Next: v9.5.3 +</p>
+<p>Gastby: v2.24.5 +</p>
+<p>typescript: v4.1</p>
+<p>ESLint</p>
+<ul>
+<li>eslint-plugin-react
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // ...</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  "rules"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // ...</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    "react/jsx-uses-react"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"off"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    "react/react-in-jsx-scope"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"off"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+</li>
+</ul>
+<p>custom babel</p>
+<ul>
+<li>
+<p>@babel/plugin-transform-react-jsx</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"># for npm users</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">npm update @babel</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">core @babel</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">plugin</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">transform</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">react</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">jsx</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"># for yarn users</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">yarn upgrade @babel</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">core @babel</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">plugin</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">transform</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">react</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">jsx</span></span></code></pre></figure>
+</li>
+<li>
+<p>@babel/preset-react</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"># for npm users</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">npm update @babel</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">core @babel</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">preset</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">react</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"># for yarn users</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">yarn upgrade @babel</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">core @babel</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">preset</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">react</span></span></code></pre></figure>
+</li>
+<li>
+<p>babel config</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// If you are using @babel/preset-react</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  "presets"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"@babel/preset-react"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      "runtime"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"automatic"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }]</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ]</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// If you're using @babel/plugin-transform-react-jsx</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  "plugins"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: [</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"@babel/plugin-transform-react-jsx"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, {</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      "runtime"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"automatic"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }]</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ]</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+</li>
+</ul>
+<p>v17 버전 업한 이후에 불필요한 import 일괄삭제(선택)</p>
+<ul>
+<li>
+<p>react-codemod</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// general react</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">h1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>Hello World&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">h1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">--</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">transpile;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">h1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>Hello World&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">h1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// custom hook</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">text</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">setText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useState</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Hello World'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">h1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">text</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">h1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { useState } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">text</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">setText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useState</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Hello World'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">h1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">text</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">h1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+</li>
+</ul>
+<p>참고페이지: <a href="https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html">https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html</a></p>
+<h3 id="undefined를-return-할-경우-일관되게-에러-발생">undefined를 return 할 경우 일관되게 에러 발생<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#undefined를-return-할-경우-일관되게-에러-발생"><span class="icon icon-link"></span></a></h3>
+<p>16버전 이하에서는, 모든 컴포넌트에서 undefined를 리턴할 경우 항상 에러를 발생했다.</p>
+<p>하지만 코딩 실수로 인해, <code>forwardRef</code> <code>memo</code>컴포넌트 에서는 이러한 에러 처리가 누락되어 있었는데, 이제 부터 에러처리가 추가되었다.</p>
+<p>17버전부터는 <code>forwardRef</code> <code>memo</code>컴포넌트에서도 undefined를 리턴할 경우 에러 발생한다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> v16</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Error: Nothing was returned from render</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // We forgot to write return, so this component returns undefined.</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // React surfaces this as an error instead of ignoring it.</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">v17 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Button </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> forwardRef</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // We forgot to write return, so this component returns undefined.</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // React 17 surfaces this as an error instead of ignoring it.</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Button </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> memo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // We forgot to write return, so this component returns undefined.</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // React 17 surfaces this as an error instead of ignoring it.</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<p>의도적으로 렌더링하지 않으려면 null을 반환해야한다.</p>
+<h2 id="effect-cleanup-timing">Effect Cleanup Timing<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#effect-cleanup-timing"><span class="icon icon-link"></span></a></h2>
+<p><strong><code>useEffect</code></strong> 라이프 사이클 메서드의 Cleanup 타이밍을 일관되게 동작하도록 만들고 있다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> v16</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useEffect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // effect -> asynchronous</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // cleanup -> synchronous</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">v17 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useEffect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // effect -> asynchronous</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // cleanup -> asynchronous</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<p>cleanup에 많은 동작을 수행해야할 경우, 페이지 전환 같은 동작에서 성능 저하를 유발하게 된다.</p>
+<p>(혹시, effect/cleanup 동기적으로 수행해야 할 경우는 useLayoutEffect를 사용)</p>
+<p>v17 버전이 적용된 이후에는 컴포넌트가 unmount → 컴포넌트/화면 업데이트 → cleanup 수행</p>
+<p>단, unmount → cleanup이 수행되다보니 페이지 전환이 일어난 경우 아래 코드가 문제가 발생할 수있다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useEffect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  someRef.current.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">someSetupMethod</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    someRef.current.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">someCleanupMethod</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">})</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useEffect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> instance</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> someRef.current </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> closure를 통해서 unmounted 하더라도 gc가 사라지지 않게 처리</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  instance.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">someSetupMethod</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    instance.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">someCleanupMethod</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">})</span></span></code></pre></figure>
+<h3 id="no-event-pooling"><strong>No Event Pooling</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#no-event-pooling"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>이벤트 풀링
+오래된 브라우저에서 이벤트 객체를 사용 시 성능 저하되는 이슈가 있어서 리액트에서는 Synthetic Event pool를 만들어서 관리하고 한다.
+<ul>
+<li>사용자가 특정 이벤트가 발생할 경우
+<ul>
+<li>Synthetic Event pool 에서 syn Synthetic Event 객체의 참조 넘겨줌(→ 객체 생성시간 축소)</li>
+<li>이벤트 정보의 Synthetic Event 객체를 넣어줌</li>
+<li>사용자가 정의한 이벤트 리스너 수행</li>
+<li>Synthetic Event 객체 초기화( → null 넣어줌으로써 GC 메모리 가져가도록 처리, 메모리 효율화를 위한 작업))
+해당 기능으로 인해서 인해서 비동기 동작에서 에러가 나는 경우가 생기기 됩니다.</li>
+</ul>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">onChange</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(e)=>{</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(e.type);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(e.target.value);</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">  setTimeout</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(()</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">warn</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(e.type); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 초기화로 인한 null</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   })</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+해당 이슈를 해결하기 위해서 React에서 persist 사용해서 이벤트풀에서 제거해서 기존 이벤트 방식으로 사용하면 동작에 문제는 없지만, 성능상 이점을 버리게 된다.</li>
+</ul>
+<p>v17 부터는 더 이상 구형 브라우저에서 성능 이슈 보완을 위한 동작을 지원하지 않기로 결정함</p>
+<p>단, event.persist() 메서드는 그대로 존재하지만, 호출하더라도 아무런 동작을 하지 않음(하위호환을 위한 작업)</p>
+<h3 id="이벤트-위임의-변화"><strong>이벤트 위임의 변화</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#이벤트-위임의-변화"><span class="icon icon-link"></span></a></h3>
+<p>먼저 리액트에서 이벤트 핸들러를 붙이는 코드를 살펴보자</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">button</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> onClick</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">handleClick</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
+<p>바닐라 DOM에서는 이렇게 작동할 것이다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">myButton.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">addEventListener</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'click'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, handleClick);</span></span></code></pre></figure>
+<p>리액트에서는 이벤트 핸들러를 실제 선언된 DOM에 붙지 않고 document node에 추가한다.</p>
+<p>이런걸 이벤트 위임이라고 한다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">document.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">addEventListener</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'click'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">e</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 실행된 컴포넌트 찾게 됨 });</span></span></code></pre></figure>
+<p>리액트 이벤트 위임 방식</p>
+<ul>
+<li>document에서 이벤트가 발생</li>
+<li>리액트 이벤트 시스템이 실제로 이벤트가 발생한 컴포넌트 찾음</li>
+<li>이벤트 버블링으로 상위 컴포넌트에 이벤트 전달</li>
+</ul>
+<p>문제점</p>
+<p>여러 리액트 컴포넌트가 중첩으로 수행될 경우 이벤트를 Block 하는 stopPropagation 동작하지 않는 문제점 발생</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// legacy react root</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 16.12</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ReactDOM </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-dom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//16.12</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> modernReact</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ReactDOM.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">render</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    React.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">createElement</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      'div'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      {</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">        onClick</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'modern react!'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      },</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      null</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    document.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getElementById</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'modernroot'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 16.8</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ReactDOM </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-dom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 16.8</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> legacyReact</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ReactDOM.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">render</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    React.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">createElement</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">      'div'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      {</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">        onClick</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'legacy react!'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      },</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      null</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    document.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getElementById</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'legacyroot'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">html</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">body</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> id</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"modernroot"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">        {</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">' '</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        // click</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> id</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"legacyroot"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">> // click -> stopPropagation&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">body</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">html</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span></code></pre></figure>
+<ul>
+<li><strong>React 17 부터는 Event가 document 가 아닌 React Tree Root 로 delegate 된다.</strong></li>
+</ul>
+<p><img src="/blog-assets/2022/02/images/13/Untitled.png" alt="Untitled"></p>
+<p>여러 리액트 컴포넌트 수행되더라도 기본이 되는 Root Element 이벤트를 처리하기 때문에 구조/이벤트 방식이 독립적으로 수행가능하다.</p>
+<p>리액트가 다른 기술과 사용하는 것을 더욱 용이하게 한다. 만약 외부에 jQuery가 존재하고, 내부에는 리액트가 존재한다면 이제 예상대로 이벤트 전파를 jQuery단까지 막을 수 있다.</p>
+<p>단, DOM에 **<code>document.addEventListener</code>**를 활용하여 수동으로 이벤트를 붙여서 리액트의 모든 이벤트를 감지하는 코드가 존재할 수 있다. 리액트 16버전 에서는 이러한 코드가 가능했지만, 리액트 17 부터는 전파가 막히게 되므로 **<code>document</code>**에서도 이벤트가 발생하는지 알 수 없기때문에 capturing 방식으로 변경이 필요하다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// &#x3C;= v16</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">document.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">addEventListener</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'click'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // This custom handler will no longer receive clicks</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // from React components that called e.stopPropagation()</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v17+</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">document.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">addEventListener</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  'click'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // Now this event handler uses the capture phase,</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // so it receives *all* click events below!</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  { capture: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
+<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<p><a href="https://reactjs.org/blog/2020/10/20/react-v17.html">https://reactjs.org/blog/2020/10/20/react-v17.html</a></p>
+<p><a href="https://leo.works/2012130">https://leo.works/2012130</a></p>
+<p><a href="https://yceffort.kr/2020/09/react-17-release-candidates#%EB%A6%AC%EC%95%A1%ED%8A%B8-17%EC%97%90%EC%84%9C%EB%8A%94-%EC%A0%90%EC%A7%84%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C%EA%B0%80-%EA%B0%80%EB%8A%A5%ED%95%98%EB%8B%A4">https://yceffort.kr/2020/09/react-17-release-candidates#리액트-17에서는-점진적으로-업그레이드가-가능하다</a></p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"react17"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"react17"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-02-13","className":"meta-mono","children":"2022.02.13"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[4,"분"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","react",{"children":["$","$L3",null,{"href":"/ko/tags?tag=react","className":"tag-pill","children":"react"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+5:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/ko/posts/2022-01-16-typescript","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"typescript"}]]}],["$","$L3",null,{"href":"/ko/posts/2022-03-07-redux-saga","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["다음 글",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"redux-saga"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"v17","text":"v17","depth":1},{"id":"설치","text":"설치","depth":2},{"id":"no-more-import-react-","text":"No more ‘import React ...’","depth":2},{"id":"undefined를-return-할-경우-일관되게-에러-발생","text":"undefined를 return 할 경우 일관되게 에러 발생","depth":2},{"id":"effect-cleanup-timing","text":"Effect Cleanup Timing","depth":1},{"id":"no-event-pooling","text":"No Event Pooling","depth":2},{"id":"이벤트-위임의-변화","text":"이벤트 위임의 변화","depth":2},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"목차"}]}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
+8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+c:null

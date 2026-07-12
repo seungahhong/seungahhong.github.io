@@ -1,0 +1,283 @@
+1:"$Sreact.fragment"
+2:I[53403,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+3:I[66272,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],""]
+9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+4:Ta843,<h2 id="install">Install<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#install"><span class="icon icon-link"></span></a></h2>
+<h3 id="react-quey--tanstackreact-query로-변경">react-quey → @tanstack/react-query로 변경<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-quey--tanstackreact-query로-변경"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> uninstall</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-query</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @tanstack/react-query</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @tanstack/react-query-devtools</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v3</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { useQuery } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-query'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { ReactQueryDevtools } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-query/devtools'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { QueryClientProvider } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-query/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v4</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { useQuery } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@tanstack/react-query'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { ReactQueryDevtools } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@tanstack/react-query-devtools'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { QueryClientProvider } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@tanstack/react-query/reactjs'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h2 id="지원범위">지원범위<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#지원범위"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>
+<p>typescript</p>
+<ul>
+<li>TypeScript v4.1 or greater</li>
+</ul>
+</li>
+<li>
+<p>Supported Browsers</p>
+<ul>
+<li>v4부터 React Query는 최신 브라우저에 최적화</li>
+</ul>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Chrome </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">>=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 73</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Firefox </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">>=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 78</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Edge </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">>=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 79</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Safari </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">>=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 12.0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">iOS </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">>=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 12.0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">opera </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">>=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 53</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<ul>
+<li>Support for React 18</li>
+</ul>
+<h2 id="v3--v4-migraion-toolscodemod">v3 → v4 migraion tools: <strong><a href="https://tanstack.com/query/v4/docs/react/guides/migrating-to-react-query-4#codemod">Codemod</a></strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v3--v4-migraion-toolscodemod"><span class="icon icon-link"></span></a></h2>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># jsx/js 인 경우</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npx</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> jscodeshift</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ./path/to/src/</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> \\</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  --extensions=js,jsx</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> \\</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  --transform=./node_modules/@tanstack/react-query/codemods/v4/replace-import-specifier.js</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># tsx/ts 인 경우</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npx</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> jscodeshift</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ./path/to/src/</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> \\</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  --extensions=ts,tsx</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> \\</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  --parser=tsx</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> \\</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  --transform=./node_modules/@tanstack/react-query/codemods/v4/replace-import-specifier.js</span></span></code></pre></figure>
+<h2 id="new-features">New Features<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#new-features"><span class="icon icon-link"></span></a></h2>
+<h3 id="the-idle-state-has-been-removed">The idle state has been removed<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-idle-state-has-been-removed"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>
+<p>오프라인 지원을 개선하기 위해 새로운 fetchStatus가 도입</p>
+</li>
+<li>
+<p>동일한 상태를 더 잘 캡처하는 fetchStatus: 'idle'로 인해 idle state는 불필요해짐</p>
+<ul>
+<li>
+<p><strong><code>status</code></strong>: <code>data</code>, 쿼리 결과값에 대한 정보를 나타냄</p>
+<ul>
+<li>loading: 아직 data가 없음</li>
+<li>error: data는 없고 에러가 있음</li>
+<li>success: data가 있음</li>
+</ul>
+</li>
+<li>
+<p><strong><code>fetchStatus</code></strong>: <code>queryFn</code>에 대한 정보를 나타냄</p>
+<ul>
+<li>idle: 쿼리가 아무것도 안하고 있는 상태</li>
+<li>paused: 쿼리가 패칭을 시도했지만 일시중지된 상태. network mode와 연관</li>
+<li>fetching: 쿼리가 패칭중인 상태</li>
+</ul>
+</li>
+<li>
+<p>v3에서 background refetch 상황에서는 패칭에 대한 상태값을 isLoading으로 알 수가 없어서 isFetching을 사용</p>
+<ul>
+<li>isFetching 외에 fetchStatus.fetching 사용가능</li>
+<li>status가 query의 상태를 제대로 표현할 수 없었던 것이죠.</li>
+<li>비활성화된 쿼리(사용하지 않는 쿼리)에 대한 초기 상태값이 isLoading 변경</li>
+<li>isLoading → isInitialLoading</li>
+<li>캐시된 데이터가 없는(isLoading) 쿼리를 요청(isFetching)하면 isInitialLoading === true</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Test</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">() </span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">isSuccess</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">q1Succeed</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useQuery1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">q2Data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">isLoading</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">q2Loading</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useQuery2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    options: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      enabled: q1Succeed,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  });</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">q3Data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">isLoading</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">q3Loading</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useQuery3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    options: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      enabled: q1Succeed,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  });</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">refetch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">q4Refetch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useQuery4</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    options: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      enabled: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">false</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  });</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (q2Loading </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">||</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> q3Loading) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;>Loading...&#x3C;/>;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;></span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      {</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">q2Data.tmpData</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> / </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">q3Data.tmpData</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;/></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// useQuery1	useQuery2	useQuery3	useQuery4</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 1	idle	  idle	    idle	    idle</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 2	loading	idle	    idle	    idle</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 3	success	idle	    idle	    idle</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 4	success	loading	  loading	  idle</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 5	success	success	  success	  idle</span></span></code></pre></figure>
+<h3 id="queries-and-mutations-per-default-need-network-connection-to-run">Queries and mutations, per default, need network connection to run<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#queries-and-mutations-per-default-need-network-connection-to-run"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>query와 mutation의 명시적인 오프라인 모드를 제공하는 기능인 networkMode 옵션이 추가</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> QueryClient</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  defaultOptions: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    queries: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      networkMode: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'offlineFirst'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    mutations: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      networkMode: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'offlineFirst'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<ul>
+<li>
+<p>networkMode의 설정값은 3가지입니다.</p>
+<ul>
+<li><strong><code>online</code></strong>: 오프라인 상태에서 network connection이 있기 전까지 fetch를 하지 않고, 이때 쿼리의 상태를 <code>fetchStatus:paused</code> 로 표시합니다.</li>
+<li><strong><code>always</code></strong>: 오프라인 상태에서도 온라인처럼 fetch를 시도합니다. 오프라인 상태에서 요청을 보내는 것이니 <code>status:error</code> 상태가 될 겁니다.</li>
+<li><strong><code>offlineFirst</code></strong>: v3에서의 동작과 같습니다. queryFn 최초 호출 후 retry를 멈춥니다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="tracked-query-per-default성능개선">Tracked Query per default(성능개선)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#tracked-query-per-default성능개선"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>
+<p><a href="https://github.com/TanStack/query/discussions/1554">Tracked Query</a>: useQuery의 리턴값 중, 실질적으로 직접 접근하는 값들이 변했을때만 리렌더링이 되게끔 하는 최적화 처리</p>
+</li>
+<li>
+<p>v4부터는 이 처리가 없이도 <a href="https://github.com/TanStack/query/discussions/1554">자체적으로 query를 proxy처리하고</a>, 컴포넌트에서 어떤 값에 접근하는지 판단하여 해당 값을 렌더링 처리해줌.</p>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v3</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> User</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useQuery</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'user'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, fetchUser, {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // notifyOnChangeProps: ['data'], // data가 바뀌었을 때만 리렌더링</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    notifyOnChangeProps: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'tracked'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  });</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>Username: </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">data.username</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v4</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> User</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // notifyOnChangeProps가 없어도 data가 바뀌었을 때만 리렌더링</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useQuery</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'user'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, fetchUser);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>Username: </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">data.username</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<h2 id="change-features">Change Features<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#change-features"><span class="icon icon-link"></span></a></h2>
+<h3 id="new-api-for-usequeries">new API for useQueries<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#new-api-for-usequeries"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>useQueries에 여러개 쿼리를 넘길 때 방식의 변화</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v3</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useQueries</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  { queryKey1, queryFn1, options1 },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  { queryKey2, queryFn2, options2 },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]);</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v4</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useQueries</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  queries: [</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    { queryKey1, queryFn1, options1 },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    { queryKey2, queryFn2, options2 },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ],</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<h3 id="query-keys-and-mutation-keys-need-to-be-an-array쿼리키는-배열만-가능">Query Keys (and Mutation Keys) need to be an Array(쿼리키는 배열만 가능)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#query-keys-and-mutation-keys-need-to-be-an-array쿼리키는-배열만-가능"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>
+<p>Query key (혹은 Mutation Key)가 배열로 변경</p>
+</li>
+<li>
+<p>v3에서 key는 String | Array 둘 다 가능했다. 하지만 v4에서는 Array 형태만 가능</p>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v3</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useQuery</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'todos'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, fetchTodos);</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v4</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useQuery</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'todos'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">], fetchTodos);</span></span></code></pre></figure>
+<h3 id="onsuccess-is-no-loger-called-from-setquerydata">onSuccess is no loger called from setQueryData<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#onsuccess-is-no-loger-called-from-setquerydata"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>
+<p>onSuccess 콜백이 setQueryData를 호출했을 때 더이상 호출되지 않습니다.</p>
+</li>
+<li>
+<p>onSuccess 콜백은 실질적인 요청이 발생한 후에만 호출됩니다.</p>
+</li>
+<li>
+<p>data가 바뀐 것을 실질적으로 구독하고 싶다면 onSuccess → useEffect 사용 권고</p>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useQuery</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ queryKey, queryFn });</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">React.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useEffect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> mySideEffectHere</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(data), [data]);</span></span></code></pre></figure>
+<h3 id="undefined-is-an-illegal-cache-value-for-successful-queriesqueryfn-undefined-리턴-불가">Undefined is an illegal cache value for successful queries(queryFn undefined 리턴 불가)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#undefined-is-an-illegal-cache-value-for-successful-queriesqueryfn-undefined-리턴-불가"><span class="icon icon-link"></span></a></h3>
+<p><code>queryFn</code>이 <code>undefined</code>를 리턴할 수 없도록 타입, 런타임 단에서 막힘</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ❌</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useQuery</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'key'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">], () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  axios.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">get</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(url).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">then</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">result</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(result.data)),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
+<h3 id="the-cancel-method-on-promises-is-no-longer-supported">The cancel method on promises is no longer supported<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-cancel-method-on-promises-is-no-longer-supported"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>
+<p>query cancellation 지원을 위해서 사용되던 cancel 메서드 사용안됨</p>
+</li>
+<li>
+<p>대신 쿼리 취소를 위해서는 내부적으로 <a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController">AbortController API</a>를 사용하고 쿼리 취소를 지원하기 위해 쿼리 함수에 대한 <a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal">AbortSignal instance</a>를 제공하는 <a href="https://tanstack.com/query/v4/docs/react/guides/query-cancellation">newer API</a>(v3.30.0에 도입됨)를 사용을 권고</p>
+</li>
+</ul>
+<h3 id="logging-in-production">Logging in production<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#logging-in-production"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>production 모드에서는 로깅 처리 비활성(개발 모드에서는 오류 표시)</li>
+</ul>
+<h3 id="setlogger-is-removed">setLogger is removed<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#setlogger-is-removed"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>전역으로 세팅했던 로그에 대한 활성화 사용법 변경</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v3</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { QueryClient, setLogger } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-query'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">setLogger</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(customLogger);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> queryClient</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> QueryClient</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v4</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { QueryClient } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@tanstack/react-query'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> queryClient</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> QueryClient</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ logger: customLogger });</span></span></code></pre></figure>
+<h2 id="react-router-dom-v6-연동">react-router-dom v6 연동<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-router-dom-v6-연동"><span class="icon icon-link"></span></a></h2>
+<p><a href="https://tanstack.com/query/v4/docs/react/examples/react/react-router">https://tanstack.com/query/v4/docs/react/examples/react/react-router</a></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> queryClient</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> QueryClient</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  defaultOptions: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    queries: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      staleTime: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1000</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> *</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 10</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> router</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createBrowserRouter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    path: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    element: &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Root</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    errorElement: &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">ErrorPage</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    loader: </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">rootLoader</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(queryClient),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    action: </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">rootAction</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(queryClient),</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]);</span></span></code></pre></figure>
+<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li><a href="https://tanstack.com/query/v4/docs/react/guides/migrating-to-react-query-4">https://tanstack.com/query/v4/docs/react/guides/migrating-to-react-query-4</a></li>
+<li><a href="https://nuhends.tistory.com/134">https://nuhends.tistory.com/134</a></li>
+<li><a href="https://maxkim-j.github.io/posts/tanstack-query-v4-preview/">https://maxkim-j.github.io/posts/tanstack-query-v4-preview/</a></li>
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"react-query(v4)"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"react-query(v4)"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2023-06-30","className":"meta-mono","children":"2023.06.30"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[4,"분"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","상태관리",{"children":["$","$L3",null,{"href":"/ko/tags?tag=%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC","className":"tag-pill","children":"상태관리"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+5:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/ko/posts/2023-04-02-playwright","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Playwright"}]]}],["$","$L3",null,{"href":"/ko/posts/2023-07-22-zustand","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["다음 글",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"zustand"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"install","text":"Install","depth":1},{"id":"react-quey--tanstackreact-query로-변경","text":"react-quey → @tanstack/react-query로 변경","depth":2},{"id":"지원범위","text":"지원범위","depth":1},{"id":"v3--v4-migraion-toolscodemod","text":"v3 → v4 migraion tools: Codemod","depth":1},{"id":"new-features","text":"New Features","depth":1},{"id":"the-idle-state-has-been-removed","text":"The idle state has been removed","depth":2},{"id":"queries-and-mutations-per-default-need-network-connection-to-run","text":"Queries and mutations, per default, need network connection to run","depth":2},{"id":"tracked-query-per-default성능개선","text":"Tracked Query per default(성능개선)","depth":2},{"id":"change-features","text":"Change Features","depth":1},{"id":"new-api-for-usequeries","text":"new API for useQueries","depth":2},{"id":"query-keys-and-mutation-keys-need-to-be-an-array쿼리키는-배열만-가능","text":"Query Keys (and Mutation Keys) need to be an Array(쿼리키는 배열만 가능)","depth":2},{"id":"onsuccess-is-no-loger-called-from-setquerydata","text":"onSuccess is no loger called from setQueryData","depth":2},{"id":"undefined-is-an-illegal-cache-value-for-successful-queriesqueryfn-undefined-리턴-불가","text":"Undefined is an illegal cache value for successful queries(queryFn undefined 리턴 불가)","depth":2},{"id":"the-cancel-method-on-promises-is-no-longer-supported","text":"The cancel method on promises is no longer supported","depth":2},{"id":"logging-in-production","text":"Logging in production","depth":2},{"id":"setlogger-is-removed","text":"setLogger is removed","depth":2},{"id":"react-router-dom-v6-연동","text":"react-router-dom v6 연동","depth":1},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"목차"}]}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
+8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+c:null

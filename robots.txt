@@ -1,4 +1,5 @@
-User-agent: *
+User-Agent: *
 Allow: /
-Sitemap: https://seungahhong.github.io/sitemap/sitemap-index.xml
+
 Host: https://seungahhong.github.io
+Sitemap: https://seungahhong.github.io/sitemap.xml

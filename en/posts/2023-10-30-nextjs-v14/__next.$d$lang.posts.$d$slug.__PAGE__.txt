@@ -1,0 +1,161 @@
+1:"$Sreact.fragment"
+2:I[53403,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+3:I[66272,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],""]
+9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+4:T62a4,<h3 id="설치">설치<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#설치"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> i</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> next@latest</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># or</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> upgrade</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> next</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --latest</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># or</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">pnpm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> up</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> next</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --latest</span></span></code></pre></figure>
+<h3 id="요약">요약<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#요약"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>
+<p>지원하는 브라우저에서 Internet Explorer를 삭제하고, <a href="https://nextjs.org/docs/basic-features/supported-browsers-features">최신 브라우저</a>를 지원하는걸로 변경되었습니다.</p>
+<ul>
+<li>Chrome 64+</li>
+<li>Edge 79+</li>
+<li>Firefox 67+</li>
+<li>Opera 51+</li>
+<li>Safari 12+</li>
+</ul>
+</li>
+<li>
+<p>최소 Node 버전이 12.22.0 → 18.17.x 으로 변경되었습니다.</p>
+</li>
+<li>
+<p><a href="https://nextjs.org/blog/next-14#nextjs-compiler-turbocharged"><strong>Turbopack</strong></a>
+App &#x26; Pages Router에 대한 5,000개의 테스트 통과</p>
+<ul>
+<li><strong>53% 더 빠른</strong>
+로컬 서버 시작</li>
+<li>빠른 새로 고침으로 <strong>94% 더 빠른 코드 업데이트</strong></li>
+</ul>
+</li>
+<li>
+<p><a href="https://nextjs.org/blog/next-14#forms-and-mutations"><strong>Forms and Mutations</strong></a></p>
+<ul>
+<li>프런트엔드 코드와 함께 백엔드 엔드포인트를 빠르게 구축하는 방법인 API 경로가 도입(NextJS 9 도입된 기능)</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// app/api/submit.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> type</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { NextApiRequest, NextApiResponse } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'next'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> async</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> handler</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">(</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  req</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> NextApiRequest,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  res</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> NextApiResponse,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">) </span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> data</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> req.body;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> id</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createItem</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(data);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  res.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">status</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">200</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">json</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ id });</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// client</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { FormEvent } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Page</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">() </span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  async</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> onSubmit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">event</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> FormEvent</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">HTMLFormElement</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>) {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    event.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">preventDefault</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> formData</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> FormData</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(event.currentTarget);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> response</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> fetch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/api/submit'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      method: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'POST'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      body: formData,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    });</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // Handle response if necessary</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> data</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> response.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">json</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // ...</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">form</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> onSubmit</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">onSubmit</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> type</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"text"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"name"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">button</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> type</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"submit"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>Submit&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">form</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+</li>
+<li>
+<p><a href="https://nextjs.org/blog/next-14#forms-and-mutations"><strong>Server Actions (Stable)</strong></a></p>
+<ul>
+<li>리액트의 Canary 버전에 서버 액션을 포함한 최신 React로 업그레이드되었습니다.</li>
+<li>데이터 변경, 페이지 다시 렌더링 또는 리디렉션 등의 성능에 저하가 되는 액션에 대해서 클라이언트 사용자에게 해당 상태에 맞는 화면을 보여줄 수 있습니다.</li>
+<li><a href="https://nextjs.org/blog/next-14#caching-revalidating-redirecting-and-more"><strong>Caching, Revalidating, Redirecting, and more</strong></a>
+<ul>
+<li>서버 액션 작업이 app 라우트와 통합됨에 따라서 아래 API 사용이 가능합니다.</li>
+<li>Revalidate cached data with <code>revalidatePath()</code> or <code>revalidateTag()</code></li>
+<li>Redirect to different routes through <code>redirect()</code></li>
+<li>Set and read cookies through <code>cookies()</code></li>
+<li>Handle optimistic UI updates with <code>useOptimistic()</code></li>
+<li>Catch and display errors from the server with <code>useFormState()</code></li>
+<li>Display loading states on the client with <code>useFormStatus()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Metadata Improvements
+유저 경험에 영향을 주는 viewport, colorScheme, themeColor 정보는 기존 Metadata 타입과 분리되어 별도로 정의해야 합니다.
+viewport 데이터를 페이지 콘텐츠와 함께 전송한다면, 테마 색상을 변경하거나 뷰포트 변경으로 레이아웃이 이동하거나 깜박임을 방지할 수 있습니다.</p>
+<ul>
+<li><strong>viewport</strong> : 뷰포트의 초기 확대/축소 및 기타 속성을 설정합니다.</li>
+<li><strong>colorScheme</strong> : 뷰포트의 지원 모드(밝음/어두움)를 설정합니다.</li>
+<li><strong>themeColor</strong> : 뷰포트 주변의 크롬이 렌더링할 색상을 설정합니다.
+기존 meta에 정의되었던 속성들은 <a href="https://nextjs.org/docs/app/api-reference/functions/generate-viewport"><code>viewport</code> and <code>generateViewport</code></a> 를 사용하여서 추가가 가능합니다. (정적 필드 사용: viewport, 런타임 동적 필드 사용: generateViewport)</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v13</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> metadata</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Metadata</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  viewport: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    width: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'device-width'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    initialScale: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    maximumScale: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v14</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// The viewport object</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { Viewport } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'next'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// viewport(정적 뷰포트 생성)</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> viewport</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Viewport</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  width: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'device-width'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  initialScale: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  maximumScale: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // Also supported by less commonly used</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // interactiveWidget: 'resizes-visual',</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Page</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">() </span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// generateViewport(동적 뷰포트 생성)</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Props</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  params</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">id</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> };</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  searchParams</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { [</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">key</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[] </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">|</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> undefined</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> };</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> generateViewport</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">params</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">searchParams</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Props</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Viewport</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    themeColor: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'black'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  };</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Page</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">({ params, searchParams }</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Props) </span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// output</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">meta</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"viewport"</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"width=device-width, initial-scale=1, maximum-scale=1"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">/>;</span></span></code></pre></figure>
+</li>
+</ul>
+<h3 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li><a href="https://nextjs.org/blog/next-14">Next.js 14</a></li>
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Nextjs(v14)"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Nextjs(v14)"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2024-10-30","className":"meta-mono","children":"10/30/2024"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[2,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","nextjs",{"children":["$","$L3",null,{"href":"/en/tags?tag=nextjs","className":"tag-pill","children":"nextjs"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2024-05-12-development-improvements","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"개발 생산성 & 빌드 성능 개선"}]]}],["$","$L3",null,{"href":"/en/posts/2024-11-16-vite","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"CRA To Vite Migration"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"설치","text":"설치","depth":2},{"id":"요약","text":"요약","depth":2},{"id":"참고페이지","text":"참고페이지","depth":2}],"title":"Contents"}]}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
+8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+c:null

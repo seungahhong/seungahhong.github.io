@@ -1,0 +1,276 @@
+1:"$Sreact.fragment"
+2:I[53403,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+3:I[66272,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],""]
+9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+4:Tac19,<h2 id="설치">설치<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#설치"><span class="icon icon-link"></span></a></h2>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> i</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> next@latest</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react@latest</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-dom@latest</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> eslint-config-next@latest</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  # or</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> upgrade</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> next</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-dom</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> eslint-config-next</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --latest</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  # or</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  pnpm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> up</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> next</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-dom</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> eslint-config-next</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --latest</span></span></code></pre></figure>
+<h2 id="요약">요약<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#요약"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>지원하는 브라우저에서 Internet Explorer를 삭제하고, <a href="https://nextjs.org/docs/basic-features/supported-browsers-features">최신 브라우저</a>를 지원하는걸로 변경되었습니다.
+<ul>
+<li>Chrome 64+</li>
+<li>Edge 79+</li>
+<li>Firefox 67+</li>
+<li>Opera 51+</li>
+<li>Safari 12+</li>
+</ul>
+</li>
+<li>최소 Node 버전이 12.22.0 → 14.0.0 으로 변경되었습니다.</li>
+<li>최소 React 버전도 17.0.2 → 18.2.0 으로 변경되었습니다.</li>
+<li>swcMinify 기본 환경설정이 false → true로 변경되었습니다.</li>
+<li>NextJS 12에서 소개된 신규 이미지 next/future/image → next/image, next/image → next/legacy/image로 변경되었습니다.
+<ul>
+<li>자동변환을 위해서 <a href="https://nextjs.org/docs/advanced-features/codemods#next-image-to-legacy-image">codemod</a>를 지원합니다.(next-image-to-legacy-image)</li>
+</ul>
+</li>
+<li>기존에 Next/Link 사용 시 하위에 <a> 추가했어야했지만, 13버전 부터는 a link가 필요없습니다.</a></li><a>
+</a></ul><a>
+<h2 id="신규-라우팅beta">신규 라우팅(beta)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#신규-라우팅beta"><span class="icon icon-link"></span></a></h2>
+<h3 id="page-디렉토리-라우팅-시스템--app-디렉토리-기반-라우팅-시스템으로-전환">page 디렉토리 라우팅 시스템 → app 디렉토리 기반 라우팅 시스템으로 전환<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#page-디렉토리-라우팅-시스템--app-디렉토리-기반-라우팅-시스템으로-전환"><span class="icon icon-link"></span></a></h3>
+<p>변경 전</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">pages</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> blog</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> dashboard</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┗</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [id].tsx</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> index.tsx</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> _app.tsx</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> index.tsx</span></span></code></pre></figure>
+<p>변경 후
+<img src="/blog-assets/2023/08/assets/27/Untitled.png" alt="Untitled"></p>
+<h3 id="라우팅-파일만-관리--라우팅-파일-외에-해당-페이지에서-구성하는-파일도-같이-두는-방식으로-변경">라우팅 파일만 관리 → 라우팅 파일 외에 해당 페이지에서 구성하는 파일도 같이 두는 방식으로 변경<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#라우팅-파일만-관리--라우팅-파일-외에-해당-페이지에서-구성하는-파일도-같이-두는-방식으로-변경"><span class="icon icon-link"></span></a></h3>
+<p>변경 전</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">components</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Card.jsx</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">pages</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> posts</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> datas</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> index.js</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> _app.js</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> index.js</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">styles</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Home.module.css</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> globals.css</span></span></code></pre></figure>
+<p>변경 후
+<img src="/blog-assets/2023/08/assets/27/Untitled_1.png" alt="Untitled"></p>
+<h3 id="route-segments">route segments<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#route-segments"><span class="icon icon-link"></span></a></h3>
+<p>각 라우팅은 폴더 패스의 단위로 URL 패스가 정해진다.
+<img src="/blog-assets/2023/08/assets/27/Untitled_2.png" alt="Untitled"></p>
+<h3 id="special-files">special files<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#special-files"><span class="icon icon-link"></span></a></h3>
+<p>라우팅에 사용되는 특별한 파일들을 사용할 수 있습니다.
+<img src="/blog-assets/2023/08/assets/27/Untitled_3.png" alt="Untitled"></p>
+<ul>
+<li>
+<p>pages.js</p>
+<ul>
+<li>라우팅을 통해서 페이지에 접근 시 보여주는 파일</li>
+<li>기존 index.js와 동일한 기능을 수행한다.</li>
+<li>page/index.js → app/index.js</li>
+</ul>
+</li>
+<li>
+<p>layout.js</p>
+<ul>
+<li>여러 페이지에서 여러곳에 적용하기 위해서 사용되는 레이아웃 파일</li>
+<li>기존에도 _app.tsx에서 루트 공통 스타일 정도만 적용이 가능하지만, layout.js가 추가됨에 따라서 중첩으로 부모 스타일 상속이 가능하다.</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">//</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 변경</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 전</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">//</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> pages/_app.tsx</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> MyApp</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ Component, pageProps }: AppPropsWithLayout) {</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  //</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Use</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> the</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> layout</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> defined</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> at</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> the</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> page</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> level,</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> if</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> available</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  const</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> getLayout</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Component.getLayout</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ??</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ((page) =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page);</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    &#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">section</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">     &#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Component</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> {...pageProps}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    &#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">/section</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> default MyApp;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">//</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 변경</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 후</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">//</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> pages/layout.tsx</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> MyAppLayout</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ children }: React.ReactNode) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    &#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">section</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      {</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">children}</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    &#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">/section</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span></code></pre></figure>
+<p><img src="/blog-assets/2023/08/assets/27/Untitled_4.png" alt="Untitled"></p>
+</li>
+<li>
+<p>loading.js</p>
+<ul>
+<li>앱에 특정 부분에 사용되는 로딩 UI를 생성하는데 사용되는 파일(React Suspense Boundary)</li>
+</ul>
+</li>
+<li>
+<p>error.js</p>
+<ul>
+<li>하위 트리에서 오류가 발생 시 호출되는 에러 컴포넌트(React Suspense Boundary)</li>
+</ul>
+</li>
+<li>
+<p>template.js</p>
+<ul>
+<li>특정 동작이 필요한 경우에 사용되는 파일</li>
+<li>CSS 또는 애니메이션 라이브러리를 사용하여 애니메이션을 시작/종료</li>
+<li>useEffect(예: 페이지 보기 기록) 및 useState(예: 페이지별 피드백 양식)에 의존하는 기능</li>
+<li>기본 프레임워크 동작을 변경합니다. 예를 들어 레이아웃 내부의 서스펜스 경계는 페이지를 전환할 때가 아니라 레이아웃이 처음 로드될 때만 폴백을 표시합니다. 템플릿의 경우 각 탐색에 폴백이 표시됩니다.</li>
+</ul>
+</li>
+<li>
+<p>head.js</p>
+<ul>
+<li>
+ 태그의 컨텐츠를 정의할 경우 사용된다.
+</li>
+</ul>
+</li>
+<li>
+<p>not-found.js</p>
+<ul>
+<li>페이지를 찾지 못할 경우 호출됨</li>
+</ul>
+</li>
+</ul>
+<h3 id="server-components">server components<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#server-components"><span class="icon icon-link"></span></a></h3>
+<p>React 18에서 나온 서버 컴포넌트 아키텍쳐 지원
+서버 구성 요소를 사용하여 클라이언트에 전송되는 자바스크립트 양을 줄여 초기 로딩 성능 개선
+<img src="/blog-assets/2023/08/assets/27/Untitled_5.png" alt="Untitled"></p>
+<h3 id="streaming">streaming<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#streaming"><span class="icon icon-link"></span></a></h3>
+<p>서버 구성 요소 및 중첩된 레이아웃 사용하면 부분적 데이터 로드 상태를 제어가 가능합니다.
+해당 방식을 통해서 사용자는 초기 로딩 시 전체페이지가 로드될 때까지 기다릴 필요가 없어짐.
+<img src="/blog-assets/2023/08/assets/27/Untitled_6.png" alt="Untitled">
+data fetch에 대한 사용법 변경</p>
+<ul>
+<li>getStaticProps → fetch(URL, { cache: 'force-cache' });</li>
+<li>getServerSideProps → fetch(URL, { cache: 'no-store' });</li>
+<li>getStaticProps: revalidate → fetch(URL, { next: { revalidate: 10 } });</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// nextjs 13 이전</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> getServerSideProps</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> GetStaticProps</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> async</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">params</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> res</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> fetch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'https://.../posts/'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> data</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> res.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">json</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> data;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// This is an async Server Component</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> async</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Page</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">(data) </span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">main</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">/* ... */</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">main</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// nextjs13</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// app/page.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">async</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> getData</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> res</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> fetch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'https://api.example.com/...'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // The return value is *not* serialized</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // You can return Date, Map, Set, etc.</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> res.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">json</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// This is an async Server Component</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> async</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Page</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">() </span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> data</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> getData</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">main</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">/* ... */</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">main</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<h2 id="turbopackalpha">Turbopack(alpha)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#turbopackalpha"><span class="icon icon-link"></span></a></h2>
+<p>NextJs 13에서 webpack의 후속 제품인 Rust 기반에 Turbopack 패키지 소개</p>
+<ul>
+<li>Webpack 보다 <strong>700x faster</strong> 향상</li>
+<li>Vite 보다 <strong>10x faster</strong> 향상</li>
+<li>초기 실행 시간이 Webpack 보다 <strong>4x faster</strong>향상style
+<img src="/blog-assets/2023/08/assets/27/Untitled_7.png" alt="Untitled"></li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">//</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 설치</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">next</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> dev</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --turbo</span></span></code></pre></figure>
+<h2 id="new-nextimage">New next/image<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#new-nextimage"><span class="icon icon-link"></span></a></h2>
+<p>이미지 컴포넌트 사용 시 자동으로 최적화 진행(layout shift 방지를 위해서 width, height 자동 설정)
+웹접근성 향상을 위해서 alt.속성이 필수로 속성으로 추가</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// nextjs 12 이전</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Image </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'next/image'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> avatar </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> './lee.png'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Home</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // "alt" is now required for improved accessibility</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // optional: image files can be colocated inside the app/ directory</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Image</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> src</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">avatar</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> placeholder</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"blur"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> width</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">50</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> height</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">50</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// nextjs 13</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Image </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'next/image'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> avatar </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> './lee.png'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Home</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // "alt" is now required for improved accessibility</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // optional: image files can be colocated inside the app/ directory</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Image</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> alt</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"leeerob"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> src</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">avatar</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> placeholder</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"blur"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<h2 id="new-nextfont-beta">New @next/font (beta)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#new-nextfont-beta"><span class="icon icon-link"></span></a></h2>
+<p>글꼴 파일에 대한 자동 자체 호스팅 지원 - 성능과 개인정보 보호 지원을 목적
+Google 글꼴 폰트 내장, 로컬 폰트 호스팅 지원</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// next13 이전</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Head</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">link</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    href</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&#x26;display=swap"</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    rel</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"stylesheet"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  /></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Head</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// next13</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// 내장 구글 글꼴 폰트</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { Inter } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@next/font/google'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> inter</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Inter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">html</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> className</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">inter.className</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">//// 로컬 폰트</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">import localFont from '@next/font/local';</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">const myFont = localFont(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> src: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./my-font.woff2'</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> }</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">html</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> className</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">myFont.className</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""> </span></code></pre></figure>
+<p>디바이스별로 화면의 크기에 따라서 폰트 사이즈가 변하는 이슈 해결을 위한 css에 size-adjust 속성을 사용하여서 모든 디바이스에서 동일한 폰트 사이즈를 제공</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="scss" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="scss" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">html</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">body</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  -webkit-text-size-adjust</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">none</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">/* 크롬, 사파리, 오페라 신버전 */</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  -ms-text-size-adjust</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">none</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">/* IE */</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  -moz-text-size-adjust</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">none</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">/* 파이어폭스 */</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  -o-text-size-adjust</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">none</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">/* 오페라 구버전 */</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<h2 id="improved-nextlink">Improved next/link<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#improved-nextlink"><span class="icon icon-link"></span></a></h2>
+<p>기존에 next/link 사용 시 a tag가 꼭 필요했었지만, 13 버전에서는 a tag를 추가하지 않아도 됩니다.
+12.2 버전에서 실험적인 옵션으로 추가되었었고, 현재 13버전에는 디폴트로 적용됩니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Link </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'next/link'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Next.js 12: `&#x3C;a>` has to be nested otherwise it's excluded</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Link</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> href</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/about"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">a</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>About&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">a</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Link</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Next.js 13: `&#x3C;Link>` always renders `&#x3C;a>`</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Link</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> href</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/about"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  About</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Link</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
+<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+</a><ul><a>
+</a><li><a></a><a href="https://beta.nextjs.org/docs/routing/fundamentals">https://beta.nextjs.org/docs/routing/fundamentals</a></li>
+<li><a href="https://nextjs.org/docs/upgrading">https://nextjs.org/docs/upgrading</a></li>
+<li><a href="https://beta.nextjs.org/docs/routing/fundamentals#">https://beta.nextjs.org/docs/routing/fundamentals#</a></li>
+<li><a href="https://nextjs.org/blog/next-13">https://nextjs.org/blog/next-13</a></li>
+<li><a href="https://itchallenger.tistory.com/778">https://itchallenger.tistory.com/778</a></li>
+<li><a href="https://blog.logrocket.com/next-js-13-new-app-directory/#routing-app-directory">https://blog.logrocket.com/next-js-13-new-app-directory/#routing-app-directory</a></li>
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Nextjs(v13)"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Nextjs(v13)"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2023-08-27","className":"meta-mono","children":"2023.08.27"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[4,"분"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","nextjs",{"children":["$","$L3",null,{"href":"/ko/tags?tag=nextjs","className":"tag-pill","children":"nextjs"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+5:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/ko/posts/2023-08-26-react-hook-form-v7","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"react-hook-form v7"}]]}],["$","$L3",null,{"href":"/ko/posts/2023-09-10-react-state","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["다음 글",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"리액트 상태관리 정리"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"설치","text":"설치","depth":1},{"id":"요약","text":"요약","depth":1},{"id":"신규-라우팅beta","text":"신규 라우팅(beta)","depth":1},{"id":"page-디렉토리-라우팅-시스템--app-디렉토리-기반-라우팅-시스템으로-전환","text":"page 디렉토리 라우팅 시스템 → app 디렉토리 기반 라우팅 시스템으로 전환","depth":2},{"id":"라우팅-파일만-관리--라우팅-파일-외에-해당-페이지에서-구성하는-파일도-같이-두는-방식으로-변경","text":"라우팅 파일만 관리 → 라우팅 파일 외에 해당 페이지에서 구성하는 파일도 같이 두는 방식으로 변경","depth":2},{"id":"route-segments","text":"route segments","depth":2},{"id":"special-files","text":"special files","depth":2},{"id":"server-components","text":"server components","depth":2},{"id":"streaming","text":"streaming","depth":2},{"id":"turbopackalpha","text":"Turbopack(alpha)","depth":1},{"id":"new-nextimage","text":"New next/image","depth":1},{"id":"new-nextfont-beta","text":"New @next/font (beta)","depth":1},{"id":"improved-nextlink","text":"Improved next/link","depth":1},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"목차"}]}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
+8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+c:null

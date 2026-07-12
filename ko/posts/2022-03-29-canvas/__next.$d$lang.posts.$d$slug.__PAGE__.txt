@@ -1,0 +1,406 @@
+1:"$Sreact.fragment"
+2:I[53403,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+3:I[66272,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],""]
+9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+4:Te44e,<h2 id="canvas-api">Canvas API<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#canvas-api"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Canvas API는 <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript">JavaScript</a>와 <a href="https://developer.mozilla.org/ko/docs/Web/HTML">HTML</a> <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/canvas">CANVAS</a> 엘리먼트를 통해 그래픽을 그리기위한 수단을 제공합니다. 무엇보다도 애니메이션, 게임 그래픽, 데이터 시각화, 사진 조작 및 실시간 비디오 처리를 위해 사용됩니다.</li>
+</ul>
+<h3 id="샘플코드">샘플코드<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#샘플코드"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li><a href="https://github.com/seungahhong/canvas-paint">https://github.com/seungahhong/canvas-paint</a></li>
+</ul>
+<h3 id="기본예시">기본예시<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#기본예시"><span class="icon icon-link"></span></a></h3>
+<h3 id="자바스크립트">자바스크립트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#자바스크립트"><span class="icon icon-link"></span></a></h3>
+<p>HTML</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">canvas</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> id</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"canvas"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">canvas</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
+<p>JavaScript</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> canvas</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> document.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getElementById</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'canvas'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> ctx</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> canvas.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getContext</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'2d'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.fillStyle </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'green'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">fillRect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">10</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">10</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">150</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">100</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
+<h3 id="리액트">리액트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#리액트"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> canvasRef</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useRef</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">HTMLCanvasElement</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">null</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">canvas</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> ref</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">canvasRef</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> ctx</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> canvasRef.current.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getContext</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'2d'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.fillStyle </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'green'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">fillRect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">10</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">10</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">150</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">100</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
+<h2 id="라이브러리">라이브러리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#라이브러리"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li><a href="https://www.createjs.com/easeljs">EaselJS</a>는 게임, 생성 예술 및 기타 고도의 그래픽 경험을 쉽게 생성할 수 있게 해주는 오픈소스 캔버스 라이브러리입니다.</li>
+<li><a href="http://fabricjs.com/">Fabric.js</a>는 SVG 파싱 기능을 갖춘 오픈소스 캔버스 라이브러리입니다.</li>
+<li><a href="https://www.patrick-wied.at/static/heatmapjs/">heatmap.js</a>는 캔버스 기반 데이터 열지도를 생성하기위한 오픈소스 라이브러리입니다.</li>
+<li><a href="https://thejit.org/">JavaScript InfoVis Toolkit</a>은 인터렉티브한 데이터 시각화를 생성합니다.</li>
+<li><a href="https://konvajs.github.io/">Konva.js</a>는 데스크탑 및 모바일 애플리케이션을 위한 2D 캔버스 라이브러리입니다.</li>
+<li><a href="https://p5js.org/">p5.js</a>는 예술가, 디자이너, 교육자 및 입문자를 위한 캔버스 그리기 기능의 모든 세트를 포함하고 있습니다.</li>
+<li><a href="http://paperjs.org/">Paper.js</a>는 HTML5 Canvas 위에서 실행되는 오픈소스 벡터 그래픽 스크립팅 프레임워크입니다.</li>
+<li><a href="https://phaser.io/">Phaser</a>는 Canvas 및 WebGL 기반의 브라우저 게임을 위한 빠르고, 자유롭고, 재미있는 오픈소스 프레임워크입니다.</li>
+<li><a href="https://processingjs.org/">Processing.js</a>는 Processing 시각화 언어의 포트입니다.</li>
+<li><a href="https://ptsjs.org/">Pts.js</a>는 canvas 및 SVG를 사용한 창의적인 코딩 및 시각화를 위한 라이브러리입니다.</li>
+<li><a href="https://github.com/jeremyckahn/rekapi">Rekapi</a>는 Canvas를 위한 애니메이션 키 프레임 API입니다.</li>
+<li><a href="https://scrawl.rikweb.org.uk/">Scrawl-canvas</a>는 2D 캔버스 엘리먼트를 생성하고 조작하기위한 오픈소스 JavaScript 라이브러리입니다.</li>
+<li><a href="https://zimjs.com/">ZIM</a> 프레임워크는 canvas에서의 창의적인 코딩을 위한 편의성, 컴포넌트 및 컨트롤을 제공하는 프레임워크입니다. 접근성 및 다채로운 튜토리얼을 포함합니다.</li>
+</ul>
+<h2 id="기본-사용">기본 사용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#기본-사용"><span class="icon icon-link"></span></a></h2>
+<p>canvas 요소</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// HTML</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">canvas</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> id</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"tutorial"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> width</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"300"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> height</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"150"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">canvas</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// width, height 지정하지 않을 경우 width: 300px, height: 150px로 설정됨</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Javascript</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> canvas</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> document.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getElementById</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'canvas'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">canvas.width </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 300</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">canvas.height </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 150</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>대체 콘텐츠</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">canvas</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> id</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"stockGraph"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> width</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"150"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> height</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"150"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  current stock price: $3.15 +0.15</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">canvas</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">canvas</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> id</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"clock"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> width</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"150"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> height</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"150"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">img</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> src</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"assets/clock.png"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> width</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"150"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> height</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"150"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> alt</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">""</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">/></span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">canvas</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
+<p>렌더링 컨텍스트</p>
+<ul>
+<li>canvas 엘리먼트는 드로잉 영역만 생성 된 것이고, 컨텐츠를 출력할 경우 렌더링 컨텍스트를 생성 후 컨텍스트를 통해서 드로잉을 해야합니다.</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> canvas </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> document.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getElementById</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'tutorial'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ctx </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> canvas.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getContext</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'2d'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
+<p>지원여부 검사</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> canvas </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> document.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getElementById</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'tutorial'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (canvas.getContext) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ctx </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> canvas.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getContext</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'2d'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // drawing code here</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">else</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // canvas-unsupported code here</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<h2 id="도형-그리기">도형 그리기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#도형-그리기"><span class="icon icon-link"></span></a></h2>
+<h3 id="사각형-그리기">사각형 그리기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#사각형-그리기"><span class="icon icon-link"></span></a></h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillRect">fillRect(x, y, width, height) (en-US)</a></p>
+<p>색칠된 직사각형을 그립니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/strokeRect">strokeRect(x, y, width, height) (en-US)</a></p>
+<p>직사각형 윤곽선을 그립니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/clearRect">clearRect(x, y, width, height) (en-US)</a></p>
+<p>특정 부분을 지우는 직사각형이며, 이 지워진 부분은 완전히 투명해집니다.</p>
+<pre><code>const cx = x;
+const cy = y;
+const cw = w;
+const ch = h;
+
+ctx.save();
+ctx.clearRect(cx, cy, cw, ch); // 캔버스 지우기
+
+if (props &#x26;&#x26; props.outline === true) {
+  ctx.strokeStyle = props.color; // 외곽선 색상
+  ctx.strokeRect(cx, cy, cw, ch); // 사각형 그리기(외곽선)
+} else {
+  ctx.fillStyle = props.color; // 채우기 색상
+  ctx.fillRect(cx, cy, cw, ch); // 사각형 그리기(채우기)
+}
+
+ctx.restore();
+
+</code></pre>
+<p>fillRect, strokeRect, color 예제</p>
+<p><img src="/blog-assets/2022/03/assets/29/Untitled.png" alt="Untitled"></p>
+<h3 id="경로-그리기">경로 그리기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#경로-그리기"><span class="icon icon-link"></span></a></h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/beginPath">beginPath() (en-US)</a></p>
+<p>새로운 경로를 만듭니다. 경로가 생성됬다면, 이후 그리기 명령들은 경로를 구성하고 만드는데 사용하게 됩니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/closePath">closePath() (en-US)</a></p>
+<p>현재 하위 경로의 시작 부분과 연결된 직선을 추가합니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/stroke">stroke() (en-US)</a></p>
+<p>윤곽선을 이용하여 도형을 그립니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fill">fill() (en-US)</a></p>
+<p>경로의 내부를 채워서 내부가 채워진 도형을 그립니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/moveTo">moveTo() (en-US)</a></p>
+<p>새로운 좌표인 x,y 좌표로 이동시킵니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineTo">lineTo() (en-US)</a></p>
+<p>이동 시킨 좌표값을 바탕으로 라인을 추가시킵니다.</p>
+<p>Path 메소드 (<a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths">Path methods</a>)</p>
+<p>물체를 구성할 때 필요한 여러 경로를 설정하는데 사용하는 함수입니다.</p>
+<p>삼각형 그리기</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cx1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x1;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cy1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> y1;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cx2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x2;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cy2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> y2;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cx3</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x3;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cy3</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> y3;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">save</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">beginPath</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">moveTo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(cx1, cy1); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// cx1, cy2 포인트 좌표값으로 이동</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">lineTo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(cx2, cy2); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// cx2, cy2 포인트 좌표값으로 라인추가</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">lineTo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(cx3, cy3); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// cx3, cx3 포인트 좌표값으로 라인추가</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">lineTo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(cx1, cy1); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// cx1, cy1 포인트 좌표값으로 라인추가</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (props </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x26;&#x26;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> props.outline </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ctx.strokeStyle </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> props.color; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 외곽선 컬러</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">stroke</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 외곽선 그리기</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">else</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ctx.fillStyle </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> props.color; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 채우기 컬러</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">fill</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 채우기 그리기</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">closePath</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">restore</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
+<p><img src="/blog-assets/2022/03/assets/29/Untitled1.png" alt="Untitled"></p>
+<p><img src="/blog-assets/2022/03/assets/29/Untitled2.png" alt="Untitled"></p>
+<p>선 그리기</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineWidth">lineWidth = value (en-US)</a></p>
+<p>이후 그려질 선의 두께를 설정합니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineCap">lineCap = type (en-US)</a></p>
+<p>선의 끝 모양을 설정합니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineJoin">lineJoin = type (en-US)</a></p>
+<p>선들이 만나는 "모서리"의 모양을 설정합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cx1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x1 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> scale;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cy1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> y1 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> scale;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cx2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x2 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> scale;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cy2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> y2 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> scale;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">save</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">beginPath</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">moveTo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(cx1, cy1);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.lineWidth </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 6</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.lineCap </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'round'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.lineJoin </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'round'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.strokeStyle </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> props.color;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">lineTo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(cx2, cy2);</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (props.line.join </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'round'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">lineTo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(cx2, cy1);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">lineTo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(cx1, cy2);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">stroke</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">closePath</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">restore</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
+<p><img src="/blog-assets/2022/03/assets/29/Untitled3.png" alt="Untitled"></p>
+<h3 id="원-그리기">원 그리기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#원-그리기"><span class="icon icon-link"></span></a></h3>
+<p>호 그리기</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc">arc(x, y, radius, startAngle, endAngle, anticlockwise) (en-US)</a></p>
+<p><em>(x, y)</em> 위치에 원점을 두면서, 반지름 r을 가지고,  <em>startAngle</em> 에서 시작하여 <em>endAngle</em> 에서 끝나며 주어진 <em>anticlockwise</em> 방향으로 향하는 (기본값은 시계방향 회전) 호를 그리게 됩니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arcTo">arcTo(x1, y1, x2, y2, radius) (en-US)</a></p>
+<p>주어진 제어점들과 반지름으로 호를 그리고,  이전 점과 직선으로 연결합니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/ellipse">ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle [, counterclockwise]) (en-US)</a></p>
+<p><em>(x, y)</em> 위치에 원점을 두면서, 반지름 x/y r을 가지고,  <em>startAngle</em> 에서 시작하여 <em>endAngle</em> 에서 끝나는 방향으로 원을 그리게 됩니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cx1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x1;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cy1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> y1;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cx2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x2;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cy2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> y2;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">save</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">beginPath</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">arc</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  cx1 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (cx2 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> cx1) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// center.x</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  cy1 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (cy2 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> cy1) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// center.y</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  Math.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">abs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(cy2 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> cy1) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// radius</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// starting angle</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  Math.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">PI</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> *</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ending angle</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 시계방향</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ctx.ellipse(</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//   cx1 + (cx2 - cx1) / 2,</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//   cy1 + (cy2 - cy1) / 2,</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//   Math.abs(cx2 - cx1) / 2,</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//   Math.abs(cy2 - cy1) / 2,</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//   0,</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//   0,</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//   Math.PI * 2,</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// );</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (props </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x26;&#x26;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> props.outline </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ctx.strokeStyle </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> props.color;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">stroke</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">else</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ctx.fillStyle </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> props.color;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">fill</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">closePath</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">restore</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
+<p><img src="/blog-assets/2022/03/assets/29/Untitled4.png" alt="Untitled"></p>
+<p><img src="/blog-assets/2022/03/assets/29/Untitled5.png" alt="Untitled"></p>
+<h2 id="텍스트-그리기">텍스트 그리기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#텍스트-그리기"><span class="icon icon-link"></span></a></h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillText">fillText(text, x, y [, maxWidth]) (en-US)</a></p>
+<p>주어진 (x, y) 위치에 주어진 텍스트를 채웁니다. 최대 폭(width)은 옵션 값 입니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/strokeText">strokeText(text, x, y [, maxWidth]) (en-US)</a></p>
+<p>주어진 (x, y) 위치에 주어진 텍스트를 칠(stroke)합니다. 최대 폭(width)은 옵션 값 입니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/font">font = value (en-US)</a></p>
+<p>텍스트를 그릴 때 사용되는 현재 텍스트 스타일. 이 문자열은 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> <a href="https://developer.mozilla.org/ko/docs/Web/CSS/font">font</a> 프로퍼티와 동일한구문을 사용합니다. 기본값으로 sans-serif의 10px가 설정되어 있습니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/textAlign">textAlign = value (en-US)</a></p>
+<p>텍스트 정렬 설정. 사용가능한 값: start, end, left, right, center. 기본 값은 start 입니다.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/textBaseline">textBaseline = value (en-US)</a></p>
+<p>베이스라인 정렬 설정. 사용가능한 값: top, hanging, middle, alphabetic, ideographic, bottom. 기본 값은 alphabetic 입니다</p>
+<ul>
+<li>설명
+<ul>
+<li>top: 베이스라인이 문자열의 위쪽에 온다.</li>
+<li>middle: 베이스라인이 문자열의 중앙에 온다.</li>
+<li>bottom: 베이스라인이 문자열의 아래쪽에 온다.</li>
+<li>alphabetic: 알파벳의 baseline에 맞춘다. 이 값이 디폴트이다.</li>
+<li>hanging: 문자의 위쪽에 맞춘다. 인도의 언어가 이 방식을 사용한다.</li>
+<li>ideographic: 한자나 일본어처럼 사각형 문자가 이 방식을 사용한다. 알파벳보다는 베이스라인이 약간 더 아래쪽에 위치한다.</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://www.w3schools.com/tags/playcanvas.asp?filename=playcanvas_textbaseline&#x26;preval=hanging">Playit</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/direction">direction = value (en-US)</a></p>
+<p>글자 방향. 사용가능한 값: ltr, rtl, inherit. 기본 값은 inherit 입니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">save</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.textBaseline </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'top'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.font </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> `${</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">20</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> *</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> scale</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}px Arial`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.fillStyle </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '#ff0003'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">fillText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(text, x, y);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.strokeStyle </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '#ff0003'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">strokeText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(text, x, y);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ctx.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">restore</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
+<p><img src="/blog-assets/2022/03/assets/29/Untitled6.png" alt="Untitled"></p>
+<h2 id="이미지그리기">이미지그리기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#이미지그리기"><span class="icon icon-link"></span></a></h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage">drawImage(image, x, y) (en-US)</a></p>
+<ul>
+<li>이미지를 원래 크기로 삽입
+<ul>
+<li>image : 이미지(DOM image) 또는 Canvas 개체 또는 video 요소</li>
+<li>x: 이미지 출력할 x 좌표</li>
+<li>y: 이미지 출력할 y 좌표</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage">drawImage(image, x, y, width, height) (en-US)</a></p>
+<ul>
+<li>이미지를 지정한 크기로 삽입
+<ul>
+<li>width: 이미지 너비</li>
+<li>height: 이미지 높이</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage">drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight) (en-US)</a></p>
+<ul>
+<li>이미지의 일부분을 잘라내어 삽입
+<ul>
+<li>sx : 이미지 출력할 x 좌표</li>
+<li>sy : 이미지 출력할 y 좌표</li>
+<li>sWidth : [옵션] 이미지 width /원본(source) 잘라낼 영역(clipping rectangle)</li>
+<li>sHeight : [옵션] 이미지 Height /원본(source) 잘라낼 영역(clipping rectangle)</li>
+<li>dx : [옵션] 만약 잘라내었다면, 대상 이미지의 X좌표</li>
+<li>dy : [옵션] 만약 잘라내었다면, 대상 이미지의 Y좌표</li>
+<li>dWidth : [옵션] 만약 잘라내었다면, 대상 이미지의 width</li>
+<li>dHeight : [옵션] 만약 잘라내었다면, 대상 이미지의 Height</li>
+</ul>
+</li>
+</ul>
+<h2 id="애니메이션">애니메이션<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#애니메이션"><span class="icon icon-link"></span></a></h2>
+<p>애니메이션 단계</p>
+<ol>
+<li>캔버스를 비웁니다.(ctx.clearRect) 그리려는 도형이 (배경 이미지를 만들 때처럼) 캔버스를 가득 채우는 것이 아니라면, 이전에 그려진 모든 도형을 지울 필요가 있습니다. 가장 쉬운 방법은 clearRect() 메소드를 사용하는 것입니다.</li>
+<li>캔버스 상태를 저장합니다.(ctx.save) 캔버스 상태에 영향을 주는 (스타일 변경, 모양 변형 등의) 설정값을 바꾸려고 하고, 바뀐 값을 각 장면마다 사용하려고 한다면, 원래 상태를 저장할 필요가 있습니다.</li>
+<li>애니메이션할 도형을 그립니다.(ctx.fill, stroke~~) 실제 장면을 그리는 단계입니다.</li>
+<li>캔버스 상태를 복원합니다.(ctx.restore) 새로운 장면을 그리기 전에 저장된 상태를 복원합니다.</li>
+</ol>
+<p>정해진 시간마다 특정 함수 호출</p>
+<ul>
+<li>setInterval(function, delay)
+<ul>
+<li>delay 밀리세컨드(1,000분의 1초)마다 function 함수 반복 실행을 시작합니다.</li>
+</ul>
+</li>
+<li>setTimeout(function, delay)
+<ul>
+<li>delay 밀리세컨드(1,000분의 1초) 경과후, function 함수를 실행합니다.</li>
+</ul>
+</li>
+<li>requestAnimationFrame(function)
+<ul>
+<li>디스플레이 주사율과 일치하게 function 함수를 실행합니다.</li>
+</ul>
+</li>
+</ul>
+<pre><code>const animation = () => {
+    setMeta((prev) => ({
+      ...prev,
+      datas: prev.datas.map((data: any, index: number) => {
+        if (index === 0) {
+          const time = Math.floor(Math.random() * 5);
+          const xdirection =
+            data.animation.xdirection === 'reverse' &#x26;&#x26; data.x1 &#x3C; 0
+              ? 'forward'
+              : data.animation.xdirection === 'forward' &#x26;&#x26;
+                data.x1 > window.innerWidth
+              ? 'reverse'
+              : data.animation.xdirection;
+          const x1 = xdirection === 'forward' ? data.x1 + time : data.x1 - time;
+
+          const ydirection =
+            data.animation.ydirection === 'reverse' &#x26;&#x26; data.y1 &#x3C; 0
+              ? 'forward'
+              : data.animation.ydirection === 'forward' &#x26;&#x26;
+                data.y1 > window.innerHeight - 150
+              ? 'reverse'
+              : data.animation.ydirection;
+          const y1 = ydirection === 'forward' ? data.y1 + time : data.y1 - time;
+
+          return {
+            ...data,
+            x1,
+            y1,
+            x2: x1 + 100,
+            y2: y1 + 100,
+            animation: {
+              ...animation,
+              xdirection,
+              ydirection,
+            },
+          };
+        }
+        return data;
+      }),
+    }));
+    requestAnimationFrame(animation);
+  };
+
+export const drawRect = (
+  ctx: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  w: number,
+  h: number,
+  scale: number,
+  props: Property,
+): void => {
+  const cx = x;
+  const cy = y;
+  const cw = w;
+  const ch = h;
+
+  ctx.save();
+
+  if (props &#x26;&#x26; props.outline === true) {
+    ctx.strokeStyle = props.color;
+    ctx.strokeRect(cx, cy, cw, ch);
+  } else {
+    ctx.fillStyle = props.color;
+    ctx.fillRect(cx, cy, cw, ch);
+  }
+
+  ctx.restore();
+};
+
+useEffect(() => {
+  animation();
+}, []);
+</code></pre>
+<video width="100%" height="100%" controls>
+  <source src="./assets/29/Untitled.mp4" type="video/mp4">
+</video>
+<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li><a href="https://developer.mozilla.org/ko/docs/Web/API/Canvas_API">https://developer.mozilla.org/ko/docs/Web/API/Canvas_API</a></li>
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"canvas"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"canvas"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-03-29","className":"meta-mono","children":"2022.03.29"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[8,"분"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","canvas",{"children":["$","$L3",null,{"href":"/ko/tags?tag=canvas","className":"tag-pill","children":"canvas"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+5:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/ko/posts/2022-03-28-javascript","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"javascript"}]]}],["$","$L3",null,{"href":"/ko/posts/2022-03-30-SWR","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["다음 글",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"SWR"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"canvas-api","text":"Canvas API","depth":1},{"id":"샘플코드","text":"샘플코드","depth":2},{"id":"기본예시","text":"기본예시","depth":2},{"id":"자바스크립트","text":"자바스크립트","depth":2},{"id":"리액트","text":"리액트","depth":2},{"id":"라이브러리","text":"라이브러리","depth":1},{"id":"기본-사용","text":"기본 사용","depth":1},{"id":"도형-그리기","text":"도형 그리기","depth":1},{"id":"사각형-그리기","text":"사각형 그리기","depth":2},{"id":"경로-그리기","text":"경로 그리기","depth":2},{"id":"원-그리기","text":"원 그리기","depth":2},{"id":"텍스트-그리기","text":"텍스트 그리기","depth":1},{"id":"이미지그리기","text":"이미지그리기","depth":1},{"id":"애니메이션","text":"애니메이션","depth":1},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"목차"}]}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
+8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+c:null
