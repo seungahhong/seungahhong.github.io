@@ -9,6 +9,8 @@ import {
 } from '@/lib/posts';
 import { locales } from '@/i18n/config';
 import { postPath } from '@/lib/routes';
+import { blogPostingJsonLd, breadcrumbJsonLd } from '@/lib/jsonld';
+import JsonLd from '@/components/JsonLd';
 import PostHeader from '@/components/post/PostHeader';
 import ProseContent from '@/components/post/ProseContent';
 import Toc from '@/components/post/Toc';
@@ -64,6 +66,8 @@ export default async function PostPage({ params }: { params: PostParams }) {
 
   return (
     <>
+      <JsonLd data={blogPostingJsonLd(post, locale, dict)} />
+      <JsonLd data={breadcrumbJsonLd(post, locale, dict)} />
       <ReadingProgress />
       <div className="mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]">
