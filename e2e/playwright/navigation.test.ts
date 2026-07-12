@@ -1,38 +1,48 @@
 import { test, expect } from '@playwright/test';
 
-// test-layering-harness 생성 — AC-07(카드→상세 라우팅), AC-49(헤더 Home/About 내비)
-// 오라클 = 기대 검증(행동): 카드 클릭 시 루트가 아닌 상세 경로로 이동하고 상세 헤더가 보인다;
-//          데스크톱 헤더의 About/Home 링크가 각각 /about, / 로 향하고 About 클릭 시 /about 으로 이동.
-// 근거: PostItem.tsx:99(카드=Link to={link}), Header.tsx:194-199(Home/About Link). Header는 >1024px에서만 노출.
-
-const CARD = 'a:has(img[alt="Post Item Image"])';
-
-test.describe('내비게이션 (AC-07, AC-49)', () => {
-  test('AC-07 · 포스트 카드 클릭 시 상세 경로로 이동', { tag: '@smoke' }, async ({ page }) => {
-    await page.goto('/');
-    const firstCard = page.locator(CARD).first();
-    await firstCard.waitFor();
-
-    const href = await firstCard.getAttribute('href');
-    expect(href).toBeTruthy();
-
-    await firstCard.click();
-    await page.waitForURL((url) => url.pathname !== '/');
-    expect(new URL(page.url()).pathname).not.toBe('/');
-    await expect(page.locator('h1').first()).toBeVisible(); // 상세 헤더 렌더
+test.describe('navigation & layout', () => {
+  test('home renders hero, recent feed and sidebar @smoke', async ({
+    page,
+  }) => {
+    await page.goto('/ko/');
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expect(page.getByRole('heading', { name: '최근 글' })).toBeVisible();
+    await expect(page.locator('article').first()).toBeVisible();
+    // 사이드바 위젯
+    await expect(
+      page.getByRole('heading', { name: 'Top 5 인기 글' }),
+    ).toBeVisible();
   });
 
-  test('AC-49 · 데스크톱 헤더 Home/About 내비게이션', async ({ page }) => {
-    await page.setViewportSize({ width: 1280, height: 900 });
-    await page.goto('/');
+  test('nav links navigate and mark the active page', async ({ page }) => {
+    await page.goto('/ko/');
+    await page.getByRole('link', { name: '포스트', exact: true }).click();
+    await expect(page).toHaveURL(/\/ko\/posts\/?$/);
+    await expect(
+      page.getByRole('link', { name: '포스트', exact: true }),
+    ).toHaveAttribute('aria-current', 'page');
+  });
 
-    const home = page.getByRole('link', { name: 'Home', exact: true }).first();
-    const about = page.getByRole('link', { name: 'About', exact: true }).first();
-    await expect(home).toHaveAttribute('href', /^\/$/);
-    await expect(about).toHaveAttribute('href', /^\/about\/?$/); // Gatsby 표준 trailing slash 허용
+  test('mobile burger opens and closes the drawer (AC-3.2)', async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width: 390, height: 820 });
+    await page.goto('/ko/');
+    const burger = page.getByRole('button', { name: '메뉴 열기' });
+    await expect(burger).toBeVisible();
+    await burger.click();
+    const drawer = page.locator('#mobile-menu');
+    await expect(drawer).toBeVisible();
+    await expect(drawer.getByRole('link', { name: 'About' })).toBeVisible();
+    await page.getByRole('button', { name: '메뉴 닫기' }).click();
+    await expect(drawer).toBeHidden();
+  });
 
-    await about.click();
-    await page.waitForURL(/\/about\/?$/);
-    expect(new URL(page.url()).pathname.replace(/\/$/, '')).toBe('/about');
+  test('skip link is reachable by keyboard (AC a11y)', async ({ page }) => {
+    await page.goto('/ko/');
+    await page.keyboard.press('Tab');
+    await expect(
+      page.getByRole('link', { name: '본문으로 건너뛰기' }),
+    ).toBeFocused();
   });
 });
