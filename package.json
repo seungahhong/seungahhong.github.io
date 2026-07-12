@@ -4,7 +4,7 @@
   "description": "홍승아 기술 블로그 — Next.js 16 · Tailwind · i18n",
   "version": "1.0.0",
   "author": "홍승아 <gmm117@naver.com>",
-  "license": "0BSD",
+  "license": "MIT",
   "packageManager": "pnpm@10.33.0",
   "engines": {
     "node": ">=20.9.0"
