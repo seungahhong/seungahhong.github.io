@@ -102,7 +102,10 @@ export default function SearchDialog({
         onClick={(event) => event.stopPropagation()}
       >
         {/* 모바일 바텀시트 드래그 핸들(시각 표시) */}
-        <div className="flex justify-center pt-2.5 md:hidden" aria-hidden="true">
+        <div
+          className="flex justify-center pt-2.5 md:hidden"
+          aria-hidden="true"
+        >
           <span className="h-1 w-9 rounded-full bg-line" />
         </div>
 
