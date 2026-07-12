@@ -4,50 +4,51 @@ on:
   push:
     branches:
       - master
+      - main
+  workflow_dispatch:
 
 jobs:
-  ci:
-    name: Run deploy
+  deploy:
+    name: Build & Deploy (Next.js static export)
     runs-on: ubuntu-latest
     steps:
-      # 해당 저장소의 코드를 가져옵니다.
       - name: Git checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # node를 설치합니다.
-      - name: Install node
-        uses: actions/setup-node@v3
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version: '18'
+          version: 10
 
-      # node_modules 캐싱을 이용합니다.
-      - name: Cache yarn dependencies
-        uses: actions/cache@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          path: node_modules
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: '20'
+          cache: 'pnpm'
 
-      # 패키지를 설치합니다.
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install --frozen-lockfile
 
-      # gatsby build
-      - name: Build gatsby
-        run: yarn gatsby build
+      - name: Lint & typecheck
+        run: |
+          pnpm lint
+          pnpm typecheck
 
-      # gh-pages deploy
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Unit tests (Vitest)
+        run: pnpm test
+
+      - name: Build (static export → out/)
+        run: pnpm build
+
+      - name: Install Playwright browser
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: E2E tests (Playwright)
+        run: pnpm e2e
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-
-      # e2e(playwright) 테스트 툴을 설치합니다.
-      - name: Install playwright browsers
-        run: npx playwright install --with-deps
-
-      # e2e 테스트를 수행합니다.
-      - name: Run e2e tests
-        run: yarn e2e:ci
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./out
+          publish_branch: gh-pages

@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "siteTitle": "SeungAh Hong · Tech Blog",
+    "siteDescription": "SeungAh Hong's Tech Blog — notes on what I learn and think about while building, sharing hands-on experience and technical knowledge.",
+    "author": "SeungAh Hong"
+  },
+  "brand": {
+    "name": "SeungAh Hong"
+  },
+  "nav": {
+    "home": "Home",
+    "posts": "Posts",
+    "tags": "Tags",
+    "about": "About",
+    "search": "Search",
+    "searchPlaceholder": "Search posts, tags…",
+    "toggleTheme": "Toggle theme",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "skipToContent": "Skip to content",
+    "noResults": "No results found.",
+    "searchHint": "Search by title, tag, or category"
+  },
+  "home": {
+    "eyebrow": "Frontend Engineer",
+    "heroTitlePre": "SeungAh Hong's ",
+    "heroTitleEm": "Tech Blog",
+    "heroTitlePost": "",
+    "heroSubtitle": "Notes on what I learn and think about while building — sharing hands-on experience and technical knowledge.",
+    "statPosts": "Posts",
+    "statCategories": "Categories",
+    "statSince": "Since",
+    "recentPosts": "Recent posts",
+    "viewAll": "View all →",
+    "popular": "Top 5 popular",
+    "categories": "Categories",
+    "tags": "Tags"
+  },
+  "post": {
+    "backToList": "Back to list",
+    "tableOfContents": "Contents",
+    "prev": "Previous",
+    "next": "Next",
+    "on": "Published",
+    "by": "By",
+    "tags": "Tags",
+    "translationFallbackNotice": "This article is currently shown in its original Korean."
+  },
+  "posts": {
+    "title": "Posts",
+    "subtitle": "All posts grouped by category",
+    "all": "All",
+    "filterByCategory": "Category"
+  },
+  "tags": {
+    "title": "Tags",
+    "subtitle": "Browse posts by topic",
+    "postCount": " posts",
+    "clearFilter": "Clear filter"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "SeungAh Hong",
+    "subtitle": "A developer who cares about frontend craft and scalable, extensible architecture.",
+    "introHeading": "Intro",
+    "skillsHeading": "Skills",
+    "linksHeading": "Links",
+    "intro": [
+      "A frontend developer with a deep interest in the craft.",
+      "Always thinking about component reuse and extensibility.",
+      "Wants to build a shared ecosystem where the community grows together, not just the individual."
+    ],
+    "skills": [
+      { "label": "Languages", "items": ["JavaScript", "TypeScript", "C / C++"] },
+      {
+        "label": "Frameworks & Runtime",
+        "items": ["React", "Next.js", "Svelte", "Gatsby", "Node.js", "Deno"]
+      },
+      {
+        "label": "State & Data",
+        "items": ["Redux", "Recoil", "Zustand", "Jotai", "MobX", "React Query", "SWR", "GraphQL"]
+      },
+      { "label": "Build & Tooling", "items": ["Vite", "esbuild", "Webpack", "pnpm"] },
+      {
+        "label": "Testing",
+        "items": ["Jest", "Playwright", "Cypress", "MSW", "Storybook"]
+      },
+      { "label": "Styling", "items": ["CSS", "Emotion", "styled-components"] },
+      { "label": "AI & LLM", "items": ["RAG", "MCP", "Claude", "LLM harness"] },
+      { "label": "More", "items": ["WebAssembly", "Canvas", "RxJS"] }
+    ]
+  },
+  "footer": {
+    "builtWith": "Built with Next.js · Tailwind CSS.",
+    "rights": "SeungAh Hong. All rights reserved."
+  },
+  "units": {
+    "minutesRead": "min read",
+    "postsCount": "posts"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you requested does not exist or has moved.",
+    "backHome": "Back to home"
+  }
+}
