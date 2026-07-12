@@ -4,14 +4,14 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T21b49,<h2 id="클라이언트-측의-저장소">클라이언트 측의 저장소<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#클라이언트-측의-저장소"><span class="icon icon-link"></span></a></h2>
-<h3 id="쿠키">쿠키<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#쿠키"><span class="icon icon-link"></span></a></h3>
+4:T2165f,<h2 id="client-side-storage">Client-Side Storage<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#client-side-storage"><span class="icon icon-link"></span></a></h2>
+<h3 id="cookies">Cookies<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cookies"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>쿠키를 설정하면 이후 모든 웹 요청은 쿠키정보를 포함하여 서버로 전송</li>
-<li>문자열만 저장, 4KB용량 제한</li>
-<li>대개, 방문한 페이지를 저장하거나 유저의 로그인 정보를 저장</li>
-<li>Seesion cookies : 만료일이 포함되지 않는 쿠키(브라우저 탭이 열려 있는 동안만)</li>
-<li>Persistent cookies : 만료일을 가지는 쿠키(유저의 웹사이트의 행동기록등에 사용)</li>
+<li>Once a cookie is set, every subsequent web request is sent to the server including the cookie information</li>
+<li>Stores strings only, with a 4KB size limit</li>
+<li>Typically used to record visited pages or to store a user's login information</li>
+<li>Session cookies: cookies without an expiration date (they last only while the browser tab is open)</li>
+<li>Persistent cookies: cookies that have an expiration date (used, for example, to track a user's activity on a website)</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">document.cookie </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "Hong's"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">document.cookie </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'user_age=38'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -28,11 +28,11 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(document.cookie);</span></span></code></pre></figure>
 <h3 id="localstorage">localstorage<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#localstorage"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>오직 문자열만 저장가능</li>
-<li>JSON 데이터를 문자열로 변환하여서 문자열 저장하는 부분을 보완가능</li>
-<li>브라우저가 종료해도 데이터가 유지</li>
-<li>도메인이 다를 경우 로컬스토리지 접근 불가능</li>
-<li>브라우저, 기기별 용량 제한(브라우저: 5MB~10MB, 모바일: 2.5MB)</li>
+<li>Can store strings only</li>
+<li>You can work around the string-only limitation by converting JSON data into a string and storing it</li>
+<li>Data persists even after the browser is closed</li>
+<li>Local storage cannot be accessed across different domains</li>
+<li>Size limits vary by browser and device (browser: 5MB–10MB, mobile: 2.5MB)</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 생성</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> user</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"Hong's"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, age: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">36</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> };</span></span>
@@ -52,12 +52,12 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">localStorage.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">removeItem</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'user'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <h3 id="sessionstorage">sessionstorage<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#sessionstorage"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>오직 문자열만 저장가능</li>
-<li>JSON 데이터를 문자열로 변환하여서 문자열 저장하는 부분을 보완가능</li>
-<li>각 세션마다 개별적으로 저장(예: 탭실행, 세션종료시 개별실행)</li>
-<li>같은 도메인이라도 세션이 다르면 접근불가능</li>
-<li>브라우저, 기기별 용량 제한(브라우저: 5MB~10MB, 모바일: 2.5MB)</li>
-<li>사용법은 localstorage와 동일하다.</li>
+<li>Can store strings only</li>
+<li>You can work around the string-only limitation by converting JSON data into a string and storing it</li>
+<li>Stored separately for each session (e.g., stored per tab, released individually when the session ends)</li>
+<li>Cannot be accessed from a different session even within the same domain</li>
+<li>Size limits vary by browser and device (browser: 5MB–10MB, mobile: 2.5MB)</li>
+<li>Its usage is identical to localstorage.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 생성</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> user</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"Hong's"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, age: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">36</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> };</span></span>
@@ -75,12 +75,12 @@ b:"$Sreact.suspense"
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 삭제</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">sessionStorage.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">removeItem</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'user'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
-<h2 style="font-weight:bold" id="참고사이트">참고사이트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고사이트"><span class="icon icon-link"></span></a></h2>
+<h2 style="font-weight:bold" id="reference-sites">Reference Sites<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reference-sites"><span class="icon icon-link"></span></a></h2>
 <p><a href="https://dongwoo.blog/2016/12/19/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%B8%A1%EC%9D%98-%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0/" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"></a><a href="https://dongwoo.blog/2016/12/19/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%B8%A1%EC%9D%98-%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0/">https://dongwoo.blog/2016/12/19/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%B8%A1%EC%9D%98-%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0/</a>
 <a href="https://tristan91.tistory.com/521" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"></a><a href="https://tristan91.tistory.com/521">https://tristan91.tistory.com/521</a></p>
-<h2 id="this-핵심내용">this 핵심내용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#this-핵심내용"><span class="icon icon-link"></span></a></h2>
+<h2 id="key-points-about-this">Key Points About this<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#key-points-about-this"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li>this는 함수를 호출하는 방법에 의해서 결정된다.</li>
+<li><code>this</code> is determined by how the function is called.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> someone</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'hong'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
@@ -101,7 +101,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> btn</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> document.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getElementById</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'btn'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">btn.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">addEventListener</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'click'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, someone.consoleName);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">btn.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">addEventListener</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'click'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, someone.someonewindow);</span></span></code></pre></figure>
-<h2 id="커링-함수--partial-application">커링 함수 &#x26; Partial application<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#커링-함수--partial-application"><span class="icon icon-link"></span></a></h2>
+<h2 id="currying--partial-application">Currying &#x26; Partial application<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#currying--partial-application"><span class="icon icon-link"></span></a></h2>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> plus</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">a</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">b</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">c</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> a </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> b </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> c;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span>
@@ -120,17 +120,17 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">plusb</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">4</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 7</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> plusab </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> plus.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">partial</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">plusab</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 9</span></span></code></pre></figure>
-<p>이렇게 일부 인자만 받은 새로운 함수를 만들고, 나중에 새로운 함수에 인자를 넣어 완성합니다.</p>
+<p>In this way, you create a new function that has received only some of the arguments, and later complete it by passing the remaining arguments to the new function.</p>
 <h3 id="partial-application">Partial application<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#partial-application"><span class="icon icon-link"></span></a></h3>
-<p>여러 개의 인자를 받는 함수가 있을 때 일부의 인자를 고정한 함수를 만드는 기법입니다</p>
-<h3 id="커링함수-개념">커링함수 개념<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#커링함수-개념"><span class="icon icon-link"></span></a></h3>
-<p>커링은 수학자 하스켈 커리로 부터 유래된 이름이고 함수를 변형하는 과정을 말한다.
-함수의 전달인자 몇 개를 미리 채움으로써 더 간단한 함수를 만드는 방법입니다.
-커링도 partial application처럼 인자를 미리 고정할 수 있지만 하나씩만 고정한다는 것이 특징입니다. 또한, 모든 인자를 받을 때까지 계속 함수를 생성합니다.
-매 번 인자를 1개씩 고정하는 연속적인 partial application으로 볼 수도 있습니다.</p>
-<h3 id="커링을-사용하는-경우">커링을 사용하는 경우<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#커링을-사용하는-경우"><span class="icon icon-link"></span></a></h3>
-<p>어떤 함수를 호출할 때 대부분의 매개 변수가 항상 비슷하다면 커링을 사용할 만한 후보라고 할 수 있다.
-매개변수 일부를 적용하여 새로운 함수를 동적으로 생성하면 이 동적 생성된 함수는 반복적으로 사용되는 매개변수를 내부적으로 저장하여, 매번 인자를 전달하지 않아도 원본함수가 기대하는 기능을 채워 놓게 될 것이다.</p>
+<p>It's a technique for creating a function with some of its arguments fixed when you have a function that takes multiple arguments.</p>
+<h3 id="the-concept-of-currying">The concept of currying<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-concept-of-currying"><span class="icon icon-link"></span></a></h3>
+<p>Currying is named after the mathematician Haskell Curry, and it refers to the process of transforming a function.
+It's a way of creating a simpler function by pre-filling some of the function's arguments.
+Like partial application, currying lets you fix arguments in advance, but its distinguishing feature is that it fixes them only one at a time. In addition, it keeps generating functions until all arguments have been received.
+You can also view it as a series of partial applications that each fix one argument at a time.</p>
+<h3 id="when-to-use-currying">When to use currying<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#when-to-use-currying"><span class="icon icon-link"></span></a></h3>
+<p>If most of the arguments are almost always similar whenever you call a certain function, it's a good candidate for currying.
+When you dynamically create a new function by applying some of the arguments, that dynamically created function internally stores the repeatedly used arguments, so that without passing those arguments every time, it fulfills the functionality the original function expects.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 커링된 add()</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 부분적인 인자의 목록을 받는다.</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> add</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">x</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">y</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
@@ -186,14 +186,14 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> w _ x _ y \</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> z;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">multiplyFour.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">curry</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">4</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 120</span></span></code></pre></figure>
-<h2 style="font-weight:bold" id="참고사이트-1">참고사이트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고사이트-1"><span class="icon icon-link"></span></a></h2>
+<h2 style="font-weight:bold" id="reference-sites-1">Reference Sites<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reference-sites-1"><span class="icon icon-link"></span></a></h2>
 <p><a href="https://www.zerocho.com/category/JavaScript/post/579236d08241b6f43951af18" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"></a><a href="https://www.zerocho.com/category/JavaScript/post/579236d08241b6f43951af18">https://www.zerocho.com/category/JavaScript/post/579236d08241b6f43951af18</a>
 <a href="https://webclub.tistory.com/m/6" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"></a><a href="https://webclub.tistory.com/m/6">https://webclub.tistory.com/m/6</a></p>
 <hr>
 <h2 id="web-worker">web worker<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#web-worker"><span class="icon icon-link"></span></a></h2>
-<p>웹 워커
-JavaScript에서 웹 워커(web worker)를 활용하면 멀티 스레딩이 가능합니다(참고). 웹 워커는 스크립트 수행을 메인 스레드가 아닌 별도 백그라운드 스레드에서 수행할 수 있게 해줍니다.</p>
-<p>메인 스레드에서 워커 객체를 생성하면 워커 스레드와 메시지 기반으로 통신이 가능합니다. 워커 스레드에게 postMessage를 통해 처리하는 데 오래 걸리는 작업의 실행을 요청하면 워커 스레드는 이를 실행합니다. 이를 통해 메인 스레드가 블록되는 것을 막을 수 있습니다. 워커 스레드는 작업이 완료되면 역시 postmessage를 통해 결과 완료 메시지를 전송하고, 메인 스레드에선 이를 통해 또 다른 작업을 할 수 있게 됩니다.</p>
+<p>Web Worker
+In JavaScript, using a web worker enables multithreading (for reference). A web worker lets you run script execution on a separate background thread rather than on the main thread.</p>
+<p>When you create a worker object on the main thread, you can communicate with the worker thread through messages. If you request the execution of a time-consuming task from the worker thread via postMessage, the worker thread runs it. This prevents the main thread from being blocked. When the worker thread finishes the task, it likewise sends a completion result message via postMessage, which allows the main thread to move on to another task.</p>
 <p><img src="/blog-assets/2020/06/images/28/webworker.png" alt="webworker"></p>
 <p><a href="https://engineering.linecorp.com/ko/blog/dont-block-the-event-loop/" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"></a><a href="https://engineering.linecorp.com/ko/blog/dont-block-the-event-loop/">https://engineering.linecorp.com/ko/blog/dont-block-the-event-loop/</a></p>
 <h2 id="time">time<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#time"><span class="icon icon-link"></span></a></h2>
@@ -220,27 +220,27 @@ JavaScript에서 웹 워커(web worker)를 활용하면 멀티 스레딩이 가�
 <p><img src="/blog-assets/2020/06/images/28/setTimeout.png" alt="setTimeout"></p>
 <p><a href="https://helloworldjavascript.net/pages/285-async.html" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"></a><a href="https://helloworldjavascript.net/pages/285-async.html">https://helloworldjavascript.net/pages/285-async.html</a></p>
 <hr>
-<h2 id="프로그레시브-웹앱progressive-web-apps">프로그레시브 웹앱(Progressive Web Apps)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#프로그레시브-웹앱progressive-web-apps"><span class="icon icon-link"></span></a></h2>
-<p>프로그레시브 웹앱(Progressive Web Apps)은 Google I/O 2016에서 소개된 미래의 웹기술이며, PWA라고 줄여서 부르기도 합니다.</p>
-<p>먼저 구글에서 소개하는 PWA는 이러합니다.</p>
+<h2 id="progressive-web-apps">Progressive Web Apps<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#progressive-web-apps"><span class="icon icon-link"></span></a></h2>
+<p>Progressive Web Apps are a web technology of the future introduced at Google I/O 2016, sometimes shortened to PWA.</p>
+<p>First, here is how Google introduces PWAs.</p>
 <blockquote>
-<p>PWA는 최고의 웹과 최고의 앱을 결합한 경험이다. 브라우저를 통해 처음 방문한 사용자에게 유용하며, 설치가 필요하지 않다.
-사용자가 PWA와 관계를 점진적으로 형성할수록 성능이 더욱 강력해 질 것이다. 느린 네트워크에서도 빠르게 로드되고, 관련된 푸시 알림을 전송한다.
-모바일 앱처럼 전체 화면으로 로드되고, 홈 화면에 아이콘이 있다.</p>
+<p>A PWA is an experience that combines the best of the web and the best of apps. It's useful to a user from the very first visit through a browser, and requires no installation.
+As a user builds a relationship with the PWA over time, it becomes more and more powerful. It loads quickly even on slow networks, and sends relevant push notifications.
+It loads full-screen like a mobile app and has an icon on the home screen.</p>
 </blockquote>
-<p>네이티브 앱은 느린 네트워크에서도 작동하며, 백그라운드에서 푸시 알람을 보내줍니다. 또한, 카메라, 마이크 등에도 쉽게 접근하여 다양한 기능을 수행할 수 있습니다. 즉, Capability(능력)가 뛰어나다라고 할 수 있죠.
-웹은 URL을 통한 접근이 간단하고, 설치 과정이 없습니다. 즉, Reach(범위)가 넓다라고 할 수 있습니다.
-이는 다음 그림처럼 시각화 할 수 있습니다.</p>
+<p>Native apps work even on slow networks and send push notifications in the background. They can also easily access the camera, microphone, and more to perform a variety of functions. In other words, they have outstanding Capability.
+The web is simple to access via a URL and has no installation process. In other words, it has broad Reach.
+This can be visualized as shown in the following figure.</p>
 <p><img src="/blog-assets/2020/06/images/28/pwa1.png" alt="pwa1"></p>
-<p>그리고 네이티브 앱과 웹의 장점을 결합한 PWA는 이쯤에 위치시킬 수 있겠네요.</p>
+<p>And a PWA, which combines the strengths of native apps and the web, can be placed right around here.</p>
 <p><img src="/blog-assets/2020/06/images/28/pwa2.png" alt="pwa2"></p>
-<h4 id="참조사이트">참조사이트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참조사이트"><span class="icon icon-link"></span></a></h4>
+<h4 id="reference-site">Reference Site<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reference-site"><span class="icon icon-link"></span></a></h4>
 <p><a href="https://altenull.github.io/2018/02/25/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%A0%88%EC%8B%9C%EB%B8%8C-%EC%9B%B9-%EC%95%B1-Progressive-Web-Apps-%EB%9E%80/" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">PWA</a></p>
-<h2 id="화살표-함수없는-것-3가지">화살표 함수없는 것 3가지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#화살표-함수없는-것-3가지"><span class="icon icon-link"></span></a></h2>
+<h2 id="3-things-arrow-functions-dont-have">3 Things Arrow Functions Don't Have<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-things-arrow-functions-dont-have"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li>this : 함수가 실행하는 주체가 this가 된다.
+<li>this: the entity that executes the function becomes <code>this</code>.
 <ul>
-<li>new로 생성할 수 없다. prototype도 존재하지 않는다.</li>
+<li>It cannot be created with <code>new</code>. It also has no <code>prototype</code>.</li>
 </ul>
 </li>
 </ul>
@@ -294,20 +294,20 @@ JavaScript에서 웹 워커(web worker)를 활용하면 멀티 스레딩이 가�
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">myFunc2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <ul>
-<li>함수이름</li>
+<li>Function name</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> tempFunc</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> myFunc</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {};</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> tempFunc</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {};</span></span></code></pre></figure>
 <hr>
 <h3 id="callbindapply">call/bind/apply<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#callbindapply"><span class="icon icon-link"></span></a></h3>
-<h4 id="call-apply-bind-차이">call, apply, bind 차이<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#call-apply-bind-차이"><span class="icon icon-link"></span></a></h4>
-<p>call(), apply() 는 ECMA 3에서 추가 되었으며, bind()는 ECMA 5에서 추가 되었습니다.
-call(), apply()는 invoke입니다. 함수 호출을 즉시 합니다.
-bind()는 나중에 실행될때 사용 됩니다. 특정 이벤트를 함수를 호출해야 할때 유용합니다.</p>
+<h4 id="differences-between-call-apply-and-bind">Differences between call, apply, and bind<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#differences-between-call-apply-and-bind"><span class="icon icon-link"></span></a></h4>
+<p>call() and apply() were added in ECMA 3, while bind() was added in ECMA 5.
+call() and apply() are invocations. They call the function immediately.
+bind() is used when the function will be executed later. It's useful when you need to call a function on a specific event.</p>
 <h4 id="call">call<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#call"><span class="icon icon-link"></span></a></h4>
 <p>func.call(this, arg1, arg2, … argN);
-this 부분에 객체를 넣어주면 넣어준 객체를 가리키게 된다. 특이사항은 파라미터를 일일이 콤마로 구분해서 넣어줘야 하는 것.</p>
+If you pass an object into the <code>this</code> position, it makes the function point to the object you passed in. A notable point is that you have to pass the parameters one by one, separated by commas.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// call</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> obj </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Niladri'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> };</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> greeting</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">a</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">b</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">c</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
@@ -316,7 +316,7 @@ this 부분에 객체를 넣어주면 넣어준 객체를 가리키게 된다. �
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(greeting.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">call</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(obj, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Newtown'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'KOLKATA'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'WB'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">));</span></span></code></pre></figure>
 <h4 id="apply">apply<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#apply"><span class="icon icon-link"></span></a></h4>
 <p>func.apply(this, arguments);
-call()과 기능은 같지만 파라미터를 Array로 넘겨준다는 특징이 있다. 만약 함수에서 받은 모든 인자를 그대로 넘겨주는 경우, 가변 인자의 경우 유용하다. 또는 선택적으로 배열에 담아 전달할 수 있다.</p>
+It works the same as call(), but has the distinction of passing the parameters as an Array. It's useful when you pass on all the arguments a function received as-is, or for variadic arguments. Alternatively, you can optionally pass them in an array.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// apply</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> obj </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Niladri'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> };</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> greeting</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">a</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">b</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">c</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
@@ -328,7 +328,7 @@ call()과 기능은 같지만 파라미터를 Array로 넘겨준다는 특징이
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Output using .apply() below '</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(greeting.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">apply</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(obj, args));</span></span></code></pre></figure>
 <h4 id="bind">bind<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#bind"><span class="icon icon-link"></span></a></h4>
-<p>bind()는 새로운 함수 인스턴스를 생성한다.</p>
+<p>bind() creates a new function instance.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// bind</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> obj </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Niladri'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> };</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> greeting</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">a</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">b</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">c</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
@@ -340,12 +340,12 @@ call()과 기능은 같지만 파라미터를 Array로 넘겨준다는 특징이
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">dir</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(bound); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">///returns a function</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Output using .bind() below '</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">bound</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Newtown'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'KOLKATA'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'WB'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//call the bound function</span></span></code></pre></figure>
-<h4 id="참조사이트-1">참조사이트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참조사이트-1"><span class="icon icon-link"></span></a></h4>
-<p><a href="https://bugtypekr.tistory.com/2" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">참조사이트</a></p>
-<h3 id="실행-컨텍스트execution-context에-대해-설명">실행 컨텍스트(Execution Context)에 대해 설명<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#실행-컨텍스트execution-context에-대해-설명"><span class="icon icon-link"></span></a></h3>
-<h3 id="함수-호이스팅function-hoisting과-스코프">함수 호이스팅(Function hoisting)과 스코프<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#함수-호이스팅function-hoisting과-스코프"><span class="icon icon-link"></span></a></h3>
+<h4 id="reference-site-1">Reference Site<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reference-site-1"><span class="icon icon-link"></span></a></h4>
+<p><a href="https://bugtypekr.tistory.com/2" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">Reference Site</a></p>
+<h3 id="explaining-the-execution-context">Explaining the Execution Context<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#explaining-the-execution-context"><span class="icon icon-link"></span></a></h3>
+<h3 id="function-hoisting-and-scope">Function hoisting and scope<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#function-hoisting-and-scope"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>함수가 함수 선언식(function declaration)으로 선언 - 현재 스코프의 최상단으로 호이스팅(hoist) 됩니다.</li>
+<li>When a function is declared as a function declaration - it's hoisted to the top of the current scope.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// This is the same as the one below</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">sayHello</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
@@ -358,17 +358,17 @@ call()과 기능은 같지만 파라미터를 Array로 넘겨준다는 특징이
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">sayHello</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
 <ul>
-<li>함수가 함수 표현식(function expression)으로 선언 - 현재 스코프의 최상단으로 호이스팅되지 않습니다</li>
+<li>When a function is declared as a function expression - it's not hoisted to the top of the current scope</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">sayHello</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Error, sayHello is not defined</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> sayHello</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(aFunction);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
-<h3 id="스코프">스코프<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#스코프"><span class="icon icon-link"></span></a></h3>
-<p>자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.
-스코프엔 두 가지 종류가 있는데요, 전역 스코프(global scope)와 지역 스코프(local scope)가 있죠.</p>
-<h4 id="전역-스코프global-scope">전역 스코프(Global Scope)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#전역-스코프global-scope"><span class="icon icon-link"></span></a></h4>
-<p>변수가 함수 바깥이나 중괄호({}) 바깥에 선언되었다면, 전역스코프에 정의됨</p>
+<h3 id="scope">Scope<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#scope"><span class="icon icon-link"></span></a></h3>
+<p>In JavaScript, scope defines which variables you can access.
+There are two kinds of scope: global scope and local scope.</p>
+<h4 id="global-scope">Global Scope<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#global-scope"><span class="icon icon-link"></span></a></h4>
+<p>If a variable is declared outside a function or outside curly braces ({}), it's defined in the global scope</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 전역스코프 사용</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> hello</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'Hello CSS-Tricks Reader!'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 전역변수</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> sayHello</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
@@ -377,8 +377,8 @@ call()과 기능은 같지만 파라미터를 Array로 넘겨준다는 특징이
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(hello); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 'Hello CSS-Tricks Reader!'</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">sayHello</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 'Hello CSS-Tricks Reader!'</span></span></code></pre></figure>
 <ul>
-<li>var 중복일경우 마지막 변수가 그위에 변수를 덮어쓰게 됨</li>
-<li>let, const 사용하여 선언할 경우, 이름충돌 에러발생</li>
+<li>If <code>var</code> is duplicated, the last variable overwrites the one above it</li>
+<li>If you declare using <code>let</code> or <code>const</code>, a name-collision error occurs</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Don’t do this!</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> thing </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'something'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -388,11 +388,11 @@ call()과 기능은 같지만 파라미터를 Array로 넘겨준다는 특징이
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Don’t do this!</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> thing </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'something'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> thing </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'something else'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Error, thing has already been declared</span></span></code></pre></figure>
-<h4 id="지역스코프local-scope">지역스코프(Local Scope)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#지역스코프local-scope"><span class="icon icon-link"></span></a></h4>
+<h4 id="local-scope">Local Scope<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#local-scope"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li>함수 스코프(Function Scope)
+<li>Function Scope
 <ul>
-<li>함수 내부에서 변수를 선언하면, 그 변수는 해당 함수내에서만 접근가능함.</li>
+<li>If you declare a variable inside a function, that variable is accessible only within that function.</li>
 </ul>
 </li>
 </ul>
@@ -403,9 +403,9 @@ call()과 기능은 같지만 파라미터를 Array로 넘겨준다는 특징이
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">sayHello</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 'Hello CSS-Tricks Reader!'</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(hello); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Error, hello is not defined</span></span></code></pre></figure>
 <ul>
-<li>블록 스코프(Block Scope)
+<li>Block Scope
 <ul>
-<li>여러분이 중괄호({}) 내부에서 const 또는 let으로 변수를 선언하면, 그 변수들은 중괄호 블록 내부에서만 접근할 수 있습니다.</li>
+<li>When you declare a variable with <code>const</code> or <code>let</code> inside curly braces ({}), those variables can only be accessed inside the curly-brace block.</li>
 </ul>
 </li>
 </ul>
@@ -414,9 +414,9 @@ call()과 기능은 같지만 파라미터를 Array로 넘겨준다는 특징이
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(hello); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 'Hello CSS-Tricks Reader!'</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(hello); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Error, hello is not defined</span></span></code></pre></figure>
-<h4 id="네스팅된-스코프nested-scopes">네스팅된 스코프(Nested scopes)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#네스팅된-스코프nested-scopes"><span class="icon icon-link"></span></a></h4>
-<p>자바스크립트에서는 함수가 선언될 때 자신이 접근할 수 있는 범위를 정하고 기억하고 있는데 이것을 렉시컬 스코프라고 합니다. 그리고 이런 렉시컬 스코프에 의해 외부 함수의 환경을 기억하고 있는 내부 함수가 클로저입니다.</p>
-<p>하지만, 외부 함수는 내부 함수의 변수에 접근할 수 없습니다.</p>
+<h4 id="nested-scopes">Nested scopes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nested-scopes"><span class="icon icon-link"></span></a></h4>
+<p>In JavaScript, when a function is declared it determines and remembers the scope it can access, and this is called lexical scope. And an inner function that remembers the environment of its outer function through this lexical scope is a closure.</p>
+<p>However, the outer function cannot access the inner function's variables.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> outerFunction</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> outer</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'I’m the outer function!'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
@@ -429,21 +429,21 @@ call()과 기능은 같지만 파라미터를 Array로 넘겨준다는 특징이
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <p><img src="/blog-assets/2020/06/images/28/nested.png" alt="Nested scopes1">
 <img src="/blog-assets/2020/06/images/28/nesteds.png" alt="Nested scopes2"></p>
-<h3 id="스코프체인">스코프체인<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#스코프체인"><span class="icon icon-link"></span></a></h3>
+<h3 id="scope-chain">Scope Chain<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#scope-chain"><span class="icon icon-link"></span></a></h3>
 <p><img src="/blog-assets/2020/06/images/28/scopechain.png" alt="scopechain"></p>
 <ul>
 <li>
-<p>함수(setClick) 스코프만 존재할 경우
+<p>When only the function (setClick) scope exists
 <img src="/blog-assets/2020/06/images/28/scope_var.png" alt="scopevar"></p>
 </li>
 <li>
-<p>블록스코프(for문안에 {}) 스코프가 존재할 경우
+<p>When a block scope (the {} inside a for loop) exists
 <img src="/blog-assets/2020/06/images/28/scope_let.png" alt="scopelet"></p>
 </li>
 </ul>
-<p><a href="https://www.youtube.com/watch?v=RZ3gXcI1MZY" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">참조사이트</a></p>
-<h3 id="클로저closures">클로저(Closures)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#클로저closures"><span class="icon icon-link"></span></a></h3>
-<p>클로저는 내부 함수가 정의될 때 외부 함수의 환경을 기억하고 있는 내부 함수를 말합니다. 외부 함수 안에서 선언된 내부 함수는 그 외부 함수의 지역 변수나 함수에 접근하여 사용할 수 있습니다.</p>
+<p><a href="https://www.youtube.com/watch?v=RZ3gXcI1MZY" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">Reference Site</a></p>
+<h3 id="closures">Closures<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#closures"><span class="icon icon-link"></span></a></h3>
+<p>A closure is an inner function that, when defined, remembers the environment of its outer function. An inner function declared inside an outer function can access and use the outer function's local variables and functions.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> outerFunction</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> outer</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'I see the outer variable!'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
@@ -453,9 +453,9 @@ call()과 기능은 같지만 파라미터를 Array로 넘겨준다는 특징이
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">outerFunction</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()(); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// I see the outer variable!</span></span></code></pre></figure>
 <ul>
-<li>Private 변수와 클로저
-함수 내의 변수는 함수 바깥에서 접근할 수 없습니다. 그 변수들은 접근할 수 없기 때문에, private 변수라고 불립니다.
-하지만, 해당 변수들에 접근해야 할 필요가 종종 발생합니다. 이것 또한 클로저를 활용해서 할 수 있죠.</li>
+<li>Private variables and closures
+Variables inside a function cannot be accessed from outside the function. Because those variables can't be accessed, they're called private variables.
+However, there are often times when you need to access those variables. This too can be done using closures.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> secret</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">secretCode</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -467,13 +467,13 @@ call()과 기능은 같지만 파라미터를 Array로 넘겨준다는 특징이
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> theSecret</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> secret</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'CSS Tricks is amazing'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">theSecret.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">saySecretCode</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 'CSS Tricks is amazing'</span></span></code></pre></figure>
-<h4 id="참조사이트-2">참조사이트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참조사이트-2"><span class="icon icon-link"></span></a></h4>
-<p><a href="https://medium.com/@khwsc1/%EB%B2%88%EC%97%AD-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80-javascript-scope-and-closures-8d402c976d19" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">참조사이트</a></p>
-<h3 id="브라우저-동작원리">브라우저 동작원리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#브라우저-동작원리"><span class="icon icon-link"></span></a></h3>
+<h4 id="reference-site-2">Reference Site<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reference-site-2"><span class="icon icon-link"></span></a></h4>
+<p><a href="https://medium.com/@khwsc1/%EB%B2%88%EC%97%AD-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80-javascript-scope-and-closures-8d402c976d19" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">Reference Site</a></p>
+<h3 id="how-browsers-work">How Browsers Work<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#how-browsers-work"><span class="icon icon-link"></span></a></h3>
 <p><a href="https://d2.naver.com/helloworld/59361" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"></a><a href="https://d2.naver.com/helloworld/59361">https://d2.naver.com/helloworld/59361</a></p>
 <h3 id="prototype-proto">prototype, <strong>proto</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#prototype-proto"><span class="icon icon-link"></span></a></h3>
-<h4 id="objectprototype-이란">Object.prototype 이란?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#objectprototype-이란"><span class="icon icon-link"></span></a></h4>
-<p>Javascript에서 거의 모든 객체는 Object의 인스턴스이다. 일반적인 객체는 Object.prototype에서 속성과 메서드를 상속받으며, 그 일부는 숨겨질 수 있다. - MDN문서 정의</p>
+<h4 id="what-is-objectprototype">What is Object.prototype?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#what-is-objectprototype"><span class="icon icon-link"></span></a></h4>
+<p>In JavaScript, almost every object is an instance of Object. A typical object inherits properties and methods from Object.prototype, some of which may be hidden. - Definition from the MDN docs</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Person</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {}</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Person </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// javascript에서는 함수 또한 객체이다.</span></span>
@@ -513,62 +513,62 @@ call()과 기능은 같지만 파라미터를 Array로 넘겨준다는 특징이
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> kim </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Employee</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'kim'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'student'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <ul>
-<li>설명
-Person객체를 생성시 Person.prototype이 생성된다. 그리고 Person.prototype.constructor는 Person을 가리킨다. 그리고 Employee.prototype이 Person.prototype을 참조하게 한다면, 그의 constructor 또한 Person을 지칭하므로 자신을 지칭할 수 있도록 다시 Employee로 변경해준다. 그리고 새롭게 생성된 kim객체는 Employee.prototype를 가리킨다. 따라서 kim.proto 는 Employee.prototype를 가리킨다</li>
+<li>Explanation
+When you create a Person object, Person.prototype is created. And Person.prototype.constructor points to Person. Then, if you make Employee.prototype reference Person.prototype, its constructor would also point to Person, so you change it back to Employee so that it can point to itself. And the newly created kim object points to Employee.prototype. Therefore, kim.proto points to Employee.prototype.</li>
 </ul>
 <p><img src="/blog-assets/2020/06/images/28/prototype.png" alt="prototype">
-함수 객체 앞에 new키워드를 사용하면 생성자가 되고, 이것으로 생성한 객체를 인스턴스라고 한다. 위 이미지에서는 kim이 Person객체의 인스턴스이다.</p>
-<h4 id="proto-vs-prototype의-차이"><strong>proto</strong> vs prototype의 차이<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#proto-vs-prototype의-차이"><span class="icon icon-link"></span></a></h4>
+When you use the <code>new</code> keyword before a function object, it becomes a constructor, and the object created with it is called an instance. In the image above, kim is an instance of the Person object.</p>
+<h4 id="the-difference-between-proto-and-prototype">The difference between <strong>proto</strong> and prototype<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-difference-between-proto-and-prototype"><span class="icon icon-link"></span></a></h4>
 <ul>
 <li>
 <p><strong>proto</strong></p>
 <ul>
-<li><strong>proto</strong> 속성은 모든 객체가 가지고 있는 속성.</li>
-<li>객체가 생성될 때 자신의 생성한 객체에 프로토타입을 가리킽다.</li>
+<li>The <strong>proto</strong> property is a property that every object has.</li>
+<li>When an object is created, it points to the prototype of the object that created it.</li>
 </ul>
 </li>
 <li>
 <p>prototype</p>
 <ul>
-<li>함수 객체만이 가지는 프로토타입</li>
-<li>생성한 인스턴스가 가리키는 프로토타입을 의미한다.</li>
+<li>A prototype that only function objects have</li>
+<li>It refers to the prototype that a created instance points to.</li>
 </ul>
 </li>
 </ul>
 <h4 id="prototype-chain">Prototype Chain<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#prototype-chain"><span class="icon icon-link"></span></a></h4>
-<p>모든 프로토타입 체인의 끝은 항상 Object.prototype이다. 그래서 Object.prototype은 <strong>proto</strong>속성이 없다.</p>
-<h4 id="참조사이트-3">참조사이트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참조사이트-3"><span class="icon icon-link"></span></a></h4>
+<p>The end of every prototype chain is always Object.prototype. That's why Object.prototype has no <strong>proto</strong> property.</p>
+<h4 id="reference-site-3">Reference Site<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reference-site-3"><span class="icon icon-link"></span></a></h4>
 <p><a href="https://velog.io/@miniyoung37/-prototype-proto-Object.create-21k0w0txr4" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">prototype,proto</a></p>
 <h3 id="oop">OOP<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#oop"><span class="icon icon-link"></span></a></h3>
-<h4 id="oop에-특징에-대해-설명상속-캡슐화-등등">OOP에 특징에 대해 설명(상속, 캡슐화 등등...)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#oop에-특징에-대해-설명상속-캡슐화-등등"><span class="icon icon-link"></span></a></h4>
-<h4 id="oop의-개념으로-설계과정을-설명">OOP의 개념으로 설계과정을 설명<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#oop의-개념으로-설계과정을-설명"><span class="icon icon-link"></span></a></h4>
-<h3 id="함수형-프로그래밍function-programming">함수형 프로그래밍(Function Programming)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#함수형-프로그래밍function-programming"><span class="icon icon-link"></span></a></h3>
-<h4 id="함수형-프로그래밍에-대해-설명">함수형 프로그래밍에 대해 설명<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#함수형-프로그래밍에-대해-설명"><span class="icon icon-link"></span></a></h4>
-<h4 id="순수함수-불변성-일급객체">순수함수, 불변성, 일급객체<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#순수함수-불변성-일급객체"><span class="icon icon-link"></span></a></h4>
-<p>1급 객체 (First Object, 또는 1급 시민)</p>
+<h4 id="explaining-the-characteristics-of-oop-inheritance-encapsulation-etc">Explaining the characteristics of OOP (inheritance, encapsulation, etc.)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#explaining-the-characteristics-of-oop-inheritance-encapsulation-etc"><span class="icon icon-link"></span></a></h4>
+<h4 id="explaining-the-design-process-in-terms-of-oop-concepts">Explaining the design process in terms of OOP concepts<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#explaining-the-design-process-in-terms-of-oop-concepts"><span class="icon icon-link"></span></a></h4>
+<h3 id="functional-programming">Functional Programming<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#functional-programming"><span class="icon icon-link"></span></a></h3>
+<h4 id="explaining-functional-programming">Explaining functional programming<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#explaining-functional-programming"><span class="icon icon-link"></span></a></h4>
+<h4 id="pure-functions-immutability-first-class-objects">Pure functions, immutability, first-class objects<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pure-functions-immutability-first-class-objects"><span class="icon icon-link"></span></a></h4>
+<p>First-Class Object (or first-class citizen)</p>
 <ul>
-<li>1급 객체(First class object)란 다음과 같은 조건을 만족하는 객체
+<li>A first-class object is an object that satisfies the following conditions
 <ul>
-<li>변수나 데이터 구조안에 담을 수 있다.</li>
-<li>파라미터로 전달 할 수 있다.</li>
-<li>반환값(return value)으로 사용할 수 있다.</li>
-<li>동적으로 프로퍼티 할당이 가능하다.</li>
+<li>It can be held in a variable or data structure.</li>
+<li>It can be passed as a parameter.</li>
+<li>It can be used as a return value.</li>
+<li>Properties can be assigned to it dynamically.</li>
 </ul>
 </li>
 </ul>
-<p>고차 함수 (High-Order Function)</p>
+<p>Higher-Order Function</p>
 <ul>
-<li>람다 계산법에서 만들어진 용어로 아래 조건을 만족하는 함수
+<li>A term originating from lambda calculus, referring to a function that satisfies the conditions below
 <ul>
-<li>함수에 함수를 파라미터로 전달할 수 있다.</li>
-<li>함수의 반환값으로 함수를 사용할 수 있다.</li>
+<li>A function can be passed to it as a parameter.</li>
+<li>A function can be used as its return value.</li>
 </ul>
 </li>
 </ul>
-<p>불변성 (Immutablility)</p>
+<p>Immutability</p>
 <ul>
-<li>함수형 프로그래밍에서는 데이터가 변할 수 없는데, 이를 불변성 데이터라고 한다. (자바스크립트는 가능하지만 불가능한 언어들이 있다)</li>
-<li>데이터 변경이 필요한 경우, 원본 데이터 구조를 변경하지 않고 그 데이터를 복사본을 만들어 그 일부를 변경하고, 변경한 복사본을 사용해 작업을 진행한다.</li>
+<li>In functional programming, data cannot change, and this is called immutable data. (JavaScript allows mutation, but there are languages where it's not possible.)</li>
+<li>When data needs to change, instead of altering the original data structure, you make a copy of that data, change part of it, and proceed with your work using the modified copy.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 불변이 아닌 변하는(Mutatable) 데이터</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> rateColor</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">rating</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
@@ -586,12 +586,12 @@ Person객체를 생성시 Person.prototype이 생성된다. 그리고 Person.pro
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">rateColor</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(color </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> lawn, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">), rating); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 5</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(color_lawn.rating); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 0 *변하지 않음\_</span></span></code></pre></figure>
-<p>순수 함수 (Pure function)</p>
+<p>Pure Function</p>
 <ul>
-<li>순수 함수란 함수형 프로그래밍에 필요한 개념으로 아래 조건을 만족하는 함수를 뜻한다.
+<li>A pure function is a concept needed for functional programming, referring to a function that satisfies the conditions below.
 <ul>
-<li>함수의 결과값이 오직 입력 인자 값들에 의해서만 결정</li>
-<li>부작용(side effects)이 없는 함수</li>
+<li>The function's return value is determined solely by its input argument values</li>
+<li>A function with no side effects</li>
 <li></li>
 </ul>
 </li>
@@ -607,9 +607,9 @@ Person객체를 생성시 Person.prototype이 생성된다. 그리고 Person.pro
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> pureadd</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">first</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">secode</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(first, second);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
-<p><a href="https://velog.io/@kyusung/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%9A%94%EC%95%BD" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">함수형프로그램</a></p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"concept"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"concept"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2020-06-28","className":"meta-mono","children":"06/28/2020"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[10,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","아카이브",{"children":["$","$L3",null,{"href":"/en/tags?tag=%EC%95%84%EC%B9%B4%EC%9D%B4%EB%B8%8C","className":"tag-pill","children":"아카이브"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+<p><a href="https://velog.io/@kyusung/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%9A%94%EC%95%BD" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;">Functional Programming</a></p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Concept"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Concept"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2020-06-28","className":"meta-mono","children":"06/28/2020"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[12,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","Archive",{"children":["$","$L3",null,{"href":"/en/tags?tag=Archive","className":"tag-pill","children":"Archive"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
 5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2020-04-12-webtools","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"web tools"}]]}],["$","$L3",null,{"href":"/en/posts/2020-09-12-fe-performance","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Front-End Performance"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"클라이언트-측의-저장소","text":"클라이언트 측의 저장소","depth":1},{"id":"쿠키","text":"쿠키","depth":2},{"id":"localstorage","text":"localstorage","depth":2},{"id":"sessionstorage","text":"sessionstorage","depth":2},{"id":"참고사이트","text":"참고사이트","depth":1},{"id":"this-핵심내용","text":"this 핵심내용","depth":1},{"id":"커링-함수--partial-application","text":"커링 함수 & Partial application","depth":1},{"id":"partial-application","text":"Partial application","depth":2},{"id":"커링함수-개념","text":"커링함수 개념","depth":2},{"id":"커링을-사용하는-경우","text":"커링을 사용하는 경우","depth":2},{"id":"참고사이트-1","text":"참고사이트","depth":1},{"id":"web-worker","text":"web worker","depth":1},{"id":"time","text":"time","depth":1},{"id":"settimeout","text":"setTimeout","depth":2},{"id":"setinterval","text":"setInterval","depth":2},{"id":"requestanimationframe","text":"requestAnimationFrame","depth":2},{"id":"message-queue-and-event-loop","text":"Message Queue and Event Loop","depth":1},{"id":"프로그레시브-웹앱progressive-web-apps","text":"프로그레시브 웹앱(Progressive Web Apps)","depth":1},{"id":"참조사이트","text":"참조사이트","depth":3},{"id":"화살표-함수없는-것-3가지","text":"화살표 함수없는 것 3가지","depth":1},{"id":"callbindapply","text":"call/bind/apply","depth":2},{"id":"call-apply-bind-차이","text":"call, apply, bind 차이","depth":3},{"id":"call","text":"call","depth":3},{"id":"apply","text":"apply","depth":3},{"id":"bind","text":"bind","depth":3},{"id":"참조사이트-1","text":"참조사이트","depth":3},{"id":"실행-컨텍스트execution-context에-대해-설명","text":"실행 컨텍스트(Execution Context)에 대해 설명","depth":2},{"id":"함수-호이스팅function-hoisting과-스코프","text":"함수 호이스팅(Function hoisting)과 스코프","depth":2},{"id":"스코프","text":"스코프","depth":2},{"id":"전역-스코프global-scope","text":"전역 스코프(Global Scope)","depth":3},{"id":"지역스코프local-scope","text":"지역스코프(Local Scope)","depth":3},{"id":"네스팅된-스코프nested-scopes","text":"네스팅된 스코프(Nested scopes)","depth":3},{"id":"스코프체인","text":"스코프체인","depth":2},{"id":"클로저closures","text":"클로저(Closures)","depth":2},{"id":"참조사이트-2","text":"참조사이트","depth":3},{"id":"브라우저-동작원리","text":"브라우저 동작원리","depth":2},{"id":"prototype-proto","text":"prototype, proto","depth":2},{"id":"objectprototype-이란","text":"Object.prototype 이란?","depth":3},{"id":"proto-vs-prototype의-차이","text":"proto vs prototype의 차이","depth":3},{"id":"prototype-chain","text":"Prototype Chain","depth":3},{"id":"참조사이트-3","text":"참조사이트","depth":3},{"id":"oop","text":"OOP","depth":2},{"id":"oop에-특징에-대해-설명상속-캡슐화-등등","text":"OOP에 특징에 대해 설명(상속, 캡슐화 등등...)","depth":3},{"id":"oop의-개념으로-설계과정을-설명","text":"OOP의 개념으로 설계과정을 설명","depth":3},{"id":"함수형-프로그래밍function-programming","text":"함수형 프로그래밍(Function Programming)","depth":2},{"id":"함수형-프로그래밍에-대해-설명","text":"함수형 프로그래밍에 대해 설명","depth":3},{"id":"순수함수-불변성-일급객체","text":"순수함수, 불변성, 일급객체","depth":3}],"title":"Contents"}]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"client-side-storage","text":"Client-Side Storage","depth":1},{"id":"cookies","text":"Cookies","depth":2},{"id":"localstorage","text":"localstorage","depth":2},{"id":"sessionstorage","text":"sessionstorage","depth":2},{"id":"reference-sites","text":"Reference Sites","depth":1},{"id":"key-points-about-this","text":"Key Points About this","depth":1},{"id":"currying--partial-application","text":"Currying & Partial application","depth":1},{"id":"partial-application","text":"Partial application","depth":2},{"id":"the-concept-of-currying","text":"The concept of currying","depth":2},{"id":"when-to-use-currying","text":"When to use currying","depth":2},{"id":"reference-sites-1","text":"Reference Sites","depth":1},{"id":"web-worker","text":"web worker","depth":1},{"id":"time","text":"time","depth":1},{"id":"settimeout","text":"setTimeout","depth":2},{"id":"setinterval","text":"setInterval","depth":2},{"id":"requestanimationframe","text":"requestAnimationFrame","depth":2},{"id":"message-queue-and-event-loop","text":"Message Queue and Event Loop","depth":1},{"id":"progressive-web-apps","text":"Progressive Web Apps","depth":1},{"id":"reference-site","text":"Reference Site","depth":3},{"id":"3-things-arrow-functions-dont-have","text":"3 Things Arrow Functions Don't Have","depth":1},{"id":"callbindapply","text":"call/bind/apply","depth":2},{"id":"differences-between-call-apply-and-bind","text":"Differences between call, apply, and bind","depth":3},{"id":"call","text":"call","depth":3},{"id":"apply","text":"apply","depth":3},{"id":"bind","text":"bind","depth":3},{"id":"reference-site-1","text":"Reference Site","depth":3},{"id":"explaining-the-execution-context","text":"Explaining the Execution Context","depth":2},{"id":"function-hoisting-and-scope","text":"Function hoisting and scope","depth":2},{"id":"scope","text":"Scope","depth":2},{"id":"global-scope","text":"Global Scope","depth":3},{"id":"local-scope","text":"Local Scope","depth":3},{"id":"nested-scopes","text":"Nested scopes","depth":3},{"id":"scope-chain","text":"Scope Chain","depth":2},{"id":"closures","text":"Closures","depth":2},{"id":"reference-site-2","text":"Reference Site","depth":3},{"id":"how-browsers-work","text":"How Browsers Work","depth":2},{"id":"prototype-proto","text":"prototype, proto","depth":2},{"id":"what-is-objectprototype","text":"What is Object.prototype?","depth":3},{"id":"the-difference-between-proto-and-prototype","text":"The difference between proto and prototype","depth":3},{"id":"prototype-chain","text":"Prototype Chain","depth":3},{"id":"reference-site-3","text":"Reference Site","depth":3},{"id":"oop","text":"OOP","depth":2},{"id":"explaining-the-characteristics-of-oop-inheritance-encapsulation-etc","text":"Explaining the characteristics of OOP (inheritance, encapsulation, etc.)","depth":3},{"id":"explaining-the-design-process-in-terms-of-oop-concepts","text":"Explaining the design process in terms of OOP concepts","depth":3},{"id":"functional-programming","text":"Functional Programming","depth":2},{"id":"explaining-functional-programming","text":"Explaining functional programming","depth":3},{"id":"pure-functions-immutability-first-class-objects","text":"Pure functions, immutability, first-class objects","depth":3}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

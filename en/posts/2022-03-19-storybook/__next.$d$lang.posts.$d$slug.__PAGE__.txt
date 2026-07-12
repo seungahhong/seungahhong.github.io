@@ -4,18 +4,18 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:Teb16,<h2 id="도입목적">도입목적<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#도입목적"><span class="icon icon-link"></span></a></h2>
+4:Te9c7,<h2 id="purpose-of-adoption">Purpose of Adoption<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#purpose-of-adoption"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li>기획, 디자인이 병렬로 진행중인 사항에서 계속적으로 스펙이 변경됨을 반영해서 기획자, 디자이너에 공유를 목적으로 합니다.</li>
-<li>백엔드와도 병렬로 진행 시 로직(container), 화면(presentation) 분리해서 진행해야함으로 그것을 검증하기 위해서 storybook 단위의 컴포넌트 개발을 진행합니다.</li>
-<li>추후에 화면단위 테스트 진행 시 storybook을 적극 활용합니다.</li>
-<li>그외
+<li>As planning and design proceed in parallel and the spec keeps changing, the goal is to reflect those changes and share them with planners and designers.</li>
+<li>When working in parallel with the backend as well, the logic (container) and the view (presentation) must be separated, so we develop components at the Storybook level to validate that separation.</li>
+<li>Storybook is actively leveraged later when running screen-level tests.</li>
+<li>Others
 <ul>
-<li>접근성에 대한 부분도 같이 고민하면서 화면단위 컴포넌트를 개발을 진행합니다.</li>
+<li>We also develop screen-level components while considering accessibility.</li>
 </ul>
 </li>
 </ul>
-<h2 id="addon-controls-적용">addon-controls 적용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#addon-controls-적용"><span class="icon icon-link"></span></a></h2>
+<h2 id="applying-addon-controls">Applying addon-controls<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#applying-addon-controls"><span class="icon icon-link"></span></a></h2>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> i</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -D</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @storybook/addon-controls</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">or</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -dev</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @storybook/addon-controls</span></span></code></pre></figure>
@@ -28,23 +28,23 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ],</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ...</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
-<h2 id="addon-knobs-적용">addon-knobs 적용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#addon-knobs-적용"><span class="icon icon-link"></span></a></h2>
+<h2 id="applying-addon-knobs">Applying addon-knobs<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#applying-addon-knobs"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>@storybook/addon-knobs
 <ul>
-<li>다양한 컴포넌트와의 상호작용을 할 수 있도록 도와주는 addon 입니다.</li>
+<li>An addon that helps you interact with various components.</li>
 </ul>
 </li>
-<li>Knobs 컨트롤 종류
+<li>Types of Knobs controls
 <ul>
-<li>text: 텍스트를 입력 할 수 있습니다.</li>
-<li>boolean: true/false 값을 체크박스로 설정 할 수 있습니다.</li>
-<li>number: 숫자를 입력 할 수 있습니다. 1~10과 같이 간격을 설정 할 수도 있습니다.</li>
-<li>color: 컬러 팔레트를 통해 색상을 설정 할 수 있습니다.</li>
-<li>object: JSON 형태로 객체 또는 배열을 설정 할 수 있습니다.</li>
-<li>select: 셀렉트 박스를 통하여 여러가지 옵션 중에 하나를 선택 할 수 있습니다.</li>
-<li>radios: Radio 버튼을 통하여 여러가지 옵션 중에 하나를 선택 할 수 있습니다.</li>
-<li>date: 날짜를 선택 할 수 있습니다.
+<li>text: Lets you enter text.</li>
+<li>boolean: Lets you set a true/false value with a checkbox.</li>
+<li>number: Lets you enter a number. You can also set intervals such as 1–10.</li>
+<li>color: Lets you set a color through a color palette.</li>
+<li>object: Lets you set an object or array in JSON form.</li>
+<li>select: Lets you choose one of several options through a select box.</li>
+<li>radios: Lets you choose one of several options through radio buttons.</li>
+<li>date: Lets you pick a date.
 <img src="/blog-assets/2022/03/assets/19/Untitled.png" alt="Untitled"></li>
 </ul>
 </li>
@@ -89,9 +89,9 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
 <ul>
-<li>Knobs 컨트롤 그룹
+<li>Knobs control groups
 <ul>
-<li>기획/디자인 가이드에 제공해야 하는 Props에 대해서는 그룹으로 묶고, 아닐경우 포함하지 않도록 합니다. - Props: 기획/디자인 가이드에 제공 - Other: 기획/디자인 공유를 위한 속성일 경우
+<li>Group the Props that need to be provided in the planning/design guide, and exclude the rest. - Props: provided in the planning/design guide - Other: attributes shared only for planning/design purposes
 <img src="/blog-assets/2022/03/assets/19/Untitled1.png" alt="Untitled"></li>
 </ul>
 </li>
@@ -117,10 +117,10 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
 <ul>
 <li>
-<p>Knobs 컨트롤 스타일</p>
+<p>Knobs control styles</p>
 <ul>
 <li>
-<p>class style 동적생성</p>
+<p>Dynamically generating class styles</p>
 <ul>
 <li>className={['storybook-button', <code>storybook-button--${size}</code>, mode].join(' ')}</li>
 </ul>
@@ -144,7 +144,7 @@ b:"$Sreact.suspense"
 <span data-line=""> </span></code></pre></figure>
 </li>
 <li>
-<p>style 동적생성</p>
+<p>Dynamically generating styles</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Button</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  primary</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">boolean</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Primary'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Props'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  size</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">select</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Size'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, ButtonSize, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'md'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Props'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span></span>
@@ -180,16 +180,16 @@ b:"$Sreact.suspense"
 </ul>
 </li>
 </ul>
-<h2 id="addon-viewport-적용">addon-viewport 적용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#addon-viewport-적용"><span class="icon icon-link"></span></a></h2>
+<h2 id="applying-addon-viewport">Applying addon-viewport<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#applying-addon-viewport"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>@storybook/addon-viewport
 <ul>
-<li>반응형 대응을 위해 도와주는 addon 입니다.</li>
+<li>An addon that helps with responsive support.</li>
 </ul>
 </li>
-<li>Configuration 설정
+<li>Configuration settings
 <ul>
-<li>storybook에서 제공해주는 기본 Viewport와 커스텀 Viewport 나눠서 작업을 진행합니다.
+<li>We work with both the default Viewports provided by Storybook and custom Viewports, split into separate configurations.
 <img src="/blog-assets/2022/03/assets/19/Untitled2.png" alt="Untitled"></li>
 </ul>
 </li>
@@ -222,11 +222,11 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">      //👇 Your own default viewport</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">      defaultViewport</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'iphoneX'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span></code></pre></figure>
-<h2 id="addon-ally접근성-적용">addon-ally(접근성) 적용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#addon-ally접근성-적용"><span class="icon icon-link"></span></a></h2>
+<h2 id="applying-addon-ally-accessibility">Applying addon-ally (accessibility)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#applying-addon-ally-accessibility"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>@storybook/addon-a11y
 <ul>
-<li>웹접근성을 도와주는 addon 입니다.
+<li>An addon that helps with web accessibility.
 <img src="/blog-assets/2022/03/assets/19/Untitled3.png" alt="Untitled"></li>
 </ul>
 </li>
@@ -249,16 +249,16 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
-<h2 id="addon-notes노트-적용">addon-notes(노트) 적용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#addon-notes노트-적용"><span class="icon icon-link"></span></a></h2>
+<h2 id="applying-addon-notes-notes">Applying addon-notes (notes)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#applying-addon-notes-notes"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>@storybook/addon-notes
 <ul>
-<li>스토리북에 노트를 하기 위한 addon 입니다.</li>
+<li>An addon for adding notes in Storybook.</li>
 </ul>
 </li>
-<li><strong>왜 해야할까??</strong>
+<li><strong>Why should we do this??</strong>
 <ul>
-<li>기획/디자인 제플린을 기준으로 개발을 진행 후 QA진행 시 검증 시 주의할 사항이나 검증해줬으면 하는 내용에 대해서 note를 통해서 공유하고자 합니다.
+<li>After developing based on the planning/design Zeplin, we want to share, through notes, any caveats to watch out for during QA verification or the things we'd like to have verified.
 <img src="/blog-assets/2022/03/assets/19/Untitled4.png" alt="Untitled"></li>
 </ul>
 </li>
@@ -273,11 +273,11 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    `</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
-<h2 id="addon-sources-적용">addon-sources 적용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#addon-sources-적용"><span class="icon icon-link"></span></a></h2>
+<h2 id="applying-addon-sources">Applying addon-sources<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#applying-addon-sources"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>@storybook/addon-storysource
 <ul>
-<li>스토리북에 테스트 하는 실제 컴포넌트를 보여주기 위한 addon 입니다.</li>
+<li>An addon that shows the actual component being tested in Storybook.</li>
 </ul>
 </li>
 <li><img src="/blog-assets/2022/03/assets/19/Untitled5.png" alt="Untitled"></li>
@@ -287,26 +287,26 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  stories: [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'../src/**/*.stories.mdx'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'../src/**/*.stories.@(js|jsx|ts|tsx)'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">],</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  addons: [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'@storybook/addon-storysource'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">],</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
-<h2 id="addon-zeplin-적용">addon-zeplin 적용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#addon-zeplin-적용"><span class="icon icon-link"></span></a></h2>
+<h2 id="applying-addon-zeplin">Applying addon-zeplin<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#applying-addon-zeplin"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>storybook-zeplin
 <ul>
-<li>스토리북에서 zeplin에 대한 내용을 보여주기 위한 addon 입니다.</li>
+<li>An addon for showing Zeplin content in Storybook.</li>
 </ul>
 </li>
-<li>사용방법
+<li>How to use
 <ul>
-<li>access token 연동
+<li>Connect the access token
 <ul>
-<li><a href="https://app.zeplin.io/profile/developer">https://app.zeplin.io/profile/developer</a>(Personal access tokens 키 생성)</li>
-<li>.env 파일에 추가
+<li><a href="https://app.zeplin.io/profile/developer">https://app.zeplin.io/profile/developer</a> (create a Personal access tokens key)</li>
+<li>Add it to the .env file
 <ul>
 <li>.envSTORYBOOK_ZEPLIN_TOKEN=~~</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>참고: <a href="https://www.npmjs.com/package/storybook-zeplin">https://www.npmjs.com/package/storybook-zeplin</a></li>
+<li>Reference: <a href="https://www.npmjs.com/package/storybook-zeplin">https://www.npmjs.com/package/storybook-zeplin</a></li>
 </ul>
 </li>
 </ul>
@@ -333,14 +333,14 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ./.env</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"># .env</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">STORYBOOK_ZEPLIN_TOKEN</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span></span></code></pre></figure>
-<h2 id="typescript-적용">typescript 적용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#typescript-적용"><span class="icon icon-link"></span></a></h2>
+<h2 id="applying-typescript">Applying typescript<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#applying-typescript"><span class="icon icon-link"></span></a></h2>
 <p><a href="https://developer0809.tistory.com/171">https://developer0809.tistory.com/171</a></p>
-<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li><a href="https://ideveloper2.dev/blog/2020-04-25--storybook-%EC%9E%98-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0/">https://ideveloper2.dev/blog/2020-04-25--storybook-%EC%9E%98-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B</a></li>
-</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"storybook"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"storybook"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-03-19","className":"meta-mono","children":"03/19/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[3,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","storybook",{"children":["$","$L3",null,{"href":"/en/tags?tag=storybook","className":"tag-pill","children":"storybook"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"storybook"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"storybook"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-03-19","className":"meta-mono","children":"03/19/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[3,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","storybook",{"children":["$","$L3",null,{"href":"/en/tags?tag=storybook","className":"tag-pill","children":"storybook"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
 5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2022-03-12-react-router-v6","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"react-router-v6"}]]}],["$","$L3",null,{"href":"/en/posts/2022-03-22-recoil","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"recoil"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"도입목적","text":"도입목적","depth":1},{"id":"addon-controls-적용","text":"addon-controls 적용","depth":1},{"id":"addon-knobs-적용","text":"addon-knobs 적용","depth":1},{"id":"addon-viewport-적용","text":"addon-viewport 적용","depth":1},{"id":"addon-ally접근성-적용","text":"addon-ally(접근성) 적용","depth":1},{"id":"addon-notes노트-적용","text":"addon-notes(노트) 적용","depth":1},{"id":"addon-sources-적용","text":"addon-sources 적용","depth":1},{"id":"addon-zeplin-적용","text":"addon-zeplin 적용","depth":1},{"id":"typescript-적용","text":"typescript 적용","depth":1},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"Contents"}]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"purpose-of-adoption","text":"Purpose of Adoption","depth":1},{"id":"applying-addon-controls","text":"Applying addon-controls","depth":1},{"id":"applying-addon-knobs","text":"Applying addon-knobs","depth":1},{"id":"applying-addon-viewport","text":"Applying addon-viewport","depth":1},{"id":"applying-addon-ally-accessibility","text":"Applying addon-ally (accessibility)","depth":1},{"id":"applying-addon-notes-notes","text":"Applying addon-notes (notes)","depth":1},{"id":"applying-addon-sources","text":"Applying addon-sources","depth":1},{"id":"applying-addon-zeplin","text":"Applying addon-zeplin","depth":1},{"id":"applying-typescript","text":"Applying typescript","depth":1},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

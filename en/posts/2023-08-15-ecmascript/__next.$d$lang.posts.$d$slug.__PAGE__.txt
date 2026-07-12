@@ -4,14 +4,14 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T658bf,<h2 id="es2024es15">ES2024(ES15)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#es2024es15"><span class="icon icon-link"></span></a></h2>
-<p><strong>ES2024에 추가된 기능들</strong></p>
-<p><a href="https://tc39.es/ecma262/">ECMAScript® 2024 Language Specification</a></p>
-<p>ECMAScript 2024, the 15th edition, added facilities for resizing and transferring ArrayBuffers and SharedArrayBuffers; added a new RegExp <strong><code>/v</code></strong> flag for creating RegExps with more advanced features for working with sets of strings; and introduced the <strong><code>Promise.withResolvers</code></strong> convenience method for constructing Promises, the <strong><code>Object.groupBy</code></strong> and <strong><code>Map.groupBy</code></strong> methods for aggregating data, the <strong><code>Atomics.waitAsync</code></strong> method for asynchronously waiting for a change to shared memory, and the <strong><code>String.prototype.isWellFormed</code></strong> and <strong><code>String.prototype.toWellFormed</code></strong> methods for checking and ensuring that strings contain only well-formed Unicode.</p>
+4:T6541a,<h2 id="es2024es15">ES2024(ES15)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#es2024es15"><span class="icon icon-link"></span></a></h2>
+<p><strong>Features added in ES2024</strong></p>
+<p><a href="https://tc39.es/ecma262/">ECMAScript® 2024 Language Specification</a></p>
+<p>ECMAScript 2024, the 15th edition, added facilities for resizing and transferring ArrayBuffers and SharedArrayBuffers; added a new RegExp <strong><code>/v</code></strong> flag for creating RegExps with more advanced features for working with sets of strings; and introduced the <strong><code>Promise.withResolvers</code></strong> convenience method for constructing Promises, the <strong><code>Object.groupBy</code></strong> and <strong><code>Map.groupBy</code></strong> methods for aggregating data, the <strong><code>Atomics.waitAsync</code></strong> method for asynchronously waiting for a change to shared memory, and the <strong><code>String.prototype.isWellFormed</code></strong> and <strong><code>String.prototype.toWellFormed</code></strong> methods for checking and ensuring that strings contain only well-formed Unicode.</p>
 <p><strong>Promise.withResolvers</strong></p>
 <p><a href="https://github.com/tc39/proposal-promise-with-resolvers">tc39/proposal-promise-with-resolvers</a></p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/withResolvers">Promise.withResolvers() - JavaScript | MDN</a></p>
-<p>Promise 확장 방법 중 하나로 새로운 <code>Promise</code> 인스턴스와 해당 Promise의 해결(resolve) 및 거부(reject) 함수를 반환합니다</p>
+<p>One of the ways to extend Promises: it returns a new <code>Promise</code> instance along with that Promise's resolve and reject functions.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Promise.withResolvers()다음 코드와 정확히 동일합니다</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> resolve, reject;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> promise</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Promise</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">((</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">res</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">rej</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -52,7 +52,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'hello'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <p><strong>proposal-array-grouping</strong></p>
 <p><a href="https://github.com/tc39/proposal-array-grouping">tc39/proposal-array-grouping</a></p>
-<p>배열의 아이템을 객체/Map 형식으로 그룹화 해주는 함수</p>
+<p>A function that groups the items of an array into an object/Map form.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> array</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">4</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// `Object.groupBy` groups items by arbitrary key.</span></span>
@@ -74,9 +74,9 @@ b:"$Sreact.suspense"
 <p><a href="https://github.com/tc39/proposal-atomics-wait-async">tc39/proposal-atomics-wait-async</a></p>
 <p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Atomics/waitAsync">Atomics.waitAsync() - JavaScript | MDN</a></p>
 <p><a href="http://hacks.mozilla.or.kr/2017/11/a-cartoon-intro-to-arraybuffers-and-sharedarraybuffers/">ArrayBuffer/SharedArrayBuffer</a></p>
-<p>정적 메서드는 공유 메모리 위치에서 비동기적으로 대기하고 Promise를 반환하는 함수</p>
+<p>A static method that waits asynchronously on a shared memory location and returns a Promise.</p>
 <ul>
-<li>참고로 위 메소드는 Int32Array 혹은 BigInt64Array에서만 동작</li>
+<li>Note that the method above only works with Int32Array or BigInt64Array.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> sab</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> SharedArrayBuffer</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1024</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> int32</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Int32Array</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(sab);</span></span>
@@ -89,9 +89,9 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 읽기 스레드 또는 다른 스레드에서 메모리 위치 0이 호출되고 이행 결과 "ok" 문자열을 확인</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Atomics.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">notify</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(int32, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// { async: true, value: Promise {&#x3C;fulfilled>: 'ok'} }</span></span></code></pre></figure>
-<p><strong>RegExp <code>/v</code> flag</strong></p>
+<p><strong>RegExp <code>/v</code> flag</strong></p>
 <p><a href="https://github.com/tc39/proposal-regexp-v-flag">tc39/proposal-regexp-v-flag</a></p>
-<p>정규표현식의 패턴 매칭을 통해 유니코드 이모지를 /u flag 값으로 검색이 가능하지만, 조합된 이모지 코드값으로는 검색이 가능하도록 /v flag 값 설정 추가</p>
+<p>With regular expression pattern matching you can search for Unicode emoji using the <code>/u</code> flag, but the <code>/v</code> flag was added so that combined (composed) emoji code values can also be searched.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Unicode defines a character property named “Emoji”.</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> re</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">^</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\p</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">{Emoji}</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">/</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">u</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
@@ -112,25 +112,25 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Match an emoji that consists of multiple code points:</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">re.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">test</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'👨🏾‍⚕️'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// '\u{1F468}\u{1F3FE}\u200D\u2695\uFE0F'</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// → true ✅</span></span></code></pre></figure>
-<p><strong>올바른 형식의 유니코드 문자열</strong></p>
+<p><strong>Well-formed Unicode strings</strong></p>
 <ul>
-<li><a href="https://exploringjs.com/js/book/ch_strings.html#qref-String.prototype.isWellFormed">문자열 메서드 .isWellFormed()</a>는 자바스크립트 문자열이 <em>올바른 형식</em>이고 <a href="https://exploringjs.com/js/book/ch_unicode.html#unicode-lone-surrogate">론 서로게이트(lone surrogate)</a>를 포함하고 있지 않은지 검사합니다.</li>
-<li><a href="https://exploringjs.com/js/book/ch_strings.html#qref-String.prototype.isWellFormed">문자열 메서드 .toWellFormed()</a>는 론 서로게이트를 코드 유닛 0xFFFD로 교체한 문자열의 복사본을 반환합니다(0xFFFD는 같은 수의 코드 포인트를 나타내며 이름은 "대체 문자" 입니다). 따라서 결괏값은 올바른 형식입니다.</li>
+<li><a href="https://exploringjs.com/js/book/ch_strings.html#qref-String.prototype.isWellFormed">The string method .isWellFormed()</a> checks whether a JavaScript string is <em>well-formed</em> and does not contain any <a href="https://exploringjs.com/js/book/ch_unicode.html#unicode-lone-surrogate">lone surrogate</a>.</li>
+<li><a href="https://exploringjs.com/js/book/ch_strings.html#qref-String.prototype.isWellFormed">The string method .toWellFormed()</a> returns a copy of the string in which lone surrogates are replaced with the code unit 0xFFFD (0xFFFD represents an equal number of code points and is named the "replacement character"). As a result, the return value is well-formed.</li>
 </ul>
-<p>surrogates 란?</p>
+<p>What are surrogates?</p>
 <ul>
-<li>유니코드에서 surrogate는 기본 다국어 평면(Basic Multilingual Plane, BMP)에 속하지 않는 문자를 나타내기 위해 사용되는 코드 포인트입니다.</li>
+<li>In Unicode, surrogates are code points used to represent characters that do not belong to the Basic Multilingual Plane (BMP).</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">high </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">surrogate</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">U</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">D800</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ~</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> U</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">DBFF</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">log </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">surrogate</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">U</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">DC00</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ~</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> U</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">DFFF</span></span></code></pre></figure>
-<p>lone surrogate란?</p>
+<p>What is a lone surrogate?</p>
 <ul>
-<li>서로게이트 페어에서 하나만 남은 경우를 가리킨다. 고위 서로게이트가 있고, 저위 서로게이트가 없거나, 그 반대의 경우를 의미한다. 이러한 상황은 올바른 UTF-16 표현이 아니며, 유효한 문자를 나타내지 않는다.파일 전송이나 텍스트 처리 중에 문제가 발생할 수 있다.</li>
-<li>unicode 표준은 이러한 상황을 처리하는 규칙을 제공하고 있다.</li>
+<li>It refers to a case where only one member of a surrogate pair remains. It means there is a high surrogate but no low surrogate, or vice versa. This situation is not a valid UTF-16 representation and does not represent a valid character. It can cause problems during file transfers or text processing.</li>
+<li>The Unicode standard provides rules for handling such situations.</li>
 </ul>
-<p>surrogates 문자열을 유니코드 대체 문자 U+FFFD로 대체되는 <code>[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)</code>문자열을 반환 처리</p>
+<p>Returns a <code>[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)</code> string in which surrogate strings are replaced with the Unicode replacement character U+FFFD.</p>
 <ul>
-<li>surrogates 문자열은 항상 <code>leading</code>과 <code>trailing</code>이 pair로 이루어져야 하지만, 쌍을 이루지 않을 경우에는 오류가 발생하고, 서버와 통신으로 문자열 전달 시 오류가 발생함으로 꼭 toWellFormed로 변경해서 보내야함.</li>
+<li>A surrogate string must always consist of a <code>leading</code> and <code>trailing</code> pair, but when they are not paired an error occurs. Since errors also occur when passing such strings to a server over communication, you must always convert them with toWellFormed before sending.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> strings</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // Lone leading surrogate</span></span>
@@ -141,7 +141,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  'c</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">\uDFFF</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">ab'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // Well-formed</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  'abc'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
-<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  'ab</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">\uD83D\uDE04</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">c'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  'ab😄c'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">for</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> str</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> of</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> strings) {</span></span>
@@ -165,12 +165,12 @@ b:"$Sreact.suspense"
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">encodeURI</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(illFormed.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toWellFormed</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">())); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// "https://example.com/search?q=%EF%BF%BD"</span></span></code></pre></figure>
 <h2 id="es2023es14">ES2023(ES14)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#es2023es14"><span class="icon icon-link"></span></a></h2>
-<p><strong>ES2023에 추가된 기능들</strong></p>
-<p><a href="https://tc39.es/ecma262/">ECMAScript® 2024 Language Specification</a></p>
+<p><strong>Features added in ES2023</strong></p>
+<p><a href="https://tc39.es/ecma262/">ECMAScript® 2024 Language Specification</a></p>
 <p>ECMAScript 2023, the 14th edition, introduced the <code>toSorted</code>, <code>toReversed</code>, <code>with</code>, <code>findLast</code>, and <code>findLastIndex</code> methods on <code>Array.prototype</code> and <code>TypedArray.prototype</code>, as well as the <code>toSpliced</code> method on <code>Array.prototype</code>; added support for <code>#!</code> comments at the beginning of files to better facilitate executable ECMAScript files; and allowed the use of most Symbols as keys in weak collections.</p>
 <p><strong>Array find from last</strong></p>
 <p><a href="https://github.com/tc39/proposal-array-find-from-last">tc39/proposal-array-find-from-last</a></p>
-<p>배열의 값을 뒤로부터 찾을 수 있는 기능이 추가되었습니다.</p>
+<p>The ability to search an array's values from the end was added.</p>
 <p>findLast, findLastIndex</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> array</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [{ value: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }, { value: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }, { value: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }, { value: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">4</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }];</span></span>
 <span data-line=""> </span>
@@ -195,8 +195,8 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">array.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">findLastIndex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">n</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> n.value </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 42</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// -1</span></span></code></pre></figure>
 <p><strong>Change Array by Copy</strong></p>
 <p><a href="https://github.com/tc39/proposal-change-array-by-copy">tc39/proposal-change-array-by-copy</a></p>
-<p>자바스크립트에서 배열을 변경 시 기존 배열을 얕은 복사하다보니 기존 배열이 변경되는 API들이 있는데요, 해당 API에 대한 깊은 복사(새로운 배열 객체)를 해주는 API들이 추가되었습니다.</p>
-<p>함수형 프로그래밍의 불변성(Immutable) 개념이 적용된 사례인거 같네요</p>
+<p>In JavaScript, when you modify an array, some APIs shallow-copy the existing array, which ends up mutating the original array. APIs that perform a deep copy (returning a new array object) for those operations were added.</p>
+<p>This looks like a case where the immutability concept from functional programming has been applied.</p>
 <p>Array.prototype.toReversed() -> Array<br>
 Array.prototype.toSorted(compareFn) -> Array<br>
 Array.prototype.toSpliced(start, deleteCount, ...items) -> Array<br>
@@ -207,14 +207,14 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li><strong>toReversed</strong></li>
 </ul>
-<p>기존 배열의 순서를 역전해 새로운 배열을 만들어 전달한다</p>
+<p>Reverses the order of the existing array and returns a new array.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> sequence</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">sequence.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toReversed</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// => [3, 2, 1]</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">sequence; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// => [1, 2, 3]</span></span></code></pre></figure>
 <ul>
 <li><strong>toSorted( compare function )</strong></li>
 </ul>
-<p>비교 함수를 넣어 새로운 배열을 반환한다(default: 오름차순)</p>
+<p>Takes a compare function and returns a new array (default: ascending order).</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> sequence</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">sequence.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toSorted</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// => [1, 2, 3]</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">sequence; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// => [3, 2, 1]</span></span>
@@ -225,14 +225,14 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li><strong>toSpliced( start, delectCnt, ...item )</strong></li>
 </ul>
-<p>배열의 요소 삭제 또는 교체</p>
+<p>Deletes or replaces elements of an array.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> sequence</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">sequence.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toSliced</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// => [2, 3]</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">sequence; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// => [1, 2, 3];</span></span></code></pre></figure>
 <ul>
 <li><strong>with( index, value )</strong></li>
 </ul>
-<p>배열의 인덱스 요소 value 교체</p>
+<p>Replaces the value of the element at the given array index.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> correctionNeeded</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">correctionNeeded.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">with</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// => [1, 2, 3]</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">correctionNeeded; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// => [1, 1, 3]</span></span></code></pre></figure>
@@ -240,7 +240,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <li><strong>Symbols as WeakMap keys</strong></li>
 </ul>
 <p><a href="https://github.com/tc39/proposal-symbols-as-weakmap-keys">tc39/proposal-symbols-as-weakmap-keys</a></p>
-<p>제목에서 파악이 가능하듯이 WeakMap에 키에 Symbol을 넣을 수 있습니다. 2022까지는 문자(string)만 넣을 수 있었습니다.</p>
+<p>As you can tell from the title, you can use a Symbol as a key in a WeakMap. Up until 2022 only strings could be used.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> weak</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> WeakMap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Pun not intended: being a symbol makes it become a more symbolic key</span></span>
@@ -252,7 +252,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">weak.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">set</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(key, someObject);</span></span></code></pre></figure>
 <p><strong>Hashbang Grammar</strong></p>
 <p><a href="https://github.com/tc39/proposal-hashbang">tc39/proposal-hashbang</a></p>
-<p>Javascript 파일이 CLI에서 실행될 경우 HashBang(#!) 기호와 해당 라인이 무시됩니다. 단, 소소코드의 시작 부분에만 유효합니다.</p>
+<p>When a JavaScript file is executed from the CLI, the HashBang (#!) symbol and that line are ignored. However, it is only valid at the very beginning of the source code.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#!/usr/bin/env node</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// in the Script Goal</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'use strict'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -265,14 +265,14 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <h2 id="es2022es13">ES2022(ES13)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#es2022es13"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>
-<p>ES2022에 추가된 기능들
+<p>Features added in ES2022
 <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a></p>
 </li>
 <li>
 <p>Class Fields</p>
 </li>
 <li>
-<p>babel 세팅</p>
+<p>babel setup</p>
 </li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">npm install </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">--</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">save</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">dev @babel</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">plugin</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">proposal</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">private</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">property</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-in-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">object</span></span>
@@ -292,7 +292,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Class Public Instance Fields &#x26; Private Instance Fields</li>
 </ul>
-<p>ES2015 이후로, 우리는 생성자를 통해 필드를 정의할 수 있었습니다. 일반적으로 클래스 메서드 외부에서 액세스하면 안 되는 필드에는 밑줄이 붙습니다. 하지만 이는 클래스를 사용하는 사람들을 막지 못했습니다.</p>
+<p>Since ES2015, we have been able to define fields through the constructor. Typically, fields that should not be accessed outside class methods are prefixed with an underscore. However, this did not actually prevent users of the class from accessing them.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ES2022 이전</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">class</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> a</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  constructor</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
@@ -338,7 +338,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Private instance methods and accessors</li>
 </ul>
-<p>클래스의 몇몇 메소드나 변수는 클래스 내부적으로 기존에 의도했던 기능들을 수행해야 하는 중요도를 가지면서 외부에서 접근할 수 없어야 합니다. 이를 방지하기 위해, 메소드나 접근자 앞에 '#'을 붙일 수 있습니다.</p>
+<p>Some methods or variables in a class carry the importance of performing the internally intended functionality of the class, and must not be accessible from the outside. To prevent this, you can prefix a method or accessor with '#'.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">class</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Banner</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> extends</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> HTMLElement</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // Private variable that cannot be reached directly from outside, but can be modified by the methods inside:</span></span>
 <span data-line=""> </span>
@@ -367,7 +367,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Static class fields and private static methods</li>
 </ul>
-<p>정적 필드나 메소드는 프로토타입 내에서만 존재하도록 하는 데 있어 유용하지만, 주어진 클래스의 모든 인스턴스에 대해서는 그렇지 않습니다. 당신은 이 필드와 메소드들이 클래스 내에서만 액세스할 수 있도록 허용할 수 있습니다.</p>
+<p>Static fields and methods are useful for existing only on the prototype, but not on every instance of a given class. You can restrict these fields and methods so that they can only be accessed within the class.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">class</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Circle</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // ES2015 이후로, 우리는 필드를 클래스 자체에 정의함으로서 정적 필드를 정의했습니다.</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  static</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> #PI</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 3.14</span></span>
@@ -396,8 +396,8 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Ergonomic brand checks for Private Fields</li>
 </ul>
-<p>public 필드에 대해, 클래스의 존재하지 않는 필드에 접근을 시도하면 <code>undefined</code>가 반환됩니다. 반면에, private 필드는 <code>undefined</code>대신 예외를 발생시킵니다.</p>
-<p>이를 방지하기 위해 <code>in</code> 키워드를 사용해 private 속성/메소드를 체크할 수 있습니다.</p>
+<p>For a public field, attempting to access a non-existent field of a class returns <code>undefined</code>. A private field, on the other hand, throws an exception instead of <code>undefined</code>.</p>
+<p>To prevent this, you can use the <code>in</code> keyword to check for a private property/method.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">class</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> VeryPrivate</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  constructor</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    super</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
@@ -422,7 +422,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>RegExp Match Indices</li>
 </ul>
-<p>원본 입력에서 전체 일치의 위치에 대해 꽤 많은 정보를 제공하지만 하위 문자열 일치의 인덱스에 대한 정보는 부족합니다. 새로운 <code>/d</code> 를 사용하면, 일치한 그룹에 대해 시작, 끝 위치를 얻을 수 있습니다</p>
+<p>It provides quite a lot of information about the position of the full match in the original input, but lacks information about the indices of substring matches. Using the new <code>/d</code>, you can obtain the start and end positions for a matched group.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v2022 이전</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> str</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'Ingredients: cocoa powder, cocoa butter, other stuff'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> regex</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /(cocoa) (</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">[a-z]</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">)/</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">g</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -457,8 +457,8 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Top-level await</li>
 </ul>
-<p>이 기능 이전에는, await은 오직 async 함수 내에서만 사용할 수 있었습니다. 이는 모듈 최상단에서 await을 쓸 수 없다는 문제가 존재합니다.</p>
-<p>이제 <code>await</code>은 모듈 최상단에서 사용할 수 있으며, import, fallback 등을 만들 때 매우 유용합니다.</p>
+<p>Before this feature, await could only be used inside an async function. This posed the problem that await could not be used at the top level of a module.</p>
+<p>Now <code>await</code> can be used at the top level of a module, which is very useful when creating imports, fallbacks, and so on.</p>
 <p><a href="https://github.com/tc39/proposal-top-level-await">https://github.com/tc39/proposal-top-level-await</a></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Dynamic dependency pathing</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> strings</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`/i18n/${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">navigator</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">language</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
@@ -489,7 +489,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Promise.any</li>
 </ul>
-<p>프라미스 중 하나가 이행되는 즉시 응답을 준다. 단, promise 모두가 에러일 경우 AggregateError를 주게 된다.</p>
+<p>It returns a response as soon as one of the promises is fulfilled. However, if all promises error out, it returns an AggregateError.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> promise1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Promise</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">reject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> promise2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Promise</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">((</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">reject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">  setTimeout</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(reject, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">100</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'quick'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
@@ -526,7 +526,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Promise.any vs Promise.race vs Promise.all vs Promise.allSettled</li>
 </ul>
-<p>공통점: ES2017 이후 병렬처리</p>
+<p>Common trait: parallel processing since ES2017</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Promise.all</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 배열 안 프라미스가 모두 처리되면 새로운 프라미스가 이행</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 결과값을 담은 배열이 새로운 프라미스가 리턴</span></span>
@@ -583,9 +583,9 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">then</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">data</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(data))</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">catch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">err</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">error</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(err));</span></span></code></pre></figure>
 <ul>
-<li>논리 할당 연산자</li>
+<li>Logical assignment operators</li>
 </ul>
-<p>논리 할당 연산자는 논리 연산자와 할당 표현식을 결합한다. 두가지 새로운 연산자가 있다.</p>
+<p>Logical assignment operators combine a logical operator with an assignment expression. There are two new operators.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Or Or Equals</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">|</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   a   </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">|</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   b   </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">|</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> a </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">||=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> b </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">|</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">      a</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (연산 후)     </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">|</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">|</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> true</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  |</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> true</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  |</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">   true</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  |</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">        true</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">         |</span></span>
@@ -605,16 +605,16 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 아래와 동일</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">a </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x26;&#x26;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (a </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> b);</span></span></code></pre></figure>
 <ul>
-<li>숫자 구분자</li>
+<li>Numeric separators</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1_000_000_000</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 1,000,000,000(10억)</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> amount</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 1_234_500</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 1,234,500</span></span></code></pre></figure>
 <ul>
 <li>WeakRef, FinalizationRegistry</li>
 </ul>
-<p><code>WeakRef</code> 객체에는 <em>target</em> 또는 <em>referent</em>라고 하는 객체에 대한 약한 참조가 포함된다. 객체에 대한 <em>약한 참조</em>는 가비지 컬렉터에서 객체를 회수하는 것을 방지하지 않는 참조이다.</p>
-<p>FinalizationRegistry는 레지스트리에 등록된 객체가 <em>회수</em>(가비지 컬렉션)될 때 <em>정리 콜백</em>(<em>종료자</em>)을 호출하도록 요청하는 방법을 제공한다.</p>
-<p>콜백을 전달하는 registry를 만든다. (GC 메모리 해제 → FinalizationRegistry callback 호출)</p>
+<p>A <code>WeakRef</code> object contains a weak reference to an object, called its <em>target</em> or <em>referent</em>. A <em>weak reference</em> to an object is a reference that does not prevent the garbage collector from reclaiming the object.</p>
+<p>FinalizationRegistry provides a way to request that a <em>cleanup callback</em> (<em>finalizer</em>) be invoked when an object registered in the registry is <em>reclaimed</em> (garbage-collected).</p>
+<p>Create a registry that takes a callback. (GC memory release → FinalizationRegistry callback invoked)</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> id</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"counter"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> finalizer</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> FinalizationRegistry</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">args</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(args));</span></span>
@@ -672,7 +672,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>globalThis</li>
 </ul>
-<p>예전에는 브라우저의 전역객체는 window였고 Node.js의 전역객체는 global이었습니다. 둘이 달라서 분기처리를 해줘야 했던 경우가 많았는데 이제는 globalThis라는 것으로 통일되었습니다. 물론 기존 window나 global도 존재합니다.</p>
+<p>In the past, the global object in browsers was window and in Node.js it was global. Because they differed, there were many cases where you had to branch your code. Now they have been unified under globalThis. Of course, the existing window and global still exist.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 브라우저에서는</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">globalThis </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> window; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// true</span></span>
 <span data-line=""> </span>
@@ -681,7 +681,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>optional chaining</li>
 </ul>
-<p>자바스크립트에서 가장 많이 보는 에러가 cannot read property X of undefined 또는 cannot read property Y of undefined입니다.</p>
+<p>The most common errors you see in JavaScript are cannot read property X of undefined or cannot read property Y of undefined.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 이를 방지하기 위해서</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (a) {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (a.b) {</span></span>
@@ -696,7 +696,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Nullish Coalescing Operator</li>
 </ul>
-<p>null이나 undefined일 때만 b를 반환합니다.</p>
+<p>Returns b only when the value is null or undefined.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ||</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'A'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// A</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ??</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'A'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 0</span></span>
 <span data-line=""> </span>
@@ -705,7 +705,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Dynamic Import</li>
 </ul>
-<p>파일 import를 동적으로 할 수 있게 되었습니다.</p>
+<p>File imports can now be done dynamically.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> config </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> './config.js'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(response) {</span></span>
@@ -722,7 +722,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Promise.allSettled</li>
 </ul>
-<p>Promise.all()은 모든 작업이 성공(reslove)해야 실행되는 특징과 달리 Promise.allSettled()은 도중에 실패(reject)되더라도 모든 실행을 할 수 있습니다.</p>
+<p>Unlike Promise.all(), which only runs when all operations succeed (resolve), Promise.allSettled() runs to completion even if some operations fail (reject) along the way.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> p1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Promise</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">((</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">reject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"p1, resolved"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">));</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> p2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Promise</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">((</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">reject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"p2, resolved"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">));</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> p3</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Promise</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">((</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">reject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> reject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"p3, rejected"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">));</span></span>
@@ -749,7 +749,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">p3, rejected</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">_</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span></span></code></pre></figure>
 <ul>
-<li>참고사이트</li>
+<li>Reference sites</li>
 </ul>
 <p><a href="https://gomugom.github.io/ecmascript-proposals-1-intro/" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"></a><a href="https://gomugom.github.io/ecmascript-proposals-1-intro/">https://gomugom.github.io/ecmascript-proposals-1-intro/</a>
 <a href="https://junhobaik.github.io/es2016-es2020/" target="_blank" style="font-size=30px; color: #4dabf7; text-decoration:underline;"></a><a href="https://junhobaik.github.io/es2016-es2020/">https://junhobaik.github.io/es2016-es2020/</a>
@@ -759,8 +759,8 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>String.trimStart() &#x26; trimEnd()</li>
 </ul>
-<p>문자열의 앞이나 뒤의 공백을 제거한다.
-앞을 제거하는 trimStart와 뒤를 제거하는 trimEnd가 있다.</p>
+<p>Removes whitespace from the beginning or end of a string.
+There is trimStart, which removes the leading whitespace, and trimEnd, which removes the trailing whitespace.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> s</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ' hello world'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> e</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '! '</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
@@ -772,7 +772,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Optional Catch Binding</li>
 </ul>
-<p>catch 매개변수 없이도 catch 블록을 사용할 수 있습니다.</p>
+<p>You can use a catch block without a catch parameter.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Before ES2019</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">try</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // some code</span></span>
@@ -789,7 +789,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Object.fromEntries()</li>
 </ul>
-<p>객체를 entries로 배열로 만들었다면 fromEntries로 다시 객체로 만들 수 있다는 이야기입니다. entires를 이해했다면 간단하게 아래 예제를 통해 알 수 있습니다.</p>
+<p>If you turned an object into an array of entries, this means you can turn it back into an object with fromEntries. If you understand entries, you can grasp it easily through the example below.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> obj1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Jhon'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, age: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">24</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> };</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> entries</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Object.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">entries</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(obj1);</span></span>
@@ -800,7 +800,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Array.flat() &#x26; flatMap()</li>
 </ul>
-<p>flat 메소드는 배열안의 배열을 쉽게 합칠 수 있게 됩니다.</p>
+<p>The flat method makes it easy to merge arrays inside an array.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> arr</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> map</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> arr.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">map</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">v</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [v]);</span></span>
@@ -814,7 +814,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Rest/Spread Properties</li>
 </ul>
-<p>기존의 배열에서 사용하던 rest/spread를 객체에서도 사용가능하게 되었습니다.</p>
+<p>The rest/spread that was previously used with arrays can now also be used with objects.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Spread</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> obj1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { one, two, </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">...</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">others };</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(obj); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// {one: 1, two: 2, three: 3, four: 4, five: 5}</span></span>
@@ -836,7 +836,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> newfriends</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">...</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">friends, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'seyoung'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(newfriends);</span></span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ["choi", "kim", "seyoung"]</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ["choi", "kim", "seyoung"]</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> choi</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  username: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'choi'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
@@ -862,7 +862,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Promise.prototype.finally()</li>
 </ul>
-<p>then, catch, finally에서 Promise는 기존에 then과 catch만 가능했으나 이제 finally도 추가되었습니다.</p>
+<p>For then, catch, and finally: previously a Promise only had then and catch, but now finally has been added as well.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// resolve, reject이 호출되더라도 finally를 무조건 한번은 타도록 되어있음</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> p1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Promise</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">((</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">reject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">  setTimeout</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(resolve, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3000</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'before finally'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
@@ -873,7 +873,7 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>Asynchronous iteration</li>
 </ul>
-<p>비동기 이터러블 객체를 순회하는 것이 가능해졌습니다.</p>
+<p>It became possible to iterate over asynchronous iterable objects.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">for</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> req</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> of</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> requests) {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(req);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
@@ -881,9 +881,9 @@ TypedArray.prototype.with(index, value) -> TypedArray<br></p>
 <ul>
 <li>String padding</li>
 </ul>
-<p>최대 길이보다 짧은 문자열에 대해서 그 여백에 지정한 문자열을 반복하여 채우는 메소드이다.
-padStart는 문자열의 좌측에 여백을 지정하며, padEnd는 그 반대이다.
-두 메소드 모두 maxLength보다 긴 문자열에 대해서는 동작하지 않는다.</p>
+<p>A method that, for a string shorter than the maximum length, repeatedly fills the padding with a specified string.
+padStart pads on the left side of the string, and padEnd does the opposite.
+Neither method has any effect on strings longer than maxLength.</p>
 <p>String.prototype.padStart(maxLength[, padString])
 String.prototype.padEnd(maxLength[, padString])</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'abc'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">padStart</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">10</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// " abc" (두번째 파라미터 생략시 빈 문자열로 채운다)</span></span>
@@ -906,9 +906,9 @@ Object.entries(obj)</p>
 <ul>
 <li>Object.getOwnPropertyDescriptors</li>
 </ul>
-<p>getOwnPropertyDescriptor는 인자로 객체와 속성명을 전달해 해당 속성의 속성 설명자를 반환하는 메소드입니다.</p>
+<p>getOwnPropertyDescriptor is a method that takes an object and a property name as arguments and returns the property descriptor of that property.</p>
 <p>Object.getOwnPropertyDescriptor(obj, prop)</p>
-<p>getOwnPropertyDescriptors는 속성명을 전달하지 않고 객체만 전달함으로 객체내의 모든 속성에 대한 속성 설명자를 반환합니다.</p>
+<p>getOwnPropertyDescriptors takes only an object, without a property name, and returns the property descriptors for all properties within the object.</p>
 <p>Object.getOwnPropertyDescriptor(obj)</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> obj1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Jhon'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, age: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">24</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> };</span></span>
 <span data-line=""> </span>
@@ -923,7 +923,7 @@ Object.entries(obj)</p>
 <ul>
 <li>Trailing commas</li>
 </ul>
-<p>함수의 마지막 매개변수와 인자에도 콤마를 넣을 수 있습니다.</p>
+<p>You can now add a comma after the last parameter and argument of a function.</p>
 <p>const foo = (a, b, c,) => {}</p>
 <ul>
 <li>async/await</li>
@@ -986,8 +986,8 @@ Object.entries(obj)</p>
 <ul>
 <li>Array.prototype.includes</li>
 </ul>
-<p>배열 내장 함수 includes가 추가되었습니다.
-아이템이 존재하는지 boolean 값으로 반환</p>
+<p>The built-in array function includes was added.
+It returns a boolean value indicating whether an item exists.</p>
 <p>Array.prototype.includes(searchElement, ?fromindex);</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// before ES2016</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">].</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">indexOf</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">4</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// -1</span></span>
@@ -1003,8 +1003,8 @@ Object.entries(obj)</p>
 <ul>
 <li>Exponentiation operator</li>
 </ul>
-<p>다른 프로그래밍 언어들에서 일반적으로 사용되는 문법을 도입하였다.
-x ** y는 x의 y제곱을 의미하며, 이는 Math.pow(x, y)와 완전히 동일하다.</p>
+<p>It introduced syntax that is commonly used in other programming languages.
+x ** y means x raised to the power of y, which is completely equivalent to Math.pow(x, y).</p>
 <p>number ** number</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// before ES2016</span></span>
@@ -1024,7 +1024,7 @@ x ** y는 x의 y제곱을 의미하며, 이는 Math.pow(x, y)와 완전히 동�
 <span data-line=""> </span></code></pre></figure>
 <h2 id="es2015es6">ES2015(ES6)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#es2015es6"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li>let, const의 장점</li>
+<li>Advantages of let and const</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> sayHello</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">name</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">!</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">name) {</span></span>
@@ -1059,14 +1059,14 @@ x ** y는 x의 y제곱을 의미하며, 이는 Math.pow(x, y)와 완전히 동�
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">foo2.bar2 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'bar2'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// OK - foo2의 프로퍼티는 수정이 가능하다.</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">```</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> * 화살표 함수(Arrow function)</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> * Arrow function</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">```</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">javascript</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> sum</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">a</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">b</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> a </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> b;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
 <ul>
-<li>클래스(Class)</li>
+<li>Class</li>
 </ul>
 <ul>
 <li>Instroduction classes</li>
@@ -1153,7 +1153,7 @@ x ** y는 x의 y제곱을 의미하며, 이는 Math.pow(x, y)와 완전히 동�
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <ul>
-<li>개선된 객체 리터럴(Object literal)</li>
+<li>Enhanced object literal</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// before ES2015</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> dog </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -1192,7 +1192,7 @@ x ** y는 x의 y제곱을 의미하며, 이는 Math.pow(x, y)와 완전히 동�
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> appleProducts</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { iPhone, iPad, iMac };</span></span></code></pre></figure>
 <ul>
-<li>템플릿 리터럴(Template literal)</li>
+<li>Template literal</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// before es2015</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> sayHello1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">aName</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'hong'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'hello '</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> +</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> aName;</span></span>
@@ -1207,7 +1207,7 @@ x ** y는 x의 y제곱을 의미하며, 이는 Math.pow(x, y)와 완전히 동�
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> add</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">prev</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">next</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> prev </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> next;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`prev plus next : ${</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">add</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">4</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">)</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <ul>
-<li>디스트럭처링(Destructuring)</li>
+<li>Destructuring</li>
 </ul>
 <ul>
 <li>Object Destructuring</li>
@@ -1247,7 +1247,7 @@ x ** y는 x의 y제곱을 의미하며, 이는 Math.pow(x, y)와 완전히 동�
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">Mon</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">Tue</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">Wen</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">Thu</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">Fri</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">Sat</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">Sun</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'Sun'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> days;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(Mon, Tue, Wen, Thu, Fri, Sat, Sun);</span></span></code></pre></figure>
 <ul>
-<li>함수 매개변수의 디폴트 값 설정</li>
+<li>Setting default values for function parameters</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> sayName</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'World'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`Hello, ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">name</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}!`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
@@ -1260,12 +1260,12 @@ x ** y는 x의 y제곱을 의미하며, 이는 Math.pow(x, y)와 완전히 동�
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">sayHi</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">());</span></span></code></pre></figure>
 <ul>
-<li>기존 JS6이전에는 aName이 undefined 여부를 체크한 이후에 다시 값을 세팅해야했는데, 인자에 대한 초기값 세팅이 가능해졌다.
-예) let defalutName = aName || "hong"</li>
+<li>Before ES6, you had to check whether aName was undefined and then set the value again, but now it is possible to set an initial value for an argument.
+e.g.) let defalutName = aName || "hong"</li>
 </ul>
 <ul>
 <li>
-<p>Rest 파라미터, Spread 표현식</p>
+<p>Rest parameters, Spread expression</p>
 </li>
 <li>
 <p>Spread</p>
@@ -1303,11 +1303,11 @@ x ** y는 x의 y제곱을 의미하며, 이는 Math.pow(x, y)와 완전히 동�
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">setCountry</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(user));</span></span></code></pre></figure>
 <ul>
-<li>제너레이터(Generator)</li>
+<li>Generator</li>
 </ul>
-<p>함수의 흐름을 특정 구간에 멈춰놓았다가 다시 실행할 수 있다.
-결과값을 여러번 내보낼 수 있다.
-Generator 문법이 나오면서 redux-saga, rsjx등 여러 라이브러리가 나오게 되었음</p>
+<p>You can pause the flow of a function at a specific point and then resume execution later.
+You can emit result values multiple times.
+The emergence of the Generator syntax led to the appearance of various libraries such as redux-saga and rxjs.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">\</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> gen</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">yield</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">yield</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -1357,7 +1357,7 @@ Generator 문법이 나오면서 redux-saga, rsjx등 여러 라이브러리가 �
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//{value: undefined, done: true}</span></span>
 <span data-line=""> </span></code></pre></figure>
 <ul>
-<li>프로미스(Promise)</li>
+<li>Promise</li>
 </ul>
 <ul>
 <li>create promises</li>
@@ -1421,12 +1421,12 @@ Generator 문법이 나오면서 redux-saga, rsjx등 여러 라이브러리가 �
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> frace</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Promise</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">race</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([f1, f2, f3]);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">fall.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">then</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">values</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(values));</span></span></code></pre></figure>
 <ul>
-<li>모듈(ES Module)</li>
+<li>Module (ES Module)</li>
 </ul>
 <ul>
 <li>Named export</li>
 </ul>
-<p>Named export는 한 파일에서 여러 번 할 수 있다. Named export를 통해 내보낸 것 들은 추후 다른 모듈에서 내보낼 때와 같은 이름으로 import 해야 한다.</p>
+<p>A named export can be done multiple times in a single file. Things exported via named export must later be imported in other modules under the same name they were exported with.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> student</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'Park'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> student2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'Ted'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
@@ -1440,14 +1440,14 @@ Generator 문법이 나오면서 redux-saga, rsjx등 여러 라이브러리가 �
 <ul>
 <li>Default export</li>
 </ul>
-<p>반면에 Default export는 한 스크립트 파일당 한 개만 사용할 수 있다. 그리고 export default의 뒤에는 표현식만 허용되므로 var, let, const등의 키워드는 사용하지 못한다.</p>
-<p>이렇게 내보낸 객체들은 모듈들에서 접근할 수 있다. 그렇다면 지금부터는 모듈에서 export 한 객체들을 가져오는 import문을 살펴보자.</p>
+<p>A default export, on the other hand, can be used only once per script file. And because only an expression is allowed after export default, keywords such as var, let, and const cannot be used.</p>
+<p>The objects exported in this way can be accessed by modules. So from now on, let's look at the import statement that brings in objects exported from a module.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'Jack'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> jack </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'studentJack'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
 <h2 id="es5-2009">ES5 (2009)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#es5-2009"><span class="icon icon-link"></span></a></h2>
-<p>배열에 forEach, map, filter, reduce, some, every와 같은 메소드 지원
-Object에 대한 getter / setter 지원</p>
+<p>Support for array methods such as forEach, map, filter, reduce, some, and every
+Support for getters / setters on Objects</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> person </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  firstName: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Hong'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  lastName: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'SeungAh'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
@@ -1484,9 +1484,9 @@ Object에 대한 getter / setter 지원</p>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
 <h2 id="es3-1999">ES3 (1999)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#es3-1999"><span class="icon icon-link"></span></a></h2>
-<p>우리가 흔히 말하는 자바스크립트.
-자바스크립트 strict 모드 지원 (더 깐깐한? 문법 검사를 한다.)
-JSON 지원 ( 과거에는 XML을 사용하다가, json이 뜨면서 지원하게 됨 )</p>
+<p>What we commonly refer to as JavaScript.
+Support for JavaScript strict mode (performs stricter? syntax checking).
+Support for JSON (in the past XML was used, but as JSON gained popularity it came to be supported).</p>
 <ul>
 <li>HTML Fragments</li>
 </ul>
@@ -1654,7 +1654,7 @@ JSON 지원 ( 과거에는 XML을 사용하다가, json이 뜨면서 지원하�
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">filteredUser.age;</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 36</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">filteredUser.username;</span></span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// "hong"</span></span></code></pre></figure>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"ecmascript"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"ecmascript"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2023-08-15","className":"meta-mono","children":"08/15/2023"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[10,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","javascript",{"children":["$","$L3",null,{"href":"/en/tags?tag=javascript","className":"tag-pill","children":"javascript"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// "hong"</span></span></code></pre></figure>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"ECMAScript"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"ECMAScript"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2023-08-15","className":"meta-mono","children":"08/15/2023"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[12,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","javascript",{"children":["$","$L3",null,{"href":"/en/tags?tag=javascript","className":"tag-pill","children":"javascript"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
 5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2023-07-23-react-query-v5","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"react-query(v5)"}]]}],["$","$L3",null,{"href":"/en/posts/2023-08-16-treeshaking","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Tree Shaking"}]]}]]}]
 6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"es2024es15","text":"ES2024(ES15)","depth":1},{"id":"es2023es14","text":"ES2023(ES14)","depth":1},{"id":"es2022es13","text":"ES2022(ES13)","depth":1},{"id":"es2021es12","text":"ES2021(ES12)","depth":1},{"id":"es2020es11","text":"ES2020(ES11)","depth":1},{"id":"es2019es10","text":"ES2019(ES10)","depth":1},{"id":"es2018es9","text":"ES2018(ES9)","depth":1},{"id":"es2017es8","text":"ES2017(ES8)","depth":1},{"id":"es2016es7","text":"ES2016(ES7)","depth":1},{"id":"es2015es6","text":"ES2015(ES6)","depth":1},{"id":"es5-2009","text":"ES5 (2009)","depth":1},{"id":"es3-1999","text":"ES3 (1999)","depth":1}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]

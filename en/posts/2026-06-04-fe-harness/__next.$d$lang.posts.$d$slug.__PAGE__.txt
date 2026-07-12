@@ -4,27 +4,27 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T5f12,<h2 id="1-하네스-엔지니어링이란">1. 하네스 엔지니어링이란?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-하네스-엔지니어링이란"><span class="icon icon-link"></span></a></h2>
-<p>AI 모델을 둘러싼 <strong>실행 환경 전체</strong>(도구, 피드백 루프, 안전장치, 승인 게이트)를 설계하여, <strong>신뢰할 수 있는 소프트웨어</strong>로 만들어 가는 기술이다.</p>
-<h3 id="ai-엔지니어링의-진화-프롬프트-vs-컨텍스트-vs-하네스">AI 엔지니어링의 진화 (프롬프트 vs 컨텍스트 vs 하네스)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#ai-엔지니어링의-진화-프롬프트-vs-컨텍스트-vs-하네스"><span class="icon icon-link"></span></a></h3>
-<p>AI를 다루는 방식은 프롬프트 엔지니어링 → 컨텍스트 엔지니어링 → 하네스 엔지니어링으로 진화해 왔다. 단순히 "무엇을 물어볼지"를 넘어, "어떤 컨텍스트를 주입할지", 나아가 "AI가 동작하는 실행 환경 전체를 어떻게 설계할지"로 관심사가 확장되고 있다.</p>
-<h3 id="anthropic-사례--generator-evaluator-패턴">Anthropic 사례 — Generator-Evaluator 패턴<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#anthropic-사례--generator-evaluator-패턴"><span class="icon icon-link"></span></a></h3>
-<p>Anthropic은 장기 실행 애플리케이션 개발에 하네스를 적용하고, 그 결과를 공개했다.</p>
-<p><strong>핵심 발견</strong></p>
+4:T6034,<h2 id="1-what-is-harness-engineering">1. What Is Harness Engineering?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-what-is-harness-engineering"><span class="icon icon-link"></span></a></h2>
+<p>It is the discipline of designing the <strong>entire execution environment</strong> surrounding an AI model (tools, feedback loops, safeguards, approval gates) to turn it into <strong>reliable software</strong>.</p>
+<h3 id="the-evolution-of-ai-engineering-prompt-vs-context-vs-harness">The Evolution of AI Engineering (Prompt vs. Context vs. Harness)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-evolution-of-ai-engineering-prompt-vs-context-vs-harness"><span class="icon icon-link"></span></a></h3>
+<p>The way we work with AI has evolved from prompt engineering to context engineering to harness engineering. The focus has expanded beyond simply "what to ask," to "what context to inject," and ultimately to "how to design the entire execution environment in which the AI operates."</p>
+<h3 id="the-anthropic-case--the-generator-evaluator-pattern">The Anthropic Case — the Generator-Evaluator Pattern<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-anthropic-case--the-generator-evaluator-pattern"><span class="icon icon-link"></span></a></h3>
+<p>Anthropic applied a harness to long-running application development and published the results.</p>
+<p><strong>Key findings</strong></p>
 <ul>
 <li>
-<p><strong>자기 평가 실패 문제</strong></p>
-<p>모델에게 자신의 출력을 평가하게 하면, 평범한 결과를 자신있게 칭찬한다.</p>
+<p><strong>The self-evaluation failure problem</strong></p>
+<p>When a model is asked to evaluate its own output, it confidently praises mediocre results.</p>
 <blockquote>
-<p>"생성자와 평가자를 분리하는 것이 훨씬 다루기 쉬운 문제였다." — Anthropic</p>
+<p>"Separating the generator from the evaluator turned it into a far more tractable problem." — Anthropic</p>
 </blockquote>
 </li>
 <li>
-<p><strong>컨텍스트 윈도우(Context Window) 한계</strong></p>
-<p>세션 안에서 기억할 수 있는 최대 글자 수(토큰 용량)가 정해져 있다. 메인 컨텍스트 오염을 막기 위해 서브 에이전트를 실행한다.</p>
+<p><strong>Context Window limits</strong></p>
+<p>There is a fixed maximum number of characters (token capacity) that can be held in memory within a session. Sub-agents are spawned to keep the main context from being polluted.</p>
 </li>
 </ul>
-<p><strong>정량적 결과</strong></p>
+<p><strong>Quantitative results</strong></p>
 
 
 
@@ -55,11 +55,11 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>항목</th><th>단독 실행</th><th>하네스 적용</th></tr></thead><tbody><tr><td>소요 시간</td><td>20분</td><td>6시간</td></tr><tr><td>비용</td><td>$9</td><td>$200</td></tr><tr><td>핵심 기능</td><td>고장</td><td>완성</td></tr><tr><td>품질 판정</td><td>—</td><td>"차이가 즉시 명백"</td></tr></tbody></table>
-<p>비용 22배 증가 대비, 핵심 기능 자체의 작동 여부가 달랐다. Evaluator는 깨진 API 라우트, 누락된 DB 배선 등 <strong>즉시 행동 가능한 수준의 구체적 피드백</strong>을 제공했다.</p>
+<table><thead><tr><th>Item</th><th>Standalone Run</th><th>With Harness</th></tr></thead><tbody><tr><td>Time elapsed</td><td>20 min</td><td>6 hours</td></tr><tr><td>Cost</td><td>$9</td><td>$200</td></tr><tr><td>Core feature</td><td>Broken</td><td>Complete</td></tr><tr><td>Quality verdict</td><td>—</td><td>"The difference was immediately obvious"</td></tr></tbody></table>
+<p>For a 22x increase in cost, whether the core feature actually worked was fundamentally different. The Evaluator provided <strong>concrete, immediately actionable feedback</strong>, such as broken API routes and missing DB wiring.</p>
 <hr>
-<h2 id="2-frontend-개발-하네스-도입">2. Frontend 개발 하네스 도입<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-frontend-개발-하네스-도입"><span class="icon icon-link"></span></a></h2>
-<h3 id="도입-배경">도입 배경<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#도입-배경"><span class="icon icon-link"></span></a></h3>
+<h2 id="2-adopting-a-harness-for-frontend-development">2. Adopting a Harness for Frontend Development<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-adopting-a-harness-for-frontend-development"><span class="icon icon-link"></span></a></h2>
+<h3 id="motivation">Motivation<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#motivation"><span class="icon icon-link"></span></a></h3>
 
 
 
@@ -90,39 +90,39 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>문제</th><th>상세</th><th>하네스 해결</th></tr></thead><tbody><tr><td><strong>맥락 반복</strong></td><td>매 세션마다 프로젝트 구조, 컨벤션 재설명</td><td>Command + CLAUDE.md로 자동 주입</td></tr><tr><td><strong>품질 편차</strong></td><td>같은 요청이라도 세션마다 다른 결과</td><td>Skill로 전문 역할 표준화</td></tr><tr><td><strong>위험 동작</strong></td><td>git push --force, 민감 파일 생성</td><td>Hook으로 코드 수준 차단</td></tr><tr><td><strong>일관성 부재</strong></td><td>분석→설계→개발→리뷰→검증 흐름 관리 불가</td><td>Orchestrator 워크플로우</td></tr></tbody></table>
+<table><thead><tr><th>Problem</th><th>Details</th><th>Harness Solution</th></tr></thead><tbody><tr><td><strong>Repeated context</strong></td><td>Re-explaining project structure and conventions every session</td><td>Auto-injected via Command + CLAUDE.md</td></tr><tr><td><strong>Quality variance</strong></td><td>The same request yields different results each session</td><td>Standardized expert roles via Skills</td></tr><tr><td><strong>Risky actions</strong></td><td>git push --force, creating sensitive files</td><td>Blocked at the code level via Hooks</td></tr><tr><td><strong>No consistency</strong></td><td>Unable to manage the analysis→design→develop→review→verify flow</td><td>Orchestrator workflow</td></tr></tbody></table>
 <h3 id="workflow-orchestrator">Workflow Orchestrator<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#workflow-orchestrator"><span class="icon icon-link"></span></a></h3>
-<p>사용 예제</p>
+<p>Example usage</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">orchestrator 아래 지침을 바탕으로 개발을 진행해 주세요.</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> 기획 </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">문서</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: link</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> 피그마 </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">디자인</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: link</span></span></code></pre></figure>
-<h3 id="설계-원칙">설계 원칙<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#설계-원칙"><span class="icon icon-link"></span></a></h3>
+<h3 id="design-principles">Design Principles<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#design-principles"><span class="icon icon-link"></span></a></h3>
 <ol>
-<li><strong>"한 번에 하나씩"</strong>
+<li><strong>"One at a time"</strong>
 <ul>
-<li>grill-me가 질문을 1개씩만 하여 답변 깊이 확보</li>
-<li>여러 질문 동시 → 피상적 답변 문제 해결</li>
+<li>grill-me asks only one question at a time to secure depth in the answers</li>
+<li>Solves the shallow-answer problem caused by asking many questions at once</li>
 </ul>
 </li>
-<li><strong>"순차가 아닌 병렬"</strong>
+<li><strong>"Parallel, not sequential"</strong>
 <ul>
-<li>독립적인 스킬/검증 항목은 항상 동시 병렬 처리</li>
-<li>각 서브에이전트가 깨끗한 컨텍스트로 동작 → 품질 저하 없음</li>
+<li>Independent skills/verification items are always processed concurrently in parallel</li>
+<li>Each sub-agent operates with a clean context → no quality degradation</li>
 </ul>
 </li>
-<li><strong>"정적 분석 먼저, 비싼 E2E 나중"</strong>
+<li><strong>"Static analysis first, expensive E2E later"</strong>
 <ul>
-<li>Review(정적)가 Verify(E2E)보다 먼저 → 불필요한 E2E 비용 방지</li>
+<li>Review (static) runs before Verify (E2E) → prevents unnecessary E2E costs</li>
 </ul>
 </li>
-<li><strong>"AI는 실행, 사람은 결정"</strong>
+<li><strong>"AI executes, humans decide"</strong>
 <ul>
-<li>모든 Phase 전환, 스킬 선택, 수정 여부에 사용자 승인 필수</li>
-<li>AI의 자율 실행 범위를 명확히 제한</li>
+<li>User approval is required for every Phase transition, skill selection, and fix decision</li>
+<li>Clearly limits the scope of AI's autonomous execution</li>
 </ul>
 </li>
 </ol>
-<p><strong>한 줄 설명</strong>: Research → PRD → Develop → Review → Verify 5단계를 순차 실행하고, 각 단계 전환 시 사용자 승인을 받는 전체 개발 워크플로우 지휘자.</p>
+<p><strong>In one line</strong>: An orchestrator for the entire development workflow that runs the five stages Research → PRD → Develop → Review → Verify in sequence and obtains user approval at each stage transition.</p>
 
 
 
@@ -170,15 +170,15 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>Phase</th><th>이름</th><th>핵심 동작</th><th>AI 위임</th><th>사용자 승인</th></tr></thead><tbody><tr><td>1</td><td><strong>Research</strong></td><td>grill-me 인터뷰 → 요구사항 명세</td><td>1개씩 질문, 코드베이스 탐색</td><td>각 단계 결과 확인</td></tr><tr><td>2</td><td><strong>PRD</strong></td><td>planner→architecture→critic 루프</td><td>3개 서브에이전트</td><td>루프 반복/확정 결정</td></tr><tr><td>3</td><td><strong>Develop</strong></td><td>스킬 선택 → 병렬 코드 생성</td><td>선택 스킬 동시 실행</td><td>스킬 선택, 추가 확인</td></tr><tr><td>4</td><td><strong>Review</strong></td><td>5개 관점 병렬 검증 + 재리뷰</td><td>5개 Evaluator 동시 실행</td><td>항목 선택, 수정 결정</td></tr><tr><td>5</td><td><strong>Verify</strong></td><td>E2E 브라우저 + 타입/빌드</td><td>시나리오 생성·실행</td><td>도구 선택, 시나리오 승인</td></tr></tbody></table>
-<p><strong>조기 종료 가능</strong>: "분석까지만", "개발까지만" 등 원하는 단계까지만 실행 가능.</p>
-<h3 id="phase별-상세">Phase별 상세<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#phase별-상세"><span class="icon icon-link"></span></a></h3>
+<table><thead><tr><th>Phase</th><th>Name</th><th>Core Action</th><th>Delegated to AI</th><th>User Approval</th></tr></thead><tbody><tr><td>1</td><td><strong>Research</strong></td><td>grill-me interview → requirements spec</td><td>One question at a time, codebase exploration</td><td>Confirm each step's result</td></tr><tr><td>2</td><td><strong>PRD</strong></td><td>planner→architecture→critic loop</td><td>3 sub-agents</td><td>Decide loop repeat/finalize</td></tr><tr><td>3</td><td><strong>Develop</strong></td><td>Skill selection → parallel code generation</td><td>Selected skills run concurrently</td><td>Skill selection, additional confirmation</td></tr><tr><td>4</td><td><strong>Review</strong></td><td>5-perspective parallel verification + re-review</td><td>5 Evaluators run concurrently</td><td>Item selection, fix decision</td></tr><tr><td>5</td><td><strong>Verify</strong></td><td>E2E browser + type/build</td><td>Scenario generation &#x26; execution</td><td>Tool selection, scenario approval</td></tr></tbody></table>
+<p><strong>Early termination allowed</strong>: You can run only up to the desired stage, such as "just through analysis" or "just through development."</p>
+<h3 id="phase-by-phase-details">Phase-by-Phase Details<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#phase-by-phase-details"><span class="icon icon-link"></span></a></h3>
 <h4 id="phase-1-research">Phase 1: Research<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#phase-1-research"><span class="icon icon-link"></span></a></h4>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">초기 분석 → grill-me 인터뷰(1개씩) → 코드베이스 조사 → 명세 작성 → 확인</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ↓ 승인      ↓ 응답 × N회           ↓ 승인          ↓ 승인    ↓ 승인</span></span></code></pre></figure>
 <ul>
-<li><strong>grill-me</strong>: 반드시 1개씩만 질문, 이전 답변과 모순 감지, 코드베이스로 답 가능하면 직접 조사</li>
-<li><strong>산출물</strong>: 실행 가능한 수준의 요구사항 명세서</li>
+<li><strong>grill-me</strong>: Asks strictly one question at a time, detects contradictions with previous answers, and investigates directly when the codebase can answer the question</li>
+<li><strong>Deliverable</strong>: A requirements specification at an actionable level</li>
 </ul>
 <h4 id="phase-2-prd">Phase 2: PRD<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#phase-2-prd"><span class="icon icon-link"></span></a></h4>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">┌→ planner(계획) → architecture(설계) → critic(비평) ─┐</span></span>
@@ -186,8 +186,8 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">└────────────────────────────────────────────────────────┘</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">              심각도 상 0건 → PRD 확정</span></span></code></pre></figure>
 <ul>
-<li><strong>Critic 7가지 관점</strong>: 확장성 / 안정성 / 보안 / 성능 / 호환성 / 운영 / 누락</li>
-<li><strong>산출물</strong>: 구현 계획 + 기술 아키텍처 + 리스크 매트릭스</li>
+<li><strong>Critic's 7 perspectives</strong>: Scalability / Stability / Security / Performance / Compatibility / Operations / Omissions</li>
+<li><strong>Deliverable</strong>: Implementation plan + technical architecture + risk matrix</li>
 </ul>
 <h4 id="phase-3-develop">Phase 3: Develop<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#phase-3-develop"><span class="icon icon-link"></span></a></h4>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Step 1: 스킬 선택 (멀티체크)        Step 2: 추가 스킬 확인</span></span>
@@ -198,7 +198,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">           ↓</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    선택 스킬 전부 동시 병렬 실행</span></span></code></pre></figure>
 <ul>
-<li><strong>통합 우선순위</strong>: TDD > semantic-html > a11y > seo-geo</li>
+<li><strong>Integration priority</strong>: TDD > semantic-html > a11y > seo-geo</li>
 </ul>
 <h4 id="phase-4-review">Phase 4: Review<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#phase-4-review"><span class="icon icon-link"></span></a></h4>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">5개 관점 동시 실행:</span></span>
@@ -210,18 +210,18 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">         수정 필요 → 재리뷰 루프 (최대 3회)</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">         수정 없음 → 배포 가능 판정</span></span></code></pre></figure>
 <ul>
-<li><strong>배포 기준</strong>: /review Critical 0건, security Critical/High 0건, lighthouse ≥ 50점</li>
+<li><strong>Deployment criteria</strong>: /review Critical 0, security Critical/High 0, lighthouse ≥ 50</li>
 </ul>
 <h4 id="phase-5-verify">Phase 5: Verify<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#phase-5-verify"><span class="icon icon-link"></span></a></h4>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">검증 항목 선택     → E2E 도구 선택      → 시나리오 생성     → 실행        → 판정</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(전체/E2E/빌드)  (Chrome/Playwright  (PRD 인수조건    (PASS/WARNING</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                  /Agent-Browser)     → 브라우저 동작)  /FAIL)</span></span></code></pre></figure>
 <ul>
-<li><strong>E2E 도구 선택은 사용자 필수</strong> (기본값 없음, 환경이 다르기 때문)</li>
-<li><strong>타입/빌드</strong>: npm run typecheck + npm run build</li>
+<li><strong>E2E tool selection is mandatory for the user</strong> (no default, because environments differ)</li>
+<li><strong>Type/build</strong>: npm run typecheck + npm run build</li>
 </ul>
-<h3 id="commands--skills--hooks-정리">Commands / Skills / Hooks 정리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#commands--skills--hooks-정리"><span class="icon icon-link"></span></a></h3>
-<h4 id="commands-9개">Commands (9개)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#commands-9개"><span class="icon icon-link"></span></a></h4>
+<h3 id="overview-of-commands--skills--hooks">Overview of Commands / Skills / Hooks<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#overview-of-commands--skills--hooks"><span class="icon icon-link"></span></a></h3>
+<h4 id="commands-9">Commands (9)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#commands-9"><span class="icon icon-link"></span></a></h4>
 
 
 
@@ -255,8 +255,8 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>커맨드</th><th>역할</th></tr></thead><tbody><tr><td>workflow/orchestrator</td><td>전체 5단계 워크플로우 오케스트레이션</td></tr><tr><td>workflow/research</td><td>Phase 1: 요구사항 분석</td></tr><tr><td>workflow/prd</td><td>Phase 2: 개발 요구사항 정의서</td></tr><tr><td>workflow/frontend-guidelines</td><td>Phase 3: 가이드라인 기반 개발</td></tr><tr><td>workflow/review</td><td>Phase 4: 5개 관점 통합 리뷰</td></tr><tr><td>workflow/verify</td><td>Phase 5: E2E + 타입/빌드 검증</td></tr></tbody></table>
-<h4 id="skills-18개">Skills (18개)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#skills-18개"><span class="icon icon-link"></span></a></h4>
+<table><thead><tr><th>Command</th><th>Role</th></tr></thead><tbody><tr><td>workflow/orchestrator</td><td>Orchestrates the full 5-stage workflow</td></tr><tr><td>workflow/research</td><td>Phase 1: Requirements analysis</td></tr><tr><td>workflow/prd</td><td>Phase 2: Development requirements spec</td></tr><tr><td>workflow/frontend-guidelines</td><td>Phase 3: Guideline-based development</td></tr><tr><td>workflow/review</td><td>Phase 4: 5-perspective integrated review</td></tr><tr><td>workflow/verify</td><td>Phase 5: E2E + type/build verification</td></tr></tbody></table>
+<h4 id="skills-18">Skills (18)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#skills-18"><span class="icon icon-link"></span></a></h4>
 
 
 
@@ -337,8 +337,8 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>카테고리</th><th>스킬</th><th>역할</th></tr></thead><tbody><tr><td><strong>인터뷰·계획</strong></td><td>grill-me</td><td>1개씩 질문으로 모호함 해소</td></tr><tr><td></td><td>planner</td><td>구현 계획 수립 (PRD 초안)</td></tr><tr><td></td><td>architecture</td><td>기술 아키텍처 설계</td></tr><tr><td></td><td>critic</td><td>7가지 관점 리스크 분석</td></tr><tr><td><strong>FE 개발 가이드</strong></td><td>a11y</td><td>웹접근성 (WAI-ARIA, WCAG)</td></tr><tr><td></td><td>semantic-html</td><td>시맨틱 HTML 마크업</td></tr><tr><td></td><td>seo-geo-optimizer</td><td>검색엔진 + AI 검색 최적화</td></tr><tr><td></td><td>tdd</td><td>테스트 주도 개발 (Red-Green-Refactor)</td></tr><tr><td><strong>검증·감사</strong></td><td>security-audit</td><td>OWASP Top 10, 의존성 취약점</td></tr><tr><td></td><td>lighthouse-performance</td><td>Core Web Vitals (LCP, CLS, INP)</td></tr><tr><td></td><td>qa-inspector</td><td>API↔프론트 경계면 정합성</td></tr><tr><td></td><td>e2e-verifier</td><td>브라우저 기반 동작 검증</td></tr><tr><td><strong>유틸리티</strong></td><td>/simplify</td><td>코드 간소화 (자동 적용)</td></tr><tr><td></td><td>/review</td><td>코드 리뷰 (품질, 버그)</td></tr></tbody></table>
-<h4 id="hooks-5종">Hooks (5종)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#hooks-5종"><span class="icon icon-link"></span></a></h4>
+<table><thead><tr><th>Category</th><th>Skill</th><th>Role</th></tr></thead><tbody><tr><td><strong>Interview·Plan</strong></td><td>grill-me</td><td>Resolves ambiguity by asking one question at a time</td></tr><tr><td></td><td>planner</td><td>Builds the implementation plan (PRD draft)</td></tr><tr><td></td><td>architecture</td><td>Designs the technical architecture</td></tr><tr><td></td><td>critic</td><td>7-perspective risk analysis</td></tr><tr><td><strong>FE Dev Guides</strong></td><td>a11y</td><td>Web accessibility (WAI-ARIA, WCAG)</td></tr><tr><td></td><td>semantic-html</td><td>Semantic HTML markup</td></tr><tr><td></td><td>seo-geo-optimizer</td><td>Search engine + AI search optimization</td></tr><tr><td></td><td>tdd</td><td>Test-driven development (Red-Green-Refactor)</td></tr><tr><td><strong>Verify·Audit</strong></td><td>security-audit</td><td>OWASP Top 10, dependency vulnerabilities</td></tr><tr><td></td><td>lighthouse-performance</td><td>Core Web Vitals (LCP, CLS, INP)</td></tr><tr><td></td><td>qa-inspector</td><td>API↔frontend boundary consistency</td></tr><tr><td></td><td>e2e-verifier</td><td>Browser-based behavior verification</td></tr><tr><td><strong>Utilities</strong></td><td>/simplify</td><td>Code simplification (auto-applied)</td></tr><tr><td></td><td>/review</td><td>Code review (quality, bugs)</td></tr></tbody></table>
+<h4 id="hooks-5-types">Hooks (5 types)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#hooks-5-types"><span class="icon icon-link"></span></a></h4>
 
 
 
@@ -374,11 +374,11 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>훅</th><th>시점</th><th>동작</th></tr></thead><tbody><tr><td><strong>guard.sh</strong></td><td>Bash 실행 전</td><td>git push --force, rm -rf, DROP TABLE 등 차단</td></tr><tr><td><strong>write-guard.sh</strong></td><td>파일 생성 전</td><td>.env, *.pem, credentials.json 등 차단</td></tr><tr><td><strong>skill-dedup.sh</strong></td><td>SKILL.md 생성 전</td><td>동일 이름 스킬 중복 방지</td></tr><tr><td><strong>stop-lint.sh</strong></td><td>코드 수정 후</td><td>자동 린트 실행</td></tr><tr><td><strong>package-changed.sh</strong></td><td>package.json 변경 시</td><td>의존성 변경 알림</td></tr></tbody></table>
+<table><thead><tr><th>Hook</th><th>Trigger Point</th><th>Action</th></tr></thead><tbody><tr><td><strong>guard.sh</strong></td><td>Before Bash runs</td><td>Blocks git push --force, rm -rf, DROP TABLE, etc.</td></tr><tr><td><strong>write-guard.sh</strong></td><td>Before file creation</td><td>Blocks .env, *.pem, credentials.json, etc.</td></tr><tr><td><strong>skill-dedup.sh</strong></td><td>Before SKILL.md creation</td><td>Prevents duplicate skills with the same name</td></tr><tr><td><strong>stop-lint.sh</strong></td><td>After code changes</td><td>Runs lint automatically</td></tr><tr><td><strong>package-changed.sh</strong></td><td>When package.json changes</td><td>Notifies of dependency changes</td></tr></tbody></table>
 <hr>
-<h2 id="3-향후-개선">3. 향후 개선<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-향후-개선"><span class="icon icon-link"></span></a></h2>
-<h3 id="다양한-개발-환경별-하네스-구축">다양한 개발 환경별 하네스 구축<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#다양한-개발-환경별-하네스-구축"><span class="icon icon-link"></span></a></h3>
-<p>현재 FE 개발에 특화된 하네스를 <strong>다양한 환경</strong>으로 확장한다.</p>
+<h2 id="3-future-improvements">3. Future Improvements<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-future-improvements"><span class="icon icon-link"></span></a></h2>
+<h3 id="building-harnesses-for-various-development-environments">Building Harnesses for Various Development Environments<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#building-harnesses-for-various-development-environments"><span class="icon icon-link"></span></a></h3>
+<p>We are expanding the current FE-focused harness to a <strong>variety of environments</strong>.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">┌─────────────────────────────────────────────────────┐</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│          Orchestrator (환경 무관 범용 엔진)             │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│    Research → PRD → Develop(선택) → Review(선택) → Verify(선택)│</span></span>
@@ -388,9 +388,9 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│  semantic   │ Wiki 자동 업로드 │   아키텍처 설계          │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│  lighthouse │ 발표 자료 생성    │   리스크 분석           │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">└─────────────┴──────────────┴────────────────────────┘</span></span></code></pre></figure>
-<p><strong>핵심</strong>: Orchestrator 5단계 흐름은 환경 무관. <strong>스킬만 교체</strong>하면 된다.</p>
-<h3 id="에이전트-엔지니어링-구축">에이전트 엔지니어링 구축<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#에이전트-엔지니어링-구축"><span class="icon icon-link"></span></a></h3>
-<p>하네스 → 에이전트 엔지니어링으로의 진화:</p>
+<p><strong>Key point</strong>: The Orchestrator's 5-stage flow is environment-agnostic. You only need to <strong>swap out the skills</strong>.</p>
+<h3 id="building-toward-agent-engineering">Building Toward Agent Engineering<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#building-toward-agent-engineering"><span class="icon icon-link"></span></a></h3>
+<p>The evolution from harness to agent engineering:</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">현재                              미래</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">──────                            ──────</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">인간이 하네스를 설계         →    AI가 하네스를 자기 개선</span></span>
@@ -427,18 +427,18 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>단계</th><th>설명</th><th>인간의 역할</th></tr></thead><tbody><tr><td><strong>Stage 1</strong> 정적 하네스 (현재)</td><td>인간 설계, AI 실행</td><td>설계 + 승인</td></tr><tr><td><strong>Stage 2</strong> 자기 진단</td><td>메트릭 수집 → 개선 제안</td><td>제안 승인</td></tr><tr><td><strong>Stage 3</strong> 자기 개선</td><td>스킬 자동 튜닝, A/B 테스트</td><td>정책 설정</td></tr><tr><td><strong>Stage 4</strong> 자율 에이전트</td><td>워크플로우 자동 재구성</td><td>목표만 설정</td></tr></tbody></table>
-<p><strong>최종 목표</strong>: 개발자가 <strong>"무엇을 만들 것인가"에만 집중</strong>하고, 품질·안전·일관성은 AI 시스템이 자율적으로 보장하는 개발 환경.</p>
+<table><thead><tr><th>Stage</th><th>Description</th><th>Human's Role</th></tr></thead><tbody><tr><td><strong>Stage 1</strong> Static harness (current)</td><td>Human designs, AI executes</td><td>Design + approval</td></tr><tr><td><strong>Stage 2</strong> Self-diagnosis</td><td>Metric collection → improvement proposals</td><td>Approve proposals</td></tr><tr><td><strong>Stage 3</strong> Self-improvement</td><td>Automatic skill tuning, A/B testing</td><td>Set policy</td></tr><tr><td><strong>Stage 4</strong> Autonomous agent</td><td>Automatically reconfigures the workflow</td><td>Set goals only</td></tr></tbody></table>
+<p><strong>Ultimate goal</strong>: A development environment where developers focus <strong>solely on "what to build,"</strong> while the AI system autonomously guarantees quality, safety, and consistency.</p>
 <hr>
-<h2 id="참고-문서">참고 문서<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고-문서"><span class="icon icon-link"></span></a></h2>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>Anthropic, <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">Effective Context Engineering for AI Agents</a> (2025)</li>
 <li>Anthropic, <a href="https://www.anthropic.com/engineering/harness-design-long-running-apps">Harness Design for Long-Running Application Development</a> (2025)</li>
 <li><a href="https://goddaehee.tistory.com/565">https://goddaehee.tistory.com/565</a></li>
 <li><a href="https://news.hada.io/topic?id=28966">https://news.hada.io/topic?id=28966</a></li>
-</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Frontend 하네스 엔지니어링"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Frontend 하네스 엔지니어링"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-06-04","className":"meta-mono","children":"06/04/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[5,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L3",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","하네스",{"children":["$","$L3",null,{"href":"/en/tags?tag=%ED%95%98%EB%84%A4%EC%8A%A4","className":"tag-pill","children":"하네스"}]}],["$","li","Claude",{"children":["$","$L3",null,{"href":"/en/tags?tag=Claude","className":"tag-pill","children":"Claude"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
-5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2026-06-03-claude-marketplace","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Claude Code 플러그인 마켓플레이스 구축"}]]}],["$","$L3",null,{"href":"/en/posts/2026-07-05-meta-harness","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"자가치유 하네스 엔지니어링 (meta-harness)"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"1-하네스-엔지니어링이란","text":"1. 하네스 엔지니어링이란?","depth":1},{"id":"ai-엔지니어링의-진화-프롬프트-vs-컨텍스트-vs-하네스","text":"AI 엔지니어링의 진화 (프롬프트 vs 컨텍스트 vs 하네스)","depth":2},{"id":"anthropic-사례--generator-evaluator-패턴","text":"Anthropic 사례 — Generator-Evaluator 패턴","depth":2},{"id":"2-frontend-개발-하네스-도입","text":"2. Frontend 개발 하네스 도입","depth":1},{"id":"도입-배경","text":"도입 배경","depth":2},{"id":"workflow-orchestrator","text":"Workflow Orchestrator","depth":2},{"id":"설계-원칙","text":"설계 원칙","depth":2},{"id":"phase별-상세","text":"Phase별 상세","depth":2},{"id":"phase-1-research","text":"Phase 1: Research","depth":3},{"id":"phase-2-prd","text":"Phase 2: PRD","depth":3},{"id":"phase-3-develop","text":"Phase 3: Develop","depth":3},{"id":"phase-4-review","text":"Phase 4: Review","depth":3},{"id":"phase-5-verify","text":"Phase 5: Verify","depth":3},{"id":"commands--skills--hooks-정리","text":"Commands / Skills / Hooks 정리","depth":2},{"id":"commands-9개","text":"Commands (9개)","depth":3},{"id":"skills-18개","text":"Skills (18개)","depth":3},{"id":"hooks-5종","text":"Hooks (5종)","depth":3},{"id":"3-향후-개선","text":"3. 향후 개선","depth":1},{"id":"다양한-개발-환경별-하네스-구축","text":"다양한 개발 환경별 하네스 구축","depth":2},{"id":"에이전트-엔지니어링-구축","text":"에이전트 엔지니어링 구축","depth":2},{"id":"참고-문서","text":"참고 문서","depth":1}],"title":"Contents"}]}]
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Frontend Harness Engineering"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Frontend Harness Engineering"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-06-04","className":"meta-mono","children":"06/04/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[6,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L3",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","Harness",{"children":["$","$L3",null,{"href":"/en/tags?tag=Harness","className":"tag-pill","children":"Harness"}]}],["$","li","Claude",{"children":["$","$L3",null,{"href":"/en/tags?tag=Claude","className":"tag-pill","children":"Claude"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
+5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2026-06-03-claude-marketplace","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Building a Claude Code Plugin Marketplace"}]]}],["$","$L3",null,{"href":"/en/posts/2026-07-05-meta-harness","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Self-Healing Harness Engineering (meta-harness)"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"1-what-is-harness-engineering","text":"1. What Is Harness Engineering?","depth":1},{"id":"the-evolution-of-ai-engineering-prompt-vs-context-vs-harness","text":"The Evolution of AI Engineering (Prompt vs. Context vs. Harness)","depth":2},{"id":"the-anthropic-case--the-generator-evaluator-pattern","text":"The Anthropic Case — the Generator-Evaluator Pattern","depth":2},{"id":"2-adopting-a-harness-for-frontend-development","text":"2. Adopting a Harness for Frontend Development","depth":1},{"id":"motivation","text":"Motivation","depth":2},{"id":"workflow-orchestrator","text":"Workflow Orchestrator","depth":2},{"id":"design-principles","text":"Design Principles","depth":2},{"id":"phase-by-phase-details","text":"Phase-by-Phase Details","depth":2},{"id":"phase-1-research","text":"Phase 1: Research","depth":3},{"id":"phase-2-prd","text":"Phase 2: PRD","depth":3},{"id":"phase-3-develop","text":"Phase 3: Develop","depth":3},{"id":"phase-4-review","text":"Phase 4: Review","depth":3},{"id":"phase-5-verify","text":"Phase 5: Verify","depth":3},{"id":"overview-of-commands--skills--hooks","text":"Overview of Commands / Skills / Hooks","depth":2},{"id":"commands-9","text":"Commands (9)","depth":3},{"id":"skills-18","text":"Skills (18)","depth":3},{"id":"hooks-5-types","text":"Hooks (5 types)","depth":3},{"id":"3-future-improvements","text":"3. Future Improvements","depth":1},{"id":"building-harnesses-for-various-development-environments","text":"Building Harnesses for Various Development Environments","depth":2},{"id":"building-toward-agent-engineering","text":"Building Toward Agent Engineering","depth":2},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

@@ -4,11 +4,11 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T9adf,<h2 id="개요">개요<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#개요"><span class="icon icon-link"></span></a></h2>
-<p>개발을 진행하면서 개발 생산성 &#x26; 빌드 성능 개선했던 사례들을 공유하려고 합니다.</p>
-<h2 id="lint-속도-개선">Lint 속도 개선<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#lint-속도-개선"><span class="icon icon-link"></span></a></h2>
-<p>husky를 통해서 Lint 검사에 대한 속도 개선을 위해서 eslint, prettier cache 적용하였습니다.
-cache flag 적용 시 이전에 검사했던 파일이나 항목을 cache에 저장하여 변경사항이 없다면 그 파일은 검사하지 않도록 처리가 가능합니다.</p>
+4:T998a,<h2 id="overview">Overview<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#overview"><span class="icon icon-link"></span></a></h2>
+<p>I would like to share some cases where I improved development productivity and build performance while working on development.</p>
+<h2 id="improving-lint-speed">Improving Lint Speed<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#improving-lint-speed"><span class="icon icon-link"></span></a></h2>
+<p>To improve the speed of Lint checks via husky, I applied eslint and prettier caching.
+When the cache flag is applied, files or items that were previously checked are stored in the cache, so if there are no changes, those files are not checked again.</p>
 <ul>
 <li>eslint —cache
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"lint-staged"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
@@ -35,53 +35,53 @@ cache flag 적용 시 이전에 검사했던 파일이나 항목을 cache에 저
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span></code></pre></figure>
 </li>
 </ul>
-<h2 id="빌드-용량-개선">빌드 용량 개선<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#빌드-용량-개선"><span class="icon icon-link"></span></a></h2>
+<h2 id="reducing-build-size">Reducing Build Size<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reducing-build-size"><span class="icon icon-link"></span></a></h2>
 <h3 id="tree-shaking"><a href="https://seungahhong.github.io/blog/2023/08/2023-08-16-treeshaking/">Tree Shaking</a><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#tree-shaking"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>
-<p><strong>Tree Shaking 설명 전 모듈 기초 지식</strong></p>
+<p><strong>Module fundamentals before explaining Tree Shaking</strong></p>
 <ul>
 <li>
-<p>javascript에 모듈 관리 스팩이 없었던 때, 문제 발생</p>
-<pre><code>  - 관리가 어려움 - **script 태그로 파일을 로드**하려면, 일일이 추가해야 하고,
-  - 수많은 코드 모듈 중에 **전역변수가 오버라이드** 되는 경우도 발생
+<p>Problems that occurred back when JavaScript had no module management spec</p>
+<pre><code>  - Hard to manage - to **load files with script tags**, you had to add each one manually,
+  - Among countless code modules, cases where **global variables get overridden** also occurred
 </code></pre>
 <ul>
 <li>
-<p>문제를 해결하기 위한 방법도 중구난방 - 그래서 특정 라이브러리들은 자기만의 <strong>모듈 객체를 만들어 씀 $</strong>, _</p>
+<p>The approaches to solve these problems were also all over the place - so certain libraries <strong>created their own module objects to use $</strong>, _</p>
 </li>
 <li>
-<p><strong>IIFE로 감싸서</strong> 파일을 만드는 것도, 보기 불편…</p>
+<p><strong>Wrapping files in an IIFE</strong> to create them was also awkward to look at…</p>
 </li>
 </ul>
 </li>
 <li>
-<p>CommonJS, AMD, UMD, ESM 등이 등장</p>
+<p>CommonJS, AMD, UMD, ESM, and others emerged</p>
 <p><img src="/blog-assets/2024/05/assets/12/Untitled.png" alt="Untitled"></p>
 </li>
 <li>
-<p>CommonJS - 2009년</p>
+<p>CommonJS - 2009</p>
 <ul>
 <li>
-<p>2005 ~ 2009년, J-Query/AJAX 탄생으로 클라이언트만이 아닌 <strong>서버 사이드 동작</strong></p>
+<p>From 2005 to 2009, with the birth of J-Query/AJAX, <strong>server-side operation</strong> beyond just the client</p>
 </li>
 <li>
-<p>로컬 파일을 불러오는 방식으로 사용하기 위해서 <strong>모듈 로더가 동기적으로 작동</strong></p>
+<p>The <strong>module loader operates synchronously</strong> in order to be used as a way to load local files</p>
 </li>
 <li>
-<p><strong>파일 시스템에 직접 접근, 필요한 모듈이나 데이터를 로컬에서 빠르게 로드</strong>가능</p>
+<p><strong>Directly accessing the file system, it can quickly load necessary modules or data locally</strong></p>
 <ul>
-<li><strong>비동기로 동작하는 브라우저 환경에 사용하기에는 무리</strong></li>
+<li><strong>Too much of a burden to use in a browser environment that operates asynchronously</strong></li>
 </ul>
 </li>
 <li>
-<p><strong>네트워크를 통해 모듈이나 라이브러리를 로드</strong> <strong>→ 로딩 시간 증가</strong></p>
+<p><strong>Loading modules or libraries over the network</strong> <strong>→ increased loading time</strong></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// test.js</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">module</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">exports</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'hi'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// index.js</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Hi</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> require</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./test.js'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <ul>
-<li><strong>exports, require 다른 메모리 주소를 바라본다.</strong>
+<li><strong>exports and require point to different memory addresses.</strong>
 <img src="/blog-assets/2024/05/assets/12/Untitled1.png" alt="Untitled">
 <img src="/blog-assets/2024/05/assets/12/Untitled2.png" alt="Untitled"></li>
 </ul>
@@ -89,16 +89,16 @@ cache flag 적용 시 이전에 검사했던 파일이나 항목을 cache에 저
 </ul>
 </li>
 <li>
-<p>AMD(Asynchronous Module Definition) - 2009년</p>
+<p>AMD(Asynchronous Module Definition) - 2009</p>
 <ul>
 <li>
-<p>2009, <strong>브라우저 환경을 위한 브라우저 모듈의 표준 지정</strong></p>
+<p>In 2009, the <strong>browser module standard for browser environments was designated</strong></p>
 </li>
 <li>
-<p><strong>모듈과 의존성을 비동기적으로 로드하는 방법을 정의하는 개방형 표준</strong></p>
+<p><strong>An open standard that defines a way to load modules and dependencies asynchronously</strong></p>
 </li>
 <li>
-<p>표준 지정 후 가장 널리 채택된 라이브러리 <strong>RequireJS</strong></p>
+<p><strong>RequireJS</strong>, the most widely adopted library after the standard was designated</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">define</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'dep1'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'dep2'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">], </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">dep1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">dep2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  //Define the module value by returning a value.</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () {};</span></span>
@@ -125,7 +125,7 @@ cache flag 적용 시 이전에 검사했던 파일이나 항목을 cache에 저
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
 </li>
 <li>
-<p>UMD (Universal Module Difinition) - 2010년 - <strong>CommonJS / AMD 모듈 시스템을 모두 지원해야 하는 상황에서 나온 패턴</strong></p>
+<p>UMD (Universal Module Difinition) - 2010 - <strong>A pattern that emerged in situations where both the CommonJS and AMD module systems had to be supported</strong></p>
 </li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">root</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">factory</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
@@ -144,23 +144,23 @@ cache flag 적용 시 이전에 검사했던 파일이나 항목을 cache에 저
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
 <ul>
 <li>
-<p>ESM (esmodule) - 2015년</p>
+<p>ESM (esmodule) - 2015</p>
 <ul>
 <li>
-<p><strong>import, export 구문을 사용해 모듈을 명확히 정의 → 최상위 레벨에만 위치</strong></p>
+<p><strong>Clearly defining modules using import and export syntax → located only at the top level</strong></p>
 </li>
 <li>
-<p><strong>각 모듈 간 명확한 의존성 파악</strong></p>
+<p><strong>Clear understanding of dependencies between each module</strong></p>
 <p><img src="/blog-assets/2024/05/assets/12/Untitled3.png" alt="Untitled"></p>
 </li>
 <li>
-<p><strong>import, export 동일한 메모리 주소를 바라본다.</strong>
+<p><strong>import and export point to the same memory address.</strong>
 <img src="/blog-assets/2024/05/assets/12/Untitled4.png" alt="Untitled"></p>
 </li>
 <li>
-<p>그렇다면 commonJS에서는 Tree Shaking이 안되는 걸까요??</p>
+<p>So does that mean Tree Shaking doesn't work in CommonJS?</p>
 <ul>
-<li>exports가 동적일 경우 빌드 단계에서 모듈 포함하기 어려움.</li>
+<li>When exports are dynamic, it's hard to include the module at the build stage.</li>
 </ul>
 </li>
 </ul>
@@ -171,81 +171,81 @@ cache flag 적용 시 이전에 검사했던 파일이나 항목을 cache에 저
 </ul>
 </li>
 </ul>
-<h3 id="미사용-의존성-패키지-제거"><a href="https://seungahhong.github.io/blog/2024/03/2024-03-17-remove-unused-dependencies/">미사용 의존성 패키지 제거</a><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#미사용-의존성-패키지-제거"><span class="icon icon-link"></span></a></h3>
-<h2 id="빌드-속도-개선with-cra">빌드 속도 개선(with CRA)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#빌드-속도-개선with-cra"><span class="icon icon-link"></span></a></h2>
-<p>CRA(with webpack)에 loader-plugin 방식을 그대로 사용하면서 빌드 성능을 높일 수 있는 esbuild-loader 를 통해서 빌드 속도 개선을 진행하였습니다.</p>
-<h3 id="빌드-속도-측정speed-measure-webpack-plugin">빌드 속도 측정(speed-measure-webpack-plugin)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#빌드-속도-측정speed-measure-webpack-plugin"><span class="icon icon-link"></span></a></h3>
+<h3 id="removing-unused-dependency-packages"><a href="https://seungahhong.github.io/blog/2024/03/2024-03-17-remove-unused-dependencies/">Removing Unused Dependency Packages</a><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#removing-unused-dependency-packages"><span class="icon icon-link"></span></a></h3>
+<h2 id="improving-build-speed-with-cra">Improving Build Speed (with CRA)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#improving-build-speed-with-cra"><span class="icon icon-link"></span></a></h2>
+<p>While keeping the loader-plugin approach of CRA (with webpack) as is, I improved build speed through esbuild-loader, which can boost build performance.</p>
+<h3 id="measuring-build-speed-speed-measure-webpack-plugin">Measuring Build Speed (speed-measure-webpack-plugin)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#measuring-build-speed-speed-measure-webpack-plugin"><span class="icon icon-link"></span></a></h3>
 <p><img src="/blog-assets/2024/05/assets/12/Untitled5.png" alt="Untitled"></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">yarn add </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">D</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> speed</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">measure</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">webpack</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">plugin</span></span></code></pre></figure>
-<p>속도를 측정해보자.
-측정을 해보니 빌드 시간 느린 순으로<strong>babel-loader(5분), Terser Plugin(2분), OptimizeCssAssetsWebpackPlugin(15초)</strong> 정도가 오래 걸리는 다는 것을 확인 할 수 있었습니다.
+<p>Let's measure the speed.
+After measuring, I was able to confirm that, in order of slowest build time, <strong>babel-loader (5 min), Terser Plugin (2 min), and OptimizeCssAssetsWebpackPlugin (15 sec)</strong> took the longest.
 <img src="/blog-assets/2024/05/assets/12/Untitled6.png" alt="Untitled"></p>
 <ul>
-<li>성능 측정에 대한 Loader, Plugin 정리
+<li>Summary of the Loaders and Plugins measured for performance
 <ul>
 <li><strong>babel-loader</strong>
 <ul>
-<li>es6 이상의 문법을 es5 이하의 코드로 <strong>transpiling</strong> 해주는 것을 babel이라고 하며 이러한 babel과 webpack을 연동시켜주는 것이 babel-loader입니다.</li>
+<li>Converting ES6+ syntax into ES5 or lower code is called <strong>transpiling</strong>, and it's babel that does this. babel-loader is what integrates babel with webpack.</li>
 </ul>
 </li>
 <li><strong>optimize-css-assets-webpack-plugin</strong>
 <ul>
-<li>HtmlWebpackPlugin 이 html을 압축하는 plugin이라면, optimize-css-assets-webpack-plugin는 css를 압축시키는 plugin입니다.</li>
+<li>If HtmlWebpackPlugin is the plugin that compresses html, optimize-css-assets-webpack-plugin is the plugin that compresses css.</li>
 </ul>
 </li>
 <li><strong>terser-webpack-plugin</strong>
 <ul>
-<li>코드를 mangle 하는 과정이나 compress 하는 과정과 같이, 우리가 작성한 코드를 동일한 기능을 제공하는 경량화된 코드로 변환해 주는 일련의 작업을 minify 혹은 minification(코드 경량화) 라고 부르고, 코드 경량화 작업을 해주는 툴을 우리는 minifier라고 합니다. terser-webpack-plugin은는 우리가 작성한 자바스크립트 코드를 프로덕션에서 더욱 경량화된 상태로 제공될 수 있도록 도와주는 plugin 입니다.</li>
+<li>The series of tasks that convert the code we wrote into a lightweight version that provides the same functionality — such as mangling or compressing the code — is called minify or minification (code lightening), and the tool that performs code lightening is what we call a minifier. terser-webpack-plugin is a plugin that helps our JavaScript code be served in a more lightweight state in production.</li>
 </ul>
 </li>
 <li><strong>css-loader, postcss-loader, sass-loader</strong>
 <ul>
-<li><strong>postcss-loader</strong>: js 플러그인을 통해 스타일을 변형하는 도구입니다.</li>
-<li><strong>sass-loader</strong>: sass-loader는 webpack에 의해 관리 및 유지되는 기능이 아닌 third-party 패키지로, 브라우저는 sass를 인식할 수 없기 때문에 css로 <strong>transpiling</strong> 해줍니다.</li>
-<li><strong>css-loader</strong>: css 파일을 js 코드로 변환합니다.</li>
+<li><strong>postcss-loader</strong>: A tool that transforms styles through js plugins.</li>
+<li><strong>sass-loader</strong>: sass-loader is a third-party package not maintained and managed by webpack, and since browsers can't recognize sass, it <strong>transpiles</strong> it into css.</li>
+<li><strong>css-loader</strong>: Converts css files into js code.</li>
 </ul>
 </li>
 <li><strong>IgnorePlugin</strong>
 <ul>
-<li>번들링시 무시할 파일들을 정규 표현식 또는 필터 함수로 설정합니다.</li>
+<li>Sets the files to ignore during bundling with a regular expression or a filter function.</li>
 </ul>
 </li>
-<li><strong>file-loader</strong>: 파일을 모듈로 사용할 수 있게 만들어주는 처리를 합니다. 실제로 사용하는 파일을 output directory로 옮깁니다.</li>
-<li><strong>url-loader</strong>: 파일을 base64 url로 변환하는 처리를 해줍니다. 파일을 옮기는 작업이 아닌 변환해서 output directory에 저장합니다.</li>
+<li><strong>file-loader</strong>: Handles making files usable as modules. It moves the files actually used to the output directory.</li>
+<li><strong>url-loader</strong>: Handles converting files into base64 urls. Rather than moving files, it converts and stores them in the output directory.</li>
 </ul>
 </li>
 </ul>
-<h3 id="babel-loader-vs-ts-loader-vs-esbuild-loader-중-어떤게-더-좋을까--esbuild-loader-선택">babel-loader vs ts-loader vs esbuild-loader 중 어떤게 더 좋을까?? → esbuild-loader 선택<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#babel-loader-vs-ts-loader-vs-esbuild-loader-중-어떤게-더-좋을까--esbuild-loader-선택"><span class="icon icon-link"></span></a></h3>
+<h3 id="among-babel-loader-vs-ts-loader-vs-esbuild-loader-which-is-better--esbuild-loader-chosen">Among babel-loader vs ts-loader vs esbuild-loader, which is better? → esbuild-loader chosen<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#among-babel-loader-vs-ts-loader-vs-esbuild-loader-which-is-better--esbuild-loader-chosen"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>
-<p>babel-loader vs ts-loader vs esbuild-loader 비교</p>
+<p>Comparison of babel-loader vs ts-loader vs esbuild-loader</p>
 <ul>
 <li>
-<p>type 체킹을 위해서 fork-ts-checker-webpack-plugin 추가 후 테스트</p>
+<p>Tested after adding fork-ts-checker-webpack-plugin for type checking</p>
 </li>
 <li>
-<p>babel-loader, esbuild-loader → Running tsc --noEmit command 체킹 가능</p>
+<p>babel-loader, esbuild-loader → Running tsc --noEmit command checking possible</p>
 </li>
 <li>
-<p>빌드 시간</p>
+<p>Build time</p>
 <ul>
 <li>
-<p>babel-loader: 19초</p>
+<p>babel-loader: 19 sec</p>
 </li>
 <li>
-<p>ts-loader: 17초 (2초👇)</p>
+<p>ts-loader: 17 sec (2 sec👇)</p>
 </li>
 <li>
-<p>esbuild-loader: 14초 (5초👇)</p>
-<p>(참고: <a href="https://victor-log.vercel.app/post/build-speed-optimization-with-loader/">victor 블로그</a>)</p>
+<p>esbuild-loader: 14 sec (5 sec👇)</p>
+<p>(Reference: <a href="https://victor-log.vercel.app/post/build-speed-optimization-with-loader/">victor's blog</a>)</p>
 </li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p>babel-loader + terser minify vs esbuild-loader + esbuild-minify 비교</p>
-<p>(참고 : <a href="https://fe-developers.kakaoent.com/2022/220707-webpack-esbuild-loader/">카카오엔터 블로그</a>)</p>
+<p>Comparison of babel-loader + terser minify vs esbuild-loader + esbuild-minify</p>
+<p>(Reference: <a href="https://fe-developers.kakaoent.com/2022/220707-webpack-esbuild-loader/">Kakao Entertainment blog</a>)</p>
 <ul>
 <li>Dev Server: 3399.80ms → 2031.40ms <strong>(1.3s 👇)</strong></li>
 <li>HMR: 199.20ms → 102.00ms <strong>(97ms 👇)</strong></li>
@@ -256,12 +256,12 @@ cache flag 적용 시 이전에 검사했던 파일이나 항목을 cache에 저
 </ul>
 </li>
 <li>
-<p>ts-loader vs esbuild-loader 비교
+<p>Comparison of ts-loader vs esbuild-loader
 ts-loader vs esbuild-loader</p>
-<p>( 참고 : <a href="https://velog.io/@votogether2023/ts-loader%EB%A5%BC-esbuild-loader%EB%A1%9C-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98%ED%95%B4%EB%B3%B4%EC%9E%90">votogeter 블로그</a> )</p>
+<p>( Reference: <a href="https://velog.io/@votogether2023/ts-loader%EB%A5%BC-esbuild-loader%EB%A1%9C-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98%ED%95%B4%EB%B3%B4%EC%9E%90">votogeter blog</a> )</p>
 </li>
 <li>
-<p>speed-measure-plugin 설치: 23s → 4s <strong>(19s👇)</strong></p>
+<p>Installing speed-measure-plugin: 23s → 4s <strong>(19s👇)</strong></p>
 <ul>
 <li>ts-loader
 <img src="/blog-assets/2024/05/assets/12/Untitled10.png" alt="Untitled"></li>
@@ -270,7 +270,7 @@ ts-loader vs esbuild-loader</p>
 </ul>
 </li>
 <li>
-<p>production build: 2분 → 1분 <strong>( 1분👇)</strong></p>
+<p>production build: 2 min → 1 min <strong>( 1 min👇)</strong></p>
 <ul>
 <li>ts-loader
 <img src="/blog-assets/2024/05/assets/12/Untitled12.png" alt="Untitled"></li>
@@ -279,201 +279,201 @@ ts-loader vs esbuild-loader</p>
 </ul>
 </li>
 </ul>
-<h3 id="esbuild-loader-설명-전-번들러-대한-설명">esbuild-loader 설명 전 번들러 대한 설명<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#esbuild-loader-설명-전-번들러-대한-설명"><span class="icon icon-link"></span></a></h3>
-<p>번들러 정의
-웹 애플리케이션을 구성하는 모듈, 자원(HTML, CSS, Javascript, Image 등)을 모아 조합하여 하나의 결과물을 만드는 도구 입니다.
-기대하는 역할</p>
+<h3 id="an-explanation-of-bundlers-before-explaining-esbuild-loader">An explanation of bundlers before explaining esbuild-loader<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#an-explanation-of-bundlers-before-explaining-esbuild-loader"><span class="icon icon-link"></span></a></h3>
+<p>Bundler definition
+A tool that gathers and combines the modules and resources (HTML, CSS, Javascript, Image, etc.) that make up a web application to create a single output.
+Expected roles</p>
 <ul>
-<li>모듈러</li>
-<li>트랜스파일러</li>
-<li>난독화/압축</li>
-<li>그외 최적화 기능 ( 모듈 분할, 트리 쉐이킹 )
-번들러 종류
+<li>Modular</li>
+<li>Transpiler</li>
+<li>Obfuscation/compression</li>
+<li>Other optimization features (module splitting, tree shaking)
+Types of bundlers
 <img src="/blog-assets/2024/05/assets/12/Untitled14.png" alt="Untitled"></li>
 <li><strong>Webapck - 2014</strong>
 <ul>
-<li><strong>개발 편의 기능을 제공하는 정적 모듈 번들러</strong></li>
-<li><strong>규모가 크고 복잡한 애플리케이션 관리 집중</strong></li>
-<li>Tree-Shaking, code-spliting, HMR 기능 제공</li>
-<li>v4 &#x3C;= commonjs인 cjs 포맷만을 지원, v5( esmodule 포멧 지원)</li>
+<li><strong>A static module bundler that provides development convenience features</strong></li>
+<li><strong>Focused on managing large and complex applications</strong></li>
+<li>Provides Tree-Shaking, code-splitting, and HMR features</li>
+<li>v4 &#x3C;= supports only the cjs (commonjs) format, v5 (supports the esmodule format)</li>
 </ul>
 </li>
 <li><strong>Rollup - 2015</strong>
 <ul>
-<li><strong>경량화와 번들 최적화를 중점에 둔 esm 지원 모듈 번들러</strong></li>
-<li><strong>esmodule 지원을 통한 모듈간 의존성 파악 명확 → 강력한 Tree-shaking 제공</strong></li>
-<li>Tree-Shaking, code-spliting, HMR(rollup-plugin-hot) 기능 제공</li>
+<li><strong>An esm-supporting module bundler focused on lightweighting and bundle optimization</strong></li>
+<li><strong>Clear understanding of dependencies between modules through esmodule support → provides powerful Tree-shaking</strong></li>
+<li>Provides Tree-Shaking, code-splitting, and HMR (rollup-plugin-hot) features</li>
 </ul>
 </li>
 <li><strong>Parcel, zero-configuration - 2016</strong>
 <ul>
-<li>webpack과 Rollup와 같은 복잡한 설정 없이 바로 사용할 수 있는 번들러</li>
-<li>세밀한 최적화나 커스터마이징에 한계</li>
-<li><strong>중소 프로젝트에 적합한 번들러</strong></li>
+<li>A bundler that can be used right away without complex configuration like webpack and Rollup</li>
+<li>Limitations in fine-grained optimization and customization</li>
+<li><strong>A bundler suitable for small and medium projects</strong></li>
 </ul>
 </li>
-<li><strong>esbuild, 100배 빠른 번들러의 등장 - 2020</strong>
+<li><strong>esbuild, the arrival of a 100x faster bundler - 2020</strong>
 <ul>
-<li><strong>컴파일 언어인 Go로 구현</strong></li>
-<li><strong>병렬처리 작업</strong></li>
-<li><strong>CPU 캐시 적극 사용</strong></li>
-<li><strong>단, 미지원 기능들이 다수 존재</strong></li>
+<li><strong>Implemented in Go, a compiled language</strong></li>
+<li><strong>Parallel processing tasks</strong></li>
+<li><strong>Aggressive use of the CPU cache</strong></li>
+<li><strong>However, many unsupported features exist</strong></li>
 </ul>
 </li>
 <li><strong>Snowpack - 2019</strong>
 <ul>
-<li>개발 서버에 중점, 전체 파일 번들링 하지 않는 개발(Unbundled Development) → esbuild 사용</li>
-<li><strong>변경된 파일을 다시 빌드하고, 전체 파일에 대한 번들링 X</strong></li>
-<li><strong>프로덕션 빌드 → 웹팩, 롤업 번들러 선택</strong></li>
-<li>단, 2021.1월에 지원 종료 선언 → vite 사용 권고
+<li>Focused on the dev server, Unbundled Development that doesn't bundle all files → uses esbuild</li>
+<li><strong>Rebuilds changed files, and does NOT bundle all files</strong></li>
+<li><strong>Production build → choose webpack or rollup bundler</strong></li>
+<li>However, in January 2021 it declared end of support → recommends using vite
 <img src="/blog-assets/2024/05/assets/12/Untitled15.png" alt="Untitled"></li>
 </ul>
 </li>
 <li><strong>Vite - 2020</strong>
 <ul>
-<li><strong>ESM을 이용한 개발서버와 Rollup 최적화 빌드 커맨드를 제공하는 프론트엔드 빌드 툴</strong>
+<li><strong>A frontend build tool that provides a dev server using ESM and a Rollup-optimized build command</strong>
 <ul>
-<li>dev 환경: esbuild</li>
-<li>production 환경: rollup</li>
+<li>dev environment: esbuild</li>
+<li>production environment: rollup</li>
 </ul>
 </li>
-<li><strong>변경된 파일을 다시 빌드하고, 전체 파일에 대한 번들링 X</strong></li>
-<li>Snowpack → vite 선택 이유: 빌드 과정에서 단일 rollup 번들러 구성함에 따른 밀도 높은 통합, 간소화된 경험 제공
+<li><strong>Rebuilds changed files, and does NOT bundle all files</strong></li>
+<li>Reason for choosing vite over Snowpack: dense integration and a simplified experience from configuring a single rollup bundler in the build process
 <img src="/blog-assets/2024/05/assets/12/Untitled16.png" alt="Untitled"></li>
 </ul>
 </li>
 <li><strong>Webpack V5 - 2020</strong>
 <ul>
-<li><strong>영구 캐싱으로 빌드 성능 개선</strong></li>
-<li>더 나은 알고리즘과 default설정으로 long term캐싱 개선</li>
-<li>Tree shaking과 webpack build시 기본적으로 생성되는 default code에 대한 개선으로 번들 사이즈 개선</li>
-<li>웹 플랫폼과의 호환성 향상</li>
-<li>내부 구조 정리</li>
-<li><strong>Module Federation → micro frontend Architecture 지원 → FE팀 모노레포 구조랑 상이</strong>
+<li><strong>Improved build performance with persistent caching</strong></li>
+<li>Improved long-term caching with better algorithms and default settings</li>
+<li>Improved bundle size through Tree shaking and improvements to the default code generated by default during webpack builds</li>
+<li>Improved compatibility with the web platform</li>
+<li>Cleaned up the internal structure</li>
+<li><strong>Module Federation → supports micro frontend Architecture → differs from the FE team's monorepo structure</strong>
 <ul>
-<li>여러 서버에 배포되어 있는 모듈을 로딩할 수 있는 기능
+<li>A feature that can load modules deployed across multiple servers
 <img src="/blog-assets/2024/05/assets/12/Untitled17.png" alt="Untitled"></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><strong>Turbopack, Vite보다 5배 빠른 Rust 기반 Webpack 후속 번들러 등장 - 2022</strong>
+<li><strong>Turbopack, the arrival of a Rust-based Webpack successor bundler 5x faster than Vite - 2022</strong>
 <ul>
-<li>Rust로 작성</li>
-<li>지연 번들</li>
-<li>Vite와 달리 모듈별 네이티브 브라우저 방식을 쓰지 않음</li>
-<li>콜드스타트가 대규모 어플에서도 빠름</li>
-<li>Beta 버전</li>
+<li>Written in Rust</li>
+<li>Lazy bundling</li>
+<li>Unlike Vite, it does not use a per-module native browser approach</li>
+<li>Fast cold start even in large-scale apps</li>
+<li>Beta version</li>
 </ul>
 </li>
 </ul>
-<h3 id="esbuild-esbuild-loader-설명"><a href="https://seungahhong.github.io/blog/2024/04/2024-04-28-esbuild/">esbuild, esbuild-loader 설명</a><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#esbuild-esbuild-loader-설명"><span class="icon icon-link"></span></a></h3>
-<h2 id="패키지-설치-용량-속도-개선">패키지 설치, 용량 속도 개선<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#패키지-설치-용량-속도-개선"><span class="icon icon-link"></span></a></h2>
-<p>npm, yarn classic 패키지 매니저에서 패키지 성능 개선을 위해서 pnpm 패키지 매니저를 선정해서 개선 진행하였습니다.</p>
-<h3 id="pnpm-설명-전-패키지-매니저에-대한-설명">pnpm 설명 전 패키지 매니저에 대한 설명<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pnpm-설명-전-패키지-매니저에-대한-설명"><span class="icon icon-link"></span></a></h3>
-<p><strong>npm( 2010년 1월 )</strong></p>
+<h3 id="explanation-of-esbuild-and-esbuild-loader"><a href="https://seungahhong.github.io/blog/2024/04/2024-04-28-esbuild/">Explanation of esbuild and esbuild-loader</a><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#explanation-of-esbuild-and-esbuild-loader"><span class="icon icon-link"></span></a></h3>
+<h2 id="improving-package-installation-size-and-speed">Improving Package Installation, Size, and Speed<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#improving-package-installation-size-and-speed"><span class="icon icon-link"></span></a></h2>
+<p>To improve package performance over the npm and yarn classic package managers, I selected the pnpm package manager and proceeded with improvements.</p>
+<h3 id="an-explanation-of-package-managers-before-explaining-pnpm">An explanation of package managers before explaining pnpm<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#an-explanation-of-package-managers-before-explaining-pnpm"><span class="icon icon-link"></span></a></h3>
+<p><strong>npm (January 2010)</strong></p>
 <ul>
-<li>pkgmakeinst 약자 + node version → npm</li>
-<li>package.json, dependencies → node_modules 설치</li>
-<li>커스텀 스크립트, public &#x26; private 패키지 레지스트리 개념 제공
-<strong>yarn classic ( yarn 1.x, 2016년 )</strong></li>
-<li>npm 의 일관성, 보안, 성능 이슈 해결을 위한 패키지 매니저 추가(Yet Another Resource Negotiator 약자)</li>
-<li>native 모노레포 지원, cache-aware 설치</li>
-<li>오프라인 캐싱, lock files</li>
-<li>2020년 유지보수 모드 → yarn berry 개발 및 개선
-<strong>npm, yarn classic → dependencies의 중복 저장, 호이스팅을 통한 유령 의존성 발생</strong>
+<li>Abbreviation of pkgmakeinst + node version → npm</li>
+<li>package.json, dependencies → installs into node_modules</li>
+<li>Provides custom scripts and the concept of public &#x26; private package registries
+<strong>yarn classic (yarn 1.x, 2016)</strong></li>
+<li>A package manager added to solve npm's consistency, security, and performance issues (abbreviation of Yet Another Resource Negotiator)</li>
+<li>Native monorepo support, cache-aware installation</li>
+<li>Offline caching, lock files</li>
+<li>Entered maintenance mode in 2020 → yarn berry developed and improved
+<strong>npm, yarn classic → duplicate storage of dependencies, phantom dependencies arising through hoisting</strong>
 <img src="/blog-assets/2024/05/assets/12/Untitled18.png" alt="Untitled">
-<strong>yarn berry, plug n play (2020년 1월)</strong></li>
-<li>Zero Install → PnP 방식
+<strong>yarn berry, plug n play (January 2020)</strong></li>
+<li>Zero Install → PnP approach
 <ul>
-<li>flat 하게 패키지 정리 (유령 의존성 X)</li>
-<li>node_modules 패키지를 설치하지 않고 Zip Archive File로 관리</li>
-<li>설치할 때보다는 Zip 파일로 관리해서 용량 줄일 수 있는 장점
+<li>Organizes packages flatly (no phantom dependencies)</li>
+<li>Manages packages as a Zip Archive File without installing node_modules packages</li>
+<li>The advantage of being able to reduce size by managing as a Zip file rather than installing
 <img src="/blog-assets/2024/05/assets/12/Untitled19.png" alt="Untitled"></li>
 </ul>
 </li>
-<li>3가지 정도의 단점도 존재한다고 하네요ㅜㅜ
+<li>Apparently there are also about 3 downsides ㅜㅜ
 <ul>
-<li>성능 이슈 → yarn classic 환경 위에서 pnp 방식에 환경을 다시 돌리는 방식이다보니 기적적으로 성능이 빨라지지 않음</li>
-<li>모든 Dependency들을 zip 파일로 관리 불가능
+<li>Performance issues → since it re-runs the pnp approach on top of the yarn classic environment, performance doesn't miraculously get faster</li>
+<li>Not all Dependencies can be managed as zip files
 <ul>
-<li>현재 환경에 대한 바이너리 정보를 가지고 동작해야 하는 Dependency → <em>swc, esbuild, sentry-cli</em> 패키지는 shell 과 맞물려 있다보니 unplugged에서 관리
+<li>Dependencies that must operate with binary information about the current environment → packages like <em>swc, esbuild, sentry-cli</em> are tied to the shell, so they're managed in unplugged
 <img src="/blog-assets/2024/05/assets/12/Untitled20.png" alt="Untitled"></li>
 </ul>
 </li>
-<li>zip 파일들을 전체를 형상관리로 들고 다니기 너무 무겁다. - 압축 파일이라고 해도 dependency 사이즈가 크다보니 관리 어려움 - Dependency 업데이트 시 change Files 갯수가 많아짐
-<strong>pnpm (2017년)</strong></li>
+<li>It's too heavy to carry all the zip files around under version control. - Even though they're compressed files, the dependency sizes are large, making management difficult. - When updating a Dependency, the number of changed files increases
+<strong>pnpm (2017)</strong></li>
 </ul>
 </li>
-<li>빠르고 효율적인 디스크 관리
+<li>Fast and efficient disk management
 <ul>
-<li>글로벌 저장소 설치 → symbol link, hard link 연결</li>
-<li>flat 하게 패키지 정리 (유령 의존성 X)
+<li>Global store installation → connected via symbol link, hard link</li>
+<li>Organizes packages flatly (no phantom dependencies)
 <img src="/blog-assets/2024/05/assets/12/Untitled21.png" alt="Untitled"></li>
 </ul>
 </li>
 </ul>
-<h3 id="pnpm-설명"><a href="https://seungahhong.github.io/blog/2024/03/2024-03-18-pnpm/">pnpm 설명</a><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pnpm-설명"><span class="icon icon-link"></span></a></h3>
-<h3 id="pnpm-선정하게-된-이유">pnpm 선정하게 된 이유<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pnpm-선정하게-된-이유"><span class="icon icon-link"></span></a></h3>
+<h3 id="pnpm-explanation"><a href="https://seungahhong.github.io/blog/2024/03/2024-03-18-pnpm/">pnpm explanation</a><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pnpm-explanation"><span class="icon icon-link"></span></a></h3>
+<h3 id="reasons-for-choosing-pnpm">Reasons for choosing pnpm<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reasons-for-choosing-pnpm"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>npm, yarn classic 패키지 매니저 외에 더 좋은 선택지는 yarn berry, pnpm 입니다.</li>
-<li>pnpm 선정하게 된 이유
+<li>Besides the npm and yarn classic package managers, the better options are yarn berry and pnpm.</li>
+<li>Reasons for choosing pnpm
 <ul>
-<li>글로벌 스토어에 패키지를 정하하고 symbolic, hard link통한 패키지를 연결한다면 초기 빌드 이후에는 설치 속도가 빨라질 수 있습니다.</li>
-<li>node_modules에 패키지를 flat하게 관리하고 hoisting을 통한 패키지 끌어올림 처리를 하지 않기 때문에 package.json에 추가되지 않는 패키지는 node_modules 1 depth에 설치되지 않음으로 유령 의존성 해결이 가능합니다.</li>
+<li>If you place packages in a global store and connect them via symbolic and hard links, the installation speed can become faster after the initial build.</li>
+<li>Since it manages packages flatly in node_modules and does not pull packages up through hoisting, packages not added to package.json are not installed at the 1st depth of node_modules, so phantom dependencies can be resolved.</li>
 </ul>
 </li>
-<li>yarn berry 선택하지 않는 이유
+<li>Reasons for not choosing yarn berry
 <ul>
-<li>zip 파일로 관리하더라도 바이너리 환경에 맞물리는 패키지가 있었다면 zero install 불가능합니다.</li>
-<li>패키지를 형상 관리로 관리할 경우에 패키지 설치/삭제/수정 시 너무 많은 변경사항 파악이 어렵습니다.</li>
+<li>Even if managed as zip files, if there were packages tied to the binary environment, zero install is impossible.</li>
+<li>When managing packages under version control, it's hard to grasp too many changes when installing/removing/modifying packages.</li>
 </ul>
 </li>
 </ul>
-<h2 id="빌드-도구-개선cra--vite">빌드 도구 개선(CRA → Vite)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#빌드-도구-개선cra--vite"><span class="icon icon-link"></span></a></h2>
-<h3 id="vite-선정하게-된-이유">Vite 선정하게 된 이유<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite-선정하게-된-이유"><span class="icon icon-link"></span></a></h3>
+<h2 id="improving-the-build-tool-cra--vite">Improving the Build Tool (CRA → Vite)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#improving-the-build-tool-cra--vite"><span class="icon icon-link"></span></a></h2>
+<h3 id="reasons-for-choosing-vite">Reasons for choosing Vite<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reasons-for-choosing-vite"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>콜드 스타트 방식의 개발 서버 구동에 대한 성능 개선 → node_modules 사전 빌드(esbuild)</li>
-<li>HMR 성능 개선 → esm 방식을 통한 변경된 파일 교체</li>
-<li>프로덕션 빌드 → rollup 번들러 사용(TreeShaking, 지연로딩, 파일 분할등의 다수 이점 제공)
+<li>Performance improvement for cold-start dev server startup → pre-bundling of node_modules (esbuild)</li>
+<li>HMR performance improvement → replacing changed files via the esm approach</li>
+<li>Production build → uses the rollup bundler (provides many benefits such as TreeShaking, lazy loading, and file splitting)
 <img src="/blog-assets/2024/05/assets/12/Untitled22.png" alt="Untitled"></li>
 </ul>
-<h3 id="vite-설명"><a href="https://seungahhong.github.io/blog/2024/05/2024-05-06-vite/">vite 설명</a><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite-설명"><span class="icon icon-link"></span></a></h3>
-<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<h3 id="vite-explanation"><a href="https://seungahhong.github.io/blog/2024/05/2024-05-06-vite/">vite explanation</a><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite-explanation"><span class="icon icon-link"></span></a></h3>
+<h2 id="reference-pages">Reference Pages<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reference-pages"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>
-<p><a href="https://ko.javascript.info/modules-intro">모듈 소개</a></p>
+<p><a href="https://ko.javascript.info/modules-intro">Modules, introduction</a></p>
 </li>
 <li>
-<p><a href="https://so-so.dev/web/tree-shaking-module-system/">Tree Shaking과 Module System</a></p>
+<p><a href="https://so-so.dev/web/tree-shaking-module-system/">Tree Shaking and Module System</a></p>
 </li>
 <li>
-<p><a href="https://fe-developers.kakaoent.com/2022/220707-webpack-esbuild-loader/">Webpack 빌드에 날개를 달아줄 Esbuild-Loader | 카카오엔터테인먼트 FE 기술블로그</a></p>
+<p><a href="https://fe-developers.kakaoent.com/2022/220707-webpack-esbuild-loader/">Esbuild-Loader to Give Webpack Builds Wings | Kakao Entertainment FE Tech Blog</a></p>
 </li>
 <li>
-<p><a href="https://velog.io/@votogether2023/ts-loader%EB%A5%BC-esbuild-loader%EB%A1%9C-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98%ED%95%B4%EB%B3%B4%EC%9E%90">개발자 경험 개선하기 (2) - ts-loader를 esbuild-loader로 마이그레이션해보자!</a></p>
+<p><a href="https://velog.io/@votogether2023/ts-loader%EB%A5%BC-esbuild-loader%EB%A1%9C-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98%ED%95%B4%EB%B3%B4%EC%9E%90">Improving Developer Experience (2) - Let's migrate ts-loader to esbuild-loader!</a></p>
 </li>
 <li>
-<p><a href="https://victor-log.vercel.app/post/build-speed-optimization-with-loader/">Victor Log | 빌드 속도 최적화 with loader</a></p>
+<p><a href="https://victor-log.vercel.app/post/build-speed-optimization-with-loader/">Victor Log | Build Speed Optimization with loader</a></p>
 </li>
 <li>
 <p><a href="https://jeonghwan-kim.github.io/2023/10/20/pnpm">pnpm</a></p>
 </li>
 <li>
-<p><a href="https://yceffort.kr/2022/05/npm-vs-yarn-vs-pnpm">npm, yarn, pnpm 비교해보기</a></p>
+<p><a href="https://yceffort.kr/2022/05/npm-vs-yarn-vs-pnpm">Comparing npm, yarn, and pnpm</a></p>
 </li>
 <li>
-<p><a href="https://helloinyong.tistory.com/m/344?utm_source=oneoneone">[Yarn berry] Yarn Berry의 문제점</a></p>
+<p><a href="https://helloinyong.tistory.com/m/344?utm_source=oneoneone">[Yarn berry] Problems with Yarn Berry</a></p>
 </li>
 <li>
-<p><a href="https://so-so.dev/tool/webpack/whats-different-in-webpack5/">Webpack 5, 무엇이 달라졌을까?</a></p>
+<p><a href="https://so-so.dev/tool/webpack/whats-different-in-webpack5/">Webpack 5, What Has Changed?</a></p>
 </li>
 <li>
-<p><a href="https://fe-developers.kakaoent.com/2022/220623-webpack-module-federation/">Webpack Module Federation 도입 전에 알아야 할 것들 | 카카오엔터테인먼트 FE 기술블로그</a></p>
+<p><a href="https://fe-developers.kakaoent.com/2022/220623-webpack-module-federation/">Things to Know Before Adopting Webpack Module Federation | Kakao Entertainment FE Tech Blog</a></p>
 </li>
-</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"개발 생산성 & 빌드 성능 개선"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"개발 생산성 & 빌드 성능 개선"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2024-05-12","className":"meta-mono","children":"05/12/2024"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[10,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","performance",{"children":["$","$L3",null,{"href":"/en/tags?tag=performance","className":"tag-pill","children":"performance"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Improving Development Productivity & Build Performance"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Improving Development Productivity & Build Performance"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2024-05-12","className":"meta-mono","children":"05/12/2024"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[11,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","performance",{"children":["$","$L3",null,{"href":"/en/tags?tag=performance","className":"tag-pill","children":"performance"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
 5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2024-04-28-esbuild","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"esbuild"}]]}],["$","$L3",null,{"href":"/en/posts/2023-10-30-nextjs-v14","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Nextjs(v14)"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"개요","text":"개요","depth":1},{"id":"lint-속도-개선","text":"Lint 속도 개선","depth":1},{"id":"빌드-용량-개선","text":"빌드 용량 개선","depth":1},{"id":"tree-shaking","text":"Tree Shaking","depth":2},{"id":"미사용-의존성-패키지-제거","text":"미사용 의존성 패키지 제거","depth":2},{"id":"빌드-속도-개선with-cra","text":"빌드 속도 개선(with CRA)","depth":1},{"id":"빌드-속도-측정speed-measure-webpack-plugin","text":"빌드 속도 측정(speed-measure-webpack-plugin)","depth":2},{"id":"babel-loader-vs-ts-loader-vs-esbuild-loader-중-어떤게-더-좋을까--esbuild-loader-선택","text":"babel-loader vs ts-loader vs esbuild-loader 중 어떤게 더 좋을까?? → esbuild-loader 선택","depth":2},{"id":"esbuild-loader-설명-전-번들러-대한-설명","text":"esbuild-loader 설명 전 번들러 대한 설명","depth":2},{"id":"esbuild-esbuild-loader-설명","text":"esbuild, esbuild-loader 설명","depth":2},{"id":"패키지-설치-용량-속도-개선","text":"패키지 설치, 용량 속도 개선","depth":1},{"id":"pnpm-설명-전-패키지-매니저에-대한-설명","text":"pnpm 설명 전 패키지 매니저에 대한 설명","depth":2},{"id":"pnpm-설명","text":"pnpm 설명","depth":2},{"id":"pnpm-선정하게-된-이유","text":"pnpm 선정하게 된 이유","depth":2},{"id":"빌드-도구-개선cra--vite","text":"빌드 도구 개선(CRA → Vite)","depth":1},{"id":"vite-선정하게-된-이유","text":"Vite 선정하게 된 이유","depth":2},{"id":"vite-설명","text":"vite 설명","depth":2},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"Contents"}]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"overview","text":"Overview","depth":1},{"id":"improving-lint-speed","text":"Improving Lint Speed","depth":1},{"id":"reducing-build-size","text":"Reducing Build Size","depth":1},{"id":"tree-shaking","text":"Tree Shaking","depth":2},{"id":"removing-unused-dependency-packages","text":"Removing Unused Dependency Packages","depth":2},{"id":"improving-build-speed-with-cra","text":"Improving Build Speed (with CRA)","depth":1},{"id":"measuring-build-speed-speed-measure-webpack-plugin","text":"Measuring Build Speed (speed-measure-webpack-plugin)","depth":2},{"id":"among-babel-loader-vs-ts-loader-vs-esbuild-loader-which-is-better--esbuild-loader-chosen","text":"Among babel-loader vs ts-loader vs esbuild-loader, which is better? → esbuild-loader chosen","depth":2},{"id":"an-explanation-of-bundlers-before-explaining-esbuild-loader","text":"An explanation of bundlers before explaining esbuild-loader","depth":2},{"id":"explanation-of-esbuild-and-esbuild-loader","text":"Explanation of esbuild and esbuild-loader","depth":2},{"id":"improving-package-installation-size-and-speed","text":"Improving Package Installation, Size, and Speed","depth":1},{"id":"an-explanation-of-package-managers-before-explaining-pnpm","text":"An explanation of package managers before explaining pnpm","depth":2},{"id":"pnpm-explanation","text":"pnpm explanation","depth":2},{"id":"reasons-for-choosing-pnpm","text":"Reasons for choosing pnpm","depth":2},{"id":"improving-the-build-tool-cra--vite","text":"Improving the Build Tool (CRA → Vite)","depth":1},{"id":"reasons-for-choosing-vite","text":"Reasons for choosing Vite","depth":2},{"id":"vite-explanation","text":"vite explanation","depth":2},{"id":"reference-pages","text":"Reference Pages","depth":1}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

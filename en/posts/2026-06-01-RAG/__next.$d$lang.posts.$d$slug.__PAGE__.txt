@@ -4,90 +4,90 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T175ae,<h2 id="0-배경">0. 배경<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#0-배경"><span class="icon icon-link"></span></a></h2>
-<p>특정 비즈니스 로직(결제, 인증, 캠페인 등)이 프론트엔드·백엔드 서비스 등 여러 레포에 걸쳐 구현되어 있어, 관련 코드를 찾기 위해 각 레포를 개별적으로 검색해야 하는 비효율이 발생하고 있다.</p>
-<p>기존 GitHub 검색은 키워드 기반으로만 동작하여 "결제 처리 로직", "캠페인 생성 흐름"과 같은 의미 기반 검색이 불가능하다. 또한 Claude AI를 활용한 코드 분석 시, AI가 사내 코드베이스에 직접 접근할 수 없어 컨텍스트 제공에 수작업이 필요하다.</p>
-<p>이러한 문제를 해결하기 위해 다중 레포 코드를 통합 인덱싱하고, 시맨틱 검색 + Claude AI 연동을 제공하는 RAG 시스템을 구축하게 되었다.</p>
+4:T174c4,<h2 id="0-background">0. Background<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#0-background"><span class="icon icon-link"></span></a></h2>
+<p>Certain pieces of business logic (payments, authentication, campaigns, and so on) are implemented across multiple repositories spanning frontend and backend services, which creates an inefficiency: to find the relevant code, you have to search each repository individually.</p>
+<p>Conventional GitHub search works purely on keywords, so meaning-based queries such as "payment processing logic" or "campaign creation flow" are not possible. In addition, when using Claude AI for code analysis, the AI cannot access the internal codebase directly, so providing context requires manual work.</p>
+<p>To solve these problems, we built a RAG system that indexes code across multiple repositories in a unified way and provides semantic search along with Claude AI integration.</p>
 <hr>
-<h2 id="1-개요">1. 개요<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-개요"><span class="icon icon-link"></span></a></h2>
-<p><strong>code-retrieval</strong>은 사내 다중 GitHub 레포지토리의 코드를 대상으로 <strong>시맨틱(의미 기반) + 키워드 하이브리드 검색</strong>을 제공하는 RAG(Retrieval-Augmented Generation) 시스템이다.</p>
-<p>개발자가 자연어 질의로 여러 레포에 흩어진 관련 코드를 한 번에 찾을 수 있으며, Claude AI와 직접 연동하여 코드 이해·분석 작업을 지원한다.</p>
-<p>2가지 접근 경로를 제공한다.</p>
+<h2 id="1-overview">1. Overview<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-overview"><span class="icon icon-link"></span></a></h2>
+<p><strong>code-retrieval</strong> is a RAG (Retrieval-Augmented Generation) system that provides <strong>hybrid semantic + keyword search</strong> over code from multiple internal GitHub repositories.</p>
+<p>Developers can use natural-language queries to find related code scattered across several repositories all at once, and it integrates directly with Claude AI to support code understanding and analysis tasks.</p>
+<p>It offers two access paths.</p>
 <ul>
-<li><strong>REST API</strong> (FastAPI): 웹 UI, 외부 서비스 연동용</li>
-<li><strong>MCP 서버</strong> (FastMCP): Claude Desktop / Claude Code에서 직접 코드 검색용</li>
+<li><strong>REST API</strong> (FastAPI): for web UIs and external service integrations</li>
+<li><strong>MCP server</strong> (FastMCP): for direct code search from Claude Desktop / Claude Code</li>
 </ul>
 <hr>
-<h2 id="2-목표">2. 목표<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-목표"><span class="icon icon-link"></span></a></h2>
-<p><strong>핵심 목표</strong></p>
+<h2 id="2-goals">2. Goals<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-goals"><span class="icon icon-link"></span></a></h2>
+<p><strong>Core goals</strong></p>
 <ul>
-<li>다중 레포 코드를 하나의 검색 엔진으로 통합하여 개발자의 코드 탐색 시간을 단축한다</li>
-<li>"결제 처리 함수", "캠페인 생성 API" 같은 자연어 질의로 의미 기반 코드 검색을 가능하게 한다</li>
-<li>Claude AI가 사내 코드베이스에 직접 접근하여 코드 분석·리뷰·질의응답을 수행할 수 있게 한다</li>
+<li>Unify code across multiple repositories into a single search engine to reduce the time developers spend exploring code</li>
+<li>Enable semantic code search through natural-language queries such as "payment processing function" or "campaign creation API"</li>
+<li>Allow Claude AI to access the internal codebase directly to perform code analysis, review, and Q&#x26;A</li>
 </ul>
-<p><strong>기술 목표</strong></p>
+<p><strong>Technical goals</strong></p>
 <ul>
-<li>AST 기반 구조적 코드 청킹으로 함수·클래스 단위의 의미 있는 검색 결과를 제공한다</li>
-<li>Dense(시맨틱) + Sparse(키워드) 하이브리드 검색 + 리랭킹으로 검색 품질을 극대화한다</li>
-<li>git diff 기반 증분 동기화로 코드 변경 시 전체 재인덱싱 없이 효율적으로 업데이트한다</li>
+<li>Provide meaningful search results at the function and class level through AST-based structural code chunking</li>
+<li>Maximize search quality with hybrid Dense (semantic) + Sparse (keyword) search plus reranking</li>
+<li>Update efficiently with git diff-based incremental sync, avoiding full reindexing when code changes</li>
 </ul>
 <hr>
-<h2 id="3-설치-및-실행-installation--execution">3. 설치 및 실행 (Installation &#x26; Execution)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-설치-및-실행-installation--execution"><span class="icon icon-link"></span></a></h2>
-<h3 id="31-사전-요구사항">3.1 사전 요구사항<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#31-사전-요구사항"><span class="icon icon-link"></span></a></h3>
+<h2 id="3-installation--execution">3. Installation &#x26; Execution<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-installation--execution"><span class="icon icon-link"></span></a></h2>
+<h3 id="31-prerequisites">3.1 Prerequisites<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#31-prerequisites"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>Python 3.12</li>
-<li>Docker 또는 Colima (Qdrant 실행용, Docker Desktop 불필요)</li>
-<li>uv (Python 패키지 매니저)</li>
+<li>Docker or Colima (for running Qdrant; Docker Desktop not required)</li>
+<li>uv (Python package manager)</li>
 </ul>
-<h3 id="32-의존성-설치">3.2 의존성 설치<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#32-의존성-설치"><span class="icon icon-link"></span></a></h3>
+<h3 id="32-installing-dependencies">3.2 Installing dependencies<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#32-installing-dependencies"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> sync</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --extra</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> dev</span></span></code></pre></figure>
-<h3 id="33-qdrant-벡터-db-실행">3.3 Qdrant 벡터 DB 실행<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#33-qdrant-벡터-db-실행"><span class="icon icon-link"></span></a></h3>
+<h3 id="33-running-the-qdrant-vector-db">3.3 Running the Qdrant vector DB<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#33-running-the-qdrant-vector-db"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">colima</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> start</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">docker</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> compose</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> up</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -d</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> qdrant</span></span></code></pre></figure>
-<h3 id="34-레포-등록-및-인덱싱">3.4 레포 등록 및 인덱싱<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#34-레포-등록-및-인덱싱"><span class="icon icon-link"></span></a></h3>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># GitHub 레포 등록 + 인덱싱</span></span>
+<h3 id="34-registering-and-indexing-a-repo">3.4 Registering and indexing a repo<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#34-registering-and-indexing-a-repo"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Register a GitHub repo + index it</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --add-repo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> https://github.com/org/repo.git</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 로컬 레포 등록</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Register a local repo</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --add-repo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /local/path</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --local</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Private 레포 (토큰 지정)</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Private repo (specify token)</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --add-repo</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> &#x3C;</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">ur</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">l</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --branch</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> develop</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --token</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ghp_xxx</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 서비스 별칭 지정</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --add-repo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /local/path</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --local</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --description</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "서비스"</span></span></code></pre></figure>
-<h3 id="35-서버-실행">3.5 서버 실행<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#35-서버-실행"><span class="icon icon-link"></span></a></h3>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># FastAPI 서버 (REST API)</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Specify a service alias</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --add-repo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /local/path</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --local</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --description</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "service"</span></span></code></pre></figure>
+<h3 id="35-running-the-servers">3.5 Running the servers<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#35-running-the-servers"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># FastAPI server (REST API)</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.api.app</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># → http://localhost:8000</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># MCP 서버 (streamable-http)</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># MCP server (streamable-http)</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.mcp</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># → http://localhost:8765/mcp</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># MCP 서버 (stdio 모드)</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># MCP server (stdio mode)</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">MCP_TRANSPORT</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">stdio</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.mcp</span></span></code></pre></figure>
-<h3 id="36-동기화-및-운영">3.6 동기화 및 운영<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#36-동기화-및-운영"><span class="icon icon-link"></span></a></h3>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 특정 레포 동기화 (증분)</span></span>
+<h3 id="36-sync-and-operations">3.6 Sync and operations<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#36-sync-and-operations"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Sync a specific repo (incremental)</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --sync</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> org/repo</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 전체 레포 동기화</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Sync all repos</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --sync-all</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 특정 레포 재인덱싱 (전체)</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Reindex a specific repo (full)</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --reindex</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> org/repo</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 전체 레포 재인덱싱</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Reindex all repos</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --reindex</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 등록된 레포 목록 확인</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># List registered repos</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --list</span></span></code></pre></figure>
-<h3 id="37-테스트">3.7 테스트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#37-테스트"><span class="icon icon-link"></span></a></h3>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> pytest</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">                             # 전체 테스트</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> pytest</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> tests/test_reranker.py</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -v</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   # 특정 모듈</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ruff</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> check</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src/</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">                    # 린트</span></span></code></pre></figure>
+<h3 id="37-testing">3.7 Testing<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#37-testing"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> pytest</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">                             # All tests</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> pytest</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> tests/test_reranker.py</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -v</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   # Specific module</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ruff</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> check</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src/</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">                    # Lint</span></span></code></pre></figure>
 <hr>
-<h2 id="4-프로젝트-구조">4. 프로젝트 구조<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-프로젝트-구조"><span class="icon icon-link"></span></a></h2>
+<h2 id="4-project-structure">4. Project Structure<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-project-structure"><span class="icon icon-link"></span></a></h2>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">code-retrieval/</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── src/</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── config.py                    # Pydantic Settings — 환경변수 정의</span></span>
@@ -129,7 +129,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── pyproject.toml</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">└── .env                             # 환경변수 설정</span></span></code></pre></figure>
 <hr>
-<h2 id="5-기술-스택">5. 기술 스택<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-기술-스택"><span class="icon icon-link"></span></a></h2>
+<h2 id="5-tech-stack">5. Tech Stack<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-tech-stack"><span class="icon icon-link"></span></a></h2>
 
 
 
@@ -205,10 +205,10 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>구분</th><th>기술</th><th>용도</th></tr></thead><tbody><tr><td>언어</td><td>Python 3.12</td><td>전체 시스템</td></tr><tr><td>벡터 DB</td><td>Qdrant (Docker / Colima)</td><td>코드 벡터 저장 및 하이브리드 검색</td></tr><tr><td>Dense 임베딩</td><td>multilingual-e5-large (1024d)</td><td>시맨틱 검색용 벡터 생성</td></tr><tr><td>Sparse 임베딩</td><td>BM25 (Qdrant/bm25)</td><td>키워드 검색용 희소 벡터 생성</td></tr><tr><td>임베딩 런타임</td><td>FastEmbed (ONNX)</td><td>경량 임베딩 추론</td></tr><tr><td>리랭커</td><td>BGE-Reranker-v2-M3</td><td>검색 결과 재순위 (FlagEmbedding)</td></tr><tr><td>코드 파서 (Python)</td><td>ast 모듈</td><td>Python AST 기반 구조적 청킹</td></tr><tr><td>코드 파서 (다국어)</td><td>tree-sitter-language-pack</td><td>JS/TS/Java/Kotlin/Go/Rust 청킹</td></tr><tr><td>API 프레임워크</td><td>FastAPI + uvicorn</td><td>REST API 서버</td></tr><tr><td>MCP 프레임워크</td><td>FastMCP</td><td>Claude Desktop / Code 연동</td></tr><tr><td>패키지 관리</td><td>uv</td><td>의존성 관리 및 실행</td></tr><tr><td>컨테이너</td><td>Docker Compose</td><td>인프라 구성</td></tr><tr><td>LLM (선택)</td><td>Ollama (gemma4:26b)</td><td>청크 컨텍스트 요약 보강</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Technology</th><th>Purpose</th></tr></thead><tbody><tr><td>Language</td><td>Python 3.12</td><td>Entire system</td></tr><tr><td>Vector DB</td><td>Qdrant (Docker / Colima)</td><td>Storing code vectors and hybrid search</td></tr><tr><td>Dense embedding</td><td>multilingual-e5-large (1024d)</td><td>Generating vectors for semantic search</td></tr><tr><td>Sparse embedding</td><td>BM25 (Qdrant/bm25)</td><td>Generating sparse vectors for keyword search</td></tr><tr><td>Embedding runtime</td><td>FastEmbed (ONNX)</td><td>Lightweight embedding inference</td></tr><tr><td>Reranker</td><td>BGE-Reranker-v2-M3</td><td>Reranking search results (FlagEmbedding)</td></tr><tr><td>Code parser (Python)</td><td>ast module</td><td>Python AST-based structural chunking</td></tr><tr><td>Code parser (multi-language)</td><td>tree-sitter-language-pack</td><td>JS/TS/Java/Kotlin/Go/Rust chunking</td></tr><tr><td>API framework</td><td>FastAPI + uvicorn</td><td>REST API server</td></tr><tr><td>MCP framework</td><td>FastMCP</td><td>Claude Desktop / Code integration</td></tr><tr><td>Package management</td><td>uv</td><td>Dependency management and execution</td></tr><tr><td>Container</td><td>Docker Compose</td><td>Infrastructure setup</td></tr><tr><td>LLM (optional)</td><td>Ollama (gemma4:26b)</td><td>Chunk context summary enrichment</td></tr></tbody></table>
 <hr>
-<h2 id="6-시스템-구조-및-흐름">6. 시스템 구조 및 흐름<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-시스템-구조-및-흐름"><span class="icon icon-link"></span></a></h2>
-<h3 id="61-전체-아키텍처">6.1 전체 아키텍처<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#61-전체-아키텍처"><span class="icon icon-link"></span></a></h3>
+<h2 id="6-system-structure-and-flow">6. System Structure and Flow<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-system-structure-and-flow"><span class="icon icon-link"></span></a></h2>
+<h3 id="61-overall-architecture">6.1 Overall architecture<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#61-overall-architecture"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">┌─────────────────────────────────────────────────────────┐</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│                     접근 계층                              │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│  ┌──────────────┐    ┌──────────────────────────────┐    │</span></span>
@@ -246,35 +246,35 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│       │                                                  │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│  동기화: git pull → git diff → 변경 파일만 재청킹 → upsert   │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">└─────────────────────────────────────────────────────────┘</span></span></code></pre></figure>
-<h3 id="62-인덱싱-흐름">6.2 인덱싱 흐름<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#62-인덱싱-흐름"><span class="icon icon-link"></span></a></h3>
+<h3 id="62-indexing-flow">6.2 Indexing flow<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#62-indexing-flow"><span class="icon icon-link"></span></a></h3>
 <ol>
-<li><strong>레포 등록</strong>: GitHub URL 또는 로컬 경로를 CLI로 등록, data/registry.json에 메타데이터 저장</li>
-<li><strong>코드 수집</strong>: git clone (또는 기존 로컬 레포 참조)</li>
-<li><strong>파일 필터링</strong>: 확장자 기반 인덱싱 대상 판별 (.py, .ts, .kt 등), node_modules/, .git/ 등 제외</li>
-<li><strong>AST 청킹</strong>: Python은 ast 모듈, JS/TS/Java/Kotlin/Go/Rust는 Tree-sitter로 함수·클래스·모듈 단위 분할</li>
-<li><strong>임베딩 생성</strong>: FastEmbed으로 Dense(1024d) + Sparse(BM25) 벡터 동시 생성</li>
-<li><strong>Qdrant 저장</strong>: Insert-then-Delete 패턴으로 안전하게 upsert</li>
+<li><strong>Repo registration</strong>: register a GitHub URL or local path via the CLI, and store metadata in data/registry.json</li>
+<li><strong>Code collection</strong>: git clone (or reference an existing local repo)</li>
+<li><strong>File filtering</strong>: determine indexing targets based on file extension (.py, .ts, .kt, etc.), excluding node_modules/, .git/, and so on</li>
+<li><strong>AST chunking</strong>: split into function/class/module units — using the ast module for Python and Tree-sitter for JS/TS/Java/Kotlin/Go/Rust</li>
+<li><strong>Embedding generation</strong>: generate Dense (1024d) + Sparse (BM25) vectors simultaneously with FastEmbed</li>
+<li><strong>Qdrant storage</strong>: safely upsert using the Insert-then-Delete pattern</li>
 </ol>
-<h3 id="63-검색-흐름">6.3 검색 흐름<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#63-검색-흐름"><span class="icon icon-link"></span></a></h3>
+<h3 id="63-search-flow">6.3 Search flow<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#63-search-flow"><span class="icon icon-link"></span></a></h3>
 <ol>
-<li><strong>쿼리 전처리</strong>: 유니코드 NFC 정규화 → camelCase/snake_case 코드 키워드 자동 추출</li>
-<li><strong>임베딩 생성</strong>: 쿼리를 Dense + Sparse 벡터로 변환</li>
-<li><strong>하이브리드 검색</strong>: Qdrant에서 Dense 검색과 Sparse 검색을 각각 수행 (prefetch_limit=100)</li>
-<li><strong>RRF 융합</strong>: Reciprocal Rank Fusion으로 두 검색 결과를 하나로 병합</li>
-<li><strong>리랭킹</strong>: BGE-Reranker-v2-M3로 상위 후보를 크로스인코더 재순위 매김</li>
-<li><strong>결과 반환</strong>: top_k개의 코드 청크를 관련도 순으로 반환 (GitHub 링크 포함)</li>
+<li><strong>Query preprocessing</strong>: Unicode NFC normalization → automatic extraction of camelCase/snake_case code keywords</li>
+<li><strong>Embedding generation</strong>: convert the query into Dense + Sparse vectors</li>
+<li><strong>Hybrid search</strong>: perform Dense search and Sparse search separately in Qdrant (prefetch_limit=100)</li>
+<li><strong>RRF fusion</strong>: merge the two result sets into one with Reciprocal Rank Fusion</li>
+<li><strong>Reranking</strong>: re-rank the top candidates with the BGE-Reranker-v2-M3 cross-encoder</li>
+<li><strong>Result return</strong>: return top_k code chunks ordered by relevance (including GitHub links)</li>
 </ol>
-<h3 id="64-증분-동기화-흐름">6.4 증분 동기화 흐름<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#64-증분-동기화-흐름"><span class="icon icon-link"></span></a></h3>
+<h3 id="64-incremental-sync-flow">6.4 Incremental sync flow<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#64-incremental-sync-flow"><span class="icon icon-link"></span></a></h3>
 <ol>
 <li>git fetch → git reset --hard origin/branch</li>
-<li>git diff --name-only old_sha..new_sha로 변경/삭제 파일 감지</li>
-<li>삭제된 파일: Qdrant에서 해당 파일의 청크 삭제</li>
-<li>변경된 파일만 재청킹 → 재임베딩 → Qdrant sync_file (insert-then-delete)</li>
+<li>detect changed/deleted files with git diff --name-only old_sha..new_sha</li>
+<li>deleted files: remove that file's chunks from Qdrant</li>
+<li>re-chunk only the changed files → re-embed → Qdrant sync_file (insert-then-delete)</li>
 </ol>
 <hr>
-<h2 id="7-주요-기능">7. 주요 기능<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-주요-기능"><span class="icon icon-link"></span></a></h2>
-<h3 id="71-ast-기반-구조적-코드-청킹">7.1 AST 기반 구조적 코드 청킹<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#71-ast-기반-구조적-코드-청킹"><span class="icon icon-link"></span></a></h3>
-<p>단순 텍스트 분할이 아닌 코드의 구문 구조(AST)를 분석하여 의미 있는 단위로 분할한다.</p>
+<h2 id="7-key-features">7. Key Features<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-key-features"><span class="icon icon-link"></span></a></h2>
+<h3 id="71-ast-based-structural-code-chunking">7.1 AST-based structural code chunking<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#71-ast-based-structural-code-chunking"><span class="icon icon-link"></span></a></h3>
+<p>Rather than plain text splitting, the system analyzes the syntactic structure (AST) of the code and splits it into meaningful units.</p>
 
 
 
@@ -320,23 +320,23 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>언어</th><th>파서</th><th>청킹 단위</th></tr></thead><tbody><tr><td>Python</td><td>ast 모듈</td><td>함수, 클래스, 모듈 레벨 코드</td></tr><tr><td>JS/TS</td><td>Tree-sitter</td><td>함수, 클래스, 인터페이스, arrow function</td></tr><tr><td>Java</td><td>Tree-sitter</td><td>메서드, 클래스, 인터페이스</td></tr><tr><td>Kotlin</td><td>Tree-sitter</td><td>함수, 클래스, object 선언</td></tr><tr><td>Go</td><td>Tree-sitter</td><td>함수, 메서드, 타입 선언</td></tr><tr><td>Rust</td><td>Tree-sitter</td><td>함수, impl, struct, trait, enum</td></tr><tr><td>기타 (YAML, JSON 등)</td><td>고정 크기</td><td>~512 토큰 단위, 50 토큰 오버랩</td></tr></tbody></table>
-<p><strong>큰 클래스 처리</strong>: 100줄 초과 클래스는 메서드별 개별 청크 + 클래스 헤더 청크로 분할</p>
-<h3 id="72-하이브리드-검색-dense--sparse--rrf">7.2 하이브리드 검색 (Dense + Sparse + RRF)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#72-하이브리드-검색-dense--sparse--rrf"><span class="icon icon-link"></span></a></h3>
+<table><thead><tr><th>Language</th><th>Parser</th><th>Chunking unit</th></tr></thead><tbody><tr><td>Python</td><td>ast module</td><td>Functions, classes, module-level code</td></tr><tr><td>JS/TS</td><td>Tree-sitter</td><td>Functions, classes, interfaces, arrow functions</td></tr><tr><td>Java</td><td>Tree-sitter</td><td>Methods, classes, interfaces</td></tr><tr><td>Kotlin</td><td>Tree-sitter</td><td>Functions, classes, object declarations</td></tr><tr><td>Go</td><td>Tree-sitter</td><td>Functions, methods, type declarations</td></tr><tr><td>Rust</td><td>Tree-sitter</td><td>Functions, impl, struct, trait, enum</td></tr><tr><td>Others (YAML, JSON, etc.)</td><td>Fixed size</td><td>~512-token units with 50-token overlap</td></tr></tbody></table>
+<p><strong>Handling large classes</strong>: classes exceeding 100 lines are split into individual per-method chunks plus a class-header chunk</p>
+<h3 id="72-hybrid-search-dense--sparse--rrf">7.2 Hybrid search (Dense + Sparse + RRF)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#72-hybrid-search-dense--sparse--rrf"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li><strong>Dense 검색</strong>: multilingual-e5-large로 의미 기반 유사도 검색 (한국어/영어 모두 지원)</li>
-<li><strong>Sparse 검색</strong>: BM25로 정확한 키워드 매칭 (함수명, 변수명 등 코드 식별자에 강점)</li>
-<li><strong>RRF 융합</strong>: 두 검색 결과를 Reciprocal Rank Fusion으로 통합하여 상호 보완</li>
+<li><strong>Dense search</strong>: semantic similarity search with multilingual-e5-large (supports both Korean and English)</li>
+<li><strong>Sparse search</strong>: exact keyword matching with BM25 (strong on code identifiers such as function and variable names)</li>
+<li><strong>RRF fusion</strong>: combines the two result sets with Reciprocal Rank Fusion so they complement each other</li>
 </ul>
-<h3 id="73-bge-reranker-리랭킹">7.3 BGE-Reranker 리랭킹<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#73-bge-reranker-리랭킹"><span class="icon icon-link"></span></a></h3>
-<p>1차 검색 결과(top_k x 3개 후보)를 크로스인코더 모델로 정밀 재순위 매김한다.</p>
+<h3 id="73-bge-reranker-reranking">7.3 BGE-Reranker reranking<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#73-bge-reranker-reranking"><span class="icon icon-link"></span></a></h3>
+<p>The first-stage search results (top_k x 3 candidates) are precisely re-ranked with a cross-encoder model.</p>
 <ul>
-<li><strong>FP16 추론</strong>: 메모리 절감 및 속도 향상</li>
-<li><strong>배치 처리</strong>: 32건씩 배치 스코어링</li>
-<li><strong>메타데이터 부스트</strong> (선택): 함수명·파일경로·언어 매칭 시 가산점 부여</li>
+<li><strong>FP16 inference</strong>: reduces memory use and improves speed</li>
+<li><strong>Batch processing</strong>: batch scoring in groups of 32</li>
+<li><strong>Metadata boost</strong> (optional): adds bonus points when function name, file path, or language match</li>
 </ul>
-<h3 id="74-mcp-도구-claude-연동">7.4 MCP 도구 (Claude 연동)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#74-mcp-도구-claude-연동"><span class="icon icon-link"></span></a></h3>
-<p>Claude Desktop / Claude Code에서 직접 호출 가능한 4개 도구를 제공한다.</p>
+<h3 id="74-mcp-tools-claude-integration">7.4 MCP tools (Claude integration)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#74-mcp-tools-claude-integration"><span class="icon icon-link"></span></a></h3>
+<p>Provides four tools that can be called directly from Claude Desktop / Claude Code.</p>
 
 
 
@@ -367,9 +367,9 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>도구</th><th>기능</th><th>예시</th></tr></thead><tbody><tr><td>code_search</td><td>자연어 쿼리로 다중 레포 코드 검색</td><td>"결제 처리 함수" → 관련 코드 반환</td></tr><tr><td>find_function</td><td>함수명으로 정확한 정의 위치 조회</td><td>"payment" → 함수 코드 + 위치</td></tr><tr><td>get_file_context</td><td>특정 파일의 전체 청크 조회</td><td>"src/auth/login.ts" → 파일 내 모든 함수</td></tr><tr><td>list_repos</td><td>인덱싱된 레포 목록 및 통계</td><td>레포별 상태, 청크 수, 동기화 시점</td></tr></tbody></table>
-<h3 id="75-선택적-기능-feature-flag--상세">7.5 선택적 기능 (Feature Flag) — 상세<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#75-선택적-기능-feature-flag--상세"><span class="icon icon-link"></span></a></h3>
-<p>아래 3가지 기능은 환경변수로 개별 활성화할 수 있으며, 모두 비활성화 상태에서도 시스템은 정상 동작한다.</p>
+<table><thead><tr><th>Tool</th><th>Function</th><th>Example</th></tr></thead><tbody><tr><td>code_search</td><td>Search code across multiple repos with a natural-language query</td><td>"payment processing function" → returns related code</td></tr><tr><td>find_function</td><td>Look up the exact definition location by function name</td><td>"payment" → function code + location</td></tr><tr><td>get_file_context</td><td>Retrieve all chunks of a specific file</td><td>"src/auth/login.ts" → all functions in the file</td></tr><tr><td>list_repos</td><td>List and show statistics for indexed repos</td><td>Per-repo status, chunk count, last sync time</td></tr></tbody></table>
+<h3 id="75-optional-features-feature-flags--details">7.5 Optional features (Feature Flags) — details<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#75-optional-features-feature-flags--details"><span class="icon icon-link"></span></a></h3>
+<p>The following three features can be enabled individually via environment variables, and the system works correctly even with all of them disabled.</p>
 
 
 
@@ -399,12 +399,12 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>기능</th><th>환경변수</th><th>기본값</th><th>적용 시점</th></tr></thead><tbody><tr><td>Contextual Chunking</td><td>ENABLE_CONTEXTUAL_CHUNKING</td><td>false</td><td>인덱싱 시</td></tr><tr><td>Ollama 컨텍스트 보강</td><td>ENABLE_OLLAMA_CONTEXT</td><td>false</td><td>인덱싱 시</td></tr><tr><td>메타데이터 부스트</td><td>ENABLE_RERANKER_METADATA_BOOST</td><td>false</td><td>검색 시</td></tr></tbody></table>
+<table><thead><tr><th>Feature</th><th>Environment variable</th><th>Default</th><th>When applied</th></tr></thead><tbody><tr><td>Contextual Chunking</td><td>ENABLE_CONTEXTUAL_CHUNKING</td><td>false</td><td>At indexing time</td></tr><tr><td>Ollama context enrichment</td><td>ENABLE_OLLAMA_CONTEXT</td><td>false</td><td>At indexing time</td></tr><tr><td>Metadata boost</td><td>ENABLE_RERANKER_METADATA_BOOST</td><td>false</td><td>At search time</td></tr></tbody></table>
 <hr>
-<h4 id="751-contextual-chunking-휴리스틱-문맥-프리픽스">7.5.1 Contextual Chunking (휴리스틱 문맥 프리픽스)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#751-contextual-chunking-휴리스틱-문맥-프리픽스"><span class="icon icon-link"></span></a></h4>
-<p><strong>목적</strong>: 코드 청크만으로는 부족한 문맥 정보(이 코드가 어떤 파일에 있고, 무엇을 import하며, 누가 호출하는지)를 자동으로 보강하여 검색 정확도를 높인다.</p>
-<p><strong>활성화</strong>: ENABLE_CONTEXTUAL_CHUNKING=true</p>
-<p><strong>전체 흐름</strong></p>
+<h4 id="751-contextual-chunking-heuristic-context-prefix">7.5.1 Contextual Chunking (heuristic context prefix)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#751-contextual-chunking-heuristic-context-prefix"><span class="icon icon-link"></span></a></h4>
+<p><strong>Purpose</strong>: automatically enrich context that a code chunk alone lacks (which file the code lives in, what it imports, and who calls it) to improve search accuracy.</p>
+<p><strong>Enable</strong>: ENABLE_CONTEXTUAL_CHUNKING=true</p>
+<p><strong>Full flow</strong></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">┌─────────────────────────────────────────────────────────────┐</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│                 Contextual Chunking 흐름                      │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│                                                              │</span></span>
@@ -438,7 +438,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│  임베딩 시 prefix + raw_content 결합하여 벡터 생성               │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│  (embedding_content = contextual_prefix + "\n" + raw_content) │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">└─────────────────────────────────────────────────────────────┘</span></span></code></pre></figure>
-<p><strong>symbol_type별 전략</strong></p>
+<p><strong>Strategy by symbol_type</strong></p>
 
 
 
@@ -456,27 +456,27 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>symbol_type</th><th>생성되는 프리픽스 정보</th></tr></thead><tbody><tr><td>function / class</td><td>File + Language + Class scope + Imports(5줄) + Docstring + Callers(3개)</td></tr><tr><td>module / config</td><td>File + Language만 (최소 정보)</td></tr></tbody></table>
-<p><strong>호출자 탐지 로직</strong> (_find_callers)</p>
+<table><thead><tr><th>symbol_type</th><th>Prefix information generated</th></tr></thead><tbody><tr><td>function / class</td><td>File + Language + Class scope + Imports (5 lines) + Docstring + Callers (3)</td></tr><tr><td>module / config</td><td>File + Language only (minimal information)</td></tr></tbody></table>
+<p><strong>Caller detection logic</strong> (_find_callers)</p>
 <ul>
-<li>같은 파일 내에서 def/function/const/let/var/fun/func 선언을 추적하여 현재 함수 스코프를 판별</li>
-<li>청크 자체 범위(start_line~end_line) 밖에서 해당 심볼을 참조하는 함수를 최대 3개까지 추출</li>
-<li>길이 3 미만이거나 &#x3C;module>, &#x3C;anonymous> 같은 제네릭 이름은 건너뜀</li>
+<li>Track def/function/const/let/var/fun/func declarations within the same file to determine the current function scope</li>
+<li>Extract up to 3 functions outside the chunk's own range (start_line~end_line) that reference the given symbol</li>
+<li>Skip generic names shorter than 3 characters, or names such as &#x3C;module> or &#x3C;anonymous></li>
 </ul>
-<p><strong>docstring 추출 로직</strong> (extract_docstring)</p>
+<p><strong>Docstring extraction logic</strong> (extract_docstring)</p>
 <ul>
-<li>Python: ast.get_docstring()으로 첫 번째 함수/클래스의 docstring 첫 줄 추출</li>
-<li>JS/TS/Java/Kotlin: 선행 // 주석 또는 JSDoc /** ... */ 블록의 텍스트 추출 (최대 120자)</li>
+<li>Python: extract the first line of the docstring of the first function/class via ast.get_docstring()</li>
+<li>JS/TS/Java/Kotlin: extract text from a preceding // comment or JSDoc /** ... */ block (up to 120 characters)</li>
 </ul>
 <hr>
-<h4 id="752-ollama-컨텍스트-보강-llm-요약">7.5.2 Ollama 컨텍스트 보강 (LLM 요약)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#752-ollama-컨텍스트-보강-llm-요약"><span class="icon icon-link"></span></a></h4>
-<p><strong>목적</strong>: 휴리스틱 프리픽스에 더해, 로컬 LLM이 코드 청크의 의미를 한 문장으로 요약하여 시맨틱 검색 품질을 추가로 향상시킨다.</p>
-<p><strong>활성화</strong>: ENABLE_CONTEXTUAL_CHUNKING=true AND ENABLE_OLLAMA_CONTEXT=true (Contextual Chunking이 선행 활성화되어야 함)</p>
-<p><strong>사전 요구사항</strong>: Ollama 서버 실행 + gemma4:26b 모델 다운로드</p>
+<h4 id="752-ollama-context-enrichment-llm-summary">7.5.2 Ollama context enrichment (LLM summary)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#752-ollama-context-enrichment-llm-summary"><span class="icon icon-link"></span></a></h4>
+<p><strong>Purpose</strong>: in addition to the heuristic prefix, a local LLM summarizes the meaning of a code chunk in a single sentence to further improve semantic search quality.</p>
+<p><strong>Enable</strong>: ENABLE_CONTEXTUAL_CHUNKING=true AND ENABLE_OLLAMA_CONTEXT=true (Contextual Chunking must be enabled first)</p>
+<p><strong>Prerequisites</strong>: a running Ollama server + the gemma4:26b model downloaded</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold"># Ollama 설치 후</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ollama pull gemma4:26b</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ollama serve   # http://localhost:11434</span></span></code></pre></figure>
-<p><strong>전체 흐름</strong></p>
+<p><strong>Full flow</strong></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">┌───────────────────────────────────────────────────────────────┐</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│               Ollama 컨텍스트 보강 흐름                          │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│                                                                │</span></span>
@@ -521,13 +521,13 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│       ▼                                                        │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│  임베딩 단계로 (prefix + summary + raw_content 결합)             │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">└───────────────────────────────────────────────────────────────┘</span></span></code></pre></figure>
-<p><strong>Graceful Fallback 설계</strong></p>
+<p><strong>Graceful fallback design</strong></p>
 <ul>
-<li>Ollama 서버가 꺼져 있거나 모델이 없는 경우: WARNING 로그 출력 후 휴리스틱 프리픽스만으로 정상 동작</li>
-<li>개별 청크 요약 실패: 해당 청크만 건너뛰고 나머지 계속 처리</li>
-<li>타임아웃(30초) 초과: 해당 청크 스킵</li>
+<li>If the Ollama server is down or the model is missing: log a WARNING and continue operating normally with only the heuristic prefix</li>
+<li>Failure to summarize an individual chunk: skip just that chunk and continue processing the rest</li>
+<li>Timeout (over 30 seconds): skip that chunk</li>
 </ul>
-<p><strong>관련 환경변수</strong></p>
+<p><strong>Related environment variables</strong></p>
 
 
 
@@ -558,12 +558,12 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>변수</th><th>기본값</th><th>설명</th></tr></thead><tbody><tr><td>ENABLE_OLLAMA_CONTEXT</td><td>false</td><td>Ollama 보강 활성화</td></tr><tr><td>OLLAMA_URL</td><td><a href="http://localhost:11434">http://localhost:11434</a></td><td>Ollama 서버 주소</td></tr><tr><td>OLLAMA_MODEL</td><td>gemma4:26b</td><td>사용할 모델</td></tr><tr><td>OLLAMA_CONTEXT_TIMEOUT</td><td>30</td><td>청크당 타임아웃 (초)</td></tr></tbody></table>
+<table><thead><tr><th>Variable</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td>ENABLE_OLLAMA_CONTEXT</td><td>false</td><td>Enable Ollama enrichment</td></tr><tr><td>OLLAMA_URL</td><td><a href="http://localhost:11434">http://localhost:11434</a></td><td>Ollama server address</td></tr><tr><td>OLLAMA_MODEL</td><td>gemma4:26b</td><td>Model to use</td></tr><tr><td>OLLAMA_CONTEXT_TIMEOUT</td><td>30</td><td>Per-chunk timeout (seconds)</td></tr></tbody></table>
 <hr>
-<h4 id="753-메타데이터-부스트-reranker-metadata-boost">7.5.3 메타데이터 부스트 (Reranker Metadata Boost)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#753-메타데이터-부스트-reranker-metadata-boost"><span class="icon icon-link"></span></a></h4>
-<p><strong>목적</strong>: 리랭킹 단계에서 코드의 의미적 유사도뿐만 아니라, 쿼리와 메타데이터(함수명, 파일명, 언어)의 직접적 매칭에 가산점을 부여하여 정확한 코드를 상위로 올린다.</p>
-<p><strong>활성화</strong>: ENABLE_RERANKER_METADATA_BOOST=true</p>
-<p><strong>전체 흐름</strong></p>
+<h4 id="753-metadata-boost-reranker-metadata-boost">7.5.3 Metadata boost (Reranker Metadata Boost)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#753-metadata-boost-reranker-metadata-boost"><span class="icon icon-link"></span></a></h4>
+<p><strong>Purpose</strong>: at the reranking stage, add bonus points not only for semantic similarity of the code but also for direct matches between the query and metadata (function name, file name, language), pushing the exact code to the top.</p>
+<p><strong>Enable</strong>: ENABLE_RERANKER_METADATA_BOOST=true</p>
+<p><strong>Full flow</strong></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">┌───────────────────────────────────────────────────────────────┐</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│              메타데이터 부스트 흐름                                │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│                                                                │</span></span>
@@ -607,7 +607,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│       ▼                                                        │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│  score_threshold 필터링 → top_k 결과 반환                        │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">└───────────────────────────────────────────────────────────────┘</span></span></code></pre></figure>
-<p><strong>부스트 가중치 상세</strong></p>
+<p><strong>Boost weight details</strong></p>
 
 
 
@@ -638,9 +638,9 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>매칭 조건</th><th>가중치</th><th>예시</th></tr></thead><tbody><tr><td>symbol_name 완전 매칭</td><td>boost x 2.0</td><td>쿼리에 "payment" → symbol_name이 "processPayment"인 청크에 +0.2</td></tr><tr><td>symbol_name 부분 매칭</td><td>boost x 1.0</td><td>쿼리에 "payment" → "payment.api"의 마지막 부분 매칭 시 +0.1</td></tr><tr><td>file_path stem 매칭</td><td>boost x 0.5</td><td>쿼리에 "login" → file_path가 "src/auth/login.ts"이면 stem "login" 매칭 시 +0.05</td></tr><tr><td>language 매칭</td><td>boost x 0.3</td><td>쿼리에 "typescript" → language가 "typescript"인 청크에 +0.03</td></tr></tbody></table>
-<p>(기본 boost factor = 0.1, RERANKER_METADATA_BOOST 환경변수로 조정 가능)</p>
-<p><strong>관련 환경변수</strong></p>
+<table><thead><tr><th>Match condition</th><th>Weight</th><th>Example</th></tr></thead><tbody><tr><td>symbol_name exact match</td><td>boost x 2.0</td><td>"payment" in query → +0.2 to a chunk whose symbol_name is "processPayment"</td></tr><tr><td>symbol_name partial match</td><td>boost x 1.0</td><td>"payment" in query → +0.1 when the last part of "payment.api" matches</td></tr><tr><td>file_path stem match</td><td>boost x 0.5</td><td>"login" in query → +0.05 when the stem "login" matches for file_path "src/auth/login.ts"</td></tr><tr><td>language match</td><td>boost x 0.3</td><td>"typescript" in query → +0.03 to a chunk whose language is "typescript"</td></tr></tbody></table>
+<p>(default boost factor = 0.1, adjustable via the RERANKER_METADATA_BOOST environment variable)</p>
+<p><strong>Related environment variables</strong></p>
 
 
 
@@ -666,10 +666,10 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>변수</th><th>기본값</th><th>설명</th></tr></thead><tbody><tr><td>ENABLE_RERANKER_METADATA_BOOST</td><td>false</td><td>메타데이터 부스트 활성화</td></tr><tr><td>RERANKER_METADATA_BOOST</td><td>0.1</td><td>기본 부스트 계수 (높을수록 메타데이터 영향력 증가)</td></tr><tr><td>RERANKER_SCORE_THRESHOLD</td><td>0.0</td><td>최소 스코어 임계값 (이하 결과 제외)</td></tr></tbody></table>
+<table><thead><tr><th>Variable</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td>ENABLE_RERANKER_METADATA_BOOST</td><td>false</td><td>Enable metadata boost</td></tr><tr><td>RERANKER_METADATA_BOOST</td><td>0.1</td><td>Base boost factor (higher = greater metadata influence)</td></tr><tr><td>RERANKER_SCORE_THRESHOLD</td><td>0.0</td><td>Minimum score threshold (results below are excluded)</td></tr></tbody></table>
 <hr>
-<h4 id="754-선택적-기능-조합-매트릭스">7.5.4 선택적 기능 조합 매트릭스<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#754-선택적-기능-조합-매트릭스"><span class="icon icon-link"></span></a></h4>
-<p>3가지 기능은 독립적으로 또는 조합하여 사용할 수 있다. 아래는 가능한 조합과 효과를 정리한 것이다.</p>
+<h4 id="754-optional-feature-combination-matrix">7.5.4 Optional feature combination matrix<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#754-optional-feature-combination-matrix"><span class="icon icon-link"></span></a></h4>
+<p>The three features can be used independently or in combination. Below is a summary of the possible combinations and their effects.</p>
 
 
 
@@ -717,60 +717,60 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>Contextual Chunking</th><th>Ollama 보강</th><th>메타데이터 부스트</th><th>효과</th></tr></thead><tbody><tr><td>OFF</td><td>OFF</td><td>OFF</td><td>기본 모드. 코드 텍스트만으로 검색. 가장 빠르고 가벼움</td></tr><tr><td>ON</td><td>OFF</td><td>OFF</td><td>휴리스틱 문맥(파일경로, import, docstring, 호출자)이 임베딩에 반영되어 검색 정확도 향상</td></tr><tr><td>ON</td><td>ON</td><td>OFF</td><td>휴리스틱 + LLM 요약으로 시맨틱 임베딩 품질 극대화. 인덱싱 시간 증가 (청크당 ~2-5초)</td></tr><tr><td>OFF</td><td>OFF</td><td>ON</td><td>검색 시 함수명/파일명 매칭에 가산점. 정확한 이름을 알고 있을 때 효과적</td></tr><tr><td>ON</td><td>OFF</td><td>ON</td><td>인덱싱 시 문맥 보강 + 검색 시 메타데이터 부스트. 균형 잡힌 권장 조합</td></tr><tr><td>ON</td><td>ON</td><td>ON</td><td>모든 기능 활성화. 최고 품질이지만 인덱싱 시간 가장 길음</td></tr></tbody></table>
-<p><strong>권장 구성</strong></p>
+<table><thead><tr><th>Contextual Chunking</th><th>Ollama enrichment</th><th>Metadata boost</th><th>Effect</th></tr></thead><tbody><tr><td>OFF</td><td>OFF</td><td>OFF</td><td>Default mode. Search on code text only. Fastest and lightest</td></tr><tr><td>ON</td><td>OFF</td><td>OFF</td><td>Heuristic context (file path, imports, docstring, callers) is reflected in the embedding, improving search accuracy</td></tr><tr><td>ON</td><td>ON</td><td>OFF</td><td>Heuristic + LLM summary maximizes semantic embedding quality. Increases indexing time (~2-5s per chunk)</td></tr><tr><td>OFF</td><td>OFF</td><td>ON</td><td>Bonus points for function/file name matches at search time. Effective when you know the exact name</td></tr><tr><td>ON</td><td>OFF</td><td>ON</td><td>Context enrichment at indexing + metadata boost at search. A balanced, recommended combination</td></tr><tr><td>ON</td><td>ON</td><td>ON</td><td>All features enabled. Highest quality but the longest indexing time</td></tr></tbody></table>
+<p><strong>Recommended configurations</strong></p>
 <ul>
-<li><strong>빠른 시작</strong>: 모두 OFF (기본값) — 환경 구성 없이 즉시 사용</li>
-<li><strong>품질 개선</strong>: ENABLE_CONTEXTUAL_CHUNKING=true + ENABLE_RERANKER_METADATA_BOOST=true — Ollama 없이도 유의미한 품질 향상</li>
-<li><strong>최대 품질</strong>: 3가지 모두 ON — Ollama 서버 필요, 인덱싱 시간 증가 감수</li>
+<li><strong>Quick start</strong>: all OFF (default) — use immediately with no environment setup</li>
+<li><strong>Quality improvement</strong>: ENABLE_CONTEXTUAL_CHUNKING=true + ENABLE_RERANKER_METADATA_BOOST=true — meaningful quality gains even without Ollama</li>
+<li><strong>Maximum quality</strong>: all three ON — requires an Ollama server and accepts increased indexing time</li>
 </ul>
 <hr>
-<h3 id="76-검색-품질-평가-체계">7.6 검색 품질 평가 체계<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#76-검색-품질-평가-체계"><span class="icon icon-link"></span></a></h3>
-<p>Golden Query 기반 자동 평가 시스템을 내장하고 있다.</p>
+<h3 id="76-search-quality-evaluation-framework">7.6 Search quality evaluation framework<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#76-search-quality-evaluation-framework"><span class="icon icon-link"></span></a></h3>
+<p>A Golden Query-based automatic evaluation system is built in.</p>
 <ul>
-<li><strong>평가 메트릭</strong>: MRR@K, NDCG@K, Recall@K, Precision@K</li>
-<li><strong>카테고리별 평가</strong>: function_search, class_search, api_search, config_search, concept_search</li>
-<li><strong>베이스라인 비교</strong>: 이전 결과와 델타 비교로 검색 품질 변화 추적</li>
+<li><strong>Evaluation metrics</strong>: MRR@K, NDCG@K, Recall@K, Precision@K</li>
+<li><strong>Per-category evaluation</strong>: function_search, class_search, api_search, config_search, concept_search</li>
+<li><strong>Baseline comparison</strong>: track changes in search quality with delta comparisons against previous results</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> tests.eval.evaluate</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --mode</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> current</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --output</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> results.json</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> tests.eval.evaluate</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --mode</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> current</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --compare</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> baseline.json</span></span></code></pre></figure>
 <hr>
-<h2 id="8-결과">8. 결과<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-결과"><span class="icon icon-link"></span></a></h2>
-<h3 id="81-구현-완료-항목">8.1 구현 완료 항목<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#81-구현-완료-항목"><span class="icon icon-link"></span></a></h3>
+<h2 id="8-results">8. Results<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-results"><span class="icon icon-link"></span></a></h2>
+<h3 id="81-completed-items">8.1 Completed items<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#81-completed-items"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>다중 레포 통합 인덱싱 파이프라인 (7개 프로그래밍 언어 AST 파싱 지원)</li>
-<li>Dense + Sparse 하이브리드 검색 + RRF 융합 + BGE-Reranker 리랭킹</li>
-<li>REST API (FastAPI) + MCP 서버 (FastMCP) 이중 접근 인터페이스</li>
-<li>Claude Desktop / Claude Code 직접 연동 (4개 MCP 도구)</li>
-<li>git diff 기반 증분 동기화 (전체 재인덱싱 불필요)</li>
-<li>Insert-then-Delete 패턴으로 데이터 유실 방지</li>
-<li>Golden Query 기반 검색 품질 자동 평가 체계</li>
-<li>Docker Compose 기반 원클릭 인프라 구성</li>
+<li>Unified multi-repo indexing pipeline (AST parsing support for 7 programming languages)</li>
+<li>Dense + Sparse hybrid search + RRF fusion + BGE-Reranker reranking</li>
+<li>Dual access interface: REST API (FastAPI) + MCP server (FastMCP)</li>
+<li>Direct Claude Desktop / Claude Code integration (4 MCP tools)</li>
+<li>git diff-based incremental sync (no full reindexing required)</li>
+<li>Data loss prevention with the Insert-then-Delete pattern</li>
+<li>Golden Query-based automatic search quality evaluation framework</li>
+<li>One-click infrastructure setup with Docker Compose</li>
 </ul>
-<h3 id="82-지원-언어">8.2 지원 언어<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#82-지원-언어"><span class="icon icon-link"></span></a></h3>
+<h3 id="82-supported-languages">8.2 Supported languages<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#82-supported-languages"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li><strong>AST 구조적 파싱 (7개)</strong>: Python, JavaScript, TypeScript, Java, Kotlin, Go, Rust</li>
-<li><strong>고정 크기 청킹</strong>: Markdown, YAML, JSON, TOML, HTML, CSS, SQL 등</li>
+<li><strong>AST structural parsing (7)</strong>: Python, JavaScript, TypeScript, Java, Kotlin, Go, Rust</li>
+<li><strong>Fixed-size chunking</strong>: Markdown, YAML, JSON, TOML, HTML, CSS, SQL, and more</li>
 </ul>
-<h3 id="83-활용-시나리오">8.3 활용 시나리오<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#83-활용-시나리오"><span class="icon icon-link"></span></a></h3>
+<h3 id="83-usage-scenarios">8.3 Usage scenarios<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#83-usage-scenarios"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>개발자가 "로그인 처리 로직"으로 검색하면 프론트엔드·백엔드 전체에서 관련 코드를 찾아줌</li>
-<li>Claude Code에서 MCP 도구로 사내 코드를 직접 참조하며 코드 리뷰·분석 수행</li>
-<li>신규 입사자가 특정 기능의 구현 위치를 빠르게 파악</li>
-<li>코드 중복 탐지 및 크로스 레포 의존성 파악</li>
+<li>When a developer searches for "login processing logic," the system finds related code across the entire frontend and backend</li>
+<li>Perform code review and analysis in Claude Code, referencing internal code directly via MCP tools</li>
+<li>New hires quickly identify where a particular feature is implemented</li>
+<li>Detect code duplication and understand cross-repo dependencies</li>
 </ul>
 <hr>
-<h2 id="9-사용자-사용-가이드-getting-started">9. 사용자 사용 가이드 (Getting Started)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-사용자-사용-가이드-getting-started"><span class="icon icon-link"></span></a></h2>
+<h2 id="9-getting-started">9. Getting Started<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-getting-started"><span class="icon icon-link"></span></a></h2>
 <blockquote>
 <p><strong>GitHub</strong>: <a href="https://github.com/seungahhong/code-retrieval">https://github.com/seungahhong/code-retrieval</a>
-본 가이드는 현재 프로젝트 환경 기준이다 — <strong>Python 3.12</strong> (<code>uv</code>가 자동 프로비저닝), Qdrant는 Docker Desktop 없이 <strong>Colima</strong>, 컨텍스트 보강 LLM은 <strong>gemma4:26b</strong>(선택).</p>
+This guide is based on the current project environment — <strong>Python 3.12</strong> (auto-provisioned by <code>uv</code>), Qdrant via <strong>Colima</strong> without Docker Desktop, and <strong>gemma4:26b</strong> as the optional context-enrichment LLM.</p>
 </blockquote>
-<p>사용자는 두 가지 방식으로 이 시스템을 사용한다.</p>
+<p>Users work with this system in two ways.</p>
 <ul>
-<li><strong>(A) Claude에서 바로 검색</strong> — Claude Desktop / Claude Code에 MCP 서버로 연동 (가장 권장)</li>
-<li><strong>(B) REST API 호출</strong> — 웹 UI·스크립트·외부 서비스 연동</li>
+<li><strong>(A) Search directly from Claude</strong> — connect to Claude Desktop / Claude Code as an MCP server (most recommended)</li>
+<li><strong>(B) Call the REST API</strong> — for web UIs, scripts, and external service integrations</li>
 </ul>
-<h3 id="91-사전-요구사항">9.1 사전 요구사항<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#91-사전-요구사항"><span class="icon icon-link"></span></a></h3>
+<h3 id="91-prerequisites">9.1 Prerequisites<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#91-prerequisites"><span class="icon icon-link"></span></a></h3>
 
 
 
@@ -792,31 +792,31 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>항목</th><th>버전 / 비고</th></tr></thead><tbody><tr><td>uv</td><td>Python 패키지 매니저 (Python 3.12 자동 설치)</td></tr><tr><td>Colima + Docker CLI</td><td>brew install colima docker docker-compose (Docker Desktop 불필요)</td></tr><tr><td>Ollama (선택)</td><td>컨텍스트 보강(gemma4:26b) 사용 시에만</td></tr></tbody></table>
-<h3 id="92-5분-빠른-시작">9.2 5분 빠른 시작<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#92-5분-빠른-시작"><span class="icon icon-link"></span></a></h3>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 1) 레포 클론</span></span>
+<table><thead><tr><th>Item</th><th>Version / Notes</th></tr></thead><tbody><tr><td>uv</td><td>Python package manager (auto-installs Python 3.12)</td></tr><tr><td>Colima + Docker CLI</td><td>brew install colima docker docker-compose (Docker Desktop not required)</td></tr><tr><td>Ollama (optional)</td><td>Only when using context enrichment (gemma4:26b)</td></tr></tbody></table>
+<h3 id="92-5-minute-quick-start">9.2 5-minute quick start<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#92-5-minute-quick-start"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 1) Clone the repo</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">git</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> clone</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> https://github.com/seungahhong/code-retrieval.git</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">cd</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> code-retrieval</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 2) 의존성 설치 (uv가 Python 3.12 자동 프로비저닝)</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 2) Install dependencies (uv auto-provisions Python 3.12)</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> sync</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --extra</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> dev</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 3) Qdrant 벡터 DB 기동 (Colima)</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 3) Start the Qdrant vector DB (Colima)</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">colima</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> start</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">docker</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> compose</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> up</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -d</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> qdrant</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">curl</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -s</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> http://localhost:6333/healthz</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">        # 응답: ok</span></span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 웹 대시보드: http://localhost:6333/dashboard</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">curl</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -s</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> http://localhost:6333/healthz</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">        # response: ok</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Web dashboard: http://localhost:6333/dashboard</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 4) 환경변수</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 4) Environment variables</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">cp</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> .env.example</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> .env</span></span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Private 레포를 색인하려면 .env의 GITHUB_TOKEN 설정</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># To index a private repo, set GITHUB_TOKEN in .env</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 5) 검색 대상 레포 등록 + 인덱싱</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 5) Register and index the target repos</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --add-repo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> https://github.com/org/repo.git</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --add-repo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /local/path</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --local</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --description</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "결제 서비스"</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --list</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">          # 레포별 청크 수·상태 확인</span></span></code></pre></figure>
-<h3 id="93-사용-방법-a--claude에서-바로-검색-mcp">9.3 사용 방법 A — Claude에서 바로 검색 (MCP)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#93-사용-방법-a--claude에서-바로-검색-mcp"><span class="icon icon-link"></span></a></h3>
-<p>인덱싱이 끝나면 Claude Desktop 또는 Claude Code에 MCP 서버로 연동하여 대화 중 사내 코드를 직접 검색·참조할 수 있다. Claude가 프로세스를 직접 spawn하므로 <strong>MCP_TRANSPORT=stdio가 필수</strong>다.</p>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --add-repo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /local/path</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --local</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --description</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "payment service"</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --list</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">          # Check per-repo chunk count and status</span></span></code></pre></figure>
+<h3 id="93-method-a--search-directly-from-claude-mcp">9.3 Method A — Search directly from Claude (MCP)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#93-method-a--search-directly-from-claude-mcp"><span class="icon icon-link"></span></a></h3>
+<p>Once indexing is done, you can connect to Claude Desktop or Claude Code as an MCP server and search and reference internal code directly during a conversation. Because Claude spawns the process itself, <strong>MCP_TRANSPORT=stdio is required</strong>.</p>
 <p><strong>Claude Desktop</strong> — <code>~/Library/Application Support/Claude/claude_desktop_config.json</code> (macOS)</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
 <span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "mcpServers"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
@@ -827,12 +827,12 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
-<p><strong>Claude Code</strong> — 프로젝트 루트에서 한 줄로 등록</p>
+<p><strong>Claude Code</strong> — register with a single line from the project root</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">claude</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> mcp</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> code-retrieval</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> \</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  --command</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "uv"</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> \</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  --args</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "--directory"</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "/path/to/code-retrieval"</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "run"</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "python"</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "-m"</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "src.mcp"</span></span></code></pre></figure>
-<p><code>/path/to/code-retrieval</code>를 실제 클론 경로로 변경한다. Claude Desktop은 재시작하면 MCP 도구가 자동 활성화된다.</p>
-<p><strong>연동 후 Claude에게 이렇게 질문한다</strong> (내부적으로 4개 MCP 도구 호출):</p>
+<p>Change <code>/path/to/code-retrieval</code> to your actual clone path. When you restart Claude Desktop, the MCP tools activate automatically.</p>
+<p><strong>After connecting, ask Claude questions like these</strong> (internally invoking the 4 MCP tools):</p>
 
 
 
@@ -858,11 +858,11 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>질문 예시</th><th>호출되는 도구</th></tr></thead><tbody><tr><td>"결제 처리 로직 검색해줘"</td><td>code_search</td></tr><tr><td>"processPayment 함수 정의 어디 있어?"</td><td>find_function</td></tr><tr><td>"src/auth/login.ts 파일 전체 보여줘"</td><td>get_file_context</td></tr><tr><td>"인덱싱된 레포 목록 보여줘"</td><td>list_repos</td></tr></tbody></table>
-<h3 id="94-사용-방법-b--rest-api">9.4 사용 방법 B — REST API<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#94-사용-방법-b--rest-api"><span class="icon icon-link"></span></a></h3>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 서버 실행 → http://localhost:8000 (대화형 문서: /docs)</span></span>
+<table><thead><tr><th>Example question</th><th>Tool invoked</th></tr></thead><tbody><tr><td>"Search the payment processing logic"</td><td>code_search</td></tr><tr><td>"Where is the processPayment function defined?"</td><td>find_function</td></tr><tr><td>"Show me the entire src/auth/login.ts file"</td><td>get_file_context</td></tr><tr><td>"Show me the list of indexed repos"</td><td>list_repos</td></tr></tbody></table>
+<h3 id="94-method-b--rest-api">9.4 Method B — REST API<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#94-method-b--rest-api"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Run the server → http://localhost:8000 (interactive docs: /docs)</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.api.app</span></span></code></pre></figure>
-<p>주요 엔드포인트:</p>
+<p>Main endpoints:</p>
 
 
 
@@ -898,29 +898,29 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>메서드 / 경로</th><th>설명</th><th>요청 본문(JSON) 주요 필드</th></tr></thead><tbody><tr><td>POST <code>/api/search</code></td><td>자연어 코드 검색</td><td>query(필수), top_k, repo, language</td></tr><tr><td>GET <code>/api/repos</code></td><td>등록 레포 목록</td><td>—</td></tr><tr><td>GET <code>/api/repos/{repo}/stats</code></td><td>레포별 청크·벡터 통계</td><td>—</td></tr><tr><td>POST <code>/api/repos</code></td><td>레포 등록(백그라운드 인덱싱)</td><td>url 또는 local_path, branch, description</td></tr><tr><td>POST <code>/api/repos/{repo}/sync</code></td><td>레포 증분 동기화</td><td>—</td></tr></tbody></table>
-<p>검색 응답에는 <code>results[]</code>(코드·파일경로·라인·github_url 포함), <code>total_found</code>, <code>query_time_ms</code>, <code>repos_searched</code>가 담긴다. 요청/응답 스키마와 직접 실행은 <code>/docs</code>(Swagger UI)에서 확인할 수 있다.</p>
-<h3 id="95-운영--코드-변경-반영-증분-동기화">9.5 운영 — 코드 변경 반영 (증분 동기화)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#95-운영--코드-변경-반영-증분-동기화"><span class="icon icon-link"></span></a></h3>
-<p>레포에 새 커밋이 쌓이면 전체 재인덱싱 없이 git diff 기반으로 변경 파일만 갱신한다.</p>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --sync</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> org/repo</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     # 특정 레포 증분 동기화</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --sync-all</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">          # 전체 레포 동기화</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --reindex</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> org/repo</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  # 전체 재인덱싱(필요 시)</span></span></code></pre></figure>
-<p>REST API로도 동기화할 수 있다(POST <code>/api/repos/{repo}/sync</code>).</p>
-<h3 id="96-선택-검색-품질-강화">9.6 (선택) 검색 품질 강화<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#96-선택-검색-품질-강화"><span class="icon icon-link"></span></a></h3>
-<p><code>.env</code>에서 플래그를 켠다. 모두 꺼도 정상 동작한다.</p>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 권장 조합 (Ollama 없이 품질 향상) — .env.example 기본값으로 이미 켜져 있음</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ENABLE_RERANKER_METADATA_BOOST</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">true</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   # 검색 시 함수명/파일명 매칭 가산점</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">RERANKER_SCORE_THRESHOLD</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">0.3</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">          # 저품질 결과 컷오프</span></span>
+<table><thead><tr><th>Method / Path</th><th>Description</th><th>Key request body (JSON) fields</th></tr></thead><tbody><tr><td>POST <code>/api/search</code></td><td>Natural-language code search</td><td>query (required), top_k, repo, language</td></tr><tr><td>GET <code>/api/repos</code></td><td>List of registered repos</td><td>—</td></tr><tr><td>GET <code>/api/repos/{repo}/stats</code></td><td>Per-repo chunk/vector statistics</td><td>—</td></tr><tr><td>POST <code>/api/repos</code></td><td>Register a repo (background indexing)</td><td>url or local_path, branch, description</td></tr><tr><td>POST <code>/api/repos/{repo}/sync</code></td><td>Incremental sync of a repo</td><td>—</td></tr></tbody></table>
+<p>The search response contains <code>results[]</code> (including code, file path, line, and github_url), <code>total_found</code>, <code>query_time_ms</code>, and <code>repos_searched</code>. You can review the request/response schema and try it directly at <code>/docs</code> (Swagger UI).</p>
+<h3 id="95-operations--applying-code-changes-incremental-sync">9.5 Operations — Applying code changes (incremental sync)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#95-operations--applying-code-changes-incremental-sync"><span class="icon icon-link"></span></a></h3>
+<p>As new commits pile up in a repo, only the changed files are updated based on git diff, without a full reindex.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --sync</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> org/repo</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     # Incremental sync of a specific repo</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --sync-all</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">          # Sync all repos</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> run</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -m</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> src.indexer</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --reindex</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> org/repo</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  # Full reindex (when needed)</span></span></code></pre></figure>
+<p>You can also sync via the REST API (POST <code>/api/repos/{repo}/sync</code>).</p>
+<h3 id="96-optional-enhancing-search-quality">9.6 (Optional) Enhancing search quality<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#96-optional-enhancing-search-quality"><span class="icon icon-link"></span></a></h3>
+<p>Turn on flags in <code>.env</code>. Everything works correctly even with them all off.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Recommended combination (quality boost without Ollama) — already on by default in .env.example</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ENABLE_RERANKER_METADATA_BOOST</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">true</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   # Bonus points for function/file name matches at search time</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">RERANKER_SCORE_THRESHOLD</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">0.3</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">          # Cut off low-quality results</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 최대 품질 (인덱싱 시 LLM 요약 보강) — Ollama 필요</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Maximum quality (LLM summary enrichment at indexing) — requires Ollama</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">ollama</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> pull</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> gemma4:26b</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x26;&#x26; </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">ollama</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> serve</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ENABLE_CONTEXTUAL_CHUNKING</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">true</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ENABLE_OLLAMA_CONTEXT</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">true</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">OLLAMA_MODEL</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">gemma4:26b</span></span></code></pre></figure>
 <blockquote>
-<p>플래그를 바꾼 뒤에는 효과 반영을 위해 대상 레포를 <code>--reindex</code> 해야 한다. 조합별 효과는 7.5.4 선택적 기능 조합 매트릭스 참고.</p>
+<p>After changing a flag, you must <code>--reindex</code> the target repo for the effect to take hold. For the effect of each combination, see the optional feature combination matrix in 7.5.4.</p>
 </blockquote>
-<h3 id="97-트러블슈팅">9.7 트러블슈팅<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#97-트러블슈팅"><span class="icon icon-link"></span></a></h3>
+<h3 id="97-troubleshooting">9.7 Troubleshooting<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#97-troubleshooting"><span class="icon icon-link"></span></a></h3>
 
 
 
@@ -950,9 +950,9 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>증상</th><th>확인 / 해결</th></tr></thead><tbody><tr><td>MCP 도구가 Claude에 안 보임</td><td>Claude Desktop 완전 종료 후 재시작, config JSON 문법 확인, command를 <code>which uv</code> 절대경로로 지정</td></tr><tr><td>Qdrant 연결 실패</td><td>colima start → docker compose up -d qdrant → curl <a href="http://localhost:6333/healthz">localhost:6333/healthz</a> 순서 확인</td></tr><tr><td>검색 결과가 비어 있음</td><td><code>--list</code>로 청크 수 확인, 인덱싱 완료(status=indexed) 여부 확인</td></tr><tr><td>Private 레포 클론 실패</td><td><code>.env</code>의 GITHUB_TOKEN 또는 <code>--token ghp_xxx</code> 지정</td></tr><tr><td>GET <code>/mcp</code> 접속 시 406</td><td>정상 응답(핸드셰이크 헤더 없는 요청). 서버 생존 신호로 활용 가능</td></tr></tbody></table>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"시맨틱(의미 기반) + 키워드 하이브리드 검색 RAG 구축"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"시맨틱(의미 기반) + 키워드 하이브리드 검색 RAG 구축"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-06-01","className":"meta-mono","children":"06/01/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[11,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","RAG",{"children":["$","$L3",null,{"href":"/en/tags?tag=RAG","className":"tag-pill","children":"RAG"}]}],["$","li","AI",{"children":["$","$L3",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","MCP",{"children":["$","$L3",null,{"href":"/en/tags?tag=MCP","className":"tag-pill","children":"MCP"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
-5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2025-09-07-vite7.0","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Vite 7.0"}]]}],["$","$L3",null,{"href":"/en/posts/2026-06-02-LLM-WIKI","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"LLM Wiki: RAG를 넘어 지식을 미리 정리해 두는 위키 패턴"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"0-배경","text":"0. 배경","depth":1},{"id":"1-개요","text":"1. 개요","depth":1},{"id":"2-목표","text":"2. 목표","depth":1},{"id":"3-설치-및-실행-installation--execution","text":"3. 설치 및 실행 (Installation & Execution)","depth":1},{"id":"31-사전-요구사항","text":"3.1 사전 요구사항","depth":2},{"id":"32-의존성-설치","text":"3.2 의존성 설치","depth":2},{"id":"33-qdrant-벡터-db-실행","text":"3.3 Qdrant 벡터 DB 실행","depth":2},{"id":"34-레포-등록-및-인덱싱","text":"3.4 레포 등록 및 인덱싱","depth":2},{"id":"35-서버-실행","text":"3.5 서버 실행","depth":2},{"id":"36-동기화-및-운영","text":"3.6 동기화 및 운영","depth":2},{"id":"37-테스트","text":"3.7 테스트","depth":2},{"id":"4-프로젝트-구조","text":"4. 프로젝트 구조","depth":1},{"id":"5-기술-스택","text":"5. 기술 스택","depth":1},{"id":"6-시스템-구조-및-흐름","text":"6. 시스템 구조 및 흐름","depth":1},{"id":"61-전체-아키텍처","text":"6.1 전체 아키텍처","depth":2},{"id":"62-인덱싱-흐름","text":"6.2 인덱싱 흐름","depth":2},{"id":"63-검색-흐름","text":"6.3 검색 흐름","depth":2},{"id":"64-증분-동기화-흐름","text":"6.4 증분 동기화 흐름","depth":2},{"id":"7-주요-기능","text":"7. 주요 기능","depth":1},{"id":"71-ast-기반-구조적-코드-청킹","text":"7.1 AST 기반 구조적 코드 청킹","depth":2},{"id":"72-하이브리드-검색-dense--sparse--rrf","text":"7.2 하이브리드 검색 (Dense + Sparse + RRF)","depth":2},{"id":"73-bge-reranker-리랭킹","text":"7.3 BGE-Reranker 리랭킹","depth":2},{"id":"74-mcp-도구-claude-연동","text":"7.4 MCP 도구 (Claude 연동)","depth":2},{"id":"75-선택적-기능-feature-flag--상세","text":"7.5 선택적 기능 (Feature Flag) — 상세","depth":2},{"id":"751-contextual-chunking-휴리스틱-문맥-프리픽스","text":"7.5.1 Contextual Chunking (휴리스틱 문맥 프리픽스)","depth":3},{"id":"752-ollama-컨텍스트-보강-llm-요약","text":"7.5.2 Ollama 컨텍스트 보강 (LLM 요약)","depth":3},{"id":"753-메타데이터-부스트-reranker-metadata-boost","text":"7.5.3 메타데이터 부스트 (Reranker Metadata Boost)","depth":3},{"id":"754-선택적-기능-조합-매트릭스","text":"7.5.4 선택적 기능 조합 매트릭스","depth":3},{"id":"76-검색-품질-평가-체계","text":"7.6 검색 품질 평가 체계","depth":2},{"id":"8-결과","text":"8. 결과","depth":1},{"id":"81-구현-완료-항목","text":"8.1 구현 완료 항목","depth":2},{"id":"82-지원-언어","text":"8.2 지원 언어","depth":2},{"id":"83-활용-시나리오","text":"8.3 활용 시나리오","depth":2},{"id":"9-사용자-사용-가이드-getting-started","text":"9. 사용자 사용 가이드 (Getting Started)","depth":1},{"id":"91-사전-요구사항","text":"9.1 사전 요구사항","depth":2},{"id":"92-5분-빠른-시작","text":"9.2 5분 빠른 시작","depth":2},{"id":"93-사용-방법-a--claude에서-바로-검색-mcp","text":"9.3 사용 방법 A — Claude에서 바로 검색 (MCP)","depth":2},{"id":"94-사용-방법-b--rest-api","text":"9.4 사용 방법 B — REST API","depth":2},{"id":"95-운영--코드-변경-반영-증분-동기화","text":"9.5 운영 — 코드 변경 반영 (증분 동기화)","depth":2},{"id":"96-선택-검색-품질-강화","text":"9.6 (선택) 검색 품질 강화","depth":2},{"id":"97-트러블슈팅","text":"9.7 트러블슈팅","depth":2}],"title":"Contents"}]}]
+<table><thead><tr><th>Symptom</th><th>Check / Fix</th></tr></thead><tbody><tr><td>MCP tools not visible in Claude</td><td>Fully quit and restart Claude Desktop, verify the config JSON syntax, and set command to the absolute path from <code>which uv</code></td></tr><tr><td>Qdrant connection failure</td><td>Verify the order: colima start → docker compose up -d qdrant → curl <a href="http://localhost:6333/healthz">localhost:6333/healthz</a></td></tr><tr><td>Empty search results</td><td>Check the chunk count with <code>--list</code> and verify that indexing is complete (status=indexed)</td></tr><tr><td>Private repo clone failure</td><td>Set GITHUB_TOKEN in <code>.env</code> or specify <code>--token ghp_xxx</code></td></tr><tr><td>406 when accessing GET <code>/mcp</code></td><td>Normal response (a request without handshake headers). Can be used as a server liveness signal</td></tr></tbody></table>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Building a Hybrid Semantic + Keyword Search RAG System"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Building a Hybrid Semantic + Keyword Search RAG System"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-06-01","className":"meta-mono","children":"06/01/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[13,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","RAG",{"children":["$","$L3",null,{"href":"/en/tags?tag=RAG","className":"tag-pill","children":"RAG"}]}],["$","li","AI",{"children":["$","$L3",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","MCP",{"children":["$","$L3",null,{"href":"/en/tags?tag=MCP","className":"tag-pill","children":"MCP"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
+5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2025-09-07-vite7.0","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Vite 7.0"}]]}],["$","$L3",null,{"href":"/en/posts/2026-06-02-LLM-WIKI","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"LLM Wiki: A Wiki Pattern That Organizes Knowledge Up Front, Beyond RAG"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"0-background","text":"0. Background","depth":1},{"id":"1-overview","text":"1. Overview","depth":1},{"id":"2-goals","text":"2. Goals","depth":1},{"id":"3-installation--execution","text":"3. Installation & Execution","depth":1},{"id":"31-prerequisites","text":"3.1 Prerequisites","depth":2},{"id":"32-installing-dependencies","text":"3.2 Installing dependencies","depth":2},{"id":"33-running-the-qdrant-vector-db","text":"3.3 Running the Qdrant vector DB","depth":2},{"id":"34-registering-and-indexing-a-repo","text":"3.4 Registering and indexing a repo","depth":2},{"id":"35-running-the-servers","text":"3.5 Running the servers","depth":2},{"id":"36-sync-and-operations","text":"3.6 Sync and operations","depth":2},{"id":"37-testing","text":"3.7 Testing","depth":2},{"id":"4-project-structure","text":"4. Project Structure","depth":1},{"id":"5-tech-stack","text":"5. Tech Stack","depth":1},{"id":"6-system-structure-and-flow","text":"6. System Structure and Flow","depth":1},{"id":"61-overall-architecture","text":"6.1 Overall architecture","depth":2},{"id":"62-indexing-flow","text":"6.2 Indexing flow","depth":2},{"id":"63-search-flow","text":"6.3 Search flow","depth":2},{"id":"64-incremental-sync-flow","text":"6.4 Incremental sync flow","depth":2},{"id":"7-key-features","text":"7. Key Features","depth":1},{"id":"71-ast-based-structural-code-chunking","text":"7.1 AST-based structural code chunking","depth":2},{"id":"72-hybrid-search-dense--sparse--rrf","text":"7.2 Hybrid search (Dense + Sparse + RRF)","depth":2},{"id":"73-bge-reranker-reranking","text":"7.3 BGE-Reranker reranking","depth":2},{"id":"74-mcp-tools-claude-integration","text":"7.4 MCP tools (Claude integration)","depth":2},{"id":"75-optional-features-feature-flags--details","text":"7.5 Optional features (Feature Flags) — details","depth":2},{"id":"751-contextual-chunking-heuristic-context-prefix","text":"7.5.1 Contextual Chunking (heuristic context prefix)","depth":3},{"id":"752-ollama-context-enrichment-llm-summary","text":"7.5.2 Ollama context enrichment (LLM summary)","depth":3},{"id":"753-metadata-boost-reranker-metadata-boost","text":"7.5.3 Metadata boost (Reranker Metadata Boost)","depth":3},{"id":"754-optional-feature-combination-matrix","text":"7.5.4 Optional feature combination matrix","depth":3},{"id":"76-search-quality-evaluation-framework","text":"7.6 Search quality evaluation framework","depth":2},{"id":"8-results","text":"8. Results","depth":1},{"id":"81-completed-items","text":"8.1 Completed items","depth":2},{"id":"82-supported-languages","text":"8.2 Supported languages","depth":2},{"id":"83-usage-scenarios","text":"8.3 Usage scenarios","depth":2},{"id":"9-getting-started","text":"9. Getting Started","depth":1},{"id":"91-prerequisites","text":"9.1 Prerequisites","depth":2},{"id":"92-5-minute-quick-start","text":"9.2 5-minute quick start","depth":2},{"id":"93-method-a--search-directly-from-claude-mcp","text":"9.3 Method A — Search directly from Claude (MCP)","depth":2},{"id":"94-method-b--rest-api","text":"9.4 Method B — REST API","depth":2},{"id":"95-operations--applying-code-changes-incremental-sync","text":"9.5 Operations — Applying code changes (incremental sync)","depth":2},{"id":"96-optional-enhancing-search-quality","text":"9.6 (Optional) Enhancing search quality","depth":2},{"id":"97-troubleshooting","text":"9.7 Troubleshooting","depth":2}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

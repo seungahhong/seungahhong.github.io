@@ -4,7 +4,7 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T6deb,<h3 id="installing">Installing<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#installing"><span class="icon icon-link"></span></a></h3>
+4:T6dbe,<h3 id="installing">Installing<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#installing"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "@vitejs/plugin-react":</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "4.3.0",</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "vite":</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "5.2.11",</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "vite-tsconfig-paths":</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "4.3.2",</span></span>
@@ -15,11 +15,11 @@ b:"$Sreact.suspense"
 <h3 id="changes">Changes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#changes"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>
-<p>환경(Environment) API 도입</p>
+<p>Introduction of the Environment API</p>
 <ul>
-<li>프로덕션과 더 가까운 개발 경험을 제공하기 위한 새로운 API</li>
-<li>프레임워크 및 플러그인 작성자를 위한 유연성 강화</li>
-<li>가이드: <a href="https://green.sapphi.red/blog/increasing-vites-potential-with-the-environment-api">Environment API 소개</a></li>
+<li>A new API designed to provide a development experience closer to production</li>
+<li>Enhanced flexibility for framework and plugin authors</li>
+<li>Guide: <a href="https://green.sapphi.red/blog/increasing-vites-potential-with-the-environment-api">Introducing the Environment API</a></li>
 <li><img src="/blog-assets/2025/06/assets/29/image1.png" alt="env"></li>
 <li>≤ v5</li>
 <li><img src="/blog-assets/2025/06/assets/29/image2.png" alt="env2"></li>
@@ -27,45 +27,45 @@ b:"$Sreact.suspense"
 </ul>
 </li>
 <li>
-<p>Node.js 지원 업데이트</p>
+<p>Node.js support updates</p>
 <ul>
-<li>Node.js 18, 20, 22 지원, 21 지원 종료</li>
-<li>향후 Node.js 18 EOL 이후 신규 메이저 릴리스 계획</li>
+<li>Support for Node.js 18, 20, and 22; support for 21 has ended</li>
+<li>A new major release is planned for after Node.js 18 reaches EOL</li>
 <li><img src="/blog-assets/2025/06/assets/29/image3.png" alt="node"></li>
 <li><img src="/blog-assets/2025/06/assets/29/image4.png" alt="node2"></li>
 </ul>
 </li>
 <li>
-<p>새로운 기능 및 변경</p>
+<p>New features and changes</p>
 <ul>
-<li>템플릿 확장: pnpm create vite-extra로 Solid, Deno, SSR 등의 템플릿 지원.</li>
-<li>Sass 및 PostCSS:
+<li>Template expansion: templates such as Solid, Deno, and SSR are supported via pnpm create vite-extra.</li>
+<li>Sass and PostCSS:
 <ul>
-<li>Sass 컴파일 방식에서 기본값이 legacy → modern (dart-sass 지원)</li>
-<li>vite 7.0에서는 node-sass 사용하는 컴파일 방식(legacy) 제거 예정</li>
-<li>현대 API (Modern API): Sass 공식이 권장하는 최신 방식 (compileAsync, compile)</li>
-<li>레거시 API (Legacy API): 예전 방식 (render, renderSync) — 오래된 node-sass와 호환되는 API</li>
+<li>The default Sass compilation mode changes from legacy → modern (dart-sass support)</li>
+<li>In vite 7.0, the compilation mode that uses node-sass (legacy) is scheduled for removal</li>
+<li>Modern API: the latest approach officially recommended by Sass (compileAsync, compile)</li>
+<li>Legacy API: the older approach (render, renderSync) — an API compatible with the deprecated node-sass</li>
 </ul>
 </li>
-<li>CSS 라이브러리 출력 파일명 사용자 정의</li>
-<li>HTML 요소의 에셋 참조 지원 확장</li>
-<li>resolve.conditions의 디폴트 배열 조정</li>
+<li>Custom output file names for CSS libraries</li>
+<li>Expanded support for asset references in HTML elements</li>
+<li>Adjustment of the default array for resolve.conditions</li>
 <li>JSON stringify</li>
 </ul>
 </li>
 <li>
-<p>Sass의 현대 API 기본 사용</p>
+<p>Sass modern API used by default</p>
 <ul>
-<li>Sass 컴파일 방식에서 기본값이 legacy → modern (dart-sass 지원)</li>
-<li>vite 7.0에서는 node-sass 사용하는 컴파일 방식(legacy) 제거 예정</li>
-<li>현대 API (Modern API): Sass 공식이 권장하는 최신 방식 (compileAsync, compile)</li>
-<li>레거시 API (Legacy API): 예전 방식 (render, renderSync) — 오래된 node-sass와 호환되는 API</li>
+<li>The default Sass compilation mode changes from legacy → modern (dart-sass support)</li>
+<li>In vite 7.0, the compilation mode that uses node-sass (legacy) is scheduled for removal</li>
+<li>Modern API: the latest approach officially recommended by Sass (compileAsync, compile)</li>
+<li>Legacy API: the older approach (render, renderSync) — an API compatible with the deprecated node-sass</li>
 </ul>
 </li>
 <li>
-<p>HTML 요소의 에셋 참조 대상이 확장</p>
+<p>Expanded targets for asset references in HTML elements</p>
 <ul>
-<li>vite 5.0 지원</li>
+<li>Supported in vite 5.0</li>
 </ul>
 </li>
 </ul>
@@ -74,7 +74,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> &#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">script src</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">""</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span></span></code></pre></figure>
 <ul>
 <li>
-<p>vite 6.0 추가지원</p>
+<p>Additional support in vite 6.0</p>
 
 
 
@@ -120,19 +120,19 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>HTML 요소</th><th>속성</th><th>설명</th></tr></thead><tbody><tr><td><code>&#x3C;meta></code></td><td><code>content</code></td><td><code>og:image</code>, <code>twitter:image</code> 같은 메타 이미지</td></tr><tr><td><code>&#x3C;video></code></td><td><code>poster</code></td><td>비디오 포스터 이미지</td></tr><tr><td><code>&#x3C;object></code></td><td><code>data</code></td><td>임베디드 미디어</td></tr><tr><td><code>&#x3C;input></code></td><td><code>src</code></td><td><code>&#x3C;input type="image"></code>의 이미지 경로</td></tr><tr><td><code>&#x3C;audio></code></td><td><code>src</code></td><td>오디오 파일 참조</td></tr><tr><td><code>&#x3C;video></code></td><td><code>src</code></td><td>비디오 파일 참조</td></tr><tr><td><code>&#x3C;img></code></td><td><code>srcset</code></td><td>다양한 해상도 지원용 이미지 경로 리스트</td></tr></tbody></table>
+<table><thead><tr><th>HTML element</th><th>Attribute</th><th>Description</th></tr></thead><tbody><tr><td><code>&#x3C;meta></code></td><td><code>content</code></td><td>Meta images such as <code>og:image</code> and <code>twitter:image</code></td></tr><tr><td><code>&#x3C;video></code></td><td><code>poster</code></td><td>Video poster image</td></tr><tr><td><code>&#x3C;object></code></td><td><code>data</code></td><td>Embedded media</td></tr><tr><td><code>&#x3C;input></code></td><td><code>src</code></td><td>Image path for <code>&#x3C;input type="image"></code></td></tr><tr><td><code>&#x3C;audio></code></td><td><code>src</code></td><td>Audio file reference</td></tr><tr><td><code>&#x3C;video></code></td><td><code>src</code></td><td>Video file reference</td></tr><tr><td><code>&#x3C;img></code></td><td><code>srcset</code></td><td>List of image paths for supporting various resolutions</td></tr></tbody></table>
 </li>
 <li>
-<p>resolve.conditions 기본값 변경</p>
+<p>Change to the default value of resolve.conditions</p>
 <ul>
-<li>모듈을 가져올 때, package.json의 "exports" 혹은 "imports"에 지정된 조건부 엔트리를 해석할 때 어떤 조건들을 우선 적용할지를 지정하는 배열값</li>
-<li>변경 전 (Vite 5):
+<li>An array value that specifies which conditions to prioritize when resolving the conditional entries defined in the "exports" or "imports" fields of package.json while importing modules</li>
+<li>Before the change (Vite 5):
 <ul>
-<li>resolve.conditions: [] (일부 조건이 내부적으로 추가됨)</li>
-<li>ssr.resolve.conditions: resolve.conditions의 값 사용</li>
+<li>resolve.conditions: [] (some conditions were added internally)</li>
+<li>ssr.resolve.conditions: uses the value of resolve.conditions</li>
 </ul>
 </li>
-<li>변경 후 (Vite 6):
+<li>After the change (Vite 6):
 <ul>
 <li>resolve.conditions: ['module', 'browser', 'development|production']</li>
 <li>ssr.resolve.conditions: ['module', 'node', 'development|production']</li>
@@ -147,7 +147,7 @@ b:"$Sreact.suspense"
 <li>
 <p>Error [ERR_REQUIRE_ESM]: require() of ES Module</p>
 <ul>
-<li>vite.config.ts 설정 파일에서 require가 아닌 import/export 방식을 사용할 경우 package.json type="module" 속성을 추가해주세요.</li>
+<li>If your vite.config.ts configuration file uses import/export instead of require, add the type="module" property to package.json.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  "private"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> true</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">,</span></span>
@@ -157,8 +157,8 @@ b:"$Sreact.suspense"
 <li>
 <p>ReferenceError: __dirname is not defined</p>
 <ul>
-<li>vite 6 버전 업로드하면서 storybook 7 → 8 버전 업데이트 시 CommonJS → ESM 방식으로 전환되면서 CommonJS에서 사용하는 __dirname 사용이 불가합니다.</li>
-<li>사용을 해야할 경우 fileURLToPath로 현재 파일 패스를 얻어와서 사용은 가능합니다.</li>
+<li>When upgrading to vite 6 and updating storybook from 7 → 8, the transition from CommonJS → ESM makes the __dirname used in CommonJS unavailable.</li>
+<li>If you need to use it, you can still obtain the current file path via fileURLToPath.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="typescript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 에러</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">node</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1584</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time</span></span>
@@ -187,7 +187,7 @@ b:"$Sreact.suspense"
 <li>
 <p>[vite:css] [sass] Can't find stylesheet to import.</p>
 <ul>
-<li>vite 6.0 업데이트 이후 내부 패스 처리가 상대 경로가 아닌 절대 경로 방식으로 변경되었습니다.</li>
+<li>After the vite 6.0 update, internal path handling changed from relative paths to absolute paths.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="typescript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">css</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    preprocessorOptions</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
@@ -200,7 +200,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span></code></pre></figure>
 </li>
-</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Vite 6.0"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Vite 6.0"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2025-06-29","className":"meta-mono","children":"06/29/2025"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[3,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","bundler",{"children":["$","$L3",null,{"href":"/en/tags?tag=bundler","className":"tag-pill","children":"bundler"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Vite 6.0"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Vite 6.0"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2025-06-29","className":"meta-mono","children":"06/29/2025"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[3,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","bundler",{"children":["$","$L3",null,{"href":"/en/tags?tag=bundler","className":"tag-pill","children":"bundler"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
 5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2025-06-28-figma-mcp-link","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"figma mcp link"}]]}],["$","$L3",null,{"href":"/en/posts/2025-09-07-vite7.0","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Vite 7.0"}]]}]]}]
 6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"installing","text":"Installing","depth":2},{"id":"changes","text":"Changes","depth":2},{"id":"vite-v50--v60-migration","text":"vite v5.0 → v6.0 Migration","depth":2}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]

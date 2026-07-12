@@ -4,11 +4,11 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T176ad,<h2 id="설치">설치<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#설치"><span class="icon icon-link"></span></a></h2>
+4:T1726a,<h2 id="installation">Installation<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#installation"><span class="icon icon-link"></span></a></h2>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react@18.1.0</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-dom@18.1.0</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">or</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react@18.1.0</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-dom@18.1.0</span></span></code></pre></figure>
-<h2 id="react-dom-17--18-업그레이드">React DOM 17 → 18 업그레이드<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-dom-17--18-업그레이드"><span class="icon icon-link"></span></a></h2>
+<h2 id="upgrading-react-dom-17--18">Upgrading React DOM 17 → 18<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#upgrading-react-dom-17--18"><span class="icon icon-link"></span></a></h2>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// &#x3C;= v17</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// client render</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { render } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-dom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -52,8 +52,8 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { hydrateRoot } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-dom/server'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> container</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> document.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getElementById</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'app'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">root.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">hydrateRoot</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(container, &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">App</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> tab</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"home"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />);</span></span></code></pre></figure>
-<h2 id="클라이언트">클라이언트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#클라이언트"><span class="icon icon-link"></span></a></h2>
-<p>React 18부터 react-dom의 render 함수는 deprecated 됩니다.</p>
+<h2 id="client">Client<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#client"><span class="icon icon-link"></span></a></h2>
+<p>Starting from React 18, react-dom's render function is deprecated.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v17 이전</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ReactDOM.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">render</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">React.StrictMode</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
@@ -68,9 +68,9 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">React.StrictMode</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
-<h2 id="automatic-batchingfewer-renders">automatic batching(fewer renders)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#automatic-batchingfewer-renders"><span class="icon icon-link"></span></a></h2>
+<h2 id="automatic-batching-fewer-renders">Automatic Batching (fewer renders)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#automatic-batching-fewer-renders"><span class="icon icon-link"></span></a></h2>
 <h3 id="batching">Batching<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#batching"><span class="icon icon-link"></span></a></h3>
-<p>배칭(batching)은 리액트가 더 나은 성능을 위해 여러개의 state(상태) 업데이트를  하나의 re-render가 발생하도록 그룹화 하는 것을 의미한다.</p>
+<p>Batching refers to React grouping multiple state updates into a single re-render for better performance.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// &#x3C;= 17</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 리액트 이벤트 Callback 함수에서는 배칭 방식으로 상태를 모아서 업데이트 진행</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
@@ -97,8 +97,8 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ReactDOM.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">render</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">App</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />, rootElement); </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> 콘솔에 렌더가 2번 찍힘</span></span>
 <span data-line=""> </span></code></pre></figure>
 <h3 id="automatic-batching">Automatic Batching<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#automatic-batching"><span class="icon icon-link"></span></a></h3>
-<p>React 18 동시성 처리를 위한 createRoot를 사용할 경우, promise/settimeout/native event handler와 모든 다른 이벤트는 React 이벤트 내부의 업데이트와 동일한 방식으로 state 업데이트를 배칭합니다.</p>
-<p>이것을 통해서 작업 렌더링을 최소화하여, 애플리케이션의 성능 향상을 기대할 수 있습니다.</p>
+<p>When you use createRoot for React 18's concurrent processing, promise/setTimeout/native event handlers and all other events batch state updates in the same way as updates inside React events.</p>
+<p>Through this, you can expect improved application performance by minimizing rendering work.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// >= 18</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// setTimeOut</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">setTimeout</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -121,7 +121,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // React는 이 함수가 끝날 때만 리렌더링을 한다 (배칭이다!)</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
 <h3 id="flushsync">FlushSync<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#flushsync"><span class="icon icon-link"></span></a></h3>
-<p>배칭을 원하지 않을 경우 FlushSync를 사용하면 된다.</p>
+<p>If you don't want batching, you can use FlushSync.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { flushSync } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-dom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Note: react가 아닌 react-dom이다</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 뱃칭을 원치 않는 경우(state 변경 후 dom에서 데이터를 가져와야하는 경우)</span></span>
@@ -135,25 +135,25 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  });</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // 이 과정이 끝났을 때 React는 DOM을 업데이트한 상태</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
-<h2 id="동시성concurrent-기능">동시성(Concurrent) 기능<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#동시성concurrent-기능"><span class="icon icon-link"></span></a></h2>
+<h2 id="concurrent-features">Concurrent Features<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#concurrent-features"><span class="icon icon-link"></span></a></h2>
 <h3 id="starttransition">startTransition<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#starttransition"><span class="icon icon-link"></span></a></h3>
-<p>전환 업데이터를 소개하기 전에 리액트의 상태 업데이트에 대해서 알아봅시다.</p>
+<p>Before introducing transition updates, let's take a look at React's state updates.</p>
 <ul>
-<li><strong>긴급 업데이트(Urgent updates)</strong>: 직접적인 상호 작용 반영(타이핑, 오버, 스크롤링 등)
+<li><strong>Urgent updates</strong>: reflecting direct interactions (typing, hovering, scrolling, etc.)
 <ul>
-<li>사용자의 입력에 따라 즉각적으로 업데이트되지 않으면(화면 멈춤, 렉 등) 문제가 있다고 느끼는 영역입니다.</li>
+<li>This is the area where users feel something is wrong if it isn't updated immediately in response to their input (frozen screen, lag, etc.).</li>
 </ul>
 </li>
-<li><strong>전환 업데이트(Transition updates)</strong>: 하나의 뷰에서 다른 뷰로의 UI 전환
+<li><strong>Transition updates</strong>: UI transitions from one view to another
 <ul>
-<li>화면에 즉시 나타나는 걸 기대하지 않는 영역입니다</li>
+<li>This is the area where users don't expect it to appear on screen instantly.</li>
 </ul>
 </li>
 </ul>
-<p>리액트 17 이전까지는 긴급/전환 업데이트를 명시할 수 있는 방법이 없이, 모두 긴급 업데이트로 상태를 업데이트 하고 있었습니다.</p>
-<p>그 문제점으로 사용자의 디바이스가 성능이 느리거나, 네트워크가 느려서 전환 업데이트가 느려질 경우라도 긴급 업데이트에 방해가 되면 안되지만, 17버전 이전까지는 방해가 되는 문제점을 가지고 있었습니다.</p>
-<p>이런 문제점을 해결하기 위해서 setTimeout, throttle, debounce 같은 기술로 회피하는게 최선의 방법이였습니다.</p>
-<p>리액트 18 버전 이후부터는 startTransition api를 제공해서 긴급 업데이트/전환 업데이트를 직접 명시할 수 있는 방법이 생겼습니다.</p>
+<p>Up until React 17, there was no way to specify urgent vs. transition updates, so all state was updated as urgent updates.</p>
+<p>The problem was that even when a transition update became slow because the user's device was low-performance or the network was slow, it should not interfere with urgent updates, but versions before 17 had the issue of it interfering.</p>
+<p>To work around this issue, techniques like setTimeout, throttle, and debounce were the best available options.</p>
+<p>From React 18 onwards, the startTransition API is provided, giving you a way to explicitly designate urgent updates vs. transition updates.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// index.tsx</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v17 이전</span></span>
@@ -217,12 +217,12 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/></span></span>
 <span data-line=""> </span></code></pre></figure>
 <ul>
-<li>예제코드: <a href="https://codesandbox.io/s/urgent-transition-update-v4h562?from-embed">https://codesandbox.io/s/urgent-transition-update-v4h562?from-embed</a></li>
+<li>Example code: <a href="https://codesandbox.io/s/urgent-transition-update-v4h562?from-embed">https://codesandbox.io/s/urgent-transition-update-v4h562?from-embed</a></li>
 </ul>
 <h3 id="usedeferredvalue">useDeferredValue<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#usedeferredvalue"><span class="icon icon-link"></span></a></h3>
-<p>useDeferredValue는 급하지 않은 트리를 리렌더링 하는 것을 지연하게 해준다.</p>
-<p>지연된 렌더링은 중단될 수 있고, 사용자의 입력을 방해하지 않는다.</p>
-<p>디바운싱 / 쓰로틀링 기법과 유사하지만 timeout을 직접 지정할 필요 없이 리액트가 다른 급한 작업이 완료 되는 즉시 실행을 시킨다는 장점이 있다.</p>
+<p>useDeferredValue lets you defer re-rendering a non-urgent tree.</p>
+<p>Deferred rendering can be interrupted and does not interfere with the user's input.</p>
+<p>It is similar to debouncing / throttling techniques, but has the advantage that you don't need to specify a timeout yourself; React runs it as soon as other urgent work is completed.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Typeahead</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> query</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useSearchQuery</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">''</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> deferredQuery</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useDeferredValue</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(query);</span></span>
@@ -247,25 +247,25 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <h3 id="usetransition-vs-usedeferredvalue">useTransition vs useDeferredValue<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#usetransition-vs-usedeferredvalue"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>상태 제어가 가능할때는 useTransition를 사용하고 props에서 값에만 접근이 가능한 경우엔 useDeferredValue를 사용</li>
+<li>Use useTransition when you have control over the state, and use useDeferredValue when you only have access to a value via props.</li>
 </ul>
-<h2 id="서버-사이드-렌더링에-서스펜스-지원">서버 사이드 렌더링에 서스펜스 지원<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#서버-사이드-렌더링에-서스펜스-지원"><span class="icon icon-link"></span></a></h2>
-<p>기존의 리액트 SSR는 다음 4단계를 거쳤습니다.</p>
+<h2 id="suspense-support-for-server-side-rendering">Suspense Support for Server-Side Rendering<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#suspense-support-for-server-side-rendering"><span class="icon icon-link"></span></a></h2>
+<p>The existing React SSR went through the following 4 steps.</p>
 <ul>
-<li>서버에서 전체 앱의 데이터를 받습니다.(Data Fetching)</li>
-<li>그 후, 서버에서 전체 앱을 HTML로 렌더링한 후 Response로 전송합니다.</li>
-<li>그 후, 클라이언트에서 전체 앱의 자바스크립트 코드를 로드합니다.</li>
-<li>그 후, 클라이언트에서 서버에서 생성된 전체 앱의 HTML과 자바스크립트 로직을 연결합니다(Hydration)</li>
+<li>The server fetches the data for the entire app. (Data Fetching)</li>
+<li>Then, the server renders the entire app to HTML and sends it as the Response.</li>
+<li>Then, the client loads the JavaScript code for the entire app.</li>
+<li>Then, the client connects the entire app's HTML generated on the server with the JavaScript logic. (Hydration)</li>
 </ul>
-<p>중요한 것은, 앱 전체를 대상으로 각 단계가 완료되어야만 다음 스텝으로 넘어갈 수 있었으므로, 단계별로 지연이 발생할 경우 사용자는 흰 화면을 보게 되서 UX 안좋은 경험을 하게 됩니다.</p>
-<p>문제점 도출</p>
+<p>The important point is that each step had to be completed for the entire app before it could move on to the next step, so if a delay occurred at any step, the user would see a blank screen, resulting in a poor UX experience.</p>
+<p>Deriving the problems</p>
 <ul>
-<li>특정 컴포넌트를 렌더링하는데 필요한 데이터 패칭이 오래 걸릴 경우</li>
-<li>특정 컴포넌트 코드량이 커서 로딩이 오래 걸린경우</li>
-<li>특정 컴포넌트의 로직이 복잡해서 시간이 오래 걸릴 경우</li>
+<li>When data fetching required to render a specific component takes a long time</li>
+<li>When a specific component has a large amount of code and takes a long time to load</li>
+<li>When a specific component's logic is complex and takes a long time</li>
 </ul>
-<p>리액트 18 버전 이후부터는 렌더링 비용이 많이 드는 서브 컴포넌트를 Suspend로 감싸서 전체 앱의 Hydration을 방해하지 않고 진행이 가능합니다.(추후에 서브 컴포넌트가 독립적으로 Hydration 진행)</p>
-<p>Suspend를 사용하기 위해서는 renderToPipeableStream 함수를 사용해야 합니다.</p>
+<p>From React 18 onwards, you can wrap expensive-to-render sub-components in Suspense so they proceed without blocking the Hydration of the entire app. (The sub-components later hydrate independently.)</p>
+<p>To use Suspense, you must use the renderToPipeableStream function.</p>
 <ul>
 <li>renderToString(React.Node): string: Be able to run ( Limited support Suspense)</li>
 <li>renderToNodeStream(React.Node): Readable: Not recommended ( Fully support Suspense, barring stream)</li>
@@ -345,7 +345,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <p><img src="/blog-assets/2022/06/images/08/Untitled.png" alt="Untitled"></p>
-<p>이용자 친화적 Hydration</p>
+<p>User-friendly Hydration</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Layout</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">NavBar</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Suspense</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> fallback</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Spinner</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
@@ -360,28 +360,28 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Layout</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
 <p><img src="/blog-assets/2022/06/images/08/Untitled1.png" alt="Untitled"></p>
 <ul>
-<li>Sidebar hydration 하는 도중에 사용자가 Comments 컴포넌트를 클릭한 경우 리액트 18 이후부터는 Hydration 우선 순위를 높여서 Sidebar → Comments 컴포넌트를 먼저 Hydration 하게 됩니다.</li>
+<li>If the user clicks the Comments component while the Sidebar is hydrating, from React 18 onwards React raises the Hydration priority so that it hydrates the Sidebar → Comments component first.</li>
 </ul>
 <h2 id="usesyncexternalstore">useSyncExternalStore<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#usesyncexternalstore"><span class="icon icon-link"></span></a></h2>
-<p>React 18부터 Concurrent read를 지원하게 되면서 외부 스토어를 강제로 동기화 하여 업데이트 하게 해주는 새로운 훅이다.</p>
+<p>As React 18 comes to support Concurrent reads, this is a new hook that forcibly synchronizes and updates an external store.</p>
 <ul>
-<li>External Store: 외부 스토어란, 리액트 내부가 아닌 외부에서 상태를 관리하고 구독하고 있는 것을 뜻합니다. 예로는 redux, mobx, 글로벌 변수, dom 상태 등이 이에 속합니다.</li>
-<li>Internal Store: 리액트 내우베어 사용되는 상태를 뜻합니다. props, context, useState, useReducer 등이 이에 속합니다.</li>
-<li>tearing: 하나의 상태가 여러 UI에 영향을 줄 경우에 컴포넌트 별로 업데이트 속도가 달라서 UI가 달라져 보이는 것을 의미합니다.</li>
+<li>External Store: An external store refers to state that is managed and subscribed to outside of React rather than inside it. Examples include redux, mobx, global variables, and DOM state.</li>
+<li>Internal Store: Refers to state used inside React. Examples include props, context, useState, and useReducer.</li>
+<li>tearing: When a single piece of state affects multiple UIs, tearing refers to the UI looking different because the update speed differs from component to component.</li>
 </ul>
-<p>리액트 18 이전에는 렌더링을 일시중지/지연이 불가능 했기때문에, 상태가 업데이트 되면 화면이 변경이 무조건 수행이 되었기 떄문에 문제가 없었습니다.</p>
-<p>리액트 18 이후부터는 Concurrent 렌더링이 등장하면서, 일시중지/지연이 발생할 경우 컴포넌트 별로 업데이트가 다를 수 있어서 다른 값을 보여줄 수 있는 문제가 발생하게 됩니다.</p>
-<p>해당 이슈를 해결하기 위해서, React 18에서는 useSyncExternalStore 훅을 제공하면서 UI를 항상 일관성이 있게 유지하도록 처리가 가능합니다.</p>
+<p>Before React 18, since it was impossible to pause/defer rendering, there was no problem because whenever state was updated the screen would always change unconditionally.</p>
+<p>From React 18 onwards, with the arrival of Concurrent rendering, when a pause/defer occurs, updates can differ from component to component, causing the problem of showing different values.</p>
+<p>To solve this issue, React 18 provides the useSyncExternalStore hook, making it possible to always keep the UI consistent.</p>
 <p><img src="/blog-assets/2022/06/images/08/Untitled2.png" alt="Untitled"></p>
-<p>외부 스토어 데이터와 화면의 불일치를 tearing</p>
+<p>Tearing: the mismatch between external store data and the screen</p>
 <p><img src="/blog-assets/2022/06/images/08/210630_fin_03_tearing.gif" alt="210630_fin_03_tearing.gif"></p>
-<p>tearing에 대한 테스트</p>
-<p><code>useSyncExternalStore</code>는 두개의 함수를 인자로 받는다.</p>
+<p>A test for tearing</p>
+<p><code>useSyncExternalStore</code> takes two functions as arguments.</p>
 <ul>
-<li><code>subscribe</code>: 등록할 콜백 함수</li>
-<li><code>getSnapshot</code>: 마지막 이후로 subscribe 중인 값이 렌더링된 이후 변경되었는지, 문자여이나 숫자 처럼 immutable한 값인지, 혹은 캐시나 메모된 객체인지 확인하는데 사용된다. 이후, 훅에 의해서 immutable한 값이 반환된다.</li>
+<li><code>subscribe</code>: the callback function to register</li>
+<li><code>getSnapshot</code>: used to check whether the subscribed value has changed since it was last rendered, whether it is an immutable value like a string or number, or whether it is a cached or memoized object. Afterward, an immutable value is returned by the hook.</li>
 </ul>
-<p><code>getSnapShot</code>의 결과로 메모이제이션 된 값을 제공하는 api는 다음과 같다.</p>
+<p>An API that provides a memoized value as the result of <code>getSnapShot</code> is as follows.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { useSyncExternalStore } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useStore</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">store</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">selector</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -390,23 +390,23 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">    useCallback</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> selector</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(store.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getState</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(), [store, selector])),</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
-<h2 id="그외-변경사항">그외 변경사항<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#그외-변경사항"><span class="icon icon-link"></span></a></h2>
+<h2 id="other-changes">Other Changes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#other-changes"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>useId: <a href="https://yceffort.kr/2022/04/react-18-changelog#useid">https://yceffort.kr/2022/04/react-18-changelog#useid</a></li>
 <li>useInsertionEffect: <a href="https://yceffort.kr/2022/04/react-18-changelog#useinsertioneffect">https://yceffort.kr/2022/04/react-18-changelog#useinsertioneffect</a></li>
-<li>리액트 변경점: <a href="https://yceffort.kr/2022/04/react-18-changelog#react-1">https://yceffort.kr/2022/04/react-18-changelog#react-1</a></li>
-<li>그외: <a href="https://yceffort.kr/2022/04/react-18-changelog#%EB%88%88%EC%97%90-%EB%9D%84%EB%8A%94-%EB%B3%80%ED%99%94">https://yceffort.kr/2022/04/react-18-changelog#%EB%88%88%EC%97%90-%EB%9D%84%EB%8A%94-%EB%B3%80%ED%99%94</a></li>
+<li>React changes: <a href="https://yceffort.kr/2022/04/react-18-changelog#react-1">https://yceffort.kr/2022/04/react-18-changelog#react-1</a></li>
+<li>Others: <a href="https://yceffort.kr/2022/04/react-18-changelog#%EB%88%88%EC%97%90-%EB%9D%84%EB%8A%94-%EB%B3%80%ED%99%94">https://yceffort.kr/2022/04/react-18-changelog#%EB%88%88%EC%97%90-%EB%9D%84%EB%8A%94-%EB%B3%80%ED%99%94</a></li>
 </ul>
-<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li><a href="https://reactjs.org/blog/2022/03/29/react-v18.html">https://reactjs.org/blog/2022/03/29/react-v18.html</a></li>
 <li><a href="https://yceffort.kr/2022/04/react-18-changelog#deprecation">https://yceffort.kr/2022/04/react-18-changelog#deprecation</a></li>
 <li><a href="https://medium.com/naver-place-dev/react-18%EC%9D%84-%EC%A4%80%EB%B9%84%ED%95%98%EC%84%B8%EC%9A%94-8603c36ddb25">https://medium.com/naver-place-dev/react-18%EC%9D%84-%EC%A4%80%EB%B9%84%ED%95%98%EC%84%B8%EC%9A%94-8603c36ddb25</a></li>
 <li><a href="https://velog.io/@jay/React-18-%EB%B3%80%EA%B2%BD%EC%A0%90">https://velog.io/@jay/React-18-%EB%B3%80%EA%B2%BD%EC%A0%90</a></li>
 <li><a href="https://cdmana.com/2021/08/20210827045628000z.html">https://cdmana.com/2021/08/20210827045628000z.html</a></li>
-</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"react18"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"react18"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-06-08","className":"meta-mono","children":"06/08/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[6,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","react",{"children":["$","$L3",null,{"href":"/en/tags?tag=react","className":"tag-pill","children":"react"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"React 18"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"React 18"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-06-08","className":"meta-mono","children":"06/08/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[6,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","react",{"children":["$","$L3",null,{"href":"/en/tags?tag=react","className":"tag-pill","children":"react"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
 5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2022-05-31-css-in-js","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"css-in-js"}]]}],["$","$L3",null,{"href":"/en/posts/2022-06-14-jotai","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"jotai"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"설치","text":"설치","depth":1},{"id":"react-dom-17--18-업그레이드","text":"React DOM 17 → 18 업그레이드","depth":1},{"id":"클라이언트","text":"클라이언트","depth":1},{"id":"automatic-batchingfewer-renders","text":"automatic batching(fewer renders)","depth":1},{"id":"batching","text":"Batching","depth":2},{"id":"automatic-batching","text":"Automatic Batching","depth":2},{"id":"flushsync","text":"FlushSync","depth":2},{"id":"동시성concurrent-기능","text":"동시성(Concurrent) 기능","depth":1},{"id":"starttransition","text":"startTransition","depth":2},{"id":"usedeferredvalue","text":"useDeferredValue","depth":2},{"id":"usetransition-vs-usedeferredvalue","text":"useTransition vs useDeferredValue","depth":2},{"id":"서버-사이드-렌더링에-서스펜스-지원","text":"서버 사이드 렌더링에 서스펜스 지원","depth":1},{"id":"usesyncexternalstore","text":"useSyncExternalStore","depth":1},{"id":"그외-변경사항","text":"그외 변경사항","depth":1},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"Contents"}]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"installation","text":"Installation","depth":1},{"id":"upgrading-react-dom-17--18","text":"Upgrading React DOM 17 → 18","depth":1},{"id":"client","text":"Client","depth":1},{"id":"automatic-batching-fewer-renders","text":"Automatic Batching (fewer renders)","depth":1},{"id":"batching","text":"Batching","depth":2},{"id":"automatic-batching","text":"Automatic Batching","depth":2},{"id":"flushsync","text":"FlushSync","depth":2},{"id":"concurrent-features","text":"Concurrent Features","depth":1},{"id":"starttransition","text":"startTransition","depth":2},{"id":"usedeferredvalue","text":"useDeferredValue","depth":2},{"id":"usetransition-vs-usedeferredvalue","text":"useTransition vs useDeferredValue","depth":2},{"id":"suspense-support-for-server-side-rendering","text":"Suspense Support for Server-Side Rendering","depth":1},{"id":"usesyncexternalstore","text":"useSyncExternalStore","depth":1},{"id":"other-changes","text":"Other Changes","depth":1},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

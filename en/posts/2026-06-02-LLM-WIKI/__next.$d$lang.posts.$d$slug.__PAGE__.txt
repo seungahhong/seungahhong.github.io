@@ -4,20 +4,20 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T9225,<h3 id="개요">개요<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#개요"><span class="icon icon-link"></span></a></h3>
-<p>LLM Wiki는 기획서, 스펙, 회의록 같은 원본 자료를 모아 두면 Claude가 그 내용을 읽고 정리해 하나의 한국어 위키로 만들어 두는 저장소입니다. 사람은 자료를 모으고 질문하는 역할을 맡고, 위키를 실제로 작성하고 관리하는 일은 Claude가 합니다. Andrej Karpathy가 제안한 "LLM Wiki" 패턴을 한국어 기획·지식 관리에 맞게 옮겨 온 구조입니다.</p>
-<p>기존 RAG 방식은 질문이 들어올 때마다 원본 더미에서 매번 답을 다시 찾습니다. 정리된 결과가 쌓이지 않기 때문에 같은 자료를 계속 다시 뒤지게 됩니다. LLM Wiki는 자료를 넣는 시점에 한 번 정리해 위키로 만들어 두고, 질문에는 그 위키에서 출처와 함께 답합니다. 핵심 차이는 "지식을 언제 정리하느냐"에 있습니다.</p>
-<p>비유하자면 Obsidian이 작업 공간이고, LLM이 그 안에서 일하는 작성자이며, 위키가 완성된 결과물, 원본 자료가 요구사항에 해당합니다.</p>
-<h3 id="배경-왜-이렇게-만드는가">배경: 왜 이렇게 만드는가<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#배경-왜-이렇게-만드는가"><span class="icon icon-link"></span></a></h3>
-<p>업무와 학습에서 쌓이는 지식 자료는 보통 Confluence, Slack, Notion 같은 여러 도구에 흩어져 있습니다. 필요한 내용을 찾으려면 도구를 옮겨 다녀야 하고, 문서들이 서로 어떻게 이어지는지는 잘 드러나지 않습니다.</p>
-<p>이렇게 흩어진 지식을 한곳에 쌓고 서로 연결해 두기 위해, 질문할 때마다 원본을 다시 뒤지는 RAG 대신 LLM Wiki 방식을 택했습니다. 두 방식이 어떻게 다른지와 그 밑에 깔린 Karpathy의 아이디어는 아래 "Karpathy의 LLM Wiki 개념"에서 정리합니다.</p>
-<h3 id="karpathy의-llm-wiki-개념">Karpathy의 LLM Wiki 개념<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#karpathy의-llm-wiki-개념"><span class="icon icon-link"></span></a></h3>
-<h4 id="핵심-아이디어">핵심 아이디어<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#핵심-아이디어"><span class="icon icon-link"></span></a></h4>
-<h5 id="기존-rag-방식의-문제">기존 RAG 방식의 문제<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#기존-rag-방식의-문제"><span class="icon icon-link"></span></a></h5>
-<p>RAG는 사용자가 질문할 때마다 다음을 반복합니다. 먼저 원본 문서를 벡터 임베딩으로 바꾸고, 질문과 비슷한 문서 조각(chunk)을 찾아, 그 조각을 LLM에 넘겨 답변을 만듭니다. 이 방식은 매번 원본을 다시 읽기 때문에 문서가 많아질수록 검색 정확도가 떨어지고, 각각의 문서 조각은 찾더라도 문서끼리 어떻게 연결되는지에 대한 맥락은 답변마다 새로 잡아야 해서 쉽게 유실됩니다.</p>
-<h5 id="llm-wiki-방식의-해법">LLM Wiki 방식의 해법<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#llm-wiki-방식의-해법"><span class="icon icon-link"></span></a></h5>
-<p>LLM Wiki는 정리하는 시점을 자료를 넣는 때로 앞당깁니다. 자료를 넣을 때 LLM이 한 번 읽고 정리해 위키로 "컴파일"해 두고, 이후 질문할 때는 이미 정리되고 교차참조된 위키에서 바로 답합니다. 도서관에 빗대면, RAG는 질문할 때마다 직접 서가에서 원본 책을 찾아 읽는 방식이고, LLM Wiki는 전담 사서가 새 책이 들어올 때마다 읽어 위키에 정리하고 관련 문서끼리 미리 링크를 걸어 두는 방식입니다.</p>
-<p>두 방식을 정리 시점을 기준으로 비교하면 다음과 같습니다. 핵심 차이는 "언제 지식을 정리하느냐"에 있습니다.</p>
+4:T9200,<h3 id="overview">Overview<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#overview"><span class="icon icon-link"></span></a></h3>
+<p>LLM Wiki is a repository where you collect source materials such as planning documents, specs, and meeting notes, and Claude reads them, organizes their contents, and builds a single Korean-language wiki out of them. People take on the role of collecting materials and asking questions, while the actual work of writing and maintaining the wiki is done by Claude. It is a structure that adapts the "LLM Wiki" pattern proposed by Andrej Karpathy to Korean planning and knowledge management.</p>
+<p>The conventional RAG approach searches the raw pile for an answer all over again every time a question comes in. Because organized results never accumulate, you keep digging through the same materials repeatedly. LLM Wiki organizes materials once at the moment they are added, turns them into a wiki, and answers questions from that wiki with sources attached. The key difference lies in "when knowledge gets organized."</p>
+<p>By way of analogy, Obsidian is the workspace, the LLM is the author working inside it, the wiki is the finished deliverable, and the source materials are the requirements.</p>
+<h3 id="background-why-build-it-this-way">Background: Why Build It This Way<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#background-why-build-it-this-way"><span class="icon icon-link"></span></a></h3>
+<p>Knowledge that piles up in work and study is usually scattered across several tools like Confluence, Slack, and Notion. To find what you need you have to hop between tools, and how the documents connect to one another rarely surfaces clearly.</p>
+<p>To pile up this scattered knowledge in one place and link it together, we chose the LLM Wiki approach instead of RAG, which re-digs through the sources for every question. How the two approaches differ, and the Karpathy idea underlying them, is laid out below in "Karpathy's LLM Wiki Concept."</p>
+<h3 id="karpathys-llm-wiki-concept">Karpathy's LLM Wiki Concept<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#karpathys-llm-wiki-concept"><span class="icon icon-link"></span></a></h3>
+<h4 id="the-core-idea">The Core Idea<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-core-idea"><span class="icon icon-link"></span></a></h4>
+<h5 id="the-problem-with-the-conventional-rag-approach">The Problem with the Conventional RAG Approach<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-problem-with-the-conventional-rag-approach"><span class="icon icon-link"></span></a></h5>
+<p>RAG repeats the following every time a user asks a question. First it converts the source documents into vector embeddings, finds document chunks similar to the question, and passes those chunks to the LLM to produce an answer. Because this approach re-reads the sources every time, search accuracy drops as the documents grow, and even when it does find each document chunk, the context of how the documents connect to one another has to be re-established for every answer, so it is easily lost.</p>
+<h5 id="how-the-llm-wiki-approach-solves-it">How the LLM Wiki Approach Solves It<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#how-the-llm-wiki-approach-solves-it"><span class="icon icon-link"></span></a></h5>
+<p>LLM Wiki moves the moment of organizing forward to when materials are added. When a material is added, the LLM reads and organizes it once and "compiles" it into the wiki, and from then on, when a question is asked, it answers directly from the already-organized and cross-referenced wiki. In library terms, RAG is like going to the shelves yourself to find and read the original book every time you have a question, whereas LLM Wiki is like a dedicated librarian who reads each new book as it arrives, organizes it into the wiki, and pre-links related documents to one another.</p>
+<p>Comparing the two approaches by the timing of organization looks like this. The key difference lies in "when knowledge gets organized."</p>
 
 
 
@@ -48,9 +48,9 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>구분</th><th>RAG</th><th>LLM Wiki</th></tr></thead><tbody><tr><td>정리 시점</td><td>질문할 때마다 정리</td><td>자료를 넣을 때 한 번 정리</td></tr><tr><td>반복 여부</td><td>매번 원본을 다시 검색</td><td>정리된 위키를 재사용</td></tr><tr><td>문서 사이 맥락</td><td>답변마다 새로 잡아 쉽게 유실</td><td>교차참조로 축적되어 유지</td></tr><tr><td>비유</td><td>질문마다 서가에서 원본 책을 찾아 읽기</td><td>사서가 새 책을 미리 위키에 정리해 둠</td></tr></tbody></table>
-<h5 id="karpathy의-핵심-비유-프로그래머와-코드베이스">Karpathy의 핵심 비유: "프로그래머와 코드베이스"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#karpathy의-핵심-비유-프로그래머와-코드베이스"><span class="icon icon-link"></span></a></h5>
-<p>Karpathy는 이 관계를 프로그래머와 코드베이스에 빗댔습니다. 프로그래머가 요구사항을 받아 코드를 작성하고 유지보수하듯, LLM이 원본 자료를 받아 위키를 작성하고 유지보수합니다.</p>
+<table><thead><tr><th>Category</th><th>RAG</th><th>LLM Wiki</th></tr></thead><tbody><tr><td>Timing of organization</td><td>Organized on every question</td><td>Organized once when material is added</td></tr><tr><td>Repetition</td><td>Re-searches the sources every time</td><td>Reuses the organized wiki</td></tr><tr><td>Context between documents</td><td>Re-established per answer, easily lost</td><td>Accumulated and retained via cross-references</td></tr><tr><td>Analogy</td><td>Finding and reading the original book on the shelves for each question</td><td>A librarian who organizes each new book into the wiki ahead of time</td></tr></tbody></table>
+<h5 id="karpathys-core-analogy-the-programmer-and-the-codebase">Karpathy's Core Analogy: "The Programmer and the Codebase"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#karpathys-core-analogy-the-programmer-and-the-codebase"><span class="icon icon-link"></span></a></h5>
+<p>Karpathy likened this relationship to a programmer and a codebase. Just as a programmer takes requirements and writes and maintains code, the LLM takes source materials and writes and maintains the wiki.</p>
 
 
 
@@ -76,9 +76,9 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>요소</th><th>역할</th></tr></thead><tbody><tr><td>LLM</td><td>프로그래머. 자료를 읽고 위키를 쓰고 고친다.</td></tr><tr><td>위키</td><td>코드베이스. 계속 유지보수되는 산출물.</td></tr><tr><td>원본 자료 (Raw)</td><td>요구사항과 스펙. 넣기만 하고 고치지 않는 입력.</td></tr><tr><td>운영 규칙 (Schema)</td><td>코딩 컨벤션. 위키를 어떤 규칙으로 관리할지 정한다.</td></tr></tbody></table>
-<h4 id="3계층-아키텍처">3계층 아키텍처<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3계층-아키텍처"><span class="icon icon-link"></span></a></h4>
-<p>LLM Wiki는 세 계층으로 이뤄집니다. 각 계층을 도서관에 빗대면 다음과 같습니다.</p>
+<table><thead><tr><th>Element</th><th>Role</th></tr></thead><tbody><tr><td>LLM</td><td>The programmer. Reads materials, writes the wiki, and revises it.</td></tr><tr><td>Wiki</td><td>The codebase. A continuously maintained deliverable.</td></tr><tr><td>Source materials (Raw)</td><td>Requirements and specs. Input that is only added, never revised.</td></tr><tr><td>Operating rules (Schema)</td><td>Coding conventions. Defines the rules by which the wiki is managed.</td></tr></tbody></table>
+<h4 id="the-three-layer-architecture">The Three-Layer Architecture<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-three-layer-architecture"><span class="icon icon-link"></span></a></h4>
+<p>LLM Wiki consists of three layers. Each layer, likened to a library, is as follows.</p>
 
 
 
@@ -104,10 +104,10 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>계층</th><th>설명</th><th>비유</th></tr></thead><tbody><tr><td>원본 자료 (Raw)</td><td>사용자가 넣는 원본 문서. 수정하지 않음</td><td>도서관의 원본 책</td></tr><tr><td>위키 (Wiki)</td><td>LLM이 작성하고 관리하는 마크다운 페이지</td><td>나무위키 문서</td></tr><tr><td>운영 규칙 (Schema)</td><td>위키 구조와 워크플로를 정의하는 설정 문서</td><td>위키 편집 가이드라인</td></tr></tbody></table>
-<p>실제 폴더 구성은 아래 "저장소 구조"를 참고하세요.</p>
-<h4 id="3가지-핵심-운영">3가지 핵심 운영<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3가지-핵심-운영"><span class="icon icon-link"></span></a></h4>
-<p>위키는 자료를 넣고(Ingest), 질문하고(Query), 점검하는(Lint) 세 가지 운영으로 돌아갑니다. 각 운영에서 사람과 Claude의 역할이 나뉘어집니다.</p>
+<table><thead><tr><th>Layer</th><th>Description</th><th>Analogy</th></tr></thead><tbody><tr><td>Source materials (Raw)</td><td>Original documents the user adds. Never modified</td><td>Original books in the library</td></tr><tr><td>Wiki (Wiki)</td><td>Markdown pages the LLM writes and manages</td><td>Namuwiki articles</td></tr><tr><td>Operating rules (Schema)</td><td>Configuration documents that define the wiki structure and workflow</td><td>Wiki editing guidelines</td></tr></tbody></table>
+<p>For the actual folder layout, see "Repository Structure" below.</p>
+<h4 id="three-core-operations">Three Core Operations<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#three-core-operations"><span class="icon icon-link"></span></a></h4>
+<p>The wiki runs on three operations: adding materials (Ingest), asking questions (Query), and inspecting (Lint). In each operation, the roles of the person and Claude are divided.</p>
 
 
 
@@ -133,9 +133,9 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>운영</th><th>설명</th><th>역할 분담</th></tr></thead><tbody><tr><td>Ingest (자료 넣기)</td><td>새 자료를 읽어 위키 페이지로 정리</td><td>사용자가 자료를 넣으면 Claude가 정리</td></tr><tr><td>Query (질문하기)</td><td>위키에서 답을 찾아 출처와 함께 응답</td><td>사용자가 질문하면 Claude가 위키 근거로 답변</td></tr><tr><td>Lint (헬스체크)</td><td>위키의 일관성과 완전성 점검</td><td>Claude가 점검하고 사용자 승인 후 정리</td></tr></tbody></table>
-<h3 id="저장소-구조">저장소 구조<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#저장소-구조"><span class="icon icon-link"></span></a></h3>
-<p>세 개의 계층으로 나뉩니다.</p>
+<table><thead><tr><th>Operation</th><th>Description</th><th>Division of roles</th></tr></thead><tbody><tr><td>Ingest (adding materials)</td><td>Reads new materials and organizes them into wiki pages</td><td>The user adds the material and Claude organizes it</td></tr><tr><td>Query (asking questions)</td><td>Finds the answer in the wiki and responds with sources</td><td>The user asks and Claude answers grounded in the wiki</td></tr><tr><td>Lint (health check)</td><td>Inspects the wiki's consistency and completeness</td><td>Claude inspects and cleans up after user approval</td></tr></tbody></table>
+<h3 id="repository-structure">Repository Structure<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#repository-structure"><span class="icon icon-link"></span></a></h3>
+<p>It is divided into three layers.</p>
 
 
 
@@ -165,17 +165,17 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>위치</th><th>역할</th></tr></thead><tbody><tr><td><code>raw/</code></td><td>원본 자료를 그대로 보관하는 곳. 기획서, 스펙, 회의록, 이미지, URL 등. 한 번 들어오면 바꾸지 않는 불변 영역이며, 사용자가 관리합니다. Claude는 읽기만 합니다.</td></tr><tr><td><code>wiki/</code></td><td>정리된 위키 페이지가 모이는 곳. Claude가 작성하고 유지합니다. 사람은 읽기 중심으로 사용합니다. 하위 폴더 없이 평평한 구조로 둡니다.</td></tr><tr><td><code>wiki/index.md</code></td><td>위키 전체 목차. 카테고리별로 페이지를 정리합니다.</td></tr><tr><td><code>wiki/log.md</code></td><td>작업 이력. 위키가 바뀔 때마다 한 줄씩 쌓입니다.</td></tr><tr><td><code>CLAUDE.md</code></td><td>운영 규칙 문서. 자료를 넣고(Ingest), 질문하고(Query), 점검하는(Lint) 흐름과 페이지 작성 규칙을 정의합니다.</td></tr></tbody></table>
-<h3 id="동작-방식">동작 방식<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#동작-방식"><span class="icon icon-link"></span></a></h3>
-<p>자료가 위키가 되기까지는 세 가지 작업 모드를 거칩니다.</p>
-<h4 id="자료-넣기-ingest">자료 넣기 (Ingest)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#자료-넣기-ingest"><span class="icon icon-link"></span></a></h4>
-<p>새 자료를 위키에 반영하는 과정입니다. Claude는 원본을 읽고, 핵심 요약 두세 개를 먼저 사용자에게 보여 준 뒤, 중복 여부를 확인해 새 페이지를 만들거나 기존 페이지를 보강합니다. 이때 원본 문장은 임의로 다시 쓰지 않고, 요약만 페이지 맨 앞에 따로 둡니다. 관련 페이지끼리는 위키링크로 연결하고, 작업 내용은 목차와 이력에 함께 기록합니다.</p>
-<h4 id="질문하기-query">질문하기 (Query)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#질문하기-query"><span class="icon icon-link"></span></a></h4>
-<p>위키에 정리된 내용을 근거로 답을 받는 과정입니다. Claude는 목차에서 관련 페이지를 찾아 읽고, 위키에 적힌 내용만을 근거로 출처와 함께 답합니다. 위키에 근거가 없으면 지어내지 않고 "위키에 해당 내용이 없습니다"라고 분명히 알려 줍니다.</p>
-<h4 id="점검하기-lint">점검하기 (Lint)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#점검하기-lint"><span class="icon icon-link"></span></a></h4>
-<p>위키가 쌓이면서 생기는 문제를 주기적으로 정리하는 과정입니다. 어디서도 링크되지 않은 고아 페이지, 깨진 링크, 중복된 내용, 페이지 간 모순 등을 찾아 보고하고, 승인을 받아 정리합니다.</p>
-<h3 id="운영-흐름도">운영 흐름도<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#운영-흐름도"><span class="icon icon-link"></span></a></h3>
-<p>자료가 위키가 되고, 위키가 답이 되는 전체 흐름은 다음과 같습니다.</p>
+<table><thead><tr><th>Location</th><th>Role</th></tr></thead><tbody><tr><td><code>raw/</code></td><td>Where source materials are kept as-is. Planning documents, specs, meeting notes, images, URLs, and so on. It is an immutable area that is never changed once it comes in, and the user manages it. Claude only reads it.</td></tr><tr><td><code>wiki/</code></td><td>Where organized wiki pages collect. Claude writes and maintains it. People use it primarily in a read-oriented way. It is kept in a flat structure with no subfolders.</td></tr><tr><td><code>wiki/index.md</code></td><td>The full table of contents for the wiki. Organizes pages by category.</td></tr><tr><td><code>wiki/log.md</code></td><td>The work history. A line accumulates each time the wiki changes.</td></tr><tr><td><code>CLAUDE.md</code></td><td>The operating-rules document. Defines the flow for adding materials (Ingest), asking questions (Query), and inspecting (Lint), as well as the page-writing rules.</td></tr></tbody></table>
+<h3 id="how-it-works">How It Works<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#how-it-works"><span class="icon icon-link"></span></a></h3>
+<p>Turning materials into a wiki goes through three working modes.</p>
+<h4 id="adding-materials-ingest">Adding Materials (Ingest)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#adding-materials-ingest"><span class="icon icon-link"></span></a></h4>
+<p>This is the process of reflecting new materials into the wiki. Claude reads the source, first shows the user two or three key summaries, then checks for duplication and either creates a new page or augments an existing one. At this point it does not arbitrarily rewrite the original sentences; it keeps only the summary set apart at the very top of the page. Related pages are connected to one another with wikilinks, and the work is recorded together in the table of contents and the history.</p>
+<h4 id="asking-questions-query">Asking Questions (Query)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#asking-questions-query"><span class="icon icon-link"></span></a></h4>
+<p>This is the process of getting an answer grounded in what is organized in the wiki. Claude finds and reads the relevant pages from the table of contents and answers with sources, grounded solely in what is written in the wiki. If there is no basis in the wiki, it does not make things up and clearly tells you "There is no such content in the wiki."</p>
+<h4 id="inspecting-lint">Inspecting (Lint)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#inspecting-lint"><span class="icon icon-link"></span></a></h4>
+<p>This is the process of periodically cleaning up problems that arise as the wiki accumulates. It finds and reports orphan pages that are not linked from anywhere, broken links, duplicated content, contradictions between pages, and so on, and cleans them up upon approval.</p>
+<h3 id="operational-flow">Operational Flow<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#operational-flow"><span class="icon icon-link"></span></a></h3>
+<p>The full flow of materials becoming a wiki and the wiki becoming answers is as follows.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">사용자</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   │  ① 자료 넣기 /ingest</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ▼</span></span>
@@ -189,9 +189,9 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   │  ④ 위키를 근거로 출처와 함께 답변  │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ▼                              │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">사용자</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]  ───────────────────┘</span></span></code></pre></figure>
-<p>예를 들어 "결제는 어떻게 적용되나요?"라고 물으면, Claude는 관련 위키 페이지를 찾고 위키링크를 따라가며 확인한 뒤 "[[결제-기능정의서]]에 따르면 결제 시 쿠폰 통화와 결제 통화가 일치해야 합니다"처럼 출처와 함께 답합니다. 위키에 근거가 없으면 지어내지 않고 "위키에 해당 내용이 없습니다"라고 답합니다.</p>
-<h4 id="자료-넣기ingest-상세-흐름">자료 넣기(Ingest) 상세 흐름<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#자료-넣기ingest-상세-흐름"><span class="icon icon-link"></span></a></h4>
-<p>사용자가 자료를 넣으면 Claude가 원본을 읽고 위키 페이지로 정리하기까지의 단계입니다.</p>
+<p>For example, if you ask "How is payment applied?", Claude finds the relevant wiki page, follows the wikilinks to verify, and then answers with sources, such as "According to [[Payment-Feature-Spec]], the coupon currency and the payment currency must match at the time of payment." If there is no basis in the wiki, it does not make things up and answers "There is no such content in the wiki."</p>
+<h4 id="detailed-flow-of-adding-materials-ingest">Detailed Flow of Adding Materials (Ingest)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#detailed-flow-of-adding-materials-ingest"><span class="icon icon-link"></span></a></h4>
+<p>These are the steps from the user adding a material to Claude reading the source and organizing it into a wiki page.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">사용자</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   │  자료를 raw/에 넣거나 URL을 /ingest에 전달</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ▼</span></span>
@@ -204,8 +204,8 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ▼</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[wiki/ 정리된 지식 갱신]</span></span></code></pre></figure>
-<h4 id="질문하기query-상세-흐름">질문하기(Query) 상세 흐름<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#질문하기query-상세-흐름"><span class="icon icon-link"></span></a></h4>
-<p>사용자가 질문하면 Claude가 위키를 찾아 출처와 함께 답하는 단계입니다.</p>
+<h4 id="detailed-flow-of-asking-questions-query">Detailed Flow of Asking Questions (Query)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#detailed-flow-of-asking-questions-query"><span class="icon icon-link"></span></a></h4>
+<p>These are the steps of Claude finding the wiki and answering with sources when the user asks a question.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">사용자</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]  "결제는 어떻게 되나요?"</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ▼</span></span>
@@ -219,33 +219,33 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          결제 통화가 일치해야 합니다"</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">※ 위키에 근거가 없으면 "위키에 해당 내용이 없습니다"라고 답합니다.</span></span></code></pre></figure>
-<h3 id="핵심-운영-규칙">핵심 운영 규칙<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#핵심-운영-규칙"><span class="icon icon-link"></span></a></h3>
-<p>위키의 신뢰도를 지키기 위해 다음 규칙을 따릅니다.</p>
+<h3 id="core-operating-rules">Core Operating Rules<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#core-operating-rules"><span class="icon icon-link"></span></a></h3>
+<p>To preserve the wiki's trustworthiness, the following rules are followed.</p>
 <ul>
-<li><code>raw/</code> 폴더는 Claude가 읽기만 하고 절대 수정하지 않습니다.</li>
-<li>모든 위키 페이지는 핵심 요약(Takeaway)으로 시작합니다.</li>
-<li>위키를 수정할 때마다 <code>log.md</code>에 기록을 남깁니다.</li>
-<li>새로 추가한 페이지는 반드시 <code>index.md</code> 목차에 등록합니다. 어디서도 링크되지 않는 고아 페이지를 막기 위해서입니다.</li>
-<li>답변은 위키에 적힌 내용만을 근거로 합니다. 근거가 없으면 없다고 답합니다.</li>
+<li>The <code>raw/</code> folder is only read by Claude and is never modified.</li>
+<li>Every wiki page starts with a key summary (Takeaway).</li>
+<li>Every time the wiki is modified, a record is left in <code>log.md</code>.</li>
+<li>Newly added pages must be registered in the <code>index.md</code> table of contents. This is to prevent orphan pages that are not linked from anywhere.</li>
+<li>Answers are grounded solely in what is written in the wiki. If there is no basis, it answers that there is none.</li>
 </ul>
-<h3 id="사용자가-해야-하는-일">사용자가 해야 하는 일<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#사용자가-해야-하는-일"><span class="icon icon-link"></span></a></h3>
-<p>이 저장소에서 사용자의 역할은 분명합니다. 위키를 직접 손으로 쓰는 것이 아니라, 좋은 자료를 모으고 정확한 질문을 던지는 것입니다. 위키 작성과 정리는 Claude에게 맡기고, 사용자는 다음 흐름으로 작업하면 됩니다.</p>
+<h3 id="what-the-user-needs-to-do">What the User Needs to Do<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#what-the-user-needs-to-do"><span class="icon icon-link"></span></a></h3>
+<p>The user's role in this repository is clear. It is not to write the wiki by hand, but to collect good materials and pose accurate questions. Leave the writing and organizing of the wiki to Claude, and the user can work in the following flow.</p>
 <ol>
-<li>정리하고 싶은 원본 자료를 <code>raw/</code> 폴더에 넣습니다. 파일을 직접 두거나, 웹 주소를 그대로 전달해도 됩니다. 이미지나 첨부는 <code>raw/assets/</code> 아래에 둡니다.</li>
-<li>자료를 넣었다면 위키에 반영하도록 요청합니다. 예를 들어 "<code>raw/회의록.md</code> 를 위키에 정리해 줘" 또는 URL을 함께 전달하면 됩니다. Claude가 먼저 핵심 요약을 보여 주면, 방향이 맞는지 가볍게 확인해 줍니다.</li>
-<li>궁금한 내용은 질문으로 물어봅니다. 위키에 정리된 범위 안에서 출처와 함께 답이 돌아옵니다. 답에 근거가 없다고 하면, 관련 원본을 <code>raw/</code> 에 더 넣어 주면 됩니다.</li>
-<li>위키가 어느 정도 쌓이면 점검을 한 번씩 요청합니다. 끊어진 링크나 중복, 모순을 정리해 위키를 건강하게 유지할 수 있습니다.</li>
+<li>Put the source materials you want organized into the <code>raw/</code> folder. You can place files directly, or pass a web address as-is. Put images or attachments under <code>raw/assets/</code>.</li>
+<li>Once you have added the materials, ask for them to be reflected into the wiki. For example, "Organize <code>raw/meeting-notes.md</code> into the wiki," or you can pass along a URL. When Claude first shows you the key summary, do a light check that the direction is right.</li>
+<li>Ask about anything you are curious about as a question. An answer comes back with sources, within the scope of what is organized in the wiki. If the answer says there is no basis, you can add more relevant sources to <code>raw/</code>.</li>
+<li>Once the wiki has accumulated to some degree, request an inspection now and then. You can clean up broken links, duplicates, and contradictions to keep the wiki healthy.</li>
 </ol>
-<p>작업할 때 기억해 두면 좋은 점이 두 가지 있습니다. 첫째, <code>raw/</code> 안의 자료는 진실의 기준이므로 사용자가 관리하고, Claude는 임의로 바꾸지 않습니다. 위키 내용과 원본이 어긋나면 원본이 우선입니다. 둘째, 위키 페이지는 사람이 직접 고치기보다 Claude에게 수정을 맡기는 편이 좋습니다. 모든 변경이 이력에 남아 추적할 수 있도록 설계되어 있기 때문입니다.</p>
-<h3 id="적용-사례">적용 사례<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#적용-사례"><span class="icon icon-link"></span></a></h3>
-<p><strong>온보딩 가이드</strong> — 흩어져 있는 온보딩 자료를 <code>raw/</code>에 모아 위키로 정리해 두면, 신규 입사자가 위키에 질문해 필요한 내용을 빠르게 찾을 수 있습니다. 원본이 바뀌면 위키도 함께 갱신합니다.</p>
-<p><strong>표준 문서 관리</strong> — 팀 표준, 프로세스, 기획서, 기술 스펙을 위키로 관리하면 문서 사이의 교차참조와 일관성을 유지할 수 있습니다. 정기적인 점검(Lint)으로 깨진 링크, 중복된 내용, 빠진 교차참조를 잡아냅니다.</p>
-<h3 id="규모와-확장">규모와 확장<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#규모와-확장"><span class="icon icon-link"></span></a></h3>
-<p>자료가 약 100개, 페이지가 수백 개 수준까지는 목차와 검색만으로 충분히 다룰 수 있습니다. 그보다 더 커지면 페이지 간 관계를 그래프로 시각화하고 탐색하는 보조 레이어를 선택적으로 붙일 수 있습니다.</p>
-<h3 id="지식-그래프로-확장하기-graphify">지식 그래프로 확장하기 (graphify)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#지식-그래프로-확장하기-graphify"><span class="icon icon-link"></span></a></h3>
-<p>위키가 충분히 커져 페이지 사이 관계를 한눈에 보고 싶을 때 graphify를 붙입니다. graphify는 폴더 안의 문서를 분석해 개념과 관계를 뽑아내고, 질의할 수 있는 지식 그래프(JSON, HTML 시각화, 리포트)를 만드는 도구입니다.</p>
-<h4 id="확장-흐름">확장 흐름<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#확장-흐름"><span class="icon icon-link"></span></a></h4>
-<p>Ingest로 만들어진 위키를 graphify가 그래프로 변환하면, 기존의 텍스트 검색과 위키링크 탐색에 그래프 탐색이 더해집니다.</p>
+<p>There are two things worth keeping in mind while working. First, the materials in <code>raw/</code> are the source of truth, so the user manages them and Claude does not change them arbitrarily. If the wiki content and the source diverge, the source takes precedence. Second, it is better to leave edits to wiki pages to Claude rather than fixing them by hand, because it is designed so that every change is left in the history and can be traced.</p>
+<h3 id="use-cases">Use Cases<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#use-cases"><span class="icon icon-link"></span></a></h3>
+<p><strong>Onboarding guide</strong> — If you gather scattered onboarding materials into <code>raw/</code> and organize them into a wiki, new hires can quickly find what they need by asking the wiki. When the source changes, the wiki is updated along with it.</p>
+<p><strong>Standards-document management</strong> — Managing team standards, processes, planning documents, and technical specs as a wiki lets you maintain cross-references and consistency between documents. Regular inspections (Lint) catch broken links, duplicated content, and missing cross-references.</p>
+<h3 id="scale-and-growth">Scale and Growth<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#scale-and-growth"><span class="icon icon-link"></span></a></h3>
+<p>Up to around 100 materials and several hundred pages, the table of contents and search alone are enough to handle it. Beyond that, you can optionally attach an auxiliary layer that visualizes and navigates the relationships between pages as a graph.</p>
+<h3 id="extending-to-a-knowledge-graph-graphify">Extending to a Knowledge Graph (graphify)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#extending-to-a-knowledge-graph-graphify"><span class="icon icon-link"></span></a></h3>
+<p>When the wiki has grown large enough that you want to see the relationships between pages at a glance, you attach graphify. graphify is a tool that analyzes the documents in a folder, extracts concepts and relationships, and builds a queryable knowledge graph (JSON, HTML visualization, report).</p>
+<h4 id="the-extension-flow">The Extension Flow<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-extension-flow"><span class="icon icon-link"></span></a></h4>
+<p>When graphify converts a wiki built by Ingest into a graph, graph traversal is added on top of the existing text search and wikilink navigation.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[raw/ 원본 자료]</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   │  Ingest — Claude가 위키로 정리</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ▼</span></span>
@@ -262,7 +262,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">            │</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">            ▼</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   숨겨진 연결 발견 · 커뮤니티 탐지 · 최단경로 분석</span></span></code></pre></figure>
-<p>텍스트 위키만 쓸 때와 graphify를 더했을 때의 차이는 다음과 같습니다.</p>
+<p>The difference between using only a text wiki and adding graphify is as follows.</p>
 
 
 
@@ -298,9 +298,9 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>항목</th><th>위키만</th><th>위키 + graphify</th></tr></thead><tbody><tr><td>검색 방식</td><td>키워드 매칭과 위키링크 따라가기</td><td>그래프 탐색(BFS·DFS)과 최단경로 질의</td></tr><tr><td>관계 발견</td><td>사람이 직접 교차참조를 걸어야 함</td><td>관계를 자동으로 추출하고 추론 관계까지 제시</td></tr><tr><td>전체 구조 파악</td><td><code>index.md</code> 목차로 카테고리 수준만</td><td>인터랙티브 HTML 그래프로 전체 구조 시각화</td></tr><tr><td>숨은 연결</td><td>사람이 직접 찾아야 함</td><td>커뮤니티 탐지로 자동 그룹핑</td></tr><tr><td>"A와 B의 관계"</td><td>각각 검색한 뒤 교차참조가 있으면 연결</td><td>path 명령으로 최단경로를 바로 확인</td></tr></tbody></table>
-<p>graphify는 뽑아낸 관계마다 신뢰도를 함께 표시합니다. 원본에 분명히 드러난 관계는 EXTRACTED(1.0), 합리적으로 미루어 짐작한 관계는 INFERRED(0.65<del>0.95), 불확실한 관계는 AMBIGUOUS(0.1</del>0.3)로 구분해, 어디까지가 명시된 사실이고 어디부터가 추론인지 알 수 있습니다.</p>
-<p>세션 안에서 쓰는 주요 명령은 다음과 같습니다.</p>
+<table><thead><tr><th>Item</th><th>Wiki only</th><th>Wiki + graphify</th></tr></thead><tbody><tr><td>Search method</td><td>Keyword matching and following wikilinks</td><td>Graph traversal (BFS/DFS) and shortest-path queries</td></tr><tr><td>Relationship discovery</td><td>The person has to create cross-references by hand</td><td>Automatically extracts relationships and even proposes inferred ones</td></tr><tr><td>Grasping the whole structure</td><td>Only category level via the <code>index.md</code> table of contents</td><td>Visualizes the entire structure with an interactive HTML graph</td></tr><tr><td>Hidden connections</td><td>The person has to find them by hand</td><td>Automatic grouping via community detection</td></tr><tr><td>"The relationship between A and B"</td><td>Search each and connect if there is a cross-reference</td><td>Check the shortest path directly with the path command</td></tr></tbody></table>
+<p>graphify attaches a confidence level to each relationship it extracts. It distinguishes relationships clearly stated in the source as EXTRACTED (1.0), reasonably inferred relationships as INFERRED (0.65–0.95), and uncertain relationships as AMBIGUOUS (0.1–0.3), so you can tell where the stated facts end and inference begins.</p>
+<p>The main commands used within a session are as follows.</p>
 
 
 
@@ -330,35 +330,35 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>명령</th><th>역할</th></tr></thead><tbody><tr><td><code>/graphify ./wiki</code></td><td>wiki/ 폴더로 그래프 생성 (출력: graphify-out/)</td></tr><tr><td><code>/graphify ./wiki --update</code></td><td>바뀐 파일만 증분 업데이트</td></tr><tr><td><code>/graphify query "질문"</code></td><td>그래프 기반 질의</td></tr><tr><td><code>/graphify path "A" "B"</code></td><td>두 개념 사이 최단경로</td></tr><tr><td><code>/graphify explain "개념"</code></td><td>특정 개념 설명</td></tr></tbody></table>
-<p>그래프 생성과 질의는 Claude Code 세션의 Claude가 직접 처리하므로 별도의 API 키가 필요하지 않습니다. 설치 방법은 아래 "설치 및 시작하기"의 지식 그래프 확장 항목을 참고하세요.</p>
+<table><thead><tr><th>Command</th><th>Role</th></tr></thead><tbody><tr><td><code>/graphify ./wiki</code></td><td>Generate a graph from the wiki/ folder (output: graphify-out/)</td></tr><tr><td><code>/graphify ./wiki --update</code></td><td>Incrementally update only the changed files</td></tr><tr><td><code>/graphify query "question"</code></td><td>Graph-based query</td></tr><tr><td><code>/graphify path "A" "B"</code></td><td>Shortest path between two concepts</td></tr><tr><td><code>/graphify explain "concept"</code></td><td>Explain a specific concept</td></tr></tbody></table>
+<p>Graph generation and querying are handled directly by the Claude in the Claude Code session, so no separate API key is needed. For installation instructions, see the knowledge-graph extension item under "Installation and Getting Started" below.</p>
 <hr>
-<h3 id="설치-및-시작하기">설치 및 시작하기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#설치-및-시작하기"><span class="icon icon-link"></span></a></h3>
-<p>저장소 주소는 아래와 같습니다.</p>
+<h3 id="installation-and-getting-started">Installation and Getting Started<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#installation-and-getting-started"><span class="icon icon-link"></span></a></h3>
+<p>The repository address is as follows.</p>
 <p><a href="https://github.com/seungahhong/llm-wiki">https://github.com/seungahhong/llm-wiki</a></p>
-<p>이 프로젝트는 Claude Code 위에서 동작합니다. 위키를 작성하고 정리하는 일은 모두 Claude Code 세션 안에서 이뤄지므로, 별도의 서버나 빌드 과정 없이 저장소를 받아서 바로 사용할 수 있습니다.</p>
-<h4 id="준비물">준비물<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#준비물"><span class="icon icon-link"></span></a></h4>
+<p>This project runs on top of Claude Code. All the work of writing and organizing the wiki happens inside the Claude Code session, so you can pull the repository and use it right away without a separate server or build process.</p>
+<h4 id="prerequisites">Prerequisites<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#prerequisites"><span class="icon icon-link"></span></a></h4>
 <ul>
 <li>Git</li>
-<li>Claude Code (Anthropic 공식 CLI). 설치형 도구이며 한 번 로그인해 두면 됩니다.</li>
-<li>(선택) Python 3.10 이상과 uv. 지식 그래프 확장 기능을 쓸 때만 필요합니다.</li>
+<li>Claude Code (Anthropic's official CLI). It is an installable tool, and you just need to log in once.</li>
+<li>(Optional) Python 3.10 or higher and uv. Only needed when using the knowledge-graph extension feature.</li>
 </ul>
-<h4 id="설치-순서">설치 순서<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#설치-순서"><span class="icon icon-link"></span></a></h4>
+<h4 id="installation-steps">Installation Steps<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#installation-steps"><span class="icon icon-link"></span></a></h4>
 <ol>
-<li>저장소를 내려받습니다.</li>
+<li>Download the repository.</li>
 </ol>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">git</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> clone</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> https://github.com/seungahhong/llm-wiki.git</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">cd</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> llm-wiki</span></span></code></pre></figure>
 <ol start="2">
-<li>받은 폴더에서 Claude Code를 실행합니다.</li>
+<li>Run Claude Code from the downloaded folder.</li>
 </ol>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">claude</span></span></code></pre></figure>
 <ol start="3">
-<li>Claude Code가 폴더 안의 <code>CLAUDE.md</code>와 <code>.claude/</code> 설정을 자동으로 읽어 들입니다. 이때부터 위키 작성 규칙과 전용 커맨드(자료 넣기, 질문하기, 점검하기)가 활성화됩니다. 별도의 의존성 설치는 없습니다.</li>
+<li>Claude Code automatically reads the <code>CLAUDE.md</code> and <code>.claude/</code> configuration inside the folder. From this point on, the wiki-writing rules and the dedicated commands (adding materials, asking questions, inspecting) are activated. There is no separate dependency installation.</li>
 </ol>
-<p>준비가 끝나면 <code>raw/</code> 폴더에 정리하고 싶은 자료를 넣는 것부터 시작하면 됩니다.</p>
-<h4 id="기본-사용-흐름">기본 사용 흐름<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#기본-사용-흐름"><span class="icon icon-link"></span></a></h4>
-<p>저장소를 열었다면 다음 커맨드를 Claude Code 프롬프트에 입력해 사용합니다. 일반 터미널 명령이 아니라 세션 안에서 입력하는 슬래시 커맨드입니다.</p>
+<p>Once you are ready, just start by putting the materials you want organized into the <code>raw/</code> folder.</p>
+<h4 id="basic-usage-flow">Basic Usage Flow<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#basic-usage-flow"><span class="icon icon-link"></span></a></h4>
+<p>Once you have opened the repository, you use it by entering the following commands into the Claude Code prompt. These are not ordinary terminal commands but slash commands you enter within the session.</p>
 
 
 
@@ -380,20 +380,20 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th>커맨드</th><th>역할</th></tr></thead><tbody><tr><td><code>/ingest raw/파일명</code> 또는 <code>/ingest URL</code></td><td>원본 자료를 읽어 위키 페이지로 정리합니다.</td></tr><tr><td><code>/query 질문 내용</code></td><td>정리된 위키를 근거로 출처와 함께 답합니다.</td></tr><tr><td><code>/lint</code></td><td>고아 페이지, 깨진 링크, 중복, 모순을 점검합니다.</td></tr></tbody></table>
-<h4 id="지식-그래프-확장-선택">지식 그래프 확장 (선택)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#지식-그래프-확장-선택"><span class="icon icon-link"></span></a></h4>
-<p>위키가 충분히 커져 페이지 사이 관계를 그래프로 보고 싶을 때만 설치하면 됩니다. 평소 사용에는 필요하지 않습니다.</p>
+<table><thead><tr><th>Command</th><th>Role</th></tr></thead><tbody><tr><td><code>/ingest raw/filename</code> or <code>/ingest URL</code></td><td>Reads the source material and organizes it into a wiki page.</td></tr><tr><td><code>/query question text</code></td><td>Answers with sources, grounded in the organized wiki.</td></tr><tr><td><code>/lint</code></td><td>Inspects for orphan pages, broken links, duplicates, and contradictions.</td></tr></tbody></table>
+<h4 id="knowledge-graph-extension-optional">Knowledge-Graph Extension (Optional)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#knowledge-graph-extension-optional"><span class="icon icon-link"></span></a></h4>
+<p>Install this only when the wiki has grown large enough that you want to see the relationships between pages as a graph. It is not needed for everyday use.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">uv</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> tool</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> graphifyy</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">graphify</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --project</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --platform</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> claude</span></span></code></pre></figure>
-<p>설치 후에는 Claude Code 세션 안에서 <code>/graphify</code> 커맨드로 그래프를 만들고 질의할 수 있습니다. 그래프 생성과 질의는 세션의 Claude가 직접 처리하므로 별도의 API 키가 필요하지 않습니다. 자세한 내용은 저장소의 <code>docs/graphify.md</code> 문서를 참고하면 됩니다.</p>
-<h4 id="참고">참고<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고"><span class="icon icon-link"></span></a></h4>
+<p>After installation, you can create and query graphs with the <code>/graphify</code> command inside the Claude Code session. Graph generation and querying are handled directly by the Claude in the session, so no separate API key is needed. For details, see the <code>docs/graphify.md</code> document in the repository.</p>
+<h4 id="notes">Notes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#notes"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li><code>raw/</code> 폴더의 원본 자료는 진실의 기준입니다. 사용자가 관리하며, 위키 내용과 어긋나면 원본이 우선합니다.</li>
-<li>로컬 전용 설정 파일(<code>.claude/settings.json</code> 등)과 그래프 산출물(<code>graphify-out/</code>)은 저장소에 포함되지 않습니다. 새로 받은 폴더에서 그래프 확장을 쓰려면 위 설치 명령을 다시 한 번 실행하면 됩니다.</li>
+<li>The source materials in the <code>raw/</code> folder are the source of truth. The user manages them, and if they diverge from the wiki content, the source takes precedence.</li>
+<li>Local-only configuration files (<code>.claude/settings.json</code>, etc.) and graph outputs (<code>graphify-out/</code>) are not included in the repository. To use the graph extension in a freshly pulled folder, just run the installation commands above again.</li>
 </ul>
 <hr>
-<h3 id="이-위키를-직접-구성하려면">이 위키를 직접 구성하려면<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#이-위키를-직접-구성하려면"><span class="icon icon-link"></span></a></h3>
-<p>이 저장소는 Claude Code에 아래와 같은 요청을 주어 만들었습니다. 비슷한 위키를 새로 만들고 싶다면 중괄호 부분을 자신의 상황에 맞게 바꿔 같은 요청을 하면 됩니다.</p>
+<h3 id="to-build-this-wiki-yourself">To Build This Wiki Yourself<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#to-build-this-wiki-yourself"><span class="icon icon-link"></span></a></h3>
+<p>This repository was created by giving Claude Code the request below. If you want to build a similar wiki from scratch, make the same request with the parts in braces changed to fit your own situation.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span>회사 기획 지식/노하우 위키를 만들어줘.</span></span>
 <span data-line=""> </span>
 <span data-line=""><span>아래 Karpathy의 LLM Wiki 아이디어를 참고해서 구현해:</span></span>
@@ -406,14 +406,14 @@ b:"$Sreact.suspense"
 <span data-line=""><span>내가 주로 넣을 자료:</span></span>
 <span data-line=""><span>- {{자료 유형 1: 예) 개발팀별 표준, 프로세스, 업무 자료}}</span></span>
 <span data-line=""><span>- {{자료 유형 2: 예) 제품 개발 기획/디자인 업무 자료}}</span></span></code></pre></figure>
-<p>이 요청을 받으면 Claude가 운영 규칙 문서(<code>CLAUDE.md</code>), <code>raw/</code>와 <code>wiki/</code> 폴더, 목차(<code>index.md</code>)와 이력(<code>log.md</code>)을 자동으로 만들어 줍니다. 이후에는 자료를 넣고 질문하는 평소 흐름으로 위키를 키워 가면 됩니다.</p>
-<h3 id="참고-자료">참고 자료<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고-자료"><span class="icon icon-link"></span></a></h3>
+<p>When Claude receives this request, it automatically creates the operating-rules document (<code>CLAUDE.md</code>), the <code>raw/</code> and <code>wiki/</code> folders, and the table of contents (<code>index.md</code>) and history (<code>log.md</code>). After that, you grow the wiki through the everyday flow of adding materials and asking questions.</p>
+<h3 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>Karpathy의 LLM Wiki 원문: <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f</a></li>
+<li>Karpathy's original LLM Wiki: <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f</a></li>
 <li>graphify: <a href="https://github.com/safishamsi/graphify">https://github.com/safishamsi/graphify</a></li>
-</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"LLM Wiki: RAG를 넘어 지식을 미리 정리해 두는 위키 패턴"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"LLM Wiki: RAG를 넘어 지식을 미리 정리해 두는 위키 패턴"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-06-02","className":"meta-mono","children":"06/02/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[10,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","LLM",{"children":["$","$L3",null,{"href":"/en/tags?tag=LLM","className":"tag-pill","children":"LLM"}]}],["$","li","AI",{"children":["$","$L3",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
-5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2026-06-01-RAG","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"시맨틱(의미 기반) + 키워드 하이브리드 검색 RAG 구축"}]]}],["$","$L3",null,{"href":"/en/posts/2026-06-03-claude-marketplace","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Claude Code 플러그인 마켓플레이스 구축"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"개요","text":"개요","depth":2},{"id":"배경-왜-이렇게-만드는가","text":"배경: 왜 이렇게 만드는가","depth":2},{"id":"karpathy의-llm-wiki-개념","text":"Karpathy의 LLM Wiki 개념","depth":2},{"id":"핵심-아이디어","text":"핵심 아이디어","depth":3},{"id":"3계층-아키텍처","text":"3계층 아키텍처","depth":3},{"id":"3가지-핵심-운영","text":"3가지 핵심 운영","depth":3},{"id":"저장소-구조","text":"저장소 구조","depth":2},{"id":"동작-방식","text":"동작 방식","depth":2},{"id":"자료-넣기-ingest","text":"자료 넣기 (Ingest)","depth":3},{"id":"질문하기-query","text":"질문하기 (Query)","depth":3},{"id":"점검하기-lint","text":"점검하기 (Lint)","depth":3},{"id":"운영-흐름도","text":"운영 흐름도","depth":2},{"id":"자료-넣기ingest-상세-흐름","text":"자료 넣기(Ingest) 상세 흐름","depth":3},{"id":"질문하기query-상세-흐름","text":"질문하기(Query) 상세 흐름","depth":3},{"id":"핵심-운영-규칙","text":"핵심 운영 규칙","depth":2},{"id":"사용자가-해야-하는-일","text":"사용자가 해야 하는 일","depth":2},{"id":"적용-사례","text":"적용 사례","depth":2},{"id":"규모와-확장","text":"규모와 확장","depth":2},{"id":"지식-그래프로-확장하기-graphify","text":"지식 그래프로 확장하기 (graphify)","depth":2},{"id":"확장-흐름","text":"확장 흐름","depth":3},{"id":"설치-및-시작하기","text":"설치 및 시작하기","depth":2},{"id":"준비물","text":"준비물","depth":3},{"id":"설치-순서","text":"설치 순서","depth":3},{"id":"기본-사용-흐름","text":"기본 사용 흐름","depth":3},{"id":"지식-그래프-확장-선택","text":"지식 그래프 확장 (선택)","depth":3},{"id":"참고","text":"참고","depth":3},{"id":"이-위키를-직접-구성하려면","text":"이 위키를 직접 구성하려면","depth":2},{"id":"참고-자료","text":"참고 자료","depth":2}],"title":"Contents"}]}]
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"LLM Wiki: A Wiki Pattern That Organizes Knowledge Up Front, Beyond RAG"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"LLM Wiki: A Wiki Pattern That Organizes Knowledge Up Front, Beyond RAG"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-06-02","className":"meta-mono","children":"06/02/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[14,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","LLM",{"children":["$","$L3",null,{"href":"/en/tags?tag=LLM","className":"tag-pill","children":"LLM"}]}],["$","li","AI",{"children":["$","$L3",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
+5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2026-06-01-RAG","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Building a Hybrid Semantic + Keyword Search RAG System"}]]}],["$","$L3",null,{"href":"/en/posts/2026-06-03-claude-marketplace","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Building a Claude Code Plugin Marketplace"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"overview","text":"Overview","depth":2},{"id":"background-why-build-it-this-way","text":"Background: Why Build It This Way","depth":2},{"id":"karpathys-llm-wiki-concept","text":"Karpathy's LLM Wiki Concept","depth":2},{"id":"the-core-idea","text":"The Core Idea","depth":3},{"id":"the-three-layer-architecture","text":"The Three-Layer Architecture","depth":3},{"id":"three-core-operations","text":"Three Core Operations","depth":3},{"id":"repository-structure","text":"Repository Structure","depth":2},{"id":"how-it-works","text":"How It Works","depth":2},{"id":"adding-materials-ingest","text":"Adding Materials (Ingest)","depth":3},{"id":"asking-questions-query","text":"Asking Questions (Query)","depth":3},{"id":"inspecting-lint","text":"Inspecting (Lint)","depth":3},{"id":"operational-flow","text":"Operational Flow","depth":2},{"id":"detailed-flow-of-adding-materials-ingest","text":"Detailed Flow of Adding Materials (Ingest)","depth":3},{"id":"detailed-flow-of-asking-questions-query","text":"Detailed Flow of Asking Questions (Query)","depth":3},{"id":"core-operating-rules","text":"Core Operating Rules","depth":2},{"id":"what-the-user-needs-to-do","text":"What the User Needs to Do","depth":2},{"id":"use-cases","text":"Use Cases","depth":2},{"id":"scale-and-growth","text":"Scale and Growth","depth":2},{"id":"extending-to-a-knowledge-graph-graphify","text":"Extending to a Knowledge Graph (graphify)","depth":2},{"id":"the-extension-flow","text":"The Extension Flow","depth":3},{"id":"installation-and-getting-started","text":"Installation and Getting Started","depth":2},{"id":"prerequisites","text":"Prerequisites","depth":3},{"id":"installation-steps","text":"Installation Steps","depth":3},{"id":"basic-usage-flow","text":"Basic Usage Flow","depth":3},{"id":"knowledge-graph-extension-optional","text":"Knowledge-Graph Extension (Optional)","depth":3},{"id":"notes","text":"Notes","depth":3},{"id":"to-build-this-wiki-yourself","text":"To Build This Wiki Yourself","depth":2},{"id":"references","text":"References","depth":2}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

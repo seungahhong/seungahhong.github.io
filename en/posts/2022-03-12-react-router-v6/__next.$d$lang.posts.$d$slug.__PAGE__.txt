@@ -4,28 +4,28 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T4521f,<h2 id="v6">v6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v6"><span class="icon icon-link"></span></a></h2>
-<h3 id="react-router-v6-정식-릴리즈">React Router v6 정식 릴리즈<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-router-v6-정식-릴리즈"><span class="icon icon-link"></span></a></h3>
-<p>2021년 11월 4일 v6.0.0 beta → release 출시되었습니다.</p>
-<h3 id="react-v168-이상으로-업그레이드">React v16.8 이상으로 업그레이드<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-v168-이상으로-업그레이드"><span class="icon icon-link"></span></a></h3>
-<p>단, React ≥ 15 이상이면 react router v5 이상을 호환하고 있어서 v6로 업그레이드 하지 않더라도 react만 업그레이드 가능합니다.</p>
+4:T45087,<h2 id="v6">v6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v6"><span class="icon icon-link"></span></a></h2>
+<h3 id="react-router-v6-official-release">React Router v6 Official Release<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-router-v6-official-release"><span class="icon icon-link"></span></a></h3>
+<p>The v6.0.0 beta was promoted to a full release on November 4, 2021.</p>
+<h3 id="upgrading-to-react-v168-or-higher">Upgrading to React v16.8 or Higher<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#upgrading-to-react-v168-or-higher"><span class="icon icon-link"></span></a></h3>
+<p>That said, since React ≥ 15 is compatible with react router v5 and above, you can upgrade React alone without also upgrading to v6.</p>
 <ul>
-<li>샘플코드: <a href="https://github.com/seungahhong/react-router-tutorial">https://github.com/seungahhong/react-router-tutorial</a></li>
+<li>Sample code: <a href="https://github.com/seungahhong/react-router-tutorial">https://github.com/seungahhong/react-router-tutorial</a></li>
 </ul>
-<h3 id="react-router-v6-장점">React Router v6 장점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-router-v6-장점"><span class="icon icon-link"></span></a></h3>
+<h3 id="advantages-of-react-router-v6">Advantages of React Router v6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#advantages-of-react-router-v6"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>기존 버전에 비해서 버들 사이즈가 70% 정도 감소했습니다.(빌드시간 감소??)</li>
+<li>The bundle size has been reduced by about 70% compared to the previous version. (Does it also reduce build time??)</li>
 </ul>
-<p>v5.1 버전의 크기는 9.4kb → v6 버전의 크기는 2.9kb로 감소했습니다.</p>
+<p>The v5.1 size was 9.4kb, and it has been reduced to 2.9kb in v6.</p>
 <p><img src="/blog-assets/2022/03/assets/12/Untitled.png" alt="Untitled"></p>
 <p><img src="/blog-assets/2022/03/assets/12/Untitled1.png" alt="Untitled"></p>
 <ul>
-<li>React Hooks 전반적인 지원(hoc 등 기능지원 들이 사라짐)</li>
-<li>구 브라우저에 대한 지원 중단(단, polyfill 사용으로 대응가능)
+<li>Broad support for React Hooks (features such as HOCs have been removed)</li>
+<li>Dropped support for legacy browsers (however, this can be handled by using polyfills)
 <ul>
-<li>IE 11 지원
+<li>IE 11 support
 <ul>
-<li>package.json IE11 브라우저 지원하도록 추가</li>
+<li>Add the following to package.json to support the IE11 browser</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">"browserslist"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "production"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span></span>
@@ -38,17 +38,17 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ]</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span></code></pre></figure>
 <ul>
-<li>polyfill 추가
+<li>Add polyfills
 <ul>
-<li>react-app-polyfill(facebook 제공)
+<li>react-app-polyfill (provided by Facebook)
 <ul>
-<li>리액트 개발에서 사용하는 다양한 문법을 변환해주는 라이브러리</li>
-<li>Promise, window.fetch, Symbol, Object.assign, Array.from + [ IE9 Map, Set ]와 같은 필요한 것만 포함하고 있어 사이즈가 작아 가벼운 게 특징</li>
+<li>A library that transpiles the various syntaxes used in React development</li>
+<li>It only includes the necessary pieces such as Promise, window.fetch, Symbol, Object.assign, Array.from + [ IE9 Map, Set ], so it is small in size and lightweight</li>
 </ul>
 </li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// src/index.tsx</span></span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 첫번째 라인에 추가</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Add at the very first line</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-app-polyfill/ie11'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-app-polyfill/stable'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// async,await,generator 문법사용</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
@@ -57,25 +57,25 @@ b:"$Sreact.suspense"
 </li>
 </ul>
 </li>
-<li>상대경로 사용으로 인한 코드량 감소(match.url, match.path)</li>
-<li>기능에 대한 단일화된 표준
+<li>Reduced code volume thanks to relative paths (match.url, match.path)</li>
+<li>A unified standard for features
 <ul>
-<li>예) Router → element 통합</li>
+<li>e.g.) Router → element consolidation</li>
 </ul>
 </li>
 </ul>
-<h3 id="react-router-v6-설치">React Router v6 설치<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-router-v6-설치"><span class="icon icon-link"></span></a></h3>
+<h3 id="installing-react-router-v6">Installing React Router v6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#installing-react-router-v6"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="solidity" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="solidity" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">npm install react</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">router</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">dom </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// react-router-dom@6</span></span></code></pre></figure>
-<h3 id="switch--routes-변경사항">Switch → Routes 변경사항<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#switch--routes-변경사항"><span class="icon icon-link"></span></a></h3>
+<h3 id="changes-from-switch--routes">Changes from Switch → Routes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#changes-from-switch--routes"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>Switch 처럼 순서를 기준으로 선택하는 것이 아닌, 가장 일치하는 라우트를 기반인 기능으로 변경</li>
-<li>Switch → Routes 변경(route는 routes에 children이어야 함)</li>
-<li>exact props 삭제
+<li>Instead of selecting based on order like Switch, it now works by choosing the best-matching route</li>
+<li>Switch → Routes change (a route must be a child of routes)</li>
+<li>The exact prop has been removed
 <ul>
-<li>서브경로가 필요한 경우 path * 사용</li>
+<li>When a sub-path is needed, use path *</li>
 </ul>
 </li>
-<li>component, children, render → element 통일</li>
+<li>component, children, and render are unified into element</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v6 이전</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Switch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
@@ -95,13 +95,13 @@ b:"$Sreact.suspense"
 <p><img src="/blog-assets/2022/03/assets/12/Untitled2.png" alt="Untitled"></p>
 <p><img src="/blog-assets/2022/03/assets/12/Untitled3.png" alt="Untitled"></p>
 <p><img src="/blog-assets/2022/03/assets/12/Untitled4.png" alt="Untitled"></p>
-<h3 id="withrouter--hooks-변경사항">withRouter → hooks 변경사항<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#withrouter--hooks-변경사항"><span class="icon icon-link"></span></a></h3>
+<h3 id="changes-from-withrouter--hooks">Changes from withRouter → hooks<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#changes-from-withrouter--hooks"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>withRouter 삭제로 인한 hooks api 변경
+<li>Hooks API changes due to the removal of withRouter
 <ul>
-<li>match: useMatch → 현재 상대경로(단, 속성값이 달라져서 확인필요)</li>
-<li>history: useNavigate 지원</li>
-<li>location: useLocation ( v5 이후에서도 지원)</li>
+<li>match: useMatch → current relative path (however, the property values differ, so verification is needed)</li>
+<li>history: useNavigate is supported</li>
+<li>location: useLocation (also supported since v5)</li>
 </ul>
 </li>
 </ul>
@@ -155,11 +155,11 @@ b:"$Sreact.suspense"
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> WithRouter;</span></span></code></pre></figure>
 <p><img src="/blog-assets/2022/03/assets/12/Untitled5.png" alt="Untitled"></p>
-<h3 id="usehistory--usenavigate-변경사항">useHistory → useNavigate 변경사항<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#usehistory--usenavigate-변경사항"><span class="icon icon-link"></span></a></h3>
-<p>useHistory hooks 대체로 useNavigate 변경</p>
+<h3 id="changes-from-usehistory--usenavigate">Changes from useHistory → useNavigate<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#changes-from-usehistory--usenavigate"><span class="icon icon-link"></span></a></h3>
+<p>useNavigate has replaced the useHistory hook</p>
 <ul>
-<li>useHistory 리턴값(객체) vs useNavigate 리턴값(함수)</li>
-<li>기존에는 용도에 맞게 go, goBback, goForward, push, replace 메서드 호출에서 직관적인 함수호출로 변경</li>
+<li>useHistory return value (object) vs useNavigate return value (function)</li>
+<li>Previously you called go, goBack, goForward, push, and replace methods depending on the use case, but these have been changed to an intuitive function call</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v6 이전</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -270,11 +270,11 @@ b:"$Sreact.suspense"
 <p><img src="/blog-assets/2022/03/assets/12/Untitled6.png" alt="Untitled"></p>
 <p><img src="/blog-assets/2022/03/assets/12/Untitled7.png" alt="Untitled"></p>
 <p><img src="/blog-assets/2022/03/assets/12/Untitled8.png" alt="Untitled"></p>
-<h3 id="useroutematch-변경사항">useRouteMatch 변경사항<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#useroutematch-변경사항"><span class="icon icon-link"></span></a></h3>
+<h3 id="useroutematch-changes">useRouteMatch Changes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#useroutematch-changes"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>useRouteMatch 사라져서, 기존에 현재 url을 얻기위한 match.path, match.url 사라짐
+<li>Since useRouteMatch is gone, the match.path and match.url previously used to obtain the current URL are also gone
 <ul>
-<li>현재 라우터 기준의 상대경로로 변경</li>
+<li>They are replaced with relative paths based on the current router</li>
 </ul>
 </li>
 </ul>
@@ -370,7 +370,7 @@ b:"$Sreact.suspense"
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> User;</span></span></code></pre></figure>
 <p><img src="/blog-assets/2022/03/assets/12/Untitled9.png" alt="Untitled"></p>
-<h3 id="서브라우터에-다른-구현-outlet">서브라우터에 다른 구현 Outlet<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#서브라우터에-다른-구현-outlet"><span class="icon icon-link"></span></a></h3>
+<h3 id="different-implementation-for-sub-routers-outlet">Different Implementation for Sub-routers: Outlet<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#different-implementation-for-sub-routers-outlet"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v6 이전</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// App.tsx</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/user/:id"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
@@ -416,24 +416,24 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">ul</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Outlet</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/></span></span></code></pre></figure>
-<h3 id="optional-url--multi-route-추가">Optional URL → Multi Route 추가<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#optional-url--multi-route-추가"><span class="icon icon-link"></span></a></h3>
+<h3 id="optional-url--multiple-routes">Optional URL → Multiple Routes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#optional-url--multiple-routes"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v6 이전</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/optional/:value?"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> element</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Optional</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v6 이후</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/optional/:value"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> element</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Optional</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/optional/"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> element</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Optional</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span></code></pre></figure>
-<h3 id="navlink-변경사항">NavLink 변경사항<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#navlink-변경사항"><span class="icon icon-link"></span></a></h3>
+<h3 id="navlink-changes">NavLink Changes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#navlink-changes"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>
-<p>activeStye, activeClassName 사라지고, isActive Props로 변경</p>
+<p>activeStyle and activeClassName are gone, replaced by the isActive prop</p>
 <ul>
 <li>activeClassName → className={({ isActive }) => (isActive ? styles.active : '')}</li>
 <li>activeStyle={activeStyle} → style={({ isActive }) => (isActive ? activeStyle : {})}</li>
 </ul>
 </li>
 <li>
-<p>exact → end 로 변경</p>
+<p>exact has been changed to end</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v6 이전</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { NavLink } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router-dom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -597,7 +597,7 @@ b:"$Sreact.suspense"
 <img src="/blog-assets/2022/03/assets/12/Untitled11.png" alt="Untitled"></p>
 </li>
 </ul>
-<h3 id="redirect--navigate-변경사항">Redirect → Navigate 변경사항<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#redirect--navigate-변경사항"><span class="icon icon-link"></span></a></h3>
+<h3 id="changes-from-redirect--navigate">Changes from Redirect → Navigate<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#changes-from-redirect--navigate"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v6 이전</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Switch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Redirect</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/main"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> to</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/user/1"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
@@ -608,7 +608,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/main"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> element</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Navigate</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> replace</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> to</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/user/1"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Routes</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
 <h3 id="renderroutes--useroutes">renderRoutes → useRoutes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#renderroutes--useroutes"><span class="icon icon-link"></span></a></h3>
-<p>기존의 react-router-config의 renderRouters가 useRoutes라는 Hook 으로 변경됨.</p>
+<p>The existing renderRoutes from react-router-config has been changed into a Hook called useRoutes.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// v6 이전</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// react-router-config</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// yarn add react-router-config로 설치 후 사용</span></span>
@@ -697,14 +697,14 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> element;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <h2 id="migrating-to-routerproviderwith-createbrowserrouter">Migrating to RouterProvider(with createBrowserRouter)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#migrating-to-routerproviderwith-createbrowserrouter"><span class="icon icon-link"></span></a></h2>
-<p>도입배경</p>
-<p>createBrowserRouter가 도입된 이유와 장점입니다:</p>
+<p>Background for Adoption</p>
+<p>Here are the reasons createBrowserRouter was introduced, along with its advantages:</p>
 <ol>
-<li><strong>단순화된 라우팅 설정</strong>: createBrowserRouter를 사용하면 라우트 구성을 하나의 객체로 선언할 수 있습니다. 이로 인해 라우트 설정을 보다 간단하고 일관성 있게 관리할 수 있습니다.</li>
-<li><strong>라우트 데이터 로딩</strong>: createBrowserRouter는 데이터 로딩을 더 쉽게 처리할 수 있는 기능을 제공합니다. 라우트마다 데이터를 로드하고, 이를 loader 함수를 통해 처리할 수 있습니다. 이로 인해 데이터와 라우트 설정을 한 곳에서 관리할 수 있습니다.</li>
-<li><strong>중첩 라우트의 간편한 관리</strong>: 중첩 라우트(nested routes)를 설정하는 것도 더 직관적입니다. createBrowserRouter는 중첩 라우트를 선언적이고 명확하게 관리할 수 있는 구조를 제공합니다.</li>
-<li><strong>에러 경계(Error Boundaries)</strong>: 각 라우트에 에러 경계를 쉽게 추가할 수 있습니다. createBrowserRouter를 사용하면 특정 라우트에서 발생하는 오류를 처리하기 위해 에러 경계를 설정하는 것이 간편해집니다.</li>
-<li><strong>경량화 및 최적화</strong>: React Router v6는 성능과 사용성을 고려하여 많은 부분이 최적화되었습니다. createBrowserRouter는 이러한 최신 최적화를 활용할 수 있는 구조를 제공합니다.</li>
+<li><strong>Simplified routing configuration</strong>: With createBrowserRouter, you can declare the route configuration as a single object. This lets you manage route configuration in a simpler and more consistent way.</li>
+<li><strong>Route data loading</strong>: createBrowserRouter provides features that make data loading easier to handle. You can load data for each route and process it through a loader function. This allows you to manage both data and route configuration in one place.</li>
+<li><strong>Easy management of nested routes</strong>: Setting up nested routes is also more intuitive. createBrowserRouter provides a structure for managing nested routes declaratively and clearly.</li>
+<li><strong>Error Boundaries</strong>: You can easily add error boundaries to each route. With createBrowserRouter, setting up error boundaries to handle errors that occur on a specific route becomes straightforward.</li>
+<li><strong>Lightweight and optimized</strong>: React Router v6 has been optimized in many areas with performance and usability in mind. createBrowserRouter provides a structure that lets you take advantage of these latest optimizations.</li>
 </ol>
 <h3 id="client-side-routing">client side routing<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#client-side-routing"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> *</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> as</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -755,7 +755,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">RouterProvider</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> router</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">router</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <h3 id="nested-routes">Nested Routes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nested-routes"><span class="icon icon-link"></span></a></h3>
-<p>path 지정 시에 상대경로를 지정해줄 수 있게 되면서 중첩 라우팅 구현이 가능하며, 자식 패스는 부모 패스의 상대 경로로 설정됩니다.</p>
+<p>Since you can now specify relative paths when defining a path, nested routing can be implemented, and child paths are set as relative paths of the parent path.</p>
 <ul>
 <li>createRoutesFromElements(Configure nested routes with JSX)
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Configure nested routes with JSX</span></span>
@@ -850,7 +850,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  match.params.taskId; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 3</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <h3 id="ranked-routematching">ranked routematching<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#ranked-routematching"><span class="icon icon-link"></span></a></h3>
-<p>teams/new 링크 이동 시 2개 라우터가 같이 매칭되지만 랭킹 알고리즘에 의해서 /teams/new 라우터로 연결됩니다.</p>
+<p>When navigating to the teams/new link, both routes match, but the ranking algorithm connects it to the /teams/new route.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/teams/:teamId"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/teams/new"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span></code></pre></figure>
 <h3 id="active-links">active links<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#active-links"><span class="icon icon-link"></span></a></h3>
@@ -902,10 +902,10 @@ b:"$Sreact.suspense"
 
 
 
-<table><thead><tr><th><strong>In <code>&#x3C;Project></code> @ <code>/home/project/123</code></strong></th><th><strong>Resolved <code>&#x3C;a href></code></strong></th></tr></thead><tbody><tr><td><code>&#x3C;Link to="abc"></code></td><td><code>/home/project/123/abc</code></td></tr><tr><td><code>&#x3C;Link to="."></code></td><td><code>/home/project/123</code></td></tr><tr><td><code>&#x3C;Link to=".."></code></td><td><code>/home</code></td></tr><tr><td><code>&#x3C;Link to=".." relative="path"></code></td><td><code>/home/project</code></td></tr></tbody></table>
+<table><thead><tr><th><strong>In <code>&#x3C;Project></code> @ <code>/home/project/123</code></strong></th><th><strong>Resolved <code>&#x3C;a href></code></strong></th></tr></thead><tbody><tr><td><code>&#x3C;Link to="abc"></code></td><td><code>/home/project/123/abc</code></td></tr><tr><td><code>&#x3C;Link to="."></code></td><td><code>/home/project/123</code></td></tr><tr><td><code>&#x3C;Link to=".."></code></td><td><code>/home</code></td></tr><tr><td><code>&#x3C;Link to=".." relative="path"></code></td><td><code>/home/project</code></td></tr></tbody></table>
 <h3 id="data-loading">data loading<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#data-loading"><span class="icon icon-link"></span></a></h3>
-<p>navigation 동안에 데이터의 로딩을 loader를 통해서 제공하고 있습니다.</p>
-<p>또한, loader를 통해서 리턴한 값을 각 element에서는 useLoaderData를 통해서 얻어 올 수 있습니다.</p>
+<p>Data can be loaded during navigation through a loader.</p>
+<p>In addition, the value returned by the loader can be retrieved in each element via useLoaderData.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// loader</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/"</span></span>
@@ -955,7 +955,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // data from &#x3C;Route path=":gameId"></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <h3 id="redirects">redirects<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#redirects"><span class="icon icon-link"></span></a></h3>
-<p>데이터를 로딩/변경되는 동안 라우팅을 변경할 경우 redirect 메서드를 사용해서 이동이 가능합니다.</p>
+<p>When you want to change routing while data is loading or being mutated, you can navigate using the redirect method.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dashboard"</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  loader</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={async</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -985,7 +985,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">/></span></span>
 <span data-line=""> </span></code></pre></figure>
 <h3 id="pending-navigation-ui">pending navigation ui<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pending-navigation-ui"><span class="icon icon-link"></span></a></h3>
-<p>다음 페이지를 렌더링 하기 전에 펜딩 UI를 표기하기 위해서 navigation.state를 사용하면 됩니다.</p>
+<p>To show a pending UI before rendering the next page, you can use navigation.state.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Root</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> navigation</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useNavigation</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
@@ -998,7 +998,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <h3 id="skeleton-ui-with-suspense">skeleton-ui-with-suspense<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#skeleton-ui-with-suspense"><span class="icon icon-link"></span></a></h3>
-<p>페이지 이동 시 데이터를 얻어오는 중간에 defer 메서드를 사용 시 Suspense, Await 메서드 사용해서 로딩/스켈레톤 UI 사용이 가능합니다.</p>
+<p>When navigating between pages, if you use the defer method while data is being fetched, you can use the Suspense and Await methods to display a loading/skeleton UI.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"issue/:issueId"</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  element</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Issue</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span></span>
@@ -1044,7 +1044,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">/* ... */</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <h3 id="form-data-mutations">form data mutations<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#form-data-mutations"><span class="icon icon-link"></span></a></h3>
-<p>form action을 사용해서 form 안에 데이터(name)를 얻어올 수 있습니다.</p>
+<p>Using a form action, you can retrieve the data (name) inside the form.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Form</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> action</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/project/new"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">label</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    Project title</span></span>
@@ -1071,8 +1071,8 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">/></span></span></code></pre></figure>
 <h3 id="error-handling">error-handling<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#error-handling"><span class="icon icon-link"></span></a></h3>
-<p>에러가 생길 경우 errorElement 선언된 컴포넌트 렌더링이 가능합니다.</p>
-<p>또한 자식 라우트에서 errorElement가 없는경우 부모 errorElement 따라가게 됩니다.</p>
+<p>When an error occurs, you can render the component declared as errorElement.</p>
+<p>Also, if a child route does not have an errorElement, it falls back to the parent's errorElement.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"/"</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  loader</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -1093,8 +1093,8 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> path</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"login"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> element</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Login</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Route</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
 <h3 id="optsbasename">opts.basename<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#optsbasename"><span class="icon icon-link"></span></a></h3>
-<p>BaseURL 설정을 해야하는 경우 createBrowserRouter 2번쨰 인자에 옵션으로 설정이 가능합니다.</p>
-<p>단, createBrowserRouter 선언 컴포넌트에서 동적 param을 basename으로 설정을 해야하는 경우 window.location.pathname을 통해서 동적 param을 얻어와서 정적 baseURL을 얻어올 수 있습니다.</p>
+<p>When you need to configure a BaseURL, you can set it as an option in the second argument of createBrowserRouter.</p>
+<p>However, if you need to set a dynamic param as the basename in the component that declares createBrowserRouter, you can obtain the dynamic param through window.location.pathname to derive a static baseURL.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">createBrowserRouter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(routes, {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  basename: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/teams'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
@@ -1119,7 +1119,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    baseParam: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">''</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  };</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
-<h3 id="prompt-재구현useblocker">Prompt 재구현(useBlocker)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#prompt-재구현useblocker"><span class="icon icon-link"></span></a></h3>
+<h3 id="reimplementing-prompt-useblocker">Reimplementing Prompt (useBlocker)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reimplementing-prompt-useblocker"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> ImportantForm</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">() {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [value, setValue] </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> React.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useState</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">''</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""> </span>
@@ -1152,8 +1152,8 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <h3 id="outlet-useoutletcontext">Outlet, useOutletContext<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#outlet-useoutletcontext"><span class="icon icon-link"></span></a></h3>
-<p>패스별로 자식 컴포넌트를 선언을 다르게 해야할 경우 location pathname 분기 후 outlet을 처리를 진행할 수 있습니다.</p>
-<p>또한 자식 컴포넌트에 데이터를 넘길 경우 context props 넘기고 자식 라우터 컴포넌트는 useOutletContext에서 값을 얻어올 수 있습니다.</p>
+<p>When you need to declare different child components per path, you can branch on the location pathname and then handle the outlet.</p>
+<p>Also, when passing data to a child component, you can pass a context prop and the child router component can retrieve the value via useOutletContext.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  location.pathname.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">indexOf</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/a'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> -</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ?</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Outlet</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> context</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{ type: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'a'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /></span></span>
@@ -1171,12 +1171,12 @@ b:"$Sreact.suspense"
 <li><a href="https://reactrouter.com/en/main/start/tutorial#pathless-routes">pathless-routes</a></li>
 <li><a href="https://reactrouter.com/en/main/start/tutorial#jsx-routes">jsx-routes</a></li>
 </ul>
-<h3 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h3>
+<h3 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h3>
 <p><a href="https://reactrouter.com/docs/en/v6/upgrading/v5">https://reactrouter.com/docs/en/v6/upgrading/v5</a></p>
 <p><a href="https://gist.github.com/rmorse/426ffcc579922a82749934826fa9f743#file-usage-useprompt-react-router-dom-js">https://gist.github.com/rmorse/426ffcc579922a82749934826fa9f743#file-usage-useprompt-react-router-dom-js</a></p>
-<p><a href="https://velog.io/@velopert/react-router-v6-tutorial">https://velog.io/@velopert/react-router-v6-tutorial</a></p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"react-router-v6"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"react-router-v6"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-03-12","className":"meta-mono","children":"03/12/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[5,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","react-router",{"children":["$","$L3",null,{"href":"/en/tags?tag=react-router","className":"tag-pill","children":"react-router"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+<p><a href="https://velog.io/@velopert/react-router-v6-tutorial">https://velog.io/@velopert/react-router-v6-tutorial</a></p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"react-router-v6"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"react-router-v6"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-03-12","className":"meta-mono","children":"03/12/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[6,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","react-router",{"children":["$","$L3",null,{"href":"/en/tags?tag=react-router","className":"tag-pill","children":"react-router"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
 5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2022-03-07-redux-saga","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"redux-saga"}]]}],["$","$L3",null,{"href":"/en/posts/2022-03-19-storybook","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"storybook"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"v6","text":"v6","depth":1},{"id":"react-router-v6-정식-릴리즈","text":"React Router v6 정식 릴리즈","depth":2},{"id":"react-v168-이상으로-업그레이드","text":"React v16.8 이상으로 업그레이드","depth":2},{"id":"react-router-v6-장점","text":"React Router v6 장점","depth":2},{"id":"react-router-v6-설치","text":"React Router v6 설치","depth":2},{"id":"switch--routes-변경사항","text":"Switch → Routes 변경사항","depth":2},{"id":"withrouter--hooks-변경사항","text":"withRouter → hooks 변경사항","depth":2},{"id":"usehistory--usenavigate-변경사항","text":"useHistory → useNavigate 변경사항","depth":2},{"id":"useroutematch-변경사항","text":"useRouteMatch 변경사항","depth":2},{"id":"서브라우터에-다른-구현-outlet","text":"서브라우터에 다른 구현 Outlet","depth":2},{"id":"optional-url--multi-route-추가","text":"Optional URL → Multi Route 추가","depth":2},{"id":"navlink-변경사항","text":"NavLink 변경사항","depth":2},{"id":"redirect--navigate-변경사항","text":"Redirect → Navigate 변경사항","depth":2},{"id":"renderroutes--useroutes","text":"renderRoutes → useRoutes","depth":2},{"id":"migrating-to-routerproviderwith-createbrowserrouter","text":"Migrating to RouterProvider(with createBrowserRouter)","depth":1},{"id":"client-side-routing","text":"client side routing","depth":2},{"id":"nested-routes","text":"Nested Routes","depth":2},{"id":"dynamicsegments","text":"dynamicsegments","depth":2},{"id":"ranked-routematching","text":"ranked routematching","depth":2},{"id":"active-links","text":"active links","depth":2},{"id":"relative-links","text":"relative links","depth":2},{"id":"data-loading","text":"data loading","depth":2},{"id":"redirects","text":"redirects","depth":2},{"id":"pending-navigation-ui","text":"pending navigation ui","depth":2},{"id":"skeleton-ui-with-suspense","text":"skeleton-ui-with-suspense","depth":2},{"id":"form-data-mutations","text":"form data mutations","depth":2},{"id":"error-handling","text":"error-handling","depth":2},{"id":"optsbasename","text":"opts.basename","depth":2},{"id":"prompt-재구현useblocker","text":"Prompt 재구현(useBlocker)","depth":2},{"id":"outlet-useoutletcontext","text":"Outlet, useOutletContext","depth":2},{"id":"참고페이지","text":"참고페이지","depth":2}],"title":"Contents"}]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"v6","text":"v6","depth":1},{"id":"react-router-v6-official-release","text":"React Router v6 Official Release","depth":2},{"id":"upgrading-to-react-v168-or-higher","text":"Upgrading to React v16.8 or Higher","depth":2},{"id":"advantages-of-react-router-v6","text":"Advantages of React Router v6","depth":2},{"id":"installing-react-router-v6","text":"Installing React Router v6","depth":2},{"id":"changes-from-switch--routes","text":"Changes from Switch → Routes","depth":2},{"id":"changes-from-withrouter--hooks","text":"Changes from withRouter → hooks","depth":2},{"id":"changes-from-usehistory--usenavigate","text":"Changes from useHistory → useNavigate","depth":2},{"id":"useroutematch-changes","text":"useRouteMatch Changes","depth":2},{"id":"different-implementation-for-sub-routers-outlet","text":"Different Implementation for Sub-routers: Outlet","depth":2},{"id":"optional-url--multiple-routes","text":"Optional URL → Multiple Routes","depth":2},{"id":"navlink-changes","text":"NavLink Changes","depth":2},{"id":"changes-from-redirect--navigate","text":"Changes from Redirect → Navigate","depth":2},{"id":"renderroutes--useroutes","text":"renderRoutes → useRoutes","depth":2},{"id":"migrating-to-routerproviderwith-createbrowserrouter","text":"Migrating to RouterProvider(with createBrowserRouter)","depth":1},{"id":"client-side-routing","text":"client side routing","depth":2},{"id":"nested-routes","text":"Nested Routes","depth":2},{"id":"dynamicsegments","text":"dynamicsegments","depth":2},{"id":"ranked-routematching","text":"ranked routematching","depth":2},{"id":"active-links","text":"active links","depth":2},{"id":"relative-links","text":"relative links","depth":2},{"id":"data-loading","text":"data loading","depth":2},{"id":"redirects","text":"redirects","depth":2},{"id":"pending-navigation-ui","text":"pending navigation ui","depth":2},{"id":"skeleton-ui-with-suspense","text":"skeleton-ui-with-suspense","depth":2},{"id":"form-data-mutations","text":"form data mutations","depth":2},{"id":"error-handling","text":"error-handling","depth":2},{"id":"optsbasename","text":"opts.basename","depth":2},{"id":"reimplementing-prompt-useblocker","text":"Reimplementing Prompt (useBlocker)","depth":2},{"id":"outlet-useoutletcontext","text":"Outlet, useOutletContext","depth":2},{"id":"references","text":"References","depth":2}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

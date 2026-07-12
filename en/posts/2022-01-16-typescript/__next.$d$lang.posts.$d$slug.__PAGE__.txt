@@ -4,30 +4,30 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T14445,<h2 id="타입스크립트는-왜-사용해야하는-걸까">타입스크립트는 왜 사용해야하는 걸까??<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#타입스크립트는-왜-사용해야하는-걸까"><span class="icon icon-link"></span></a></h2>
-<p><strong>Typescript는 코드를 보다 읽기 쉽게 만든다.</strong></p>
+4:T13beb,<h2 id="why-should-we-use-typescript">Why should we use TypeScript?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#why-should-we-use-typescript"><span class="icon icon-link"></span></a></h2>
+<p><strong>TypeScript makes code easier to read.</strong></p>
 <ul>
-<li>변수,리턴,인터페이스 등등 타입을 명시함으로써 코드에 대한 이해가 쉬워진다.
-<strong>Typescript는 개발자의 실수를 줄여준다.</strong></li>
-<li>코드 작성 중/컴파일 단계에서 에러 발견이 쉽다.</li>
-<li>에러에 대한 대응을 빠르게 가능하며, 사이드 이펙트를 최소화 가능하다.
-<strong>IDE 를 더욱 더 적극적으로 활용 (자동완성, 타입확인)</strong></li>
-<li>TypeScript 를 사용하면 자동완성이 굉장히 잘됩니다.</li>
-<li>함수를 사용 할 때 해당 함수가 어떤 파라미터를 필요로 하는지, 그리고 어떤 값을 반환하는지 코드를 따로 열어보지 않아도 알 수 있습니다.</li>
-<li>리액트 컴포넌트의 경우 props/state 값을 미리 알 수 있다.
-<strong>객체지향 프로그래밍 지원</strong></li>
-<li>인터페이스, 제네릭, 오버로딩/오버라이딩 등과 같은 강력한 객체지향 프로그래밍 지원은 크고 복잡한 프로젝트의 코드 기반을 쉽게 구성이 가능하다.</li>
+<li>By explicitly annotating types for variables, return values, interfaces, and so on, the code becomes easier to understand.
+<strong>TypeScript reduces developer mistakes.</strong></li>
+<li>It's easy to catch errors while writing code or during the compile step.</li>
+<li>You can respond to errors quickly and minimize side effects.
+<strong>Make more active use of the IDE (autocompletion, type checking)</strong></li>
+<li>With TypeScript, autocompletion works remarkably well.</li>
+<li>When calling a function, you can tell what parameters it requires and what value it returns without having to open the code separately.</li>
+<li>For React components, you can know the props/state values in advance.
+<strong>Support for object-oriented programming</strong></li>
+<li>Powerful object-oriented programming support such as interfaces, generics, and overloading/overriding makes it easy to structure the codebase of large, complex projects.</li>
 </ul>
-<h2 id="타입스크립트-디렉토리-구조">타입스크립트 디렉토리 구조<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#타입스크립트-디렉토리-구조"><span class="icon icon-link"></span></a></h2>
+<h2 id="typescript-directory-structure">TypeScript directory structure<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#typescript-directory-structure"><span class="icon icon-link"></span></a></h2>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> components</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> types</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> //</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 다중</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> component</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> type을</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 지정할</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 경우</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> types</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> folder,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> types</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> //</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> types</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> folder</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> when</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> defining</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> types</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> for</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> multiple</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> components,</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> todos.ts</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> TodosContentItemComponent.tsx</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> //</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 컴포넌트에</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 제한이</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 된다면</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Component</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 자체에서</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 명시한다.</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> containers</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> types</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> //</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 다중</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> container</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> type을</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 지정할</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 경우</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> types</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> folder</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> todos.ts</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> RootContainer.tsx</span></span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> TodoContentContainer.tsx</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> //</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 컨테이너에</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 제한이</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 된다면</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Container</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 자체에서</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 명시한다.</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> TodosContentItemComponent.tsx</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> //</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> if</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> it's limited to a component, declare it in the Component itself.</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┣ containers</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┃ ┣ types // types folder when defining types for multiple containers</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┃ ┃ ┗ todos.ts</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┃ ┣ RootContainer.tsx</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┃ ┗ TodoContentContainer.tsx // if it's</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> limited</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> to</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> a</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> container,</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> declare</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> it</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> in</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> the</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Container</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> itself.</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> services</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┣</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> __test__</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> todo.service.tsx</span></span>
@@ -45,7 +45,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> index.ts</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> types</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ┃</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ┗</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> index.ts</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> //</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> root</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> path</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> types</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> folder</span></span></code></pre></figure>
-<p>참고페이지</p>
+<p>Reference pages</p>
 <ul>
 <li><a href="https://github.com/react-hook-form/react-hook-form/tree/master/src/types">https://github.com/react-hook-form/react-hook-form/tree/master/src/types</a></li>
 <li><a href="https://github.com/mobxjs/mobx/blob/main/packages/mobx/flow-typed/mobx.js">https://github.com/mobxjs/mobx/blob/main/packages/mobx/flow-typed/mobx.js</a></li>
@@ -70,51 +70,51 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  tier</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <ul>
-<li>어떤 상황일 때 type, interface로 사용할 지 여부를 결정해보자!!
+<li>Let's decide when to use type versus interface!!
 <ul>
-<li>lastest 버전의 tslint에서 가이드를 제공해주고 있다.
+<li>The latest version of tslint provides a guide for this.
 <ul>
 <li>Use an interface instead of a type literal.tslint(interface-over-type-literal)
 <ul>
-<li>타입은 리터럴 타입에서만 사용하고 Object 형태의 타입은 인터페이스를 쓰라는 가이드가 추가되었습니다.</li>
+<li>A guide was added recommending that you use type only for literal types and use interfaces for Object-shaped types.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><strong>리터럴 타입(즉, primitive type, custom value)외에는 interface를 사용해 봅시다.</strong></li>
-<li>참고페이지: <a href="https://luckyyowu.tistory.com/401">https://luckyyowu.tistory.com/401</a></li>
+<li><strong>Let's use interfaces for everything except literal types (i.e., primitive types, custom values).</strong></li>
+<li>Reference page: <a href="https://luckyyowu.tistory.com/401">https://luckyyowu.tistory.com/401</a></li>
 </ul>
 </li>
 </ul>
-<p><strong>동일한점</strong></p>
+<p><strong>Similarities</strong></p>
 <ul>
-<li>명명된 타입은 Type, Interface 동일하게 사용됨</li>
-<li>인덱스 시그니처 사용 가능</li>
-<li>함수 타입 선언 가능</li>
-<li>제네릭 사용가능</li>
-<li>확장 가능
+<li>Named types are used the same way for both Type and Interface</li>
+<li>Index signatures can be used</li>
+<li>Function types can be declared</li>
+<li>Generics can be used</li>
+<li>Both can be extended
 <ul>
-<li>interface는 extends 키워드로 type은 &#x26; 로 확장</li>
+<li>interface extends with the extends keyword, while type extends with &#x26;</li>
 </ul>
 </li>
 </ul>
-<p><strong>다른점</strong></p>
+<p><strong>Differences</strong></p>
 <ul>
 <li>
-<p>유니온 타입</p>
+<p>Union types</p>
 <ul>
-<li>Type으로는 가능 하지만, Interface는 할 수 없음
+<li>Possible with Type, but not with Interface
 <ul>
 <li>type yesOrNo = ‘yes’ | ‘no’</li>
 </ul>
 </li>
-<li>유니온 타입을 확장하고 싶을때 interface로는 안됨</li>
+<li>You cannot extend a union type with an interface</li>
 </ul>
 </li>
 <li>
-<p>튜플과 배열 타입</p>
+<p>Tuple and array types</p>
 <ul>
-<li>type : 사용하기 쉽고 확장이 편함, interface: 다소 복잡하고 불편함</li>
+<li>type: easy to use and convenient to extend; interface: somewhat complicated and inconvenient</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Pair</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">number</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">number</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> StringList</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[];</span></span>
@@ -128,9 +128,9 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> t</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Tuple</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">10</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">20</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span></span></code></pre></figure>
 </li>
 <li>
-<p>보강 augment 기능:</p>
+<p>Augmentation feature:</p>
 <ul>
-<li>인터페이스에만 있는 기능으로 속성을 추가할 수 있음.</li>
+<li>A feature available only in interfaces, allowing you to add properties.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">interface</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> IState</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -139,7 +139,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">interface</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> IState</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  population</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> number</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 이렇게 하면 name, capital, population 세개를 모두 포함하게 됨</span></span></code></pre></figure>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// doing this makes it include all three: name, capital, and population</span></span></code></pre></figure>
 </li>
 </ul>
 <h2 id="reactfc-vs-function-component">React.FC vs Function Component<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reactfc-vs-function-component"><span class="icon icon-link"></span></a></h2>
@@ -148,7 +148,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// React.FC(0)</span></span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// defaultprops 동작하지 않음(</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// defaultprops does not work(</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> PrintName</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> React</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">FC</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Props</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">> </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ''</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
@@ -169,20 +169,20 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">PrintName2.defaultProps </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">''</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
-<p><strong>React.FC 의 장단점</strong></p>
+<p><strong>Pros and cons of React.FC</strong></p>
 <ul>
-<li>장점
+<li>Pros
 <ul>
-<li>props 에 기본적으로 children 이 들어가 있다는 것 있음
+<li>props includes children by default
 <img src="/blog-assets/2022/01/assets/16/Untitled.png" alt="Untitled"></li>
-<li>defaultProps, propTypes, contextTypes 를 설정 할 때 자동완성 됨
+<li>You get autocompletion when setting defaultProps, propTypes, and contextTypes
 <img src="/blog-assets/2022/01/assets/16/Untitled1.png" alt="Untitled"></li>
 </ul>
 </li>
-<li>단점
+<li>Cons
 <ul>
-<li>children이 무조건 들어가 있기 때문에 타입이 명백하지 않음</li>
-<li>defaultProps 동작하지 않음</li>
+<li>Because children is always included, the type isn't explicit</li>
+<li>defaultProps does not work</li>
 </ul>
 </li>
 </ul>
@@ -194,19 +194,19 @@ b:"$Sreact.suspense"
 
 </code></pre>
 <ul>
-<li>참고페이지: <a href="https://velog.io/@velopert/create-typescript-react-component">https://velog.io/@velopert/create-typescript-react-component</a></li>
+<li>Reference page: <a href="https://velog.io/@velopert/create-typescript-react-component">https://velog.io/@velopert/create-typescript-react-component</a></li>
 </ul>
-<h2 id="typescript-공식페이지-dos-and-donts-가이드">typescript 공식페이지: Do's and Don'ts 가이드<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#typescript-공식페이지-dos-and-donts-가이드"><span class="icon icon-link"></span></a></h2>
+<h2 id="typescript-official-page-dos-and-donts-guide">TypeScript official page: Do's and Don'ts guide<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#typescript-official-page-dos-and-donts-guide"><span class="icon icon-link"></span></a></h2>
 <p><strong>General Types</strong></p>
 <ul>
 <li>Don’t
 <ul>
-<li>Number, String, Boolean 또는 Object 타입을 절대 사용하지 마라. 이 타입들은 JavaScript 코드에서 대부분 적절하지 않게 사용되는 non-primitive boxed object1들을 의미한다.</li>
+<li>Never use the Number, String, Boolean, or Object types. These types refer to non-primitive boxed objects that are almost never used appropriately in JavaScript code.</li>
 </ul>
 </li>
 <li>Do
 <ul>
-<li>number, string 그리고 boolean을 사용하라.</li>
+<li>Use number, string, and boolean.</li>
 </ul>
 </li>
 </ul>
@@ -221,12 +221,12 @@ function reverse(s: string): string;
 <ul>
 <li>Don’t
 <ul>
-<li>값이 무시될 콜백의 리턴타입으로 any를 사용하지 마라.</li>
+<li>Don't use any as the return type of a callback whose value will be ignored.</li>
 </ul>
 </li>
 <li>Do
 <ul>
-<li>값이 무시될 콜백의 리턴타입으로 void를 사용하라.</li>
+<li>Use void as the return type of a callback whose value will be ignored.</li>
 </ul>
 </li>
 </ul>
@@ -240,7 +240,7 @@ function fn(x: () => void) {
   x();
 }
 
-// 이유는? 확인되지 않는 방법으로 x의 리턴타입을 사용하는 실수를 방지해주기 때문에 void를 사용하는 것이 더 안전하다.
+// Why? Because using void is safer as it prevents the mistake of using x's return type in an unverified way.
 function fn(x: () => void) {
   var k = x(); // oops! meant to do something else
   k.doSomething(); // error, but would be OK if the return type had been 'any'
@@ -251,12 +251,12 @@ function fn(x: () => void) {
 <ul>
 <li>Don’t
 <ul>
-<li>더 구체적인 시그니처 전에 일반적인 시그니처를 두지 마라.</li>
+<li>Don't put a general signature before a more specific one.</li>
 </ul>
 </li>
 <li>Do
 <ul>
-<li>더 구체적인 시그니처 다음에 일반적인 시그니처를 두도록 정렬하라.</li>
+<li>Order signatures so that the general signature comes after the more specific ones.</li>
 </ul>
 </li>
 </ul>
@@ -278,12 +278,12 @@ var x = fn(myElem); // x: string, :)
 <ul>
 <li>Don’t
 <ul>
-<li>뒤에 나오는 매개변수들만 다른 경우 여러 시그니처를 작성하지 마라.</li>
+<li>Don't write multiple signatures that differ only in trailing parameters.</li>
 </ul>
 </li>
 <li>Do
 <ul>
-<li>가능한 경우에는 선택적 매개변수를 사용하라.</li>
+<li>Use optional parameters whenever possible.</li>
 </ul>
 </li>
 </ul>
@@ -299,17 +299,17 @@ interface Example {
   diff(one: string, two?: string, three?: boolean): number;
 }
 </code></pre>
-<p>이 방법은 모든 시그니처의 리턴타입이 같은 경우에만 가능하다는 것을 주의!!</p>
+<p>Note that this approach is only possible when all signatures have the same return type!!</p>
 <h4 id="use-union-types">Use Union Types<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#use-union-types"><span class="icon icon-link"></span></a></h4>
 <ul>
 <li>Don’t
 <ul>
-<li>오직 하나의 매개변수 타입이 다른 경우에는 오버로딩을 사용하지 마라.</li>
+<li>Don't use overloading when only one parameter type differs.</li>
 </ul>
 </li>
 <li>Do
 <ul>
-<li>가능한 경우에는 유니온 타입을 사용하라.</li>
+<li>Use union types whenever possible.</li>
 </ul>
 </li>
 </ul>
@@ -328,7 +328,7 @@ interface Moment {
 </code></pre>
 <ul>
 <li>
-<p>참고페이지:</p>
+<p>Reference pages:</p>
 <ul>
 <li><a href="https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html">https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html</a></li>
 <li><a href="https://nukeguys.github.io/dev/ts-do-and-dont/">https://nukeguys.github.io/dev/ts-do-and-dont/</a></li>
@@ -336,16 +336,16 @@ interface Moment {
 </li>
 </ul>
 <h2 id="type-assertion">type assertion<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#type-assertion"><span class="icon icon-link"></span></a></h2>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 속성이 하나도 없는 빈 객체로 타입 추론이 되기 때문..</span></span>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// because it's inferred as an empty object with no properties..</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> foo </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {};</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">foo.bar </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 123</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 오류: 속성 'bar'가 `{}`에 존재하지 않음</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">foo.bas </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'hello'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 오류: 속성 'bar'가 `{}`에 존재하지 않음</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">foo.bar </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 123</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// error: property 'bar' does not exist on `{}`</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">foo.bas </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'hello'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// error: property 'bar' does not exist on `{}`</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">interface</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Foo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  bar</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> number</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  bas</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
-<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> foo </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">as</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Foo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// type assertion(타입 표명) 해결</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> foo </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">as</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Foo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// resolved with type assertion</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">foo.bar </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 123</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">foo.bas </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'hello'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
 <h2 id="interface">interface<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#interface"><span class="icon icon-link"></span></a></h2>
@@ -379,7 +379,7 @@ interface Moment {
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  test: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'test3'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">params.test </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'test4'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// error!</span></span></code></pre></figure>
-<h2 id="type-aliases타입-별칭">type-aliases(타입 별칭)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#type-aliases타입-별칭"><span class="icon icon-link"></span></a></h2>
+<h2 id="type-aliases">type-aliases<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#type-aliases"><span class="icon icon-link"></span></a></h2>
 <p><strong>generic</strong></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Developer</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -389,37 +389,37 @@ interface Moment {
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> typeGeneric</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">T</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">> </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> T</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
-<p>타입 별칭은 새로운 타입 값을 하나 생성하는 것이 아니라 정의한 타입에 대해 개발자가 쉽게 관찰하도록 이름을 부여하는 것과 같습니다.
-그래서 interface를 정의하고 커서를 hover하면 interface xx 이렇게 나오지만 type은 type xx = {xx: xx}이렇게 상세하게 나오게 됩니다.
-확장</p>
+<p>A type alias doesn't create a brand-new type value; rather, it's like giving a name to a defined type so that developers can observe it more easily.
+That's why when you define an interface and hover the cursor over it, it shows <code>interface xx</code>, whereas a type shows it in detail as <code>type xx = {xx: xx}</code>.
+Extension</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> test1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> };</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> test2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> test1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> &#x26;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">age</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> number</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> };</span></span></code></pre></figure>
-<p>속성 제거</p>
+<p>Removing properties</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> XYZ</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  x</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> number</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  y</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> number</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  z</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> number</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// y, z 속성을 제외하여 아래처럼 만들고 싶다</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// suppose we want to exclude the y and z properties to make it look like below</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> X</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">x</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> number</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> };</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ts 3.5 이상은 omit</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ts 3.5 and above use omit</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> X</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Omit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">XYZ</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'x'</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'y'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span></code></pre></figure>
-<h2 id="nullundefined">null,undefined<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nullundefined"><span class="icon icon-link"></span></a></h2>
-<p><strong>접미 ! : 연산자인 단언 연산자는 해당 피연산자가 null, undeifned가 아니라고 단언</strong></p>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">this</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.todosStore </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> props.store</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">!</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 접미에 붙는 느낌표(!) 연산자인 단언 연산자는 해당 피연산자가 null, undeifned가 아니라고 단언</span></span></code></pre></figure>
-<p><strong>옵셔널체이닝</strong></p>
+<h2 id="null-undefined">null, undefined<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#null-undefined"><span class="icon icon-link"></span></a></h2>
+<p><strong>The postfix ! : the assertion operator asserts that the operand is not null or undefined</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">this</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.todosStore </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> props.store</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">!</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// the postfix exclamation mark (!) assertion operator asserts that the operand is not null or undefined</span></span></code></pre></figure>
+<p><strong>Optional chaining</strong></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> deathsList</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> $</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'.deaths-list'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">deathsList?.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">appendChild</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(li);</span></span></code></pre></figure>
-<p><strong>타입 단언 사용 (type assertion)</strong></p>
+<p><strong>Using type assertion</strong></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> deathsList</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> $</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'.deaths-list'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">deathsList</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">!</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.innerHTML </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> null</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 타입 단언 ! 사용</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">deathsList</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">!</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.innerHTML </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> null</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// using the type assertion !</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 또는 as를 이용해 강제로 타입을 주입하여 null이 아니라는 것을 ts에게 알려줍니다.</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// or use as to forcibly inject the type, telling ts that it's not null.</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> deathsList</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> $</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'.deaths-list'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">as</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> HTMLDivElement</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">deathsList.innerHTML </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> null</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 타입 단언 ! 사용</span></span></code></pre></figure>
-<p><strong>if문으로 null 걸러냄</strong></p>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">deathsList.innerHTML </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> null</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// using the type assertion !</span></span></code></pre></figure>
+<p><strong>Filtering out null with an if statement</strong></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> deathsList</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> $</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'.deaths-list'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">!</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">deathsList) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -427,7 +427,7 @@ interface Moment {
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">deathsList.innerHTML </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> null</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
 <h2 id="utility-type">utility type<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#utility-type"><span class="icon icon-link"></span></a></h2>
 <h3 id="partial">Partial<t></t><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#partial"><span class="icon icon-link"></span></a></h3>
-<pre><code>특정 타입의 부분 집합을 만족하는 타입을 정의할 수 있습니다.
+<pre><code>Lets you define a type that satisfies a subset of a specific type.
 
 ```tsx
 interface Address {
@@ -436,13 +436,13 @@ interface Address {
 }
 
 type MyEmail = Partial&#x3C;Address>;
-const me: MyEmail = {}; // 가능
-const you: MyEmail = { email: 'gmm117@naver.com' }; // 가능
-const all: MyEmail = { email: 'gmm117@naver.com', address: 'seoul' }; // 가능
+const me: MyEmail = {}; // allowed
+const you: MyEmail = { email: 'gmm117@naver.com' }; // allowed
+const all: MyEmail = { email: 'gmm117@naver.com', address: 'seoul' }; // allowed
 ```
 </code></pre>
 <h3 id="excludet-u">Exclude&#x3C;T, U><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#excludet-u"><span class="icon icon-link"></span></a></h3>
-<pre><code>T에서 U에 할당할 수 있는 교집합 속성을 제외한 타입을 구성합니다.
+<pre><code>Constructs a type by excluding from T the intersecting properties that are assignable to U.
 ```tsx
 type T0 = Exclude&#x3C;'a' | 'b' | 'c', 'a'>; // "b" | "c"
 type T1 = Exclude&#x3C;'a' | 'b' | 'c', 'a' | 'b'>; // "c"
@@ -450,21 +450,21 @@ type T2 = Exclude&#x3C;string | number | (() => void), Function>; // string | nu
 ```
 </code></pre>
 <h3 id="extractt-u">Extract&#x3C;T, U><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#extractt-u"><span class="icon icon-link"></span></a></h3>
-<pre><code>T에서 U에 할당 할 수 있는 교집합 속성을 추출하여 타입을 구성합니다.
+<pre><code>Constructs a type by extracting from T the intersecting properties that are assignable to U.
 ```tsx
 type T0 = Extract&#x3C;'a' | 'b' | 'c', 'a' | 'f'>; // "a"
 type T1 = Extract&#x3C;string | number | (() => void), Function>; // () => void
 ```
 </code></pre>
 <h3 id="nonnullable">NonNullable<t></t><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nonnullable"><span class="icon icon-link"></span></a></h3>
-<pre><code>T에서 null 과 undefined를 제외한 타입을 구성합니다.
+<pre><code>Constructs a type by excluding null and undefined from T.
 ```tsx
 type T0 = NonNullable&#x3C;string | number | undefined>; // string | number
 type T1 = NonNullable&#x3C;string[] | null | undefined>; // string[]
 ```
 </code></pre>
 <h3 id="readonly">Readonly<t></t><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#readonly"><span class="icon icon-link"></span></a></h3>
-<pre><code>T의 모든 프로퍼티를 읽기 전용(readonly)으로 설정한 타입을 구성합니다, 즉 생성된 타입의 프로퍼티는 재할당할 수 없습니다.
+<pre><code>Constructs a type with all properties of T set to readonly, meaning the properties of the resulting type cannot be reassigned.
 
 ```tsx
 interface Todo {
@@ -475,11 +475,11 @@ const todo: Readonly&#x3C;Todo> = {
   title: 'Delete inactive users',
 };
 
-todo.title = 'Hello'; // 오류: 읽기 전용 프로퍼티에 재할당할 수 없음
+todo.title = 'Hello'; // error: cannot reassign a read-only property
 ```
 </code></pre>
 <h3 id="pick">Pick<t></t><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pick"><span class="icon icon-link"></span></a></h3>
-<pre><code>특정 타입에서 몇 개의 속성을 선택하여 타입을 정의합니다
+<pre><code>Defines a type by selecting a few properties from a specific type
 
 ```tsx
 interface Address {
@@ -488,11 +488,11 @@ interface Address {
 }
 
 type MyEmail = Pick&#x3C;Address, 'email'>;
-// email 속성 일부만 사용
+// uses only part of it, the email property
 ```
 </code></pre>
 <h3 id="omit">Omit<t></t><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#omit"><span class="icon icon-link"></span></a></h3>
-<pre><code>특정 속성만 제거한 타입을 정의(pick 반대)
+<pre><code>Defines a type with certain properties removed (the opposite of pick)
 
 ```tsx
 interface Address {
@@ -501,11 +501,11 @@ interface Address {
 }
 
 type MyEmail = Omit&#x3C;Address, 'address'>;
-// address 속성을 제거
+// removes the address property
 ```
 </code></pre>
 <h3 id="returntype">ReturnType<t></t><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#returntype"><span class="icon icon-link"></span></a></h3>
-<pre><code>함수 T의 반환 타입으로 구성된 타입을 만듭니다.
+<pre><code>Constructs a type consisting of the return type of function T.
 ```tsx
 declare function f1(): { a: number; b: string };
 type T0 = ReturnType&#x3C;() => string>; // string
@@ -520,7 +520,7 @@ type T6 = ReturnType&#x3C;never>; // any
 <ul>
 <li>
 <p>InstanceType<t>
-생성자 함수 타입 T의 인스턴스 타입으로 구성된 타입을 만듭니다.</t></p>
+Constructs a type consisting of the instance type of a constructor function type T.</t></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">class</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> C</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  x</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  y</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -532,28 +532,28 @@ type T6 = ReturnType&#x3C;never>; // any
 </li>
 <li>
 <p>Required<t>
-T의 모든 프로퍼티가 필수로 설정된 타입을 구성합니다.</t></p>
+Constructs a type with all properties of T set to required.</t></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">interface</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Props</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  a</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">?:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> number</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  b</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">?:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> obj</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Props</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { a: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 성공</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> obj</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Props</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { a: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// succeeds</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> obj2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Required</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Props</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">> </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { a: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 오류: 프로퍼티 'b'가 없습니다</span></span></code></pre></figure>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> obj2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Required</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Props</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">> </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { a: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// error: property 'b' is missing</span></span></code></pre></figure>
 </li>
 </ul>
-<h2 id="tsconfig-필수옵션-지정해보자">tsconfig 필수옵션 지정해보자<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#tsconfig-필수옵션-지정해보자"><span class="icon icon-link"></span></a></h2>
-<p>strictNullChecks option 킬 경우</p>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 컴파일러 옵션에서 --strictNullChecks 을 꺼둔 경우는 null과 undefined는 각각 다른 타입의 값으로 사용할 수 있습니다.</span></span>
+<h2 id="lets-specify-the-essential-tsconfig-options">Let's specify the essential tsconfig options<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#lets-specify-the-essential-tsconfig-options"><span class="icon icon-link"></span></a></h2>
+<p>When the strictNullChecks option is on</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// when --strictNullChecks is turned off in the compiler options, null and undefined can each be used as values of different types.</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"compilerOptions"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    "strictNullChecks"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> a</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> null</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> null</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
-<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> b</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> a; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// strictNullChecks를 켜둔 경우에러</span></span></code></pre></figure>
-<p>noImplicitAny option 킬 경우</p>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 타입을 명시적으로 지정하지 않은경우, 타입스크립트가 추론을 'any'라고 판단하게 되면 컴파일 에러가 발생한다.</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> b</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> string</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> a; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// error when strictNullChecks is turned on</span></span></code></pre></figure>
+<p>When the noImplicitAny option is on</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// if a type is not explicitly specified and TypeScript infers it as 'any', a compile error occurs.</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"compilerOptions"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    "noImplicitAny"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
@@ -564,26 +564,26 @@ T의 모든 프로퍼티가 필수로 설정된 타입을 구성합니다.</t></
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> a</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">38</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
-<p>noImplicitReturns option 킬 경우</p>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 함수 내에서 모든 코드가 값을 리턴하지 않으면, 컴파일 에러를 발생시킨다.</span></span>
+<p>When the noImplicitReturns option is on</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// if not all code paths within a function return a value, a compile error is raised.</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"compilerOptions"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    "noImplicitReturns"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 모든 코드에서 리턴을 직접해야한다.</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// you must explicitly return in all code paths.</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// error TS7030: Not all code paths returns a value</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> f5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">a</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(a </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> a</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">38</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
-<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<h2 id="reference-pages">Reference pages<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reference-pages"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li><a href="https://radlohead.gitbook.io/typescript-deep-dive/type-system/type-assertion">https://radlohead.gitbook.io/typescript-deep-dive/type-system/type-assertion</a></li>
 <li><a href="https://typescript-kr.github.io/pages/utility-types.html#readonlyt">https://typescript-kr.github.io/pages/utility-types.html#readonlyt</a></li>
-</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"typescript"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"typescript"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-01-16","className":"meta-mono","children":"01/16/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[5,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","typescript",{"children":["$","$L3",null,{"href":"/en/tags?tag=typescript","className":"tag-pill","children":"typescript"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
-5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2022-01-10-RxJS","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"RxJS"}]]}],["$","$L3",null,{"href":"/en/posts/2022-02-13-react17","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"react17"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"타입스크립트는-왜-사용해야하는-걸까","text":"타입스크립트는 왜 사용해야하는 걸까??","depth":1},{"id":"타입스크립트-디렉토리-구조","text":"타입스크립트 디렉토리 구조","depth":1},{"id":"interface-vs-type","text":"interface vs type","depth":1},{"id":"reactfc-vs-function-component","text":"React.FC vs Function Component","depth":1},{"id":"typescript-공식페이지-dos-and-donts-가이드","text":"typescript 공식페이지: Do's and Don'ts 가이드","depth":1},{"id":"use-union-types","text":"Use Union Types","depth":3},{"id":"type-assertion","text":"type assertion","depth":1},{"id":"interface","text":"interface","depth":1},{"id":"type-aliases타입-별칭","text":"type-aliases(타입 별칭)","depth":1},{"id":"nullundefined","text":"null,undefined","depth":1},{"id":"utility-type","text":"utility type","depth":1},{"id":"partial","text":"Partial","depth":2},{"id":"excludet-u","text":"Exclude<T, U>","depth":2},{"id":"extractt-u","text":"Extract<T, U>","depth":2},{"id":"nonnullable","text":"NonNullable","depth":2},{"id":"readonly","text":"Readonly","depth":2},{"id":"pick","text":"Pick","depth":2},{"id":"omit","text":"Omit","depth":2},{"id":"returntype","text":"ReturnType","depth":2},{"id":"tsconfig-필수옵션-지정해보자","text":"tsconfig 필수옵션 지정해보자","depth":1},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"Contents"}]}]
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"typescript"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"typescript"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-01-16","className":"meta-mono","children":"01/16/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[5,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","typescript",{"children":["$","$L3",null,{"href":"/en/tags?tag=typescript","className":"tag-pill","children":"typescript"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
+5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2022-01-10-RxJS","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"RxJS"}]]}],["$","$L3",null,{"href":"/en/posts/2022-02-13-react17","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"React 17"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"why-should-we-use-typescript","text":"Why should we use TypeScript?","depth":1},{"id":"typescript-directory-structure","text":"TypeScript directory structure","depth":1},{"id":"interface-vs-type","text":"interface vs type","depth":1},{"id":"reactfc-vs-function-component","text":"React.FC vs Function Component","depth":1},{"id":"typescript-official-page-dos-and-donts-guide","text":"TypeScript official page: Do's and Don'ts guide","depth":1},{"id":"use-union-types","text":"Use Union Types","depth":3},{"id":"type-assertion","text":"type assertion","depth":1},{"id":"interface","text":"interface","depth":1},{"id":"type-aliases","text":"type-aliases","depth":1},{"id":"null-undefined","text":"null, undefined","depth":1},{"id":"utility-type","text":"utility type","depth":1},{"id":"partial","text":"Partial","depth":2},{"id":"excludet-u","text":"Exclude<T, U>","depth":2},{"id":"extractt-u","text":"Extract<T, U>","depth":2},{"id":"nonnullable","text":"NonNullable","depth":2},{"id":"readonly","text":"Readonly","depth":2},{"id":"pick","text":"Pick","depth":2},{"id":"omit","text":"Omit","depth":2},{"id":"returntype","text":"ReturnType","depth":2},{"id":"lets-specify-the-essential-tsconfig-options","text":"Let's specify the essential tsconfig options","depth":1},{"id":"reference-pages","text":"Reference pages","depth":1}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

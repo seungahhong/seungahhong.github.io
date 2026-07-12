@@ -4,27 +4,27 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T15818,<h2 id="개요">개요<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#개요"><span class="icon icon-link"></span></a></h2>
-<p>CORS(교차 출처 리소스 공유)는 다른 출처(origin:프로토콜, 호스트, 포트)출처의 자원을 접근할 수 있도록 알려주는 것을 것을 뜻한다.</p>
-<p>다른 출처의 리소스를 불러올 때 올바를 CORS 헤더를 포함하지 않는다면 접근이 제한됨을 뜻합니다.</p>
+4:T1539d,<h2 id="overview">Overview<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#overview"><span class="icon icon-link"></span></a></h2>
+<p>CORS (Cross-Origin Resource Sharing) is a mechanism that tells the browser whether it is allowed to access resources from a different origin (origin: protocol, host, port).</p>
+<p>When you load a resource from a different origin, access is restricted unless the correct CORS headers are included.</p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled.png" alt="Untitled"></p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled1.png" alt="Untitled"></p>
-<h2 id="cors-사용-사례">CORS 사용 사례<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cors-사용-사례"><span class="icon icon-link"></span></a></h2>
+<h2 id="cors-use-cases">CORS Use Cases<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cors-use-cases"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li><a href="https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a>와 <a href="https://developer.mozilla.org/ko/docs/Web/API/Fetch_API">Fetch API</a> 호출.</li>
-<li>웹 폰트(CSS 내 @font-face에서 교차 도메인 폰트 사용 시), <a href="https://www.w3.org/TR/css-fonts-3/#font-fetching-requirements">so that servers can deploy TrueType fonts that can only be cross-site loaded and used by web sites that are permitted to do so.</a></li>
-<li><a href="https://developer.mozilla.org/ko/docs/Web/API/WebGL_API/Tutorial/Using_textures_in_WebGL">WebGL 텍스쳐</a>.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage">drawImage() (en-US)</a>를 사용해 캔버스에 그린 이미지/비디오 프레임.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_shapes/Shapes_from_images">이미지로부터 추출하는 CSS Shapes. (en-US)</a></li>
+<li><a href="https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a> and <a href="https://developer.mozilla.org/ko/docs/Web/API/Fetch_API">Fetch API</a> calls.</li>
+<li>Web fonts (when using cross-domain fonts via @font-face in CSS), <a href="https://www.w3.org/TR/css-fonts-3/#font-fetching-requirements">so that servers can deploy TrueType fonts that can only be cross-site loaded and used by web sites that are permitted to do so.</a></li>
+<li><a href="https://developer.mozilla.org/ko/docs/Web/API/WebGL_API/Tutorial/Using_textures_in_WebGL">WebGL textures</a>.</li>
+<li>Images/video frames drawn onto a canvas using <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage">drawImage() (en-US)</a>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_shapes/Shapes_from_images">CSS Shapes extracted from images. (en-US)</a></li>
 </ul>
-<h2 id="간단하게-재현해보자다른-출처-get-메서드">간단하게 재현해보자(다른 출처 GET 메서드)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#간단하게-재현해보자다른-출처-get-메서드"><span class="icon icon-link"></span></a></h2>
+<h2 id="lets-reproduce-it-simply-cross-origin-get-method">Let's Reproduce It Simply (Cross-Origin GET Method)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#lets-reproduce-it-simply-cross-origin-get-method"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li>서버를 4000, 4001 포트로 해서 2개를 띄운 이후에 <a href="http://localhost:3000/cors">http://localhost:3000/cors</a> 호출한다면 html 파일에서 <a href="http://localhost:4001/response.json">http://localhost:4001/response.json</a> 호출하게 되고 동일 출처가 아니라서 아래 이미지와 같이 CORS에러가 발생합니다.</li>
-<li>브라우저는 교차 출처에 리소스 자원 허용을 확인하기 위해서는 서버 응답에 Access-Control-Allow-Origin 속성값을 확인하게 되는데, 아래 응답 헤더에서는 따로 허용 출처가 없기 때문에 CORS가 발생하게 됩니다.</li>
+<li>If you run two servers on ports 4000 and 4001, and then call <a href="http://localhost:3000/cors">http://localhost:3000/cors</a>, the HTML file calls <a href="http://localhost:4001/response.json">http://localhost:4001/response.json</a>. Because these are not the same origin, a CORS error occurs as shown in the image below.</li>
+<li>To determine whether a cross-origin resource is allowed, the browser checks the Access-Control-Allow-Origin attribute value in the server's response. Since the response headers below do not include any allowed origin, a CORS error occurs.</li>
 </ul>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled2.png" alt="Untitled"></p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled3.png" alt="Untitled"></p>
-<p><strong>GET 호출</strong></p>
+<p><strong>GET call</strong></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// public/cross-origin/index.html</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;!</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">DOCTYPE</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> html</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">html</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> lang</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"en"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
@@ -96,26 +96,26 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">server.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">listen</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(port, () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`Server Start Listening on port ${</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">port</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">}`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
-<h2 id="simple-requests단순요청">Simple requests(단순요청)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#simple-requests단순요청"><span class="icon icon-link"></span></a></h2>
+<h2 id="simple-requests">Simple requests<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#simple-requests"><span class="icon icon-link"></span></a></h2>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled4.png" alt="Untitled"></p>
-<p>위에 예제처럼 교차 출처(origin) 속성만 브라우저가 확인하는 요청을 단순요청이라고 하며, 일부 요청은 <a href="https://developer.mozilla.org/ko/docs/Glossary/Preflight_request">CORS preflight</a> 트리거를 하지 않습니다. 해당 단순 요청은 아래 조건을 모두 충족하는 요청입니다.</p>
+<p>As in the example above, a request for which the browser only checks the cross-origin attribute is called a simple request, and some requests do not trigger a <a href="https://developer.mozilla.org/ko/docs/Glossary/Preflight_request">CORS preflight</a>. A simple request is one that satisfies all of the conditions below.</p>
 <ul>
-<li>다음 중 하나의 메서드
+<li>One of the following methods
 <ul>
 <li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/GET">GET</a></li>
 <li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/HEAD">HEAD</a></li>
 <li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/POST">POST</a></li>
 </ul>
 </li>
-<li>유저 에이전트가 자동으로 설정 한 헤더 (예를들어, <a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Connection">Connection</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent">User-Agent (en-US)</a>, <a href="https://fetch.spec.whatwg.org/#forbidden-header-name">Fetch 명세에서 "forbidden header name"으로 정의한 헤더</a>)외에, 수동으로 설정할 수 있는 헤더는 오직 <a href="https://fetch.spec.whatwg.org/#cors-safelisted-request-header">Fetch 명세에서 "CORS-safelisted request-header"로 정의한 헤더</a> 뿐입니다.
+<li>Apart from the headers automatically set by the user agent (for example, <a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Connection">Connection</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent">User-Agent (en-US)</a>, and <a href="https://fetch.spec.whatwg.org/#forbidden-header-name">the headers defined as "forbidden header name" in the Fetch spec</a>), the only headers that may be set manually are <a href="https://fetch.spec.whatwg.org/#cors-safelisted-request-header">those defined as "CORS-safelisted request-header" in the Fetch spec</a>.
 <ul>
 <li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Accept">Accept</a></li>
 <li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Accept-Language">Accept-Language</a></li>
 <li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Content-Language">Content-Language</a></li>
-<li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Content-Type">Content-Type</a> (아래의 추가 요구 사항에 유의하세요.)</li>
+<li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Content-Type">Content-Type</a> (note the additional requirements below.)</li>
 </ul>
 </li>
-<li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Content-Type">Content-Type</a> 헤더는 다음의 값들만 허용됩니다.
+<li>The <a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Content-Type">Content-Type</a> header allows only the following values.
 <ul>
 <li>application/x-www-form-urlencoded</li>
 <li>multipart/form-data</li>
@@ -123,8 +123,8 @@ b:"$Sreact.suspense"
 </ul>
 </li>
 </ul>
-<p><strong>해결방안</strong></p>
-<p>서버는 자원을 제공하는 출처를 Access-Control-Allow-Origin 설정해서 클라이언트에 응답으로 보내주게 되며, 브라우저가 허용 출처 주소를 확인해서 서버 자원 사용이 가능하게 됩니다.</p>
+<p><strong>Solution</strong></p>
+<p>The server sends the origin that is allowed to use the resource back to the client via Access-Control-Allow-Origin, and the browser checks the allowed origin address so that it can use the server's resource.</p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled5.png" alt="Untitled"></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// public/cross-origin/index_post.html</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;!</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">DOCTYPE</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> html</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span></span>
@@ -168,24 +168,24 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      },</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    });</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span></code></pre></figure>
-<h2 id="사전-전달-요청preflight-request">사전 전달 요청(Preflight request)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#사전-전달-요청preflight-request"><span class="icon icon-link"></span></a></h2>
-<p><strong>안전하지 않은 요청</strong></p>
-<p>과거에는 GET, POST 외에는 브라우저에서 API 요청을 보낼 거라고 생각을 못했었기 때문에, 추후에 등장한 PATCH, DELETE, PUT 같은 메서드 호출 시 브라우저가 보낸 것이 아니라고 판단해서 접근 권한을 확인하게 됩니다. 해당 접근 권한을 확인할 때 사용하는 것이 사전 전달 요청이라고 합니다.</p>
+<h2 id="preflight-request">Preflight request<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#preflight-request"><span class="icon icon-link"></span></a></h2>
+<p><strong>Unsafe requests</strong></p>
+<p>In the past, browsers were not expected to send API requests using anything other than GET and POST. So when later-introduced methods such as PATCH, DELETE, and PUT are called, the browser assumes the request may not have originated from itself and checks the access permission. The mechanism used to check that access permission is called a preflight request.</p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled6.png" alt="Untitled"></p>
-<p>사전 전달 요청이 있는 경우에는 options 메서드를 사용하고 두 헤더가 함께 들어가며, 본문은 비어 있습니다.</p>
-<p>preflight 요청은 OPTIONS 메서드를 사용하고 두 헤더가 함께 들어가며, 본문은 비어있습니다.</p>
+<p>When there is a preflight request, it uses the OPTIONS method, includes two headers, and has an empty body.</p>
+<p>A preflight request uses the OPTIONS method, includes two headers, and has an empty body.</p>
 <ul>
-<li>Access-Control-Request-Method 헤더 – 안전하지 않은 요청에서 사용하는 메서드 정보가 담겨있습니다.</li>
-<li>Access-Control-Request-Headers 헤더 – 안전하지 않은 요청에서 사용하는 헤더 목록이 담겨있습니다. 각 헤더는 쉼표로 구분됩니다.</li>
+<li>Access-Control-Request-Method header – contains the method information used in the unsafe request.</li>
+<li>Access-Control-Request-Headers header – contains the list of headers used in the unsafe request. Each header is separated by a comma.</li>
 </ul>
-<p>안전하지 않은 요청을 허용하기로 협의하였다면 서버는 본문이 비어있고 상태 코드가 200인 응답을 다음과 같은 헤더와 함께 브라우저로 보냅니다.</p>
+<p>If the server agrees to allow the unsafe request, it sends a response with an empty body and status code 200 to the browser, together with headers such as the following.</p>
 <ul>
-<li>Access-Control-Allow-Origin – 요청을 보낸 오리진 이어야 합니다</li>
-<li>Access-Control-Allow-Methods – 허용된 메서드 정보가 담겨있습니다.</li>
-<li>Access-Control-Allow-Headers – 허용된 헤더 목록이 담겨있습니다.</li>
-<li>Access-Control-Max-Age – 퍼미션 체크 여부를 몇 초간 캐싱해 놓을지를 명시합니다. 이렇게 퍼미션 정보를 캐싱해 놓으면 브라우저는 일정 기간 동안 preflight 요청을 생략하고 안전하지 않은 요청을 보낼 수 있습니다.</li>
+<li>Access-Control-Allow-Origin – must be the origin that sent the request.</li>
+<li>Access-Control-Allow-Methods – contains the allowed method information.</li>
+<li>Access-Control-Allow-Headers – contains the list of allowed headers.</li>
+<li>Access-Control-Max-Age – specifies how many seconds the permission check result should be cached. Once the permission information is cached, the browser can skip the preflight request for a certain period and send the unsafe request directly.</li>
 </ul>
-<p>그러면 한번 코드로 확인해볼까요??</p>
+<p>Shall we take a look at the code, then?</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// express server (PORT: 4000, 4001)</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> responseServer</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ({</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  path,</span></span>
@@ -250,15 +250,15 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    document.body.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">appendChild</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(newNode);</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  }</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)();</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
-<p>4001번 포트 서버에서 안전하지 않은 header, methods 요청 시 아래와 같은 두 헤더가 함께 들어가게 되고 서버에서는 해당 요청에 대해서 허용을 위해서는 응답 헤더에 속성값을 추가해서 보내줄 경우에 서버의 자원을 접근할 수 있게 됩니다.</p>
+<p>When the port-4001 server receives an unsafe header or method request, the following two headers are included together. To allow such a request, the server can add attribute values to the response headers, and then the client can access the server's resource.</p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled7.png" alt="Untitled"></p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled8.png" alt="Untitled"></p>
-<p>단, 서버에 응답값을 주지 않을 경우 아래와 같은 CORS 에러가 발생하게 됩니다.</p>
+<p>However, if the server does not return the response value, a CORS error like the one below occurs.</p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled9.png" alt="Untitled"></p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled10.png" alt="Untitled"></p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled11.png" alt="Untitled"></p>
-<p>그렇다면, 서버에서 요청에 대해서 허용하는 코드를 추가할 수 있을까요?? 간단하게 구현된 코드는 아래서 확인이 가능합니다.</p>
-<p>안전하지 않는 header에 대해서는 Access-Control-Allow-Headers 속성의 값으로 추가, method에 대해서는 Access-Control-Allow-Methods 속성의 값으로 추가합니다.</p>
+<p>So, can we add code on the server to allow the request? A simple implementation can be found below.</p>
+<p>For unsafe headers, add them to the value of the Access-Control-Allow-Headers attribute, and for methods, add them to the value of the Access-Control-Allow-Methods attribute.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// express server (PORT: 4000, 4001)</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">responseServer</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  path: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./public/response.json'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
@@ -274,14 +274,14 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    'Access-Control-Allow-Methods'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'PUT, DELETE, PATCH'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
-<h2 id="안전하지-않는-헤더-접근expose-headers">안전하지 않는 헤더 접근(Expose-Headers)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#안전하지-않는-헤더-접근expose-headers"><span class="icon icon-link"></span></a></h2>
-<p>자바스크립트를 사용해 안전하지 않은 응답 헤더에 접근하려면 서버에서 Access-Control-Expose-Headers라는 헤더를 추가해서 보내줘야합니다.</p>
-<p>headers에 추가가 될 경우 클라이언트에서 응답 헤더를 통해서 접근이 가능합니다.</p>
-<p>그렇다면 안전한 헤더는 어떤게 있을까요??</p>
+<h2 id="accessing-unsafe-headers-expose-headers">Accessing Unsafe Headers (Expose-Headers)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#accessing-unsafe-headers-expose-headers"><span class="icon icon-link"></span></a></h2>
+<p>To access unsafe response headers using JavaScript, the server must add and send a header called Access-Control-Expose-Headers.</p>
+<p>Once it is added to the headers, the client can access it through the response headers.</p>
+<p>So, which headers are safe?</p>
 <ul>
 <li>Cache-Control, Content-Language, Content-Length, Content-Type, Expires, Last-Modified, Pragma</li>
 </ul>
-<p>위에 헤더외에 접근에서 대해서는 서버에서 헤더를 추가해줘야지 클라이언트에서 접근이 가능합니다.</p>
+<p>For access to headers other than those above, the server must add the header before the client can access it.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// express server (PORT: 4000, 4001)</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> responseServer</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ({</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    path,</span></span>
@@ -336,11 +336,11 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    document.body.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">appendChild</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(newNode);</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  }</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)();</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">script</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
-<h2 id="자격-증명credential">자격 증명(Credential)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#자격-증명credential"><span class="icon icon-link"></span></a></h2>
-<p>자바스크립트로 크로스 오리진 요청을 보내는 경우, 기본적으로 쿠키나 HTTP 인증 같은 자격 증명(credential)이 함께 전송되지 않기 때문에, 자격 증명 정보를 쿠키에 보내기 위해서는 자격 증명 설정을 header에 추가해서 보내줘야합니다.</p>
-<p>자격 증명도 options에 속성으로 fetch(creidentials: “include”), axios(withCredentials: true) 추가해서 보내주면 됩니다.</p>
-<p>해당 속성에 대한 CORS 대응을 위해서는 서버에서는 Access-Control-Allow-Credentials 속성을 true로 설정해줘야 합니다.</p>
-<p>단, 자격 증명이 함께 전송된는 요청이 있는 경우에는 Access-Control-Allow-Origin 속성값에 와일드 카드(*)를 사용할 수 없습니다.</p>
+<h2 id="credentials">Credentials<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#credentials"><span class="icon icon-link"></span></a></h2>
+<p>When you send a cross-origin request with JavaScript, credentials such as cookies or HTTP authentication are not sent along by default. So to send credential information via cookies, you need to add the credential setting to the header when sending the request.</p>
+<p>For credentials, you can add the corresponding attribute to the options, such as fetch (credentials: "include") or axios (withCredentials: true).</p>
+<p>To handle CORS for this attribute, the server must set the Access-Control-Allow-Credentials attribute to true.</p>
+<p>Note that when there is a request that carries credentials, you cannot use a wildcard (*) as the value of the Access-Control-Allow-Origin attribute.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">async</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> res</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> fetch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'http://localhost:4001/credentials/response.json'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    credentials: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'include'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
@@ -370,11 +370,11 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    'Access-Control-Allow-Credentials'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'true'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
-<p>서버에서 Access-Control-Allow-Credentials 속성을 추가하지 않을 경우 아래와 같은 에러가 발생합니다.</p>
+<p>If the server does not add the Access-Control-Allow-Credentials attribute, the error below occurs.</p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled12.png" alt="Untitled"></p>
-<p>또한, Access-Control-Allow-Credentials 설정 했으나 origin에 와일드카드(*)를 적용된 경우 아래와 같은 에러가 발생합니다.</p>
+<p>Also, if Access-Control-Allow-Credentials is set but a wildcard (*) is applied to the origin, the error below occurs.</p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled13.png" alt="Untitled"></p>
-<p>서버에서는 request 인자를 통해서 호출 출처의 cookie 관련 데이터를 확인할 수 있습니다.</p>
+<p>On the server, you can check the cookie-related data of the calling origin through the request argument.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> server</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createServer</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">function</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  req</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> IncomingMessage</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  res</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ServerResponse</span></span>
@@ -383,9 +383,9 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(req.headers.cookie);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
-<h2 id="캐싱-max-age">캐싱 (Max Age)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#캐싱-max-age"><span class="icon icon-link"></span></a></h2>
-<p>preflight 요청 없이 크로스 오리진 요청을 바로 보낼지에 여부를 초 단위로 설정을 할 수 있습니다.</p>
-<p>설정은 Access-Control-Max-Age 속성의 값을 옵션에 설정할 수 있습니다.</p>
+<h2 id="caching-max-age">Caching (Max Age)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#caching-max-age"><span class="icon icon-link"></span></a></h2>
+<p>You can set, in seconds, whether a cross-origin request can be sent directly without a preflight request.</p>
+<p>This is configured through the value of the Access-Control-Max-Age attribute in the options.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (req.url </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '/'</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ||</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> req.url </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '/response.json'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">  responseServer</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    path: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./public/response.json'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
@@ -404,23 +404,23 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  });</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
-<p>아래 이미지를 보시면 5초 전에 재로딩 할 경우에는 Preflight를 요청하지 않는 것을 확인할 수 있습니다.</p>
+<p>Looking at the image below, you can see that when you reload within 5 seconds, the browser does not send a preflight request.</p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled14.png" alt="Untitled"></p>
 <p><img src="/blog-assets/2024/01/assets/14/Untitled15.png" alt="Untitled"></p>
-<h2 id="예제코드">예제코드<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#예제코드"><span class="icon icon-link"></span></a></h2>
+<h2 id="example-code">Example Code<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#example-code"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li><a href="https://github.com/seungahhong/cors">https://github.com/seungahhong/cors</a></li>
 </ul>
-<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/CORS#%EA%B8%B0%EB%8A%A5%EC%A0%81_%EA%B0%9C%EC%9A%94">교차 출처 리소스 공유 (CORS) - HTTP | MDN</a></li>
 <li><a href="https://youhavetosleep.dev/cors/">CORS</a></li>
 <li><a href="https://junglast.com/blog/http-ajax-withcredential">HTTP Ajax 요청시 사용하는 withCredentials 옵션의 의미</a></li>
 <li><a href="https://ko.javascript.info/fetch-crossorigin">CORS</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/CORS-safelisted_response_header">CORS-safelisted response header - MDN Web Docs Glossary: Definitions of Web-related terms | MDN</a></li>
-</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"CORS(교차 출처 리소스 공유)"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"CORS(교차 출처 리소스 공유)"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2024-01-14","className":"meta-mono","children":"01/14/2024"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[7,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","server",{"children":["$","$L3",null,{"href":"/en/tags?tag=server","className":"tag-pill","children":"server"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"CORS (Cross-Origin Resource Sharing)"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"CORS (Cross-Origin Resource Sharing)"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2024-01-14","className":"meta-mono","children":"01/14/2024"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[7,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","server",{"children":["$","$L3",null,{"href":"/en/tags?tag=server","className":"tag-pill","children":"server"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
 5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2023-11-26-react-hook-form-inside","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"react-hook-form inside code"}]]}],["$","$L3",null,{"href":"/en/posts/2024-01-20-nextjs-v14-migration","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"next14 migration"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"개요","text":"개요","depth":1},{"id":"cors-사용-사례","text":"CORS 사용 사례","depth":1},{"id":"간단하게-재현해보자다른-출처-get-메서드","text":"간단하게 재현해보자(다른 출처 GET 메서드)","depth":1},{"id":"simple-requests단순요청","text":"Simple requests(단순요청)","depth":1},{"id":"사전-전달-요청preflight-request","text":"사전 전달 요청(Preflight request)","depth":1},{"id":"안전하지-않는-헤더-접근expose-headers","text":"안전하지 않는 헤더 접근(Expose-Headers)","depth":1},{"id":"자격-증명credential","text":"자격 증명(Credential)","depth":1},{"id":"캐싱-max-age","text":"캐싱 (Max Age)","depth":1},{"id":"예제코드","text":"예제코드","depth":1},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"Contents"}]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"overview","text":"Overview","depth":1},{"id":"cors-use-cases","text":"CORS Use Cases","depth":1},{"id":"lets-reproduce-it-simply-cross-origin-get-method","text":"Let's Reproduce It Simply (Cross-Origin GET Method)","depth":1},{"id":"simple-requests","text":"Simple requests","depth":1},{"id":"preflight-request","text":"Preflight request","depth":1},{"id":"accessing-unsafe-headers-expose-headers","text":"Accessing Unsafe Headers (Expose-Headers)","depth":1},{"id":"credentials","text":"Credentials","depth":1},{"id":"caching-max-age","text":"Caching (Max Age)","depth":1},{"id":"example-code","text":"Example Code","depth":1},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

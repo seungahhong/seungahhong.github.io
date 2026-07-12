@@ -4,121 +4,121 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T3206f,<h2 id="들어가기-전에-vs-cypress">들어가기 전에.. (vs. Cypress)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#들어가기-전에-vs-cypress"><span class="icon icon-link"></span></a></h2>
-<h3 id="cypress에서-playwright로-왜-넘어갔나">Cypress에서 Playwright로 왜 넘어갔나??<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cypress에서-playwright로-왜-넘어갔나"><span class="icon icon-link"></span></a></h3>
-<h4 id="cypress-개발-시-어려움-점">Cypress 개발 시 어려움 점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cypress-개발-시-어려움-점"><span class="icon icon-link"></span></a></h4>
+4:T3169a,<h2 id="before-we-begin-vs-cypress">Before We Begin.. (vs. Cypress)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#before-we-begin-vs-cypress"><span class="icon icon-link"></span></a></h2>
+<h3 id="why-did-we-move-from-cypress-to-playwright">Why Did We Move from Cypress to Playwright??<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#why-did-we-move-from-cypress-to-playwright"><span class="icon icon-link"></span></a></h3>
+<h4 id="pain-points-when-developing-with-cypress">Pain Points When Developing with Cypress<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pain-points-when-developing-with-cypress"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li>테스트 환경 로딩, 테스트 수행 시 너무 많은 시간이 소요한다는 느낌을 받았습니다.</li>
-<li>테스트 환경에서 엘리먼트를 Cypress 선택 시 못 찾는 경우가 다수 발생했고, 원인을 찾을 수 없었습니다.</li>
-<li>Cypress 만에 문법이 FE 개발자분들에게 익숙하지 않았습니다.</li>
-<li>테스트 속도 개선을 위해서 병렬 테스트 하고 싶어도 추가적인 금액을 지불해야하는 어려움이 있었습니다.</li>
+<li>We felt that loading the test environment and running the tests took far too much time.</li>
+<li>There were many cases where Cypress failed to find elements in the test environment, and we couldn't figure out the cause.</li>
+<li>Cypress's own syntax was unfamiliar to FE developers.</li>
+<li>Even when we wanted to run tests in parallel to improve test speed, there was the hurdle of having to pay an additional fee.</li>
 </ul>
-<p>→ 해당 어려움을 극복하기 위해서 다른 테스트 라이브러리를 찾아보게 되었고, 찾던 중에 위에 어려움점을 해결해 줄 수 있는 라이브러리를 하나를 발견하게 되었습니다. 바로, 마이크로소프트에서 만든 Playwright 입니다.</p>
+<p>→ To overcome these difficulties, we started looking for another testing library, and along the way we discovered one that could solve the problems above. That library is Playwright, built by Microsoft.</p>
 <h4 id="cypress-vs-playwright">Cypress vs Playwright<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cypress-vs-playwright"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li>테스트 속도 비교
+<li>Test speed comparison
 <ul>
-<li>e2e 테스트 고립을 위해서 링크 이동부터 진행 할 경우 spec 1개 기준으로는 볼 경우 Cypress 보다는 엄청 빠르진 않았다.
+<li>When running with link navigation first for e2e test isolation, based on a single spec it wasn't dramatically faster than Cypress.
 <ul>
-<li>단, 병렬로 실행할 경우 case 가 많아 질 경우 테스트 속도가 빨라지는 걸 느낄 수 있었다.</li>
+<li>However, when running in parallel with a large number of cases, we could feel that the test speed increased.</li>
 <li><a href="https://emewjin.github.io/playwright-vs-cypress/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%86%8D%EB%8F%84%EA%B0%80-cypress%EB%B3%B4%EB%8B%A4-%EC%A7%84%EC%A7%9C-%EB%8D%94-%EB%B9%A0%EB%A5%BC%EA%B9%8C">https://emewjin.github.io/playwright-vs-cypress/#테스트-속도가-cypress보다-진짜-더-빠를까</a></li>
 </ul>
 </li>
-<li>Playwright beforeAll 함수를 제공하고 있어서 SPA 구조로 되어 있는 웹에서는 초기에 링크 이동 후 page.goBack() 이동 시 beforeEach 대비해서 테스트 속도가 빨라지는 걸 느낄 수 있었다.(단, beforeAll에서는 page 얻어올 수 없어서 새로 만들어야하는데 그럴 경우 병렬 실행을 할 수가 없었다)</li>
-<li>회사에 프로젝트에 추가해 본 결과 대략 5배 정도 빨리진다는 걸 알 수 있었습니다.</li>
+<li>Playwright provides a beforeAll function, so in web apps built with a SPA structure, we could feel that the test speed increased when navigating to a link once at the beginning and then using page.goBack(), compared to beforeEach. (However, since you can't obtain the page in beforeAll, you have to create a new one, and in that case you can't run tests in parallel.)</li>
+<li>After adding it to a company project, we found that it was roughly 5 times faster.</li>
 </ul>
 </li>
-<li>테스트 지원 환경
+<li>Supported test environments
 <ul>
 <li>Playwright
 <ul>
-<li>크로미움 기반 브라우저, 파이어폭스, <strong>사파리 지원</strong></li>
-<li><strong>모바일 브라우저 제공</strong></li>
-<li><strong>실험모드: 안드로이드 크롬/웹뷰, Electron 지원예정</strong></li>
+<li>Chromium-based browsers, Firefox, <strong>Safari support</strong></li>
+<li><strong>Mobile browser support</strong></li>
+<li><strong>Experimental mode: Android Chrome/WebView, Electron support planned</strong></li>
 </ul>
 </li>
 <li>Cypress
 <ul>
-<li>크로미움 기반의 브라우저, 파이어폭스 2가지만 지원</li>
+<li>Only supports two browsers: Chromium-based browsers and Firefox</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>병렬 테스트 지원
+<li>Parallel test support
 <ul>
 <li>Playwright
 <ul>
-<li><strong>모든 테스트를 병렬로 진행</strong></li>
-<li><strong>최대 4개까지 worker thread 세팅 가능</strong>
+<li><strong>Runs all tests in parallel</strong></li>
+<li><strong>Can set up to 4 worker threads</strong>
 <ul>
-<li>단 worker thread 지정 시 테스트 단위로 고립해서 작성이 필수!!</li>
+<li>However, when specifying worker threads, isolating each test unit is mandatory!!</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Cypress
 <ul>
-<li>모든 테스트를 직렬로 진행</li>
-<li>단, 병렬 테스트 진행 시 유료 플랜을 가입해야지 CI/CD 환경에서 별렬 테스트를 수행 가능 → 돈을 내야해요ㅜㅜ)</li>
+<li>Runs all tests serially</li>
+<li>However, to run parallel tests, you must subscribe to a paid plan to run parallel tests in a CI/CD environment → you have to pay money ㅜㅜ)</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>많은 이벤트 지원
+<li>Rich event support
 <ul>
-<li>hover, drag 지원(cypress 미지원)</li>
+<li>Supports hover and drag (not supported by Cypress)</li>
 </ul>
 </li>
-<li>문법
+<li>Syntax
 <ul>
-<li>지원하는 언어에 대한 순수 문법을 지원한다.(cypress에서는 자체 문법을 제공)
+<li>Supports the pure, native syntax of the language it targets. (Cypress provides its own custom syntax)
 <img src="/blog-assets/2023/04/assets/02/Untitled.png" alt="Untitled"></li>
 </ul>
 </li>
 </ul>
-<h2 id="playwright-소개">Playwright 소개<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#playwright-소개"><span class="icon icon-link"></span></a></h2>
+<h2 id="introducing-playwright">Introducing Playwright<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#introducing-playwright"><span class="icon icon-link"></span></a></h2>
 <p><img src="/blog-assets/2023/04/assets/02/Untitled_1.png" alt="Untitled"></p>
-<p>Playwright는 MS에서 만든 오픈소스 웹 테스트, 자동화 라이브러리 입니다. 하나의 API로 Chromium, Firefox, WebKit, 모웹(Chromium, Safari등)까지 테스트 할 수 있습니다.(<a href="https://playwright.dev/docs/next/api/class-android">Next 버전</a>에서는 ADB를 이용한 Android Chrome, Electron )도 지원하는 걸로 보입니다)</p>
-<p>사실, Playwright 자체는 E2E 테스트 프레임워크가 아니고, @playwright/test 프레임워크를 사용하여서 크로스 브라우징 테스트가 가능합니다. (단, 레거시 Edge나 IE 지원하지 않음)</p>
-<h3 id="playwright-특징">playwright 특징<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#playwright-특징"><span class="icon icon-link"></span></a></h3>
+<p>Playwright is an open-source web testing and automation library built by Microsoft. With a single API, it can test Chromium, Firefox, WebKit, and mobile web (Chromium, Safari, etc.). (In the <a href="https://playwright.dev/docs/next/api/class-android">Next version</a>, it appears to also support Android Chrome and Electron via ADB.)</p>
+<p>In fact, Playwright itself is not an E2E testing framework; cross-browser testing becomes possible by using the @playwright/test framework. (However, it does not support legacy Edge or IE.)</p>
+<h3 id="playwright-features">Playwright Features<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#playwright-features"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>특징
-하나의 API로 멀티 브라우저/플랫폼 테스트 가능
+<li>Features
+A single API for multi-browser/platform testing
 <ul>
-<li>Cross-browser: 최신 모던 브라우저인 Chromium, Webkit, Firefox 지원</li>
+<li>Cross-browser: Supports the latest modern browsers Chromium, Webkit, and Firefox</li>
 <li>Cross-platform: Windows, Linux, MacOS, locally or CI, headless or headed</li>
 <li>Cross-language: Typescript, Javascript, Python, .NET, Java</li>
-<li>Test Mobile Web: 네이티브 모바일 에뮬레이션을 활용해서 모웹 안드로이드/사파리 테스트
-그외 기능</li>
-<li>자동 대기: 액션이 실행되기 전까지 엘리먼트가 준비될때까지 자동 기다림(timeout 옵션)</li>
-<li>재시도: 필요한 조건이 충족될때까지 검사가 자동 재시도(retry 옵션)</li>
-<li>Tracing: 실행 추적, 비디오, 스키린샷 캡쳐를 통해서 오류 추적 가능</li>
-<li>네트워크 요청을 모킹하기 위한 네트워크 활동 훅킹 가능</li>
-<li>마우스, 키보드의 기본 입력 이벤트 테스트 지원
-강력한 툴</li>
-<li>Codegen: Playwright 기능을 바탕으로 자동화 테스트 코드를 생성해주는 도구
+<li>Test Mobile Web: Tests mobile web on Android/Safari using native mobile emulation
+Other features</li>
+<li>Auto-waiting: Automatically waits until the element is ready before an action is executed (timeout option)</li>
+<li>Retry: Assertions are automatically retried until the required condition is met (retry option)</li>
+<li>Tracing: Enables error tracing through execution traces, video, and screenshot capture</li>
+<li>Can hook into network activity to mock network requests</li>
+<li>Supports basic mouse and keyboard input event testing
+Powerful tools</li>
+<li>Codegen: A tool that generates automation test code based on Playwright's capabilities
 <ul>
-<li>자동으로 코드를 생성해주기 때문에, 코드 작성 시간과 노력을 절약 가능</li>
+<li>Because it generates code automatically, it saves time and effort in writing code</li>
 </ul>
 </li>
-<li>inspector: 테스트 실행 단계별 디버깅 실행(크롬 개발자 도구 축소버전)</li>
-<li>trace viewer: 테스트 실패를 조사하기 위해 모든 정보를 캡쳐</li>
+<li>inspector: Step-by-step debugging of test execution (a scaled-down version of Chrome DevTools)</li>
+<li>trace viewer: Captures all information to investigate test failures</li>
 </ul>
 </li>
 </ul>
-<h2 id="playwright-구축">Playwright 구축<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#playwright-구축"><span class="icon icon-link"></span></a></h2>
-<h3 id="test-파일">Test 파일<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#test-파일"><span class="icon icon-link"></span></a></h3>
-<p>파일명에 test를 포함해야합니다. hotfix.test.ts 와 같은 형태의 파일명을 가집니다.</p>
+<h2 id="setting-up-playwright">Setting Up Playwright<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#setting-up-playwright"><span class="icon icon-link"></span></a></h2>
+<h3 id="test-files">Test Files<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#test-files"><span class="icon icon-link"></span></a></h3>
+<p>The filename must include "test". It takes a form like hotfix.test.ts.</p>
 <ul>
-<li>playwright.config.ts에서 testMatch를 통해서 확장자 변경은 가능합니다.</li>
+<li>You can change the extension via testMatch in playwright.config.ts.</li>
 </ul>
 <h3 id="timeouts">Timeouts<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#timeouts"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>playwright는 여러 태스크 별로 별도에 타임아웃을 가지고 있습니다.</li>
-<li>글로벌/커맨드 별로 타임아웃 설정이 가능합니다.
+<li>Playwright has separate timeouts for various tasks.</li>
+<li>Timeouts can be configured globally or per command.
 <ul>
-<li>간소화 테스트 전역 타임아웃: 2초(timeout: 60 _ 1000 _ 2)</li>
-<li>커맨드 타임아웃 설정
+<li>Simplified test global timeout: 2 seconds (timeout: 60 _ 1000 _ 2)</li>
+<li>Command timeout configuration
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">locator</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'[class*="modal"]'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">locator</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'text=취소하기'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
@@ -172,27 +172,27 @@ b:"$Sreact.suspense"
 </li>
 </ul>
 </li>
-<li>팁
+<li>Tips
 <ul>
-<li>테스트케이스는 읽기 쉽고 의미 전달이 명확한 한글로 작성하는 것이 좋을 것 같습니다.</li>
-<li>카카오나 NHN, 클래스101 등에서도 한글로 테스트케이스를 작성하는 것으로 보입니다.</li>
+<li>It seems best to write test cases in Korean, which is easy to read and conveys meaning clearly.</li>
+<li>Companies like Kakao, NHN, and Class101 also appear to write their test cases in Korean.</li>
 </ul>
 </li>
 </ul>
 <h3 id="cli">CLI<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cli"><span class="icon icon-link"></span></a></h3>
-<p>다음의 명령어로 터미널에서 테스트를 수행할 수 있습니다. 기본적으로 <strong>headless</strong> 로 동작합니다.
-headless 란?
-GUI환경이 아닌 브라우저를 뜻합니다. CLI (Command Line Interface)에서 동작하는 것을 의미합니다.</p>
+<p>You can run tests in the terminal with the following command. By default, it runs in <strong>headless</strong> mode.
+What is headless?
+It refers to a browser without a GUI environment. It means running in the CLI (Command Line Interface).</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">yarn playwright test</span></span></code></pre></figure>
-<p>run 옵션 참고: <a href="https://playwright.dev/docs/test-cli">https://playwright.dev/docs/test-cli</a>
-환경설정 파일에 설정된 브라우저/플랫폼에 대해서 테스트가 수행됩니다.
-playwright에 내장된 에뮬레이터에서 제공되는 브라우저/플랫폼(chromium, firefox, safari)를 지정하여 테스트를 수행할 수 있습니다.
+<p>Reference for run options: <a href="https://playwright.dev/docs/test-cli">https://playwright.dev/docs/test-cli</a>
+Tests are run against the browsers/platforms configured in the settings file.
+You can specify one of the browsers/platforms provided by Playwright's built-in emulator (chromium, firefox, safari) to run tests.
 <a href="https://playwright.dev/docs/emulation">https://playwright.dev/docs/emulation</a>
-테스트 고려 사항</p>
-<h3 id="테스트-속도-개선">테스트 속도 개선<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#테스트-속도-개선"><span class="icon icon-link"></span></a></h3>
+Testing considerations</p>
+<h3 id="improving-test-speed">Improving Test Speed<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#improving-test-speed"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>테스트 수행 중에 가장 시간이 많이 소요되는 부분에 대해서는 테스트 진행 전에 수행할 수 있도록 처리해야합니다.</li>
-<li>속도가 늦어 질 경우 배포 이후에 빠른 대응을 못함으로 꼭 테스트 수행 시간에 대해서 고민 후 개발을 진행해주시면 좋을 것 같습니다.</li>
+<li>The parts that take the most time during a test run should be handled so that they can be performed before the test runs.</li>
+<li>If the speed is slow, you won't be able to respond quickly after deployment, so please think carefully about test execution time before proceeding with development.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// context, page 생성 시간 단축을 위해서 테스트 전에 한번만 수행</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">test.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">beforeAll</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">async</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">browser</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">baseURL</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">contextOptions</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -214,21 +214,21 @@ playwright에 내장된 에뮬레이터에서 제공되는 브라우저/플랫�
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">click</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
-<h2 id="-테스트-전략-">⭐ 테스트 전략 ⭐<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-테스트-전략-"><span class="icon icon-link"></span></a></h2>
-<h3 id="병렬-테스트">병렬 테스트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#병렬-테스트"><span class="icon icon-link"></span></a></h3>
+<h2 id="-testing-strategy-">⭐ Testing Strategy ⭐<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-testing-strategy-"><span class="icon icon-link"></span></a></h2>
+<h3 id="parallel-testing">Parallel Testing<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#parallel-testing"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>각 테스트 별로 의존적이지 않도록 테스트 코드를 고립시키는 가이드 제공
+<li>Provides guidance to isolate test code so that each test is not dependent on others
 <ul>
-<li>현재는 단일 스레드로만 동작하도록 세팅</li>
+<li>Currently set to run only on a single thread</li>
 </ul>
 </li>
 </ul>
-<h3 id="멀티-플랫폼브라우저-테스트">멀티 플랫폼/브라우저 테스트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#멀티-플랫폼브라우저-테스트"><span class="icon icon-link"></span></a></h3>
+<h3 id="multi-platformbrowser-testing">Multi-Platform/Browser Testing<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#multi-platformbrowser-testing"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>서비스만에 타겟 멀티 플랫폼/브라우저 전략을 세워야 할 것 같습니다.</li>
-<li>다른 회사 사례
+<li>We need to establish a target multi-platform/browser strategy specific to the service.</li>
+<li>Other companies' cases
 <ul>
-<li>하이퍼커넥트: safari를 필수로 테스트 진행
+<li>Hyperconnect: Runs Safari testing as a requirement
 <ul>
 <li><a href="https://hyperconnect.github.io/2022/01/28/e2e-test-with-playwright.html">https://hyperconnect.github.io/2022/01/28/e2e-test-with-playwright.html</a></li>
 </ul>
@@ -236,8 +236,8 @@ playwright에 내장된 에뮬레이터에서 제공되는 브라우저/플랫�
 </ul>
 </li>
 </ul>
-<h2 id="playwright-작성법">playwright 작성법<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#playwright-작성법"><span class="icon icon-link"></span></a></h2>
-<h3 id="테스트케이스-작성법">테스트케이스 작성법<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#테스트케이스-작성법"><span class="icon icon-link"></span></a></h3>
+<h2 id="how-to-write-playwright-tests">How to Write Playwright Tests<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#how-to-write-playwright-tests"><span class="icon icon-link"></span></a></h2>
+<h3 id="how-to-write-test-cases">How to Write Test Cases<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#how-to-write-test-cases"><span class="icon icon-link"></span></a></h3>
 <p><strong>Run Command Line</strong></p>
 <ul>
 <li>Running all tests
@@ -269,12 +269,12 @@ playwright에 내장된 에뮬레이터에서 제공되는 브라우저/플랫�
 <pre><code>npx playwright test example.spec.ts --debug
 </code></pre>
 </li>
-<li>Debugging a test from the line number where the <code>test(..</code> is defined:
+<li>Debugging a test from the line number where the <code>test(..</code> is defined:
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npx</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> playwright</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> test</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> example.spec.ts:10</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --debug</span></span></code></pre></figure>
-<strong>기본적인 테스트케이스 구성</strong>
+<strong>Basic Test Case Structure</strong>
 <strong>Project Dependencies</strong></li>
-<li>테스트 코드 수행 전에 꼭 필요한 테스트를 진행해야 할 경우 global setup action을 작성해주세요.</li>
-<li>Desktop Chrome 진행 전 dependencies에 연관된 setup 파일들을 미리 수행되게 됩니다.</li>
+<li>If you must run certain tests before the test code runs, write a global setup action.</li>
+<li>Setup files related to dependencies are run in advance before Desktop Chrome runs.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// playwright.config.ts</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">name</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'setup'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">testMatch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">.</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">setup</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">ts/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> },</span></span>
@@ -285,7 +285,7 @@ playwright에 내장된 에뮬레이터에서 제공되는 브라우저/플랫�
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span></code></pre></figure>
 <p><strong>Configure globalSetup and globalTeardown</strong></p>
 <ul>
-<li>모든 테스트 전에 한번에 수행되야하는 코드에 대해서는 globalSetup/globalTeardown 속성을 적용해주세요.</li>
+<li>For code that must run once before all tests, apply the globalSetup/globalTeardown properties.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// playwright.config.ts/js</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { defineConfig } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@playwright/test'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -298,10 +298,10 @@ playwright에 내장된 에뮬레이터에서 제공되는 브라우저/플랫�
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">})</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
 <p><strong>describe, test</strong>
-describe로 테스트들을 논리적으로 나누고, test로 테스트를 작성합니다.
-describe 내에서 테스트 전체 선행/후행 작업 필요 시 beforeAll, AfterEach를 사용해보고,
-<strong>→ context, page 생성 시 시간이 많이 소요됨으로 전체 테스트 전에 미리 생성해두면 테스트 시간을 줄일 수 있습니다.</strong>
-각 테스트 별로 선행/후행 작업 필요 시 beforeEach, afterEach를 사용해주세요.</p>
+Use describe to logically group tests, and write tests with test.
+Within describe, when you need setup/teardown for the entire group of tests, try using beforeAll and afterEach,
+<strong>→ Because creating context and page takes a lot of time, creating them in advance before all tests can reduce test time.</strong>
+When you need setup/teardown work for each individual test, please use beforeEach and afterEach.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { expect, Page, test, BrowserContext } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@playwright/test'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">test.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">describe</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'홈'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -351,48 +351,48 @@ describe 내에서 테스트 전체 선행/후행 작업 필요 시 beforeAll, A
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> expect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(subElement).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toBeVisible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  });</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
-<p><strong>테스트 제목</strong>
-테스트 제목은 최대한 명시적으로 제목만 보아도 어떤 테스트를 수행하는 지 알 수 있어야하며, 능동형 문장으로 작성합니다. (~~된다 라는 표현은 지양하고 ~~한다 라는 표현으로 작성해요)</p>
-<h3 id="사소한-꿀팁">사소한 꿀팁<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#사소한-꿀팁"><span class="icon icon-link"></span></a></h3>
+<p><strong>Test Titles</strong>
+Test titles should be as explicit as possible so that you can tell what the test does just by looking at the title, and they should be written as active sentences. (Avoid passive expressions like "~ is done" and instead write active expressions like "~ does".)</p>
+<h3 id="handy-little-tips">Handy Little Tips<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#handy-little-tips"><span class="icon icon-link"></span></a></h3>
 <h4 id="testonly">test.only<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#testonly"><span class="icon icon-link"></span></a></h4>
-<p>테스트 파일안에 여러 테스트 케이스들이 있는데 하나의 테스트만 수정해도 파일 내의 모든 테스트 케이스들이 실행됩니다. 작성 중인 테스트 케이스만 실행되도록 <strong>test.only</strong> 를 사용할 수 있습니다.</p>
+<p>When a test file has multiple test cases, even if you modify only one test, all test cases in the file will run. You can use <strong>test.only</strong> to run only the test case you are currently working on.</p>
 <h4 id="testskip">test.skip<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#testskip"><span class="icon icon-link"></span></a></h4>
-<p>실행 불가능한 테스트 케이스지만 테스트 목록에는 넣고 싶을 때 <strong>test.skip</strong>을 사용할 수 있습니다. 최종 결과에 pending으로 집계됩니다.
+<p>When a test case can't be run but you still want it in the test list, you can use <strong>test.skip</strong>. It will be counted as pending in the final results.
 <strong>Selector</strong>
-playwright에 selector는 쿼리 우선순위를 기반으로 제공되며, 해당 기능이 안될 locator를 이용해서 자유롭게 엘리먼트에 접근이 가능합니다.
-쿼리 우선 순위</p>
+Playwright's selectors are provided based on query priority, and when that feature doesn't work you can use locators to freely access elements.
+Query priority</p>
 <ul>
-<li>시각 요소/ 사용자의 인터렉션을 테스트하기 위한 쿼리들 간 우선순위
+<li>Priority among queries for testing visual elements / user interactions
 <ul>
 <li>getByRole > getByLabelText > getByPlaceholderText > getByText > getByDisplayValue</li>
 </ul>
 </li>
-<li>HTML5 와 ARIA 속성을 테스트 하기 위한 쿼리들 간 우선순위
+<li>Priority among queries for testing HTML5 and ARIA attributes
 <ul>
 <li>getByAltText > getByTitle</li>
 </ul>
 </li>
-<li>테스트 ID: 위에 쿼리들로도 불가능한 값을 검색하기 위해서만 사용
+<li>Test ID: Used only to find values that cannot be found with the queries above
 <ul>
 <li>getByTestId</li>
-<li>data attribute는 팀 내 합의로 정하는 것이 좋을 것 같습니다.</li>
+<li>It seems best to decide on the data attribute through team consensus.</li>
 </ul>
 </li>
-<li>해당 우선순위로도 접근이 불가능할 경우 locator 사용을 해주시면 됩니다.
+<li>If you cannot access it even with these priorities, you can use locator.
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> element</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">locator</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'main > section > ul > li a'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">first</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
-<strong>테스트 도구 활용</strong>
-Playwright Inspector 화면에서 Pick locator 클릭 후 화면을 선택 시 자동으로 테스트 코드를 생성해줍니다.
-해당 기능을 통해서 코드 생성 시 참고가 가능하면, 개발 생산성을 높일 수 있을 것 같습니다.</li>
+<strong>Using Testing Tools</strong>
+In the Playwright Inspector screen, if you click Pick locator and then select an element on the screen, it automatically generates the test code.
+If you can reference this feature when generating code, you can boost development productivity.</li>
 </ul>
 <h3 id="negating-matchers">Negating Matchers<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#negating-matchers"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>일반적으로 matcher 앞에 .not을 붙여주면 됩니다.</li>
+<li>Generally, you just add .not in front of the matcher.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">expect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(value).not.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toEqual</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> expect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(locator).not.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toContainText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'some text'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <h3 id="soft-assertions">Soft Assertions<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#soft-assertions"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>기본적으로 Assertion이 에러가 날 경우 테스트가 종료되지만, Soft Assertions 적용 시 테스트가 종료되지 않고 실패에 대해서 마킹만 해주게 됩니다.</li>
+<li>By default, when an assertion errors out the test terminates, but when Soft Assertions are applied, the test does not terminate and only marks the failure.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Make a few checks that will not stop the test when failed...</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> expect.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">soft</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByTestId</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'status'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toHaveText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Success'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
@@ -405,7 +405,7 @@ Playwright Inspector 화면에서 Pick locator 클릭 후 화면을 선택 시 �
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toBeVisible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
 <h3 id="polling">Polling<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#polling"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>expect.poll사용하여서 비동기적으로 기다릴 때 사용하게 됩니다.(API 응답을 할 경우 대부분 사용)</li>
+<li>Use expect.poll when waiting asynchronously. (Mostly used when awaiting an API response)</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> expect</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">poll</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
@@ -437,7 +437,7 @@ Playwright Inspector 화면에서 Pick locator 클릭 후 화면을 선택 시 �
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toBe</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">200</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <h3 id="retrying">Retrying<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#retrying"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>코드가 블락 될 경우 intervals를 통해서 재시도 처리를 해주게 됩니다.</li>
+<li>When the code is blocked, retries are handled via intervals.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> expect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">async</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> response</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.request.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">get</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'https://api.example.com'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
@@ -447,34 +447,34 @@ Playwright Inspector 화면에서 Pick locator 클릭 후 화면을 선택 시 �
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  intervals: [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1_000</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2_000</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">10_000</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">],</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  timeout: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">60_000</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
-<h2 id="playwright-가이드">Playwright 가이드<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#playwright-가이드"><span class="icon icon-link"></span></a></h2>
+<h2 id="playwright-guide">Playwright Guide<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#playwright-guide"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>
-<p>가이드
-Playwright 기본</p>
+<p>Guide
+Playwright Basics</p>
 <ul>
 <li>
 <p>Install playwright</p>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 브라우저 설치</span></span>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Install browser</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> i</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -D</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> playwright</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 테스팅 라이브러리 설치</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Install testing library</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">$</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> i</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -D</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @playwright/test</span></span></code></pre></figure>
 </li>
 </ul>
 </li>
 </ul>
-<h3 id="playwright-주요개념">Playwright 주요개념<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#playwright-주요개념"><span class="icon icon-link"></span></a></h3>
+<h3 id="playwright-key-concepts">Playwright Key Concepts<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#playwright-key-concepts"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">chromium</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> require</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'playwright'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> browser</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> chromium.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">launch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ...</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> browser.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">close</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
-<p>브라우저 인스턴스를 만드는 데 비용이 많이 들기 때문에 Playwright는 단일 인스턴스가 여러 브라우저 컨텍스트를 통해 수행할 수 있는 작업을 극대화하도록 설계되었다.
-브라우저 컨텍스트는 브라우저 인스턴스 내에서 분리된 유사 세션이다. 만드는데 빠르고 비용이 적다. 각 테스트를 새로운 브라우저 컨텍스트에서 실행하여 브라우저 상태를 테스트 간에 분리하는 것이 좋다.</p>
+<p>Because creating a browser instance is expensive, Playwright is designed to maximize what a single instance can do through multiple browser contexts.
+A browser context is an isolated, session-like environment within a browser instance. It is fast and inexpensive to create. It's recommended to run each test in a new browser context to isolate browser state between tests.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> browser</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> chromium.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">launch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> context</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> browser.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">newContext</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
-<p>컨텍스트별로 다른 기기를 시뮬레이션 할 수 있다. 예제에서는 아이폰과 아이패드에 대한 컨텍스트를 생성하고 있다.</p>
+<p>You can simulate different devices per context. In the example, contexts are being created for an iPhone and an iPad.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { devices } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'playwright'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> iPhone</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> devices[</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'iPhone 11 Pro'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
@@ -493,8 +493,8 @@ Playwright 기본</p>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  geolocation: { latitude: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">37.4</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, longitude: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">127.1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> },</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // ...</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
-<p>컨텍스트는 컨텍스트 내의 단일 탭 또는 팝업 창을 나타내는 페이지를 가질 수 있다. URL로 이동해서 페이지의 콘텐츠와 상호작용할 때 사용하면 된다.
-페이지를 이용해서 각기 다른 탭에서 작업하는 것처럼 할 수 있다. 예제에서는 각기 다른 페이지를 탐색한다.</p>
+<p>A context can have pages, which represent a single tab or popup window within the context. Use it when navigating to a URL and interacting with the page's content.
+Using pages, you can work as if in different tabs. In the example, we navigate to different pages.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ...</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 페이지1 생성</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> page1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> context.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">newPage</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
@@ -512,8 +512,8 @@ Playwright 기본</p>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">click</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'.nav_locale'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 새로운 url 출력</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">url</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">());</span></span></code></pre></figure>
-<p>페이지는 다시 1개 이상의 프레임 객체를 가질 수 있다. 각 페이지에는 메인 프레임이 있고 페이지 레벨 상호작용(클릭 등)이 메인 프레임에서 작동하는 것으로 가정한다. iframe 태그와 함께 추가 프레임을 가질 수 있다.
-프레임을 이용해서 프레임 내부에 있는 엘리먼트를 가져오거나 조작할 수 있다. 예제에서는 프레임을 가져오는 방법들과 프레임 내부의 엘리먼트와 상호작용하는 방법을 보여준다.</p>
+<p>A page can in turn have one or more frame objects. Each page has a main frame, and page-level interactions (such as clicks) are assumed to operate on the main frame. Additional frames can exist along with iframe tags.
+Using frames, you can retrieve or manipulate elements inside the frame. The example shows ways to obtain frames and how to interact with elements inside a frame.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 프레임의 name 속성으로 프레임 가져오기</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> frame</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">frame</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'frame-login'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""> </span>
@@ -530,8 +530,8 @@ Playwright 기본</p>
 <h4 id="actions">Actions<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#actions"><span class="icon icon-link"></span></a></h4>
 <ul>
 <li>
-<p>input, textarea, [contenteditable] 엘리먼트를 포커스 &#x26; 텍스트를 바로 입력할 경우 호출
-locator.fill() 대체해서 사용 가능</p>
+<p>Called when focusing an input, textarea, or [contenteditable] element and entering text directly
+Can be used as a replacement for locator.fill()</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Text input</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByRole</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'textbox'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">fill</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Peter'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""> </span>
@@ -546,15 +546,15 @@ locator.fill() 대체해서 사용 가능</p>
 </li>
 <li>
 <p>Type characters → real keyboard type
-입력 엘리먼트에 실제 키보드 입력이 되는것처럼 동작
-locator.type() 대체해서 사용 가능</p>
+Behaves as if real keyboard input is being made to the input element
+Can be used as a replacement for locator.type()</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Type character by character</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">locator</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'#area'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">type</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Hello World!'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>엘리먼트를 선택하거나 단축키를 생성하기 위한 동작
-keyboardEvent.key 이벤트를 사용이 가능
-<a href="http://locator.press/">locator.press</a>() 대체 가능</p>
+<p>An action to select an element or create a shortcut
+Can use the keyboardEvent.key event
+Can replace <a href="http://locator.press/">locator.press</a>()</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Hit Enter</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Submit'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">press</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Enter'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""> </span>
@@ -571,8 +571,8 @@ keyboardEvent.key 이벤트를 사용이 가능
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">locator</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'#name'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">press</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Shift+ArrowLeft'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>input[type=checkbox], input[type=radio] and [role=checkbox] 엘리먼트에 대해서 체크/미체크 세팅, 얻어올 경우 호출
-locator.setChecked() 대체해서 사용 가능</p>
+<p>Called when setting or getting the checked/unchecked state for input[type=checkbox], input[type=radio], and [role=checkbox] elements
+Can be used as a replacement for locator.setChecked()</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Check the checkbox</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByLabel</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'I agree to the terms above'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">check</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""> </span>
@@ -585,9 +585,9 @@ locator.setChecked() 대체해서 사용 가능</p>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByLabel</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'XL'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">check</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
 </li>
 <li>
-<p>select 엘리먼트를 단일/다중 선택 시 사용
-특정 옵션에 value, label 선택이 가능
-locator.selectOption() 대체해서 사용가능</p>
+<p>Used for single/multiple selection of a select element
+Can select a specific option by value or label
+Can be used as a replacement for locator.selectOption()</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Single selection matching the value</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByLabel</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Choose a color'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">selectOption</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'blue'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""> </span>
@@ -600,28 +600,28 @@ locator.selectOption() 대체해서 사용가능</p>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">selectOption</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'red'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'green'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'blue'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]);</span></span></code></pre></figure>
 </li>
 <li>
-<p>DOM이 접근이 가능할 때까지 대기</p>
+<p>Waits until the DOM is accessible</p>
 </li>
 <li>
-<p>DOM이 보여질 때까지 대기(no empty, no display:none, no visibility:hidden)</p>
+<p>Waits until the DOM is visible (no empty, no display:none, no visibility:hidden)</p>
 </li>
 <li>
-<p>움직임이 멈출때까지 대기(예: transition finishes)</p>
+<p>Waits until motion stops (e.g. transition finishes)</p>
 </li>
 <li>
-<p>뷰포트 안에 엘리먼트가 보여질 경우(scroll)</p>
+<p>When the element is visible within the viewport (scroll)</p>
 </li>
 <li>
-<p>엘리먼트가 다른 엘리먼트에 가려지지 않을 때까지 대기</p>
+<p>Waits until the element is not obscured by other elements</p>
 </li>
 <li>
-<p>엘리먼트가 detach 된다면 다시 attach 될때까지 대기</p>
+<p>If the element is detached, waits until it is attached again</p>
 </li>
 <li>
-<p>강제클릭: 다른 엘리먼트에 의해서 가려질 경우 강제로 클릭 가능</p>
+<p>Force click: Can force a click even when obscured by another element</p>
 </li>
 <li>
-<p>dispatchEvent: 사용자의 입력과 상관없이 클릭 이벤트만 전달하고 싶은경우</p>
+<p>dispatchEvent: When you want to dispatch only the click event regardless of user input</p>
 </li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Generic click</span></span>
@@ -649,9 +649,9 @@ locator.selectOption() 대체해서 사용가능</p>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByRole</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'button'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">dispatchEvent</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'click'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <ul>
 <li>
-<p>input 엘리먼트 type=”file”인 경우 사용이 가능
-locator.setInputFiles() 대체 가능
-엘리먼트가 동적으로 생성된 경우 waitForEvent로 대기 가능(page.on(’filechooser’) 대체 가능)</p>
+<p>Can be used when an input element has type="file"
+Can be used as a replacement for locator.setInputFiles()
+If the element is dynamically created, you can wait with waitForEvent (can be used as a replacement for page.on('filechooser'))</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Select one file</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByLabel</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Upload file'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">setInputFiles</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'myfile.pdf'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""> </span>
@@ -677,10 +677,10 @@ locator.setInputFiles() 대체 가능
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> fileChooser.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">setFiles</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'myfile.pdf'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>locator.focus() 함수로 대체 가능</p>
+<p>Can be replaced with the locator.focus() function</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByLabel</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Password'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">focus</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
-<p>locator.dragTo() 대체 가능
-lower-level 함수로 대체할 경우(locator.hover, mouse.down, mouse.move, mouse.up 사용가능)</p>
+<p>Can replace locator.dragTo()
+When replacing with lower-level functions (you can use locator.hover, mouse.down, mouse.move, mouse.up)</p>
 </li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// drag and drop</span></span>
@@ -695,8 +695,8 @@ lower-level 함수로 대체할 경우(locator.hover, mouse.down, mouse.move, mo
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.mouse.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">up</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
 <h3 id="assertions">Assertions<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#assertions"><span class="icon icon-link"></span></a></h3>
 <p><a href="https://playwright.dev/docs/test-assertions">https://playwright.dev/docs/test-assertions</a>
-Assertion은 기대값과 결과값을 검사하기 위해 사용합니다.
-Playwright test assertion 수행 시 expect 함수를 사용할 수 있으며, 다양한 assertions 함수를 제공하고 있습니다.
+Assertions are used to check expected values against result values.
+When performing Playwright test assertions, you can use the expect function, which provides a variety of assertion functions.
 <br>
 <br></p>
 
@@ -806,12 +806,12 @@ Playwright test assertion 수행 시 expect 함수를 사용할 수 있으며, �
 
 <table><thead><tr><th>Assertion</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-be-checked">expect(locator).toBeChecked()</a></td><td>Checkbox is checked</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-be-disabled">expect(locator).toBeDisabled()</a></td><td>Element is disabled</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-be-editable">expect(locator).toBeEditable()</a></td><td>Element is enabled</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-be-empty">expect(locator).toBeEmpty()</a></td><td>Container is empty</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-be-enabled">expect(locator).toBeEnabled()</a></td><td>Element is enabled</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-be-focused">expect(locator).toBeFocused()</a></td><td>Element is focused</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-be-hidden">expect(locator).toBeHidden()</a></td><td>Element is not visible</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-be-in-viewport">expect(locator).toBeInViewport()</a></td><td>Element intersects viewport</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-be-visible">expect(locator).toBeVisible()</a></td><td>Element is visible</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-contain-text">expect(locator).toContainText()</a></td><td>Element contains text</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-have-attribute">expect(locator).toHaveAttribute()</a></td><td>Element has a DOM attribute</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-have-class">expect(locator).toHaveClass()</a></td><td>Element has a class property</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-have-count">expect(locator).toHaveCount()</a></td><td>List has exact number of children</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-have-css">expect(locator).toHaveCSS()</a></td><td>Element has CSS property</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-have-id">expect(locator).toHaveId()</a></td><td>Element has an ID</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-have-js-property">expect(locator).toHaveJSProperty()</a></td><td>Element has a JavaScript property</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-have-screenshot-1">expect(locator).toHaveScreenshot()</a></td><td>Element has a screenshot</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-have-text">expect(locator).toHaveText()</a></td><td>Element matches text</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-have-value">expect(locator).toHaveValue()</a></td><td>Input has a value</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-locatorassertions#locator-assertions-to-have-values">expect(locator).toHaveValues()</a></td><td>Select has options selected</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-pageassertions#page-assertions-to-have-screenshot-1">expect(page).toHaveScreenshot()</a></td><td>Page has a screenshot</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-pageassertions#page-assertions-to-have-title">expect(page).toHaveTitle()</a></td><td>Page has a title</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-pageassertions#page-assertions-to-have-url">expect(page).toHaveURL()</a></td><td>Page has a URL</td></tr><tr><td><a href="https://playwright.dev/docs/api/class-apiresponseassertions#api-response-assertions-to-be-ok">expect(apiResponse).toBeOK()</a></td><td>Response has an OK status</td></tr></tbody></table>
 <ul>
-<li>일반적으로 matcher 앞에 .not을 붙여주면 됩니다.</li>
+<li>Generally, you just add .not in front of the matcher.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">expect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(value).not.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toEqual</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> expect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(locator).not.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toContainText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'some text'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
-<p>기본적으로 테스트 실패 시 실행이 종료되지만, soft assertion 일 경우에는 종료가 되지 않는다.
-실패 여부를 체크하기 위해서 <a href="http://test.info/">test.info</a> 사용 가능</p>
+<p>By default, execution terminates when a test fails, but in the case of a soft assertion it does not terminate.
+To check whether a failure occurred, you can use <a href="http://test.info/">test.info</a></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Make a few checks that will not stop the test when failed...</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> expect.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">soft</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByTestId</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'status'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toHaveText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Success'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> expect.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">soft</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByTestId</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'eta'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toHaveText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'1 day'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
@@ -829,8 +829,8 @@ Playwright test assertion 수행 시 expect 함수를 사용할 수 있으며, �
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">//// Avoid running further if there were soft assertion failures.</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">expect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(test.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">info</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">().errors).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toHaveLength</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
-<p>특정 에러 메시지를 표현
-expect.soft 대체 가능</p>
+<p>Express a specific error message
+Can be used as a replacement for expect.soft</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> expect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Name'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">), </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'should be logged in'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toBeVisible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Error</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: should be logged </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">in</span></span>
@@ -850,7 +850,7 @@ expect.soft 대체 가능</p>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">expect.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">soft</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(value, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'my soft assertion'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toBe</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">56</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""> </span></code></pre></figure>
 <ul>
-<li>expect.poll사용하여서 비동기적으로 기다릴 때 사용하게 됩니다.(API 응답을 할 경우 대부분 사용)</li>
+<li>Use expect.poll when waiting asynchronously. (Mostly used when awaiting an API response)</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> expect</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">poll</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
@@ -881,7 +881,7 @@ expect.soft 대체 가능</p>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  )</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toBe</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">200</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <ul>
-<li>코드가 블락 될 경우 intervals를 통해서 재시도 처리를 해주게 됩니다</li>
+<li>When the code is blocked, retries are handled via intervals</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// API 응답이 성공할 때까지 코드 블록을 재 실행</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> expect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">async</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -899,24 +899,24 @@ expect.soft 대체 가능</p>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  timeout: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">60_000</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
 <h3 id="locators">Locators<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#locators"><span class="icon icon-link"></span></a></h3>
-<p>page.getByRole() → 접근성 속성을 찾을 경우</p>
+<p>page.getByRole() → When finding accessibility attributes</p>
 <ul>
-<li>보조 기술이 페이지를 인식하는 방법을 사용할 경우 사용
-page.getByLabel() → form 컨트롤 라벨 텍스트 찾을 경우</li>
-<li>form fields 찾을 경우 사용
-page.getByPlaceholder() → placeholder 찾은 경우</li>
-<li>엘리먼트에 label이 없고 placeholder 텍스트가 있는경우 사용
-page.getByText() → 텍스트 찾을 경우</li>
-<li>인터렉션이 없는 엘리먼트의 텍스트를 찾을 경우(div, span, p) 사용</li>
-<li>인터렉션이 있는 엘리먼트(button, a, input): page.getByLabel
-page.getByAltText() → 대체 텍스트를 찾을 경우</li>
-<li>img, area 엘리먼트 처럼 대체 텍스트가 있는 경우 사용
-page.getByTitle() → 타이틀 속성을 찾을 경우</li>
-<li>엘리먼트 title 속성이 있는경우
-page.getByTestId() → data-testid 속성을 찾을 경우</li>
-<li>text, role 사용할 없거나, testid를 사용이 가능할 경우 사용</li>
-<li>엘리먼트 내부에 특정 값을 검색할 경우 filter 사용</li>
-<li>hasText: 텍스트 검색, has: locator 검색</li>
+<li>Used when leveraging the way assistive technology perceives the page
+page.getByLabel() → When finding form control label text</li>
+<li>Used when finding form fields
+page.getByPlaceholder() → When finding placeholder</li>
+<li>Used when an element has no label but has placeholder text
+page.getByText() → When finding text</li>
+<li>Used when finding text of non-interactive elements (div, span, p)</li>
+<li>Interactive elements (button, a, input): page.getByLabel
+page.getByAltText() → When finding alternative text</li>
+<li>Used when there is alternative text, as with img and area elements
+page.getByTitle() → When finding the title attribute</li>
+<li>When an element has a title attribute
+page.getByTestId() → When finding the data-testid attribute</li>
+<li>Used when you can't use text or role, or when a testid can be used</li>
+<li>Use filter when searching for a specific value inside an element</li>
+<li>hasText: text search, has: locator search</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// hasText</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page</span></span>
@@ -932,14 +932,14 @@ page.getByTestId() → data-testid 속성을 찾을 경우</li>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByRole</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'button'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, { name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Add to cart'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> })</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">click</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
 <ul>
-<li>특정 엘리먼트 배열의 인덱스 접근 가능</li>
-<li>locator.first(), locator.last(), locator.nth() 대체 가능</li>
+<li>Can access a specific index of an element array</li>
+<li>Can be used as a replacement for locator.first(), locator.last(), locator.nth()</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> banana</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByRole</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'listitem'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">nth</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <ul>
 <li>Iterate elements</li>
 <li>Iterate using regular for loop</li>
-<li>Evaluate in the page → DOM api 사용할 경우</li>
+<li>Evaluate in the page → When using the DOM api</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Iterate elements</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">for</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> row</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> of</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByRole</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'listitem'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">all</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">())</span></span>
@@ -956,14 +956,14 @@ page.getByTestId() → data-testid 속성을 찾을 경우</li>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  list.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">map</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">element</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> element.textContent),</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <h2 id="auto-waiting">Auto-waiting<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#auto-waiting"><span class="icon icon-link"></span></a></h2>
-<p>모든 관련 검사가 통과할 때까지 자동 대기한 이후에 다음 요청된 작업을 수행합니다.
-예를 들어서, page.click()의 경우 playwright는 다음을 확인합니다</p>
+<p>It automatically waits until all relevant checks pass, and then performs the next requested action.
+For example, in the case of page.click(), Playwright checks the following:</p>
 <ul>
-<li>엘리먼트가 DOM에 연결된 경우</li>
-<li>엘리먼트가 보여질 경우</li>
-<li>엘리먼트가 애니메이션 완료, 동작안하는 경우</li>
-<li>엘리먼트가 다른 요소에 가려지지 않는 경우</li>
-<li>엘리먼트가 활성화 된 경우
+<li>The element is attached to the DOM</li>
+<li>The element is visible</li>
+<li>The element has finished animating and is stable</li>
+<li>The element is not obscured by other elements</li>
+<li>The element is enabled
 
 
 
@@ -1174,17 +1174,17 @@ page.getByTestId() → data-testid 속성을 찾을 경우</li>
 <h3 id="testing-philosophy">Testing philosophy<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#testing-philosophy"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>
-<p>사용자에게 보이는 영역/행위 테스트</p>
+<p>Test the areas/behaviors visible to the user</p>
 <ul>
-<li>최종 사용자가 페이지를 보거나, 상호작용이 가능한 페이지에 대해서 테스트를 수행한다.</li>
+<li>Test pages where the end user can view the page or interact with it.</li>
 </ul>
 </li>
 <li>
-<p>테스트 작성 시 가능하면 고립</p>
+<p>Isolate tests as much as possible when writing them</p>
 <ul>
-<li>테스트 각각에 대해서 격리해서 작업(local/session storage, data, cookies등)</li>
-<li>테스트에 특정 반복을 피해야할 경우 before and after hooks를 이용</li>
-<li>테스트 파일 내에서 특정 URL 이동, 앱의 이부에 로그인 진행 시 before hooks 이용</li>
+<li>Isolate the work for each test individually (local/session storage, data, cookies, etc.)</li>
+<li>When you need to avoid repeating something specific in tests, use before and after hooks</li>
+<li>When navigating to a specific URL within a test file or logging into part of the app, use before hooks</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { test } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@playwright/test'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
@@ -1205,11 +1205,11 @@ page.getByTestId() → data-testid 속성을 찾을 경우</li>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
 </li>
 <li>
-<p>전체적인 흐름이 맞는 테스트 코드 작성(긴 테스트도 괜찮다.)</p>
+<p>Write test code that follows the overall flow (long tests are fine.)</p>
 <ul>
-<li>전체 앱 흐름을 테스트 할 경우 여러 작업에 대한 assertion 처리로 괜찮다.</li>
-<li>긴 테스트를 굳이 개별 테스트로 나눌 경우 테스트 실행 속도를 늦추기 때문에 피해야 한다.</li>
-<li>긴 테스트 에러 발생 시 종료하지 않고 에러만 표시할 경우 soft assertion 사용 가능하다.</li>
+<li>When testing the entire app flow, handling assertions for multiple actions is fine.</li>
+<li>Splitting a long test into individual tests unnecessarily should be avoided, because it slows down test execution.</li>
+<li>When you want to display errors without terminating on a long test error, you can use soft assertions.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Make a few checks that will not stop the test when failed...</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> expect.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">soft</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByTestId</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'status'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toHaveText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Success'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
@@ -1218,7 +1218,7 @@ page.getByTestId() → data-testid 속성을 찾을 경우</li>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByRole</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'link'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, { name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'next page'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">click</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
 </li>
 <li>
-<p>third-party 종속된 테스트는 피하라</p>
+<p>Avoid tests that depend on third parties</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">route</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'**/api/fetch_data_third_party_dependency'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">route</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  route.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">fulfill</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    status: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">200</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
@@ -1229,14 +1229,14 @@ page.getByTestId() → data-testid 속성을 찾을 경우</li>
 </li>
 </ul>
 <h3 id="best-practices-1">Best Practices<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#best-practices-1"><span class="icon icon-link"></span></a></h3>
-<p><strong>playwright에 내장된 locator를 사용해라</strong></p>
+<p><strong>Use Playwright's built-in locators</strong></p>
 <ul>
-<li>auto waiting, retry-ability 등의 기능을 사용하기 위해서 내장된 locator를 이용</li>
+<li>Use the built-in locators to take advantage of features like auto waiting and retry-ability</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">👍 page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByRole</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'button'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, { name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'submit'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> })</span></span></code></pre></figure>
 <p><strong>Use chaining and filtering</strong></p>
 <ul>
-<li>페이지의 특정 부분을 검색할 경우 chaning, filtering으로 좁히는 걸 추천</li>
+<li>When searching a specific part of the page, we recommend narrowing it down with chaining and filtering</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> product</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByRole</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'listitem'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">filter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ hasText: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Product 2'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> });</span></span>
 <span data-line=""> </span>
@@ -1247,62 +1247,62 @@ page.getByTestId() → data-testid 속성을 찾을 경우</li>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  .</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">click</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
 <p><strong>Prefer user-facing attributes to XPath or CSS selectors</strong></p>
 <ul>
-<li>유저 중심의 속성 셀렉터를 사용</li>
+<li>Use user-centric attribute selectors</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">👎 page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">locator</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'button.buttonIcon.episode-actions-later'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">👍 page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByRole</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'button'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, { name: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'submit'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> })</span></span></code></pre></figure>
-<p><strong>codegen을 활용한 locators 자동생성</strong></p>
+<p><strong>Auto-generate locators using codegen</strong></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">npx playwright codegen playwright.dev</span></span></code></pre></figure>
 <p><img src="/blog-assets/2023/04/assets/02/Untitled_2.png" alt="Untitled"></p>
-<h4 id="vs-code-extension-을-활용한-locators-자동생성">VS Code extension 을 활용한 locators 자동생성<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vs-code-extension-을-활용한-locators-자동생성"><span class="icon icon-link"></span></a></h4>
+<h4 id="auto-generate-locators-using-the-vs-code-extension">Auto-generate locators using the VS Code extension<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#auto-generate-locators-using-the-vs-code-extension"><span class="icon icon-link"></span></a></h4>
 <p><img src="/blog-assets/2023/04/assets/02/Untitled_3.png" alt="Untitled"></p>
-<h4 id="적절한-assertion-사용">적절한 Assertion 사용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#적절한-assertion-사용"><span class="icon icon-link"></span></a></h4>
+<h4 id="use-appropriate-assertions">Use appropriate Assertions<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#use-appropriate-assertions"><span class="icon icon-link"></span></a></h4>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  👍 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> expect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'welcome'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toBeVisible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  👎 </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">expect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'welcome'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">isVisible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toBe</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <h4 id="local-debugging">Local debugging<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#local-debugging"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li>vscode extension을 활용해서 디버깅하는 것을 추천
+<li>We recommend debugging using the vscode extension
 <img src="/blog-assets/2023/04/assets/02/Untitled_4.png" alt="Untitled"></li>
-<li>command 방식으로 디버깅 가능</li>
-<li>특정 테스트 파일, 테스트 라인 번호를 추가해서 디버깅 가능</li>
+<li>Can debug using the command approach</li>
+<li>Can debug by adding a specific test file and test line number</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">npx playwright test </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">--</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">debug</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">npx playwright test example.spec.ts:</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">9</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> --</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">debug</span></span></code></pre></figure>
-<h2 id="playwright-현실적인-적용방안">Playwright 현실적인 적용방안<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#playwright-현실적인-적용방안"><span class="icon icon-link"></span></a></h2>
+<h2 id="realistic-ways-to-apply-playwright">Realistic Ways to Apply Playwright<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#realistic-ways-to-apply-playwright"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li>마케팅 툴에 대한 예외처리: 진행 중
+<li>Exception handling for marketing tools: In progress
 <ul>
-<li>테스트 자동화 툴로 실행된 환경에서 GA, Braze 등의 마케팅 툴에 대해서 동작하지 않도록 수정(navigator.webdriver 이용한 분기)
+<li>Modify things so that marketing tools like GA and Braze don't run in environments launched by the test automation tool (branching using navigator.webdriver)
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/webdriver">Navigator: webdriver property - Web APIs | MDN</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>지원 브라우저/플랫폼에 대한 정의 CTO팀 스펙논의 필요
+<li>Defining supported browsers/platforms requires a spec discussion with the CTO team
 <ul>
-<li>Playwright에서 지원하는 크로미움, 파포, 사파리, 모웹(AOS, IOS)에 대한 서비스만에 기준이 필요</li>
+<li>We need service-specific criteria for the Chromium, Firefox, Safari, and mobile web (AOS, IOS) that Playwright supports</li>
 </ul>
 </li>
-<li>E2E 테스트에 에러에 대한 대응 자세 CTO팀 스펙논의 필요
+<li>The stance on responding to errors in E2E tests requires a spec discussion with the CTO team
 <ul>
-<li>각 팀별로 에러 발생 시 어떻게 대응할지에 대한 전략이 필요(담당자 지정) → 슬랙으로 노티는 필수</li>
+<li>Each team needs a strategy for how to respond when an error occurs (assigning an owner) → Slack notifications are a must</li>
 </ul>
 </li>
 </ul>
-<h2 id="e2e-테스트-자동화-구축을-위해서-어떤-걸-해야할까">E2E 테스트 자동화 구축을 위해서 어떤 걸 해야할까?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#e2e-테스트-자동화-구축을-위해서-어떤-걸-해야할까"><span class="icon icon-link"></span></a></h2>
-<h4 id="시나리오-작성기획qa테스트-엔지니어">시나리오 작성(기획/QA/테스트 엔지니어)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#시나리오-작성기획qa테스트-엔지니어"><span class="icon icon-link"></span></a></h4>
+<h2 id="what-should-we-do-to-build-e2e-test-automation">What Should We Do to Build E2E Test Automation?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#what-should-we-do-to-build-e2e-test-automation"><span class="icon icon-link"></span></a></h2>
+<h4 id="writing-scenarios-planningqatest-engineers">Writing scenarios (Planning/QA/Test Engineers)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#writing-scenarios-planningqatest-engineers"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li>사용자 인터페이스(UI)를 고려한 테스팅 시나리오 작성</li>
-<li>수동으로 했던 테스트를 자동화 할 수 있는 테스트 시나리오 작성(라이브 배포 sanity 검증, 기본적인 검증)</li>
-<li>Happy 케이스만이 아닌 Bad 케이스에 대한 시나리오 작성</li>
-<li>개발 진행 시 테스트 코드 작성한다면 BAT 테스트 일정을 줄이는게 가능</li>
-<li>기능/컴포넌트 단위 테스트를 자동화로 이관하고, 사용성 테스트를 중점으로 테스트 가능</li>
+<li>Write testing scenarios that consider the user interface (UI)</li>
+<li>Write test scenarios that can automate tests previously done manually (live-deployment sanity checks, basic verification)</li>
+<li>Write scenarios not only for Happy cases but also for Bad cases</li>
+<li>If you write test code during development, you can reduce the BAT test schedule</li>
+<li>Migrate feature/component unit tests to automation, and focus testing on usability testing</li>
 </ul>
-<p>UX 우선 조직 - 시나리오 작성 편</p>
+<p>UX-first organization - Scenario writing edition</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">/*</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"> * 로그인 동작 대한 시나리오 작성</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"> * 1. 테스트의 동작을 기술한다.</span></span>
@@ -1322,40 +1322,40 @@ page.getByTestId() → data-testid 속성을 찾을 경우</li>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByTitle</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'비밀번호 입력'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">fill</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(process.env.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">USER_PASSWORD</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ||</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ''</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  await</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> page.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">locator</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'.account'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">getByRole</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'button'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">).</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">click</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
-<h4 id="테스트-코드-유지보수-진행여부기획qa팀과-논의필요">테스트 코드 유지보수 진행여부(기획/QA팀과 논의필요)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#테스트-코드-유지보수-진행여부기획qa팀과-논의필요"><span class="icon icon-link"></span></a></h4>
+<h4 id="whether-to-maintain-test-code-needs-discussion-with-the-planningqa-teams">Whether to maintain test code (needs discussion with the Planning/QA teams)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#whether-to-maintain-test-code-needs-discussion-with-the-planningqa-teams"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li>QA팀에서도 진행하고 있는 E2E 테스트와 중첩되지 않도록 진행 가능여부</li>
-<li>사용자 입장에서 꼭 필요한 테스트에 대한 리스트화 필요</li>
-<li>서비스 테스트 자동화 확산
+<li>Whether it can be done without overlapping the E2E tests the QA team is also running</li>
+<li>Need to list out the tests that are truly necessary from the user's perspective</li>
+<li>Expanding service test automation
 <ul>
-<li>성격에 맞는 테스트 자동화 필요
+<li>Test automation appropriate to the nature of the test is needed
 <ul>
-<li>간소화 테스트 개인 의견
+<li>Personal opinion on simplified tests
 <ul>
-<li>테스트 속도 빨라야함(5분 내 → 사람이 테스트 한 것보다 빨라야함) - 핫픽스 테스트 시 5분 정도 소요</li>
-<li>성공/실패를 하더라도 빌드에 영향은 없어야한다.</li>
-<li>실패하더라도 노티는 하지만, 배포/개발 프로세스에 따로 block 되면 안된다.</li>
+<li>Test speed must be fast (within 5 minutes → must be faster than a human running the test) - Hotfix testing takes about 5 minutes</li>
+<li>Whether it succeeds or fails, it must not affect the build.</li>
+<li>Even if it fails, it should notify but must not block the deployment/development process.</li>
 </ul>
 </li>
-<li>그외 테스트
+<li>Other tests
 <ul>
-<li>테스트 케이스가 많아 질 경우 도메인 , 기능단위 별로 젠킨스잡/테스트 구성을 다르게 가져간다.</li>
-</ul>
-</li>
+<li>When the number of test cases grows, configure Jenkins jobs/tests differently by domain and feature unit.</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="기대결과">기대결과<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#기대결과"><span class="icon icon-link"></span></a></h2>
-<ul>
-<li>자동화 테스트를 통해서 배포 후에 이슈(버그)를 빠르게 찾을 수 있어 <strong>유저의 경험을 개선</strong>시킬 수 있다.</li>
-<li>기본적인 사용자 종단 테스트를 통해서 <strong>서비스의 안정화</strong>를 꾀할 수 있다.</li>
-<li><strong>개발 코드의 신뢰도 상승과 코드의 품질</strong>을 높일 수 있다.</li>
-<li>새로운 기능에 추가 시 기존 기능까지 같이 테스트를 함으로써 <strong>잠재적인 이슈에 대해서 테스팅이 가능</strong>합니다.</li>
-<li>멀리 볼 경우 <strong>시간/비용을 절약</strong>할 수 있습니다.</li>
+</li>
 </ul>
-<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<h2 id="expected-results">Expected Results<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#expected-results"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Through automated testing, we can quickly find issues (bugs) after deployment, which <strong>improves the user experience</strong>.</li>
+<li>Through basic user end-to-end testing, we can pursue <strong>service stabilization</strong>.</li>
+<li>We can raise <strong>the reliability of development code and the quality of the code</strong>.</li>
+<li>By testing existing features together whenever a new feature is added, <strong>testing for potential issues becomes possible</strong>.</li>
+<li>In the long run, we can <strong>save time and cost</strong>.</li>
+</ul>
+<h2 id="reference-pages">Reference Pages<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reference-pages"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li><a href="https://playwright.dev/docs/intro">https://playwright.dev/docs/intro</a></li>
 <li><a href="https://hyperconnect.github.io/2022/01/28/e2e-test-with-playwright.html">https://hyperconnect.github.io/2022/01/28/e2e-test-with-playwright.html</a></li>
@@ -1367,9 +1367,9 @@ page.getByTestId() → data-testid 속성을 찾을 경우</li>
 <li><a href="https://velog.io/@heelieben/E2E-%ED%85%8C%EC%8A%A4%ED%8A%B8-PlayWright-2eub88ik">E2E 테스트 : Playwright</a></li>
 <li><a href="https://emewjin.github.io/playwright-vs-cypress/">playwright는 진짜 cypress보다 빠를까?</a></li>
 <li><a href="https://junghan92.medium.com/playwright-test%EB%A1%9C-e2e-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%95%98%EA%B8%B0-vs-cypress-473948d3b697">playwright test로 E2E 테스트 하기(vs. Cypress)</a></li>
-</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Playwright"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Playwright"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2023-04-02","className":"meta-mono","children":"04/02/2023"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[18,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","test",{"children":["$","$L3",null,{"href":"/en/tags?tag=test","className":"tag-pill","children":"test"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
-5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2023-01-01-fe-process","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"FE 개발 프로세스"}]]}],["$","$L3",null,{"href":"/en/posts/2023-06-30-react-query-v4","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"react-query(v4)"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"들어가기-전에-vs-cypress","text":"들어가기 전에.. (vs. Cypress)","depth":1},{"id":"cypress에서-playwright로-왜-넘어갔나","text":"Cypress에서 Playwright로 왜 넘어갔나??","depth":2},{"id":"cypress-개발-시-어려움-점","text":"Cypress 개발 시 어려움 점","depth":3},{"id":"cypress-vs-playwright","text":"Cypress vs Playwright","depth":3},{"id":"playwright-소개","text":"Playwright 소개","depth":1},{"id":"playwright-특징","text":"playwright 특징","depth":2},{"id":"playwright-구축","text":"Playwright 구축","depth":1},{"id":"test-파일","text":"Test 파일","depth":2},{"id":"timeouts","text":"Timeouts","depth":2},{"id":"cli","text":"CLI","depth":2},{"id":"테스트-속도-개선","text":"테스트 속도 개선","depth":2},{"id":"-테스트-전략-","text":"⭐ 테스트 전략 ⭐","depth":1},{"id":"병렬-테스트","text":"병렬 테스트","depth":2},{"id":"멀티-플랫폼브라우저-테스트","text":"멀티 플랫폼/브라우저 테스트","depth":2},{"id":"playwright-작성법","text":"playwright 작성법","depth":1},{"id":"테스트케이스-작성법","text":"테스트케이스 작성법","depth":2},{"id":"사소한-꿀팁","text":"사소한 꿀팁","depth":2},{"id":"testonly","text":"test.only","depth":3},{"id":"testskip","text":"test.skip","depth":3},{"id":"negating-matchers","text":"Negating Matchers","depth":2},{"id":"soft-assertions","text":"Soft Assertions","depth":2},{"id":"polling","text":"Polling","depth":2},{"id":"retrying","text":"Retrying","depth":2},{"id":"playwright-가이드","text":"Playwright 가이드","depth":1},{"id":"playwright-주요개념","text":"Playwright 주요개념","depth":2},{"id":"playwright-commands","text":"Playwright Commands","depth":2},{"id":"actions","text":"Actions","depth":3},{"id":"assertions","text":"Assertions","depth":2},{"id":"locators","text":"Locators","depth":2},{"id":"auto-waiting","text":"Auto-waiting","depth":1},{"id":"best-practices","text":"Best Practices","depth":1},{"id":"testing-philosophy","text":"Testing philosophy","depth":2},{"id":"best-practices-1","text":"Best Practices","depth":2},{"id":"vs-code-extension-을-활용한-locators-자동생성","text":"VS Code extension 을 활용한 locators 자동생성","depth":3},{"id":"적절한-assertion-사용","text":"적절한 Assertion 사용","depth":3},{"id":"local-debugging","text":"Local debugging","depth":3},{"id":"playwright-현실적인-적용방안","text":"Playwright 현실적인 적용방안","depth":1},{"id":"e2e-테스트-자동화-구축을-위해서-어떤-걸-해야할까","text":"E2E 테스트 자동화 구축을 위해서 어떤 걸 해야할까?","depth":1},{"id":"시나리오-작성기획qa테스트-엔지니어","text":"시나리오 작성(기획/QA/테스트 엔지니어)","depth":3},{"id":"테스트-코드-유지보수-진행여부기획qa팀과-논의필요","text":"테스트 코드 유지보수 진행여부(기획/QA팀과 논의필요)","depth":3},{"id":"기대결과","text":"기대결과","depth":1},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"Contents"}]}]
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Playwright"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Playwright"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2023-04-02","className":"meta-mono","children":"04/02/2023"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[20,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","test",{"children":["$","$L3",null,{"href":"/en/tags?tag=test","className":"tag-pill","children":"test"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
+5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2023-01-01-fe-process","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"FE Development Process"}]]}],["$","$L3",null,{"href":"/en/posts/2023-06-30-react-query-v4","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"react-query(v4)"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"before-we-begin-vs-cypress","text":"Before We Begin.. (vs. Cypress)","depth":1},{"id":"why-did-we-move-from-cypress-to-playwright","text":"Why Did We Move from Cypress to Playwright??","depth":2},{"id":"pain-points-when-developing-with-cypress","text":"Pain Points When Developing with Cypress","depth":3},{"id":"cypress-vs-playwright","text":"Cypress vs Playwright","depth":3},{"id":"introducing-playwright","text":"Introducing Playwright","depth":1},{"id":"playwright-features","text":"Playwright Features","depth":2},{"id":"setting-up-playwright","text":"Setting Up Playwright","depth":1},{"id":"test-files","text":"Test Files","depth":2},{"id":"timeouts","text":"Timeouts","depth":2},{"id":"cli","text":"CLI","depth":2},{"id":"improving-test-speed","text":"Improving Test Speed","depth":2},{"id":"-testing-strategy-","text":"⭐ Testing Strategy ⭐","depth":1},{"id":"parallel-testing","text":"Parallel Testing","depth":2},{"id":"multi-platformbrowser-testing","text":"Multi-Platform/Browser Testing","depth":2},{"id":"how-to-write-playwright-tests","text":"How to Write Playwright Tests","depth":1},{"id":"how-to-write-test-cases","text":"How to Write Test Cases","depth":2},{"id":"handy-little-tips","text":"Handy Little Tips","depth":2},{"id":"testonly","text":"test.only","depth":3},{"id":"testskip","text":"test.skip","depth":3},{"id":"negating-matchers","text":"Negating Matchers","depth":2},{"id":"soft-assertions","text":"Soft Assertions","depth":2},{"id":"polling","text":"Polling","depth":2},{"id":"retrying","text":"Retrying","depth":2},{"id":"playwright-guide","text":"Playwright Guide","depth":1},{"id":"playwright-key-concepts","text":"Playwright Key Concepts","depth":2},{"id":"playwright-commands","text":"Playwright Commands","depth":2},{"id":"actions","text":"Actions","depth":3},{"id":"assertions","text":"Assertions","depth":2},{"id":"locators","text":"Locators","depth":2},{"id":"auto-waiting","text":"Auto-waiting","depth":1},{"id":"best-practices","text":"Best Practices","depth":1},{"id":"testing-philosophy","text":"Testing philosophy","depth":2},{"id":"best-practices-1","text":"Best Practices","depth":2},{"id":"auto-generate-locators-using-the-vs-code-extension","text":"Auto-generate locators using the VS Code extension","depth":3},{"id":"use-appropriate-assertions","text":"Use appropriate Assertions","depth":3},{"id":"local-debugging","text":"Local debugging","depth":3},{"id":"realistic-ways-to-apply-playwright","text":"Realistic Ways to Apply Playwright","depth":1},{"id":"what-should-we-do-to-build-e2e-test-automation","text":"What Should We Do to Build E2E Test Automation?","depth":1},{"id":"writing-scenarios-planningqatest-engineers","text":"Writing scenarios (Planning/QA/Test Engineers)","depth":3},{"id":"whether-to-maintain-test-code-needs-discussion-with-the-planningqa-teams","text":"Whether to maintain test code (needs discussion with the Planning/QA teams)","depth":3},{"id":"expected-results","text":"Expected Results","depth":1},{"id":"reference-pages","text":"Reference Pages","depth":1}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

@@ -4,62 +4,62 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:Td07b,<h2 id="전역-상태-관리-라이브러리-등장-배경">전역 상태 관리 라이브러리 등장 배경<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#전역-상태-관리-라이브러리-등장-배경"><span class="icon icon-link"></span></a></h2>
-<p>리액트는 처음 출시될 때 Model View Controller 중 View만 담당하는 라이브러리로 발표되었기 때문에 상태를 구성하거나 관리하는 방안이 필요해졌고, 초창기에는 상태와 비즈니스 로직을 Container/Presenter에 몰아넣고 View로직을 props로 받아 뿌려주기만 하는 패턴으로 개발을 진행해 나갔습니다.</p>
-<p>하지만 애플리케이션 단위가 커지면서 양방향 데이터 이동이 가능한 MVC/MVP 구조에서 관리해야할 상태와 상태를 핸들링하는 컴포너트가 많아지면서 구조가 복잡해지고 또한 부모에서 로직을 처리하고 자식에게 props로 전달하다보니 props drilling 문제가 발생하게 되었고, 이슈를 해결하기 위해서 전역 상태 관리 라이브러리가 등장하게 되었습니다.</p>
+4:Tcbac,<h2 id="the-background-behind-the-emergence-of-global-state-management-libraries">The Background Behind the Emergence of Global State Management Libraries<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-background-behind-the-emergence-of-global-state-management-libraries"><span class="icon icon-link"></span></a></h2>
+<p>When React was first released, it was announced as a library responsible only for the View portion of Model-View-Controller. As a result, a way to compose and manage state became necessary. In the early days, development proceeded by cramming state and business logic into a Container/Presenter and simply passing View logic down as props to render it.</p>
+<p>However, as applications grew in scale, the number of states to manage and the number of components handling those states increased within the bidirectional MVC/MVP structure, making the architecture more complex. In addition, because logic was processed in a parent and passed down to children via props, the props drilling problem arose. To solve these issues, global state management libraries emerged.</p>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled.png" alt="Untitled"></p>
-<h3 id="전역-상태-관리-라이브러리가-해결하고자-하는-문제">전역 상태 관리 라이브러리가 해결하고자 하는 문제<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#전역-상태-관리-라이브러리가-해결하고자-하는-문제"><span class="icon icon-link"></span></a></h3>
-<p><strong>저장된 상태를 컴포넌트 트리 어디에서든지 읽어 올 수 있는 기능</strong></p>
+<h3 id="the-problems-global-state-management-libraries-aim-to-solve">The Problems Global State Management Libraries Aim to Solve<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-problems-global-state-management-libraries-aim-to-solve"><span class="icon icon-link"></span></a></h3>
+<p><strong>The ability to read stored state from anywhere in the component tree</strong></p>
 <ul>
-<li>리액트 런타임 내부
+<li>Inside the React runtime
 <ul>
-<li>공유되는 값을 전파하기 위해 리액트 context와 결합하여, <code>useState</code>, <code>useRef</code> 또는 <code>useReducer</code> 같은 기능 활용 → 주요과제는 리렌더링 최적화에 대한 처리는 고민해봐야함.</li>
+<li>To propagate shared values, it combines with React context and leverages features such as <code>useState</code>, <code>useRef</code>, or <code>useReducer</code> → the main challenge here is that you have to carefully consider how to handle re-render optimization.</li>
 </ul>
 </li>
-<li>리액트 외부의 모듈 상태를 활용
+<li>Leveraging module state outside of React
 <ul>
-<li>모듈 상태를 사용하면 싱글톤과 유사하게 상태를 저장</li>
-<li>구독을 통해 상태가 변경될 때 리렌더링 하도록 최적화가 용이</li>
-<li>단, 메모리 내부의 단일 값이기 때문에 다른 하위 트리에서만 사용되는 다른 상태를 가질 수 없음</li>
+<li>Using module state stores state in a manner similar to a singleton.</li>
+<li>It is easy to optimize so that re-rendering occurs only when the state changes, via subscription.</li>
+<li>However, because it is a single value in memory, it cannot hold a different state that is used only in a different subtree.</li>
 </ul>
 </li>
 </ul>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled1.png" alt="Untitled"></p>
-<p><strong>저장된 상태를 수정하는 기능</strong></p>
+<p><strong>The ability to modify stored state</strong></p>
 <ul>
-<li>리액트 UI 모델은 참조 평등과 불변(immutable) 업데이트를 지원하지만, 자바스크립트는 변경 가능한(mutable) 언어입니다.</li>
-<li>Redux 같은 경우에는 모든 상태 업데이트를 변경할 수 없는 방식 채택해서 해결했지만, 보일러플레이트 코드가 많아지는 단점이 생기게 되었습니다.
+<li>The React UI model supports reference equality and immutable updates, but JavaScript is a mutable language.</li>
+<li>In the case of Redux, this was solved by adopting an approach where all state updates are immutable, but this introduced the drawback of a lot of boilerplate code.
 <ul>
-<li>단, 변경 변경 가능한 스타일 코드 작성을 도와주는 immer를 사용한다면 코드 개선이 가능하다.</li>
+<li>However, if you use immer, which helps you write mutable-style code, you can improve the code.</li>
 </ul>
 </li>
-<li>요즘에는 개발자가 변경 가능한 스타일을 사용할 수 있도록 valtio(js proxy) 같은 라이브러리도 등장</li>
+<li>These days, libraries such as valtio (js proxy) have also emerged, allowing developers to use a mutable style.</li>
 </ul>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled2.png" alt="Untitled"></p>
-<p><strong>렌더링을 최적화하는 메커니즘</strong></p>
+<p><strong>A mechanism to optimize rendering</strong></p>
 <ul>
-<li><strong>수동 최적화:</strong> 종종 특정 상태를 구독하는 셀렉터 함수의 생성을 의미합니다. 여기서 장점은 사용자가 구독 방법을 세밀하게 제어하고 해당 상태를 구독하는 컴포넌트가 재렌더링되는 방법을 최적화할 수 있다는 것입니다. 단점은 이것이 수동 프로세스이고 오류가 발생하기 쉬우며 API에 포함되어서는 안 되는 불필요한 오버헤드가 필요하다는 주장이 있을 수 있습니다.
+<li><strong>Manual optimization:</strong> This often means creating selector functions that subscribe to a specific piece of state. The advantage here is that the user can finely control the subscription method and optimize how components subscribing to that state re-render. The downside is that one could argue this is a manual process that is error-prone and requires unnecessary overhead that should not be part of the API.
 <ul>
 <li>redux: useSelector, recoil: useRecoilState, jotai: useAtom</li>
 </ul>
 </li>
-<li><strong>자동 최적화:</strong> 라이브러리가 사용자가 필요한 것만 자동으로 재렌더링하는 프로세스를 최적화하는 곳입니다. 물론 여기의 장점은 사용이 간편하고 사용자가 수동 최적화에 대해 걱정할 필요 없이 기능 개발에 집중할 수 있다는 것입니다. 이것의 단점은 소비자로서 최적화 프로세스가 블랙박스이고 일부분을 수동으로 최적화하기 위한 방법이 없으면 너무 마술처럼 느껴질 수 있다는 것입니다.
+<li><strong>Automatic optimization:</strong> This is where the library automatically optimizes the process so that only what the user needs is re-rendered. The advantage here, of course, is that it is easy to use and lets the user focus on feature development without having to worry about manual optimization. The downside of this is that, as a consumer, the optimization process is a black box, and if there is no way to manually optimize a part of it, it can feel too magical.
 <ul>
-<li>Valtio는 업데이트되는 시기를 자동으로 추적하고 컴포넌트가 다시 렌더링되어야 하는 시기를 자동으로 관리하기 위해 내부적으로 <code>Proxy</code>를 사용하고 있습니다.</li>
+<li>Valtio internally uses <code>Proxy</code> to automatically track when updates occur and automatically manage when components need to re-render.</li>
 </ul>
 </li>
 </ul>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled3.png" alt="Untitled"></p>
-<p><strong>메모리 사용을 최적화하는 메커니즘을 제공</strong></p>
+<p><strong>Provides a mechanism to optimize memory usage</strong></p>
 <ul>
-<li>리액트 런타임 외부의 상태를 모듈 상태로 저장하는 상태 관리
+<li>State management that stores state outside the React runtime as module state
 <ul>
-<li>특정 컴포넌트에 연결되지 않고 수동으로 관리해야 할 수도 있음을 의미(redux)</li>
+<li>This means it is not tied to a specific component and may have to be managed manually (redux).</li>
 </ul>
 </li>
-<li>리액트 런타임 내부의 상태로 저장하는 상태관리
+<li>State management that stores state inside the React runtime
 <ul>
-<li>리액트 라이프사이클에 연결하면 컴포넌트가 마운트 해제될 때 자동 가비지 컬렉션을 더 쉽게 활용
+<li>Tying it to the React lifecycle makes it easier to leverage automatic garbage collection when a component is unmounted.
 <ul>
 <li>context api, recoil, jotai</li>
 </ul>
@@ -68,59 +68,59 @@ b:"$Sreact.suspense"
 </li>
 </ul>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled4.png" alt="Untitled"></p>
-<p><strong>전역 상태 관리 라이브러리 및 패턴의 새로운 흐름(상향식 접근법 등장)</strong></p>
+<p><strong>New trends in global state management libraries and patterns (the emergence of the bottom-up approach)</strong></p>
 <ul>
-<li>하향식(top down) 접근법: 리덕스를 포함한 이전까지 나온 상태관리 솔루션
+<li>Top-down approach: state management solutions up to and including Redux
 <ul>
-<li>필요한 상태를 모두 컴포넌트 트리 상단의 Store가 가지고 있으면서 하위 컴포넌트에서 필요한 상태를 가져다 쓰는 방식</li>
+<li>An approach where the Store at the top of the component tree holds all the necessary state, and lower components pull the state they need from it.</li>
 </ul>
 </li>
-<li>상향식(bottom up) 접근법
+<li>Bottom-up approach
 <ul>
-<li>리액트 hook의 등장과 함께 작은 상태나 로직을 가진 hook들을 조합해가며 복잡한 상태까지 관리하는 방식이 유용할 수 있다고 알려짐에 따라서 상향식 접근법이 논의됨에 따라서 원자 단위의 스토어를 가지게 됨.</li>
-<li>원자가 변경된 경우 원자를 구독한 컴포넌트가 리렌더링 되는 방식</li>
+<li>With the arrival of React hooks, it became known that composing hooks with small pieces of state or logic to manage even complex state could be useful. As the bottom-up approach was discussed, stores came to be held at the granularity of atoms.</li>
+<li>An approach where, when an atom changes, the components subscribing to that atom re-render.</li>
 <li>recoil, jotai</li>
 </ul>
 </li>
 </ul>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled5.png" alt="Untitled"></p>
-<p><strong>컴포넌트 중심 애플리케이션 vs 데이터 중심 애플리케이션</strong></p>
+<p><strong>Component-centric applications vs. data-centric applications</strong></p>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled6.png" alt="Untitled"></p>
-<p><strong>원격 상태 관리 문제를 해결하기 위해 특별히 제작된 라이브러리</strong></p>
+<p><strong>Libraries built specifically to solve the problem of remote state management</strong></p>
 <ul>
-<li>CRUD 스타일의 애플리케이션인 대부분의 웹 애플리케이션의 경우 전용 원격 상태 관리 라이브러리</li>
-<li>중복 제거 요청, 재시도, 폴링, 뮤테이션 같은 처리
+<li>For most web applications, which are CRUD-style applications, a dedicated remote state management library</li>
+<li>Handling things such as request deduplication, retries, polling, and mutations
 <ul>
-<li><a href="https://react-query.tanstack.com/overview">React query</a>, <a href="https://github.com/vercel/swr">SWR</a>, <a href="https://www.apollographql.com/">Apollo</a>, <a href="https://relay.dev/">Relay</a>,  <a href="https://redux-toolkit.js.org/introduction/getting-started#rtk-query">RTK Query</a> 포함</li>
+<li>Includes <a href="https://react-query.tanstack.com/overview">React query</a>, <a href="https://github.com/vercel/swr">SWR</a>, <a href="https://www.apollographql.com/">Apollo</a>, <a href="https://relay.dev/">Relay</a>,  <a href="https://redux-toolkit.js.org/introduction/getting-started#rtk-query">RTK Query</a></li>
 </ul>
 </li>
 </ul>
-<h2 id="상태관리-라이브러리-요약">상태관리 라이브러리 요약<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#상태관리-라이브러리-요약"><span class="icon icon-link"></span></a></h2>
+<h2 id="summary-of-state-management-libraries">Summary of State Management Libraries<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#summary-of-state-management-libraries"><span class="icon icon-link"></span></a></h2>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled7.png" alt="Untitled"></p>
-<p><strong>상태관리 트렌드</strong></p>
+<p><strong>State management trends</strong></p>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled8.png" alt="Untitled"></p>
 <p><a href="https://npmtrends.com/jotai-vs-mobx-vs-recoil-vs-redux-vs-valtio-vs-xstate-vs-zustand">https://npmtrends.com/jotai-vs-mobx-vs-recoil-vs-redux-vs-valtio-vs-xstate-vs-zustand</a></p>
 <h3 id="contextapi">ContextAPI<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#contextapi"><span class="icon icon-link"></span></a></h3>
-<p>정적인 데이터 위주로 처리하거나 업데이트가 자주 발생하지 않을 때 사용하기 적합</p>
-<p>복잡한 업데이트를 처리 시 비효율적인데 그 이유는 <strong>Provider로 감싸진 부분의 업데이트가 되지 않은 state에도 리렌더링이 발생하기 때문이다.</strong></p>
+<p>Suitable for use when handling mostly static data or when updates do not occur frequently.</p>
+<p>It is inefficient when handling complex updates, and the reason is that <strong>re-rendering occurs even for state that has not been updated within the portion wrapped by the Provider.</strong></p>
 <h3 id="flux-redux-zustand">Flux (Redux, Zustand)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#flux-redux-zustand"><span class="icon icon-link"></span></a></h3>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled9.png" alt="Untitled"></p>
-<p><strong>Store</strong> 라는 상태 저장소를 기반으로, <strong>Action 타입을 Reducer에 전달</strong>하면 해당 타입에 맞는 동작에 따라 상태값을 갱신 컴포넌트는 <strong>Selector</strong> 를 사용해 Store에서 <strong>필요한 상태값을 구독(subscribing)</strong> 하는 형태</p>
-<p><strong>비즈니스 로직을 리액트 컴포넌트에서 분리할 목적으로 사용할 경우</strong></p>
+<p>Based on a state store called the <strong>Store</strong>, when you <strong>pass an Action type to a Reducer</strong>, the state value is updated according to the operation matching that type, and components use a <strong>Selector</strong> to <strong>subscribe</strong> to <strong>the state value they need</strong> from the Store.</p>
+<p><strong>When used with the purpose of separating business logic from React components</strong></p>
 <ul>
 <li><a href="https://seungahhong.github.io/blog/2021/12/2021-12-30-redux/">Redux</a>, <a href="https://seungahhong.github.io/blog/2022/03/2022-03-26-redux-toolkit/">Redux-Toolkit</a>
 <ul>
-<li>Redux는 오직 하나의 store만 가지며, 하나의 객체 트리를 가지기 때문에 디버깅이 용이하다.</li>
-<li>store 내부 상태는 action 객체에 의해서만 변경이 가능하다. 모든 state 변화들이 하나의 store에만 집중되어 있고 단방향으로 일어나기 때문에 예측 가능한 결과가 나타난다.</li>
-<li>reducer는 순수함수이기 때문에 상태를 변경하는 것이 아닌 새로운 상태를 반환한다.</li>
-<li>보일러플레이트 코드가 많다는 단점이 있지만, 해당 이슈를 보완하기 위해서 redux-toolkit이 나오게 되었다.</li>
+<li>Redux has only one store and a single object tree, which makes debugging easy.</li>
+<li>The internal state of the store can only be changed via action objects. Because all state changes are concentrated in a single store and occur in one direction, the results are predictable.</li>
+<li>Because a reducer is a pure function, it returns a new state rather than mutating the state.</li>
+<li>It has the drawback of a lot of boilerplate code, but redux-toolkit was created to address that issue.</li>
 </ul>
 </li>
 <li><a href="https://seungahhong.github.io/blog/2023/07/2023-07-22-zustand/">Zustand</a>
 <ul>
-<li>store 구현 방식 및 변경 방식이 간단함(redux에 비해 보일러플레이트 코드가 적다)</li>
-<li>Provider로 래핑할 필요가 없다.</li>
-<li>다양한 middleware 라이브러리를 제공(redux, immer, selector(상태변경 시 자동 호출), redux-devtools)</li>
+<li>The way stores are implemented and modified is simple (less boilerplate code compared to redux).</li>
+<li>There is no need to wrap it with a Provider.</li>
+<li>It provides various middleware libraries (redux, immer, selector (automatically invoked on state change), redux-devtools).</li>
 </ul>
 </li>
 </ul>
@@ -130,47 +130,47 @@ b:"$Sreact.suspense"
 <ul>
 <li><a href="https://seungahhong.github.io/blog/2022/06/2022-06-14-jotai/">jotai</a>
 <ul>
-<li>1달에 한번씩 버전 업데이트가 이루어지며 신기능, 버그 수정이 빠름 (열린 PR이 없는 정도)</li>
-<li>Recoil에 비해 용량이 매우 적음</li>
-<li>Typescript 기반</li>
-<li>unique 한 키 값을 생성하지 않아도 된다.(내부에서는 weakMap사용)</li>
-<li>suspense 지원</li>
-<li>devtool 강력함.</li>
+<li>Version updates happen about once a month, with fast new features and bug fixes (to the point where there are no open PRs).</li>
+<li>Very small in size compared to Recoil.</li>
+<li>Based on TypeScript.</li>
+<li>You don't need to generate a unique key value (internally it uses a weakMap).</li>
+<li>Supports suspense.</li>
+<li>Powerful devtool.</li>
 </ul>
 </li>
 <li><a href="https://seungahhong.github.io/blog/2022/03/2022-03-22-recoil/">recoil</a>
 <ul>
-<li>facebook에서 개발</li>
-<li>리액트 "외부 요인" 으로써의 상태가 아니라 내부 state를 이용하기 때문에 스케줄러에 접근 가능</li>
-<li>snapshot 기능을 제공하고 있으며, 이전 상태값으로 변경이 가능하다.</li>
+<li>Developed by Facebook.</li>
+<li>Because it uses internal React state rather than state as an "external factor" to React, it can access the scheduler.</li>
+<li>It provides a snapshot feature, allowing you to revert to a previous state value.</li>
 <li>persist: recoil-persist
 <ul>
-<li>atom을 생성할 때 key를 넣는 이유 (unique key를 통해 디버깅, persist 가능)</li>
+<li>The reason for including a key when creating an atom (a unique key enables debugging and persistence).</li>
 </ul>
 </li>
-<li>업데이트 주기가 길다. 🥶</li>
+<li>The update cycle is long. 🥶</li>
 </ul>
 </li>
 </ul>
 <h3 id="proxy-mobx-valtio-overmind">Proxy (MobX, Valtio, overmind)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#proxy-mobx-valtio-overmind"><span class="icon icon-link"></span></a></h3>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled11.png" alt="Untitled"></p>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled12.png" alt="Untitled"></p>
-<p>전체 상태(Proxy)들을 모아놓고 엑세스를 제공하며, 컴포넌트에서 사용되는 일부 상태를 자동으로 감지하고 업데이트를 인지하는 패턴</p>
+<p>A pattern that gathers the entire state (Proxy) and provides access, automatically detecting some of the state used in a component and recognizing updates.</p>
 <ul>
 <li>Valtio
 <ul>
-<li>렌더링 최적화 방식을 Hooks 사용</li>
+<li>Uses Hooks for its rendering optimization approach.</li>
 <li><a href="https://itchallenger.tistory.com/631">https://itchallenger.tistory.com/631</a></li>
 <li><a href="https://itchallenger.tistory.com/632">https://itchallenger.tistory.com/632</a></li>
 </ul>
 </li>
 <li><a href="https://seungahhong.github.io/blog/2021/12/2021-12-31-mobx/">Mobx</a>
 <ul>
-<li>고차함수(hoc) 함수를 사용</li>
+<li>Uses higher-order component (hoc) functions.</li>
 </ul>
 </li>
 </ul>
-<h3 id="server-statereact-query-swr">Server State(react-query, swr)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#server-statereact-query-swr"><span class="icon icon-link"></span></a></h3>
+<h3 id="server-state-react-query-swr">Server State (react-query, swr)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#server-state-react-query-swr"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>react-query
 <ul>
@@ -187,31 +187,31 @@ b:"$Sreact.suspense"
 </ul>
 <h3 id="xstate">XState<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#xstate"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>특정한 상태들에 따라 동작을 달리해야 하는 경우, 상태의 개수에 따라 복잡도가 매우 증가하게 되는데, 이런 상황을 해결하기 위해서 FSM(유한 상태 기계)에 제한된 구조와 몇 가지 제약으로 복잡하게 얽힌 코드를 정리하기 위한 기술 패턴이 사용된 라이브러리</li>
-<li>특히, 복잡한 상태 변화/흐름을 flowchart로 도식화가 가능해서 개발 관련 담당자들과 협업시 효율적인 커뮤니케이션이 가능</li>
+<li>A library that uses a technical pattern to organize complex, tangled code with the limited structure and a few constraints of an FSM (Finite State Machine). It is used when behavior must differ depending on specific states, since complexity increases dramatically as the number of states grows.</li>
+<li>In particular, since complex state changes and flows can be diagrammed as a flowchart, it enables efficient communication when collaborating with development stakeholders.</li>
 </ul>
 <p><img src="/blog-assets/2023/09/assets/10/Untitled13.png" alt="Untitled"></p>
 <ul>
 <li>
-<p>일반적으로 FSM은 다섯 부분으로 구성됩니다.(<a href="https://xstate.js.org/docs/about/concepts.html#finite-state-machines">문서</a>)</p>
+<p>In general, an FSM consists of five parts. (<a href="https://xstate.js.org/docs/about/concepts.html#finite-state-machines">documentation</a>)</p>
 <ul>
 <li>
-<p>하나의 초기 상태(An <strong>initial state)</strong></p>
+<p>An <strong>initial state</strong></p>
 </li>
 <li>
-<p>유한개의 상태(A finite number of <strong>states</strong>)</p>
+<p>A finite number of <strong>states</strong></p>
 </li>
 <li>
-<p>유한개의 이벤트(A finite number of <strong>events</strong>)</p>
+<p>A finite number of <strong>events</strong></p>
 </li>
 <li>
-<p>현재 상태와 이벤트로 다음 상태를 결정하는 전이 함수(A <strong>transition function</strong> that determines the next state given the current state and event)</p>
+<p>A <strong>transition function</strong> that determines the next state given the current state and event</p>
 </li>
 <li>
-<p>유한 개의 최종 상태(A (possibly empty) set of <strong>final states</strong>)</p>
+<p>A (possibly empty) set of <strong>final states</strong></p>
 </li>
 <li>
-<p>예제 코드
+<p>Example code
 <img src="/blog-assets/2023/09/assets/10/Untitled14.png" alt="Untitled"></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 초기 상태: idle</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 유한개의 상태: idle, loading, resolved, rejected</span></span>
@@ -250,15 +250,15 @@ b:"$Sreact.suspense"
 </ul>
 </li>
 <li>
-<p>주요 특징
-<strong>설치</strong></p>
+<p>Key features
+<strong>Installation</strong></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> i</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> xstate</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @xstate/react</span></span></code></pre></figure>
-<p><strong>상태</strong></p>
+<p><strong>States</strong></p>
 <ul>
-<li>initial: 초기 상태값(states 객체의 키 속성)</li>
-<li>states: 상태 노드
+<li>initial: the initial state value (a key property of the states object)</li>
+<li>states: state nodes
 <ul>
-<li>empty, hold 값이 내부 노드값을 가리킨다.</li>
+<li>empty and hold point to internal node values.</li>
 </ul>
 </li>
 </ul>
@@ -270,10 +270,10 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    hold: {},</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
-<p><strong>이벤트</strong></p>
+<p><strong>Events</strong></p>
 <ul>
-<li>on: 상태 노드안에 on 으로 객체들 만들어서 이벤트 생성</li>
-<li>empty 상태에서 실행될 수 있는 이벤트 ADD_ITEM 추가</li>
+<li>on: create events by making objects with <code>on</code> inside a state node</li>
+<li>add the ADD_ITEM event that can run in the empty state</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 선언</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> cartMachine</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createMachine</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
@@ -313,10 +313,10 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">};</span></span></code></pre></figure>
 <p><strong>context, action</strong></p>
 <ul>
-<li>context: 상태 노드값과 구별되는 부가적인 데이터</li>
-<li>action: 컨텍스트의 값을 변경하거나 추가할 때 사용
+<li>context: additional data distinct from the state node values</li>
+<li>action: used to change or add values in the context
 <ul>
-<li>assign: spread 연산을 사용해도 되지만, 편의상 assign 함수를 제공</li>
+<li>assign: you can use the spread operator, but for convenience an assign function is provided</li>
 </ul>
 </li>
 </ul>
@@ -349,7 +349,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <p><strong>guards, always</strong>
-특정 상태로 전이됐을 때 <strong>상황</strong>에 따라 다른 상태로 곧바로 전이되야 할 경우에 사용이 가능</p>
+Can be used when, upon transitioning to a specific state, it must immediately transition to a different state depending on the <strong>situation</strong>.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  actions</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // ...</span></span>
@@ -373,7 +373,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">	}</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <p><strong>invoke</strong>
-XState는 비동기 작업을 포함해 상태 기계를 외부와 연동하는 방법으로 invoke를 제공</p>
+XState provides invoke as a way to integrate a state machine with the outside world, including asynchronous operations.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">purchasing</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  invoke</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    id</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'purchasing'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
@@ -388,7 +388,7 @@ XState는 비동기 작업을 포함해 상태 기계를 외부와 연동하는 
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">},</span></span></code></pre></figure>
 <p><strong>service</strong>
-이벤트 리스너 완료된 이후에 전달된 콜백 함수를 다시 받을 경우 service를 통해서 설정이 가능</p>
+If you want to receive a callback function passed after an event listener has completed, you can configure it via service.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">state</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">send</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">service</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useMachine</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(cartMachine);</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">useEffect</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -400,8 +400,8 @@ XState는 비동기 작업을 포함해 상태 기계를 외부와 연동하는 
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}, []);</span></span></code></pre></figure>
 </li>
 </ul>
-<h2 id="그렇다면-어떤-경우에-상태관리를-써야할까">그렇다면.. 어떤 경우에 상태관리를 써야할까??<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#그렇다면-어떤-경우에-상태관리를-써야할까"><span class="icon icon-link"></span></a></h2>
-<h3 id="npm-상태관리-동향---redux--react-query-">npm 상태관리 동향 -> redux 👍, react-query 👍<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#npm-상태관리-동향---redux--react-query-"><span class="icon icon-link"></span></a></h3>
+<h2 id="so-when-should-you-use-state-management">So... when should you use state management??<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#so-when-should-you-use-state-management"><span class="icon icon-link"></span></a></h2>
+<h3 id="npm-state-management-trends---redux--react-query-">npm state management trends -> redux 👍, react-query 👍<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#npm-state-management-trends---redux--react-query-"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>
 <p>client state: redux > zustand > XState > mobx > jotai > recoil > valtio</p>
@@ -410,30 +410,30 @@ XState는 비동기 작업을 포함해 상태 기계를 외부와 연동하는 
 <p>server state: react-query > swr</p>
 </li>
 </ul>
-<h3 id="정적인-데이터-위주-처리-업데이트-자주-발생하지-않을-경우--context-api-">정적인 데이터 위주 처리, 업데이트 자주 발생하지 않을 경우 → context API 👍<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#정적인-데이터-위주-처리-업데이트-자주-발생하지-않을-경우--context-api-"><span class="icon icon-link"></span></a></h3>
-<h3 id="상향식-접근법-메모리-사용을-최적화-리액트-생태계만-사용할-경우--jotai-">상향식 접근법, 메모리 사용을 최적화, 리액트 생태계만 사용할 경우 → jotai 👍<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#상향식-접근법-메모리-사용을-최적화-리액트-생태계만-사용할-경우--jotai-"><span class="icon icon-link"></span></a></h3>
+<h3 id="handling-mostly-static-data-when-updates-do-not-occur-frequently--context-api-">Handling mostly static data, when updates do not occur frequently → context API 👍<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#handling-mostly-static-data-when-updates-do-not-occur-frequently--context-api-"><span class="icon icon-link"></span></a></h3>
+<h3 id="bottom-up-approach-optimizing-memory-usage-when-using-only-the-react-ecosystem--jotai-">Bottom-up approach, optimizing memory usage, when using only the React ecosystem → jotai 👍<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#bottom-up-approach-optimizing-memory-usage-when-using-only-the-react-ecosystem--jotai-"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>recoil: 리액트 "외부 요인" 으로써의 상태가 아니라 내부 state를 이용하기 때문에 스케줄러에 접근 가능(facebook 자체 라이브러리)</li>
-<li>jotai: Typescript 기반, Recoil에 비해 용량이 매우 적음, unique 키 필요하지 않음</li>
+<li>recoil: because it uses internal React state rather than state as an "external factor" to React, it can access the scheduler (Facebook's own library).</li>
+<li>jotai: TypeScript-based, very small in size compared to Recoil, no unique key required.</li>
 </ul>
-<h3 id="하향식-접근법-많은-모듈에서-데이터를-공유-해야할-경우--redux-">하향식 접근법, 많은 모듈에서 데이터를 공유 해야할 경우 → redux 👍<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#하향식-접근법-많은-모듈에서-데이터를-공유-해야할-경우--redux-"><span class="icon icon-link"></span></a></h3>
+<h3 id="top-down-approach-when-data-must-be-shared-across-many-modules--redux-">Top-down approach, when data must be shared across many modules → redux 👍<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#top-down-approach-when-data-must-be-shared-across-many-modules--redux-"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>Redux: 다양한 middleware 라이브러리를 제공, 가장 널리 사용되는 라이브러리</li>
-<li>zustand: provider 래핑 필요없음, 용량/코드 양이 리덕스보다 작다</li>
+<li>Redux: provides various middleware libraries; the most widely used library.</li>
+<li>zustand: no Provider wrapping required, smaller in size/amount of code than redux.</li>
 </ul>
-<h3 id="자동-최적화proxy-사용하고-싶은-경우--valtio--mobx">자동 최적화(proxy) 사용하고 싶은 경우 → valtio 👍, mobx<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#자동-최적화proxy-사용하고-싶은-경우--valtio--mobx"><span class="icon icon-link"></span></a></h3>
+<h3 id="when-you-want-to-use-automatic-optimization-proxy--valtio--mobx">When you want to use automatic optimization (proxy) → valtio 👍, mobx<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#when-you-want-to-use-automatic-optimization-proxy--valtio--mobx"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>valtio: react hook 지원</li>
-<li>mobx는 객체지향 컴포넌트, hoc 방식의 함수를 사용, decorator 지원</li>
+<li>valtio: supports React hooks.</li>
+<li>mobx uses object-oriented components and hoc-style functions, and supports decorators.</li>
 </ul>
-<h3 id="flowchart-도식화를-통한-커뮤니케이션-중요할-경우--xstate-">flowchart 도식화를 통한 커뮤니케이션 중요할 경우 → XState 👍<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#flowchart-도식화를-통한-커뮤니케이션-중요할-경우--xstate-"><span class="icon icon-link"></span></a></h3>
-<h3 id="서버-상태관리를-사용해야하는-경우--react-query--swr">서버 상태관리를 사용해야하는 경우 → react-query 👍, swr<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#서버-상태관리를-사용해야하는-경우--react-query--swr"><span class="icon icon-link"></span></a></h3>
+<h3 id="when-communication-through-flowchart-diagrams-is-important--xstate-">When communication through flowchart diagrams is important → XState 👍<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#when-communication-through-flowchart-diagrams-is-important--xstate-"><span class="icon icon-link"></span></a></h3>
+<h3 id="when-you-need-to-use-server-state-management--react-query--swr">When you need to use server state management → react-query 👍, swr<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#when-you-need-to-use-server-state-management--react-query--swr"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>react-query: React 어플리케이션에 서버 상태를 가져오고, 캐싱하고, 동기화하고, 업데이트하는 것을 쉽게 해 준다. graphql을 추가적으로 제공한다.</li>
-<li>swr: 먼저 캐시에서 데이터를 반환한 다음, 서버에 데이터를 가져오는 요청을 보내고, 마지막으로 최신 데이터를 제공하는 전략이다. nextjs 환경 세팅이 용이하다.</li>
+<li>react-query: makes it easy to fetch, cache, synchronize, and update server state in a React application. It additionally provides graphql support.</li>
+<li>swr: a strategy that first returns data from the cache, then sends a request to fetch data from the server, and finally provides the up-to-date data. It is easy to set up in a Next.js environment.</li>
 </ul>
-<h3 id="grpahql-개발-환경인-경우--apollo-client-">GrpahQL 개발 환경인 경우 → Apollo Client 👍<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#grpahql-개발-환경인-경우--apollo-client-"><span class="icon icon-link"></span></a></h3>
-<h2 id="내부-참고페이지">내부 참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#내부-참고페이지"><span class="icon icon-link"></span></a></h2>
+<h3 id="when-you-are-in-a-graphql-development-environment--apollo-client-">When you are in a GraphQL development environment → Apollo Client 👍<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#when-you-are-in-a-graphql-development-environment--apollo-client-"><span class="icon icon-link"></span></a></h3>
+<h2 id="internal-reference-pages">Internal Reference Pages<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#internal-reference-pages"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li><a href="https://seungahhong.github.io/blog/2023/07/2023-07-23-react-query-v5/">react-query-v5</a></li>
 <li><a href="https://seungahhong.github.io/blog/2023/06/2023-06-30-react-query-v4/">react-query-v4</a></li>
@@ -448,7 +448,7 @@ XState는 비동기 작업을 포함해 상태 기계를 외부와 연동하는 
 <li><a href="https://seungahhong.github.io/blog/2022/03/2022-03-22-recoil/">recoil</a></li>
 <li><a href="https://seungahhong.github.io/blog/2022/01/2022-01-09-graphql/">graphql</a></li>
 </ul>
-<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<h2 id="reference-pages">Reference Pages<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reference-pages"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li><a href="https://fe-tool.com/awesome-react-state-management">18 Best React State Management Libraries in 2023</a></li>
 <li><a href="https://www.nextree.io/riaegteu-sangtaegwanri-teurendeuyi-byeonhwa-2/">리액트 상태관리 트렌드의 변화</a></li>
@@ -460,9 +460,9 @@ XState는 비동기 작업을 포함해 상태 기계를 외부와 연동하는 
 <li><a href="https://blog.hwahae.co.kr/all/tech/6707">Finite state machine &#x26; statecharts - XState – 화해 블로그 | 기술 블로그</a></li>
 <li><a href="https://itchallenger.tistory.com/entry/%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%A1%9C-XState-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0">리액트로 XState 시작하기</a></li>
 <li><a href="https://fe-developers.kakaoent.com/2022/220922-make-cart-with-xstate/">자바스크립트로 만든 유한 상태 기계 XState | 카카오엔터테인먼트 FE 기술블로그</a></li>
-</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"리액트 상태관리 정리"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"리액트 상태관리 정리"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2023-09-10","className":"meta-mono","children":"09/10/2023"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[11,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","상태관리",{"children":["$","$L3",null,{"href":"/en/tags?tag=%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC","className":"tag-pill","children":"상태관리"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"A Summary of React State Management"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"A Summary of React State Management"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2023-09-10","className":"meta-mono","children":"09/10/2023"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[12,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","State Management",{"children":["$","$L3",null,{"href":"/en/tags?tag=State%20Management","className":"tag-pill","children":"State Management"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
 5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2023-08-27-nextjs-v13","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Nextjs(v13)"}]]}],["$","$L3",null,{"href":"/en/posts/2023-09-17-gatsby-v5","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Gatsby(v5)"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"전역-상태-관리-라이브러리-등장-배경","text":"전역 상태 관리 라이브러리 등장 배경","depth":1},{"id":"전역-상태-관리-라이브러리가-해결하고자-하는-문제","text":"전역 상태 관리 라이브러리가 해결하고자 하는 문제","depth":2},{"id":"상태관리-라이브러리-요약","text":"상태관리 라이브러리 요약","depth":1},{"id":"contextapi","text":"ContextAPI","depth":2},{"id":"flux-redux-zustand","text":"Flux (Redux, Zustand)","depth":2},{"id":"atomic-recoil-jotai","text":"Atomic (Recoil, Jotai)","depth":2},{"id":"proxy-mobx-valtio-overmind","text":"Proxy (MobX, Valtio, overmind)","depth":2},{"id":"server-statereact-query-swr","text":"Server State(react-query, swr)","depth":2},{"id":"xstate","text":"XState","depth":2},{"id":"그렇다면-어떤-경우에-상태관리를-써야할까","text":"그렇다면.. 어떤 경우에 상태관리를 써야할까??","depth":1},{"id":"npm-상태관리-동향---redux--react-query-","text":"npm 상태관리 동향 -> redux 👍, react-query 👍","depth":2},{"id":"정적인-데이터-위주-처리-업데이트-자주-발생하지-않을-경우--context-api-","text":"정적인 데이터 위주 처리, 업데이트 자주 발생하지 않을 경우 → context API 👍","depth":2},{"id":"상향식-접근법-메모리-사용을-최적화-리액트-생태계만-사용할-경우--jotai-","text":"상향식 접근법, 메모리 사용을 최적화, 리액트 생태계만 사용할 경우 → jotai 👍","depth":2},{"id":"하향식-접근법-많은-모듈에서-데이터를-공유-해야할-경우--redux-","text":"하향식 접근법, 많은 모듈에서 데이터를 공유 해야할 경우 → redux 👍","depth":2},{"id":"자동-최적화proxy-사용하고-싶은-경우--valtio--mobx","text":"자동 최적화(proxy) 사용하고 싶은 경우 → valtio 👍, mobx","depth":2},{"id":"flowchart-도식화를-통한-커뮤니케이션-중요할-경우--xstate-","text":"flowchart 도식화를 통한 커뮤니케이션 중요할 경우 → XState 👍","depth":2},{"id":"서버-상태관리를-사용해야하는-경우--react-query--swr","text":"서버 상태관리를 사용해야하는 경우 → react-query 👍, swr","depth":2},{"id":"grpahql-개발-환경인-경우--apollo-client-","text":"GrpahQL 개발 환경인 경우 → Apollo Client 👍","depth":2},{"id":"내부-참고페이지","text":"내부 참고페이지","depth":1},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"Contents"}]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"the-background-behind-the-emergence-of-global-state-management-libraries","text":"The Background Behind the Emergence of Global State Management Libraries","depth":1},{"id":"the-problems-global-state-management-libraries-aim-to-solve","text":"The Problems Global State Management Libraries Aim to Solve","depth":2},{"id":"summary-of-state-management-libraries","text":"Summary of State Management Libraries","depth":1},{"id":"contextapi","text":"ContextAPI","depth":2},{"id":"flux-redux-zustand","text":"Flux (Redux, Zustand)","depth":2},{"id":"atomic-recoil-jotai","text":"Atomic (Recoil, Jotai)","depth":2},{"id":"proxy-mobx-valtio-overmind","text":"Proxy (MobX, Valtio, overmind)","depth":2},{"id":"server-state-react-query-swr","text":"Server State (react-query, swr)","depth":2},{"id":"xstate","text":"XState","depth":2},{"id":"so-when-should-you-use-state-management","text":"So... when should you use state management??","depth":1},{"id":"npm-state-management-trends---redux--react-query-","text":"npm state management trends -> redux 👍, react-query 👍","depth":2},{"id":"handling-mostly-static-data-when-updates-do-not-occur-frequently--context-api-","text":"Handling mostly static data, when updates do not occur frequently → context API 👍","depth":2},{"id":"bottom-up-approach-optimizing-memory-usage-when-using-only-the-react-ecosystem--jotai-","text":"Bottom-up approach, optimizing memory usage, when using only the React ecosystem → jotai 👍","depth":2},{"id":"top-down-approach-when-data-must-be-shared-across-many-modules--redux-","text":"Top-down approach, when data must be shared across many modules → redux 👍","depth":2},{"id":"when-you-want-to-use-automatic-optimization-proxy--valtio--mobx","text":"When you want to use automatic optimization (proxy) → valtio 👍, mobx","depth":2},{"id":"when-communication-through-flowchart-diagrams-is-important--xstate-","text":"When communication through flowchart diagrams is important → XState 👍","depth":2},{"id":"when-you-need-to-use-server-state-management--react-query--swr","text":"When you need to use server state management → react-query 👍, swr","depth":2},{"id":"when-you-are-in-a-graphql-development-environment--apollo-client-","text":"When you are in a GraphQL development environment → Apollo Client 👍","depth":2},{"id":"internal-reference-pages","text":"Internal Reference Pages","depth":1},{"id":"reference-pages","text":"Reference Pages","depth":1}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

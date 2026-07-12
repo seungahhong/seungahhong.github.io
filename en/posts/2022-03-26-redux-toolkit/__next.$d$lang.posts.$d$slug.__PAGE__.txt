@@ -4,41 +4,41 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T281b9,<h2 id="리덕스-툴킷이란">리덕스 툴킷이란?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#리덕스-툴킷이란"><span class="icon icon-link"></span></a></h2>
+4:T28106,<h2 id="what-is-redux-toolkit">What is Redux Toolkit?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#what-is-redux-toolkit"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li>redux toolkit 라이브러리는 리덕스팀의 3가지 걱정을 해결하기 위해 등장하였다.</li>
+<li>The Redux Toolkit library was created to address three concerns the Redux team had.</li>
 </ul>
 <ol>
-<li>리덕스 스토어를 구성하는 것은 너무 복잡하다.</li>
-<li>리덕스가 유용해지려면 많은 패키지들을 추가로 설치해야한다.</li>
-<li>리덕스는 너무 많은 보일러플레이트 코드를 요구한다.</li>
+<li>Configuring a Redux store is too complicated.</li>
+<li>To make Redux useful, you have to install many additional packages.</li>
+<li>Redux requires too much boilerplate code.</li>
 </ol>
-<p>이 세가지를 해결한 것이 리덕스 툴킷이라는 라이브러리로 리덕스를 훨씬 쉽고 간편하게 사용할 수 있다. 이제 리덕스 툴킷을 어떻게 쓰는지 또, 어떻게 위의 문제점들을 해결했는지 살펴보도록 하자.</p>
-<h2 id="설치">설치<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#설치"><span class="icon icon-link"></span></a></h2>
+<p>The library that solves these three problems is Redux Toolkit, which makes Redux far easier and more convenient to use. Let's now look at how to use Redux Toolkit and how it solves the problems above.</p>
+<h2 id="installation">Installation<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#installation"><span class="icon icon-link"></span></a></h2>
 <pre><code>npm install @reduxjs/toolkit react-redux
 </code></pre>
-<h3 id="리덕스-툴킷-api">리덕스 툴킷 API<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#리덕스-툴킷-api"><span class="icon icon-link"></span></a></h3>
+<h3 id="redux-toolkit-api">Redux Toolkit API<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#redux-toolkit-api"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>configureStore: 리덕스 createStore함수와 비슷한 함수로, 간단화된 구성 옵션과, 기본 구성을 제공한다. slice reducer를 자동으로 합치고, 미들웨어를 추가할 수 있으며, redux-thunk를 기본적으로 제공한다. 또한 redux devtools Extension 사용이 가능하다.</li>
-<li>createReducer: 리듀서 함수를 switch 구문으로 쓰기보다는, 리듀서 함수를 계속쓰는 lookup table 방식을 쓸 수 있게 해주고, immer라이브러리가 내장되어 있어서 mutative한 코드를 작성할 수 있도록 해준다.</li>
-<li>createAction: 주어진 액션 타입 문자열로 액션 크리에이터 함수를 생성해준다. 함수 자체에 toString()이 정의되어 있어서 constant 타입 대신 사용이 가능하다.</li>
-<li>createSlice: reducer 함수, slice 이름, 초깃값을 넣을 수 있고 action creator와 action type을 가진 slice reducer를 자동으로 생성해준다.</li>
-<li>createAsyncThunk: redux-thunk의 대체재</li>
-<li>createSelector: reselect 라이브러리의 유틸리티 기능과 동일</li>
+<li>configureStore: A function similar to Redux's createStore function that provides simplified configuration options and sensible defaults. It automatically combines slice reducers, lets you add middleware, and includes redux-thunk by default. It also enables the use of the Redux DevTools Extension.</li>
+<li>createReducer: Instead of writing a reducer function as a switch statement, it lets you use a lookup table approach for the reducer function, and it has the immer library built in so you can write mutative code.</li>
+<li>createAction: Generates an action creator function from a given action type string. Since the function itself has toString() defined, it can be used in place of a constant type.</li>
+<li>createSlice: Accepts a reducer function, a slice name, and an initial value, and automatically generates a slice reducer with its action creators and action types.</li>
+<li>createAsyncThunk: A replacement for redux-thunk.</li>
+<li>createSelector: Identical to the utility functionality of the reselect library.</li>
 </ul>
-<h3 id="리덕스-툴킷-장점">리덕스 툴킷 장점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#리덕스-툴킷-장점"><span class="icon icon-link"></span></a></h3>
+<h3 id="advantages-of-redux-toolkit">Advantages of Redux Toolkit<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#advantages-of-redux-toolkit"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>action type이나 action creator를 따로 생성해주지 않아도 된다.</li>
-<li>immer가 내장되어 있어 mutable 객체를 사용해도 된다.</li>
-<li>redux thunk가 내장되어 있어 비동기를 지원한다.</li>
-<li>타입스크립트 지원이 된다.</li>
-<li>reselector가 내장되어 있다.</li>
+<li>You don't need to create action types or action creators separately.</li>
+<li>immer is built in, so you can use mutable objects.</li>
+<li>redux-thunk is built in, so asynchronous operations are supported.</li>
+<li>TypeScript is supported.</li>
+<li>reselect is built in.</li>
 </ul>
 <h2 id="redux">Redux<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#redux"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>redux-action</li>
 <li>reselect</li>
-<li>immer의 produce</li>
+<li>immer's produce</li>
 <li>redux-thunk</li>
 </ul>
 <h2 id="redux-toolkit">Redux Toolkit<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#redux-toolkit"><span class="icon icon-link"></span></a></h2>
@@ -55,46 +55,46 @@ b:"$Sreact.suspense"
 <li>type definition</li>
 <li>ducks pattern</li>
 </ul>
-<p>예제코드: <a href="https://github.com/seungahhong/states-todos">https://github.com/seungahhong/states-todos</a></p>
+<p>Example code: <a href="https://github.com/seungahhong/states-todos">https://github.com/seungahhong/states-todos</a></p>
 <ul>
 <li>react
 <ul>
-<li>예제코드:
+<li>Example code:
 <a href="./files/26/redux-toolkit-tutorial.zip">redux-toolkit-tutorial.zip</a></li>
-<li>기존 redux 구조예제:
+<li>Existing redux structure example:
 <a href="./files/26/redux.zip">redux.zip</a></li>
-<li>redux-toolkit 적용예제:
+<li>redux-toolkit applied example:
 <a href="./files/26/reduxtoolkit.zip">reduxtoolkit.zip</a></li>
 </ul>
 </li>
 <li>typscript
 <ul>
-<li>예제코드
+<li>Example code
 <a href="./files/26/typescript-react-tutorial.zip">typescript-react-tutorial.zip</a></li>
 </ul>
 </li>
 </ul>
-<h2 id="redux-vs-redux-toolkit-차이점">Redux vs Redux-toolkit 차이점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#redux-vs-redux-toolkit-차이점"><span class="icon icon-link"></span></a></h2>
-<p><a href="https://material-debt-c1c.notion.site/149741eea2b44f58ab1e06e48e77f92b?v=2507477a92e943deb13e7f2369d5ba29">Redux vs Redux-toolkit 차이점</a></p>
-<h3 id="react-기반-기존-redux-구조">React 기반: 기존 Redux 구조<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-기반-기존-redux-구조"><span class="icon icon-link"></span></a></h3>
+<h2 id="redux-vs-redux-toolkit-differences">Redux vs Redux-toolkit Differences<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#redux-vs-redux-toolkit-differences"><span class="icon icon-link"></span></a></h2>
+<p><a href="https://material-debt-c1c.notion.site/149741eea2b44f58ab1e06e48e77f92b?v=2507477a92e943deb13e7f2369d5ba29">Redux vs Redux-toolkit Differences</a></p>
+<h3 id="react-based-existing-redux-structure">React based: Existing Redux Structure<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-based-existing-redux-structure"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>
-<p>폴더구조</p>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── actions  액션 생성 함수 만들기 위한 redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">actions 사용</span></span>
+<p>Folder structure</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── actions  uses redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">actions to create action creator functions</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.js</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── constants #</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.js</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── reducers  불변성을 지키기 위한 immer, redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">action 사용</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── reducers  uses immer and redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">action to maintain immutability</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── domain.js</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.js</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── selectors  Store를 효율적으로 핸들링하여 불필요한 리렌더링을 막기위한 reselect 사용</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── selectors  uses reselect to handle the Store efficiently and prevent unnecessary re</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">renders</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.js</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── stores  비동기를 수월하게 하기위한 redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">thunk 사용</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── stores  uses redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">thunk to handle asynchronous operations smoothly</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── configureStore.js</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.js</span></span></code></pre></figure>
 </li>
 <li>
-<p>예제코드</p>
+<p>Example code</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// constants/index.js</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> INCREASE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'FETCH_INCREASE'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> DECREASE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'FETCH_DECREASE'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -201,19 +201,19 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 </li>
 </ul>
-<h3 id="react-기반-redux-toolkit-변경-후-구조">React 기반: Redux-toolkit 변경 후 구조<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-기반-redux-toolkit-변경-후-구조"><span class="icon icon-link"></span></a></h3>
+<h3 id="react-based-structure-after-migrating-to-redux-toolkit">React based: Structure After Migrating to Redux-toolkit<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-based-structure-after-migrating-to-redux-toolkit"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>
-<p>폴더구조</p>
+<p>Folder structure</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── constants #</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.js</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── feature  @redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">toolkit </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">사용</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (createSlice, createSelector)</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.js </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// duck pattern 적용</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── stores  @redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">toolkit </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">사용</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (configureStore, getDefaultMiddleware)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── feature  uses @redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toolkit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (createSlice, createSelector)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.js </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// duck pattern applied</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── stores  uses @redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toolkit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (configureStore, getDefaultMiddleware)</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.js</span></span></code></pre></figure>
 </li>
 <li>
-<p>예제코드</p>
+<p>Example code</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ducks pattern 구조</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  createSlice, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// handleActions 대체</span></span>
@@ -323,29 +323,29 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">})</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
 </li>
 </ul>
-<h2 id="typescript-redux-vs-redux-toolkit-차이점">Typescript Redux vs Redux-toolkit 차이점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#typescript-redux-vs-redux-toolkit-차이점"><span class="icon icon-link"></span></a></h2>
-<p><a href="https://material-debt-c1c.notion.site/692837d86ddb478aa2bb26a434d4f9c9?v=ce0f92d0c2be4a1a973570c2aaebdb1c">Typescript Redux vs Redux-toolkit 차이점</a></p>
-<h2 id="typescript-기반-기존-redux-구조">Typescript 기반: 기존 Redux 구조<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#typescript-기반-기존-redux-구조"><span class="icon icon-link"></span></a></h2>
+<h2 id="typescript-redux-vs-redux-toolkit-differences">Typescript Redux vs Redux-toolkit Differences<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#typescript-redux-vs-redux-toolkit-differences"><span class="icon icon-link"></span></a></h2>
+<p><a href="https://material-debt-c1c.notion.site/692837d86ddb478aa2bb26a434d4f9c9?v=ce0f92d0c2be4a1a973570c2aaebdb1c">Typescript Redux vs Redux-toolkit Differences</a></p>
+<h2 id="typescript-based-existing-redux-structure">Typescript based: Existing Redux Structure<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#typescript-based-existing-redux-structure"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>
-<p>폴더구조</p>
-<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── actions  액션 생성 함수 만들기 위한 redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">actions 사용</span></span>
+<p>Folder structure</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── actions  uses redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">actions to create action creator functions</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.ts</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── constants #</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.ts</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── reducers  불변성을 지키기 위한 immer, redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">action 사용</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── reducers  uses immer and redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">action to maintain immutability</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── domain.ts</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.ts</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── selectors  Store를 효율적으로 핸들링하여 불필요한 리렌더링을 막기위한 reselect 사용</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── selectors  uses reselect to handle the Store efficiently and prevent unnecessary re</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">renders</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.ts</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── stores  비동기를 수월하게 하기위한 redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">thunk 사용</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── stores  uses redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">thunk to handle asynchronous operations smoothly</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── configureStore.ts</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.ts</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── types  typescript type에 대한 정의</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── types  definitions for typescript types</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.ts</span></span></code></pre></figure>
 </li>
 <li>
-<p>예제코드</p>
+<p>Example code</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// constants/index.ts</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> INCREASE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'FETCH_INCREASE'</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> as</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> DECREASE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'FETCH_DECREASE'</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> as</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -524,21 +524,21 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> RootDispatch</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> typeof</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> RootDispatch;</span></span></code></pre></figure>
 </li>
 </ul>
-<h2 id="typescript-기반-redux-toolkit-변경-후-구조">Typescript 기반: Redux-toolkit 변경 후 구조<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#typescript-기반-redux-toolkit-변경-후-구조"><span class="icon icon-link"></span></a></h2>
+<h2 id="typescript-based-structure-after-migrating-to-redux-toolkit">Typescript based: Structure After Migrating to Redux-toolkit<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#typescript-based-structure-after-migrating-to-redux-toolkit"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>
-<p>폴더구조</p>
+<p>Folder structure</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── constants #</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.ts</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── feature  @redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">toolkit </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">사용</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (createSlice, createSelector)</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.ts </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// duck pattern 적용</span></span>
-<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── stores  @redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">toolkit </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">사용</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (configureStore, getDefaultMiddleware)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── feature  uses @redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toolkit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (createSlice, createSelector)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.ts </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// duck pattern applied</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── stores  uses @redux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">toolkit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (configureStore, getDefaultMiddleware)</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.ts</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├── types</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│   ├── index.ts</span></span></code></pre></figure>
 </li>
 <li>
-<p>예제코드</p>
+<p>Example code</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// constants/index.ts</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> INCREASE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'FETCH_INCREASE'</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> as</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> DECREASE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'FETCH_DECREASE'</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> as</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -693,9 +693,9 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> RootState</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ReturnType</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">typeof</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> RootState>;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> type</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> RootDispatch</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> typeof</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> RootDispatch;</span></span></code></pre></figure>
 </li>
-</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"redux-toolkit"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"redux-toolkit"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-03-26","className":"meta-mono","children":"03/26/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[2,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","상태관리",{"children":["$","$L3",null,{"href":"/en/tags?tag=%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC","className":"tag-pill","children":"상태관리"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"redux-toolkit"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"redux-toolkit"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-03-26","className":"meta-mono","children":"03/26/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[3,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","state management",{"children":["$","$L3",null,{"href":"/en/tags?tag=state%20management","className":"tag-pill","children":"state management"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
 5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2022-03-22-recoil","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"recoil"}]]}],["$","$L3",null,{"href":"/en/posts/2022-03-28-javascript","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"javascript"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"리덕스-툴킷이란","text":"리덕스 툴킷이란?","depth":1},{"id":"설치","text":"설치","depth":1},{"id":"리덕스-툴킷-api","text":"리덕스 툴킷 API","depth":2},{"id":"리덕스-툴킷-장점","text":"리덕스 툴킷 장점","depth":2},{"id":"redux","text":"Redux","depth":1},{"id":"redux-toolkit","text":"Redux Toolkit","depth":1},{"id":"redux-vs-redux-toolkit-차이점","text":"Redux vs Redux-toolkit 차이점","depth":1},{"id":"react-기반-기존-redux-구조","text":"React 기반: 기존 Redux 구조","depth":2},{"id":"react-기반-redux-toolkit-변경-후-구조","text":"React 기반: Redux-toolkit 변경 후 구조","depth":2},{"id":"typescript-redux-vs-redux-toolkit-차이점","text":"Typescript Redux vs Redux-toolkit 차이점","depth":1},{"id":"typescript-기반-기존-redux-구조","text":"Typescript 기반: 기존 Redux 구조","depth":1},{"id":"typescript-기반-redux-toolkit-변경-후-구조","text":"Typescript 기반: Redux-toolkit 변경 후 구조","depth":1}],"title":"Contents"}]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"what-is-redux-toolkit","text":"What is Redux Toolkit?","depth":1},{"id":"installation","text":"Installation","depth":1},{"id":"redux-toolkit-api","text":"Redux Toolkit API","depth":2},{"id":"advantages-of-redux-toolkit","text":"Advantages of Redux Toolkit","depth":2},{"id":"redux","text":"Redux","depth":1},{"id":"redux-toolkit","text":"Redux Toolkit","depth":1},{"id":"redux-vs-redux-toolkit-differences","text":"Redux vs Redux-toolkit Differences","depth":1},{"id":"react-based-existing-redux-structure","text":"React based: Existing Redux Structure","depth":2},{"id":"react-based-structure-after-migrating-to-redux-toolkit","text":"React based: Structure After Migrating to Redux-toolkit","depth":2},{"id":"typescript-redux-vs-redux-toolkit-differences","text":"Typescript Redux vs Redux-toolkit Differences","depth":1},{"id":"typescript-based-existing-redux-structure","text":"Typescript based: Existing Redux Structure","depth":1},{"id":"typescript-based-structure-after-migrating-to-redux-toolkit","text":"Typescript based: Structure After Migrating to Redux-toolkit","depth":1}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

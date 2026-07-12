@@ -4,25 +4,25 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T151ee,<h2 id="rxjs-개념">RxJS 개념<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rxjs-개념"><span class="icon icon-link"></span></a></h2>
-<p>RxJS는 Reactive Extensions For JavaScript 라이브러리이다.</p>
-<p>ReactiveX 는 Observer 패턴, Iterator 패턴, 함수형 프로그래밍을 조합하여 제공한다.</p>
-<p>동기와 비동기 처리를 하나의 스트림으로 관리하고 처리가 가능하다.</p>
+4:T15103,<h2 id="rxjs-concepts">RxJS Concepts<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rxjs-concepts"><span class="icon icon-link"></span></a></h2>
+<p>RxJS is the Reactive Extensions For JavaScript library.</p>
+<p>ReactiveX combines the Observer pattern, the Iterator pattern, and functional programming into a single offering.</p>
+<p>It lets you manage and handle both synchronous and asynchronous processing as a single stream.</p>
 <ul>
-<li>비동기 프로그래밍: 이 문서를 볼 정도면 설명이 필요 없을 것 같다.</li>
-<li>함수형 프로그래밍: 순수함수, 고차함수, 일급 함수</li>
-<li>데이터스트림: file stream, event stream, http stream 의 친구로 data 식 표현</li>
-<li>이터레이터: iterator pattern(ES6)</li>
+<li>Asynchronous programming: if you are reading this document, you probably do not need an explanation.</li>
+<li>Functional programming: pure functions, higher-order functions, first-class functions</li>
+<li>Data stream: a data-style representation, a companion to file streams, event streams, and http streams</li>
+<li>Iterator: the iterator pattern (ES6)</li>
 </ul>
 <p><img src="/blog-assets/2022/01/assets/10/Untitled.png" alt="Untitled"></p>
-<p>Array, Set, Map 과 같이 리스트 데이터들은 기본적으로 Iterable이며 Iterator를 가지고 있으며, 이는 곧 Protocol을 만족한다는 의미, spread/rest 연산도 iterator문법을 따름</p>
+<p>List data such as Array, Set, and Map are Iterable by default and have an Iterator, which means they satisfy the protocol. The spread/rest operations also follow the iterator syntax.</p>
 <ul>
-<li>옵져버: 디자인패턴 책의 옵져버패턴 단원 참조, 자바스크립트에선 이미 이벤트리스너가 옵져버 패턴이다.</li>
-<li>옵져버블: 특정 객체를 관찰하는 옵저버에게 여러 이벤트나 값을 전파하는 역할</li>
-<li>풀: 데이터를 받을지 결정</li>
-<li>푸쉬: 데이터를 보낼지 결정</li>
-<li>싱글: 하나의 값이나 이벤트를 다룸</li>
-<li>멀티플: 여러 개의 값이나 이벤트를 다룸</li>
+<li>Observer: refer to the Observer pattern chapter in design pattern books. In JavaScript, event listeners are already an example of the Observer pattern.</li>
+<li>Observable: responsible for propagating multiple events or values to observers that watch a particular object</li>
+<li>Pull: decides whether to receive data</li>
+<li>Push: decides whether to send data</li>
+<li>Single: handles a single value or event</li>
+<li>Multiple: handles multiple values or events</li>
 </ul>
 <p><img src="/blog-assets/2022/01/assets/10/Untitled1.png" alt="Untitled"></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { Observable } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'rxjs'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -53,94 +53,94 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">just after subscribe</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">got value </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">4</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">done</span></span></code></pre></figure>
-<h3 id="rxjs-입력값에-대한-일관된-방식">RxJs 입력값에 대한 일관된 방식<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rxjs-입력값에-대한-일관된-방식"><span class="icon icon-link"></span></a></h3>
+<h3 id="rxjs-a-consistent-approach-to-input-values">RxJS: A Consistent Approach to Input Values<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rxjs-a-consistent-approach-to-input-values"><span class="icon icon-link"></span></a></h3>
 <p><img src="/blog-assets/2022/01/assets/10/10.34.17.png" alt="10.34.17.png"></p>
-<p>입력값들은 어떤 것들이 있을까?</p>
+<p>What kinds of input values are there?</p>
 <ol>
-<li>자바스크립트 : 배열 데이터, 함수 반환값</li>
-<li>이벤트: 키보드, 마우스, 휠, 터치</li>
-<li>서버데이터: ajax, file</li>
+<li>JavaScript: array data, function return values</li>
+<li>Events: keyboard, mouse, wheel, touch</li>
+<li>Server data: ajax, file</li>
 </ol>
 <p>...</p>
-<p>→ 입력값들이 동기/비동기 처리를 따로 처리를 해줘야하는 번거로움이 있다.</p>
-<p>예) 함수 호출(call), 이벤트(event), callback/promise, push/pull 방식 등 여러가지의 입력값들에 대한 분기처리 존재</p>
-<p>RxJS 입력값들을 데이터 스트림을 방식을 통한 처리를 통해서 동기/비동기 일관된 방식으로 처리가 가능하다.(인터페이스의 단일화)</p>
+<p>→ Input values come with the hassle of having to handle synchronous and asynchronous processing separately.</p>
+<p>Example) There is branching logic for many different kinds of input values, such as function calls, events, callbacks/promises, and push/pull approaches.</p>
+<p>RxJS can process input values in a consistent synchronous/asynchronous manner by handling them through the data stream approach (unifying the interface).</p>
 <p><img src="/blog-assets/2022/01/assets/10/10.29.54.png" alt="10.29.54.png"></p>
 <p><img src="/blog-assets/2022/01/assets/10/10.32.15.png" alt="10.32.15.png"></p>
 <ul>
-<li>동기/비동기 처리를 따로 처리를 해줘야하는 번거로움을 해결이 가능하다.</li>
+<li>It resolves the hassle of having to handle synchronous and asynchronous processing separately.</li>
 </ul>
-<h3 id="rxjs-내제된-개념">RxJS 내제된 개념<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rxjs-내제된-개념"><span class="icon icon-link"></span></a></h3>
-<h4 id="reactive-programing">Reactive Programing<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reactive-programing"><span class="icon icon-link"></span></a></h4>
+<h3 id="concepts-built-into-rxjs">Concepts Built into RxJS<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#concepts-built-into-rxjs"><span class="icon icon-link"></span></a></h3>
+<h4 id="reactive-programming">Reactive Programming<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reactive-programming"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li>기본 실행 모델의 변경사항을 데이터 흐름(observable)을 통해서 자동으로 전파(push)한다는 의미(polling, pull 방식X)</li>
+<li>It means that changes to the base execution model are automatically propagated (pushed) through a data flow (observable), rather than by polling or a pull approach.</li>
 </ul>
 <p><img src="/blog-assets/2022/01/assets/10/Untitled5.png" alt="Untitled"></p>
-<h4 id="고차함수">고차함수<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#고차함수"><span class="icon icon-link"></span></a></h4>
+<h4 id="higher-order-functions">Higher-Order Functions<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#higher-order-functions"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li>함수를 인자로 받거나 결과를 함수로 반환하는 함수</li>
-<li>RxJs에서는 operator(filter, map, reduce 등등) 제공</li>
+<li>A function that takes a function as an argument or returns a function as its result</li>
+<li>RxJS provides operators (filter, map, reduce, etc.)</li>
 </ul>
-<p>데이터 전달에 대한 데이터 플로우</p>
+<p>Data flow for passing data along</p>
 <p><img src="/blog-assets/2022/01/assets/10/10.22.57.png" alt="10.22.57"></p>
-<p>예) A output → B Input, B output → C Input, C output</p>
-<p>어떻게 하면 일관된 방법으로 데이터를 전달하고 결과값을 얻어낼 수 있을까?</p>
+<p>Example) A output → B input, B output → C input, C output</p>
+<p>How can we pass data and obtain results in a consistent way?</p>
 <p><img src="/blog-assets/2022/01/assets/10/10.45.10.png" alt="10.45.10.png"></p>
 <p><img src="/blog-assets/2022/01/assets/10/10.45.15.png" alt="10.45.15.png"></p>
 <p><img src="/blog-assets/2022/01/assets/10/10.45.21.png" alt="10.45.21.png"></p>
-<h4 id="조건문은-코드의-흐름을-분리반복문은-코드의-가독성-낮게비즈니스-로직-코드에-파묻힘">조건문은 코드의 흐름을 분리/반복문은 코드의 가독성 낮게/비즈니스 로직 코드에 파묻힘<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#조건문은-코드의-흐름을-분리반복문은-코드의-가독성-낮게비즈니스-로직-코드에-파묻힘"><span class="icon icon-link"></span></a></h4>
-<h4 id="고차함수-사용예">고차함수 사용예)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#고차함수-사용예"><span class="icon icon-link"></span></a></h4>
+<h4 id="conditionals-split-the-flow-of-the-code--loops-lower-code-readability--business-logic-gets-buried">Conditionals split the flow of the code / loops lower code readability / business logic gets buried<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#conditionals-split-the-flow-of-the-code--loops-lower-code-readability--business-logic-gets-buried"><span class="icon icon-link"></span></a></h4>
+<h4 id="example-of-using-higher-order-functions">Example of Using Higher-Order Functions<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#example-of-using-higher-order-functions"><span class="icon icon-link"></span></a></h4>
 <p><img src="/blog-assets/2022/01/assets/10/10.50.55.png" alt="10.50.55.png"></p>
-<h3 id="순수함수함수형-프로그래밍을-지향한다">순수함수(함수형 프로그래밍을 지향한다.)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#순수함수함수형-프로그래밍을-지향한다"><span class="icon icon-link"></span></a></h3>
+<h3 id="pure-functions-embracing-functional-programming">Pure Functions (Embracing Functional Programming)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pure-functions-embracing-functional-programming"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>같은 입력이 주어지면, 같은 출력을 반환한다.</li>
-<li>Side Effect(부수적 효과) 없어야한다.</li>
-<li>외부의 데이터에 의존하지 않아야 한다.</li>
+<li>Given the same input, they return the same output.</li>
+<li>They must have no side effects.</li>
+<li>They must not depend on external data.</li>
 </ul>
 <p><img src="/blog-assets/2022/01/assets/10/10.55.14.png" alt="10.55.14.png"></p>
 <ul>
-<li>operator를 통해서 나온 observable도 독립적인 객체이다.</li>
+<li>The observable produced through an operator is also an independent object.</li>
 </ul>
 <p>Rx</p>
-<h4 id="rxjs-개발-프로세스-️"><strong>RxJS 개발 프로세스 ⚙️</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rxjs-개발-프로세스-️"><span class="icon icon-link"></span></a></h4>
+<h4 id="rxjs-development-process-️"><strong>RxJS Development Process ⚙️</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rxjs-development-process-️"><span class="icon icon-link"></span></a></h4>
 <blockquote>
-<p>이것 역시 외운다..! 결국 이 사이클로 RxJS를 사용하니까.</p>
+<p>Memorize this one too..! After all, this is the cycle you use RxJS with.</p>
 </blockquote>
 <ul>
-<li>데이터 소스를 Observable로 변경한다. (from, of, fromEvent…)</li>
+<li>Convert the data source into an Observable. (from, of, fromEvent…)</li>
 </ul>
 <p><img src="/blog-assets/2022/01/assets/10/10.57.48.png" alt="10.57.48.png"></p>
 <ul>
-<li>오퍼레이터를 통해 데이터를 변경하거나 추출한다.
+<li>Transform or extract data through operators.
 <ul>
-<li>또는 여러개의 Observable을 하나의 Observable로 합치거나</li>
-<li>하나의 Observable을 여러 개의 Observable로 만든다.</li>
+<li>Or merge multiple Observables into a single Observable,</li>
+<li>or turn a single Observable into multiple Observables.</li>
 </ul>
 </li>
 </ul>
 <p><img src="/blog-assets/2022/01/assets/10/10.57.54.png" alt="10.57.54.png"></p>
 <ul>
-<li>원하는 데이터를 받아 처리하는 Observer를 만든다.</li>
+<li>Create an Observer that receives and processes the desired data.</li>
 </ul>
 <p><img src="/blog-assets/2022/01/assets/10/Untitled3.png" alt="Untitled"></p>
 <ul>
-<li>Observable의 subscribe를 통해 Observer를 등록한다.</li>
+<li>Register the Observer through the Observable's subscribe.</li>
 </ul>
 <p><img src="/blog-assets/2022/01/assets/10/Untitled4.png" alt="Untitled"></p>
 <ul>
-<li>Observable 구독을 정지하고 자원을 해지한다.</li>
+<li>Stop the Observable subscription and release the resources.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">subscription.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">unsubscribe</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
 <h3 id="rxjs-observable-lifecycle"><strong>RxJS Observable Lifecycle</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rxjs-observable-lifecycle"><span class="icon icon-link"></span></a></h3>
 <ol>
-<li><strong>생성</strong>Observable.create()생성시점에는 어떠한 이벤트도 발생되지 않는다.</li>
-<li><strong>구독</strong>Observable.subscribe()구독시점에 이벤트를 구독할 수 있다.</li>
-<li><strong>실행</strong>observer.next()실행시점에 이벤트를 구독하고 있는 대상에게 값을 전달한다.</li>
-<li><strong>구독 해제</strong>observer.complete()Observable.unsubscribe()구독 해제 시점에 구독하고 있는 모든 대상의 구독을 종료한다.</li>
+<li><strong>Creation</strong> Observable.create() No events are emitted at the time of creation.</li>
+<li><strong>Subscription</strong> Observable.subscribe() At the time of subscription, you can subscribe to events.</li>
+<li><strong>Execution</strong> observer.next() At the time of execution, values are delivered to the subscribers of the events.</li>
+<li><strong>Unsubscription</strong> observer.complete() Observable.unsubscribe() At the time of unsubscription, all subscriptions of every subscriber are terminated.</li>
 </ol>
 <h3 id="rxjs-scheduler">RxJS Scheduler<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rxjs-scheduler"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li><strong>자바스크립트 비동기 처리 과정과 Rxjs Scheduler</strong>
+<li><strong>JavaScript's asynchronous processing flow and the RxJS Scheduler</strong>
 <img src="/blog-assets/2022/01/assets/10/11.23.58.png" alt="11.23.58.png"></li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"script start"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
@@ -167,15 +167,15 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">promose2</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">requestAnimationFrame</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">setTimeout</span></span></code></pre></figure>
-<p><strong>Rxjs Scheduler 설명</strong></p>
-<p><strong>queueScheduler</strong> : 태스크 큐. setTimeout, setInteravl로 생각하면 편함.</p>
-<p><strong>asapScheduler</strong> : 마이크로 태스크 큐.</p>
-<p><strong>animationFrameScheduler</strong> : requestAnimationFrame임.</p>
-<p><strong>queueScheduler</strong> : 곧바로 콜스택에 담김. 사용할 일이 별로 없음.</p>
+<p><strong>RxJS Scheduler Explanation</strong></p>
+<p><strong>queueScheduler</strong> : the task queue. Easiest to think of it as setTimeout, setInterval.</p>
+<p><strong>asapScheduler</strong> : the microtask queue.</p>
+<p><strong>animationFrameScheduler</strong> : this is requestAnimationFrame.</p>
+<p><strong>queueScheduler</strong> : placed directly onto the call stack. Rarely used.</p>
 <p>→ <a href="https://minjung-jeon.github.io/scheduler/">https://minjung-jeon.github.io/scheduler/</a></p>
-<p>pipe 적용을 위한 함수</p>
-<p>SubscribeOn: <strong>옵저버블</strong> 또는 이를 처리할 <strong>연산자</strong>를 실행할 스케줄러 지정</p>
-<p>ObserverOn: <strong>구독자</strong>에게 알림을 보낼 때 사용할 스케줄러 지정</p>
+<p>Functions for applying pipe</p>
+<p>SubscribeOn: specifies the scheduler on which to run the <strong>Observable</strong> or the <strong>operators</strong> that process it</p>
+<p>ObserveOn: specifies the scheduler to use when sending notifications to <strong>subscribers</strong></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">of</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">asyncScheduler</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> rxjs</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">subscribeOn</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">observeOn</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">tap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> rxjs.operators</span></span>
 <span data-line=""> </span>
@@ -226,9 +226,9 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"B OUT"</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"C OUT"</span></span></code></pre></figure>
 <h3 id="promise-vs-observable">Promise vs. Observable<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#promise-vs-observable"><span class="icon icon-link"></span></a></h3>
-<h4 id="실행-시점"><strong>실행 시점</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#실행-시점"><span class="icon icon-link"></span></a></h4>
+<h4 id="execution-timing"><strong>Execution Timing</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#execution-timing"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li>Promise는 객체를 생성할 때 바로 실행되어 즉시 로딩(eager)이라 부른다. 모든 <code>then()</code>은 같은 계산 값을 공유한다.</li>
+<li>A Promise runs as soon as the object is created and is loaded immediately, which is why it is called eager. Every <code>then()</code> shares the same computed value.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 최초 실행 (생성 및 실행)</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> promise </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Promise</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">((</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">reject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -238,7 +238,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // 결과 처리</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
 <ul>
-<li>Observable은 소비자가 구독(subscription)하기 전까지는 실행되지 않아 지연 로딩(lazy)이라 부른다. <code>subscribe()</code>는 여러 번 호출될 수 있으며, 각각의 구독은 모두 자신만의 계산 값을 갖고 있다.</li>
+<li>An Observable does not run until a consumer subscribes to it, which is why it is called lazy. <code>subscribe()</code> can be called multiple times, and each subscription has its own computed value.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { Observable } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'rxjs'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 선언 (생성)</span></span>
@@ -250,9 +250,9 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">observable$.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">subscribe</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">value</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // observer 처리</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
-<h4 id="return-개수"><strong>return 개수</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#return-개수"><span class="icon icon-link"></span></a></h4>
+<h4 id="number-of-returns"><strong>Number of Returns</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#number-of-returns"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li>Promise는 하나만 보낼 수 있으며, 여러 개 보낼 경우 나중에 보낸 건 무시된다.</li>
+<li>A Promise can send only one value, and if you send several, the ones sent later are ignored.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> promise</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Promise</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">resolve</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">  resolve</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
@@ -260,36 +260,36 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">promise.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">then</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(console.log); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// output: 1</span></span></code></pre></figure>
 <ul>
-<li>Observable은 데이터를 여러 개 보낼 수 있다.</li>
+<li>An Observable can send multiple pieces of data.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> observable$</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Observable</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">observer</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  observer.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">next</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  observer.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">next</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">observable$.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">subscribe</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(console.log); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// output: 1 2</span></span></code></pre></figure>
-<h4 id="조작과-반환"><strong>조작과 반환</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#조작과-반환"><span class="icon icon-link"></span></a></h4>
+<h4 id="manipulation-and-return"><strong>Manipulation and Return</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#manipulation-and-return"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li>Promise는 <code>then()</code> 하나로 데이터의 조작과 반환을 같이 진행한다.</li>
+<li>A Promise handles both manipulating and returning data with a single <code>then()</code>.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">promise.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">then</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">v</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> *</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> v);</span></span></code></pre></figure>
 <ul>
-<li>Observable은 데이터의 조작과 구독(반환)을 나눌 수 있다. 오직 구독자가 있을 때만 subscriber 함수가 실행되어 값을 계산한다. 다른 곳에서 데이터를 복잡하게 가공해야 한다면 Observable이 더 효율적이다.</li>
+<li>An Observable can separate manipulating and subscribing (returning) data. The subscriber function runs and computes its value only when there is a subscriber. If you need to process data in a complex way elsewhere, an Observable is more efficient.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">observable$.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">pipe</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">map</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">v</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 2</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> *</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> v));</span></span></code></pre></figure>
-<h4 id="취소해제"><strong>취소(해제)</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#취소해제"><span class="icon icon-link"></span></a></h4>
+<h4 id="cancellation-release"><strong>Cancellation (Release)</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cancellation-release"><span class="icon icon-link"></span></a></h4>
 <ul>
-<li>Promise는 실행 도중에 취소할 수 없지만, Observable은 구독을 취소(해제)할 수 있다. 구독 취소는 이벤트 리스터가 받을 값을 제거하고, subscriber 함수에게 취소하라고 알린다.</li>
+<li>A Promise cannot be cancelled mid-execution, but an Observable can cancel (release) its subscription. Cancelling a subscription removes the value the event listener would receive and tells the subscriber function to cancel.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> subscription</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> observable$.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">subscribe</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(() </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // ...</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">subscription.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">unsubscribe</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span></code></pre></figure>
-<h3 id="오퍼레이터operator">오퍼레이터(Operator)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오퍼레이터operator"><span class="icon icon-link"></span></a></h3>
-<p>파이프형 연산자는 Observable을 input처럼 취해서 다른 Observable을 반환하는 함수</p>
+<h3 id="operators">Operators<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#operators"><span class="icon icon-link"></span></a></h3>
+<p>A pipeable operator is a function that takes an Observable as its input and returns another Observable.</p>
 <ul>
-<li><strong>Operator는 항상 새로운 Observable을 만든다.</strong></li>
-<li><strong>Operator는 항상 Observable을 반환 한다.</strong></li>
-<li><strong>Operator이전의 Source Observable에 대해서는 Immutable해야 한다.</strong></li>
+<li><strong>An operator always creates a new Observable.</strong></li>
+<li><strong>An operator always returns an Observable.</strong></li>
+<li><strong>An operator must be immutable with respect to the source Observable that precedes it.</strong></li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ① 옵저버블 생성</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> observable$</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> from</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">4</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">6</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">7</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">8</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">9</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">10</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]);</span></span>
@@ -310,11 +310,11 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // complete</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'Streaming finished'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span></code></pre></figure>
-<h3 id="observable-스트림-생성기">Observable 스트림 생성기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#observable-스트림-생성기"><span class="icon icon-link"></span></a></h3>
+<h3 id="observable-stream-generator">Observable Stream Generator<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#observable-stream-generator"><span class="icon icon-link"></span></a></h3>
 <p><a href="https://www.yalco.kr/@rxjs/1-1/">https://www.yalco.kr/@rxjs/1-1/</a></p>
-<h3 id="observer구독자에게-발행물-구독시키기">Observer(구독자)에게 발행물 구독시키기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#observer구독자에게-발행물-구독시키기"><span class="icon icon-link"></span></a></h3>
+<h3 id="subscribing-an-observer-subscriber-to-emissions">Subscribing an Observer (Subscriber) to Emissions<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#subscribing-an-observer-subscriber-to-emissions"><span class="icon icon-link"></span></a></h3>
 <p><a href="https://www.yalco.kr/@rxjs/1-2/">https://www.yalco.kr/@rxjs/1-2/</a></p>
-<h3 id="operator-사용해보기">Operator 사용해보기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#operator-사용해보기"><span class="icon icon-link"></span></a></h3>
+<h3 id="trying-out-operators">Trying Out Operators<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#trying-out-operators"><span class="icon icon-link"></span></a></h3>
 <p><a href="https://www.yalco.kr/@rxjs/1-3/">https://www.yalco.kr/@rxjs/1-3/</a></p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> callFunc</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  console.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">log</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(data);</span></span>
@@ -357,10 +357,10 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">8</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"molestiae perspiciatis ipsa"</span></span>
 <span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">9</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"illo est ratione doloremque quia maiores aut"</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span></span></code></pre></figure>
-<h3 id="subject-사용해보기">Subject 사용해보기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#subject-사용해보기"><span class="icon icon-link"></span></a></h3>
+<h3 id="trying-out-subject">Trying Out Subject<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#trying-out-subject"><span class="icon icon-link"></span></a></h3>
 <p><a href="https://www.yalco.kr/@rxjs/1-4/">https://www.yalco.kr/@rxjs/1-4/</a></p>
 <h4 id="behaviorsubject"><strong>BehaviorSubject</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#behaviorsubject"><span class="icon icon-link"></span></a></h4>
-<p>마지막 값을 저장 후 추가 구독자에게 발행</p>
+<p>Stores the last value and then emits it to additional subscribers</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">BehaviorSubject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> rxjs</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> subject</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> BehaviorSubject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 초기값이 있음</span></span>
 <span data-line=""> </span>
@@ -386,7 +386,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"A: 5"</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"B: 5"</span></span></code></pre></figure>
 <h4 id="replaysubject"><strong>ReplaySubject</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#replaysubject"><span class="icon icon-link"></span></a></h4>
-<p>마지막 N개 값을 저장 후 추가 구독자에게 발행</p>
+<p>Stores the last N values and then emits them to additional subscribers</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">ReplaySubject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> rxjs</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> subject</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> ReplaySubject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 마지막 3개 값 저장</span></span>
 <span data-line=""> </span>
@@ -417,7 +417,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"A: 7"</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"B: 7"</span></span></code></pre></figure>
 <h4 id="asyncsubject"><strong>AsyncSubject</strong><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#asyncsubject"><span class="icon icon-link"></span></a></h4>
-<p>Complete 후의 마지막 값만 발행</p>
+<p>Emits only the last value after Complete</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="jsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">AsyncSubject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> rxjs</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> subject</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> AsyncSubject</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()</span></span>
 <span data-line=""> </span>
@@ -442,14 +442,14 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"A: 7"</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"B: 7"</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"C: 7"</span></span></code></pre></figure>
-<h2 id="참고자료">참고자료<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고자료"><span class="icon icon-link"></span></a></h2>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
 <p><a href="https://pks2974.medium.com/rxjs-%EA%B0%84%EB%8B%A8%EC%A0%95%EB%A6%AC-41f67c37e028">https://pks2974.medium.com/rxjs-간단정리-41f67c37e028</a></p>
 <p><a href="https://gracefullight.dev/2019/04/30/RxJS%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83/">https://gracefullight.dev/2019/04/30/RxJS의-모든-것/</a></p>
 <p><a href="https://abelog.netlify.app/RxJS/rxjs-%EA%B8%B0%EC%B4%88,-%ED%95%B5%EC%8B%AC-%F0%9F%90%89/">https://abelog.netlify.app/RxJS/rxjs-기초,-핵심-🐉/</a></p>
 <p><a href="https://whitemackerel.tistory.com/54">https://whitemackerel.tistory.com/54</a></p>
-<p><a href="https://www.notion.so/RxJS-1-aea361c049a146b4bd10c98eefc7aaa7">RxJS-1</a></p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"RxJS"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"RxJS"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-01-10","className":"meta-mono","children":"01/10/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[6,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","RxJS",{"children":["$","$L3",null,{"href":"/en/tags?tag=RxJS","className":"tag-pill","children":"RxJS"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+<p><a href="https://www.notion.so/RxJS-1-aea361c049a146b4bd10c98eefc7aaa7">RxJS-1</a></p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"RxJS"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"RxJS"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-01-10","className":"meta-mono","children":"01/10/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[7,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","RxJS",{"children":["$","$L3",null,{"href":"/en/tags?tag=RxJS","className":"tag-pill","children":"RxJS"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
 5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2022-01-09-graphql","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"graphql"}]]}],["$","$L3",null,{"href":"/en/posts/2022-01-16-typescript","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"typescript"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"rxjs-개념","text":"RxJS 개념","depth":1},{"id":"rxjs-입력값에-대한-일관된-방식","text":"RxJs 입력값에 대한 일관된 방식","depth":2},{"id":"rxjs-내제된-개념","text":"RxJS 내제된 개념","depth":2},{"id":"reactive-programing","text":"Reactive Programing","depth":3},{"id":"고차함수","text":"고차함수","depth":3},{"id":"조건문은-코드의-흐름을-분리반복문은-코드의-가독성-낮게비즈니스-로직-코드에-파묻힘","text":"조건문은 코드의 흐름을 분리/반복문은 코드의 가독성 낮게/비즈니스 로직 코드에 파묻힘","depth":3},{"id":"고차함수-사용예","text":"고차함수 사용예)","depth":3},{"id":"순수함수함수형-프로그래밍을-지향한다","text":"순수함수(함수형 프로그래밍을 지향한다.)","depth":2},{"id":"rxjs-개발-프로세스-️","text":"RxJS 개발 프로세스 ⚙️","depth":3},{"id":"rxjs-observable-lifecycle","text":"RxJS Observable Lifecycle","depth":2},{"id":"rxjs-scheduler","text":"RxJS Scheduler","depth":2},{"id":"promise-vs-observable","text":"Promise vs. Observable","depth":2},{"id":"실행-시점","text":"실행 시점","depth":3},{"id":"return-개수","text":"return 개수","depth":3},{"id":"조작과-반환","text":"조작과 반환","depth":3},{"id":"취소해제","text":"취소(해제)","depth":3},{"id":"오퍼레이터operator","text":"오퍼레이터(Operator)","depth":2},{"id":"observable-스트림-생성기","text":"Observable 스트림 생성기","depth":2},{"id":"observer구독자에게-발행물-구독시키기","text":"Observer(구독자)에게 발행물 구독시키기","depth":2},{"id":"operator-사용해보기","text":"Operator 사용해보기","depth":2},{"id":"subject-사용해보기","text":"Subject 사용해보기","depth":2},{"id":"behaviorsubject","text":"BehaviorSubject","depth":3},{"id":"replaysubject","text":"ReplaySubject","depth":3},{"id":"asyncsubject","text":"AsyncSubject","depth":3},{"id":"참고자료","text":"참고자료","depth":1}],"title":"Contents"}]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"rxjs-concepts","text":"RxJS Concepts","depth":1},{"id":"rxjs-a-consistent-approach-to-input-values","text":"RxJS: A Consistent Approach to Input Values","depth":2},{"id":"concepts-built-into-rxjs","text":"Concepts Built into RxJS","depth":2},{"id":"reactive-programming","text":"Reactive Programming","depth":3},{"id":"higher-order-functions","text":"Higher-Order Functions","depth":3},{"id":"conditionals-split-the-flow-of-the-code--loops-lower-code-readability--business-logic-gets-buried","text":"Conditionals split the flow of the code / loops lower code readability / business logic gets buried","depth":3},{"id":"example-of-using-higher-order-functions","text":"Example of Using Higher-Order Functions","depth":3},{"id":"pure-functions-embracing-functional-programming","text":"Pure Functions (Embracing Functional Programming)","depth":2},{"id":"rxjs-development-process-️","text":"RxJS Development Process ⚙️","depth":3},{"id":"rxjs-observable-lifecycle","text":"RxJS Observable Lifecycle","depth":2},{"id":"rxjs-scheduler","text":"RxJS Scheduler","depth":2},{"id":"promise-vs-observable","text":"Promise vs. Observable","depth":2},{"id":"execution-timing","text":"Execution Timing","depth":3},{"id":"number-of-returns","text":"Number of Returns","depth":3},{"id":"manipulation-and-return","text":"Manipulation and Return","depth":3},{"id":"cancellation-release","text":"Cancellation (Release)","depth":3},{"id":"operators","text":"Operators","depth":2},{"id":"observable-stream-generator","text":"Observable Stream Generator","depth":2},{"id":"subscribing-an-observer-subscriber-to-emissions","text":"Subscribing an Observer (Subscriber) to Emissions","depth":2},{"id":"trying-out-operators","text":"Trying Out Operators","depth":2},{"id":"trying-out-subject","text":"Trying Out Subject","depth":2},{"id":"behaviorsubject","text":"BehaviorSubject","depth":3},{"id":"replaysubject","text":"ReplaySubject","depth":3},{"id":"asyncsubject","text":"AsyncSubject","depth":3},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

@@ -4,88 +4,88 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:Ta919,<h2 id="개요">개요<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#개요"><span class="icon icon-link"></span></a></h2>
+4:Ta506,<h2 id="overview">Overview<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#overview"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li>React를 위한 Data Synchronization Library</li>
-<li>React application에서 <strong>서버 상태</strong>를 fetching, caching, synchronizing, updating 작업을 쉽게 만들어 줍니다.</li>
+<li>A Data Synchronization Library for React</li>
+<li>It makes fetching, caching, synchronizing, and updating <strong>server state</strong> in a React application easy.</li>
 </ul>
-<h2 id="서버-상태">서버 상태<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#서버-상태"><span class="icon icon-link"></span></a></h2>
+<h2 id="server-state">Server State<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#server-state"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li>원격에 위치한 공간에 저장되며 앱이 소유하거나 제어하지 않습니다.</li>
-<li>데이터를 가져오고 업데이트하기 위해선 비동기 API가 필요합니다.</li>
-<li>다른 사람과 함께 사용하며, 내가 모르는 사이에 업데이트될 수 있습니다.</li>
-<li>앱에서 사용하는 데이터가 “유효 기간이 지난” 상태가 될 가능성을 가집니다.</li>
+<li>It is stored in a remote location and is neither owned nor controlled by your app.</li>
+<li>An asynchronous API is required to fetch and update the data.</li>
+<li>It is shared with other people and can be updated without your knowledge.</li>
+<li>The data your app uses can potentially become "out of date."</li>
 </ul>
-<h2 id="react-query-장점">React Query 장점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-query-장점"><span class="icon icon-link"></span></a></h2>
+<h2 id="advantages-of-react-query">Advantages of React Query<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#advantages-of-react-query"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li>캐싱</li>
-<li>서버 데이터 중복 호출 제거 (따닥 방지)</li>
-<li>만료된 데이터를 백그라운드에서 제거하기</li>
-<li>데이터가 언제 만료되는지 알고 있기</li>
-<li>만료된 데이터는 가능한 빨리 업데이트하기</li>
-<li>페이지네이션, 레이지 로딩 데이터의 성능 최적화</li>
-<li>서버 상태의 메모리 관리 및 가비지 콜렉션</li>
-<li>쿼리 결과의 구조 공유를 통한 메모이제이션</li>
+<li>Caching</li>
+<li>Deduplication of redundant server data requests (preventing double-clicks)</li>
+<li>Removing stale data in the background</li>
+<li>Knowing when data becomes stale</li>
+<li>Updating stale data as soon as possible</li>
+<li>Performance optimization for paginated and lazy-loaded data</li>
+<li>Memory management and garbage collection for server state</li>
+<li>Memoization through structural sharing of query results</li>
 </ul>
-<h2 id="react-query-단점">React Query 단점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-query-단점"><span class="icon icon-link"></span></a></h2>
+<h2 id="disadvantages-of-react-query">Disadvantages of React Query<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#disadvantages-of-react-query"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li>라이브러리 의존성 추가</li>
-<li>러닝 커브</li>
-<li>Query lifecycle의 이해</li>
+<li>Adds a library dependency</li>
+<li>Learning curve</li>
+<li>Requires understanding the query lifecycle</li>
 </ul>
-<h2 id="query의-상태">Query의 상태<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#query의-상태"><span class="icon icon-link"></span></a></h2>
-<p>React Query를 통해 관리하는 쿼리 데이터는 라이프사이클에 따라 fetching, fresh, stale, inactive, delete 상태를 가집니다.</p>
+<h2 id="query-states">Query States<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#query-states"><span class="icon icon-link"></span></a></h2>
+<p>Query data managed through React Query goes through fetching, fresh, stale, inactive, and delete states according to its lifecycle.</p>
 <ul>
-<li>fetching - 요청 중인 쿼리</li>
-<li>fresh - 만료되지 않은 쿼리. 컴포넌트가 마운트, 업데이트되어도 데이터를 다시 요청하지 않습니다.(staleTime범위)</li>
-<li>stale - 만료된 쿼리. 컴포넌트가 마운트, 업데이트되면 데이터를 다시 요청합니다.(staleTime 종료될 경우)</li>
-<li>inactive - 사용하지 않는 쿼리. 일정 시간이 지나면 가비지 컬렉터가 캐시에서 제거합니다.(cacheTime범위)
+<li>fetching - a query that is currently being requested</li>
+<li>fresh - a query that has not expired. Even when a component mounts or updates, the data is not requested again. (within staleTime)</li>
+<li>stale - an expired query. When a component mounts or updates, the data is requested again. (after staleTime ends)</li>
+<li>inactive - a query that is no longer in use. After a certain period of time, the garbage collector removes it from the cache. (within cacheTime)
 <ul>
-<li>cacheTime이 유지된 상태에서 사이트로 포커스가 다시 올경우 stale 쿼리가 수행되지만, 화면에는 cache된 데이터로 보여주게 된다.</li>
-</ul>
-</li>
-<li>delete - 가비지 컬렉터에 의해 캐시에서 제거된 쿼리(cacheTime 종료될 경우)</li>
-</ul>
-<h2 id="주요개념">주요개념<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#주요개념"><span class="icon icon-link"></span></a></h2>
-<p>다음은 React Query에서 제공하는 API의 기본이 되는 설정입니다.</p>
-<ul>
-<li><code>useQuery</code>(그리고 <code>useInfiniteQuery</code>)로 가져온 데이터는 기본적으로 stale 상태가 됩니다.
-<ul>
-<li><code>staleTime</code> 옵션으로 데이터가 stale 상태로 바뀌는데 걸리는 시간을 늘릴 수 있습니다.</li>
+<li>If the site regains focus while cacheTime is still active, a stale query is triggered, but the cached data is displayed on the screen.</li>
 </ul>
 </li>
-<li>stale 쿼리는 다음 경우에 백그라운드에서 다시 가져옵니다.
+<li>delete - a query removed from the cache by the garbage collector (after cacheTime ends)</li>
+</ul>
+<h2 id="key-concepts">Key Concepts<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#key-concepts"><span class="icon icon-link"></span></a></h2>
+<p>The following are the default settings that form the basis of the API provided by React Query.</p>
 <ul>
-<li>새로운 쿼리 인스턴스가 마운트되었을 때</li>
-<li>브라우저 윈도우가 다시 포커스되었을 때</li>
-<li>네트워크가 다시 연결되었을 때</li>
-<li><code>refetchInterval</code> 옵션이 있을 때</li>
+<li>Data fetched with <code>useQuery</code> (and <code>useInfiniteQuery</code>) becomes stale by default.
+<ul>
+<li>You can extend the time it takes for data to become stale using the <code>staleTime</code> option.</li>
 </ul>
 </li>
-<li>활성화된 <code>useQuery</code>, <code>useInfiniteQuery</code> 인스턴스가 없는 쿼리 결과는 “inactive” 라벨이 붙으며 다음에 사용될 때까지 남아있습니다.
+<li>A stale query is refetched in the background in the following cases:
 <ul>
-<li>inactive 쿼리는 300초(5분) 후에 메모리에서 해제됩니다.</li>
+<li>When a new query instance mounts</li>
+<li>When the browser window is refocused</li>
+<li>When the network reconnects</li>
+<li>When the <code>refetchInterval</code> option is set</li>
 </ul>
 </li>
-<li>백그라운드에서 3회 이상 실패한 쿼리는 에러 처리됩니다.
+<li>Query results with no active <code>useQuery</code> or <code>useInfiniteQuery</code> instances are labeled "inactive" and remain until they are used again.
 <ul>
-<li><code>retry</code> 옵션으로 쿼리 함수에서 오류 발생시 재시도할 횟수, <code>retryDelay</code> 옵션으로 재시도 대기 시간을 설정</li>
+<li>Inactive queries are released from memory after 300 seconds (5 minutes).</li>
 </ul>
 </li>
-<li>쿼리 결과는 memoization을 위해 structural sharing을 사용하며 데이터 reference는 변경되지 않습니다.
+<li>A query that fails 3 or more times in the background is treated as an error.
 <ul>
-<li>immutable.js에서 사용하는 기술.(<a href="https://medium.com/@dtinth/immutable-js-persistent-data-structures-and-structural-sharing-6d163fbd73d2">참고할만한 글</a>)</li>
-<li>99.9% 케이스에서는 이 옵션을 끌 필요가 없습니다.</li>
-<li>structural sharing은 JSON 호환 데이터에만 적용되며, 다른 타입의 쿼리 결과는 항상 변경되었다고 판단합니다.</li>
+<li>Use the <code>retry</code> option to set the number of retries when the query function throws an error, and the <code>retryDelay</code> option to set the wait time between retries.</li>
+</ul>
+</li>
+<li>Query results use structural sharing for memoization, and the data reference does not change.
+<ul>
+<li>This is a technique used in immutable.js. (<a href="https://medium.com/@dtinth/immutable-js-persistent-data-structures-and-structural-sharing-6d163fbd73d2">a helpful article</a>)</li>
+<li>In 99.9% of cases, there is no need to turn this option off.</li>
+<li>Structural sharing applies only to JSON-compatible data, and query results of other types are always considered changed.</li>
 </ul>
 </li>
 </ul>
-<h3 id="데이터-가져오기-usequery">데이터 가져오기 (useQuery)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#데이터-가져오기-usequery"><span class="icon icon-link"></span></a></h3>
+<h3 id="fetching-data-usequery">Fetching Data (useQuery)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#fetching-data-usequery"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">isLoading</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">isError</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useQuery</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(queryKey, queryFunction, options);</span></span></code></pre></figure>
-<p>queryKey는 쿼리 캐시에 대한 key이며, string, array, object가 가능합니다.</p>
-<p>queryFuntion은 Promise를 리턴하는 함수입니다. axios.get 이나 fetch 가 될 수 있습니다.</p>
-<p>options 는 useQuery에 대한 옵션으로 cacheTime, staleTime, onSuccess, onError 등을 설정할 수 있습니다.</p>
-<h3 id="데이터-업데이트하기-usemutation">데이터 업데이트하기 (useMutation)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#데이터-업데이트하기-usemutation"><span class="icon icon-link"></span></a></h3>
+<p>queryKey is the key for the query cache, and it can be a string, array, or object.</p>
+<p>queryFunction is a function that returns a Promise. It can be axios.get or fetch.</p>
+<p>options are the options for useQuery, where you can set cacheTime, staleTime, onSuccess, onError, and so on.</p>
+<h3 id="updating-data-usemutation">Updating Data (useMutation)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#updating-data-usemutation"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> mutation</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useMutation</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">newTodo</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> axios.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">post</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/todos'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, newTodo), options);</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> handleSubmit</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useCallback</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">async</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> () </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
@@ -96,8 +96,8 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">  setAnotherState</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">  dispatch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">createAnotherAction</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">());</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}, [mutation]);</span></span></code></pre></figure>
-<p>데이터의 CUD에는 useMutation을 사용하면 되고, options도 useQuery와 비슷하게 onSuccess, onError 콜백과 mutate를 호출할 때 실행되는 onMutate 콜백도 있습니다.</p>
-<h3 id="쿼리-무효화-invalidation">쿼리 무효화 (Invalidation)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#쿼리-무효화-invalidation"><span class="icon icon-link"></span></a></h3>
+<p>For CUD operations on data, you can use useMutation. Similar to useQuery, its options include onSuccess and onError callbacks, as well as an onMutate callback that runs when mutate is called.</p>
+<h3 id="query-invalidation">Query Invalidation<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#query-invalidation"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> queryClient</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useQueryClient</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 캐시에 있는 모든 쿼리를 무효화한다.</span></span>
@@ -108,8 +108,8 @@ b:"$Sreact.suspense"
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// ['todos', 1] 키를 가진 쿼리를 무효화한다.</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">queryClient.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">invalidateQueries</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'todos'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]);</span></span></code></pre></figure>
-<p>useMutation등으로 업데이트 된 데이터를 다시 가져와야 하는 경우 (캐시를 무효화하고 싶은 경우) invalidateQueries 함수를 사용할 수 있습니다.</p>
-<h3 id="개발자-도구-reactquerydevtools">개발자 도구 (ReactQueryDevTools)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#개발자-도구-reactquerydevtools"><span class="icon icon-link"></span></a></h3>
+<p>When you need to refetch data that has been updated via useMutation or the like (when you want to invalidate the cache), you can use the invalidateQueries function.</p>
+<h3 id="developer-tools-reactquerydevtools">Developer Tools (ReactQueryDevTools)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#developer-tools-reactquerydevtools"><span class="icon icon-link"></span></a></h3>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { ReactQueryDevtools } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-query/devtools'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> App</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">() </span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
@@ -122,22 +122,22 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 <h2 id="staletime-vs-cachetime">staleTime vs cacheTime<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#staletime-vs-cachetime"><span class="icon icon-link"></span></a></h2>
-<p>컴포넌트A가 마운트 되면서 생성된 인스턴스는 <code>staleTime (디폴트 0)</code> 이 지나버렸기 때문에 언마운트 시점에 캐시가 <code>inactive</code> 상태가 되었고 컴포넌트B가 마운트 되면서 새로운 인스턴스가 생성되었다.</p>
-<p>이 상황에서 <code>cacheTime</code> 과 <code>staleTime</code> 가 시작되는 시점을 잘못 이해하고 있었다.</p>
-<p>쿼리 인스턴스가 마운트 되는 순간에는 <code>staleTime</code> 이 시작된다. <code>cacheTime</code> 은 쿼리 인스턴스가 완전히 언마운트 되어서 <code>inactive</code> 상태가 되고 나면 시작된다.</p>
-<p>마운트 되는 시점에 시작된 staleTime에서는 active, fresh한 상태를 가지고 있다.</p>
-<p>그러다 staleTime이 끝나면 stale 상태를 가지고 있지만 아직 cacheTime이 시작되는 않는다. (화면에 아직 유효한 데이터가 존재하기 때문에 캐시 타임이 흐르지 않는다)</p>
-<p>언마운트 되면서 화면에 존재하던 것들이 사라지고 inactive 상태를 지니면 이제서야 cacheTime이 시작된다. 이 cacheTime 동안에는 정말 캐시로 존재하기 때문에 다시 호출하면 이 캐싱된 데이터를 재사용할 수 있다.</p>
-<p>그렇다면 staleTime과 cacheTime의 차이가 정확하게 무엇이였을까?</p>
-<p>캐시를 사용하려고 하는건데 그럼 cacheTime만 있으면 되는게 아닌가? (staleTime=0, cacheTime=5분 으로 설정된 디폴트 옵션을 사용하면 되지 않나?)</p>
-<p><code>staleTime</code> 은 <code>fresh -> stale</code> 로 변경되는 시간이다. <code>cacheTime</code> 은 <code>inactive</code> 한 상태의 쿼리를 캐시로 유지하는 시간이다.</p>
-<p>기본값이 <code>staleTime=0, cacheTime=5분</code> 인 이유이다.</p>
-<p><code>staleTime=0</code> 으로 두면서 모든 쿼리가 호출이 끝나면 바로 <code>stale</code> 해지고, 다시 호출하면 서버로부터 가져오는 것을 기본으로 하는 것이다.</p>
-<p>이때 리액트 쿼리는 캐싱된 데이터로 조금이나마 빠른 응답을 시켜주기 위해 <code>cacheTime=5분</code> 으로 기본 설정해주었고, <code>stale</code> 해진 쿼리를 서버로부터 다시 <code>fresh</code> 한 데이터를 가져오기 전까지 사용할 수 있다.</p>
+<p>The instance created when component A mounted had its <code>staleTime (default 0)</code> elapse, so its cache entered the <code>inactive</code> state at unmount time, and a new instance was created when component B mounted.</p>
+<p>In this situation, I had misunderstood the point at which <code>cacheTime</code> and <code>staleTime</code> begin.</p>
+<p><code>staleTime</code> begins the moment a query instance mounts. <code>cacheTime</code> begins after a query instance has completely unmounted and entered the <code>inactive</code> state.</p>
+<p>During the staleTime that begins at mount time, the query is in an active, fresh state.</p>
+<p>Then, once staleTime ends, the query is in a stale state, but cacheTime has not yet started. (Because valid data still exists on the screen, the cache timer does not run.)</p>
+<p>Only once the query unmounts, the things on the screen disappear, and it enters the inactive state does cacheTime finally begin. During this cacheTime, the data truly exists as a cache, so if you call it again, you can reuse this cached data.</p>
+<p>So then, what exactly is the difference between staleTime and cacheTime?</p>
+<p>If we just want to use the cache, isn't cacheTime alone enough? (Can't we just use the default options of staleTime=0, cacheTime=5 minutes?)</p>
+<p><code>staleTime</code> is the time it takes to change from <code>fresh -> stale</code>. <code>cacheTime</code> is the time an <code>inactive</code> query is kept in the cache.</p>
+<p>This is why the defaults are <code>staleTime=0, cacheTime=5 minutes</code>.</p>
+<p>By setting <code>staleTime=0</code>, every query becomes <code>stale</code> as soon as it finishes, and by default it is fetched from the server again when called again.</p>
+<p>At this point, to provide a slightly faster response with cached data, React Query defaults to <code>cacheTime=5 minutes</code>, and a query that has become <code>stale</code> can be used until fresh data is fetched again from the server.</p>
 <h2 id="isfetching-vs-isloading">isFetching vs isLoading<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#isfetching-vs-isloading"><span class="icon icon-link"></span></a></h2>
-<p>isFetching은 캐싱 된 데이터 유무에 상관없이 데이터 Fetching 때마다 true를 리턴합니다.</p>
-<p>isLoading은 캐싱 된 데이터가 없을 때만 true를 리턴합니다. (initialData 옵션을 설정하면 항상 false를 리턴합니다.)</p>
-<p>둘의 차이를 알면 더 적합한 Loading Indicator를 사용할 수 있습니다.</p>
+<p>isFetching returns true every time data is fetched, regardless of whether cached data exists.</p>
+<p>isLoading returns true only when there is no cached data. (If you set the initialData option, it always returns false.)</p>
+<p>Knowing the difference between the two lets you use a more appropriate loading indicator.</p>
 <h2 id="enabled-refetch">enabled refetch<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#enabled-refetch"><span class="icon icon-link"></span></a></h2>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">isLoading</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">isFetching</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">isError</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">error</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">refetch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useQuery</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
 <span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  'super-heroes'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
@@ -158,10 +158,10 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 <ul>
-<li><code>enabled</code>는 쿼리가 자동으로 실행되지 않도록 할 때 설정할 수 있다. <code>false</code>를 주면 자동 실행되지 않는다. 또한 useQuery 리턴 데이터중 status가 idle 상태로 시작한다.</li>
-<li><code>refetch</code>는 쿼리를 <code>수동</code>으로 다시 요청하는 기능이다. 쿼리 오류가 발생하면 오류만 기록된다. 오류를 발생시키려면 <code>throwOnError</code>속성을 <code>true</code>로해서 전달해야 한다.</li>
-<li>보통 자동으로 쿼리 요청을 하지 않고 버튼 클릭이나 특정 이벤트를 통해 요청을 시도할 때 같이 사용한다.</li>
-<li>만약 <code>enabled: false</code>를 줬다면 <code>queryClient</code>가 쿼리를 다시 가져오는 방법들 중 <code>invalidateQueries</code>와 <code>refetchQueries</code>를 무시한다.</li>
+<li><code>enabled</code> can be set to prevent a query from running automatically. Passing <code>false</code> prevents it from running automatically. Also, among the data returned by useQuery, status starts in the idle state.</li>
+<li><code>refetch</code> is the feature that requests a query again <code>manually</code>. If a query error occurs, only the error is logged. To make it throw the error, you must pass the <code>throwOnError</code> property as <code>true</code>.</li>
+<li>It is typically used together in cases where you do not request the query automatically, but instead trigger the request via a button click or a specific event.</li>
+<li>If you set <code>enabled: false</code>, the <code>queryClient</code> ignores <code>invalidateQueries</code> and <code>refetchQueries</code> among the ways it refetches queries.</li>
 </ul>
 <h2 id="infinite-scroll-pagination">Infinite scroll, pagination<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#infinite-scroll-pagination"><span class="icon icon-link"></span></a></h2>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">ref</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inView</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useInView</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
@@ -194,13 +194,13 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">    fetchNextPage</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}, [inView]);</span></span></code></pre></figure>
-<h2 id="참고">참고<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고"><span class="icon icon-link"></span></a></h2>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
 <ul>
 <li>
-<p>효과적인 query key 관리: <a href="https://www.zigae.com/react-query-key/">https://www.zigae.com/react-query-key/</a></p>
+<p>Effective query key management: <a href="https://www.zigae.com/react-query-key/">https://www.zigae.com/react-query-key/</a></p>
 </li>
 <li>
-<p>class component에도 React Query를 적용할 수 있나요?</p>
+<p>Can React Query be used in a class component?</p>
 <ul>
 <li><a href="https://stackoverflow.com/questions/65609409/how-can-i-use-react-query-in-a-react-class-component">https://stackoverflow.com/questions/65609409/how-can-i-use-react-query-in-a-react-class-component</a></li>
 </ul>
@@ -217,7 +217,7 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">UseQuery</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">></span></span></code></pre></figure>
 </li>
 <li>
-<p>쿼리 결과에 의존하는 다른 쿼리를 호출해야하는 경우?</p>
+<p>What if you need to call another query that depends on the result of a query?</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 쿼리 config의 enabled 사용. enabled가 true 일 때만 쿼리를 호출</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">user</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useQuery</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'user'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, email], getUserByEmail);</span></span>
 <span data-line=""> </span>
@@ -236,15 +236,15 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// It will then go to the `isLoading` stage and hopefully the `isSuccess` stage :)</span></span></code></pre></figure>
 </li>
 </ul>
-<h2 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h2>
+<h2 id="reference-pages">Reference Pages<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#reference-pages"><span class="icon icon-link"></span></a></h2>
 <ul>
-<li><a href="https://jiggag.github.io/blog/react-query-cache-is-alive/">리액트 쿼리, 캐시가 살아있다</a></li>
-<li><a href="https://tech.kakao.com/2022/06/13/react-query/">My구독의 React Query 전환기</a></li>
+<li><a href="https://jiggag.github.io/blog/react-query-cache-is-alive/">React Query, the cache is alive</a></li>
+<li><a href="https://tech.kakao.com/2022/06/13/react-query/">My Subscription's React Query migration story</a></li>
 <li><a href="https://github.com/ssi02014/react-query-tutorial">https://github.com/ssi02014/react-query-tutorial</a></li>
 <li><a href="https://github.com/ssi02014/react-query-tutorial#enabled-refetch">GitHub - ssi02014/react-query-tutorial: 😃 react-query 자주 사용되는 개념 정리</a></li>
-</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"react-query"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"react-query"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-12-30","className":"meta-mono","children":"12/30/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[5,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","상태관리",{"children":["$","$L3",null,{"href":"/en/tags?tag=%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC","className":"tag-pill","children":"상태관리"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
-5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2022-08-07-cypress","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"cypress"}]]}],["$","$L3",null,{"href":"/en/posts/2023-01-01-fe-process","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"FE 개발 프로세스"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"개요","text":"개요","depth":1},{"id":"서버-상태","text":"서버 상태","depth":1},{"id":"react-query-장점","text":"React Query 장점","depth":1},{"id":"react-query-단점","text":"React Query 단점","depth":1},{"id":"query의-상태","text":"Query의 상태","depth":1},{"id":"주요개념","text":"주요개념","depth":1},{"id":"데이터-가져오기-usequery","text":"데이터 가져오기 (useQuery)","depth":2},{"id":"데이터-업데이트하기-usemutation","text":"데이터 업데이트하기 (useMutation)","depth":2},{"id":"쿼리-무효화-invalidation","text":"쿼리 무효화 (Invalidation)","depth":2},{"id":"개발자-도구-reactquerydevtools","text":"개발자 도구 (ReactQueryDevTools)","depth":2},{"id":"staletime-vs-cachetime","text":"staleTime vs cacheTime","depth":1},{"id":"isfetching-vs-isloading","text":"isFetching vs isLoading","depth":1},{"id":"enabled-refetch","text":"enabled refetch","depth":1},{"id":"infinite-scroll-pagination","text":"Infinite scroll, pagination","depth":1},{"id":"참고","text":"참고","depth":1},{"id":"참고페이지","text":"참고페이지","depth":1}],"title":"Contents"}]}]
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"react-query"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"react-query"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-12-30","className":"meta-mono","children":"12/30/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[6,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","state management",{"children":["$","$L3",null,{"href":"/en/tags?tag=state%20management","className":"tag-pill","children":"state management"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
+5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2022-08-07-cypress","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"cypress"}]]}],["$","$L3",null,{"href":"/en/posts/2023-01-01-fe-process","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"FE Development Process"}]]}]]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"overview","text":"Overview","depth":1},{"id":"server-state","text":"Server State","depth":1},{"id":"advantages-of-react-query","text":"Advantages of React Query","depth":1},{"id":"disadvantages-of-react-query","text":"Disadvantages of React Query","depth":1},{"id":"query-states","text":"Query States","depth":1},{"id":"key-concepts","text":"Key Concepts","depth":1},{"id":"fetching-data-usequery","text":"Fetching Data (useQuery)","depth":2},{"id":"updating-data-usemutation","text":"Updating Data (useMutation)","depth":2},{"id":"query-invalidation","text":"Query Invalidation","depth":2},{"id":"developer-tools-reactquerydevtools","text":"Developer Tools (ReactQueryDevTools)","depth":2},{"id":"staletime-vs-cachetime","text":"staleTime vs cacheTime","depth":1},{"id":"isfetching-vs-isloading","text":"isFetching vs isLoading","depth":1},{"id":"enabled-refetch","text":"enabled refetch","depth":1},{"id":"infinite-scroll-pagination","text":"Infinite scroll, pagination","depth":1},{"id":"references","text":"References","depth":1},{"id":"reference-pages","text":"Reference Pages","depth":1}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null

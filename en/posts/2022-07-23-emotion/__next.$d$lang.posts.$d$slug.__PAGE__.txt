@@ -4,31 +4,31 @@
 9:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
 a:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
 b:"$Sreact.suspense"
-4:T1d5d4,<h3 id="리액트-프레임워크-사용-x">리액트 프레임워크 사용 X<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#리액트-프레임워크-사용-x"><span class="icon icon-link"></span></a></h3>
+4:T1d54a,<h3 id="without-a-react-framework">Without a React Framework<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#without-a-react-framework"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>
-<p>설치</p>
+<p>Installation</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> i</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @emotion/css</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">or</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @emotion/css</span></span></code></pre></figure>
 </li>
 <li>
-<p>설명</p>
+<p>Description</p>
 <ul>
-<li>추가적인 setup, babel plugin, 다른 환경설정이 요구하지 않는다.</li>
-<li>auto vendor-prefixing, nested selectors, media queries 지원한다..
+<li>It doesn't require any additional setup, a babel plugin, or other configuration.</li>
+<li>It supports auto vendor-prefixing, nested selectors, and media queries.
 <ul>
 <li>auto vendor-prefixing
 <ul>
-<li><strong>webkit-</strong> supported by <strong>OPERA, SAFARI, GOOGLE CHROME</strong></li>
-<li><strong>moz-</strong> supported by <strong>FIREFOX</strong></li>
-<li><strong>ms-</strong> supported by <strong>EDGE/INTERNET EXPLORER</strong></li>
+<li><strong>webkit-</strong> supported by <strong>OPERA, SAFARI, GOOGLE CHROME</strong></li>
+<li><strong>moz-</strong> supported by <strong>FIREFOX</strong></li>
+<li><strong>ms-</strong> supported by <strong>EDGE/INTERNET EXPLORER</strong></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>css 함수 사용 시 classname 자동생성, cx도 포함해서 class 여러개를 통합까지 지원한다.</li>
-<li>단, 서버사이드 랜더링 시 추가적인 작업이 요청된다.(<a href="https://emotion.sh/docs/ssr#api">https://emotion.sh/docs/ssr#api</a>)</li>
+<li>When you use the css function, a classname is generated automatically, and with cx it even supports combining multiple classes.</li>
+<li>However, additional work is required for server-side rendering.(<a href="https://emotion.sh/docs/ssr#api">https://emotion.sh/docs/ssr#api</a>)</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { css, cx } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/css'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
@@ -51,38 +51,38 @@ b:"$Sreact.suspense"
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 </ul>
-<h3 id="리액트-프레임워크-사용-o">리액트 프레임워크 사용 O<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#리액트-프레임워크-사용-o"><span class="icon icon-link"></span></a></h3>
+<h3 id="with-a-react-framework">With a React Framework<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#with-a-react-framework"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>
 <p>@emotion/react</p>
 <ul>
 <li>
-<p>설치</p>
+<p>Installation</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> i</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @emotion/react</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">or</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @emotion/react</span></span></code></pre></figure>
 </li>
 <li>
-<p>설명</p>
+<p>Description</p>
 <ul>
-<li>css prop 지원
+<li>Supports the css prop
 <ul>
-<li>auto vendor-prefixing, nested selectors, media queries 지원한다..
+<li>It supports auto vendor-prefixing, nested selectors, and media queries.
 <ul>
 <li>auto vendor-prefixing
 <ul>
-<li><strong>webkit-</strong> supported by <strong>OPERA, SAFARI, GOOGLE CHROME</strong></li>
-<li><strong>moz-</strong> supported by <strong>FIREFOX</strong></li>
-<li><strong>ms-</strong> supported by <strong>EDGE/INTERNET EXPLORER</strong></li>
+<li><strong>webkit-</strong> supported by <strong>OPERA, SAFARI, GOOGLE CHROME</strong></li>
+<li><strong>moz-</strong> supported by <strong>FIREFOX</strong></li>
+<li><strong>ms-</strong> supported by <strong>EDGE/INTERNET EXPLORER</strong></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>컴포너트 합성/스타일 지정 시 보일러플레이트 코드를 줄일 수 있다.</li>
+<li>It reduces boilerplate code when composing components and applying styles.</li>
 </ul>
 </li>
-<li>서버 사이드 렌더링 수행 시 따로 환경세팅 필요없다.</li>
-<li>proper pattern 과 환경구성을 적절하게 이용을 위해서는 ESLint 사용을 제안합니다.</li>
+<li>No separate configuration is needed when performing server-side rendering.</li>
+<li>We recommend using ESLint to properly apply the recommended patterns and configuration.</li>
 </ul>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { css } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
@@ -112,14 +112,14 @@ b:"$Sreact.suspense"
 <p>@emotion/styled</p>
 <ul>
 <li>
-<p>설치</p>
+<p>Installation</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> i</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @emotion/styled</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @emotion/react</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">or</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @emotion/styled</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @emotion/react</span></span></code></pre></figure>
 </li>
 <li>
-<p>설명
-컴포넌트 생성 시 styled.div와 같은 스타일을 선호하는 사용자를 위한 패키지 입니다.</p>
+<p>Description
+This is a package for users who prefer a styling approach like styled.div when creating components.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/styled'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Button</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">button</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
@@ -148,7 +148,7 @@ b:"$Sreact.suspense"
 </li>
 <li>
 <p>Changing based on props
-props를 기반으로 컴포넌트의 스타일을 변경할 경우..</p>
+When you want to change a component's styles based on props.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/styled'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Button</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">button</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
@@ -168,7 +168,7 @@ props를 기반으로 컴포넌트의 스타일을 변경할 경우..</p>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>컴포넌트 상속을 통한 classname 스타일링</p>
+<p>classname styling through component inheritance</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/styled'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> Basic</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">className</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> &#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> className</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">={</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">className</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>Some text&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">div</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>;</span></span>
@@ -180,9 +180,9 @@ props를 기반으로 컴포넌트의 스타일을 변경할 경우..</p>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">render</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">Fancy</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> />);</span></span></code></pre></figure>
 </li>
 <li>
-<p>스타일은 그대로 적용하면서 엘리먼트만 변경할 경우
-withComponent를 활용해서 스타일은 그대로 가져오면서 엘리먼트만 변경이 가능하다.
-as property를 활용해서도 엘리먼트 변경이 가능하다.</p>
+<p>When you want to keep the styles but change only the element
+Using withComponent, you can carry over the styles as they are while changing only the element.
+You can also change the element using the as property.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/styled'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> Section</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">section</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
@@ -214,8 +214,8 @@ as property를 활용해서도 엘리먼트 변경이 가능하다.</p>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>컴포넌트를 타겟팅해서 CSS 변경해야할 경우
-@emotion/babel-plugin을 사용할 경우 스타일 변경이 가능하다.</p>
+<p>When you need to target a component to change its CSS
+You can change the styles by using @emotion/babel-plugin.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// emotion string styles</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/styled'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
@@ -261,8 +261,8 @@ as property를 활용해서도 엘리먼트 변경이 가능하다.</p>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>조건에 따른 props 전달해야할 경우
-shouldForwardProp 조건으로 true 일경우 렌더링 시 props를 전달하지 않는다.</p>
+<p>When you need to forward props conditionally
+When the shouldForwardProp condition evaluates to true, the prop is not forwarded during rendering.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> isPropValid </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/is-prop-valid'</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/styled'</span></span>
 <span data-line=""> </span>
@@ -277,7 +277,7 @@ shouldForwardProp 조건으로 true 일경우 렌더링 시 props를 전달하�
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">render</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(&#x3C;</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">H1</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> color</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"lightgreen"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>This is lightgreen.&#x3C;/</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">H1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">>)</span></span></code></pre></figure>
 </li>
 <li>
-<p>동적 스타일 적용해야할 경우</p>
+<p>When you need to apply dynamic styles</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> styled </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/styled'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { css } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
@@ -314,7 +314,7 @@ shouldForwardProp 조건으로 true 일경우 렌더링 시 props를 전달하�
 <p>Media Queries</p>
 <ul>
 <li>
-<p>기본</p>
+<p>Basics</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { css } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">render</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
@@ -331,7 +331,7 @@ shouldForwardProp 조건으로 true 일경우 렌더링 시 props를 전달하�
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>미디어쿼리 재사용</p>
+<p>Reusing media queries</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { css } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> breakpoints</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">576</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">768</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">992</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1200</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
@@ -370,9 +370,9 @@ shouldForwardProp 조건으로 true 일경우 렌더링 시 props를 전달하�
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>facepaint 사용</p>
+<p>Using facepaint</p>
 <ul>
-<li>설치
+<li>Installation
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> i</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> facepaint</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">or</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> facepaint</span></span></code></pre></figure>
@@ -454,7 +454,7 @@ shouldForwardProp 조건으로 true 일경우 렌더링 시 props를 전달하�
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>컴포넌트 스타일에 대한 전체적용(spread 연산)</p>
+<p>Applying styles globally to a component (spread operator)</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { css } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> pinkInput</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> css</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
@@ -479,8 +479,8 @@ shouldForwardProp 조건으로 true 일경우 렌더링 시 props를 전달하�
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>테마 적용
-ThemeProvider로 감싼경우 contextapi로 공유가 되기 때문에 자식컴포넌트에서 사용이 가능하다.</p>
+<p>Applying a theme
+When wrapped with a ThemeProvider, the theme is shared through the Context API, so it can be used in child components.</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// css prop</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { ThemeProvider } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
@@ -539,7 +539,7 @@ ThemeProvider로 감싼경우 contextapi로 공유가 되기 때문에 자식컴
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>className을 값으로 보여줄 경우(labels 사용)</p>
+<p>Exposing the className as a value (using labels)</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { css } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> style </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> css</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">`</span></span>
@@ -564,7 +564,7 @@ ThemeProvider로 감싼경우 contextapi로 공유가 되기 때문에 자식컴
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>css, cx를 동시에 사용해야할 경우(ClassNames 사용)</p>
+<p>When you need to use css and cx together (using ClassNames)</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { ClassNames } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// this might be a component from npm that accepts a wrapperClassName prop</span></span>
@@ -591,7 +591,7 @@ ThemeProvider로 감싼경우 contextapi로 공유가 되기 때문에 자식컴
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 <li>
-<p>key값을 지정해야할 경우(CacheProvider 사용)</p>
+<p>When you need to specify a key value (using CacheProvider)</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="tsx" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { CacheProvider, css } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/react'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> createCache </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@emotion/cache'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
 <span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { prefixer } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'stylis'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
@@ -629,10 +629,10 @@ ThemeProvider로 감싼경우 contextapi로 공유가 되기 때문에 자식컴
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
 </li>
 </ul>
-<h3 id="babel-plugin-사용">Babel Plugin 사용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#babel-plugin-사용"><span class="icon icon-link"></span></a></h3>
+<h3 id="using-the-babel-plugin">Using the Babel Plugin<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#using-the-babel-plugin"><span class="icon icon-link"></span></a></h3>
 <ul>
 <li>
-<p>설치</p>
+<p>Installation</p>
 <figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> i</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -D</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @emotion/babel-plugin</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">or</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yarn</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -D</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @emotion/babel-plugin</span></span></code></pre></figure>
@@ -643,7 +643,7 @@ ThemeProvider로 감싼경우 contextapi로 공유가 되기 때문에 자식컴
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  "plugins"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"@emotion"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
 <span data-line=""> </span>
-<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">//</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> env</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 환경에</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 따라서</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 각각</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 세팅을</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 해야할</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 경우</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">//</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> when</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> you</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> need</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> separate</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> settings</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> per</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> env</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> environment</span></span>
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  "env"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> {</span></span>
 <span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    "production"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> {</span></span>
@@ -654,14 +654,14 @@ ThemeProvider로 감싼경우 contextapi로 공유가 되기 때문에 자식컴
 <span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
 </li>
 </ul>
-<h3 id="브라우저-지원범위">브라우저 지원범위<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#브라우저-지원범위"><span class="icon icon-link"></span></a></h3>
+<h3 id="browser-support">Browser Support<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#browser-support"><span class="icon icon-link"></span></a></h3>
 <ul>
-<li>emotion은 IE11 포함한 대부분의 브라우저를 지원합니다.</li>
+<li>emotion supports most browsers, including IE11.</li>
 </ul>
-<h3 id="참고페이지">참고페이지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고페이지"><span class="icon icon-link"></span></a></h3>
-<p><a href="https://emotion.sh/docs/introduction">Introduction</a></p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"emotion"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"emotion"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-07-23","className":"meta-mono","children":"07/23/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[2,"min read"]}]]}],["$","p",null,{"className":"mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted","children":"This article is currently shown in its original Korean."}],["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","css",{"children":["$","$L3",null,{"href":"/en/tags?tag=css","className":"tag-pill","children":"css"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QxTJw1dl4PUGQqWQmj8mC"}
+<h3 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h3>
+<p><a href="https://emotion.sh/docs/introduction">Introduction</a></p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L3",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L3",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"emotion"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"emotion"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2022-07-23","className":"meta-mono","children":"07/23/2022"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[2,"min read"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","css",{"children":["$","$L3",null,{"href":"/en/tags?tag=css","className":"tag-pill","children":"css"}]}]]}]]}],["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$4"}}]}],"$L5"]}],"$L6"]}]}]],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"crBtsO77hdlTVhsRMbMYL"}
 5:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L3",null,{"href":"/en/posts/2022-06-14-jotai","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"jotai"}]]}],["$","$L3",null,{"href":"/en/posts/2022-07-24-jest","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"jest"}]]}]]}]
-6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"리액트-프레임워크-사용-x","text":"리액트 프레임워크 사용 X","depth":2},{"id":"리액트-프레임워크-사용-o","text":"리액트 프레임워크 사용 O","depth":2},{"id":"babel-plugin-사용","text":"Babel Plugin 사용","depth":2},{"id":"브라우저-지원범위","text":"브라우저 지원범위","depth":2},{"id":"참고페이지","text":"참고페이지","depth":2}],"title":"Contents"}]}]
+6:["$","div",null,{"className":"hidden lg:block","children":["$","$L9",null,{"headings":[{"id":"without-a-react-framework","text":"Without a React Framework","depth":2},{"id":"with-a-react-framework","text":"With a React Framework","depth":2},{"id":"using-the-babel-plugin","text":"Using the Babel Plugin","depth":2},{"id":"browser-support","text":"Browser Support","depth":2},{"id":"references","text":"References","depth":2}],"title":"Contents"}]}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
 8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 c:null
