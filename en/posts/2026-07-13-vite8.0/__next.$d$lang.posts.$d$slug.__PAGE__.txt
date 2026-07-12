@@ -1,0 +1,274 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+4:I[66272,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],""]
+c:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+d:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+2:T4e5,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Vite 8.0","description":"Vite 8.0 Release: The Unified Toolchain and Migration Guide On March 12, 2026, Vite 8.0 was officially released. The heart of this major version is the Unified…","datePublished":"2026-07-13","dateModified":"2026-07-13","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-07-13-vite8.0/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-07-13-vite8.0/"},"image":"https://seungahhong.github.io/blog-assets/2026/07/assets/13/thumbnail.png","keywords":["bundler"],"articleSection":"Development","author":{"@type":"Person","name":"SeungAh Hong","url":"https://seungahhong-portfolio.vercel.app/","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungahhong-portfolio.vercel.app/","https://material-debt-c1c.notion.site/daa60481e37840ea9e1b7e1b12269942"]},"publisher":{"@type":"Person","name":"SeungAh Hong","url":"https://seungahhong-portfolio.vercel.app/","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungahhong-portfolio.vercel.app/","https://material-debt-c1c.notion.site/daa60481e37840ea9e1b7e1b12269942"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Vite 8.0\",\"item\":\"https://seungahhong.github.io/en/posts/2026-07-13-vite8.0/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Vite 8.0"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Vite 8.0"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-07-13","className":"meta-mono","children":"07/13/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[4,"min read"]}]]}],false,"$L5"]}],"$L6","$L7"]}],"$L8"]}]}]],["$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"JdN5ituNg2lIjHa9RRWse"}
+5:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","bundler",{"children":["$","$L4",null,{"href":"/en/tags?tag=bundler","className":"tag-pill","children":"bundler"}]}]]}]
+b:T5b86,<h2 id="vite-80-release-the-unified-toolchain-and-migration-guide">Vite 8.0 Release: The Unified Toolchain and Migration Guide<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite-80-release-the-unified-toolchain-and-migration-guide"><span class="icon icon-link"></span></a></h2>
+<p>On March 12, 2026, Vite 8.0 was officially released. The heart of this major version is the <strong>Unified Toolchain</strong>: the default bundler switches to Rolldown, and the transformation and minification that esbuild used to handle are now done by Oxc. It is regarded as the most significant architectural change since Vite 2. Weekly downloads have reached 65 million.</p>
+<h3 id="-table-of-contents">📋 Table of Contents<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-table-of-contents"><span class="icon icon-link"></span></a></h3>
+<ol>
+<li><a href="#%EC%A3%BC%EC%9A%94-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD">Key Changes</a></li>
+<li><a href="#vite-70%EA%B3%BC-%EB%B9%84%EA%B5%90">Comparison with Vite 7.0</a></li>
+<li><a href="#%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98-%EA%B0%80%EC%9D%B4%EB%93%9C">Migration Guide</a></li>
+<li><a href="#%EC%83%88%EB%A1%9C%EC%9A%B4-%EA%B8%B0%EB%8A%A5">New Features</a></li>
+<li><a href="#%EC%83%9D%ED%83%9C%EA%B3%84-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8">Ecosystem Updates</a></li>
+</ol>
+<h3 id="key-changes">Key Changes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#key-changes"><span class="icon icon-link"></span></a></h3>
+<h4 id="1-the-unified-toolchain">1. The Unified Toolchain<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-the-unified-toolchain"><span class="icon icon-link"></span></a></h4>
+<p>The biggest change in Vite 8 is a toolchain aligned into one. Previously, Vite used a dual-bundler setup — esbuild during development and Rollup for production builds — but Vite 8 unifies them.</p>
+<p><strong>The three components:</strong></p>
+<ul>
+<li><strong>Vite</strong> — the build tool</li>
+<li><strong>Rolldown</strong> — the bundler (Rust-based)</li>
+<li><strong>Oxc</strong> — the compiler (parsing, transforming, minifying)</li>
+</ul>
+<p>This alignment guarantees consistent behavior across the entire pipeline of parsing, resolving, transforming, and minifying.</p>
+<h4 id="2-rolldown-adopted-as-the-default-bundler">2. Rolldown Adopted as the Default Bundler<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-rolldown-adopted-as-the-default-bundler"><span class="icon icon-link"></span></a></h4>
+<p><strong>Rolldown</strong>, the Rust-based bundler offered experimentally in Vite 7, is now the default, replacing esbuild and Rollup.</p>
+<p><strong>Main effects:</strong></p>
+<ul>
+<li><strong>Up to 10–30x faster builds</strong> (while maintaining plugin compatibility)</li>
+<li>Eliminates bundler inconsistency between development and production</li>
+<li>The most significant architectural change since Vite 2</li>
+</ul>
+<p><strong>Real-world production build improvements:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Service</th><th>Result</th></tr></thead><tbody><tr><td>Linear</td><td>46s → 6s</td></tr><tr><td>Beehiiv</td><td>64% reduction</td></tr><tr><td>Ramp</td><td>57% reduction</td></tr><tr><td>Mercedes-Benz.io</td><td>Up to 38% reduction</td></tr></tbody></table>
+<h4 id="3-oxc-based-transformation-and-minification">3. Oxc-based Transformation and Minification<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-oxc-based-transformation-and-minification"><span class="icon icon-link"></span></a></h4>
+<p>JavaScript transformation and minification have moved from esbuild to <strong>Oxc</strong>.</p>
+<ul>
+<li><strong>JS transformation</strong>: Oxc replaces esbuild (<code>esbuild</code> option → <code>oxc</code>)</li>
+<li><strong>JS minification</strong>: uses the Oxc Minifier</li>
+<li><strong>CSS minification</strong>: Lightning CSS is now the default</li>
+<li>Note: Oxc does not support native decorator lowering, so use a Babel/SWC plugin when needed.</li>
+</ul>
+<h4 id="4-nodejs-support-requirements">4. Node.js Support Requirements<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-nodejs-support-requirements"><span class="icon icon-link"></span></a></h4>
+<p>Vite 8 requires <strong>Node.js 20.19+ or 22.12+</strong> (unchanged from Vite 7).</p>
+<h4 id="5-raised-browser-targets">5. Raised Browser Targets<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-raised-browser-targets"><span class="icon icon-link"></span></a></h4>
+<p>The default browser target was raised to match the "Baseline Widely Available" feature set as of 2026-01-01.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Browser</th><th>Vite 7.0</th><th>Vite 8.0</th></tr></thead><tbody><tr><td>Chrome</td><td>107</td><td>111</td></tr><tr><td>Edge</td><td>107</td><td>111</td></tr><tr><td>Firefox</td><td>104</td><td>114</td></tr><tr><td>Safari</td><td>16.0</td><td>16.4</td></tr></tbody></table>
+<h3 id="comparison-with-vite-70">Comparison with Vite 7.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#comparison-with-vite-70"><span class="icon icon-link"></span></a></h3>
+<h4 id="key-differences">Key Differences<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#key-differences"><span class="icon icon-link"></span></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Feature</th><th>Vite 7.0</th><th>Vite 8.0</th></tr></thead><tbody><tr><td>Default bundler</td><td>esbuild + Rollup</td><td>Rolldown (unified)</td></tr><tr><td>JS transform/minify</td><td>esbuild</td><td>Oxc</td></tr><tr><td>CSS minification</td><td>esbuild</td><td>Lightning CSS</td></tr><tr><td>Rolldown</td><td>Experimental</td><td>Default</td></tr><tr><td>Min. Node.js version</td><td>20.19+ / 22.12+</td><td>20.19+ / 22.12+ (same)</td></tr><tr><td>Build speed</td><td>Baseline</td><td>Up to 10–30x faster</td></tr></tbody></table>
+<h4 id="performance-improvements">Performance Improvements<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#performance-improvements"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>Unifying the dev/production toolchain delivers consistency and speed at once</li>
+<li>Especially large build-time reductions on big projects (measured at 38–64%)</li>
+</ul>
+<h3 id="migration-guide">Migration Guide<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#migration-guide"><span class="icon icon-link"></span></a></h3>
+<h4 id="step-1-check-your-nodejs-version">Step 1: Check Your Node.js Version<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-1-check-your-nodejs-version"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Check Node.js version (20.19+ or 22.12+ required)</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">node</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --version</span></span></code></pre></figure>
+<h4 id="step-2-update-packagejson">Step 2: Update package.json<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-2-update-packagejson"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "devDependencies"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">    "vite"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"^8.0.0"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<blockquote>
+<p>If you were using the technical preview <code>rolldown-vite</code> package, simply replace it with <code>vite: ^8.0.0</code> as above.</p>
+</blockquote>
+<h4 id="step-3-review-browser-targets">Step 3: Review Browser Targets<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-3-review-browser-targets"><span class="icon icon-link"></span></a></h4>
+<p>If you set a custom target, review the raised minimum versions:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  build: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    target: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'baseline-widely-available'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h4 id="step-4-migrate-bundler-options-rollup--rolldown">Step 4: Migrate Bundler Options (Rollup → Rolldown)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-4-migrate-bundler-options-rollup--rolldown"><span class="icon icon-link"></span></a></h4>
+<p>The <code>rollupOptions</code> family must move to <code>rolldownOptions</code> (they work as deprecated warnings for now).</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  build: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // rollupOptions: { ... },   // deprecated</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    rolldownOptions: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">      // ...</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // worker.rollupOptions → worker.rolldownOptions</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p><strong>Key changes:</strong></p>
+<ul>
+<li><code>optimizeDeps.esbuildOptions</code> → <code>optimizeDeps.rolldownOptions</code></li>
+<li><code>build.rollupOptions</code> → <code>build.rolldownOptions</code></li>
+<li><code>worker.rollupOptions</code> → <code>worker.rolldownOptions</code></li>
+<li><code>build.commonjsOptions</code> → no-op</li>
+<li>Object form of <code>output.manualChunks</code> removed (function form deprecated)</li>
+<li><code>build.rollupOptions.watch.chokidar</code> → <code>build.rolldownOptions.watch.watcher</code></li>
+</ul>
+<h4 id="step-5-check-transformationminification-options">Step 5: Check Transformation/Minification Options<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-5-check-transformationminification-options"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // esbuild: { ... },  // deprecated → move to oxc</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  oxc: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // JSX, define, etc. are converted automatically</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  build: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // To revert to esbuild minification (requires esbuild as a devDependency)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    minify: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'esbuild'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h4 id="step-6-verify-commonjs-interop">Step 6: Verify CommonJS Interop<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-6-verify-commonjs-interop"><span class="icon icon-link"></span></a></h4>
+<p>The default import handling rules have changed. If you need the old behavior, you can restore it temporarily:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  legacy: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    inconsistentCjsInterop: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// temporarily restore previous behavior</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h3 id="new-features">New Features<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#new-features"><span class="icon icon-link"></span></a></h3>
+<h4 id="1-integrated-devtools">1. Integrated Devtools<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-integrated-devtools"><span class="icon icon-link"></span></a></h4>
+<p>Integrated developer tools are available via the new <code>devtools</code> configuration option.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  devtools: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // ...</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h4 id="2-built-in-typescript-paths-support">2. Built-in TypeScript paths Support<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-built-in-typescript-paths-support"><span class="icon icon-link"></span></a></h4>
+<p>Use tsconfig's <code>paths</code> mapping without a separate plugin via <code>resolve.tsconfigPaths</code>.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  resolve: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    tsconfigPaths: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h4 id="3-other-additions">3. Other Additions<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-other-additions"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><strong>Automatic <code>emitDecoratorMetadata</code> support</strong> — decorator metadata handled automatically</li>
+<li><strong>WebAssembly SSR support</strong> — <code>.wasm?init</code> imports</li>
+<li><strong>Browser console forwarding</strong> — browser console logs forwarded to the dev server terminal</li>
+</ul>
+<h4 id="4-vitejsplugin-react-v6">4. @vitejs/plugin-react v6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-vitejsplugin-react-v6"><span class="icon icon-link"></span></a></h4>
+<p>It now uses Oxc for React Refresh transforms, and Babel has been removed as a dependency, reducing the installation footprint.</p>
+<h3 id="ecosystem-updates">Ecosystem Updates<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#ecosystem-updates"><span class="icon icon-link"></span></a></h3>
+<h4 id="registryvitedev">registry.vite.dev<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#registryvitedev"><span class="icon icon-link"></span></a></h4>
+<p>A searchable plugin directory that aggregates Vite, Rolldown, and Rollup plugins daily from npm data has been launched.</p>
+<h4 id="install-size-note">Install Size Note<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#install-size-note"><span class="icon icon-link"></span></a></h4>
+<p>Vite 8 is about <strong>15 MB</strong> larger than Vite 7.</p>
+<ul>
+<li>lightningcss standard dependency added: ~10 MB</li>
+<li>Rolldown binary: ~5 MB</li>
+</ul>
+<h4 id="future-roadmap">Future Roadmap<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#future-roadmap"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><strong>Full Bundle Mode (experimental)</strong> — targeting 3x faster dev server startup</li>
+<li>Raw AST transfer for JavaScript plugins</li>
+<li>Native MagicString transforms</li>
+<li>Environment API stabilization</li>
+</ul>
+<h3 id="conclusion">Conclusion<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#conclusion"><span class="icon icon-link"></span></a></h3>
+<p>Vite 8.0 is fundamentally about moving to a <strong>Unified Toolchain</strong> that ties development and production together. Adopting Rolldown and Oxc delivers up to 10–30x faster builds, but it requires some configuration changes such as bundler options (<code>rollupOptions</code> → <code>rolldownOptions</code>) and transformation options (<code>esbuild</code> → <code>oxc</code>).</p>
+<p><strong>Key checklist:</strong></p>
+<ul>
+<li>✅ Confirm Node.js 20.19+ or 22.12+</li>
+<li>✅ Review the raised browser targets</li>
+<li>✅ Migrate <code>rollupOptions</code> → <code>rolldownOptions</code></li>
+<li>✅ Check <code>esbuild</code> → <code>oxc</code> options, keep <code>minify: 'esbuild'</code> if needed</li>
+<li>✅ Verify CommonJS interop behavior (<code>legacy.inconsistentCjsInterop</code>)</li>
+<li>✅ Prepare a Babel/SWC plugin if you use decorators</li>
+</ul>
+<p>For the detailed migration guide, refer to the <a href="https://vite.dev/guide/migration">official documentation</a>.</p>6:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$b"}}]}]
+7:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/en/posts/2026-07-12-product-spec-harness","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Product Spec Harness (product-spec-harness)"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+8:["$","div",null,{"className":"hidden lg:block","children":["$","$Lc",null,{"headings":[{"id":"vite-80-release-the-unified-toolchain-and-migration-guide","text":"Vite 8.0 Release: The Unified Toolchain and Migration Guide","depth":1},{"id":"-table-of-contents","text":"📋 Table of Contents","depth":2},{"id":"key-changes","text":"Key Changes","depth":2},{"id":"1-the-unified-toolchain","text":"1. The Unified Toolchain","depth":3},{"id":"2-rolldown-adopted-as-the-default-bundler","text":"2. Rolldown Adopted as the Default Bundler","depth":3},{"id":"3-oxc-based-transformation-and-minification","text":"3. Oxc-based Transformation and Minification","depth":3},{"id":"4-nodejs-support-requirements","text":"4. Node.js Support Requirements","depth":3},{"id":"5-raised-browser-targets","text":"5. Raised Browser Targets","depth":3},{"id":"comparison-with-vite-70","text":"Comparison with Vite 7.0","depth":2},{"id":"key-differences","text":"Key Differences","depth":3},{"id":"performance-improvements","text":"Performance Improvements","depth":3},{"id":"migration-guide","text":"Migration Guide","depth":2},{"id":"step-1-check-your-nodejs-version","text":"Step 1: Check Your Node.js Version","depth":3},{"id":"step-2-update-packagejson","text":"Step 2: Update package.json","depth":3},{"id":"step-3-review-browser-targets","text":"Step 3: Review Browser Targets","depth":3},{"id":"step-4-migrate-bundler-options-rollup--rolldown","text":"Step 4: Migrate Bundler Options (Rollup → Rolldown)","depth":3},{"id":"step-5-check-transformationminification-options","text":"Step 5: Check Transformation/Minification Options","depth":3},{"id":"step-6-verify-commonjs-interop","text":"Step 6: Verify CommonJS Interop","depth":3},{"id":"new-features","text":"New Features","depth":2},{"id":"1-integrated-devtools","text":"1. Integrated Devtools","depth":3},{"id":"2-built-in-typescript-paths-support","text":"2. Built-in TypeScript paths Support","depth":3},{"id":"3-other-additions","text":"3. Other Additions","depth":3},{"id":"4-vitejsplugin-react-v6","text":"4. @vitejs/plugin-react v6","depth":3},{"id":"ecosystem-updates","text":"Ecosystem Updates","depth":2},{"id":"registryvitedev","text":"registry.vite.dev","depth":3},{"id":"install-size-note","text":"Install Size Note","depth":3},{"id":"future-roadmap","text":"Future Roadmap","depth":3},{"id":"conclusion","text":"Conclusion","depth":2}],"title":"Contents"}]}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

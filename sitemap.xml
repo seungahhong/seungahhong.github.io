@@ -1112,4 +1112,36 @@
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
+<url>
+<loc>https://seungahhong.github.io/ko/posts/2026-07-12-product-spec-harness</loc>
+<xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/posts/2026-07-12-product-spec-harness" />
+<xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/2026-07-12-product-spec-harness" />
+<lastmod>2026-07-12</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://seungahhong.github.io/en/posts/2026-07-12-product-spec-harness</loc>
+<xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/posts/2026-07-12-product-spec-harness" />
+<xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/2026-07-12-product-spec-harness" />
+<lastmod>2026-07-12</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://seungahhong.github.io/ko/posts/2026-07-13-vite8.0</loc>
+<xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/posts/2026-07-13-vite8.0" />
+<xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/2026-07-13-vite8.0" />
+<lastmod>2026-07-13</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://seungahhong.github.io/en/posts/2026-07-13-vite8.0</loc>
+<xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/posts/2026-07-13-vite8.0" />
+<xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/2026-07-13-vite8.0" />
+<lastmod>2026-07-13</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
 </urlset>

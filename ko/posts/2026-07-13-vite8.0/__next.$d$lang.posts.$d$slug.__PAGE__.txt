@@ -1,0 +1,274 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+4:I[66272,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],""]
+c:I[27722,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js","/_next/static/chunks/37uf5-y21mzuk.js","/_next/static/chunks/31zg1r447v--4.js"],"default"]
+d:I[58809,["/_next/static/chunks/3of_t2p79k0nc.js","/_next/static/chunks/38rzvn-x2y9-6.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+2:T56c,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Vite 8.0","description":"Vite 8.0 출시: 통합 툴체인 및 마이그레이션 가이드 2026년 3월 12일, Vite 8.0이 공식 출시되었습니다. 이번 메이저 버전의 핵심은 통합 툴체인(Unified Toolchain) 으로, 기본 번들러가 Rolldown으로 전환되고 esbuild가 담당하던 변환·최소화가…","datePublished":"2026-07-13","dateModified":"2026-07-13","inLanguage":"ko-KR","url":"https://seungahhong.github.io/ko/posts/2026-07-13-vite8.0/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/ko/posts/2026-07-13-vite8.0/"},"image":"https://seungahhong.github.io/blog-assets/2026/07/assets/13/thumbnail.png","keywords":["bundler"],"articleSection":"개발","author":{"@type":"Person","name":"홍승아","url":"https://seungahhong-portfolio.vercel.app/","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungahhong-portfolio.vercel.app/","https://material-debt-c1c.notion.site/daa60481e37840ea9e1b7e1b12269942"]},"publisher":{"@type":"Person","name":"홍승아","url":"https://seungahhong-portfolio.vercel.app/","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungahhong-portfolio.vercel.app/","https://material-debt-c1c.notion.site/daa60481e37840ea9e1b7e1b12269942"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"홈\",\"item\":\"https://seungahhong.github.io/ko/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"포스트\",\"item\":\"https://seungahhong.github.io/ko/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Vite 8.0\",\"item\":\"https://seungahhong.github.io/ko/posts/2026-07-13-vite8.0/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Vite 8.0"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Vite 8.0"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-07-13","className":"meta-mono","children":"2026.07.13"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[4,"분"]}]]}],false,["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":["$L5"]}]]}],"$L6","$L7"]}],"$L8"]}]}]],["$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"JdN5ituNg2lIjHa9RRWse"}
+5:["$","li","bundler",{"children":["$","$L4",null,{"href":"/ko/tags?tag=bundler","className":"tag-pill","children":"bundler"}]}]
+b:T5d55,<h2 id="vite-80-출시-통합-툴체인-및-마이그레이션-가이드">Vite 8.0 출시: 통합 툴체인 및 마이그레이션 가이드<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite-80-출시-통합-툴체인-및-마이그레이션-가이드"><span class="icon icon-link"></span></a></h2>
+<p>2026년 3월 12일, Vite 8.0이 공식 출시되었습니다. 이번 메이저 버전의 핵심은 <strong>통합 툴체인(Unified Toolchain)</strong> 으로, 기본 번들러가 Rolldown으로 전환되고 esbuild가 담당하던 변환·최소화가 Oxc로 대체되었습니다. Vite 2 이후 가장 큰 아키텍처 변화로 평가됩니다. 주간 다운로드 수는 6,500만 건에 달합니다.</p>
+<h3 id="-목차">📋 목차<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-목차"><span class="icon icon-link"></span></a></h3>
+<ol>
+<li><a href="#%EC%A3%BC%EC%9A%94-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD">주요 변경사항</a></li>
+<li><a href="#vite-70%EA%B3%BC-%EB%B9%84%EA%B5%90">Vite 7.0과 비교</a></li>
+<li><a href="#%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98-%EA%B0%80%EC%9D%B4%EB%93%9C">마이그레이션 가이드</a></li>
+<li><a href="#%EC%83%88%EB%A1%9C%EC%9A%B4-%EA%B8%B0%EB%8A%A5">새로운 기능</a></li>
+<li><a href="#%EC%83%9D%ED%83%9C%EA%B3%84-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8">생태계 업데이트</a></li>
+</ol>
+<h3 id="주요-변경사항">주요 변경사항<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#주요-변경사항"><span class="icon icon-link"></span></a></h3>
+<h4 id="1-통합-툴체인-unified-toolchain">1. 통합 툴체인 (Unified Toolchain)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-통합-툴체인-unified-toolchain"><span class="icon icon-link"></span></a></h4>
+<p>Vite 8의 가장 큰 변화는 하나로 정렬된 툴체인입니다. 기존에는 개발 시 esbuild, 프로덕션 빌드 시 Rollup을 사용하는 이중 번들러 구조였으나, Vite 8은 이를 통합했습니다.</p>
+<p><strong>세 가지 구성 요소:</strong></p>
+<ul>
+<li><strong>Vite</strong> — 빌드 툴</li>
+<li><strong>Rolldown</strong> — 번들러 (Rust 기반)</li>
+<li><strong>Oxc</strong> — 컴파일러 (파싱·변환·최소화)</li>
+</ul>
+<p>이 정렬로 파싱, 해석(resolve), 변환(transform), 최소화(minify) 전 과정에서 일관된 동작을 보장합니다.</p>
+<h4 id="2-rolldown-기본-번들러-채택">2. Rolldown 기본 번들러 채택<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-rolldown-기본-번들러-채택"><span class="icon icon-link"></span></a></h4>
+<p>Vite 7에서 실험적으로 제공되던 Rust 기반 번들러 <strong>Rolldown</strong>이 이제 기본값이 되어 esbuild와 Rollup을 대체합니다.</p>
+<p><strong>주요 효과:</strong></p>
+<ul>
+<li><strong>최대 10~30배 빠른 빌드</strong> (플러그인 호환성 유지)</li>
+<li>개발/프로덕션 간 번들러 불일치 제거</li>
+<li>Vite 2 이후 가장 큰 아키텍처 변화</li>
+</ul>
+<p><strong>실제 프로덕션 빌드 개선 사례:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>서비스</th><th>개선 결과</th></tr></thead><tbody><tr><td>Linear</td><td>46초 → 6초</td></tr><tr><td>Beehiiv</td><td>64% 단축</td></tr><tr><td>Ramp</td><td>57% 단축</td></tr><tr><td>Mercedes-Benz.io</td><td>최대 38% 단축</td></tr></tbody></table>
+<h4 id="3-oxc-기반-변환최소화">3. Oxc 기반 변환·최소화<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-oxc-기반-변환최소화"><span class="icon icon-link"></span></a></h4>
+<p>JavaScript 변환과 최소화가 esbuild에서 <strong>Oxc</strong>로 이전되었습니다.</p>
+<ul>
+<li><strong>JS 변환</strong>: Oxc가 esbuild 대체 (<code>esbuild</code> 옵션 → <code>oxc</code>)</li>
+<li><strong>JS 최소화</strong>: Oxc Minifier 사용</li>
+<li><strong>CSS 최소화</strong>: Lightning CSS가 기본값</li>
+<li>단, Oxc는 네이티브 데코레이터 lowering을 지원하지 않아 필요 시 Babel/SWC 플러그인을 사용해야 합니다.</li>
+</ul>
+<h4 id="4-nodejs-지원-요구사항">4. Node.js 지원 요구사항<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-nodejs-지원-요구사항"><span class="icon icon-link"></span></a></h4>
+<p>Vite 8은 <strong>Node.js 20.19+ 또는 22.12+</strong> 를 요구합니다. (Vite 7과 동일하게 유지)</p>
+<h4 id="5-브라우저-타겟-상향">5. 브라우저 타겟 상향<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-브라우저-타겟-상향"><span class="icon icon-link"></span></a></h4>
+<p>기본 브라우저 타겟이 2026-01-01 기준 "Baseline Widely Available" 기능 집합에 맞춰 상향되었습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>브라우저</th><th>Vite 7.0</th><th>Vite 8.0</th></tr></thead><tbody><tr><td>Chrome</td><td>107</td><td>111</td></tr><tr><td>Edge</td><td>107</td><td>111</td></tr><tr><td>Firefox</td><td>104</td><td>114</td></tr><tr><td>Safari</td><td>16.0</td><td>16.4</td></tr></tbody></table>
+<h3 id="vite-70과-비교">Vite 7.0과 비교<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite-70과-비교"><span class="icon icon-link"></span></a></h3>
+<h4 id="주요-차이점">주요 차이점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#주요-차이점"><span class="icon icon-link"></span></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>기능</th><th>Vite 7.0</th><th>Vite 8.0</th></tr></thead><tbody><tr><td>기본 번들러</td><td>esbuild + Rollup</td><td>Rolldown (통합)</td></tr><tr><td>JS 변환/최소화</td><td>esbuild</td><td>Oxc</td></tr><tr><td>CSS 최소화</td><td>esbuild</td><td>Lightning CSS</td></tr><tr><td>Rolldown</td><td>실험적 지원</td><td>기본값</td></tr><tr><td>Node.js 최소 버전</td><td>20.19+ / 22.12+</td><td>20.19+ / 22.12+ (동일)</td></tr><tr><td>빌드 속도</td><td>기준</td><td>최대 10~30배 향상</td></tr></tbody></table>
+<h4 id="성능-개선">성능 개선<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#성능-개선"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>개발/프로덕션 툴체인 통합으로 일관성과 속도 동시 확보</li>
+<li>대규모 프로젝트에서 특히 큰 빌드 시간 단축 (실측 38~64% 수준)</li>
+</ul>
+<h3 id="마이그레이션-가이드">마이그레이션 가이드<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#마이그레이션-가이드"><span class="icon icon-link"></span></a></h3>
+<h4 id="1단계-nodejs-버전-확인">1단계: Node.js 버전 확인<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1단계-nodejs-버전-확인"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Node.js 버전 확인 (20.19+ 또는 22.12+ 필요)</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">node</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --version</span></span></code></pre></figure>
+<h4 id="2단계-packagejson-업데이트">2단계: package.json 업데이트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2단계-packagejson-업데이트"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "devDependencies"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">    "vite"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"^8.0.0"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<blockquote>
+<p>기술 프리뷰 <code>rolldown-vite</code> 패키지를 사용 중이었다면, 위와 같이 <code>vite: ^8.0.0</code>으로 교체하면 됩니다.</p>
+</blockquote>
+<h4 id="3단계-브라우저-타겟-확인">3단계: 브라우저 타겟 확인<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3단계-브라우저-타겟-확인"><span class="icon icon-link"></span></a></h4>
+<p>커스텀 타겟을 설정한 경우 상향된 최소 버전을 검토합니다:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  build: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    target: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'baseline-widely-available'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h4 id="4단계-번들러-옵션-마이그레이션-rollup--rolldown">4단계: 번들러 옵션 마이그레이션 (Rollup → Rolldown)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4단계-번들러-옵션-마이그레이션-rollup--rolldown"><span class="icon icon-link"></span></a></h4>
+<p><code>rollupOptions</code> 계열은 <code>rolldownOptions</code>로 이전해야 합니다. (당분간 deprecated 경고로 동작)</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  build: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // rollupOptions: { ... },   // deprecated</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    rolldownOptions: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">      // ...</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // worker.rollupOptions → worker.rolldownOptions</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p><strong>주요 변경 사항:</strong></p>
+<ul>
+<li><code>optimizeDeps.esbuildOptions</code> → <code>optimizeDeps.rolldownOptions</code></li>
+<li><code>build.rollupOptions</code> → <code>build.rolldownOptions</code></li>
+<li><code>worker.rollupOptions</code> → <code>worker.rolldownOptions</code></li>
+<li><code>build.commonjsOptions</code> → no-op (동작 없음)</li>
+<li><code>output.manualChunks</code> 객체 형태 제거 (함수 형태는 deprecated)</li>
+<li><code>build.rollupOptions.watch.chokidar</code> → <code>build.rolldownOptions.watch.watcher</code></li>
+</ul>
+<h4 id="5단계-변환최소화-옵션-확인">5단계: 변환·최소화 옵션 확인<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5단계-변환최소화-옵션-확인"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  // esbuild: { ... },  // deprecated → oxc 로 이전</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  oxc: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // JSX, define 등은 자동 변환 지원</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  build: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // 기존 esbuild 최소화로 되돌리려면 (esbuild를 devDependency로 설치 필요)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    minify: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'esbuild'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h4 id="6단계-commonjs-상호운용interop-확인">6단계: CommonJS 상호운용(interop) 확인<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6단계-commonjs-상호운용interop-확인"><span class="icon icon-link"></span></a></h4>
+<p>기본 import 처리 규칙이 변경되었습니다. 기존 동작이 필요하면 임시로 복원할 수 있습니다:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  legacy: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    inconsistentCjsInterop: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 이전 동작 임시 복원</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h3 id="새로운-기능">새로운 기능<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#새로운-기능"><span class="icon icon-link"></span></a></h3>
+<h4 id="1-통합-devtools">1. 통합 Devtools<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-통합-devtools"><span class="icon icon-link"></span></a></h4>
+<p>새로운 <code>devtools</code> 설정 옵션으로 통합 개발자 도구를 사용할 수 있습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  devtools: {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // ...</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h4 id="2-typescript-paths-내장-지원">2. TypeScript paths 내장 지원<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-typescript-paths-내장-지원"><span class="icon icon-link"></span></a></h4>
+<p><code>resolve.tsconfigPaths</code>로 tsconfig의 <code>paths</code> 매핑을 별도 플러그인 없이 사용할 수 있습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="javascript" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// vite.config.js</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  resolve: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    tsconfigPaths: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h4 id="3-기타-추가-기능">3. 기타 추가 기능<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-기타-추가-기능"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><strong><code>emitDecoratorMetadata</code> 자동 지원</strong> — 데코레이터 메타데이터 자동 처리</li>
+<li><strong>WebAssembly SSR 지원</strong> — <code>.wasm?init</code> import</li>
+<li><strong>브라우저 콘솔 포워딩</strong> — 브라우저 콘솔 로그를 개발 서버 터미널로 전달</li>
+</ul>
+<h4 id="4-vitejsplugin-react-v6">4. @vitejs/plugin-react v6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-vitejsplugin-react-v6"><span class="icon icon-link"></span></a></h4>
+<p>React Refresh 변환에 Oxc를 사용하도록 변경되었고, Babel 의존성이 제거되어 설치 용량이 줄었습니다.</p>
+<h3 id="생태계-업데이트">생태계 업데이트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#생태계-업데이트"><span class="icon icon-link"></span></a></h3>
+<h4 id="registryvitedev">registry.vite.dev<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#registryvitedev"><span class="icon icon-link"></span></a></h4>
+<p>Vite, Rolldown, Rollup 플러그인을 npm 데이터 기반으로 매일 집계하는 검색형 플러그인 디렉토리가 공개되었습니다.</p>
+<h4 id="설치-용량-참고">설치 용량 참고<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#설치-용량-참고"><span class="icon icon-link"></span></a></h4>
+<p>Vite 8은 Vite 7보다 약 <strong>15MB</strong> 정도 큽니다.</p>
+<ul>
+<li>lightningcss 표준 의존성 추가: 약 10MB</li>
+<li>Rolldown 바이너리: 약 5MB</li>
+</ul>
+<h4 id="향후-로드맵">향후 로드맵<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#향후-로드맵"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><strong>Full Bundle Mode (실험적)</strong> — 개발 서버 시작 속도 3배 향상 목표</li>
+<li>JavaScript 플러그인용 Raw AST 전달</li>
+<li>네이티브 MagicString 변환</li>
+<li>Environment API 정식화(stabilization)</li>
+</ul>
+<h3 id="마무리">마무리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#마무리"><span class="icon icon-link"></span></a></h3>
+<p>Vite 8.0은 개발과 프로덕션을 하나로 잇는 <strong>통합 툴체인</strong>으로의 전환이 핵심입니다. Rolldown과 Oxc 채택으로 최대 10~30배 빠른 빌드를 제공하지만, 번들러 옵션(<code>rollupOptions</code> → <code>rolldownOptions</code>)과 변환 옵션(<code>esbuild</code> → <code>oxc</code>) 등 일부 설정 변경이 필요합니다.</p>
+<p><strong>주요 체크리스트:</strong></p>
+<ul>
+<li>✅ Node.js 20.19+ 또는 22.12+ 확인</li>
+<li>✅ 브라우저 타겟 상향 검토</li>
+<li>✅ <code>rollupOptions</code> → <code>rolldownOptions</code> 이전</li>
+<li>✅ <code>esbuild</code> → <code>oxc</code> 옵션 확인, 필요 시 <code>minify: 'esbuild'</code> 유지</li>
+<li>✅ CommonJS interop 동작 확인 (<code>legacy.inconsistentCjsInterop</code>)</li>
+<li>✅ 데코레이터 사용 시 Babel/SWC 플러그인 준비</li>
+</ul>
+<p>자세한 마이그레이션 가이드는 <a href="https://vite.dev/guide/migration">공식 문서</a>를 참조하세요.</p>6:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$b"}}]}]
+7:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/ko/posts/2026-07-12-product-spec-harness","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"제품 스펙 하네스 (product-spec-harness)"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+8:["$","div",null,{"className":"hidden lg:block","children":["$","$Lc",null,{"headings":[{"id":"vite-80-출시-통합-툴체인-및-마이그레이션-가이드","text":"Vite 8.0 출시: 통합 툴체인 및 마이그레이션 가이드","depth":1},{"id":"-목차","text":"📋 목차","depth":2},{"id":"주요-변경사항","text":"주요 변경사항","depth":2},{"id":"1-통합-툴체인-unified-toolchain","text":"1. 통합 툴체인 (Unified Toolchain)","depth":3},{"id":"2-rolldown-기본-번들러-채택","text":"2. Rolldown 기본 번들러 채택","depth":3},{"id":"3-oxc-기반-변환최소화","text":"3. Oxc 기반 변환·최소화","depth":3},{"id":"4-nodejs-지원-요구사항","text":"4. Node.js 지원 요구사항","depth":3},{"id":"5-브라우저-타겟-상향","text":"5. 브라우저 타겟 상향","depth":3},{"id":"vite-70과-비교","text":"Vite 7.0과 비교","depth":2},{"id":"주요-차이점","text":"주요 차이점","depth":3},{"id":"성능-개선","text":"성능 개선","depth":3},{"id":"마이그레이션-가이드","text":"마이그레이션 가이드","depth":2},{"id":"1단계-nodejs-버전-확인","text":"1단계: Node.js 버전 확인","depth":3},{"id":"2단계-packagejson-업데이트","text":"2단계: package.json 업데이트","depth":3},{"id":"3단계-브라우저-타겟-확인","text":"3단계: 브라우저 타겟 확인","depth":3},{"id":"4단계-번들러-옵션-마이그레이션-rollup--rolldown","text":"4단계: 번들러 옵션 마이그레이션 (Rollup → Rolldown)","depth":3},{"id":"5단계-변환최소화-옵션-확인","text":"5단계: 변환·최소화 옵션 확인","depth":3},{"id":"6단계-commonjs-상호운용interop-확인","text":"6단계: CommonJS 상호운용(interop) 확인","depth":3},{"id":"새로운-기능","text":"새로운 기능","depth":2},{"id":"1-통합-devtools","text":"1. 통합 Devtools","depth":3},{"id":"2-typescript-paths-내장-지원","text":"2. TypeScript paths 내장 지원","depth":3},{"id":"3-기타-추가-기능","text":"3. 기타 추가 기능","depth":3},{"id":"4-vitejsplugin-react-v6","text":"4. @vitejs/plugin-react v6","depth":3},{"id":"생태계-업데이트","text":"생태계 업데이트","depth":2},{"id":"registryvitedev","text":"registry.vite.dev","depth":3},{"id":"설치-용량-참고","text":"설치 용량 참고","depth":3},{"id":"향후-로드맵","text":"향후 로드맵","depth":3},{"id":"마무리","text":"마무리","depth":2}],"title":"목차"}]}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/31zg1r447v--4.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null
