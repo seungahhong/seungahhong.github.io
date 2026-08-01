@@ -15,6 +15,12 @@ const nextConfig: NextConfig = {
   },
   // 마크다운 콘텐츠 이미지는 빌드 시 public/blog-assets로 동기화된다.
   // (Next 16은 `next build`에서 ESLint를 실행하지 않는다 — lint는 별도 스텝)
+  experimental: {
+    // TypeScript 7(네이티브 Go 포트)은 기존 JS 컴파일러 API를 export하지 않는다.
+    // 이 플래그를 켜면 Next가 JS API 대신 typescript 패키지의 tsc CLI를 실행해 타입 검사를 수행한다.
+    // (Next 16.2.12+ 필요)
+    useTypeScriptCli: true,
+  },
 };
 
 export default nextConfig;
