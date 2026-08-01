@@ -8,7 +8,7 @@ import {
 } from '@/lib/posts';
 import { siteConfig } from '@/lib/site';
 import { localePath } from '@/lib/routes';
-import { websiteJsonLd } from '@/lib/jsonld';
+import { blogJsonLd, websiteJsonLd } from '@/lib/jsonld';
 import JsonLd from '@/components/JsonLd';
 import Hero from '@/components/home/Hero';
 import PostCard from '@/components/home/PostCard';
@@ -30,6 +30,7 @@ export default async function HomePage({ params }: { params: LangParams }) {
   return (
     <>
       <JsonLd data={websiteJsonLd(locale, dict)} />
+      <JsonLd data={blogJsonLd(posts, locale, dict)} />
       <Hero
         dict={dict}
         stats={{

@@ -1,9 +1,9 @@
 'use client';
 
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import type { Locale } from '@/i18n/config';
 import type { Dictionary } from '@/lib/i18n';
 import type { CategoryCount, PostMeta } from '@/types';
+import { useQueryParam } from '@/lib/use-query-param';
 import PostCard from '@/components/home/PostCard';
 
 export default function PostsExplorer({
@@ -17,10 +17,7 @@ export default function PostsExplorer({
   posts: PostMeta[];
   categories: CategoryCount[];
 }) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const requested = searchParams.get('category');
+  const [requested, setCategory] = useQueryParam('category');
   const active =
     requested && categories.some((c) => c.category === requested)
       ? requested
@@ -29,11 +26,7 @@ export default function PostsExplorer({
     active === 'all' ? posts : posts.filter((post) => post.category === active);
 
   const selectCategory = (category: string) => {
-    const params = new URLSearchParams(searchParams.toString());
-    if (category === 'all') params.delete('category');
-    else params.set('category', category);
-    const qs = params.toString();
-    router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
+    setCategory(category === 'all' ? null : category);
   };
 
   const renderPill = (

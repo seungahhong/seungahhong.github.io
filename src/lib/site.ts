@@ -16,6 +16,12 @@ export const siteConfig = {
   gaIds: ['G-TYGQRJE1B8', 'G-G8Z1HZWWYL'],
 } as const;
 
+/** 로케일별 기본 소셜 공유 이미지(1200×630). 썸네일이 없는 페이지의 og:image. */
+export const ogImagePath: Record<Locale, string> = {
+  ko: '/og/ko.png',
+  en: '/og/en.png',
+};
+
 /** 상단 내비게이션 항목 (라벨은 사전에서 dict.nav[key]) */
 export const navItems = [
   { key: 'home', sub: '' },

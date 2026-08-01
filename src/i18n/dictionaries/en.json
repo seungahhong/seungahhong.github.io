@@ -66,6 +66,29 @@
     "introHeading": "Intro",
     "skillsHeading": "Skills",
     "linksHeading": "Links",
+    "faqHeading": "Frequently asked questions",
+    "faq": [
+      {
+        "question": "What topics does this blog cover?",
+        "answer": "Frontend development, mostly: frameworks such as React and Next.js, state management (Redux, Recoil, Zustand, Jotai, MobX, React Query), bundlers and build tooling (Vite, esbuild, Webpack), web performance, and testing. More recently it also covers AI engineering topics such as RAG, MCP, and LLM harnesses. {postCount} posts are published so far."
+      },
+      {
+        "question": "What languages are the posts available in?",
+        "answer": "Korean and English. Every post has both a /ko and an /en URL; posts without an English translation yet fall back to the Korean original, and the page says so at the top of the article."
+      },
+      {
+        "question": "Who writes it?",
+        "answer": "SeungAh Hong, a frontend engineer, writes every post. The recurring interests are component reuse and extensibility, and building a development ecosystem that grows together rather than individually. GitHub, LinkedIn, and portfolio links are in the links section of this page."
+      },
+      {
+        "question": "How often are new posts published?",
+        "answer": "Posts have been published since {since}. There is no fixed schedule — a post goes up whenever something learned at work or in a side project is worth writing down. The newest posts are listed first on the home page and the posts index."
+      },
+      {
+        "question": "How is this blog built?",
+        "answer": "It is a Next.js 16 App Router static export deployed to GitHub Pages, written in TypeScript with Tailwind CSS. Markdown is rendered through unified (remark/rehype) with shiki for syntax highlighting. The source code is public on GitHub."
+      }
+    ],
     "intro": [
       "A frontend developer with a deep interest in the craft.",
       "Always thinking about component reuse and extensibility.",

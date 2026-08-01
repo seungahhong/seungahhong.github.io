@@ -1,10 +1,10 @@
 'use client';
 
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { X } from 'lucide-react';
 import type { Locale } from '@/i18n/config';
 import type { Dictionary } from '@/lib/i18n';
 import type { PostMeta, TagCount } from '@/types';
+import { useQueryParam } from '@/lib/use-query-param';
 import PostCard from '@/components/home/PostCard';
 
 export default function TagsExplorer({
@@ -18,10 +18,7 @@ export default function TagsExplorer({
   posts: PostMeta[];
   tags: TagCount[];
 }) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const requested = searchParams.get('tag');
+  const [requested, setTag] = useQueryParam('tag');
   const active =
     requested && tags.some((t) => t.tag === requested) ? requested : null;
 
@@ -30,11 +27,7 @@ export default function TagsExplorer({
     : posts;
 
   const selectTag = (tag: string | null) => {
-    const params = new URLSearchParams(searchParams.toString());
-    if (tag === null) params.delete('tag');
-    else params.set('tag', tag);
-    const qs = params.toString();
-    router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
+    setTag(tag);
   };
 
   return (

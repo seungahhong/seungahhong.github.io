@@ -52,6 +52,7 @@ function meta(partial: Partial<PostMeta>): PostMeta {
     github: null,
     excerpt: '',
     readingTime: 1,
+    wordCount: 0,
     relDir: '2024/01',
     year: '2024',
     contentLocale: 'ko',
