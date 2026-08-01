@@ -8,8 +8,8 @@ export const siteConfig = {
     github: 'https://github.com/seungahhong',
     linkedin: 'https://www.linkedin.com/in/seungahhong/',
     notion:
-      'https://material-debt-c1c.notion.site/daa60481e37840ea9e1b7e1b12269942',
-    portfolio: 'https://seungahhong-portfolio.vercel.app/',
+      'https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1',
+    portfolio: 'https://seungah-portfolio.vercel.app',
     email: 'gmm117@naver.com',
   },
   /** Google Analytics 측정 ID (다음 라운드에서 스크립트 연결) */
