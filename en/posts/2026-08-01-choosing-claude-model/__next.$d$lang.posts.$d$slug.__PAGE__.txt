@@ -1,0 +1,295 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/3wf0bwwqy2jd-.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+4:I[52881,["/_next/static/chunks/3wf0bwwqy2jd-.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],""]
+11:I[27722,["/_next/static/chunks/3wf0bwwqy2jd-.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+12:I[10301,["/_next/static/chunks/3wf0bwwqy2jd-.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
+13:"$Sreact.suspense"
+2:T61f,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Choosing a Claude Model — Start Smart","description":"1. What Is This Post About? Here it is in a single sentence. The order of \"try the cheap model first, move up if it falls short\" has been inverted. The…","datePublished":"2026-08-01","dateModified":"2026-08-01","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-08-01-choosing-claude-model/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-08-01-choosing-claude-model/"},"image":"https://seungahhong.github.io/blog-assets/2026/08/assets/01/thumbnail.png","keywords":["AI","Claude","model-selection","LLM"],"articleSection":"Development","wordCount":1533,"timeRequired":"PT8M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Choosing a Claude Model — Start Smart\",\"item\":\"https://seungahhong.github.io/en/posts/2026-08-01-choosing-claude-model/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Choosing a Claude Model — Start Smart"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Choosing a Claude Model — Start Smart"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],"$L5","$L6","$L7","$L8","$L9"]}],false,"$La"]}],"$Lb","$Lc"]}],"$Ld"]}]}]],["$Le"],"$Lf"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"VIH-NLJQqBCjhFst2-ITN"}
+5:["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}]
+6:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+7:["$","time",null,{"dateTime":"2026-08-01","className":"meta-mono","children":"08/01/2026"}]
+8:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+9:["$","span",null,{"className":"meta-mono","children":[8,"min read"]}]
+a:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","Claude",{"children":["$","$L4",null,{"href":"/en/tags?tag=Claude","className":"tag-pill","children":"Claude"}]}],["$","li","model-selection",{"children":["$","$L4",null,{"href":"/en/tags?tag=model-selection","className":"tag-pill","children":"model-selection"}]}],["$","li","LLM",{"children":["$","$L4",null,{"href":"/en/tags?tag=LLM","className":"tag-pill","children":"LLM"}]}]]}]
+10:T577f,<h2 id="1-what-is-this-post-about">1. What Is This Post About?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-what-is-this-post-about"><span class="icon icon-link"></span></a></h2>
+<p>Here it is in a single sentence.</p>
+<blockquote>
+<p><strong>The order of "try the cheap model first, move up if it falls short" has been inverted.</strong> The recommended order now is to <strong>start with the most intelligent model and dial cost down with the effort parameter.</strong></p>
+</blockquote>
+<p>Yesterday's post (<a href="/en/posts/2026-07-31-context-engineering-claude5/">Trimming Context Engineering</a>) ended on this line: "A harness is tuned to the model." Which raises the obvious follow-up — <strong>how do you pick that model?</strong> This post answers it.</p>
+<h3 id="the-arithmetic-we-do-out-of-habit">The Arithmetic We Do Out of Habit<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-arithmetic-we-do-out-of-habit"><span class="icon icon-link"></span></a></h3>
+<p>Most of us reason about model choice like this.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"Haiku is $1 per million tokens and Opus is $5.</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> That's 5×. Let's start with Haiku and move up if we have to."</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ↓</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Haiku can't solve it in three tries, so we retry</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ↓</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> We keep tuning the prompt until it barely passes</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ↓</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ...and end up burning more tokens, and far more human hours</span></span></code></pre></figure>
+<p>The trap in that arithmetic is that <strong>the unit is wrong.</strong> What we pay for isn't tokens — it's <strong>the cost of finishing one task.</strong> This is exactly the point Anthropic makes.</p>
+<blockquote>
+<p><strong>Cost-per-task is often lower for more intelligent models — especially at lower effort levels — even when price-per-token is higher.</strong> More capable models take fewer turns.</p>
+</blockquote>
+<p>If one model finishes in a single pass and another takes three, a 3× price-per-token difference nets out to the same total. Fold in <strong>the time a human spends rewriting prompts</strong> and the calculation flips outright.</p>
+<hr>
+<h2 id="2-the-model-tiers--four-classes">2. The Model Tiers — Four Classes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-the-model-tiers--four-classes"><span class="icon icon-link"></span></a></h2>
+<p>Claude models are quickest to reason about <strong>as classes, not individual model names.</strong> Generations keep turning over; the character of each class holds.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Class</th><th>Character</th><th>Typical use</th></tr></thead><tbody><tr><td><strong>Mythos / Fable</strong></td><td>Frontier. Problems AI hasn't handled reliably before</td><td>Hardest coding, long-running agent tasks</td></tr><tr><td><strong>Opus</strong></td><td>Reasoning-intensive enterprise work</td><td>Complex agentic coding, deep analysis</td></tr><tr><td><strong>Sonnet</strong></td><td>Balance of performance, cost, and speed</td><td>The widest general-purpose set, high-frequency customer-facing workloads</td></tr><tr><td><strong>Haiku</strong></td><td>Lowest cost, fastest</td><td>High-frequency work where latency and cost matter</td></tr></tbody></table>
+<blockquote>
+<p>Mythos is restricted to trusted organizations handling dual-use cybersecurity and biology work; the generally available counterpart is <strong>Fable</strong>, which ships with additional safeguards. Think of them as siblings in one class.</p>
+</blockquote>
+<h3 id="the-actual-lineup-right-now">The Actual Lineup Right Now<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-actual-lineup-right-now"><span class="icon icon-link"></span></a></h3>
+<p>As of August 2026, the main models look like this.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Model</th><th>Context</th><th>Input $/1M</th><th>Output $/1M</th></tr></thead><tbody><tr><td>Claude Fable 5</td><td>1M</td><td>$10</td><td>$50</td></tr><tr><td>Claude Opus 5</td><td>1M</td><td>$5</td><td>$25</td></tr><tr><td>Claude Sonnet 5</td><td>1M</td><td>$3</td><td>$15</td></tr><tr><td>Claude Haiku 4.5</td><td>200K</td><td>$1</td><td>$5</td></tr></tbody></table>
+<ul>
+<li>Sonnet 5 carries <strong>introductory pricing of $2 / $10 through 2026-08-31.</strong> Factor that in if you're benchmarking right now.</li>
+<li>Prices and lineups change. <strong>Don't trust the numbers in a blog post — check the official docs.</strong> What matters here isn't the absolute values but the <strong>ratios between classes.</strong></li>
+</ul>
+<p>One detail stands out: <strong>only Haiku is 200K; everything else is 1M.</strong> "We need a long context" is not by itself a reason to reach for the top of the ladder.</p>
+<hr>
+<h2 id="3-what-to-ask--four-questions">3. What to Ask — Four Questions<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-what-to-ask--four-questions"><span class="icon icon-link"></span></a></h2>
+<p>Anthropic frames the decision around four questions. Answer them in order and the field narrows.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">① How hard is this task?      → sets the floor on class</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">② What are the latency needs? → is someone waiting on a screen, or is it batch?</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">③ What access constraints?    → restricted to a cloud, region, or compliance regime?</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">④ What are the unit economics? → ten calls a day, or ten thousand?</span></span></code></pre></figure>
+<p>Here's what each question actually decides.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Question</th><th>Closer to "yes"</th><th>Closer to "no"</th></tr></thead><tbody><tr><td><strong>① Hard?</strong> — must it plan multiple steps on its own?</td><td>Opus and up</td><td>Sonnet and down</td></tr><tr><td><strong>② Fast?</strong> — is a person waiting in front of a screen?</td><td>Haiku/Sonnet, or lower effort</td><td>You can move up a class</td></tr><tr><td><strong>③ Constrained?</strong> — must it run on one specific platform?</td><td>Limited to models that platform serves</td><td>Free choice</td></tr><tr><td><strong>④ High volume?</strong> — tens of thousands of calls?</td><td>Unit price dominates → consider a lower class</td><td>Prioritize quality</td></tr></tbody></table>
+<p>③ trips people up more often than you'd expect. <strong>Not every feature exists on every platform.</strong> Fast mode — running the same model at higher output speed — is supported only on certain models and certain paths, for instance. "We picked the model, then found the feature isn't available where we deploy" is a real failure mode.</p>
+<hr>
+<h2 id="4-the-second-axis--effort">4. The Second Axis — Effort<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-the-second-axis--effort"><span class="icon icon-link"></span></a></h2>
+<p>This is the heart of it. Model selection is <strong>two-dimensional, not one.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">         effort →   low    medium   high    xhigh    max</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">       ┌────────────────────────────────────────────────</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Fable  │   ·        ·        ·        ·        ●   ← best possible</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Opus   │   ·        ·        ●        ●        ·</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Sonnet │   ·        ●        ·        ·        ·</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Haiku  │   ●        ·        ·        ·        ·   ← lowest cost</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">       └────────────────────────────────────────────────</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                 ↖ the real choices live on this diagonal</span></span></code></pre></figure>
+<p><strong>Effort</strong> controls how much reasoning goes into a task (<code>low</code> / <code>medium</code> / <code>high</code> / <code>xhigh</code> / <code>max</code>). And the conclusion runs against intuition.</p>
+<blockquote>
+<p><strong>A higher class at lower effort</strong> can be more efficient than <strong>a lower class at higher effort.</strong></p>
+</blockquote>
+<p>So the move isn't "Opus is expensive, let's use Sonnet." It's <strong>"what does Opus look like at lower effort?"</strong> — measured first. That is the operational content of "start smart."</p>
+<h3 id="which-makes-the-practical-order">Which Makes the Practical Order<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#which-makes-the-practical-order"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">① Pick the most intelligent generally available model</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">② Run it at default effort to establish a quality baseline</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">③ Step effort down one level at a time → find where quality holds</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">④ Still too expensive? Now drop a class and redo ② and ③</span></span></code></pre></figure>
+<p><strong>Step ③ ends it more often than you'd think</strong> — cost comes into range without ever dropping a class. Skip ① and start from the bottom instead, and you have no baseline at all, so you'll never know whether what you've got is the best available.</p>
+<hr>
+<h2 id="5-the-advisor-strategy--using-two-models-together">5. The Advisor Strategy — Using Two Models Together<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-the-advisor-strategy--using-two-models-together"><span class="icon icon-link"></span></a></h2>
+<p>One more thing: <strong>you don't have to pick just one model.</strong></p>
+<p>The <strong>advisor strategy</strong> puts a fast, cheap model in the <strong>worker</strong> role and a more capable one in the <strong>advisor</strong> role.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  [ Advisor ]  the more capable model</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      │  Is the plan sound? / Is the result good enough?</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      │  ↕ consulted only when it matters</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  [ Worker ]   the fast, cheap model</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      │</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      └─ generates the bulk of the tokens here</span></span></code></pre></figure>
+<p>The key phrase is <strong>"only when it matters."</strong> Instead of running the expensive model start to finish, you call it at the moments that set direction and judge results.</p>
+<p>The effect is measured.</p>
+<blockquote>
+<p>On SWE-bench Pro, <strong>Sonnet 5 with a Fable 5 advisor</strong> landed <strong>within 10% of Fable 5's score at 63% of the price.</strong></p>
+</blockquote>
+<p>Over 90% of the quality for 63% of the cost. This pairing doesn't win every time, but the point stands: <strong>stepping outside the "pick exactly one class" dichotomy widens the option space.</strong></p>
+<h3 id="one-caveat--the-advisor-cant-be-weaker-than-the-worker">One Caveat — The Advisor Can't Be Weaker Than the Worker<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#one-caveat--the-advisor-cant-be-weaker-than-the-worker"><span class="icon icon-link"></span></a></h3>
+<p>Obvious in hindsight, easy to get wrong. The advisor model must be <strong>at least as capable</strong> as the worker. Pair it the other way and the request is rejected outright. Advice only flows downhill.</p>
+<hr>
+<h2 id="6-why-benchmarks-dont-answer-this">6. Why Benchmarks Don't Answer This<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-why-benchmarks-dont-answer-this"><span class="icon icon-link"></span></a></h2>
+<p>"Can't we just use whichever scores highest on benchmarks?" Two problems.</p>
+<h3 id="problem-1--saturation">Problem 1 — Saturation<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#problem-1--saturation"><span class="icon icon-link"></span></a></h3>
+<p>Frontier models solve <strong>nearly all</strong> the questions on standard benchmarks. Nothing distinguishes 98 from 97. It's a ruler whose gradations have run out.</p>
+<h3 id="problem-2--it-isnt-your-problem">Problem 2 — It Isn't Your Problem<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#problem-2--it-isnt-your-problem"><span class="icon icon-link"></span></a></h3>
+<p>Benchmarks measure <strong>generic problems.</strong> What you want to know is performance on <strong>your</strong> problem. Those two diverge routinely.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>Standard benchmarks</th><th>Your own evals</th></tr></thead><tbody><tr><td>Where problems come from</td><td>A public problem set</td><td><strong>Real cases pulled from your production</strong></td></tr><tr><td>Success criteria</td><td>Predetermined</td><td><strong>Defined by your team</strong></td></tr><tr><td>Discrimination among top models</td><td>Saturated, so low</td><td>Real differences show up</td></tr><tr><td>Cost to build</td><td>Zero</td><td>Non-zero (which is why nobody builds them)</td></tr></tbody></table>
+<p><strong>Building your own evals is the hardest advice in this post to actually act on</strong> — granted. But the starting version can be smaller than you think.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">① Collect 20 real cases that recently failed</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">② Write a one-line pass condition for each</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   (e.g. "returns a CSV with a numeric </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`price`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> column")</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">③ Run your candidate model × effort combinations against them</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">④ Record pass rate, total tokens, and wall-clock time together</span></span></code></pre></figure>
+<p>Step ② is the crux. <strong>A criterion like "the result looks good" adjudicates nothing.</strong> It has to be written so a machine could score it.</p>
+<hr>
+<h2 id="7-easy-things-to-get-wrong">7. Easy Things to Get Wrong<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-easy-things-to-get-wrong"><span class="icon icon-link"></span></a></h2>
+<h3 id="misreading-1--so-always-use-the-most-expensive-model">Misreading 1 — "So always use the most expensive model?"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-1--so-always-use-the-most-expensive-model"><span class="icon icon-link"></span></a></h3>
+<p>No. <strong>Start at the top; don't stay there.</strong> Half the four-step order (③④) is the walk back down. There is exactly one reason to start high: <strong>to know what the baseline is.</strong></p>
+<h3 id="misreading-2--then-use-the-advisor-strategy-everywhere">Misreading 2 — "Then use the advisor strategy everywhere"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-2--then-use-the-advisor-strategy-everywhere"><span class="icon icon-link"></span></a></h3>
+<p>Two models means more architectural complexity and more latency — the consultation round trip is real. <strong>If one model plus effort tuning solves it, that's the better answer.</strong> The advisor is the card you play when a single model can't hit quality and cost at the same time.</p>
+<h3 id="misreading-3--decide-once-and-youre-done">Misreading 3 — "Decide once and you're done?"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-3--decide-once-and-youre-done"><span class="icon icon-link"></span></a></h3>
+<p>No. New models keep shipping and prices keep moving. That's precisely why your own evals matter. <strong>With evals, re-evaluating on a new release takes half a day</strong>; without them, you start over from intuition every single time. Evals are a selection tool and, more importantly, a <strong>re-selection</strong> tool.</p>
+<hr>
+<h2 id="8-wrapping-up--two-things-really">8. Wrapping Up — Two Things, Really<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-wrapping-up--two-things-really"><span class="icon icon-link"></span></a></h2>
+<p>Compress this post and you get two sentences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>What</th><th>Why</th></tr></thead><tbody><tr><td><strong>1. Start at the top and walk down</strong></td><td>Most intelligent model + effort tuning</td><td>Without a baseline you can't find the optimum</td></tr><tr><td><strong>2. Build your own evals</strong></td><td>Real workloads, your criteria</td><td>Benchmarks are saturated and don't measure your problem</td></tr></tbody></table>
+<p>And this is the same story the previous two posts told.</p>
+<ul>
+<li><a href="/en/posts/2026-07-05-meta-harness/">Self-healing harness</a> — verify and get approval even when <strong>adding</strong> rules</li>
+<li><a href="/en/posts/2026-07-31-context-engineering-claude5/">Trimming context engineering</a> — verify even when <strong>removing</strong> rules</li>
+<li>This post — verify even when <strong>choosing a model</strong></li>
+</ul>
+<p>The shared structure across all three: <strong>don't decide by intuition; measure against your own workload, then decide.</strong> Harness, prompt, or model — the moment you borrow your criteria from outside, you stop seeing your own problem.</p>
+<p>The core message is one sentence.</p>
+<blockquote>
+<p><strong>"Which model is best?" has no answer. "Which combination is best for our work?" does — and the only way to get it is to measure.</strong></p>
+</blockquote>
+<hr>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Anthropic, <a href="https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case">Claude Models Explained: Choosing the Best Model for Your Use Case</a> (2026)</li>
+<li>Anthropic, <a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models">The New Rules of Context Engineering for Claude 5 Generation Models</a> (2026)</li>
+<li>Anthropic, <a href="https://platform.claude.com/docs/en/about-claude/models/overview">Models overview</a> — current model IDs, context windows, and pricing</li>
+<li>Previous posts — <a href="/en/posts/2026-07-31-context-engineering-claude5/">Trimming Context Engineering</a> · <a href="/en/posts/2026-07-05-meta-harness/">Self-Healing Harness Engineering</a></li>
+</ul>b:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$10"}}]}]
+c:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/en/posts/2026-07-31-context-engineering-claude5","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"The New Rules of Context Engineering for Claude 5"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+d:["$","div",null,{"className":"hidden lg:block","children":["$","$L11",null,{"headings":[{"id":"1-what-is-this-post-about","text":"1. What Is This Post About?","depth":1},{"id":"the-arithmetic-we-do-out-of-habit","text":"The Arithmetic We Do Out of Habit","depth":2},{"id":"2-the-model-tiers--four-classes","text":"2. The Model Tiers — Four Classes","depth":1},{"id":"the-actual-lineup-right-now","text":"The Actual Lineup Right Now","depth":2},{"id":"3-what-to-ask--four-questions","text":"3. What to Ask — Four Questions","depth":1},{"id":"4-the-second-axis--effort","text":"4. The Second Axis — Effort","depth":1},{"id":"which-makes-the-practical-order","text":"Which Makes the Practical Order","depth":2},{"id":"5-the-advisor-strategy--using-two-models-together","text":"5. The Advisor Strategy — Using Two Models Together","depth":1},{"id":"one-caveat--the-advisor-cant-be-weaker-than-the-worker","text":"One Caveat — The Advisor Can't Be Weaker Than the Worker","depth":2},{"id":"6-why-benchmarks-dont-answer-this","text":"6. Why Benchmarks Don't Answer This","depth":1},{"id":"problem-1--saturation","text":"Problem 1 — Saturation","depth":2},{"id":"problem-2--it-isnt-your-problem","text":"Problem 2 — It Isn't Your Problem","depth":2},{"id":"7-easy-things-to-get-wrong","text":"7. Easy Things to Get Wrong","depth":1},{"id":"misreading-1--so-always-use-the-most-expensive-model","text":"Misreading 1 — \"So always use the most expensive model?\"","depth":2},{"id":"misreading-2--then-use-the-advisor-strategy-everywhere","text":"Misreading 2 — \"Then use the advisor strategy everywhere\"","depth":2},{"id":"misreading-3--decide-once-and-youre-done","text":"Misreading 3 — \"Decide once and you're done?\"","depth":2},{"id":"8-wrapping-up--two-things-really","text":"8. Wrapping Up — Two Things, Really","depth":1},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
+e:["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true}]
+f:["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]
+14:null

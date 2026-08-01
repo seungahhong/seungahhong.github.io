@@ -1,0 +1,383 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/3wf0bwwqy2jd-.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+4:I[52881,["/_next/static/chunks/3wf0bwwqy2jd-.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],""]
+11:I[27722,["/_next/static/chunks/3wf0bwwqy2jd-.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+12:I[10301,["/_next/static/chunks/3wf0bwwqy2jd-.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
+13:"$Sreact.suspense"
+2:T705,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Claude 5 세대의 컨텍스트 엔지니어링 새 규칙","description":"1. 이 글은 무엇에 관한 글인가? 한 줄로 요약하면 이렇습니다. \"AI에게 규칙을 더 많이 적어줄수록 잘한다\"는 상식이 뒤집혔습니다. Anthropic은 Claude Code의 시스템 프롬프트에서 80% 이상을 삭제 했고, 코딩 평가 점수는 떨어지지 않았습니다. 지난 글들에서 저는…","datePublished":"2026-07-31","dateModified":"2026-07-31","inLanguage":"ko-KR","url":"https://seungahhong.github.io/ko/posts/2026-07-31-context-engineering-claude5/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/ko/posts/2026-07-31-context-engineering-claude5/"},"image":"https://seungahhong.github.io/blog-assets/2026/07/assets/31/thumbnail.png","keywords":["AI","하네스","Claude","컨텍스트엔지니어링"],"articleSection":"개발","wordCount":3092,"timeRequired":"PT7M","isPartOf":{"@id":"https://seungahhong.github.io/ko/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"홈\",\"item\":\"https://seungahhong.github.io/ko/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"포스트\",\"item\":\"https://seungahhong.github.io/ko/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Claude 5 세대의 컨텍스트 엔지니어링 새 규칙\",\"item\":\"https://seungahhong.github.io/ko/posts/2026-07-31-context-engineering-claude5/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Claude 5 세대의 컨텍스트 엔지니어링 새 규칙"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Claude 5 세대의 컨텍스트 엔지니어링 새 규칙"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],"$L5","$L6","$L7","$L8","$L9"]}],false,"$La"]}],"$Lb","$Lc"]}],"$Ld"]}]}]],["$Le"],"$Lf"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"VIH-NLJQqBCjhFst2-ITN"}
+5:["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}]
+6:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+7:["$","time",null,{"dateTime":"2026-07-31","className":"meta-mono","children":"2026.07.31"}]
+8:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+9:["$","span",null,{"className":"meta-mono","children":[7,"분"]}]
+a:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/ko/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","하네스",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%ED%95%98%EB%84%A4%EC%8A%A4","className":"tag-pill","children":"하네스"}]}],["$","li","Claude",{"children":["$","$L4",null,{"href":"/ko/tags?tag=Claude","className":"tag-pill","children":"Claude"}]}],["$","li","컨텍스트엔지니어링",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81","className":"tag-pill","children":"컨텍스트엔지니어링"}]}]]}]
+10:T60ea,<h2 id="1-이-글은-무엇에-관한-글인가">1. 이 글은 무엇에 관한 글인가?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-이-글은-무엇에-관한-글인가"><span class="icon icon-link"></span></a></h2>
+<p>한 줄로 요약하면 이렇습니다.</p>
+<blockquote>
+<p><strong>"AI에게 규칙을 더 많이 적어줄수록 잘한다"는 상식이 뒤집혔습니다.</strong> Anthropic은 Claude Code의 시스템 프롬프트에서 <strong>80% 이상을 삭제</strong> 했고, 코딩 평가 점수는 떨어지지 않았습니다.</p>
+</blockquote>
+<p>지난 글들에서 저는 하네스를 <strong>잘 만드는 법</strong>(<a href="/ko/posts/2026-06-04-fe-harness/">Frontend 하네스 엔지니어링</a>)과 <strong>스스로 고치게 만드는 법</strong>(<a href="/ko/posts/2026-07-05-meta-harness/">자가치유 하네스</a>)을 다뤘습니다. 이번 글은 방향이 반대입니다. <strong>하네스에서 무엇을 덜어낼 것인가</strong> 입니다.</p>
+<h3 id="지금까지-우리가-하던-일">지금까지 우리가 하던 일<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#지금까지-우리가-하던-일"><span class="icon icon-link"></span></a></h3>
+<p>하네스를 다뤄본 사람이라면 대부분 이 경로를 밟습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">AI가 실수함</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → CLAUDE.md에 "이렇게 하지 마" 한 줄 추가</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → 또 실수함</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → SKILL.md에도 같은 말 한 번 더 추가</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → 툴 설명에도 혹시 모르니 한 번 더</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → ...그렇게 3개월 뒤, CLAUDE.md는 400줄이 됨</span></span></code></pre></figure>
+<p>규칙을 늘리는 건 즉각적인 안정감을 줍니다. "적어뒀으니 이제 안 틀리겠지." 그런데 규칙이 늘어날수록 <strong>서로 부딪히는 문장</strong> 도 같이 늘어납니다. Anthropic이 실제로 발견한 사례가 이렇습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>어디에 적혀 있었나</th><th>뭐라고 적혀 있었나</th></tr></thead><tbody><tr><td>시스템 프롬프트 A</td><td>"적절히 문서화를 남겨라"</td></tr><tr><td>시스템 프롬프트 B</td><td>"주석을 달지 마라 — 한 줄 이상 절대 금지"</td></tr></tbody></table>
+<p>두 문장 모두 각각은 합리적입니다. 그런데 <strong>동시에 읽히면</strong> 모델은 "지금은 어느 쪽이지?"를 매번 계산해야 합니다. 그 계산이 곧 비용입니다.</p>
+<h3 id="무엇이-바뀌었나">무엇이 바뀌었나<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#무엇이-바뀌었나"><span class="icon icon-link"></span></a></h3>
+<p>핵심은 <strong>모델이 좋아졌다</strong> 는 것입니다. Claude 5 세대(Opus 5, Fable 5)는 주변 맥락을 보고 스스로 판단할 수 있습니다. 그래서 "정답을 미리 다 적어두는" 방식이 오히려 발목을 잡습니다.</p>
+<p>실제로 바뀐 문장을 보면 감이 옵니다.</p>
+<p><strong>이전 (규칙으로 못 박기):</strong></p>
+<blockquote>
+<p>"코드에는 기본적으로 주석을 쓰지 마라. 여러 문단짜리 docstring이나 여러 줄 주석 블록은 절대 쓰지 마라 — 최대 한 줄."</p>
+</blockquote>
+<p><strong>이후 (판단에 맡기기):</strong></p>
+<blockquote>
+<p>"주변 코드처럼 읽히는 코드를 써라. 주석 밀도, 네이밍, 관용구를 주변에 맞춰라."</p>
+</blockquote>
+<p>뒤쪽이 더 짧은데 더 많은 상황을 커버합니다. 앞쪽은 "주석이 촘촘한 레거시 파일을 고칠 때"라는 예외를 처리하지 못하지만, 뒤쪽은 알아서 처리합니다.</p>
+<hr>
+<h2 id="2-6가지-규칙이-뒤집혔다">2. 6가지 규칙이 뒤집혔다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-6가지-규칙이-뒤집혔다"><span class="icon icon-link"></span></a></h2>
+<p>Anthropic이 정리한 변화는 6개입니다. 하나씩 보겠습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>#</th><th>이전 (Claude 4 시대)</th><th>지금 (Claude 5 세대)</th></tr></thead><tbody><tr><td>1</td><td>명시적 규칙을 준다</td><td>판단에 맡긴다</td></tr><tr><td>2</td><td>사용 예시를 붙인다</td><td>툴 인터페이스를 잘 설계한다</td></tr><tr><td>3</td><td>필요할 만한 건 다 미리 넣는다</td><td>점진적 공개(progressive disclosure)</td></tr><tr><td>4</td><td>중요한 건 여러 곳에 반복한다</td><td>한 곳(툴 설명)에만 적는다</td></tr><tr><td>5</td><td>기억할 건 CLAUDE.md에 적는다</td><td>자동 메모리에 맡긴다</td></tr><tr><td>6</td><td>마크다운 계획서를 남긴다</td><td>코드·HTML 등 풍부한 레퍼런스를 남긴다</td></tr></tbody></table>
+<h3 id="규칙-1--지시-대신-판단">규칙 1 — "지시" 대신 "판단"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#규칙-1--지시-대신-판단"><span class="icon icon-link"></span></a></h3>
+<p>규칙을 적을지 말지 판단하는 기준은 간단합니다.</p>
+<ul>
+<li><strong>모델이 주변을 보고 알 수 있는 것</strong> → 적지 마세요. (예: 들여쓰기 폭, 주석 스타일)</li>
+<li><strong>주변을 봐도 알 수 없는 것</strong> → 적으세요. (예: "이 저장소는 정적 익스포트라 서버 API를 못 쓴다")</li>
+</ul>
+<p>전자를 적으면 노이즈가 되고, 후자를 안 적으면 사고가 납니다.</p>
+<h3 id="규칙-2--예시-대신-인터페이스">규칙 2 — "예시" 대신 "인터페이스"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#규칙-2--예시-대신-인터페이스"><span class="icon icon-link"></span></a></h3>
+<p>예전엔 툴 설명에 사용 예시를 잔뜩 붙였습니다. 지금은 <strong>파라미터 이름과 설명을 잘 짓는 것</strong> 이 더 효과적입니다. 특히 <strong>선택지를 열거해주는 것</strong>(enum)이 예시 열 개보다 낫습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[ 예시 방식 ]                      [ 인터페이스 방식 ]</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"이렇게 쓰세요:                     depth: 'shallow' | 'medium' | 'deep'</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  search(q, 'deep')                       ↳ 얼마나 깊게 탐색할지</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  search(q, 'shallow')</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ... (예시 8개 더)"                한 줄인데 가능한 값이 전부 보임</span></span></code></pre></figure>
+<p>예시는 "이런 경우엔?"이라는 질문을 남기지만, 열거는 남기지 않습니다.</p>
+<h3 id="규칙-3--다-넣지-말고-필요할-때-꺼내게">규칙 3 — 다 넣지 말고, 필요할 때 꺼내게<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#규칙-3--다-넣지-말고-필요할-때-꺼내게"><span class="icon icon-link"></span></a></h3>
+<p><strong>점진적 공개(progressive disclosure)</strong> 는 이번 변화의 중심 개념입니다. 모든 정보를 처음부터 컨텍스트에 밀어 넣는 대신, <strong>필요해진 순간에 로드</strong> 합니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>방식</th><th>언제 로드되나</th><th>비용</th></tr></thead><tbody><tr><td>CLAUDE.md 본문</td><td>세션 시작 시 <strong>항상</strong></td><td>매 요청마다 지불</td></tr><tr><td>Skill</td><td>관련 작업일 때만</td><td>쓸 때만 지불</td></tr><tr><td>지연 로딩 툴</td><td>검색해서 찾았을 때만</td><td>쓸 때만 지불</td></tr></tbody></table>
+<p>여기서 자연스럽게 나오는 실무 규칙이 하나 있습니다. <strong>"거의 매번 필요한 것만 CLAUDE.md에 두고, 가끔 필요한 건 Skill로 빼라."</strong></p>
+<h3 id="규칙-4--반복하지-마라">규칙 4 — 반복하지 마라<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#규칙-4--반복하지-마라"><span class="icon icon-link"></span></a></h3>
+<p>예전엔 중요한 지시를 시스템 프롬프트에도, 툴 설명에도, CLAUDE.md에도 적었습니다. 안전장치라고 생각했으니까요. 그런데 반복은 두 가지 문제를 만듭니다.</p>
+<ol>
+<li><strong>토큰을 세 번 낸다</strong> — 같은 문장을 세 곳에서 읽습니다.</li>
+<li><strong>고칠 때 하나를 빼먹는다</strong> → 그 순간 <strong>모순</strong> 이 생깁니다.</li>
+</ol>
+<p>지금 권장은 <strong>"툴 설명에만 적어라"</strong> 입니다. 그 툴을 쓸 때 반드시 읽히는 자리니까요.</p>
+<h3 id="규칙-5--claudemd는-메모장이-아니다">규칙 5 — CLAUDE.md는 메모장이 아니다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#규칙-5--claudemd는-메모장이-아니다"><span class="icon icon-link"></span></a></h3>
+<p>예전엔 <code>#</code> 단축키로 "이거 기억해"라고 CLAUDE.md에 적었습니다. 지금은 <strong>자동 메모리</strong> 가 맥락에 맞는 것을 알아서 저장합니다. 그래서 CLAUDE.md의 역할이 좁아졌습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>성격</th><th>어디에 둘까</th></tr></thead><tbody><tr><td>이 저장소의 함정 (빌드가 깨지는 이유 등)</td><td>CLAUDE.md</td></tr><tr><td>팀의 의견·노하우 (작업 종류별)</td><td>Skill</td></tr><tr><td>사용자 개인의 선호·이력</td><td>자동 메모리</td></tr><tr><td>깊은 참고 자료</td><td>레퍼런스(@멘션)</td></tr></tbody></table>
+<h3 id="규칙-6--계획서보다-실행-가능한-것">규칙 6 — 계획서보다 실행 가능한 것<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#규칙-6--계획서보다-실행-가능한-것"><span class="icon icon-link"></span></a></h3>
+<p>"무엇을 만들지"를 마크다운 산문으로 적는 대신, <strong>더 정확한 형식</strong> 으로 남기라는 이야기입니다.</p>
+<ul>
+<li>테스트 스위트 → 통과/실패가 명확</li>
+<li>코드로 쓴 명세(타입, 시그니처) → 해석의 여지가 적음</li>
+<li>채점 기준(rubric) → 품질 판정 기준이 명시적</li>
+<li>HTML 아티팩트 → 화면을 말로 설명할 필요 없음</li>
+</ul>
+<p>산문은 읽는 사람마다 다르게 해석되지만, 타입과 테스트는 그렇지 않습니다.</p>
+<hr>
+<h2 id="3-그래서-어디에-무엇을-적나">3. 그래서 어디에 무엇을 적나<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-그래서-어디에-무엇을-적나"><span class="icon icon-link"></span></a></h2>
+<p>이제 정리해봅시다. 컨텍스트를 구성하는 4개의 자리가 있고, 각자 역할이 다릅니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">┌─ 시스템 프롬프트 ─── 제품 자체의 맥락. 사용자는 거의 안 건드림</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│                      (커스텀 에이전트를 만든다면 여기가 핵심)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├─ CLAUDE.md ───────── 이 저장소의 "함정"만. 가볍게.</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│                      길어지는 검증 절차는 Skill로 분리</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">├─ Skill ───────────── 팀의 의견·노하우. 관련 작업일 때만 로드</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│                      길면 내부에서 또 점진적 공개</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">└─ 레퍼런스 ────────── @멘션으로 깊은 자료 연결</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                       설명문보다 코드 기반 명세를 우선</span></span></code></pre></figure>
+<h3 id="claudemd-다이어트-체크리스트">CLAUDE.md 다이어트 체크리스트<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#claudemd-다이어트-체크리스트"><span class="icon icon-link"></span></a></h3>
+<p>제 블로그 저장소의 <code>CLAUDE.md</code>를 이 기준으로 다시 읽어보니, 지울 후보가 바로 보였습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>문장 유형</th><th>판정</th><th>이유</th></tr></thead><tbody><tr><td>"<code>src/components/</code>는 React 컴포넌트"</td><td>❌ 삭제</td><td>디렉터리 이름만 봐도 앎</td></tr><tr><td>"TypeScript strict 모드를 씁니다"</td><td>❌ 삭제</td><td><code>tsconfig.json</code>을 열면 앎</td></tr><tr><td>"정적 익스포트라 태그 페이지는 쿼리 기반 필터를 씁니다"</td><td>✅ 유지</td><td><strong>모르면 사고 남</strong></td></tr><tr><td>"<code>public/.nojekyll</code>이 없으면 <code>_next</code>가 무시됩니다"</td><td>✅ 유지</td><td>전형적인 저장소 함정</td></tr><tr><td>"커밋 메시지는 이렇게 쓰고, 저렇게 쓰고..." (20줄)</td><td>➡️ Skill로</td><td>커밋할 때만 필요</td></tr></tbody></table>
+<p>판단 기준은 한 문장으로 줄어듭니다. <strong>"이걸 안 적으면 AI가 틀리나?"</strong> 아니라면 지워도 됩니다.</p>
+<h3 id="자동으로-진단받기--doctor">자동으로 진단받기 — <code>/doctor</code><a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#자동으로-진단받기--doctor"><span class="icon icon-link"></span></a></h3>
+<p>직접 판단하기 부담스럽다면 도구가 있습니다. Claude Code의 <strong><code>/doctor</code></strong>(CLI로는 <code>claude doctor</code>)가 Skill·CLAUDE.md·시스템 프롬프트의 크기를 점검하고 적정선을 잡아줍니다. 앞선 글에서 다룬 <a href="/ko/posts/2026-07-05-meta-harness/">자가치유 하네스</a>가 "실수를 보고 규칙을 <strong>더한다</strong>"였다면, <code>/doctor</code>는 반대 방향 — <strong>덜어내는 쪽</strong> 의 자동화입니다.</p>
+<hr>
+<h2 id="4-오해하기-쉬운-지점">4. 오해하기 쉬운 지점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-오해하기-쉬운-지점"><span class="icon icon-link"></span></a></h2>
+<p>이 글의 메시지가 <strong>"하네스를 없애라"</strong> 로 읽히면 곤란합니다. 몇 가지를 명확히 해두겠습니다.</p>
+<h3 id="오해-1--그럼-claudemd-지워도-되나">오해 1 — "그럼 CLAUDE.md 지워도 되나?"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-1--그럼-claudemd-지워도-되나"><span class="icon icon-link"></span></a></h3>
+<p>아닙니다. <strong>줄이라는 것이지 없애라는 것이 아닙니다.</strong> 저장소 고유의 함정은 모델이 아무리 좋아져도 알 수 없습니다. <code>.nojekyll</code>이 왜 필요한지는 파일을 다 읽어도 안 나옵니다.</p>
+<h3 id="오해-2--강제해야-하는-것도-판단에-맡기나">오해 2 — "강제해야 하는 것도 판단에 맡기나?"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-2--강제해야-하는-것도-판단에-맡기나"><span class="icon icon-link"></span></a></h3>
+<p>이건 지난 글에서도 짚었던 구분입니다. <strong>판단에 맡길 것과 기계적으로 막을 것은 다릅니다.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>성격</th><th>어디에 둘까</th><th>이번 변화의 영향</th></tr></thead><tbody><tr><td><strong>무조건 막아야 함</strong> (위험 명령 등)</td><td>hook · permission</td><td>영향 없음. 여전히 기계로 막는다</td></tr><tr><td><strong>판단이 필요함</strong> (스타일, 트레이드오프)</td><td>문서 안내 문구</td><td><strong>줄여라.</strong> 모델이 판단할 수 있다</td></tr><tr><td><strong>저장소 고유 사실</strong> (빌드 함정)</td><td>CLAUDE.md</td><td>유지</td></tr></tbody></table>
+<p>"규칙을 줄여라"는 <strong>세 번째 줄에 대한 이야기가 아닙니다.</strong> 강제력은 원래부터 문서가 아니라 hook에서 나왔습니다.</p>
+<h3 id="오해-3--모든-모델에-해당되나">오해 3 — "모든 모델에 해당되나?"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-3--모든-모델에-해당되나"><span class="icon icon-link"></span></a></h3>
+<p>아닙니다. Anthropic이 삭제한 것은 <strong>Claude Opus 5, Fable 5 같은 상위 모델용</strong> 시스템 프롬프트입니다. 더 작은 모델을 쓴다면 명시적 지시가 여전히 유효합니다. <strong>하네스는 모델에 맞춰 조정되는 것</strong> 이지, 한 번 쓰고 영원히 두는 것이 아닙니다.</p>
+<hr>
+<h2 id="5-실제로-적용해보기">5. 실제로 적용해보기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-실제로-적용해보기"><span class="icon icon-link"></span></a></h2>
+<p>제 저장소에 적용한다면 순서는 이렇습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">① 모순 찾기      같은 주제를 두 곳에서 다르게 말하는 문장 쌍을 찾는다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                 → 발견하면 무조건 하나로 합친다 (최우선)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">② 자명한 것 삭제  "파일을 열면 알 수 있는 사실"을 지운다</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">③ 가끔 쓰는 것 분리  배포·커밋·릴리스처럼 특정 순간에만 필요한 절차를</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                     Skill로 옮긴다</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">④ 규칙 → 원리     "X 하지 마" 여러 줄을 "주변에 맞춰라" 한 줄로 바꾼다</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">⑤ 검증           평소 작업 몇 개를 돌려보고 품질이 유지되는지 본다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                 → 나빠지면 그 항목만 되돌린다</span></span></code></pre></figure>
+<p>⑤가 중요합니다. <strong>덜어내기도 검증이 필요합니다.</strong> 지난 글의 자가치유 하네스가 수정안을 채택하기 전에 정합성·본문 비용·트리거 정확도·일반화를 동시에 확인했던 것과 같은 이유입니다. 짧아졌는데 나빠졌다면 그건 개선이 아닙니다.</p>
+<h3 id="덜어냈는지-확인하는-질문">덜어냈는지 확인하는 질문<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#덜어냈는지-확인하는-질문"><span class="icon icon-link"></span></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>질문</th><th>통과 기준</th></tr></thead><tbody><tr><td>같은 지시가 두 파일에 있나?</td><td>없어야 함</td></tr><tr><td>이 문장을 지우면 AI가 틀리나?</td><td>"아니오"면 지운다</td></tr><tr><td>이 절차는 매 세션 필요한가?</td><td>"아니오"면 Skill로</td></tr><tr><td>이 설명은 코드로 대체 가능한가?</td><td>가능하면 코드로</td></tr></tbody></table>
+<hr>
+<h2 id="6-정리--하네스는-어디로-가나">6. 정리 — 하네스는 어디로 가나<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-정리--하네스는-어디로-가나"><span class="icon icon-link"></span></a></h2>
+<p>지난 두 글과 이어서 보면 흐름이 보입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>단계</th><th>질문</th><th>방향</th><th>글</th></tr></thead><tbody><tr><td><strong>1단계</strong> 구축</td><td>무엇을 적을까?</td><td>더하기</td><td>2026-06 <a href="/ko/posts/2026-06-04-fe-harness/">FE 하네스</a></td></tr><tr><td><strong>2단계</strong> 자가치유</td><td>실수를 어떻게 반영할까?</td><td>더하기(승인 하에)</td><td>2026-07 <a href="/ko/posts/2026-07-05-meta-harness/">meta-harness</a></td></tr><tr><td><strong>3단계</strong> 정리</td><td>무엇을 덜어낼까?</td><td><strong>빼기</strong></td><td>이번 글</td></tr><tr><td><strong>4단계</strong> 균형</td><td>더하기와 빼기를 어떻게 자동으로 오갈까?</td><td>양방향</td><td>앞으로</td></tr></tbody></table>
+<p>1·2단계는 하네스를 키우는 방향이었고, 3단계는 처음으로 <strong>반대 방향</strong> 입니다. 그리고 이 둘은 모순이 아니라 짝입니다. <strong>더하기만 하는 시스템은 반드시 비대해지고, 비대해진 하네스는 모순을 낳기 때문</strong> 입니다. 자가치유가 규칙을 더한다면, <code>/doctor</code>류의 정리가 주기적으로 덜어내야 균형이 잡힙니다.</p>
+<p>핵심 메시지는 하나입니다.</p>
+<blockquote>
+<p><strong>하네스의 목적은 "모델을 통제하는 것"이 아니라 "모델이 모르는 것만 알려주는 것"이다.</strong></p>
+</blockquote>
+<p>모델이 좋아질수록 "모델이 모르는 것"의 범위는 줄어듭니다. 그러면 하네스도 같이 줄어야 합니다. 늘어나기만 하는 하네스는, 사실 모델이 아니라 <strong>우리의 불안</strong> 을 담고 있는 것일지도 모릅니다.</p>
+<hr>
+<h2 id="참고-문서">참고 문서<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고-문서"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Anthropic, <a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models">The New Rules of Context Engineering for Claude 5 Generation Models</a> (2026)</li>
+<li>Anthropic, <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">Effective Context Engineering for AI Agents</a> (2025)</li>
+<li>Anthropic, <a href="https://www.anthropic.com/engineering/agent-skills">Agent Skills</a> (2025)</li>
+<li>이전 글 — <a href="/ko/posts/2026-06-04-fe-harness/">Frontend 하네스 엔지니어링</a> · <a href="/ko/posts/2026-07-05-meta-harness/">자가치유 하네스 엔지니어링</a></li>
+</ul>b:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$10"}}]}]
+c:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/ko/posts/2026-07-14-typescript7.0","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"TypeScript 7.0"}]]}],["$","$L4",null,{"href":"/ko/posts/2026-08-01-choosing-claude-model","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["다음 글",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Claude 모델 고르기 — 똑똑한 것부터 시작하라"}]]}]]}]
+d:["$","div",null,{"className":"hidden lg:block","children":["$","$L11",null,{"headings":[{"id":"1-이-글은-무엇에-관한-글인가","text":"1. 이 글은 무엇에 관한 글인가?","depth":1},{"id":"지금까지-우리가-하던-일","text":"지금까지 우리가 하던 일","depth":2},{"id":"무엇이-바뀌었나","text":"무엇이 바뀌었나","depth":2},{"id":"2-6가지-규칙이-뒤집혔다","text":"2. 6가지 규칙이 뒤집혔다","depth":1},{"id":"규칙-1--지시-대신-판단","text":"규칙 1 — \"지시\" 대신 \"판단\"","depth":2},{"id":"규칙-2--예시-대신-인터페이스","text":"규칙 2 — \"예시\" 대신 \"인터페이스\"","depth":2},{"id":"규칙-3--다-넣지-말고-필요할-때-꺼내게","text":"규칙 3 — 다 넣지 말고, 필요할 때 꺼내게","depth":2},{"id":"규칙-4--반복하지-마라","text":"규칙 4 — 반복하지 마라","depth":2},{"id":"규칙-5--claudemd는-메모장이-아니다","text":"규칙 5 — CLAUDE.md는 메모장이 아니다","depth":2},{"id":"규칙-6--계획서보다-실행-가능한-것","text":"규칙 6 — 계획서보다 실행 가능한 것","depth":2},{"id":"3-그래서-어디에-무엇을-적나","text":"3. 그래서 어디에 무엇을 적나","depth":1},{"id":"claudemd-다이어트-체크리스트","text":"CLAUDE.md 다이어트 체크리스트","depth":2},{"id":"자동으로-진단받기--doctor","text":"자동으로 진단받기 — /doctor","depth":2},{"id":"4-오해하기-쉬운-지점","text":"4. 오해하기 쉬운 지점","depth":1},{"id":"오해-1--그럼-claudemd-지워도-되나","text":"오해 1 — \"그럼 CLAUDE.md 지워도 되나?\"","depth":2},{"id":"오해-2--강제해야-하는-것도-판단에-맡기나","text":"오해 2 — \"강제해야 하는 것도 판단에 맡기나?\"","depth":2},{"id":"오해-3--모든-모델에-해당되나","text":"오해 3 — \"모든 모델에 해당되나?\"","depth":2},{"id":"5-실제로-적용해보기","text":"5. 실제로 적용해보기","depth":1},{"id":"덜어냈는지-확인하는-질문","text":"덜어냈는지 확인하는 질문","depth":2},{"id":"6-정리--하네스는-어디로-가나","text":"6. 정리 — 하네스는 어디로 가나","depth":1},{"id":"참고-문서","text":"참고 문서","depth":1}],"title":"목차"}]}]
+e:["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true}]
+f:["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]
+14:null
