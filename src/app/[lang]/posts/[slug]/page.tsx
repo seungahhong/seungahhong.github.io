@@ -7,7 +7,8 @@ import {
   getPostBySlug,
   getPostMeta,
 } from '@/lib/posts';
-import { locales } from '@/i18n/config';
+import { locales, localeHtmlLang } from '@/i18n/config';
+import { ogImagePath, siteConfig } from '@/lib/site';
 import { postPath } from '@/lib/routes';
 import { blogPostingJsonLd, breadcrumbJsonLd } from '@/lib/jsonld';
 import JsonLd from '@/components/JsonLd';
@@ -33,9 +34,14 @@ export async function generateMetadata({
   const locale = resolveLocale(lang);
   const meta = getPostMeta(slug, locale);
   if (!meta) return {};
+  const dict = getDictionary(locale);
+  // 썸네일이 없는 글은 로케일 기본 OG 이미지로 떨어뜨린다(공유 시 빈 카드 방지).
+  const image = meta.thumbnail ?? ogImagePath[locale];
   return {
     title: meta.title,
     description: meta.excerpt,
+    keywords: meta.tags,
+    authors: [{ name: dict.meta.author, url: siteConfig.social.portfolio }],
     alternates: {
       canonical: postPath(locale, slug),
       languages: {
@@ -48,9 +54,20 @@ export async function generateMetadata({
       type: 'article',
       title: meta.title,
       description: meta.excerpt,
+      locale: localeHtmlLang[locale],
+      url: postPath(locale, slug),
       publishedTime: meta.date,
+      modifiedTime: meta.date,
+      authors: [siteConfig.social.portfolio],
+      section: meta.category,
       tags: meta.tags,
-      images: meta.thumbnail ? [meta.thumbnail] : undefined,
+      images: [{ url: image, alt: meta.title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: meta.title,
+      description: meta.excerpt,
+      images: [image],
     },
   };
 }

@@ -7,7 +7,8 @@ import SearchProvider from '@/components/search/SearchProvider';
 import { getAllPosts } from '@/lib/posts';
 import { getDictionary } from '@/lib/i18n';
 import { isLocale, locales, localeHtmlLang, type Locale } from '@/i18n/config';
-import { localePath } from '@/lib/routes';
+import { localePath, metadataAlternates } from '@/lib/routes';
+import { ogImagePath } from '@/lib/site';
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -23,16 +24,21 @@ export async function generateMetadata({
   const { lang } = await params;
   const locale: Locale = isLocale(lang) ? lang : 'ko';
   const dict = getDictionary(locale);
+  const ogImage = {
+    url: ogImagePath[locale],
+    width: 1200,
+    height: 630,
+    alt: dict.meta.siteTitle,
+  };
   return {
     title: {
       default: dict.meta.siteTitle,
       template: `%s · ${dict.meta.siteTitle}`,
     },
     description: dict.meta.siteDescription,
-    alternates: {
-      canonical: localePath(locale),
-      languages: { ko: '/ko', en: '/en', 'x-default': '/ko' },
-    },
+    // 사이트 전반의 주제 — 글별 태그는 각 포스트의 metadata에서 덧붙인다.
+    keywords: [...new Set(getAllPosts(locale).flatMap((post) => post.tags))],
+    alternates: metadataAlternates(locale),
     openGraph: {
       type: 'website',
       siteName: dict.meta.siteTitle,
@@ -40,6 +46,13 @@ export async function generateMetadata({
       description: dict.meta.siteDescription,
       locale: localeHtmlLang[locale],
       url: localePath(locale),
+      images: [ogImage],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: dict.meta.siteTitle,
+      description: dict.meta.siteDescription,
+      images: [ogImage],
     },
   };
 }

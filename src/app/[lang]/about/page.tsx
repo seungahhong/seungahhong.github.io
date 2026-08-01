@@ -8,8 +8,17 @@ import {
   NotebookText,
 } from 'lucide-react';
 import { getDictionary, resolveLocale } from '@/lib/i18n';
+import { getAllPosts } from '@/lib/posts';
 import { siteConfig } from '@/lib/site';
-import { metadataAlternates } from '@/lib/routes';
+import { sectionMetadata } from '@/lib/metadata';
+import {
+  faqPageJsonLd,
+  profilePageJsonLd,
+  sectionBreadcrumbJsonLd,
+} from '@/lib/jsonld';
+import JsonLd from '@/components/JsonLd';
+import type { Locale } from '@/i18n/config';
+import type { Dictionary } from '@/lib/i18n';
 
 type LangParams = Promise<{ lang: string }>;
 
@@ -21,11 +30,27 @@ export async function generateMetadata({
   const { lang } = await params;
   const locale = resolveLocale(lang);
   const dict = getDictionary(locale);
-  return {
+  return sectionMetadata({
+    locale,
+    sub: '/about',
     title: dict.about.title,
     description: dict.about.subtitle,
-    alternates: metadataAlternates(locale, '/about'),
-  };
+    type: 'profile',
+  });
+}
+
+/**
+ * FAQ 답변의 `{postCount}` · `{since}` 자리표시자를 실제 값으로 채운다.
+ * 사전에 숫자를 하드코딩하면 글이 늘 때마다 답변이 사실과 어긋나기 때문이다.
+ */
+function resolveFaq(dict: Dictionary, locale: Locale) {
+  const postCount = getAllPosts(locale).length;
+  return dict.about.faq.map((item) => ({
+    question: item.question,
+    answer: item.answer
+      .replace('{postCount}', String(postCount))
+      .replace('{since}', String(siteConfig.since)),
+  }));
 }
 
 function Section({
@@ -48,7 +73,9 @@ function Section({
 
 export default async function AboutPage({ params }: { params: LangParams }) {
   const { lang } = await params;
-  const dict = getDictionary(resolveLocale(lang));
+  const locale = resolveLocale(lang);
+  const dict = getDictionary(locale);
+  const faq = resolveFaq(dict, locale);
 
   const links = [
     {
@@ -85,6 +112,14 @@ export default async function AboutPage({ params }: { params: LangParams }) {
 
   return (
     <div className="mx-auto max-w-[860px] px-[18px] pb-11 md:px-[34px]">
+      <JsonLd data={profilePageJsonLd(locale, dict)} />
+      <JsonLd data={faqPageJsonLd(locale, faq)} />
+      <JsonLd
+        data={sectionBreadcrumbJsonLd(locale, dict, {
+          name: dict.nav.about,
+          sub: '/about',
+        })}
+      />
       <header className="flex flex-col items-start gap-6 border-b border-line py-12 sm:flex-row sm:items-center sm:gap-8">
         <div className="relative h-28 w-28 flex-none overflow-hidden rounded-full border border-line bg-surface-2 sm:h-32 sm:w-32">
           <Image
@@ -143,6 +178,21 @@ export default async function AboutPage({ params }: { params: LangParams }) {
             </div>
           ))}
         </div>
+      </Section>
+
+      <Section title={dict.about.faqHeading}>
+        <ul className="flex flex-col gap-6">
+          {faq.map((item) => (
+            <li key={item.question}>
+              <h3 className="mb-1.5 text-[15px] font-bold text-ink">
+                {item.question}
+              </h3>
+              <p className="max-w-[68ch] text-[14.5px] leading-relaxed text-muted">
+                {item.answer}
+              </p>
+            </li>
+          ))}
+        </ul>
       </Section>
 
       <Section title={dict.about.linksHeading}>

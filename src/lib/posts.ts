@@ -12,7 +12,7 @@ import type {
   TagCount,
 } from '@/types';
 import { makeExcerpt, renderMarkdown, rewriteAssetSrc } from './markdown';
-import { readingTime } from './reading-time';
+import { readingTime, wordCount } from './reading-time';
 
 export const CONTENT_ROOT = path.join(process.cwd(), 'contents', 'blog');
 
@@ -159,6 +159,7 @@ function toMeta(src: PostSource): PostMeta {
     github: fm.github ? String(fm.github) : null,
     excerpt,
     readingTime: readingTime(src.body),
+    wordCount: wordCount(src.body),
     relDir: src.relDir,
     year: date.slice(0, 4),
     contentLocale: src.contentLocale,

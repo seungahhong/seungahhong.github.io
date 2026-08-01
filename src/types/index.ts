@@ -33,6 +33,7 @@ export interface PostMeta {
   github: string | null;
   excerpt: string;
   readingTime: number; // 분
+  wordCount: number; // 구조화 데이터(BlogPosting.wordCount)용 분량
   relDir: string; // contents/blog 기준 상대 디렉토리 (예: 2024/03)
   year: string;
   /** 이 메타가 실제로 어떤 언어 파일에서 왔는지 (번역 폴백 추적용) */

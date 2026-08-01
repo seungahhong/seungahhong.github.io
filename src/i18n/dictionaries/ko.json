@@ -66,6 +66,29 @@
     "introHeading": "소개",
     "skillsHeading": "관심 기술",
     "linksHeading": "링크",
+    "faqHeading": "자주 묻는 질문",
+    "faq": [
+      {
+        "question": "이 블로그는 어떤 주제를 다루나요?",
+        "answer": "프론트엔드 개발이 중심입니다. React·Next.js 같은 프레임워크, 상태관리(Redux·Recoil·Zustand·Jotai·MobX·React Query), 번들러와 빌드 도구(Vite·esbuild·Webpack), 웹 성능, 테스트를 주로 다룹니다. 최근에는 RAG·MCP·LLM 하네스 같은 AI 엔지니어링 주제도 함께 기록하고 있습니다. 현재 {postCount}편의 글이 공개되어 있습니다."
+      },
+      {
+        "question": "글은 어떤 언어로 읽을 수 있나요?",
+        "answer": "한국어와 영어 두 언어로 제공합니다. 모든 글에 /ko와 /en 경로가 있고, 영어 번역이 아직 없는 글은 한국어 원문으로 폴백되며 본문 상단에 그 사실이 표시됩니다."
+      },
+      {
+        "question": "누가 쓰나요?",
+        "answer": "프론트엔드 엔지니어 홍승아가 직접 씁니다. 컴포넌트의 공통화와 확장성, 그리고 개인을 넘어 함께 성장하는 개발 생태계에 관심이 많습니다. GitHub·LinkedIn·포트폴리오 링크는 이 페이지의 링크 섹션에 있습니다."
+      },
+      {
+        "question": "새 글은 얼마나 자주 올라오나요?",
+        "answer": "{since}년부터 기록해 왔습니다. 정해진 발행 주기는 없고, 실무나 개인 프로젝트에서 새로 배운 내용이 정리되면 올립니다. 최신 글은 홈과 포스트 목록에서 최신순으로 확인할 수 있습니다."
+      },
+      {
+        "question": "이 블로그는 무엇으로 만들었나요?",
+        "answer": "Next.js 16 App Router의 정적 익스포트로 빌드해 GitHub Pages에 배포합니다. TypeScript와 Tailwind CSS를 쓰고, 마크다운은 unified(remark/rehype)와 shiki로 렌더합니다. 소스 코드는 GitHub 저장소에 공개되어 있습니다."
+      }
+    ],
     "intro": [
       "프론트엔드 기술에 관심이 많은 개발자입니다.",
       "컴포넌트의 공통화와 확장성을 늘 고민합니다.",
