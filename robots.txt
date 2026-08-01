@@ -1,5 +1,29 @@
 User-Agent: *
 Allow: /
 
+User-Agent: GPTBot
+User-Agent: OAI-SearchBot
+User-Agent: ChatGPT-User
+User-Agent: ClaudeBot
+User-Agent: Claude-User
+User-Agent: Claude-SearchBot
+User-Agent: anthropic-ai
+User-Agent: PerplexityBot
+User-Agent: Perplexity-User
+User-Agent: Google-Extended
+User-Agent: Googlebot
+User-Agent: Bingbot
+User-Agent: Applebot
+User-Agent: Applebot-Extended
+User-Agent: meta-externalagent
+User-Agent: Amazonbot
+User-Agent: DuckAssistBot
+User-Agent: YouBot
+User-Agent: cohere-ai
+User-Agent: CCBot
+User-Agent: Diffbot
+User-Agent: Timpibot
+Allow: /
+
 Host: https://seungahhong.github.io
 Sitemap: https://seungahhong.github.io/sitemap.xml
