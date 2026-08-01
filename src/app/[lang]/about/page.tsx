@@ -88,7 +88,7 @@ export default async function AboutPage({ params }: { params: LangParams }) {
       label: 'Portfolio',
       href: siteConfig.social.portfolio,
       Icon: ExternalLink,
-      text: 'seungahhong-portfolio.vercel.app',
+      text: 'seungah-portfolio.vercel.app',
     },
     {
       label: 'LinkedIn',
