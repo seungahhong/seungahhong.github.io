@@ -14,6 +14,15 @@ export const siteConfig = {
   },
   /** Google Analytics 측정 ID (다음 라운드에서 스크립트 연결) */
   gaIds: ['G-TYGQRJE1B8', 'G-G8Z1HZWWYL'],
+  /**
+   * 검색 콘솔 소유권 확인 토큰.
+   * Gatsby 시절 `<meta>`로 심어 두었던 값이며, 이 태그가 사라지면 확인이 풀려
+   * 서치 콘솔의 색인 요청·사이트맵 제출이 실패한다. 삭제 금지.
+   */
+  verification: {
+    google: 'DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ',
+    naver: 'ab246841529a97bcf76ac7ed42d5a5c457a381bc',
+  },
 } as const;
 
 /** 로케일별 기본 소셜 공유 이미지(1200×630). 썸네일이 없는 페이지의 og:image. */

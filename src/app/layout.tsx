@@ -32,6 +32,14 @@ export const metadata: Metadata = {
     images: [{ url: ogImagePath[defaultLocale], width: 1200, height: 630 }],
   },
   twitter: { card: 'summary_large_image' },
+  // 루트 레이아웃에 두어 `/`를 포함한 모든 페이지에 실린다.
+  // (서치 콘솔은 속성 루트 URL에서 이 태그를 확인한다)
+  verification: {
+    google: siteConfig.verification.google,
+    other: {
+      'naver-site-verification': siteConfig.verification.naver,
+    },
+  },
 };
 
 export default function RootLayout({
