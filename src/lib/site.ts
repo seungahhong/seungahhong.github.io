@@ -15,8 +15,12 @@ export const siteConfig = {
   /**
    * Google Analytics 측정 ID. 첫 번째 ID로 gtag.js를 불러오고 전체에 config를 보낸다.
    * (`GoogleAnalytics` 컴포넌트 참고 — 인기 글 정렬이 이 조회수를 기준으로 한다)
+   *
+   * 살아 있는 ID만 넣을 것. 삭제된 속성 ID를 넣으면 gtag.js가 404(HTML)를 반환하고
+   * 크롬이 ERR_BLOCKED_BY_ORB로 차단해 gtag.js 자체가 실행되지 않는다. 그러면 뒤에
+   * 오는 멀쩡한 ID의 히트까지 통째로 유실된다. (`G-TYGQRJE1B8`이 이 경우였다)
    */
-  gaIds: ['G-TYGQRJE1B8', 'G-G8Z1HZWWYL'],
+  gaIds: ['G-G8Z1HZWWYL'],
   /**
    * 검색 콘솔 소유권 확인 토큰.
    * Gatsby 시절 `<meta>`로 심어 두었던 값이며, 이 태그가 사라지면 확인이 풀려
