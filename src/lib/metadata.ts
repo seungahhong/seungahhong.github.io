@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { localeHtmlLang, type Locale } from '@/i18n/config';
 import { getDictionary } from '@/lib/i18n';
-import { localePath, metadataAlternates } from '@/lib/routes';
+import { absoluteUrl, localePath, metadataAlternates } from '@/lib/routes';
 import { ogImagePath } from '@/lib/site';
 
 /**
@@ -44,7 +44,7 @@ export function sectionMetadata({
       title,
       description,
       locale: localeHtmlLang[locale],
-      url: localePath(locale, sub),
+      url: absoluteUrl(localePath(locale, sub)),
       images: [image],
     },
     twitter: {

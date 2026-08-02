@@ -9,7 +9,7 @@ import {
 } from '@/lib/posts';
 import { locales, localeHtmlLang } from '@/i18n/config';
 import { ogImagePath, siteConfig } from '@/lib/site';
-import { postPath } from '@/lib/routes';
+import { absoluteUrl, decodeSlugParam, postPath } from '@/lib/routes';
 import { blogPostingJsonLd, breadcrumbJsonLd } from '@/lib/jsonld';
 import JsonLd from '@/components/JsonLd';
 import PostHeader from '@/components/post/PostHeader';
@@ -30,7 +30,8 @@ export async function generateMetadata({
 }: {
   params: PostParams;
 }): Promise<Metadata> {
-  const { lang, slug } = await params;
+  const { lang, slug: slugParam } = await params;
+  const slug = decodeSlugParam(slugParam);
   const locale = resolveLocale(lang);
   const meta = getPostMeta(slug, locale);
   if (!meta) return {};
@@ -42,12 +43,14 @@ export async function generateMetadata({
     description: meta.excerpt,
     keywords: meta.tags,
     authors: [{ name: dict.meta.author, url: siteConfig.social.portfolio }],
+    // 상대 경로를 넘기면 `2025-06-29-vite6.0`처럼 `.`이 든 슬러그에서 Next가 끝의 `/`를
+    // 생략해 사이트맵·실제 서빙 URL과 어긋난다. absoluteUrl로 형태를 고정한다.
     alternates: {
-      canonical: postPath(locale, slug),
+      canonical: absoluteUrl(postPath(locale, slug)),
       languages: {
-        ko: postPath('ko', slug),
-        en: postPath('en', slug),
-        'x-default': postPath('ko', slug),
+        ko: absoluteUrl(postPath('ko', slug)),
+        en: absoluteUrl(postPath('en', slug)),
+        'x-default': absoluteUrl(postPath('ko', slug)),
       },
     },
     openGraph: {
@@ -55,7 +58,7 @@ export async function generateMetadata({
       title: meta.title,
       description: meta.excerpt,
       locale: localeHtmlLang[locale],
-      url: postPath(locale, slug),
+      url: absoluteUrl(postPath(locale, slug)),
       publishedTime: meta.date,
       modifiedTime: meta.date,
       authors: [siteConfig.social.portfolio],
@@ -73,7 +76,8 @@ export async function generateMetadata({
 }
 
 export default async function PostPage({ params }: { params: PostParams }) {
-  const { lang, slug } = await params;
+  const { lang, slug: slugParam } = await params;
+  const slug = decodeSlugParam(slugParam);
   const locale = resolveLocale(lang);
   const post = await getPostBySlug(slug, locale);
   if (!post) notFound();

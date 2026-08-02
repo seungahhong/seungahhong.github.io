@@ -1,8 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { getAllPosts, getAllSlugs, getPostMeta } from '@/lib/posts';
 import { locales } from '@/i18n/config';
-import { absoluteUrl } from '@/lib/jsonld';
-import { localePath, postPath } from '@/lib/routes';
+import { absoluteUrl, localePath, postPath } from '@/lib/routes';
 
 export const dynamic = 'force-static';
 

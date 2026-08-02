@@ -2,17 +2,9 @@ import { localeHtmlLang, type Locale } from '@/i18n/config';
 import type { Dictionary } from '@/lib/i18n';
 import type { PostMeta } from '@/types';
 import { ogImagePath, siteConfig } from '@/lib/site';
-import { localePath, postPath } from '@/lib/routes';
+import { absoluteUrl, localePath, postPath } from '@/lib/routes';
 
 type JsonLdObject = Record<string, unknown>;
-
-/** siteConfig.url 기준 절대 URL (trailingSlash: true에 맞춰 끝에 `/` 보장). */
-export function absoluteUrl(pathname: string): string {
-  const clean = pathname.startsWith('/') ? pathname : `/${pathname}`;
-  const withSlash =
-    clean === '/' ? '/' : clean.endsWith('/') ? clean : `${clean}/`;
-  return `${siteConfig.url}${withSlash}`;
-}
 
 /** 이미지 경로를 절대 URL로 변환한다(외부 URL은 그대로, 없으면 로케일 기본 OG 이미지). */
 function absoluteImage(thumbnail: string | null, locale: Locale): string {

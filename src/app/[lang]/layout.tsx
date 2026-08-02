@@ -7,7 +7,7 @@ import SearchProvider from '@/components/search/SearchProvider';
 import { getAllPosts } from '@/lib/posts';
 import { getDictionary } from '@/lib/i18n';
 import { isLocale, locales, localeHtmlLang, type Locale } from '@/i18n/config';
-import { localePath, metadataAlternates } from '@/lib/routes';
+import { absoluteUrl, localePath, metadataAlternates } from '@/lib/routes';
 import { ogImagePath } from '@/lib/site';
 
 export function generateStaticParams() {
@@ -45,7 +45,7 @@ export async function generateMetadata({
       title: dict.meta.siteTitle,
       description: dict.meta.siteDescription,
       locale: localeHtmlLang[locale],
-      url: localePath(locale),
+      url: absoluteUrl(localePath(locale)),
       images: [ogImage],
     },
     twitter: {
