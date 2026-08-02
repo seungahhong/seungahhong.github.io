@@ -2,8 +2,10 @@ import Link from 'next/link';
 import { Search } from 'lucide-react';
 import type { Locale } from '@/i18n/config';
 import type { Dictionary } from '@/lib/i18n';
-import type { CategoryCount, PostMeta, TagCount } from '@/types';
+import type { CategoryCount, TagCount } from '@/types';
+import type { PopularPost } from '@/lib/popular';
 import { categoryPath, postPath, tagPath } from '@/lib/routes';
+import { formatViews } from '@/lib/site';
 import SearchTrigger from '@/components/search/SearchTrigger';
 
 function WidgetTitle({ children }: { children: React.ReactNode }) {
@@ -25,12 +27,20 @@ export default function Sidebar({
 }: {
   locale: Locale;
   dict: Dictionary;
-  popular: PostMeta[];
+  popular: PopularPost[];
   categories: CategoryCount[];
   tags: TagCount[];
   activeCategory?: string;
 }) {
   const maxPopularRank = popular.length || 1;
+  const topViews = Math.max(0, ...popular.map((post) => post.views ?? 0));
+  const barWidth = (post: PopularPost, rank: number) => {
+    // 조회수 데이터 자체가 없으면(계측 전) 예전처럼 순위로 막대를 그린다.
+    if (topViews <= 0) return 100 - (rank / maxPopularRank) * 60;
+    // 조회수가 아직 안 잡혀 최신순으로 채운 자리 — 실제 수치가 있는 글보다 항상 짧게.
+    if (post.views === null) return 12;
+    return Math.max(20, Math.round((post.views / topViews) * 100));
+  };
 
   return (
     <aside className="flex flex-col gap-7 lg:sticky lg:top-20">
@@ -64,13 +74,14 @@ export default function Sidebar({
                     {post.title}
                   </p>
                   <div className="signal-track" aria-hidden="true">
-                    <i
-                      style={{ width: `${100 - (i / maxPopularRank) * 60}%` }}
-                    />
+                    <i style={{ width: `${barWidth(post, i)}%` }} />
                   </div>
                   <p className="mt-1.5 font-mono text-[10.5px] text-faint">
                     {post.category}
                     {post.tags[0] ? ` · ${post.tags[0]}` : ''}
+                    {post.views !== null
+                      ? ` · ${formatViews(post.views, locale)} ${dict.home.views}`
+                      : ''}
                   </p>
                 </Link>
               </li>

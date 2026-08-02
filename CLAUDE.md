@@ -25,6 +25,10 @@ pnpm clean
 
 # 콘텐츠 이미지 → public/blog-assets 수동 동기화
 pnpm sync:assets
+
+# GA4 조회수 → data/popular.json 갱신 (인기 글 Top 5 정렬 기준)
+# GA_PROPERTY_ID / GA_SERVICE_ACCOUNT_KEY 환경변수 필요. 평소엔 CI 크론이 실행한다.
+pnpm fetch:popular
 ```
 
 ### 코드 품질
@@ -67,6 +71,8 @@ pnpm deploy
 - `contents/` - 블로그 포스트(마크다운) 및 이미지 저장소
   - `blog/YYYY/MM/*.md` - 연/월별로 구성된 블로그 포스트
   - 영문 번역본은 `slug.en.md` 컨벤션. 번역본이 없으면 한국어 원문으로 폴백
+- `data/popular.json` - GA4 조회수 스냅샷(최근 90일, ko/en 합산). 커밋되며 빌드 시 읽는다.
+  `.github/workflows/refresh-popular.yml`(매일 03:00 KST)이 갱신하고, 없거나 비어 있으면 최신순 폴백
 - `src/app/` - Next.js App Router 라우트
   - `[lang]/` - 로케일(`ko`/`en`) 세그먼트
   - `[lang]/posts/[slug]/` - 블로그 포스트 상세
