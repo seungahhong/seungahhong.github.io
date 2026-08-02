@@ -1,6 +1,109 @@
 1:"$Sreact.fragment"
-3:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":["$L2",[["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"GSZ72vmBU3bNcHCFgOyk0"}
-5:null
-2:E{"digest":"NEXT_HTTP_ERROR_FALLBACK;404"}
+3:I[53403,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+4:I[52881,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],""]
+f:I[27722,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+10:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
+11:"$Sreact.suspense"
+2:T666,{"@context":"https://schema.org","@type":"BlogPosting","headline":"C/C++","description":"C 전역변수 1. 특징 - 함수외부에서 선언 - 메모리의 어느 특정공간(heap)에 자리를 차지하고 모든 함수 access 가능 - 프로그램 시작 시 생성 및 할당, 프로그램 종료가 되면 그 메모리 공간을 반환 2. 장점 - 사용하기 편리하다, 모든 함수에서 access 가능,…","datePublished":"2020-02-17","dateModified":"2020-02-17","inLanguage":"ko-KR","url":"https://seungahhong.github.io/ko/posts/2020-02-17-c-c++/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/ko/posts/2020-02-17-c-c++/"},"image":"https://seungahhong.github.io/blog-assets/2020/02/images/17/thumbnail.png","keywords":["windows"],"articleSection":"개발","wordCount":624,"timeRequired":"PT2M","isPartOf":{"@id":"https://seungahhong.github.io/ko/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"홈\",\"item\":\"https://seungahhong.github.io/ko/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"포스트\",\"item\":\"https://seungahhong.github.io/ko/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"C/C++\",\"item\":\"https://seungahhong.github.io/ko/posts/2020-02-17-c-c++/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"C/C++"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"C/C++"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],"$L5","$L6","$L7"]}],false,"$L8"]}],"$L9","$La"]}],"$Lb"]}]}]],["$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"MUiCo2uvyu3ZHSjicZodi"}
+5:["$","time",null,{"dateTime":"2020-02-17","className":"meta-mono","children":"2020.02.17"}]
+6:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+7:["$","span",null,{"className":"meta-mono","children":[2,"분"]}]
+8:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","windows",{"children":["$","$L4",null,{"href":"/ko/tags?tag=windows","className":"tag-pill","children":"windows"}]}]]}]
+e:T17bd,<h2 id="c">C<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#c"><span class="icon icon-link"></span></a></h2>
+<h3 id="전역변수">전역변수<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#전역변수"><span class="icon icon-link"></span></a></h3>
+<ol>
+<li>특징</li>
+</ol>
+<ul>
+<li>함수외부에서 선언</li>
+<li>메모리의 어느 특정공간(heap)에 자리를 차지하고 모든 함수 access 가능</li>
+<li>프로그램 시작 시 생성 및 할당, 프로그램 종료가 되면 그 메모리 공간을 반환</li>
+</ul>
+<ol start="2">
+<li>장점</li>
+</ol>
+<ul>
+<li>사용하기 편리하다, 모든 함수에서 access 가능, call-by-reference로 값을 반환</li>
+</ul>
+<ol start="3">
+<li>단점</li>
+</ol>
+<ul>
+<li>모든 함수에서 그 값을 변경할 수 있기 때문에 이더서든지 변한다. 메모리 공간을 반환하지 않음</li>
+</ul>
+<h3 id="지역변수">지역변수<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#지역변수"><span class="icon icon-link"></span></a></h3>
+<ol>
+<li>특징</li>
+</ol>
+<ul>
+<li>함수 혹은 {...} 범위 내부에서 선언</li>
+<li>함수가 호출되면 메모리의 생성, 할당이 되며 함수가 끝나면 메모리 반환</li>
+<li>범위 안에서 접근, 접근하려면 call-by-reference 포인터가 필요</li>
+</ul>
+<ol start="2">
+<li>장점</li>
+</ol>
+<ul>
+<li>메모리의 낭비가 일어나지 않는다.</li>
+</ul>
+<ol start="3">
+<li>단점</li>
+</ol>
+<ul>
+<li>다른 함수에서 특정 함수의 변수로 접근할 때 까다롭다.</li>
+</ul>
+<h3 id="정적변수static-valuable">정적변수(static valuable)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#정적변수static-valuable"><span class="icon icon-link"></span></a></h3>
+<ol>
+<li>특징</li>
+</ol>
+<ul>
+<li>static 키둬드를 사용하여 선언할 때 자동으로 0으로 초기화 됨</li>
+<li>static 변수는 heap 영역에 할당되므로 종료해도 그 값을 유지하게 된다.</li>
+</ul>
+<h2 id="c-1">C++<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#c-1"><span class="icon icon-link"></span></a></h2>
+<h3 id="가상함수">가상함수<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#가상함수"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>포인터의 자료형을 기반으로 호출대상을 결정하지 않고, 포인터 변수가 실제로 가리키는 객체를 참조하여 호출의 대상을 결정하는 것</li>
+</ul>
+<h3 id="가상함수-하는-이유">가상함수 하는 이유<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#가상함수-하는-이유"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>C++ 컴파일러는 포인터의 연산의 가능성 여부를 판단할 때, 포인터의 자료형을 기준으로 판단하지, 실제 가리키는 객체의 자료형을 기준으로 판단 하지 않으므로, 실제 가리키는 객체를 호출하기 위해서 가상함수가 필요함.</li>
+</ul>
+<h3 id="가상함수-예제">가상함수 예제<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#가상함수-예제"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="C++" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="C++" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span>Third *tptr = new Third();</span></span>
+<span data-line=""><span>Second *sptr = tptr;</span></span>
+<span data-line=""><span>First * fptr = sptr;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span>tptr->FirstFunc()   (o)</span></span>
+<span data-line=""><span>tptr->SecondFunc()  (o)</span></span>
+<span data-line=""><span>tptr->ThirdFunc()   (o)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span>sptr->FirstFunc()   (o)</span></span>
+<span data-line=""><span>sptr->SecondFunc()  (o)</span></span>
+<span data-line=""><span>sptr->ThirdFunc()   (o)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span>fptr->FirstFunc()   (o)</span></span>
+<span data-line=""><span>fptr->SecondFunc()  (o)</span></span>
+<span data-line=""><span>fptr->ThirdFunc()   (o)</span></span></code></pre></figure>
+<h3 id="순수가상함수">순수가상함수<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#순수가상함수"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>함수의 몸체가 정의되지 않은 함수</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="C++" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="C++" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span>virtual int GetPay() const = 0;</span></span></code></pre></figure>
+<h3 id="추상클래스">추상클래스<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#추상클래스"><span class="icon icon-link"></span></a></h3>
+<ol>
+<li>객체 생성이 불가능한 클래스</li>
+<li>하나 이상의 순수 가상 함수 포함</li>
+</ol>
+<h3 id="가상소멸자">가상소멸자<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#가상소멸자"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>객체의 소멸과정에서는 delete 연산자에 사용된 포인터 변수의 자료형에 상관없이 모든 소멸자가 호출되어야 할 경우에
+virtual 선언해서 가상소멸자를 구현해줘야한다.
+하나 이상의 가상함수가 있을 경우 무조건 가상소멸자를 호출해줘야한다.</li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="C++" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="C++" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span>vitual ~First();</span></span></code></pre></figure>9:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$e"}}]}]
+a:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/ko/posts/2020-02-16-winapi","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Windows API"}]]}],["$","$L4",null,{"href":"/ko/posts/2020-04-12-webtools","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["다음 글",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"web tools"}]]}]]}]
+b:["$","div",null,{"className":"hidden lg:block","children":["$","$Lf",null,{"headings":[{"id":"c","text":"C","depth":1},{"id":"전역변수","text":"전역변수","depth":2},{"id":"지역변수","text":"지역변수","depth":2},{"id":"정적변수static-valuable","text":"정적변수(static valuable)","depth":2},{"id":"c-1","text":"C++","depth":1},{"id":"가상함수","text":"가상함수","depth":2},{"id":"가상함수-하는-이유","text":"가상함수 하는 이유","depth":2},{"id":"가상함수-예제","text":"가상함수 예제","depth":2},{"id":"순수가상함수","text":"순수가상함수","depth":2},{"id":"추상클래스","text":"추상클래스","depth":2},{"id":"가상소멸자","text":"가상소멸자","depth":2}],"title":"목차"}]}]
+c:["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true}]
+d:["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]
+12:null
