@@ -12,7 +12,10 @@ export const siteConfig = {
     portfolio: 'https://seungah-portfolio.vercel.app',
     email: 'gmm117@naver.com',
   },
-  /** Google Analytics 측정 ID (다음 라운드에서 스크립트 연결) */
+  /**
+   * Google Analytics 측정 ID. 첫 번째 ID로 gtag.js를 불러오고 전체에 config를 보낸다.
+   * (`GoogleAnalytics` 컴포넌트 참고 — 인기 글 정렬이 이 조회수를 기준으로 한다)
+   */
   gaIds: ['G-TYGQRJE1B8', 'G-G8Z1HZWWYL'],
   /**
    * 검색 콘솔 소유권 확인 토큰.
@@ -58,6 +61,14 @@ export function coverGlyph(slug: string): string {
     hash = (hash * 17 + slug.charCodeAt(i)) >>> 0;
   }
   return GLYPHS[hash % GLYPHS.length];
+}
+
+/** 조회수 축약 표기 (1234 → ko `1.2천`, en `1.2K`) */
+export function formatViews(views: number, locale: Locale): string {
+  return new Intl.NumberFormat(locale === 'ko' ? 'ko-KR' : 'en-US', {
+    notation: 'compact',
+    maximumFractionDigits: 1,
+  }).format(views);
 }
 
 /** 로케일별 날짜 포맷 (YYYY-MM-DD → 표시용) */

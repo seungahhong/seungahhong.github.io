@@ -13,6 +13,7 @@ import type {
 } from '@/types';
 import { makeExcerpt, renderMarkdown, rewriteAssetSrc } from './markdown';
 import { readingTime, wordCount } from './reading-time';
+import { rankPostsByViews, readPopularData, type PopularPost } from './popular';
 
 export const CONTENT_ROOT = path.join(process.cwd(), 'contents', 'blog');
 
@@ -274,9 +275,13 @@ export function getTagCounts(posts: PostMeta[]): TagCount[] {
 }
 
 /**
- * 인기 글 Top N. 조회수 데이터가 없는 정적 사이트라 현재는 최신순 근사치.
- * (다음 라운드에서 GA/큐레이션 데이터로 교체 예정)
+ * 인기 글 Top N. data/popular.json(GA4 ko/en 합산 조회수)의 내림차순.
+ * 조회수 데이터가 없으면 예전처럼 최신순으로 폴백한다(src/lib/popular.ts 참고).
  */
-export function getPopularPosts(posts: PostMeta[], count = 5): PostMeta[] {
-  return posts.slice(0, count);
+export function getPopularPosts(
+  posts: PostMeta[],
+  count = 5,
+  dataFile?: string,
+): PopularPost[] {
+  return rankPostsByViews(posts, count, readPopularData(dataFile));
 }

@@ -11,6 +11,7 @@
   },
   "scripts": {
     "sync:assets": "node scripts/sync-content-assets.mjs",
+    "fetch:popular": "node scripts/fetch-popular-posts.mjs",
     "predev": "pnpm sync:assets",
     "dev": "next dev",
     "prebuild": "pnpm sync:assets",

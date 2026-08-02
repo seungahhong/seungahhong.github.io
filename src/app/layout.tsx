@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { ogImagePath, siteConfig } from '@/lib/site';
 import { getDictionary } from '@/lib/i18n';
 import { defaultLocale } from '@/i18n/config';
@@ -51,6 +52,7 @@ export default function RootLayout({
     <html lang="ko" suppressHydrationWarning>
       <body>
         <ThemeProvider>{children}</ThemeProvider>
+        <GoogleAnalytics />
       </body>
     </html>
   );
