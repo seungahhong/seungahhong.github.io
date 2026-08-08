@@ -43,52 +43,64 @@ async function fetchPageHtml(
  * 실제 익스포트 산출물로 두 값이 문자 단위로 같은지 확인한다.
  */
 test.describe('sitemap ↔ canonical 정합성', () => {
-  test('사이트맵의 모든 URL이 슬래시로 끝난다', async ({ request }) => {
-    const locs = await sitemapLocs(request);
-    expect(locs.length).toBeGreaterThan(0);
-    expect(locs.filter((loc) => !loc.endsWith('/'))).toEqual([]);
-  });
+  test(
+    'AC-10.2 사이트맵의 모든 URL이 슬래시로 끝난다',
+    { tag: ['@smoke', '@regression', '@e2e-mock'] },
+    async ({ request }) => {
+      const locs = await sitemapLocs(request);
+      expect(locs.length).toBeGreaterThan(0);
+      expect(locs.filter((loc) => !loc.endsWith('/'))).toEqual([]);
+    },
+  );
 
-  test('모든 사이트맵 URL의 canonical이 <loc>과 정확히 일치한다', async ({
-    request,
-  }) => {
-    const locs = await sitemapLocs(request);
-    const mismatched: string[] = [];
+  test(
+    'AC-10.3 모든 사이트맵 URL의 canonical이 <loc>과 정확히 일치한다',
+    { tag: ['@regression', '@e2e-mock'] },
+    async ({ request }) => {
+      const locs = await sitemapLocs(request);
+      const mismatched: string[] = [];
 
-    for (const loc of locs) {
-      const { status, html } = await fetchPageHtml(request, loc);
-      if (status !== 200) {
-        mismatched.push(`${loc} → HTTP ${status}`);
-        continue;
+      for (const loc of locs) {
+        const { status, html } = await fetchPageHtml(request, loc);
+        if (status !== 200) {
+          mismatched.push(`${loc} → HTTP ${status}`);
+          continue;
+        }
+        const canonical = html.match(
+          /<link rel="canonical" href="([^"]+)"/,
+        )?.[1];
+        if (canonical !== loc) {
+          mismatched.push(`${loc} → canonical=${canonical ?? '(없음)'}`);
+        }
       }
-      const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
-      if (canonical !== loc) {
-        mismatched.push(`${loc} → canonical=${canonical ?? '(없음)'}`);
-      }
-    }
 
-    expect(mismatched).toEqual([]);
-  });
+      expect(mismatched).toEqual([]);
+    },
+  );
 
   /**
    * 슬러그가 라우트 파라미터로 오갈 때 인코딩이 어긋나면 페이지는 200을 주면서
    * not-found 본문을 렌더한다(soft 404). 그러면 제목·canonical이 레이아웃 기본값으로
    * 떨어지므로, 특수문자가 든 슬러그가 실제 글로 렌더되는지 직접 확인한다.
    */
-  test('특수문자·점이 든 슬러그도 실제 글로 렌더된다', async ({ request }) => {
-    const cases = [
-      { slug: '2020-02-17-c-c++', title: 'C/C++' },
-      { slug: '2025-06-29-vite6.0', title: 'Vite 6.0' },
-    ];
+  test(
+    'AC-1.6 AC-14.5 AC-19.3 특수문자·점이 든 슬러그도 실제 글로 렌더된다',
+    { tag: ['@regression', '@e2e-mock'] },
+    async ({ request }) => {
+      const cases = [
+        { slug: '2020-02-17-c-c++', title: 'C/C++' },
+        { slug: '2025-06-29-vite6.0', title: 'Vite 6.0' },
+      ];
 
-    for (const { slug, title } of cases) {
-      const loc = `${SITE_ORIGIN}/ko/posts/${slug}/`;
-      const { status, html } = await fetchPageHtml(request, loc);
-      expect(status, `${slug} 응답 상태`).toBe(200);
-      expect(html, `${slug} 제목`).toContain(`<title>${title} · `);
-      expect(html, `${slug} canonical`).toContain(
-        `<link rel="canonical" href="${loc}"/>`,
-      );
-    }
-  });
+      for (const { slug, title } of cases) {
+        const loc = `${SITE_ORIGIN}/ko/posts/${slug}/`;
+        const { status, html } = await fetchPageHtml(request, loc);
+        expect(status, `${slug} 응답 상태`).toBe(200);
+        expect(html, `${slug} 제목`).toContain(`<title>${title} · `);
+        expect(html, `${slug} canonical`).toContain(
+          `<link rel="canonical" href="${loc}"/>`,
+        );
+      }
+    },
+  );
 });

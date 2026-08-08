@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { getDictionary, resolveLocale } from './i18n';
+import { getDictionary, resolveLocale } from '@/lib/i18n';
 import ko from '@/i18n/dictionaries/ko.json';
 import en from '@/i18n/dictionaries/en.json';
 import { defaultLocale } from '@/i18n/config';
