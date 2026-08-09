@@ -7,7 +7,7 @@ import {
   rankPostsByViews,
   readPopularData,
   type PopularData,
-} from './popular';
+} from '@/lib/popular';
 import type { PostMeta } from '@/types';
 
 const tmpDirs: string[] = [];

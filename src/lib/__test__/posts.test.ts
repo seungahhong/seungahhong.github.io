@@ -13,7 +13,7 @@ import {
   getTagCounts,
   groupByCategory,
   sortPosts,
-} from './posts';
+} from '@/lib/posts';
 import type { PostMeta } from '@/types';
 
 // ---- fixture helpers -------------------------------------------------------

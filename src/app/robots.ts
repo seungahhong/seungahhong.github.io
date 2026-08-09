@@ -41,6 +41,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: AI_CRAWLERS, allow: '/' },
     ],
     sitemap: `${siteConfig.url}/sitemap.xml`,
-    host: siteConfig.url,
+    // `Host:`는 Yandex 전용 확장이고 그마저 폐기됐다. Google은 무시하므로 두지 않는다.
   };
 }

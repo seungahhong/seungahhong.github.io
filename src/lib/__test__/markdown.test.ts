@@ -5,7 +5,7 @@ import {
   renderMarkdown,
   rewriteAssetSrc,
   stripMdInline,
-} from './markdown';
+} from '@/lib/markdown';
 
 describe('rewriteAssetSrc', () => {
   it('rewrites relative ./assets paths to /blog-assets/<relDir>', () => {

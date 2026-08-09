@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { readingTime } from './reading-time';
+import { readingTime } from '@/lib/reading-time';
 
 describe('readingTime', () => {
   it('returns at least 1 minute for empty or tiny content', () => {
