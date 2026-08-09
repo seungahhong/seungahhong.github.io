@@ -24,4 +24,7 @@ pnpm fetch:popular
 - GitHub Pages 사용자 사이트(https://seungahhong.github.io)라 basePath 불필요
 - `public/.nojekyll`로 `_next` 디렉토리가 Jekyll에 무시되지 않도록 함
 - 정적 익스포트 제약 때문에 태그 페이지는 per-tag 정적 라우트 대신 쿼리 기반 클라이언트 필터 사용(한글 디렉토리명 익스포트 리스크 회피)
-- `pnpm deploy`는 `out/` 정적 익스포트를 `main` 브랜치에 배포한다
+- 배포 경로는 `develop` → `master` 머지 → `.github/workflows/deploy.yml` → `gh-pages` 브랜치.
+  GitHub Pages가 서빙하는 것은 `gh-pages`다. `pnpm deploy`는 CI를 건너뛰는 수동 폴백이다
+- Gatsby 시절 주소(`/blog/<연>/<월>/<슬러그>/`, `/about/`)는 `src/lib/legacy-urls.ts` 기준으로
+  canonical 스텁을 익스포트해 새 주소로 합친다. 정적 호스팅이라 301을 쓸 수 없어서다

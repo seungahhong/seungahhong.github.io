@@ -60,8 +60,27 @@ describe('RootPage 리다이렉트 배선 @regression', () => {
 });
 
 describe('RootPage 색인 정책 @regression', () => {
-  it('AC-13.4 이 페이지는 색인하지 않도록 선언한다', () => {
-    // 내용 없는 리다이렉트 페이지가 검색 결과에 뜨면 진입 품질이 나빠진다.
-    expect(metadata.robots).toEqual({ index: false, follow: false });
+  /**
+   * 원래 이 페이지는 `noindex, nofollow`였다. 내용 없는 스텁이 검색 결과에 뜨는 것은
+   * 막았지만, 외부 백링크와 서치 콘솔 속성 루트가 모두 `/`라서 그 신호가 통째로
+   * 버려졌다. 지금은 canonical로 `/ko/`에 합친다 — 스텁이 노출되지 않는다는 목적은
+   * 그대로 달성하면서 신호는 넘긴다.
+   */
+  it('AC-13.4 루트를 기본 로케일 홈으로 합치도록 canonical을 선언한다', () => {
+    expect(metadata.alternates?.canonical).toBe(
+      'https://seungahhong.github.io/ko/',
+    );
+  });
+
+  it('AC-13.4 noindex를 함께 걸지 않는다(걸면 canonical 합치기가 무산된다)', () => {
+    expect(metadata.robots).toBeUndefined();
+  });
+
+  it('AC-13.4 hreflang으로 두 로케일 홈을 함께 알린다', () => {
+    expect(metadata.alternates?.languages).toEqual({
+      ko: 'https://seungahhong.github.io/ko/',
+      en: 'https://seungahhong.github.io/en/',
+      'x-default': 'https://seungahhong.github.io/ko/',
+    });
   });
 });

@@ -33,7 +33,7 @@
     "test:e2e:mock": "playwright test --grep @e2e-mock",
     "test:e2e:live": "E2E_MODE=live playwright test --grep @e2e-live",
     "predeploy": "pnpm build",
-    "deploy": "gh-pages -d out -t true -b main",
+    "deploy": "gh-pages -d out -t true -b gh-pages",
     "prepare": "husky"
   },
   "dependencies": {

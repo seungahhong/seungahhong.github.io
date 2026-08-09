@@ -104,3 +104,89 @@ test.describe('sitemap ↔ canonical 정합성', () => {
     },
   );
 });
+
+/**
+ * Gatsby 시절 주소는 2020~2024년 내내 색인돼 있었는데 Next 마이그레이션이
+ * 리다이렉트를 남기지 않아 전부 404가 됐다. 정적 호스팅이라 301을 못 쓰므로
+ * canonical 스텁으로 새 주소에 합친다 — 여기서 검증할 것은 **크롤러가 받는 HTML**이다.
+ * (매핑 자체의 완전성은 `src/lib/__test__/legacy-urls.test.ts`가 옛 배포본 목록에 대고 본다.)
+ */
+test.describe('Gatsby 옛 주소 → 현재 주소 합치기', () => {
+  const cases = [
+    {
+      from: '/blog/2020/04/2020-04-12-webtools/',
+      to: '/ko/posts/2020-04-12-webtools/',
+    },
+    // 퍼센트 인코딩되는 유일한 슬러그.
+    {
+      from: '/blog/2020/02/2020-02-17-c-c++/',
+      to: '/ko/posts/2020-02-17-c-c++/',
+    },
+    // 마이그레이션에서 이름이 바뀐 글(RC → 정식 릴리스).
+    {
+      from: '/blog/2024/11/2024-11-24-react-v19-rc/',
+      to: '/ko/posts/2024-12-05-react-v19/',
+    },
+    { from: '/about/', to: '/ko/about/' },
+    { from: '/', to: '/ko/' },
+  ];
+
+  test(
+    'AC-10.4 옛 주소가 200으로 살아 있고 canonical이 현재 주소를 가리킨다',
+    { tag: ['@smoke', '@regression', '@e2e-mock'] },
+    async ({ request }) => {
+      const broken: string[] = [];
+
+      for (const { from, to } of cases) {
+        const { status, html } = await fetchPageHtml(
+          request,
+          `${SITE_ORIGIN}${from}`,
+        );
+        if (status !== 200) {
+          broken.push(`${from} → HTTP ${status}`);
+          continue;
+        }
+        const canonical = html.match(
+          /<link rel="canonical" href="([^"]+)"/,
+        )?.[1];
+        if (canonical !== `${SITE_ORIGIN}${to}`) {
+          broken.push(`${from} → canonical=${canonical ?? '(없음)'}`);
+        }
+      }
+
+      expect(broken).toEqual([]);
+    },
+  );
+
+  test(
+    'AC-10.4 옛 주소에 noindex를 걸지 않는다',
+    { tag: ['@regression', '@e2e-mock'] },
+    async ({ request }) => {
+      // noindex와 canonical을 함께 주면 noindex가 이겨서, 옛 주소에 쌓인 색인과
+      // 백링크가 새 주소로 합쳐지지 않고 그대로 버려진다.
+      const indexed: string[] = [];
+
+      for (const { from } of cases) {
+        const { html } = await fetchPageHtml(request, `${SITE_ORIGIN}${from}`);
+        if (/<meta name="robots" content="[^"]*noindex/.test(html)) {
+          indexed.push(from);
+        }
+      }
+
+      expect(indexed).toEqual([]);
+    },
+  );
+
+  test(
+    'AC-10.4 JS 없이도 이동하도록 meta refresh를 심는다',
+    { tag: ['@regression', '@e2e-mock'] },
+    async ({ request }) => {
+      for (const { from, to } of cases) {
+        const { html } = await fetchPageHtml(request, `${SITE_ORIGIN}${from}`);
+        expect(html, `${from} meta refresh`).toContain(
+          `<meta http-equiv="refresh" content="0; url=${to}"/>`,
+        );
+      }
+    },
+  );
+});
