@@ -25,5 +25,4 @@ User-Agent: Diffbot
 User-Agent: Timpibot
 Allow: /
 
-Host: https://seungahhong.github.io
 Sitemap: https://seungahhong.github.io/sitemap.xml
