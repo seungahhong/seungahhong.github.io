@@ -275,7 +275,7 @@ export function getTagCounts(posts: PostMeta[]): TagCount[] {
 }
 
 /**
- * 인기 글 Top N. data/popular.json(GA4 ko/en 합산 조회수)의 내림차순.
+ * 인기 글 Top N. data/popular.json(GA4 ko/en 합산 조회수)에 적힌 순서 그대로.
  * 조회수 데이터가 없으면 예전처럼 최신순으로 폴백한다(src/lib/popular.ts 참고).
  */
 export function getPopularPosts(

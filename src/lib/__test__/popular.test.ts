@@ -51,7 +51,8 @@ function snapshot(items: PopularData['items']): PopularData {
 }
 
 describe('rankPostsByViews', () => {
-  it('조회수 내림차순으로 정렬한다', () => {
+  it('스냅샷에 적힌 순서를 그대로 따른다(재정렬하지 않는다)', () => {
+    // 조회수가 오름차순으로 적혀 있어도 손대지 않는다 — items 배열이 곧 순위다.
     const ranked = rankPostsByViews(
       posts('a', 'b', 'c'),
       3,
@@ -62,13 +63,13 @@ describe('rankPostsByViews', () => {
       ]),
     );
     expect(ranked.map((post) => [post.slug, post.views])).toEqual([
+      ['a', 10],
       ['b', 90],
       ['c', 50],
-      ['a', 10],
     ]);
   });
 
-  it('조회수가 같으면 최신 글이 앞선다', () => {
+  it('조회수가 같아도 스냅샷 순서가 최신순을 이긴다', () => {
     const ranked = rankPostsByViews(
       posts('newer', 'older'),
       2,
@@ -77,7 +78,23 @@ describe('rankPostsByViews', () => {
         { slug: 'newer', views: 7 },
       ]),
     );
-    expect(ranked.map((post) => post.slug)).toEqual(['newer', 'older']);
+    expect(ranked.map((post) => post.slug)).toEqual(['older', 'newer']);
+  });
+
+  it('같은 슬러그가 두 번 적혀 있어도 한 번만 넣는다', () => {
+    const ranked = rankPostsByViews(
+      posts('a', 'b'),
+      2,
+      snapshot([
+        { slug: 'a', views: 9 },
+        { slug: 'a', views: 9 },
+        { slug: 'b', views: 4 },
+      ]),
+    );
+    expect(ranked.map((post) => [post.slug, post.views])).toEqual([
+      ['a', 9],
+      ['b', 4],
+    ]);
   });
 
   it('조회수가 잡힌 글이 모자라면 최신순으로 자리를 채우고 views는 null', () => {
