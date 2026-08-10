@@ -75,8 +75,10 @@ export function clearPopularCache(): void {
 }
 
 /**
- * 조회수 내림차순 Top N.
- * - 동률이면 최신 글이 앞선다(posts는 이미 최신순).
+ * 스냅샷에 적힌 순서 그대로 Top N.
+ * - items 배열이 곧 순위다. 여기서 다시 정렬하지 않는다 —
+ *   scripts/fetch-popular-posts.mjs가 조회수 내림차순(동률은 슬러그순)으로 굽고,
+ *   그 순서가 화면 순서와 어긋나지 않게 하려는 것이다.
  * - 조회수가 잡힌 글이 N개보다 적으면 나머지는 최신순으로 채우고 views는 null이 된다.
  * - 데이터 자체가 없으면 전부 최신순 — 계측 이전 상태에서도 위젯이 비지 않는다.
  */
@@ -85,25 +87,22 @@ export function rankPostsByViews(
   count: number,
   data: PopularData | null,
 ): PopularPost[] {
-  const views = new Map(data?.items.map((item) => [item.slug, item.views]));
   const latest = (list: PostMeta[]) =>
     list.map((post) => ({ ...post, views: null }));
 
-  if (views.size === 0) return latest(posts.slice(0, count));
+  const items = data?.items ?? [];
+  if (items.length === 0) return latest(posts.slice(0, count));
 
-  const recency = new Map(posts.map((post, index) => [post.slug, index]));
-  const viewsOf = (slug: string) => views.get(slug) ?? 0;
-  const recencyOf = (slug: string) => recency.get(slug) ?? Infinity;
-
-  const ranked = posts
-    .filter((post) => views.has(post.slug))
-    .sort(
-      (a, b) =>
-        viewsOf(b.slug) - viewsOf(a.slug) ||
-        recencyOf(a.slug) - recencyOf(b.slug),
-    )
-    .slice(0, count)
-    .map((post) => ({ ...post, views: viewsOf(post.slug) }));
+  const bySlug = new Map(posts.map((post) => [post.slug, post]));
+  const ranked: PopularPost[] = [];
+  for (const item of items) {
+    if (ranked.length >= count) break;
+    const post = bySlug.get(item.slug);
+    // 지워졌거나 중복으로 적힌 슬러그는 건너뛴다.
+    if (!post) continue;
+    bySlug.delete(item.slug);
+    ranked.push({ ...post, views: item.views });
+  }
 
   if (ranked.length >= count) return ranked;
 

@@ -7,6 +7,7 @@
 - `contents/blog/YYYY/MM/*.md` - 연/월별로 구성된 블로그 포스트
 - 영문 번역본은 `slug.en.md` 컨벤션. 번역본이 없으면 한국어 원문으로 폴백
 - `data/popular.json` - GA4 조회수 스냅샷(최근 90일, ko/en 합산). 커밋되며 빌드 시 읽는다.
+  `items` 배열 순서가 곧 Top 5 노출 순서다 — 빌드는 재정렬하지 않으니 정렬은 수집 스크립트 책임.
   `.github/workflows/refresh-popular.yml`(매일 07:00 KST)이 갱신하고, 없거나 비어 있으면 최신순 폴백.
   이 크론만은 `master`에 직접 커밋한다(아래 배포 특이사항 참고)
 
