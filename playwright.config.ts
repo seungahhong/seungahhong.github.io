@@ -15,7 +15,20 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   workers: process.env.CI ? 2 : 4,
-  reporter: process.env.CI ? 'line' : 'list',
+  /**
+   * CI에서 한 번 재시도한다. 감추기 위해서가 아니라 가르기 위해서다 —
+   * 재시도로 통과하면 Playwright가 flaky로 따로 표시해 주고, 진짜로 깨진
+   * 테스트는 두 번 다 실패해 그대로 배포를 막는다.
+   */
+  retries: process.env.CI ? 1 : 0,
+  /**
+   * `line`만 쓰면 실패한 테스트 이름이 잡 로그 안에만 남아, 로그 열람 권한이
+   * 없으면 무엇이 깨졌는지 알 수 없다(실제로 겪었다). `github` 리포터가
+   * 실패를 파일·라인 주석으로 올려 주고, `html`은 아티팩트로 올려 재현에 쓴다.
+   */
+  reporter: process.env.CI
+    ? [['github'], ['line'], ['html', { open: 'never' }]]
+    : 'list',
   use: {
     baseURL,
     trace: 'retain-on-failure',
