@@ -7,7 +7,8 @@
 - `contents/blog/YYYY/MM/*.md` - 연/월별로 구성된 블로그 포스트
 - 영문 번역본은 `slug.en.md` 컨벤션. 번역본이 없으면 한국어 원문으로 폴백
 - `data/popular.json` - GA4 조회수 스냅샷(최근 90일, ko/en 합산). 커밋되며 빌드 시 읽는다.
-  `.github/workflows/refresh-popular.yml`(매일 03:00 KST)이 갱신하고, 없거나 비어 있으면 최신순 폴백
+  `.github/workflows/refresh-popular.yml`(매일 07:00 KST)이 갱신하고, 없거나 비어 있으면 최신순 폴백.
+  이 크론만은 `master`에 직접 커밋한다(아래 배포 특이사항 참고)
 
 ## 비표준 명령어
 
@@ -26,5 +27,8 @@ pnpm fetch:popular
 - 정적 익스포트 제약 때문에 태그 페이지는 per-tag 정적 라우트 대신 쿼리 기반 클라이언트 필터 사용(한글 디렉토리명 익스포트 리스크 회피)
 - 배포 경로는 `develop` → `master` 머지 → `.github/workflows/deploy.yml` → `gh-pages` 브랜치.
   GitHub Pages가 서빙하는 것은 `gh-pages`다. `pnpm deploy`는 CI를 건너뛰는 수동 폴백이다
+- 예외로 `refresh-popular.yml`은 `master`에 `data/popular.json`만 직접 커밋한다(develop 경유 안 함).
+  크론이 작업 중인 `develop`을 배포로 밀어내지 않게 하려는 것이다. 대신 `develop`의 스냅샷은
+  뒤처지므로, `develop`에서 `pnpm fetch:popular`를 돌려 커밋하면 머지 때 충돌할 수 있다
 - Gatsby 시절 주소(`/blog/<연>/<월>/<슬러그>/`, `/about/`)는 `src/lib/legacy-urls.ts` 기준으로
   canonical 스텁을 익스포트해 새 주소로 합친다. 정적 호스팅이라 301을 쓸 수 없어서다

@@ -1,17 +1,19 @@
 name: refresh popular posts
 
-# GA4 조회수 스냅샷(data/popular.json)을 갱신해 develop에 커밋하고, master로 가는 PR을 열어 둔다.
-# 실제 배포는 그 PR이 master에 머지될 때 deploy.yml이 수행한다.
+# GA4 조회수 스냅샷(data/popular.json)을 갱신해 master에 직접 커밋한다.
+# master push가 deploy.yml을 깨우므로, 사이드바 "Top 5 인기 글"이 그대로 배포까지 반영된다.
+# develop은 건드리지 않는다 — 작업 중인 브랜치를 크론이 배포로 밀어내지 않기 위해서다.
 #
 # 필요한 시크릿
 #   GA_PROPERTY_ID          GA4 속성 ID(숫자). 측정 ID(G-...)가 아니다.
 #   GA_SERVICE_ACCOUNT_KEY  Analytics Data API 뷰어 권한이 있는 서비스 계정 JSON 키(원문 또는 base64)
-#   ACCESS_TOKEN            develop 푸시 + PR 생성용 PAT (deploy.yml과 공용)
+#   ACCESS_TOKEN            master 푸시용 PAT (deploy.yml과 공용).
+#                           기본 GITHUB_TOKEN으로 푸시하면 deploy.yml이 트리거되지 않아 배포가 멈춘다.
 
 on:
   schedule:
-    # 매일 03:00 KST (= 18:00 UTC 전날)
-    - cron: '0 18 * * *'
+    # 매일 07:00 KST (= 22:00 UTC 전날)
+    - cron: '0 22 * * *'
   workflow_dispatch:
     inputs:
       range_days:
@@ -21,7 +23,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
   group: refresh-popular
@@ -32,10 +33,10 @@ jobs:
     name: Fetch GA4 pageviews → data/popular.json
     runs-on: ubuntu-latest
     steps:
-      - name: Git checkout (develop)
+      - name: Git checkout (master)
         uses: actions/checkout@v4
         with:
-          ref: develop
+          ref: master
           token: ${{ secrets.ACCESS_TOKEN }}
 
       # 수집 스크립트는 의존성이 없다(node:crypto + fetch). pnpm install을 건너뛴다.
@@ -61,33 +62,13 @@ jobs:
             echo '순위 변화 없음 — 커밋을 건너뜁니다.'
           fi
 
-      - name: Commit to develop
+      # 이 푸시가 deploy.yml(on: push → master)을 깨워 빌드·배포까지 이어진다.
+      - name: Commit to master
         if: steps.diff.outputs.changed == 'true'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/popular.json
           git commit -m 'chore: 인기 글 조회수 스냅샷 갱신'
-          git pull --rebase origin develop
-          git push origin HEAD:develop
-
-      - name: Open develop → master PR (없을 때만)
-        if: steps.diff.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: |
-          existing=$(gh pr list --base master --head develop --state open --json number --jq '.[0].number')
-          if [ -n "$existing" ]; then
-            echo "이미 열린 PR #${existing}이 있어 새로 만들지 않습니다. (이번 커밋도 여기에 포함됩니다)"
-            exit 0
-          fi
-          cat > /tmp/pr-body.md <<'BODY'
-          사이드바 "Top 5 인기 글" 순위를 최신 GA4 조회수로 갱신합니다.
-
-          - 자동 생성: `.github/workflows/refresh-popular.yml`
-          - 데이터: `data/popular.json` (최근 90일, ko/en 합산 페이지뷰)
-          - 머지하면 `deploy.yml`이 빌드·배포합니다.
-          BODY
-          gh pr create --base master --head develop \
-            --title 'chore: 인기 글 조회수 스냅샷 반영' \
-            --body-file /tmp/pr-body.md
+          git pull --rebase origin master
+          git push origin HEAD:master
