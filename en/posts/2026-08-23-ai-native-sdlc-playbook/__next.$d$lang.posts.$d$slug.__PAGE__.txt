@@ -1,0 +1,384 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+4:I[52881,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],""]
+d:I[27722,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+e:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+2:T643,{"@context":"https://schema.org","@type":"BlogPosting","headline":"The AI-Native SDLC Playbook — Code Is No Longer the Bottleneck","description":"1. What Is This Post About? Here it is in a single sentence. As writing code got faster, the bottleneck moved to everything around it. Planning, design,…","datePublished":"2026-08-23","dateModified":"2026-08-23","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-08-23-ai-native-sdlc-playbook/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-08-23-ai-native-sdlc-playbook/"},"image":"https://seungahhong.github.io/blog-assets/2026/08/assets/23/thumbnail.png","keywords":["AI","Claude","SDLC","harness","dev-process"],"articleSection":"Development","wordCount":2153,"timeRequired":"PT11M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"The AI-Native SDLC Playbook — Code Is No Longer the Bottleneck\",\"item\":\"https://seungahhong.github.io/en/posts/2026-08-23-ai-native-sdlc-playbook/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"The AI-Native SDLC Playbook — Code Is No Longer the Bottleneck"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"The AI-Native SDLC Playbook — Code Is No Longer the Bottleneck"}],"$L5",false,"$L6"]}],"$L7","$L8"]}],"$L9"]}]}]],["$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"DSdZnpwhLTQ_A2e-tQVB6"}
+5:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-08-23","className":"meta-mono","children":"08/23/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[11,"min read"]}]]}]
+6:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","Claude",{"children":["$","$L4",null,{"href":"/en/tags?tag=Claude","className":"tag-pill","children":"Claude"}]}],["$","li","SDLC",{"children":["$","$L4",null,{"href":"/en/tags?tag=SDLC","className":"tag-pill","children":"SDLC"}]}],["$","li","harness",{"children":["$","$L4",null,{"href":"/en/tags?tag=harness","className":"tag-pill","children":"harness"}]}],["$","li","dev-process",{"children":["$","$L4",null,{"href":"/en/tags?tag=dev-process","className":"tag-pill","children":"dev-process"}]}]]}]
+c:T6155,<h2 id="1-what-is-this-post-about">1. What Is This Post About?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-what-is-this-post-about"><span class="icon icon-link"></span></a></h2>
+<p>Here it is in a single sentence.</p>
+<blockquote>
+<p><strong>As writing code got faster, the bottleneck moved to everything around it.</strong> Planning, design, review, testing, and deployment still run at human speed. The AI-Native SDLC Playbook is Anthropic's answer to <strong>"how do we rebuild the rest?"</strong></p>
+</blockquote>
+<p>The last few posts have been climbing a ladder. How to build a <a href="/en/posts/2026-06-04-fe-harness/">harness</a> → how to <a href="/en/posts/2026-07-31-context-engineering-claude5/">trim context</a> → how to <a href="/en/posts/2026-08-01-choosing-claude-model/">choose a model</a>. This post is one rung higher: <strong>the development process itself.</strong></p>
+<h3 id="the-premise-broke-the-process-didnt">The Premise Broke; the Process Didn't<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-premise-broke-the-process-didnt"><span class="icon icon-link"></span></a></h3>
+<p>The playbook's opening line is effectively the whole argument.</p>
+<blockquote>
+<p><strong>"Code is no longer the bottleneck."</strong></p>
+</blockquote>
+<p>The SDLC we use today was designed when <strong>writing code was the most expensive phase</strong>. Backlogs, refinement, sprints, review queues — all optimized around the assumption that implementation dominates. That assumption broke.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">An agent opens a PR in 30 minutes</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ↓</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">It waits 3 days in the review queue</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ↓</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"We adopted AI — why aren't we faster?"</span></span></code></pre></figure>
+<p>Because only one stage got faster and the rest didn't. <strong>Speeding up a single stage by 10× doesn't make the system 10× faster; it just relocates the bottleneck.</strong></p>
+<h3 id="the-playbook-really-has-one-rule">The Playbook Really Has One Rule<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-playbook-really-has-one-rule"><span class="icon icon-link"></span></a></h3>
+<p>Six stages and dozens of plays, but one rule runs through all of them.</p>
+<blockquote>
+<p><strong>"Each stage commits an artifact the next stage can read."</strong></p>
+</blockquote>
+<p>That's why it becomes a <strong>loop</strong> rather than a line. Outputs that only humans read (meeting notes, Jira tickets, Confluence pages) become <strong>inputs an agent can consume to start the next stage.</strong></p>
+<hr>
+<h2 id="2-six-stages-and-the-artifact-chain">2. Six Stages and the Artifact Chain<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-six-stages-and-the-artifact-chain"><span class="icon icon-link"></span></a></h2>
+<p>The whole picture first.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Plan     → intent.md      problem · desired outcome · affected systems · constraints · open questions</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Design   → spec.md        a spec written with org standards applied as skills + flagged concerns</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Build    → plan.md → PR   the plan agreed in plan mode, plus the diff and tests that follow it</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Test     → eval results   continuous evals that run whenever config (CLAUDE.md/skills/hooks) changes</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Deploy   → deploy record  review findings · approval-gate logs</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Maintain → intent.md      an incident diagnosis re-enters in the Stage 1 format</span></span></code></pre></figure>
+<p>The last line is the point. <strong>A problem found in production is written back out as an <code>intent.md</code> and re-enters at the front of the pipeline.</strong> That's what makes it a loop instead of a sequence.</p>
+<h3 id="what-actually-changes">What Actually Changes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#what-actually-changes"><span class="icon icon-link"></span></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Stage</th><th>Traditional</th><th>AI-Native</th></tr></thead><tbody><tr><td><strong>Plan</strong></td><td>Committee-driven, hand-written requirements</td><td>Claude synthesizes sources into <code>intent.md</code></td></tr><tr><td><strong>Design</strong></td><td>Separate analyst and designer phases</td><td>Compressed into <strong>one session</strong> guided by skills</td></tr><tr><td><strong>Build</strong></td><td>Hand-written code and tests, docs after the fact</td><td>Agent generates them; <code>CLAUDE.md</code> is version-controlled</td></tr><tr><td><strong>Test</strong></td><td>QA gates at phase boundaries</td><td>Continuous evals woven through implementation</td></tr><tr><td><strong>Deploy</strong></td><td>Line-by-line human review, uneven governance</td><td>Agentic review layers + hooks enforcing gates</td></tr><tr><td><strong>Maintain</strong></td><td>Humans watch and restart the process manually</td><td>Agents monitor; a breach re-enters the loop</td></tr></tbody></table>
+<hr>
+<h2 id="3-what-changes-at-each-stage">3. What Changes at Each Stage<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-what-changes-at-each-stage"><span class="icon icon-link"></span></a></h2>
+<h3 id="3-1-plan--intentmd-instead-of-meetings">3-1. Plan — <code>intent.md</code> Instead of Meetings<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-1-plan--intentmd-instead-of-meetings"><span class="icon icon-link"></span></a></h3>
+<p>Whoever has the idea brainstorms with Claude <strong>directly</strong> and produces <code>intent.md</code> — a human-readable, machine-actionable proto-spec.</p>
+<p>What matters here isn't the format but <strong>who writes it.</strong> The infrastructure ask for this stage is Claude access for non-engineers and a shared, version-controlled home for intents.</p>
+<ul>
+<li><strong>Leading</strong> — time from first conversation to a committed <code>intent.md</code> (weeks → hours)</li>
+<li><strong>Lagging</strong> — survival rate of intents accepted into Stage 2</li>
+</ul>
+<h3 id="3-2-design--requirements-and-design-collapse-into-one-session">3-2. Design — Requirements and Design Collapse into One Session<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-2-design--requirements-and-design-collapse-into-one-session"><span class="icon icon-link"></span></a></h3>
+<p>Attach the approved <code>intent.md</code> to a session <strong>loaded with the org's skills</strong> (brand, security, compliance, UX) and Claude produces <code>spec.md</code>, with anything questionable flagged.</p>
+<blockquote>
+<p>Because standards are <strong>encoded as skills</strong>, policy is applied <em>while the spec is being written</em> — not caught at review time.</p>
+</blockquote>
+<p>Flagged concerns route to policy owners <strong>before</strong> engineering ever sees the spec. This is the pattern that recurs later: <strong>enforcement at the moment of action, not inspection afterward.</strong></p>
+<h3 id="3-3-build--plan-mode-as-the-default">3-3. Build — Plan Mode as the Default<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-3-build--plan-mode-as-the-default"><span class="icon icon-link"></span></a></h3>
+<p>The thickest stage, with five plays.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Play</th><th>What</th><th>Why</th></tr></thead><tbody><tr><td><strong>Plan mode</strong></td><td>Feed <code>spec.md</code>, iterate until the plan is right → commit <code>plan.md</code>, then implement</td><td>Later stages get something to check the diff against</td></tr><tr><td><strong>CLAUDE.md</strong></td><td>Commands, conventions, architecture, common mistakes</td><td>Knowledge from people's heads becomes <strong>a file read at the top of every session</strong></td></tr><tr><td><strong>Skills</strong></td><td>Institutional knowledge that must apply consistently</td><td>When policy changes, you change one place</td></tr><tr><td><strong>Hooks</strong></td><td>Allow, block, or ask — deterministically</td><td>A guardrail that doesn't depend on the model's judgment</td></tr><tr><td><strong>Parallel sessions</strong></td><td>Separate git worktrees, several sessions at once</td><td>The ceiling is <strong>how many streams one person can properly review</strong></td></tr></tbody></table>
+<p>Two of the most practical rules in the whole playbook live here.</p>
+<blockquote>
+<p><strong>"When Claude makes a mistake twice, the correction goes into CLAUDE.md."</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>"For bug fixes, write the failing test first and commit it. Only then ask Claude to make it pass without editing the test."</strong></p>
+</blockquote>
+<p>The second one matters more than it looks. Ask for tests afterward and the agent writes tests <strong>shaped by its own implementation.</strong> Inverting the order is all it takes to make the oracle independent of the code.</p>
+<p>And one more: <strong>the feedback loop.</strong> Claude runs the tests, builds, and takes screenshots to verify its own work <em>before</em> an engineer looks at it. Leave verification on the human side and it becomes the new bottleneck.</p>
+<h3 id="3-4-test--evals-become-a-thread-not-a-gate">3-4. Test — Evals Become a Thread, Not a Gate<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-4-test--evals-become-a-thread-not-a-gate"><span class="icon icon-link"></span></a></h3>
+<p>Instead of QA guarding a phase boundary, <strong>the eval suite is woven through implementation.</strong></p>
+<p>The key question is <strong>when it runs</strong>: when <code>CLAUDE.md</code>, skills, or hooks change. In other words, <strong>treat the agent's configuration as code and put regression tests on changes to it.</strong> And every production incident becomes a permanent eval.</p>
+<blockquote>
+<p>Enforce a pass-rate threshold as a merge check; log runs so they can be compared.</p>
+</blockquote>
+<p>This is the same argument as <a href="/en/posts/2026-07-05-meta-harness/">self-healing harnesses</a>: verify rules when you <em>add</em> them, too.</p>
+<h3 id="3-5-deploy--review-moves-up-a-level">3-5. Deploy — Review Moves Up a Level<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-5-deploy--review-moves-up-a-level"><span class="icon icon-link"></span></a></h3>
+<p>Claude reviews incoming PRs against policy, and addresses review comments on its own PRs. The tech lead writes the <strong>review policy</strong> into <code>REVIEW.md</code>: which passes to run (bugs, security, compliance), how severity is graded, the cap on nits, and what's excluded.</p>
+<blockquote>
+<p><strong>"All PRs get an identical set of review passes... Human attention moves up a level, to whether the change does what the plan intended."</strong></p>
+</blockquote>
+<p>Hooks then act as <strong>approval gates</strong>. A production deploy pauses until a named person authorizes it, and allow/block decisions are logged with timestamps.</p>
+<p>Deployment itself is exposed via MCP with scoped credentials: agents deploy to dev freely, production requires the gate.</p>
+<blockquote>
+<p><strong>"Rollback should be the most rehearsed path in the pipeline."</strong> Before an autonomous agent is allowed to roll back, that path should already be exercised regularly in staging.</p>
+</blockquote>
+<h3 id="3-6-maintain--closing-the-loop">3-6. Maintain — Closing the Loop<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-6-maintain--closing-the-loop"><span class="icon icon-link"></span></a></h3>
+<p>A detection script watches production metrics (test failure rate, post-deploy 5xx, PR cycle time) and judges deviations with <strong>deterministic rules (Western Electric)</strong>. Response authority scales with the size of the breach.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Breach</th><th>Response</th></tr></thead><tbody><tr><td><strong>1σ</strong></td><td>Log only</td></tr><tr><td><strong>2σ</strong></td><td>Claude diagnoses (read-only)</td></tr><tr><td><strong>3σ</strong></td><td>Claude may act (open a PR or trigger a pre-approved runbook)</td></tr></tbody></table>
+<p>Scaling permission to severity is, to me, the sharpest idea in the playbook. The question stops being <strong>"should the agent have authority?"</strong> and becomes <strong>"how much, and when?"</strong></p>
+<p>The diagnosis is then written as an <code>intent.md</code> <strong>in the Stage 1 format</strong> and lands in the triage queue. The loop closes.</p>
+<p>The Slack/Teams integration (Claude Tag) works on the same principle: Claude joins the incident channel as a member and gives first response, and <strong>the conversation itself is the audit trail.</strong></p>
+<blockquote>
+<p><strong>"The channel is the audit trail: request, diagnosis, human authorization and fix all stay where the incident was handled."</strong></p>
+</blockquote>
+<hr>
+<h2 id="4-four-controls--and-where-each-belongs">4. Four Controls — and Where Each Belongs<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-four-controls--and-where-each-belongs"><span class="icon icon-link"></span></a></h2>
+<p>This is what people mix up most in practice. All four "give the agent rules," but they behave completely differently.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>Nature</th><th>Enforcement</th><th>Put here</th><th>Don't put here</th></tr></thead><tbody><tr><td><strong>CLAUDE.md</strong></td><td>Context for this repo</td><td>None (read and considered)</td><td>Commands, conventions, structure, repeated mistakes</td><td>Org-wide policy</td></tr><tr><td><strong>Skills</strong></td><td>Policy applied consistently</td><td>None (constrains actions)</td><td>Security review procedure, brand rules</td><td>Component details</td></tr><tr><td><strong>Hooks</strong></td><td>Deterministic gate</td><td><strong>Yes</strong> (block / require approval)</td><td>Non-negotiable gates</td><td>Rules needing judgment</td></tr><tr><td><strong>Evals</strong></td><td>Regression tests for config</td><td><strong>Yes</strong> (merge check)</td><td>Cases derived from incidents</td><td>One-off checks</td></tr></tbody></table>
+<p>The column to read is <strong>Enforcement</strong>. <code>CLAUDE.md</code> and skills are things you <em>hope</em> the model follows; hooks and evals <strong>hold even when the model doesn't cooperate.</strong> Writing a must-hold rule into <code>CLAUDE.md</code> and feeling safe is the common mistake.</p>
+<blockquote>
+<p>As the playbook puts it: <strong>blocks should explain themselves.</strong> A hook that blocks without saying why just invites the agent to route around it.</p>
+</blockquote>
+<hr>
+<h2 id="5-measure-only-leading-indicators-and-you-will-regret-it">5. Measure Only Leading Indicators and You Will Regret It<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-measure-only-leading-indicators-and-you-will-regret-it"><span class="icon icon-link"></span></a></h2>
+<p>There's a reason every stage in the playbook pairs a leading indicator with a lagging one.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>What it measures</th><th>Examples</th></tr></thead><tbody><tr><td><strong>Leading</strong></td><td>How much faster</td><td>Idea→artifact time, time to first review, first-pass CI success</td></tr><tr><td><strong>Lagging</strong></td><td>Whether quality held</td><td>Spec drift, defects caught pre-merge vs. reaching production, repeat incidents</td></tr></tbody></table>
+<p><strong>Agents make leading indicators look great with almost no effort.</strong> PRs multiply, time-to-first-review drops to minutes, idea-to-spec takes a day. Whether that's <strong>acceleration with quality intact or debt you'll repay later</strong> is invisible from leading indicators alone.</p>
+<p>Two lagging indicators are especially good:</p>
+<ul>
+<li><strong>How often the merged diff matches the committed <code>plan.md</code></strong> — did we build what we planned?</li>
+<li><strong>How many <code>spec.md</code> commits land after the first <code>plan.md</code> for the same change</strong> — did requirements churn?</li>
+</ul>
+<p>Committing artifacts makes both of these <strong>measurable automatically.</strong> That's the real payoff of the artifact chain: the audit trail is a side effect, measurability is the substance.</p>
+<hr>
+<h2 id="6-applying-it-to-this-repo">6. Applying It to This Repo<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-applying-it-to-this-repo"><span class="icon icon-link"></span></a></h2>
+<p>Reading without applying leaves nothing behind, so I mapped this blog's repo onto the six stages.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Stage</th><th>What exists</th><th>What's missing</th></tr></thead><tbody><tr><td><strong>Plan</strong></td><td>—</td><td>No <code>intent.md</code></td></tr><tr><td><strong>Design</strong></td><td><code>product-spec-harness</code> produces PRDs and stories</td><td>Outputs don't form a <strong>committed chain</strong></td></tr><tr><td><strong>Build</strong></td><td><code>CLAUDE.md</code>, several harness skills</td><td><code>plan.md</code> never gets committed</td></tr><tr><td><strong>Test</strong></td><td>husky pre-commit in 3 steps (lint→vitest→playwright)</td><td><strong>No evals for harness/skill changes</strong></td></tr><tr><td><strong>Deploy</strong></td><td><code>deploy.yml</code> → <code>gh-pages</code>, fully automated</td><td>No approval gate (barely needed for a personal blog)</td></tr><tr><td><strong>Maintain</strong></td><td>One cron that refreshes popular posts</td><td>No metric watch, no auto-diagnosis</td></tr></tbody></table>
+<p>Honestly, a personal blog does not need all six stages. Production approval gates and 3σ autonomous response are <strong>overkill at this size.</strong> But two things are worth taking regardless of scale.</p>
+<p><strong>① The missing evals are the biggest hole.</strong> The pre-commit hook runs lint, unit tests, and E2E — all of which check <strong>application code.</strong> There is <em>nothing</em> that checks whether editing <code>CLAUDE.md</code> or changing a harness skill made the agent behave worse. The playbook's whole point is to treat configuration as code, and configuration is precisely what sits outside my tests.</p>
+<p><strong>② <code>plan.md</code> pays off even solo.</strong> Commit the plan and you can trace "why did I do it this way" through intent rather than through a diff. In a one-person repo, <strong>me three months from now is a stranger.</strong></p>
+<hr>
+<h2 id="7-easy-things-to-misread">7. Easy Things to Misread<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-easy-things-to-misread"><span class="icon icon-link"></span></a></h2>
+<h3 id="misread-1--so-its-just-more-documents">Misread 1 — "So it's just more documents?"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misread-1--so-its-just-more-documents"><span class="icon icon-link"></span></a></h3>
+<p>No. <code>intent.md</code>, <code>spec.md</code>, and <code>plan.md</code> are <strong>inputs to the next stage, not reports for humans.</strong> The audience is different.</p>
+<p>The test is simple: <strong>delete any artifact nobody reads — human or agent.</strong> If the next stage doesn't actually consume the file to get started, it isn't an artifact in the playbook's sense; it's just a document.</p>
+<h3 id="misread-2--human-review-goes-away">Misread 2 — "Human review goes away"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misread-2--human-review-goes-away"><span class="icon icon-link"></span></a></h3>
+<p>The opposite. Review <strong>moves up a level.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Before: "Does this diff have bugs?"          ← a machine answers this better</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">After:  "Does this change do what plan.md intended?"  ← only a human answers this</span></span></code></pre></figure>
+<p>The bug, security, and compliance passes run <strong>identically on every PR</strong> — more consistently than humans manage (humans skim on Friday afternoons). What's left are the questions that need judgment.</p>
+<h3 id="misread-3--this-is-enterprise-only">Misread 3 — "This is enterprise-only"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misread-3--this-is-enterprise-only"><span class="icon icon-link"></span></a></h3>
+<p>The full six stages plus Managed Settings plus 3σ autonomy, yes. But <strong>the one artifact rule</strong> you can adopt alone, today. Get a plan in plan mode, commit it, check the merge against it — no infrastructure required.</p>
+<hr>
+<h2 id="8-wrapping-up">8. Wrapping Up<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-wrapping-up"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>What</th><th>Why</th></tr></thead><tbody><tr><td><strong>1. The bottleneck moved</strong></td><td>It isn't code; it's everything around it</td><td>One fast stage doesn't make a fast system</td></tr><tr><td><strong>2. Commit an artifact per stage</strong></td><td>In a form the next stage can read</td><td>Audit trail is the side effect; measurability is the point</td></tr><tr><td><strong>3. Rules that must hold go in hooks and evals</strong></td><td><code>CLAUDE.md</code> records a hope, not a guarantee</td><td>It has to hold when the model doesn't cooperate</td></tr></tbody></table>
+<p>And this is the same story as the earlier posts, on a different axis.</p>
+<ul>
+<li><a href="/en/posts/2026-07-05-meta-harness/">Self-healing harness</a> — verify when you <strong>add</strong> a rule</li>
+<li><a href="/en/posts/2026-07-31-context-engineering-claude5/">Trimming context engineering</a> — verify when you <strong>remove</strong> one</li>
+<li><a href="/en/posts/2026-08-01-choosing-claude-model/">Choosing a model</a> — verify when you <strong>pick a model</strong></li>
+<li>This post — verify when you <strong>change the process.</strong> That's what evals are</li>
+</ul>
+<p>The playbook's closing line works as this post's closing line too.</p>
+<blockquote>
+<p><strong>"The loop keeps running. Human judgement stays above it."</strong></p>
+</blockquote>
+<p>What gets automated is the loop. What doesn't is <strong>deciding where to point it.</strong></p>
+<hr>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Anthropic, <a href="https://claude.com/blog/the-ai-native-sdlc-playbook">The AI-Native SDLC Playbook</a> (2026)</li>
+<li>Anthropic, <a href="https://platform.claude.com/docs/en/claude-code/hooks">Claude Code Hooks</a> · <a href="https://platform.claude.com/docs/en/claude-code/skills">Agent Skills</a></li>
+<li>Earlier posts — <a href="/en/posts/2026-08-01-choosing-claude-model/">Choosing a Claude Model</a> · <a href="/en/posts/2026-07-31-context-engineering-claude5/">Trimming Context Engineering</a> · <a href="/en/posts/2026-07-05-meta-harness/">Self-Healing Harness Engineering</a></li>
+</ul>7:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$c"}}]}]
+8:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/en/posts/2026-08-22-delete-and-verify","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"How the Creator of Claude Code Works — Delete, Overshoot, Verify"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+9:["$","div",null,{"className":"hidden lg:block","children":["$","$Ld",null,{"headings":[{"id":"1-what-is-this-post-about","text":"1. What Is This Post About?","depth":1},{"id":"the-premise-broke-the-process-didnt","text":"The Premise Broke; the Process Didn't","depth":2},{"id":"the-playbook-really-has-one-rule","text":"The Playbook Really Has One Rule","depth":2},{"id":"2-six-stages-and-the-artifact-chain","text":"2. Six Stages and the Artifact Chain","depth":1},{"id":"what-actually-changes","text":"What Actually Changes","depth":2},{"id":"3-what-changes-at-each-stage","text":"3. What Changes at Each Stage","depth":1},{"id":"3-1-plan--intentmd-instead-of-meetings","text":"3-1. Plan — intent.md Instead of Meetings","depth":2},{"id":"3-2-design--requirements-and-design-collapse-into-one-session","text":"3-2. Design — Requirements and Design Collapse into One Session","depth":2},{"id":"3-3-build--plan-mode-as-the-default","text":"3-3. Build — Plan Mode as the Default","depth":2},{"id":"3-4-test--evals-become-a-thread-not-a-gate","text":"3-4. Test — Evals Become a Thread, Not a Gate","depth":2},{"id":"3-5-deploy--review-moves-up-a-level","text":"3-5. Deploy — Review Moves Up a Level","depth":2},{"id":"3-6-maintain--closing-the-loop","text":"3-6. Maintain — Closing the Loop","depth":2},{"id":"4-four-controls--and-where-each-belongs","text":"4. Four Controls — and Where Each Belongs","depth":1},{"id":"5-measure-only-leading-indicators-and-you-will-regret-it","text":"5. Measure Only Leading Indicators and You Will Regret It","depth":1},{"id":"6-applying-it-to-this-repo","text":"6. Applying It to This Repo","depth":1},{"id":"7-easy-things-to-misread","text":"7. Easy Things to Misread","depth":1},{"id":"misread-1--so-its-just-more-documents","text":"Misread 1 — \"So it's just more documents?\"","depth":2},{"id":"misread-2--human-review-goes-away","text":"Misread 2 — \"Human review goes away\"","depth":2},{"id":"misread-3--this-is-enterprise-only","text":"Misread 3 — \"This is enterprise-only\"","depth":2},{"id":"8-wrapping-up","text":"8. Wrapping Up","depth":1},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true}]
+b:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+10:null

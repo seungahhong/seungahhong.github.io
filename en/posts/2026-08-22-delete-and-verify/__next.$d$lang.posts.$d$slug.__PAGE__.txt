@@ -1,0 +1,291 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+4:I[52881,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],""]
+d:I[27722,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+e:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+2:T641,{"@context":"https://schema.org","@type":"BlogPosting","headline":"How the Creator of Claude Code Works — Delete, Overshoot, Verify","description":"1. What is this post about? In one line: Getting good with agents is not about writing better instructions. It is about deleting the instructions you have and…","datePublished":"2026-08-22","dateModified":"2026-08-22","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-08-22-delete-and-verify/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-08-22-delete-and-verify/"},"image":"https://seungahhong.github.io/blog-assets/2026/08/assets/22/thumbnail.png","keywords":["AI","Claude","agent","verification","harness"],"articleSection":"Development","wordCount":2754,"timeRequired":"PT14M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"How the Creator of Claude Code Works — Delete, Overshoot, Verify\",\"item\":\"https://seungahhong.github.io/en/posts/2026-08-22-delete-and-verify/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"How the Creator of Claude Code Works — Delete, Overshoot, Verify"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"How the Creator of Claude Code Works — Delete, Overshoot, Verify"}],"$L5",false,"$L6"]}],"$L7","$L8"]}],"$L9"]}]}]],["$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"DSdZnpwhLTQ_A2e-tQVB6"}
+5:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-08-22","className":"meta-mono","children":"08/22/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[14,"min read"]}]]}]
+6:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","Claude",{"children":["$","$L4",null,{"href":"/en/tags?tag=Claude","className":"tag-pill","children":"Claude"}]}],["$","li","agent",{"children":["$","$L4",null,{"href":"/en/tags?tag=agent","className":"tag-pill","children":"agent"}]}],["$","li","verification",{"children":["$","$L4",null,{"href":"/en/tags?tag=verification","className":"tag-pill","children":"verification"}]}],["$","li","harness",{"children":["$","$L4",null,{"href":"/en/tags?tag=harness","className":"tag-pill","children":"harness"}]}]]}]
+c:T799b,<h2 id="1-what-is-this-post-about">1. What is this post about?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-what-is-this-post-about"><span class="icon icon-link"></span></a></h2>
+<p>In one line:</p>
+<blockquote>
+<p><strong>Getting good with agents is not about writing better instructions. It is about deleting the instructions you have and building a grader instead.</strong></p>
+</blockquote>
+<p>By <strong>grader</strong> I mean a command the agent can run by itself to learn pass or fail — a type check, a test suite, a screenshot diff. The word shows up throughout this post, so let's pin it down first.</p>
+<p>At Y Combinator Startup School 2026, Diana Hu interviewed Boris Cherny, the creator of Claude Code. What went viral were the war stories: "a codebase rewritten into another language in 11 days," "a task that has been running alone for two weeks," "thousands of agents spawned."</p>
+<p>But <strong>war stories are outcomes, not methods.</strong> This post unpacks the other side — the conditions and habits behind those outcomes — at a size a junior developer can actually copy.</p>
+<p>The previous posts came in this order. <a href="/en/posts/2026-06-04-fe-harness/">FE harness</a> — how to build the tooling → <a href="/en/posts/2026-07-05-meta-harness/">self-healing harness</a> — how to make it fix itself → <a href="/en/posts/2026-07-31-context-engineering-claude5/">context engineering by subtraction</a> — what to take out → <a href="/en/posts/2026-08-01-choosing-claude-model/">choosing a Claude model</a> — where to run it. This one is about <strong>the daily habits of the person using that tooling.</strong></p>
+<h3 id="the-skeleton--three-moves">The skeleton — three moves<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-skeleton--three-moves"><span class="icon icon-link"></span></a></h3>
+<p>Only three moves run through the whole interview. Everything else is an application of them.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">① Delete     strip the instructions that now get in this model's way</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">② Overshoot  hand over work that looks slightly too big, and don't dictate the how</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">③ Verify     give it a way to find out it is wrong  ← the one most people skip</span></span></code></pre></figure>
+<p>If ③ is missing, ①② are just an accident waiting to happen. Delete your instructions with no grader and you lose control; hand over hard work with no grader and <strong>the longer it runs, the further off course it goes.</strong></p>
+<hr>
+<h2 id="2-first-coordinates--the-model-and-the-harness-are-different-layers">2. First, coordinates — the model and the harness are different layers<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-first-coordinates--the-model-and-the-harness-are-different-layers"><span class="icon icon-link"></span></a></h2>
+<p>Before the main argument, one layer split. This is where the most common attribution error happens. When results are bad we <strong>blame the model, but the thing that read your files and ran your commands was not the model.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">my prompt</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    │</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ▼</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">┌─ harness (Claude Code) ────────────────────────────────</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│  system prompt · tool descriptions · CLAUDE.md   re-read every request</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│  permission checks · hooks                       run regardless of the model</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│           │  all of the above is handed over</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│           ▼</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│      [ model ]  ← all it does is continue text</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│           │</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">│           └──▶ feed the result back in (the loop)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">└────────────────────────────────────────────────────────</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    │</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ▼</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">the answer you see</span></span></code></pre></figure>
+<p>A <strong>harness</strong> is the whole program wrapped around the model. Think of Vitest — you write the test functions, but the runner decides what order they run in and what counts as passing. The model and Claude Code relate exactly that way. It is why the same model can look completely different in ability under a different harness.</p>
+<p>And the harness can interfere in two directions. <strong>Hobbling</strong> is when the model could do it but your setup blocks it (permissions refuse an edit, so it keeps printing diffs instead). <strong>Product overhang</strong> is when the model could do it but nobody built a surface to ask for it — like bumping a library version while nobody reads the changelog, so the whole team keeps hand-rolling what already ships. In short: <strong>when results are bad, suspect your harness before the model.</strong></p>
+<hr>
+<h2 id="3-move---delete">3. Move ① — Delete<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-move---delete"><span class="icon icon-link"></span></a></h2>
+<p>Claude Code strips a large part of its system prompt every time a new model ships. For Opus 5 they deleted 80% of it. That fact was already covered in <a href="/en/posts/2026-07-31-context-engineering-claude5/">context engineering by subtraction</a>, so here we only look at <strong>how</strong> the deleting is done.</p>
+<p>Start with the criterion. You don't delete things because they are long.</p>
+<blockquote>
+<p>Much of what was in the system prompt was <strong>correcting for behavior the model should have known but didn't.</strong> The current model just does it.</p>
+</blockquote>
+<p>So what you may delete are the <strong>lines written to fix the model</strong>, and what you must keep are the <strong>facts the model cannot know</strong>. Running my own blog repo's <code>CLAUDE.md</code> through that criterion splits it like this.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>The line in the file</th><th>Verdict</th><th>Why</th></tr></thead><tbody><tr><td>"Don't delete test code on your own"</td><td>❌ Delete candidate</td><td>Written to correct a model defect — today's model won't do it unprompted</td></tr><tr><td>"Run <code>pnpm lint</code> before committing"</td><td>➡️ Move to a hook</td><td>This needs <strong>enforcement</strong>, not a request</td></tr><tr><td>"Deploy path is <code>develop</code> → <code>master</code> → <code>gh-pages</code>"</td><td>✅ Keep</td><td>A project fact no amount of reasoning recovers</td></tr><tr><td>"Tag pages use a query-based filter"</td><td>✅ Keep</td><td><strong>Why</strong> that exception exists is written nowhere in the code</td></tr></tbody></table>
+<p>The <strong>hook</strong> in row two is a command the harness always runs at a fixed point, such as before or after a tool call. A prompt is probabilistic; a hook is deterministic — if "always do X" really has to mean always, move it out of your docs and into a hook (the config format changes between versions, so check hooks in the <code>claude</code> docs). And there is exactly one condition for putting a deleted line back.</p>
+<blockquote>
+<p>Put it back <strong>only when you watch it trip on the same thing repeatedly.</strong> Don't do it too early. That instruction gets re-read <strong>every single time</strong> you use the tool.</p>
+</blockquote>
+<h3 id="ablation--deleting-is-measurement-not-tidying">Ablation — deleting is measurement, not tidying<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#ablation--deleting-is-measurement-not-tidying"><span class="icon icon-link"></span></a></h3>
+<p>The method has a name. <strong>Ablation</strong> — you remove a component on purpose and measure its contribution by how much worse the result gets. Drop one dependency, and if the build still passes, it wasn't needed. The point is that the goal is <strong>measurement, not tidying.</strong> Deleting, running once, and going "seems fine" is not ablation; it's just deletion.</p>
+<p>The interview suggests wiping your <code>CLAUDE.md</code>, skills, and hooks every six months. Doing that verbatim on a team repo is an incident. Do it in a personal repo, in a state you can roll back.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">① branch off          git switch -c ablation/claude-md</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">② move it all out     mv CLAUDE.md CLAUDE.md.bak</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">③ use it for a week   don't fix anything, just log to notes/stumbles.md</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">④ restore one line    only for what tripped twice or more</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">⑤ compare             diff CLAUDE.md.bak CLAUDE.md</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                      → lines you never restored = context wasted this generation</span></span></code></pre></figure>
+<p>For what it's worth, the current version (2.1.241) really does ship experiment switches.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="shell" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">claude</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --system-prompt</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "..."</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   # swap the whole system prompt</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">claude</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --bare</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">                  # CLAUDE_CODE_SIMPLE=1 — also disables hooks, auto-memory, CLAUDE.md discovery</span></span></code></pre></figure>
+<p>Note that <code>--bare</code> ignores subscription login and only reads <code>ANTHROPIC_API_KEY</code> — if you are on a subscription, the <code>mv</code> route above is easier. Flags change between versions, so check <code>claude --help</code> first, and <strong>do not build a team workflow on top of them.</strong></p>
+<hr>
+<h2 id="4-move---overshoot">4. Move ② — Overshoot<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-move---overshoot"><span class="icon icon-link"></span></a></h2>
+<p>The second habit is <strong>handing over work that looks slightly too big, without dictating the method.</strong></p>
+<p>The most common mistake the interview names is over-specification — the textbook form of the <strong>hobbling</strong> described above. And it is called out as a failure mode that gets <strong>worse the more experience you have.</strong> Older systems had to be built that way.</p>
+<p><strong>Before (nailing down the steps):</strong></p>
+<blockquote>
+<p>First open <code>posts.ts</code> and find <code>getAllPosts</code>, add a parameter there, then change the props in <code>PostCard.tsx</code>, then…</p>
+</blockquote>
+<p><strong>Now (three lines):</strong></p>
+<blockquote>
+<p><strong>Task</strong> — fix the bug where the tag filter goes out of sync with the URL query and the back button.
+<strong>Guardrails</strong> — static export must not break. Keep the existing route structure.
+<strong>Exit criteria</strong> — done when <code>pnpm test &#x26;&#x26; pnpm typecheck &#x26;&#x26; pnpm build</code> all pass.</p>
+</blockquote>
+<p>Task, the lines not to cross, and what counts as done. Give those three and step back. Which file gets changed in which order is <strong>not yours to decide.</strong> The moment you nail down the sequence, the size of the solution you already know becomes the ceiling.</p>
+<h3 id="not-incapable--just-unwired">Not incapable — just unwired<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#not-incapable--just-unwired"><span class="icon icon-link"></span></a></h3>
+<p>The most practical moment in the interview isn't the war story but what came before it. That famous two-week task started not with a big prompt but with two yes/no questions. "Can you reach a macOS runner?" → no → wired it up. "Can you reach this repo?" → no → wired it up. The actual instruction came third.</p>
+<p>When an agent says it can't, a good share of the time it isn't ability — it's <strong>wiring.</strong> So put one line in front of your big prompt: "First confirm you can actually reach everything you need, report it as a table, and don't start if something is missing."</p>
+<p>That said, wiring up access is not the same as handing over anything. Read-only tokens, personal repos, and local runners are what you wire up; production credentials and deploy keys are not. People repeat that "models don't fall for prompt injection anymore," but the interview's own phrasing is <strong>"we can no longer demonstrate it"</strong> — an empirical statement, and one that describes three stacked layers (alignment training + an injection classifier on all traffic + an auto-mode classifier), not the model alone. <strong>Failing to reproduce something is not proof it's impossible.</strong></p>
+<hr>
+<h2 id="5-move---verify">5. Move ③ — Verify<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-move---verify"><span class="icon icon-link"></span></a></h2>
+<p>This is the real core of the interview. Asked what people get wrong, the single most important item named is not the prompt.</p>
+<blockquote>
+<p><strong>Verification is probably the single most important thing that people do not get right.</strong></p>
+<p>"The verification is probably the single most important thing that people do not get right, largely."</p>
+</blockquote>
+<p>What matters here is that the purpose of a verification tool isn't quality. The purpose is <strong>not getting stuck.</strong> With a way to check itself, it keeps going without anyone watching.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>No grader</th><th>With a grader</th></tr></thead><tbody><tr><td>5 minutes in</td><td>nobody knows yet whether it's right</td><td>the first failure is already recorded</td></tr><tr><td>1 hour in</td><td>a human has to stay attached</td><td>it proceeds alone</td></tr><tr><td>A day in</td><td>too far gone to unwind</td><td>the direction converges</td></tr></tbody></table>
+<p><strong>The gap widens with time</strong> — that's the whole point.</p>
+<h3 id="why-11-days-was-actually-possible">Why 11 days was actually possible<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#why-11-days-was-actually-possible"><span class="icon icon-link"></span></a></h3>
+<p>Start with the story everyone quotes. Bun (a JavaScript runtime used instead of Node.js) had its codebase moved wholesale from Zig to Rust in 11 days, and it's in production now. A human would have needed over a year.</p>
+<p>But what the interview stresses isn't the model.</p>
+<blockquote>
+<p>The nice thing about Bun is that <strong>it is very, very well tested.</strong> There is a big test suite in Bun, and a big test suite in Node.js. So it is easy to know if you did the right thing.</p>
+</blockquote>
+<p>Because Bun targets Node compatibility, <strong>Node's test suite could be borrowed as a grader too.</strong> It worked because the grader existed first — throw the same prompt at a codebase you can't verify and this result does not appear. It also wasn't one shot; he corrects himself immediately to say there was steering along the way.</p>
+<p>The second example is even more on the nose. Here is the instruction given for rewriting the Electron desktop app in Swift.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">rewrite the Electron app in Swift → run it in a Mac VM</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  → take a screenshot → compare it to the Swift version pixel by pixel</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  → don't stop until you're done</span></span></code></pre></figure>
+<p>Here, <strong>run → screenshot → pixel compare</strong> is the grader, whole. Notice that half the prompt is spent not on "what to build" but on "what to judge it with." And note that at the time of the interview this task was <strong>still running</strong>, past the two-week mark.</p>
+<h3 id="the-one-question-to-answer-before-writing-the-prompt">The one question to answer before writing the prompt<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-one-question-to-answer-before-writing-the-prompt"><span class="icon icon-link"></span></a></h3>
+<p>So the practical guidance gets very simple. Before writing a prompt, answer this.</p>
+<blockquote>
+<p><strong>What can the agent run to find out it is wrong?</strong></p>
+</blockquote>
+<p>If there's no answer, building one is today's work. Remember three, cheapest first. <strong>① types and lint</strong> (start here if you have none) → <strong>② a failing test</strong> (nail down what must change as a red light first) → <strong>③ output comparison</strong> (screenshots, snapshots, benchmarks — let the machine look at what you would have eyeballed).</p>
+<p>Then bake the loop into the prompt.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">work → run the verify command ─┬─ pass → next step</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                               └─ fail → fix the cause → run again</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                                          │</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                     same failure 3× ─────┘→ stop and report</span></span></code></pre></figure>
+<p>That last line matters. <strong>If you don't set a stopping rule before you start,</strong> a verification loop only grows the bill. And one thing to leave honestly open — a verification loop catches <strong>functional regressions only.</strong> No green light adjudicates design debt or security, and how a human should review a large agent-authored change went unanswered in the interview.</p>
+<hr>
+<h2 id="6-multiplying-the-three-moves--repetition-and-orchestration">6. Multiplying the three moves — repetition and orchestration<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-multiplying-the-three-moves--repetition-and-orchestration"><span class="icon icon-link"></span></a></h2>
+<p>That covers the individual habits; the machinery that multiplies them shows up later in the interview. Knowing the names is enough.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Machinery</th><th>What it does</th><th>Familiar analogy</th></tr></thead><tbody><tr><td><strong>Dynamic workflow</strong></td><td>splits <strong>one</strong> big job into stages and fans agents out per stage</td><td>a CI matrix job that fans out and regroups at the next stage</td></tr><tr><td><strong>loop</strong></td><td>repeats the same job <strong>on a schedule</strong> (on your machine)</td><td>a local cron</td></tr><tr><td><strong>routine</strong></td><td>repeats the same job <strong>on a schedule</strong> (in the cloud)</td><td>a nightly GitHub Actions schedule</td></tr></tbody></table>
+<p>Each repeated run starts with a fresh conversation context (memory may be shared, per the interview). So anything that truly has to carry over is safer <strong>left outside</strong> — in files, issues, or PRs.</p>
+<p>Anthropic reportedly runs 20–30 of these routines a day just to maintain its own codebases: finding dead code and opening deletion PRs, cleaning up experiments already at 100%, adding tests where coverage is thin, deleting tests that stopped being useful, and unifying near-duplicate abstractions scattered across the code (the routine he thinks they "called abstraction police").</p>
+<p>The size a junior should take from that is <strong>one, in a personal repo.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">prompt — "Find code in this repo that nothing references, delete it, and open a PR</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          if tests and typecheck pass. For anything you're unsure about, don't</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          delete it — just list it in the PR body."</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">rules  — ① PRs only (never commit straight to the default branch)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">           ② read every PR yourself the first week and track the false-positive rate</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">           ③ add a second routine only once that's boring</span></span></code></pre></figure>
+<p>20–30 is <strong>the number you get with a team to absorb the reviews and internal infrastructure.</strong> Push bot PRs into a team repo without agreement and you've moved the time you saved onto your colleagues' review queue — technically a success, socially a failure. And a cron that runs daily bills daily.</p>
+<hr>
+<h2 id="7-easy-things-to-get-wrong">7. Easy things to get wrong<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-easy-things-to-get-wrong"><span class="icon icon-link"></span></a></h2>
+<h3 id="misreading-1--11-days-thousands-of-agents-am-i-supposed-to-do-that">Misreading 1 — "11 days, thousands of agents… am I supposed to do that?"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-1--11-days-thousands-of-agents-am-i-supposed-to-do-that"><span class="icon icon-link"></span></a></h3>
+<p>No. The 11-day rewrite wasn't one shot — a human steered it along the way, and the decision to try the rewrite and define the test suite came from an engineer on the Bun team. "Thousands" isn't a confirmed number either; it's his own guess. <strong>Agent count is not a performance metric, it's an invoice.</strong> On a personal plan, scale 11 days down to a few hours and set your stopping rule first.</p>
+<h3 id="misreading-2--coding-is-solved">Misreading 2 — "Coding is solved"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-2--coding-is-solved"><span class="icon icon-link"></span></a></h3>
+<p>"Coding is solved" is something the host brings in as <strong>a past remark of his</strong>, and he answers the question by leading with a caveat.</p>
+<blockquote>
+<p>Coding is solved <strong>for the kind of coding I do.</strong> It is not solved for everyone.</p>
+</blockquote>
+<p>The unsolved areas he names are deep systems codebases, distributed systems, and pixel-level UI verification. A good share of junior work overlaps exactly those.</p>
+<h3 id="misreading-3--so-i-should-just-delete-everything">Misreading 3 — "So I should just delete everything"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-3--so-i-should-just-delete-everything"><span class="icon icon-link"></span></a></h3>
+<p>Deleting is only step one. The whole procedure is <strong>delete → use → restore only what repeatedly trips it.</strong> And the observation that the model looks slightly smarter with all prompts removed comes with an immediate caveat — as a product, some prompts are kept on purpose so it <strong>behaves the way a person using it would want.</strong></p>
+<h3 id="misreading-4--so-theres-a-trick-only-the-pros-know">Misreading 4 — "So there's a trick only the pros know"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-4--so-theres-a-trick-only-the-pros-know"><span class="icon icon-link"></span></a></h3>
+<p>This is the part the interview rejects most directly.</p>
+<blockquote>
+<p>Everyone is looking for <strong>the one weird trick.</strong> It doesn't exist.</p>
+</blockquote>
+<p>And that principle applies to the interview itself. It is one company, one stack, one person's observation — not controlled evidence. <strong>Copy the procedure, not the conclusions</strong> — run it, watch where it gets stuck, fix only that.</p>
+<hr>
+<h2 id="8-wrapping-up--what-to-delete-and-what-to-build">8. Wrapping up — what to delete and what to build<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-wrapping-up--what-to-delete-and-what-to-build"><span class="icon icon-link"></span></a></h2>
+<p>Compressed into one table:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>What</th><th>Why</th></tr></thead><tbody><tr><td><strong>Delete</strong></td><td>instructions written to fix the model</td><td>they cost you on every request and get in today's model's way</td></tr><tr><td><strong>Overshoot</strong></td><td>task, guardrails, exit criteria — not the method</td><td>nailing the sequence caps you at the solution you already knew</td></tr><tr><td><strong>Verify</strong></td><td>a command that tells it that it's wrong</td><td>without it, the longer it runs the further off course it goes</td></tr></tbody></table>
+<p>And this is the next slot in the same story as the earlier posts.</p>
+<ul>
+<li><a href="/en/posts/2026-06-04-fe-harness/">FE harness</a> — <strong>building</strong> the harness</li>
+<li><a href="/en/posts/2026-07-05-meta-harness/">Self-healing harness</a> — the <strong>loop</strong> that fixes itself</li>
+<li><a href="/en/posts/2026-07-31-context-engineering-claude5/">Context engineering by subtraction</a> — <strong>removing</strong> context</li>
+<li><a href="/en/posts/2026-08-01-choosing-claude-model/">Choosing a Claude model</a> — <strong>picking</strong> the model</li>
+<li>This post — <strong>measuring</strong> what was actually needed</li>
+</ul>
+<p>The core message is one sentence.</p>
+<blockquote>
+<p><strong>What you delete are the instructions written to fix the model. What you build is the command that lets the model find out it is wrong.</strong></p>
+</blockquote>
+<p>One last thing. At the end of the interview, asked what students should still learn by hand, the answer was not 'instead of computer science' but <strong>'in addition to</strong> computer science' — learn to apply it, not just know it: design sense, business sense, data science, talking to users. Handing your code to an agent is fine. But <strong>the moment you hand over the judgment of whether the result is any good</strong>, everything else in this post collapses. Building a grader is itself an act of that judgment.</p>
+<hr>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Y Combinator, <a href="https://www.youtube.com/watch?v=qyPCVqFUyDo">Boris Cherny: We Cut 80% of Claude Code's Prompt</a> (2026) — video</li>
+<li>Root Access, <a href="https://www.ycrootaccess.com/p/boris-cherny-building-claude-code">Boris Cherny: Building Claude Code</a> (2026) — full transcript</li>
+<li>Anthropic, <a href="https://docs.claude.com/en/docs/claude-code">Claude Code documentation</a> — flags and features vary by version; check <code>claude --help</code></li>
+<li>Previous posts — <a href="/en/posts/2026-07-31-context-engineering-claude5/">Context engineering by subtraction</a> · <a href="/en/posts/2026-08-01-choosing-claude-model/">Choosing a Claude model</a> · <a href="/en/posts/2026-07-05-meta-harness/">Self-healing harness</a></li>
+</ul>7:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$c"}}]}]
+8:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/en/posts/2026-08-01-choosing-claude-model","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Choosing a Claude Model — Start Smart"}]]}],["$","$L4",null,{"href":"/en/posts/2026-08-23-ai-native-sdlc-playbook","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"The AI-Native SDLC Playbook — Code Is No Longer the Bottleneck"}]]}]]}]
+9:["$","div",null,{"className":"hidden lg:block","children":["$","$Ld",null,{"headings":[{"id":"1-what-is-this-post-about","text":"1. What is this post about?","depth":1},{"id":"the-skeleton--three-moves","text":"The skeleton — three moves","depth":2},{"id":"2-first-coordinates--the-model-and-the-harness-are-different-layers","text":"2. First, coordinates — the model and the harness are different layers","depth":1},{"id":"3-move---delete","text":"3. Move ① — Delete","depth":1},{"id":"ablation--deleting-is-measurement-not-tidying","text":"Ablation — deleting is measurement, not tidying","depth":2},{"id":"4-move---overshoot","text":"4. Move ② — Overshoot","depth":1},{"id":"not-incapable--just-unwired","text":"Not incapable — just unwired","depth":2},{"id":"5-move---verify","text":"5. Move ③ — Verify","depth":1},{"id":"why-11-days-was-actually-possible","text":"Why 11 days was actually possible","depth":2},{"id":"the-one-question-to-answer-before-writing-the-prompt","text":"The one question to answer before writing the prompt","depth":2},{"id":"6-multiplying-the-three-moves--repetition-and-orchestration","text":"6. Multiplying the three moves — repetition and orchestration","depth":1},{"id":"7-easy-things-to-get-wrong","text":"7. Easy things to get wrong","depth":1},{"id":"misreading-1--11-days-thousands-of-agents-am-i-supposed-to-do-that","text":"Misreading 1 — \"11 days, thousands of agents… am I supposed to do that?\"","depth":2},{"id":"misreading-2--coding-is-solved","text":"Misreading 2 — \"Coding is solved\"","depth":2},{"id":"misreading-3--so-i-should-just-delete-everything","text":"Misreading 3 — \"So I should just delete everything\"","depth":2},{"id":"misreading-4--so-theres-a-trick-only-the-pros-know","text":"Misreading 4 — \"So there's a trick only the pros know\"","depth":2},{"id":"8-wrapping-up--what-to-delete-and-what-to-build","text":"8. Wrapping up — what to delete and what to build","depth":1},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true}]
+b:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+10:null
