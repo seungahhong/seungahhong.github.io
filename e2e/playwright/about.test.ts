@@ -6,7 +6,7 @@ import { test, expect } from '@playwright/test';
  * 이 스펙도 **게이트 공백을 메우려고 새로 만든 것**이다. About은 2차 사용자에게
  * 유일한 진입면인데 카탈로그상 AC-11.x 전부가 "게이트 없음 · 수동"이었다.
  *
- * AC-11.4(FAQ 치환값)는 특히 중요하다 — 문서 안에서 71(원문)과 142(원문+번역)가
+ * AC-11.4(FAQ 치환값)는 특히 중요하다 — 문서 안에서 73(원문)과 146(원문+번역)이
  * 혼동되던 값이라, 화면에 어느 쪽이 나가는지 고정해 둘 필요가 있다.
  *
  * 모드: @e2e-mock — 외부 API 호출 없음.
@@ -88,8 +88,8 @@ test.describe('about page', () => {
       // 치환되지 않은 자리표시자가 그대로 노출되면 안 된다.
       expect(body).not.toMatch(/\{\{?\s*(count|year|postCount)\s*\}?\}/);
 
-      // 편수는 한국어 원문 기준(71)이지 원문+번역(142)이 아니다.
-      expect(body).toMatch(/\b71\b/);
+      // 편수는 한국어 원문 기준(73)이지 원문+번역(146)이 아니다.
+      expect(body).toMatch(/\b73\b/);
       expect(body).toMatch(/\b2020\b/);
     },
   );
