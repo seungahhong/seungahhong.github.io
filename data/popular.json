@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-23",
+  "updatedAt": "2026-08-24",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-02-LLM-WIKI",
-      "views": 30
+      "views": 32
     },
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 14
+      "views": 23
     },
     {
       "slug": "2026-08-01-choosing-claude-model",
@@ -19,6 +19,10 @@
       "views": 9
     },
     {
+      "slug": "2026-07-13-vite8.0",
+      "views": 6
+    },
+    {
       "slug": "2026-06-01-RAG",
       "views": 5
     },
@@ -27,11 +31,15 @@
       "views": 5
     },
     {
-      "slug": "2026-07-13-vite8.0",
-      "views": 5
+      "slug": "2022-03-12-react-router-v6",
+      "views": 4
     },
     {
-      "slug": "2022-03-12-react-router-v6",
+      "slug": "2023-07-23-react-query-v5",
+      "views": 4
+    },
+    {
+      "slug": "2026-08-22-delete-and-verify",
       "views": 4
     },
     {
@@ -39,7 +47,15 @@
       "views": 3
     },
     {
-      "slug": "2023-07-23-react-query-v5",
+      "slug": "2022-05-31-css-in-js",
+      "views": 3
+    },
+    {
+      "slug": "2023-08-15-ecmascript",
+      "views": 3
+    },
+    {
+      "slug": "2023-09-17-gatsby-v5",
       "views": 3
     },
     {
@@ -75,10 +91,6 @@
       "views": 2
     },
     {
-      "slug": "2022-05-31-css-in-js",
-      "views": 2
-    },
-    {
       "slug": "2022-07-25-msw",
       "views": 2
     },
@@ -91,10 +103,6 @@
       "views": 2
     },
     {
-      "slug": "2023-08-15-ecmascript",
-      "views": 2
-    },
-    {
       "slug": "2023-08-26-react-hook-form-v7",
       "views": 2
     },
@@ -103,11 +111,15 @@
       "views": 2
     },
     {
-      "slug": "2023-09-17-gatsby-v5",
+      "slug": "2023-10-30-nextjs-v14",
       "views": 2
     },
     {
       "slug": "2024-01-20-nextjs-v14-migration",
+      "views": 2
+    },
+    {
+      "slug": "2024-05-12-development-improvements",
       "views": 2
     },
     {
@@ -125,6 +137,14 @@
     {
       "slug": "2026-07-12-product-spec-harness",
       "views": 2
+    },
+    {
+      "slug": "2026-08-23-ai-native-sdlc-playbook",
+      "views": 2
+    },
+    {
+      "slug": "2020-02-17-c-c++",
+      "views": 1
     },
     {
       "slug": "2020-09-12-fe-performance",
@@ -152,6 +172,10 @@
     },
     {
       "slug": "2022-03-19-storybook",
+      "views": 1
+    },
+    {
+      "slug": "2022-03-30-SWR",
       "views": 1
     },
     {
@@ -195,10 +219,6 @@
       "views": 1
     },
     {
-      "slug": "2023-10-30-nextjs-v14",
-      "views": 1
-    },
-    {
       "slug": "2023-11-26-react-hook-form-inside",
       "views": 1
     },
@@ -220,10 +240,6 @@
     },
     {
       "slug": "2024-04-28-esbuild",
-      "views": 1
-    },
-    {
-      "slug": "2024-05-12-development-improvements",
       "views": 1
     },
     {
