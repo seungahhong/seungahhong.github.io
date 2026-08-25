@@ -1,0 +1,339 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+4:I[52881,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],""]
+11:I[27722,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+12:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
+13:"$Sreact.suspense"
+2:T70f,{"@context":"https://schema.org","@type":"BlogPosting","headline":"코드 품질은 제약에 있다 — 리뷰가 안 되는 규모에서 품질을 지키는 법","description":"1. 이 글은 무엇에 관한 글인가? Addy Osmani가 쓴 Agentic Code Quality를 읽고 정리한 글입니다. 한 줄로 요약하면 이렇습니다. 코드를 읽어서 품질을 판정하는 방식은 에이전트 규모에서 무너집니다. 그래서 품질 검사는 코드가 아니라 에이전트를 둘러싼…","datePublished":"2026-08-25","dateModified":"2026-08-25","inLanguage":"ko-KR","url":"https://seungahhong.github.io/ko/posts/2026-08-25-agentic-code-quality/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/ko/posts/2026-08-25-agentic-code-quality/"},"image":"https://seungahhong.github.io/blog-assets/2026/08/assets/25/thumbnail.png","keywords":["AI","에이전트","코드품질","테스트","하네스"],"articleSection":"개발","wordCount":4422,"timeRequired":"PT10M","isPartOf":{"@id":"https://seungahhong.github.io/ko/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"홈\",\"item\":\"https://seungahhong.github.io/ko/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"포스트\",\"item\":\"https://seungahhong.github.io/ko/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"코드 품질은 제약에 있다 — 리뷰가 안 되는 규모에서 품질을 지키는 법\",\"item\":\"https://seungahhong.github.io/ko/posts/2026-08-25-agentic-code-quality/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"코드 품질은 제약에 있다 — 리뷰가 안 되는 규모에서 품질을 지키는 법"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"코드 품질은 제약에 있다 — 리뷰가 안 되는 규모에서 품질을 지키는 법"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],"$L5","$L6","$L7","$L8","$L9"]}],false,"$La"]}],"$Lb","$Lc"]}],"$Ld"]}]}]],["$Le"],"$Lf"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"fAKoz75L7cgqzE9cHUXEw"}
+5:["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}]
+6:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+7:["$","time",null,{"dateTime":"2026-08-25","className":"meta-mono","children":"2026.08.25"}]
+8:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+9:["$","span",null,{"className":"meta-mono","children":[10,"분"]}]
+a:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/ko/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","에이전트",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8","className":"tag-pill","children":"에이전트"}]}],["$","li","코드품질",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EC%BD%94%EB%93%9C%ED%92%88%EC%A7%88","className":"tag-pill","children":"코드품질"}]}],["$","li","테스트",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%ED%85%8C%EC%8A%A4%ED%8A%B8","className":"tag-pill","children":"테스트"}]}],["$","li","하네스",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%ED%95%98%EB%84%A4%EC%8A%A4","className":"tag-pill","children":"하네스"}]}]]}]
+10:T684f,<h2 id="1-이-글은-무엇에-관한-글인가">1. 이 글은 무엇에 관한 글인가?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-이-글은-무엇에-관한-글인가"><span class="icon icon-link"></span></a></h2>
+<p>Addy Osmani가 쓴 <a href="https://addyosmani.com/blog/agentic-code-quality">Agentic Code Quality</a>를 읽고 정리한 글입니다. 한 줄로 요약하면 이렇습니다.</p>
+<blockquote>
+<p><strong>코드를 읽어서 품질을 판정하는 방식은 에이전트 규모에서 무너집니다.</strong> 그래서 품질 검사는 코드가 아니라 <strong>에이전트를 둘러싼 하네스·환경·시스템</strong> 으로 옮겨가야 합니다. 원문의 표현으로는 — <strong>"소프트웨어 품질은 이제 당신이 에이전트 주변에 세운 제약에 달려 있다."</strong></p>
+</blockquote>
+<p><a href="/ko/posts/2026-08-23-ai-native-sdlc-playbook/">지난 글</a>이 "코드가 병목이 아니게 되면 프로세스를 어떻게 다시 짜야 하나"였다면, 이번 글은 그중 <strong>품질 한 칸을 확대한</strong> 이야기입니다. 둘은 같은 전제를 공유합니다. 생성량이 사람의 처리 용량을 넘어섰다는 것.</p>
+<h3 id="전제-사람은-다-못-읽는다">전제: 사람은 다 못 읽는다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#전제-사람은-다-못-읽는다"><span class="icon icon-link"></span></a></h3>
+<p>지금까지 코드 품질은 이렇게 판정됐습니다. <strong>누군가 읽는다.</strong> 깔끔한지, 사려 깊은지, 빠른지, 이해되는지, 테스트는 잘 되는지.</p>
+<p>이 방식은 <strong>작성 속도와 읽기 속도가 비슷할 때만</strong> 성립합니다. 그런데 에이전트는 하루에 수십만·수백만 개의 변경을 만들어낼 수 있습니다. 읽을 사람이 없습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">사람이 쓰던 시절:  작성 1 : 리뷰 1   → 리뷰가 게이트로 작동한다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">에이전트 시절:     작성 1000 : 리뷰 1 → 리뷰는 큐가 된다</span></span></code></pre></figure>
+<p>여기서 흔한 오해가 하나 갈립니다. "그럼 리뷰를 포기하자"가 아닙니다. <strong>읽는 주체를 사람에서 시스템으로 바꾸자</strong> 는 것입니다. 원문의 문장이 정확합니다.</p>
+<blockquote>
+<p><strong>"에이전트는 무엇이든 제안할 수 있다. 그 제안이 충분히 안전한지는 당신의 제약이 결정한다."</strong></p>
+</blockquote>
+<hr>
+<h2 id="2-리뷰를-건너뛰어도-되는-경우가-있긴-하다">2. 리뷰를 건너뛰어도 되는 경우가 있긴 하다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-리뷰를-건너뛰어도-되는-경우가-있긴-하다"><span class="icon icon-link"></span></a></h2>
+<p>원문은 Guillermo Rauch의 체크리스트를 인용해 코드를 안 읽어도 되는 조건을 정리하고, 거기서 한 가지를 짚어냅니다. 그 목록의 모든 "예"가 결국 <strong>판돈이 낮다는 진술</strong> 이라는 것 — 사용자가 없다, 버릴 코드다, 프로토타입이다.</p>
+<p>즉 "리뷰 없이 간다"는 판단은 <strong>코드에 대한 판단이 아니라 리스크에 대한 판단</strong> 입니다. 그래서 결론은 이렇게 이어집니다. 판돈이 올라가면 누군가는 코드를 읽어야 하고, 그게 매 diff마다의 당신이 아니라면 <strong>제약이 읽어야 한다</strong> 는 것.</p>
+<p>이 문장이 이 글 전체의 축입니다. 선택지는 "읽는다 / 안 읽는다"가 아니라 <strong>"사람이 읽는다 / 시스템이 읽는다"</strong> 입니다. 아무도 안 읽는 선택지는 판돈이 낮을 때만 존재합니다.</p>
+<hr>
+<h2 id="3-제약quality-gate이란-구체적으로-무엇인가">3. 제약(quality gate)이란 구체적으로 무엇인가<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-제약quality-gate이란-구체적으로-무엇인가"><span class="icon icon-link"></span></a></h2>
+<p>추상적으로 들리지만 원문이 드는 예는 전부 이미 쓰고 있는 것들입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>제약</th><th>무엇을 잡나</th><th>성격</th></tr></thead><tbody><tr><td><strong>단위·속성·인수 테스트</strong></td><td>동작이 명세대로인가</td><td>가장 익숙한 층</td></tr><tr><td><strong>뮤테이션 테스트</strong></td><td>코드를 변형해도 테스트가 안 깨진다면 → <strong>테스트가 허술한 것</strong></td><td>테스트를 테스트한다</td></tr><tr><td><strong>코드 지표</strong></td><td>순환복잡도, 줄 길이 등 가독성</td><td>유지보수 축</td></tr><tr><td><strong>타입 체크·컴파일러</strong></td><td>애초에 표현 불가능하게</td><td>가장 싼 층</td></tr><tr><td><strong>보안·성능·접근성 스캔</strong></td><td>늦은 단계에서 잡히는 것들</td><td>별도 책임</td></tr><tr><td><strong>아키텍처 룰(ESLint 등)</strong></td><td>"이 레이어는 저기를 import 못 한다"</td><td><strong>직접 정의하는 층</strong></td></tr></tbody></table>
+<p>여기서 눈여겨볼 게 둘 있습니다.</p>
+<p><strong>① 뮤테이션 테스트가 명시적으로 나옵니다.</strong> 에이전트 시대에 이게 다시 중요해지는 이유가 있습니다. 에이전트에게 "테스트를 통과시켜라"라고 시키면 통과는 시킵니다. 문제는 <strong>그 테스트가 애초에 무엇을 잡고 있었는가</strong> 인데, 이건 테스트 자체를 검증하지 않으면 알 수 없습니다. 커버리지는 "실행됐는가"만 말하고, 뮤테이션 테스트는 <strong>"실패시킬 수 있는가"</strong> 를 말합니다.</p>
+<p><strong>② 각 검사가 서로 다른 책임을 져야 합니다.</strong> 원문의 표현은 "단위 테스트에만 의존하지 말고, 넓지만 <strong>의도적으로 고른</strong> 검사 집합을 두라"입니다. 여기서 방점은 <em>넓게</em> 가 아니라 <strong>의도적으로</strong> 에 있습니다. 같은 것을 세 번 검사하는 세 개의 도구는 제약이 세 개가 아니라 하나입니다.</p>
+<hr>
+<h2 id="4-빠진-조각-둘--환경-그리고-신뢰">4. 빠진 조각 둘 — 환경, 그리고 신뢰<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-빠진-조각-둘--환경-그리고-신뢰"><span class="icon icon-link"></span></a></h2>
+<p>제약만 세우면 되는 게 아닙니다. 원문은 이 모델이 놓치는 부분 두 개를 짚습니다.</p>
+<h3 id="4-1-자율성--에이전트가-실패하는-이유는-사람과-같다">4-1. 자율성 — 에이전트가 실패하는 이유는 사람과 같다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-1-자율성--에이전트가-실패하는-이유는-사람과-같다"><span class="icon icon-link"></span></a></h3>
+<p>에이전트는 의도를 잘 수행하다가도 <strong>정보가 없거나 모호할 때</strong> 실패합니다. 그런데 원문이 드는 실패 원인 목록이 흥미롭습니다 — 스크립트로 밀어붙이면 버티지 못하는 <strong>깨지기 쉬운 환경</strong>, <strong>비결정론적 빌드</strong>, <strong>누락된 권한</strong>, <strong>허술한 테스트</strong>.</p>
+<p>이건 전부 <strong>사람이 좋은 코드를 못 내보내는 이유와 같습니다.</strong> 새로 생긴 문제가 아니라, 원래 있었지만 사람 속도에서는 참을 만했던 문제입니다. 에이전트가 초당 수십 번 부딪히면 못 참게 됩니다.</p>
+<p>그래서 목표가 되는 환경은 이렇게 정의됩니다.</p>
+<blockquote>
+<p><strong>"에이전트가 진짜 일을 하고, 믿을 수 있는 피드백을 받고, 큰 피해 없이 실패할 수 있는 환경."</strong></p>
+</blockquote>
+<p>세 조건을 따로 읽는 게 좋습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>조건</th><th>없으면 생기는 일</th></tr></thead><tbody><tr><td><strong>진짜 일을 할 수 있다</strong></td><td>권한·도구가 막혀 있으면 에이전트는 우회하거나 흉내만 낸다</td></tr><tr><td><strong>믿을 수 있는 피드백</strong></td><td>flaky 테스트·비결정론적 빌드면 신호가 노이즈다. 에이전트는 노이즈에 맞춰 코드를 고친다</td></tr><tr><td><strong>피해 없는 실패</strong></td><td>실패 비용이 크면 시도 횟수를 줄여야 하고, 그러면 자율성을 줄 수 없다</td></tr></tbody></table>
+<p>두 번째가 특히 실무적입니다. <strong>flaky 테스트는 에이전트 환경에서 단순한 짜증이 아니라 오염된 오라클입니다.</strong> 사람은 "아 얘 원래 가끔 깨져요" 하고 넘기지만, 에이전트는 그 신호를 진짜로 믿고 멀쩡한 코드를 고칩니다.</p>
+<h3 id="4-2-신뢰--시작은-하되-벌어서-얻는-것">4-2. 신뢰 — 시작은 하되, 벌어서 얻는 것<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-2-신뢰--시작은-하되-벌어서-얻는-것"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p><strong>"우리는 신뢰에서 시작하지만, 그 신뢰는 힘들게 벌어야 하는 것이다."</strong></p>
+</blockquote>
+<p>권한을 전부 주거나 전부 막는 이분법 대신, <strong>실적과 증거의 질에 따라 자율성을 늘려가는</strong> 모델입니다. <a href="/ko/posts/2026-08-23-ai-native-sdlc-playbook/">지난 글</a>에서 인상적이었던 1σ/2σ/3σ 권한 분배와 정확히 같은 발상입니다. 질문이 "권한을 줄 것인가"가 아니라 <strong>"언제, 얼마나"</strong> 로 바뀝니다.</p>
+<hr>
+<h2 id="5-제약은-시점마다-역할이-다르다">5. 제약은 시점마다 역할이 다르다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-제약은-시점마다-역할이-다르다"><span class="icon icon-link"></span></a></h2>
+<p>원문은 제약을 세 시점으로 나눕니다. 어떤 제약은 <strong>작업이 시작되기 전</strong> 에 일의 모양을 잡고, 어떤 제약은 <strong>작업 중</strong> 에 피드백을 주고, 어떤 제약은 <strong>프로덕션 경계를 넘을 수 있는지</strong> 를 결정한다는 것.</p>
+<p>같은 "테스트"라도 어디에 두느냐에 따라 성격이 완전히 달라집니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">작업 전   타입·스키마·아키텍처 룰·CLAUDE.md   → 애초에 못 하게 한다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">작업 중   테스트·린트·빌드·훅               → 틀린 방향을 일찍 알려준다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">경계에서  CI·보안 스캔·승인 게이트           → 나가지 못하게 막는다</span></span></code></pre></figure>
+<p>그리고 이 <strong>백프레셔(back-pressure)</strong> 는 루프 전체에 퍼져 있어야지 모든 작업이 끝난 뒤 마지막 리뷰 한 번으로 존재해서는 안 된다는 게, 원문이 반복하는 주장입니다.</p>
+<p>끝에서만 막으면 어떻게 되냐면 — 에이전트는 이미 다 만든 뒤에 거절당합니다. 낭비된 건 토큰만이 아니라, <strong>틀린 전제 위에 쌓인 컨텍스트 전부</strong> 입니다.</p>
+<hr>
+<h2 id="6-검증-용량이-모자라면--선택지는-셋뿐이다">6. 검증 용량이 모자라면 — 선택지는 셋뿐이다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-검증-용량이-모자라면--선택지는-셋뿐이다"><span class="icon icon-link"></span></a></h2>
+<p>이 글에서 가장 실무적인 부분입니다. 변경 생성량이 검증 도구의 처리량을 넘으면 어떻게 되나?</p>
+<p><strong>큐가 생깁니다.</strong> 그리고 그 큐는 사람 속도로 움직입니다. 자동화의 이득이 거기서 전부 증발합니다.</p>
+<p>원문이 제시하는 선택지는 셋입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>선택지</th><th>무엇을</th><th>대가</th></tr></thead><tbody><tr><td><strong>① 검증을 키운다</strong></td><td>검사 용량·병렬성을 늘린다</td><td>인프라 비용</td></tr><tr><td><strong>② 생성을 줄인다</strong></td><td>에이전트 변경 속도를 낮춘다</td><td>속도 포기</td></tr><tr><td><strong>③ 품질 기준을 낮춘다</strong></td><td>제약이 덜 밀어내게 한다</td><td>리스크 감수</td></tr></tbody></table>
+<p>그리고 덧붙입니다. <strong>"규모 관점에서는 셋 다 할 준비가 되어 있어야 한다."</strong> 하나만 고르는 문제가 아니라는 뜻입니다.</p>
+<p>여기서 한 발 더 나갑니다. 어떤 방향으로는 <strong>제약을 푸는 게 더 많은 결과를 낳는다</strong> 는 것. 전부 똑같이 조이는 대신, <strong>가장 중요한 곳만 세게 조이고 나머지는 풀어주면</strong> 품질을 희생하지 않고 처리량을 최대화할 수 있습니다.</p>
+<p>결국 <strong>혁신 중심 ↔ 품질 중심</strong> 스펙트럼 위에서 우리가 어디에 설지 정하는 문제라는 것입니다.</p>
+<p>제약을 "많을수록 좋은 것"으로 다루면 이 조정이 불가능해집니다. 제약에도 비용이 있다는 걸 인정해야 어디를 풀지 정할 수 있습니다.</p>
+<hr>
+<h2 id="7-사람의-주의를-어디에-둘-것인가">7. 사람의 주의를 어디에 둘 것인가<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-사람의-주의를-어디에-둘-것인가"><span class="icon icon-link"></span></a></h2>
+<blockquote>
+<p><strong>"기계 속도로 움직이는 시스템 안에 사람 검사를 하나 넣어두고, 생산성이 떨어진다고 놀라지 마라."</strong></p>
+</blockquote>
+<p>이 문장이 아프게 정확합니다. 사람의 주의는 <strong>희소하고 비싼 자원</strong> 이므로, 아무 데나 놓으면 안 되고 <strong>의도적으로 배치해야 합니다.</strong></p>
+<p>원문의 배치 원칙은 둘입니다.</p>
+<ul>
+<li>사람은 <strong>판단이 필요한 미묘한 문제</strong> 에 붙는다 — 취향(taste), 의도(intent), 아키텍처</li>
+<li>하류의 사람은 <strong>자동 가드레일이 깨졌을 때만</strong> 호출된다</li>
+</ul>
+<p>그래서 이런 결론이 나옵니다.</p>
+<blockquote>
+<p><strong>"미래의 '코드 리뷰'는 지금과 아주 다르게 생겼을 것이다."</strong></p>
+</blockquote>
+<p>지난 글에서 정리한 것과 같은 방향입니다. 리뷰가 사라지는 게 아니라 <strong>층위가 올라갑니다.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">기계가 더 잘하는 질문:  이 diff에 버그가 있나? 보안 규칙을 어겼나? 스타일이 맞나?</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">사람만 답할 수 있는 질문: 이걸 애초에 만들었어야 하나? 이 추상화가 6개월 뒤에도 맞나?</span></span></code></pre></figure>
+<hr>
+<h2 id="8-품질은-단일-지표가-아니다">8. 품질은 단일 지표가 아니다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-품질은-단일-지표가-아니다"><span class="icon icon-link"></span></a></h2>
+<p>마지막 축입니다. 정확성(correctness)은 품질의 <strong>한 차원일 뿐</strong> 입니다.</p>
+<blockquote>
+<p>소프트웨어 품질은 하나의 지표가 아니다. <strong>당신과 팀에게 중요도가 서로 다른 신호들의 묶음</strong> 으로 생각하라.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>차원</th><th>이걸 잡는 제약의 예</th></tr></thead><tbody><tr><td><strong>정확성</strong></td><td>단위·속성·인수 테스트, 뮤테이션 테스트</td></tr><tr><td><strong>유지보수성</strong></td><td>복잡도 지표, 아키텍처 룰, 리뷰</td></tr><tr><td><strong>성능</strong></td><td>벤치마크, 번들 예산, Lighthouse</td></tr><tr><td><strong>보안</strong></td><td>스캐너, 정책, 의존성 감사</td></tr><tr><td><strong>효율</strong></td><td>리소스·비용 측정</td></tr><tr><td><strong>이해 가능성</strong></td><td>문서, 네이밍, 구조 — <strong>자동화가 가장 약한 칸</strong></td></tr></tbody></table>
+<p>그리고 개수보다 중요한 게 있다고 못박습니다. 제약이 <strong>몇 개인가</strong> 보다, 그것들이 <strong>품질 기준을 만족시킬 만큼 충분히 빡센가</strong> 가 더 중요하다는 것.</p>
+<p>체크 배지 열두 개가 전부 통과하는데 프로덕션이 터진다면, 제약이 부족한 게 아니라 <strong>제약이 물렁한 것</strong> 입니다.</p>
+<hr>
+<h2 id="9-이-저장소에-대입해보면">9. 이 저장소에 대입해보면<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-이-저장소에-대입해보면"><span class="icon icon-link"></span></a></h2>
+<p>읽기만 하면 남는 게 없으니, 이 블로그 저장소의 제약을 8절의 차원별로 놓아봤습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>차원</th><th>지금 있는 제약</th><th>빈 칸</th></tr></thead><tbody><tr><td><strong>정확성</strong></td><td>vitest 단위 테스트, Playwright E2E, pre-commit 3단계</td><td>뮤테이션 테스트 없음 — <strong>테스트가 얼마나 빡센지 모른다</strong></td></tr><tr><td><strong>유지보수성</strong></td><td>ESLint, TypeScript strict</td><td>아키텍처 룰(import 경계) 없음</td></tr><tr><td><strong>성능</strong></td><td>—</td><td>번들 예산·Lighthouse 게이트 없음</td></tr><tr><td><strong>보안</strong></td><td>—</td><td>개인 블로그·정적 사이트라 표면이 작다</td></tr><tr><td><strong>접근성</strong></td><td>axe 검사 5페이지 0 violation</td><td>다크모드 미검증(<a href="/ko/posts/2026-08-23-ai-native-sdlc-playbook/">이전 라운드 TODO</a>)</td></tr><tr><td><strong>이해 가능성</strong></td><td><code>CLAUDE.md</code>, 콘텐츠 규약</td><td>—</td></tr></tbody></table>
+<p>그리고 실제로 이 저장소에서 <strong>제약이 사람을 막아준 사례</strong> 가 있습니다. 새 글을 추가하면 글 수가 하드코딩된 테스트 세 곳이 깨집니다. 처음엔 귀찮은 일로 보였는데, 6절 관점에서 다시 보면 이건 <strong>작업 중 피드백</strong> 입니다. 한글 원문만 추가하고 <code>.en.md</code>를 빼먹으면 <code>content-conventions.test.ts</code>가 즉시 잡아냅니다. 사람이 리뷰로 잡을 종류의 실수가 아닙니다.</p>
+<p>반대로 <strong>가장 큰 구멍은 뮤테이션 테스트가 없다는 것보다 앞선 단계에 있습니다.</strong> 지난 글에서도 같은 결론이 나왔는데, <code>CLAUDE.md</code>·하네스 스킬을 바꿨을 때 그게 에이전트 동작을 나쁘게 만들었는지 확인하는 장치가 없습니다. 8절의 표에 <strong>"에이전트 설정" 이라는 행이 아예 없는 셈</strong> 입니다. 애플리케이션 코드는 여섯 차원으로 검사받는데, 그 코드를 만드는 설정은 무검사입니다.</p>
+<hr>
+<h2 id="10-오해하기-쉬운-지점">10. 오해하기 쉬운 지점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#10-오해하기-쉬운-지점"><span class="icon icon-link"></span></a></h2>
+<h3 id="오해-1--제약을-많이-걸면-품질이-올라간다">오해 1 — "제약을 많이 걸면 품질이 올라간다"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-1--제약을-많이-걸면-품질이-올라간다"><span class="icon icon-link"></span></a></h3>
+<p>원문이 명시적으로 반대합니다. 강한 제약은 <strong>품질과 처리량 둘 다에 기여할 때</strong> 걸어야 하고, <strong>둘 중 어느 쪽도 못 하는 제약은 제거하거나 완화</strong> 해야 합니다.</p>
+<p>판정 기준을 이렇게 써볼 수 있습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">이 검사가 최근에 진짜 문제를 잡은 적 있나?         ← 없으면 품질에 기여 안 함</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">이 검사가 없으면 사람이 그 일을 해야 하나?          ← 아니면 처리량에도 기여 안 함</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">→ 둘 다 아니오면 지워라</span></span></code></pre></figure>
+<p>늘 통과하기만 하는 검사는 안전망이 아니라 <strong>비용</strong> 입니다.</p>
+<h3 id="오해-2--제약은-ci에-넣으면-된다">오해 2 — "제약은 CI에 넣으면 된다"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-2--제약은-ci에-넣으면-된다"><span class="icon icon-link"></span></a></h3>
+<p>CI는 <strong>경계에 있는 제약</strong> 입니다. 원문의 주장은 그 반대편입니다 — <strong>가능한 한 이른 시점에, 가능한 모든 경로로</strong> 신호를 쓰라는 것. 마지막에 CI가 "배포 못 합니다"라고 말해주는 건 이미 늦은 피드백입니다.</p>
+<p>에이전트 관점에서 이게 왜 중요하냐면, <strong>에이전트는 피드백을 받은 지점부터 다시 시작할 수 있기 때문</strong> 입니다. 5분짜리 루프 안에서 잡히는 실수와, PR을 올린 뒤 CI에서 잡히는 실수는 복구 비용이 다릅니다.</p>
+<h3 id="오해-3--이제-코드를-안-읽어도-된다">오해 3 — "이제 코드를 안 읽어도 된다"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-3--이제-코드를-안-읽어도-된다"><span class="icon icon-link"></span></a></h3>
+<p>원문 저자 본인이 첫 문단에서 선을 긋습니다. 여전히 코드를 읽고 리뷰하되, <strong>제약을 검사 주체로 삼아도 괜찮은 지점이 어디인지에 대해 아주 의도적</strong> 이라고요.</p>
+<p>읽기를 그만두는 게 아니라, <strong>어디를 읽을지 고르는 것</strong> 입니다. 그 선택 자체가 2절에서 말한 리스크 판단입니다.</p>
+<hr>
+<h2 id="11-정리">11. 정리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#11-정리"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>내용</th><th>왜</th></tr></thead><tbody><tr><td><strong>1. 읽는 주체가 바뀐다</strong></td><td>사람이 매 diff를 읽는 대신 제약이 읽는다</td><td>판돈이 낮을 때만 아무도 안 읽어도 된다</td></tr><tr><td><strong>2. 환경이 곧 품질이다</strong></td><td>믿을 수 있는 피드백 + 피해 없는 실패</td><td>flaky 테스트는 에이전트에게 오염된 오라클이다</td></tr><tr><td><strong>3. 제약에도 비용이 있다</strong></td><td>둘 중 어느 쪽에도 기여 못 하면 지운다</td><td>많이 거는 게 아니라 <strong>세게, 골라서</strong> 건다</td></tr><tr><td><strong>4. 사람은 위로 올라간다</strong></td><td>취향·의도·아키텍처</td><td>기계 속도 루프에 사람 검사를 꽂으면 거기가 병목이다</td></tr></tbody></table>
+<p>그리고 이건 앞선 글들과 같은 이야기의 다른 축입니다.</p>
+<ul>
+<li><a href="/ko/posts/2026-07-05-meta-harness/">자가치유 하네스</a> — 규칙을 <strong>더할 때</strong> 검증하라</li>
+<li><a href="/ko/posts/2026-07-31-context-engineering-claude5/">덜어내는 컨텍스트 엔지니어링</a> — 규칙을 <strong>덜어낼 때</strong> 검증하라</li>
+<li><a href="/ko/posts/2026-08-22-delete-and-verify/">지우고, 어렵게 주고, 검증시켜라</a> — 에이전트에게 <strong>일을 시킬 때</strong> 검증하라</li>
+<li><a href="/ko/posts/2026-08-23-ai-native-sdlc-playbook/">AI 네이티브 SDLC</a> — <strong>프로세스를 바꿀 때</strong> 검증하라</li>
+<li>이번 글 — 그 검증들을 <strong>무엇으로 세울 것인가.</strong> 그게 제약이다</li>
+</ul>
+<p>원문은 마지막에 독자에게 숙제를 하나 남깁니다 — <strong>품질은 에이전트 주변에 세운 제약 안에 있으니, 이 문제 정의를 가져가서 각자의 제약 기반 계획을 세워보라</strong> 는 것.</p>
+<p>읽을 사람이 없는 규모에서 품질을 지키는 유일한 방법은, <strong>읽지 않아도 되게 만드는 시스템을 먼저 세우는 것</strong> 입니다.</p>
+<hr>
+<h2 id="참고-문서">참고 문서<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고-문서"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Addy Osmani, <a href="https://addyosmani.com/blog/agentic-code-quality">Agentic Code Quality</a> (2026-08-08)</li>
+<li>Anthropic, <a href="https://claude.com/blog/the-ai-native-sdlc-playbook">The AI-Native SDLC Playbook</a> (2026)</li>
+<li>이전 글 — <a href="/ko/posts/2026-08-23-ai-native-sdlc-playbook/">AI 네이티브 SDLC 플레이북</a> · <a href="/ko/posts/2026-08-22-delete-and-verify/">지우고, 어렵게 주고, 검증시켜라</a> · <a href="/ko/posts/2026-07-05-meta-harness/">자가치유 하네스 엔지니어링</a></li>
+</ul>b:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$10"}}]}]
+c:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/ko/posts/2026-08-23-ai-native-sdlc-playbook","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"AI 네이티브 SDLC 플레이북 — 코드는 더 이상 병목이 아니다"}]]}],["$","$L4",null,{"href":"/ko/posts/2026-08-26-agent-skills","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["다음 글",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"에이전트가 건너뛰는 건 언제나 시니어의 일이다 — Agent Skills가 강제하는 것"}]]}]]}]
+d:["$","div",null,{"className":"hidden lg:block","children":["$","$L11",null,{"headings":[{"id":"1-이-글은-무엇에-관한-글인가","text":"1. 이 글은 무엇에 관한 글인가?","depth":1},{"id":"전제-사람은-다-못-읽는다","text":"전제: 사람은 다 못 읽는다","depth":2},{"id":"2-리뷰를-건너뛰어도-되는-경우가-있긴-하다","text":"2. 리뷰를 건너뛰어도 되는 경우가 있긴 하다","depth":1},{"id":"3-제약quality-gate이란-구체적으로-무엇인가","text":"3. 제약(quality gate)이란 구체적으로 무엇인가","depth":1},{"id":"4-빠진-조각-둘--환경-그리고-신뢰","text":"4. 빠진 조각 둘 — 환경, 그리고 신뢰","depth":1},{"id":"4-1-자율성--에이전트가-실패하는-이유는-사람과-같다","text":"4-1. 자율성 — 에이전트가 실패하는 이유는 사람과 같다","depth":2},{"id":"4-2-신뢰--시작은-하되-벌어서-얻는-것","text":"4-2. 신뢰 — 시작은 하되, 벌어서 얻는 것","depth":2},{"id":"5-제약은-시점마다-역할이-다르다","text":"5. 제약은 시점마다 역할이 다르다","depth":1},{"id":"6-검증-용량이-모자라면--선택지는-셋뿐이다","text":"6. 검증 용량이 모자라면 — 선택지는 셋뿐이다","depth":1},{"id":"7-사람의-주의를-어디에-둘-것인가","text":"7. 사람의 주의를 어디에 둘 것인가","depth":1},{"id":"8-품질은-단일-지표가-아니다","text":"8. 품질은 단일 지표가 아니다","depth":1},{"id":"9-이-저장소에-대입해보면","text":"9. 이 저장소에 대입해보면","depth":1},{"id":"10-오해하기-쉬운-지점","text":"10. 오해하기 쉬운 지점","depth":1},{"id":"오해-1--제약을-많이-걸면-품질이-올라간다","text":"오해 1 — \"제약을 많이 걸면 품질이 올라간다\"","depth":2},{"id":"오해-2--제약은-ci에-넣으면-된다","text":"오해 2 — \"제약은 CI에 넣으면 된다\"","depth":2},{"id":"오해-3--이제-코드를-안-읽어도-된다","text":"오해 3 — \"이제 코드를 안 읽어도 된다\"","depth":2},{"id":"11-정리","text":"11. 정리","depth":1},{"id":"참고-문서","text":"참고 문서","depth":1}],"title":"목차"}]}]
+e:["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true}]
+f:["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]
+14:null

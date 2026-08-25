@@ -1,0 +1,345 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+4:I[52881,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],""]
+d:I[27722,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+e:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+2:T63b,{"@context":"https://schema.org","@type":"BlogPosting","headline":"What Agents Skip Is Always the Senior Work — What Agent Skills Enforces","description":"1. What Is This Post About? Notes on Addy Osmani's Agent Skills. In one sentence: Most of a senior engineer's job never shows up in the diff. Specs, tests,…","datePublished":"2026-08-26","dateModified":"2026-08-26","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-08-26-agent-skills/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-08-26-agent-skills/"},"image":"https://seungahhong.github.io/blog-assets/2026/08/assets/26/thumbnail.png","keywords":["AI","agents","skills","harness","dev-process"],"articleSection":"Development","wordCount":2513,"timeRequired":"PT13M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"What Agents Skip Is Always the Senior Work — What Agent Skills Enforces\",\"item\":\"https://seungahhong.github.io/en/posts/2026-08-26-agent-skills/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"What Agents Skip Is Always the Senior Work — What Agent Skills Enforces"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"What Agents Skip Is Always the Senior Work — What Agent Skills Enforces"}],"$L5",false,"$L6"]}],"$L7","$L8"]}],"$L9"]}]}]],["$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"fAKoz75L7cgqzE9cHUXEw"}
+5:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-08-26","className":"meta-mono","children":"08/26/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[13,"min read"]}]]}]
+6:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","agents",{"children":["$","$L4",null,{"href":"/en/tags?tag=agents","className":"tag-pill","children":"agents"}]}],["$","li","skills",{"children":["$","$L4",null,{"href":"/en/tags?tag=skills","className":"tag-pill","children":"skills"}]}],["$","li","harness",{"children":["$","$L4",null,{"href":"/en/tags?tag=harness","className":"tag-pill","children":"harness"}]}],["$","li","dev-process",{"children":["$","$L4",null,{"href":"/en/tags?tag=dev-process","className":"tag-pill","children":"dev-process"}]}]]}]
+c:T6bd5,<h2 id="1-what-is-this-post-about">1. What Is This Post About?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-what-is-this-post-about"><span class="icon icon-link"></span></a></h2>
+<p>Notes on Addy Osmani's <a href="https://addyosmani.com/blog/agent-skills">Agent Skills</a>. In one sentence:</p>
+<blockquote>
+<p><strong>Most of a senior engineer's job never shows up in the diff.</strong> Specs, tests, reviews, scope discipline, refusing to ship what can't be verified. And <strong>agents skip exactly that part by default.</strong> Agent Skills is an attempt to make those parts non-optional.</p>
+</blockquote>
+<p>If the <a href="/en/posts/2026-08-25-agentic-code-quality/">last post</a> was about <strong>constraints around the agent</strong>, this one is about <strong>process pushed into it</strong>. Opposite directions, same destination.</p>
+<h3 id="why-they-skip">Why They Skip<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#why-they-skip"><span class="icon icon-link"></span></a></h3>
+<p>The diagnosis is unsentimental. An agent's default behavior is to take <strong>the shortest path to "done."</strong> Ask for a feature and it writes the feature. It doesn't ask whether a spec exists, doesn't write a test before the implementation, doesn't consider whether the change crosses a trust boundary, doesn't check what the PR will look like to a reviewer. It produces code, declares victory, moves on.</p>
+<p>But this isn't a new failure mode. It's <strong>the same one every senior engineer has spent a career learning to avoid.</strong></p>
+<p>Agents skip these steps for the same reason any junior would: <strong>they're invisible.</strong> The reward signal points at "task complete," not "task complete and the design doc exists."</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Rewarded:     code that runs</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Not rewarded: surfacing assumptions · the spec · splitting into reviewable chunks</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">              choosing the boring design · leaving evidence the result is correct</span></span></code></pre></figure>
+<p>Every item on that second list is <strong>what makes a senior a senior</strong>, and every one of them sits outside the reward. Hence the conclusion: <strong>you have to bolt the senior-engineer scaffolding back on.</strong></p>
+<hr>
+<h2 id="2-a-skill-is-a-workflow-not-a-document">2. A Skill Is a Workflow, Not a Document<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-a-skill-is-a-workflow-not-a-document"><span class="icon icon-link"></span></a></h2>
+<p>The most important distinction in the piece — and the one most "AI rules" repos fail.</p>
+<p>The definition given: a skill is <strong>not reference documentation but a workflow</strong> — a sequence of steps the agent follows, checkpoints that produce evidence, and a defined exit criterion. Not "everything you should know about testing."</p>
+<p>Why that distinction is the whole game:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>What you put in</th><th>What the agent does</th></tr></thead><tbody><tr><td><strong>A 2,000-word essay on testing best practices</strong></td><td>Reads it, generates plausible-looking text, <strong>and skips the actual testing</strong></td></tr><tr><td><strong>A workflow</strong> (write the failing test first → run it → watch it fail → write the minimum code to pass → watch it pass → refactor)</td><td><strong>Has something to do</strong>, and you <strong>have something to verify</strong></td></tr></tbody></table>
+<blockquote>
+<p><strong>Process over prose. Workflows over reference. Steps with exit criteria over essays without them.</strong></p>
+</blockquote>
+<p>And the line that stings:</p>
+<blockquote>
+<p>That also explains why so many "AI rules" repos end up doing nothing in practice. <strong>The rules are essays.</strong></p>
+</blockquote>
+<p>Writing "please write good tests" into <code>CLAUDE.md</code> and expecting compliance — that's an essay. With no artifact to check, you can't even tell whether it was followed.</p>
+<hr>
+<h2 id="3-five-principles-doing-the-work">3. Five Principles Doing the Work<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-five-principles-doing-the-work"><span class="icon icon-link"></span></a></h2>
+<p>Five design decisions are described as load-bearing; the rest follows from them.</p>
+<h3 id="3-1-process-over-prose">3-1. Process Over Prose<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-1-process-over-prose"><span class="icon icon-link"></span></a></h3>
+<p>Covered above. It's applied to human teams too — <strong>a 200-page handbook goes unread under time pressure, while a small set of workflows with checkpoints actually gets run.</strong></p>
+<h3 id="3-2-anti-rationalization-tables--the-thing-most-worth-stealing">3-2. Anti-Rationalization Tables — The Thing Most Worth Stealing<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-2-anti-rationalization-tables--the-thing-most-worth-stealing"><span class="icon icon-link"></span></a></h3>
+<p>Called out as the pattern the author most wants other teams to take.</p>
+<p>Each skill carries <strong>a table of excuses an agent (or a tired engineer) might use to skip the workflow</strong>, each paired with <strong>a pre-written rebuttal</strong>. Roughly, in the article's examples:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Excuse</th><th>Rebuttal</th></tr></thead><tbody><tr><td>"This task is too simple to need a spec"</td><td>Acceptance criteria still apply. <strong>Five lines is fine. Zero lines is not</strong></td></tr><tr><td>"I'll write tests later"</td><td><strong>"Later" is the load-bearing word.</strong> There is no later. Write the failing test first</td></tr><tr><td>"Tests pass, ship it"</td><td><strong>Passing tests are evidence, not proof.</strong> Did you check the runtime? The user-visible behavior? Did a human read the diff?</td></tr></tbody></table>
+<p>Why it works:</p>
+<blockquote>
+<p><strong>LLMs are excellent at rationalization.</strong> They will produce a plausible-sounding paragraph explaining why <em>this particular</em> task doesn't need a spec, or why <em>this particular</em> change is fine to merge unreviewed.</p>
+</blockquote>
+<p>So the table is <strong>a pre-written rebuttal to a lie the agent hasn't told yet</strong>. Rebutting afterward requires a human in the room; writing it down beforehand puts it in context already.</p>
+<p>And the observation about human teams is the good part:</p>
+<blockquote>
+<p>Most engineering decay isn't anyone <strong>choosing to do bad work.</strong> It's people <strong>accepting plausible-sounding justifications for skipping the parts they don't feel like doing.</strong></p>
+</blockquote>
+<h3 id="3-3-verification-is-non-negotiable">3-3. Verification Is Non-Negotiable<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-3-verification-is-non-negotiable"><span class="icon icon-link"></span></a></h3>
+<p>Every skill terminates in <strong>concrete evidence</strong>. Tests pass. Clean build output. A runtime trace showing expected behavior. A reviewer signs off. <strong>"Seems right" is never sufficient.</strong></p>
+<p>The framing: <strong>the agent is a generator, and you need a separate signal that the work is done.</strong> Exactly the constraints from <a href="/en/posts/2026-08-25-agentic-code-quality/">the last post</a> and the evals from <a href="/en/posts/2026-08-23-ai-native-sdlc-playbook/">the one before</a>.</p>
+<h3 id="3-4-progressive-disclosure">3-4. Progressive Disclosure<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-4-progressive-disclosure"><span class="icon icon-link"></span></a></h3>
+<p>Don't load twenty skills into context at session start. <strong>Activate by phase</strong>, with a small meta-skill acting as a <strong>router</strong> that decides which skill fits the current task.</p>
+<p>The reasoning is simple: every token loaded into context degrades performance somewhere, so you load what's relevant and leave the rest on disk.</p>
+<p>It's <a href="/en/posts/2026-07-31-context-engineering-claude5/">context engineering by subtraction</a> applied <strong>at skill granularity</strong>. Routing is how a twenty-skill library fits into a 5K-token slot.</p>
+<h3 id="3-5-scope-discipline">3-5. Scope Discipline<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-5-scope-discipline"><span class="icon icon-link"></span></a></h3>
+<p>The meta-skill's non-negotiable — <strong>"touch only what you're asked to touch."</strong> Don't refactor adjacent systems. Don't remove code you don't fully understand. Don't brush against a TODO and decide to rewrite the file.</p>
+<p>It sounds obvious until you watch an agent decide that fixing one bug requires <strong>modernizing three unrelated files</strong>. Scope discipline is named the single biggest determinant of whether an agent's PR is <strong>mergeable or has to be unwound</strong>.</p>
+<hr>
+<h2 id="4-the-google-dna--public-already-just-not-built-in">4. The Google DNA — Public Already, Just Not Built In<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-the-google-dna--public-already-just-not-built-in"><span class="icon icon-link"></span></a></h2>
+<p>The skills being saturated with practices from <em>Software Engineering at Google</em> is deliberate, and the reason is exact: <strong>most of what makes Google-scale software work is already documented and public, and it is precisely the part agents are most likely to skip.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Practice</th><th>Where it lands</th></tr></thead><tbody><tr><td><strong>Hyrum's Law</strong></td><td>API/interface design — every observable behavior eventually becomes someone's dependency</td></tr><tr><td><strong>Test pyramid · the Beyoncé Rule</strong></td><td>TDD — <em>"if you liked it, you should have put a test on it"</em></td></tr><tr><td><strong>DAMP over DRY</strong></td><td>Test code should read like a specification, even at some cost in duplication</td></tr><tr><td><strong>~100-line PRs · Critical/Nit/Optional/FYI labels</strong></td><td>Code review — <strong>big PRs don't get reviewed, they get rubber-stamped</strong></td></tr><tr><td><strong>Chesterton's Fence</strong></td><td>Simplification — don't remove it until you know why it was put there</td></tr><tr><td><strong>Trunk-based development · atomic commits</strong></td><td>Git workflow</td></tr><tr><td><strong>Shift Left · feature flags</strong></td><td>CI/CD — decouple deploy from release</td></tr><tr><td><strong>Code as liability</strong></td><td>Deprecation/migration — every line you keep, you maintain forever</td></tr></tbody></table>
+<p>And then the key sentence of the section:</p>
+<blockquote>
+<p>A frontier model has read the phrase "Hyrum's Law" in its training data, but <strong>it does not apply Hyrum's Law when it's designing your API at 3am.</strong></p>
+</blockquote>
+<p><strong>The gap between knowing and applying</strong> — that's what a skill closes. It isn't teaching the model something it doesn't know; it's making it <strong>reach for what it knows at the moment that matters.</strong></p>
+<hr>
+<h2 id="5-where-skills-sit-in-the-harness--and-the-limit-that-matters-most">5. Where Skills Sit in the Harness — and the Limit That Matters Most<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-where-skills-sit-in-the-harness--and-the-limit-that-matters-most"><span class="icon icon-link"></span></a></h2>
+<p>Skills are positioned as <strong>one layer</strong> of the harness.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Layer</th><th>Job</th></tr></thead><tbody><tr><td><strong>AGENTS.md / CLAUDE.md</strong></td><td>The rolling rulebook</td></tr><tr><td><strong>Skills</strong></td><td>Reusable workflow chunks, progressively disclosed</td></tr><tr><td><strong>Hooks</strong></td><td><strong>The deterministic enforcement layer</strong></td></tr><tr><td><strong>Tools</strong></td><td>The actions the agent can take</td></tr><tr><td><strong>Session log</strong></td><td>Durable memory</td></tr></tbody></table>
+<p>Overlay the <strong>enforcement</strong> axis from the <a href="/en/posts/2026-08-23-ai-native-sdlc-playbook/">SDLC playbook post</a> on top of that:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">CLAUDE.md · skills  → things you hope the model follows</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">hooks · evals       → things that hold even if the model doesn't cooperate</span></span></code></pre></figure>
+<p><strong>Skills sit on the non-enforcing side.</strong> However well written, a workflow is still text in context, and an agent can read it and skip it anyway. The very existence of anti-rationalization tables is proof that <strong>the skipping actually happens.</strong></p>
+<p>So here's how I read the piece: <strong>skills define what to do; hooks make it impossible to pass without doing it.</strong> You need both, and confusing them is costly. (Section 7 has a live example from this repo.)</p>
+<p>One more good point, about long runs: skills matter <strong>more for long-running agents than chat-style ones</strong>, because long runs amplify every shortcut.</p>
+<p>An agent that skips the test in a 10-minute session produces one bug. An agent that skips it in a 30-hour session produces <strong>a debugging archaeology project at the end of the run, when nobody remembers the original intent.</strong> The longer the run, the more the scaffolding has to be <strong>enforced rather than suggested</strong>.</p>
+<hr>
+<h2 id="6-what-to-take-even-without-installing-anything">6. What to Take Even Without Installing Anything<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-what-to-take-even-without-installing-anything"><span class="icon icon-link"></span></a></h2>
+<p>The article lists patterns worth stealing even if you never touch an AI agent. I think this is where its real value is.</p>
+<p><strong>① Anti-rationalization as a team practice.</strong> Write down the lies your team tells itself. "We'll fix the tests after launch." "This change is too small for a design doc." "It's fine, we have monitoring." Pair each with a rebuttal, put it in the wiki or <code>AGENTS.md</code>, and it will <strong>catch the next Friday-afternoon shortcut.</strong></p>
+<p><strong>② Process over prose for internal docs too.</strong> If you're writing a 2,000-word "how we approach X," you've written reference material. Convert it to a workflow with checkpoints and <strong>the doc shrinks to 400 words and people actually run it.</strong> Same for onboarding guides and runbooks.</p>
+<p><strong>③ Verification as a hard exit criterion.</strong> Make "produce evidence" the exit step of every task. A green test run, a screenshot, a log, a review approval — anything that proves the work is done. Without it, the task isn't done.</p>
+<p><strong>④ Progressive disclosure for rulebooks.</strong> Instead of a 50-page handbook, write <strong>a small router pointing to the right small chapter.</strong> True for anything anyone reads under time pressure.</p>
+<p>And the <strong>five non-negotiables</strong> lifted from the meta-skill, which the author would put in any <code>AGENTS.md</code> tomorrow:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">1.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Surface assumptions before building   ← silently held wrong assumptions are the top failure mode</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">2.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Stop and ask when requirements conflict ← don't guess</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">3.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Push back when warranted              ← not a yes-machine</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">4.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Prefer the boring, obvious solution    ← cleverness is expensive</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">5.</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Touch only what you're asked to touch</span></span></code></pre></figure>
+<p>An engineering culture in five lines, and <strong>you don't need to install anything to adopt it.</strong></p>
+<hr>
+<h2 id="7-applying-it-to-this-repo--the-skills-were-there-the-hook-did-the-enforcing">7. Applying It to This Repo — the Skills Were There; the Hook Did the Enforcing<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-applying-it-to-this-repo--the-skills-were-there-the-hook-did-the-enforcing"><span class="icon icon-link"></span></a></h2>
+<p>Reading without applying leaves nothing behind, so I mapped it. And this repo happens to hold <strong>a good live example.</strong></p>
+<p>Several harness skills are attached here — <code>frontend-harness</code> (a11y, semantics, SEO, TDD, review), <code>product-spec-harness</code> (planning), <code>test-layering-harness</code> (test layering), <code>git-harness</code> (commits). By the article's framing, <strong>the lineup is already in place.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>The article's six phases</th><th>What exists here</th></tr></thead><tbody><tr><td><strong>Define / Plan</strong></td><td><code>product-spec-harness</code>, <code>frontend-harness:planner</code></td></tr><tr><td><strong>Build</strong></td><td><code>frontend-harness:tdd</code>, the guideline skills</td></tr><tr><td><strong>Verify</strong></td><td><code>frontend-harness:verify</code>, <code>test-layering-harness</code></td></tr><tr><td><strong>Review</strong></td><td><code>frontend-harness:review</code>, <code>/code-review</code></td></tr><tr><td><strong>Ship</strong></td><td><code>git-harness:commit</code></td></tr></tbody></table>
+<p>But <strong>what actually happened while committing the previous post</strong> demonstrated section 5 perfectly.</p>
+<p>The <code>git-harness:commit</code> skill defines its workflow very well — check preconditions, extract the issue number, pick a type, decide whether a body is warranted, run a validation checklist, preview and get approval, then ask about push. A textbook example of <strong>a workflow with checkpoints and exit criteria.</strong></p>
+<p>And yet the thing that actually blocked a dangerous command wasn't the skill.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">What the skill did:  supplied a good commit-message workflow</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">What actually blocked: guard.sh exited 2 on </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`git add -A`</span></span></code></pre></figure>
+<p><code>frontend-harness</code>'s <code>guard.sh</code> hook rejected <code>git add -A</code>, forcing files to be listed explicitly. <strong>However well written a skill is, it's text; the blocking is done by hooks.</strong> The enforcement axis from section 5, reproduced inside a single session.</p>
+<p>The conclusion isn't "skills are useless." It's that <strong>they do different jobs.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>Good at</th><th>Not able to</th></tr></thead><tbody><tr><td><strong>Skills</strong></td><td>Defining what to do in what order · prompting evidence</td><td><strong>Preventing the skip</strong></td></tr><tr><td><strong>Hooks</strong></td><td>Deterministically blocking a non-negotiable line</td><td><strong>Replacing a procedure that needs judgment</strong></td></tr></tbody></table>
+<p>And the gap I named in <a href="/en/posts/2026-08-25-agentic-code-quality/">the last post</a> — <strong>no eval verifying whether a change to a skill or <code>CLAUDE.md</code> made things worse</strong> — hurts more from this angle. The more skills accumulate, the wider that gap gets. Twenty files encoding workflows and zero regression tests over them means <strong>the most-used code is the least-verified code.</strong></p>
+<hr>
+<h2 id="8-easy-things-to-get-wrong">8. Easy Things to Get Wrong<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-easy-things-to-get-wrong"><span class="icon icon-link"></span></a></h2>
+<h3 id="misreading-1--a-skill-is-just-a-well-written-prompt">Misreading 1 — "A skill is just a well-written prompt"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-1--a-skill-is-just-a-well-written-prompt"><span class="icon icon-link"></span></a></h3>
+<p>No. The dividing line is <strong>whether there's a verifiable artifact.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Prompt:   "write thorough tests"              → no way to check whether it happened</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Workflow: "commit the failing test first"     → it's either in the commit log or it isn't</span></span></code></pre></figure>
+<p>The test is whether each checkpoint leaves <strong>a trace visible from outside</strong>. If it doesn't, it's a well-written prompt.</p>
+<h3 id="misreading-2--more-skills-installed-is-better">Misreading 2 — "More skills installed is better"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-2--more-skills-installed-is-better"><span class="icon icon-link"></span></a></h3>
+<p>Section 3-4 disagrees directly. Load them all and <strong>every token degrades performance somewhere.</strong> Twenty works only because twenty are never loaded at once. Adding skills without a router is just adding context pollution.</p>
+<h3 id="misreading-3--this-is-an-agent-thing">Misreading 3 — "This is an agent thing"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-3--this-is-an-agent-thing"><span class="icon icon-link"></span></a></h3>
+<p>Section 6 is the rebuttal. Anti-rationalization tables, process over prose, evidence-based exit criteria, progressive disclosure — all of it <strong>transfers to human teams unchanged.</strong> That's why the article insists you can adopt it without installing anything.</p>
+<h3 id="misreading-4--we-installed-the-skills-so-the-process-is-followed">Misreading 4 — "We installed the skills, so the process is followed"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-4--we-installed-the-skills-so-the-process-is-followed"><span class="icon icon-link"></span></a></h3>
+<p>That's exactly what section 7 shows. <strong>Skills are what you hope gets followed; hooks are what you can't get past without following.</strong> Writing a must-hold rule into a skill and feeling safe is the most common mistake.</p>
+<hr>
+<h2 id="9-wrapping-up">9. Wrapping Up<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-wrapping-up"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>The point</th><th>Why</th></tr></thead><tbody><tr><td><strong>1. What gets skipped is the senior work</strong></td><td>Spec, tests, review, scope</td><td>The reward points at "done," not "done + evidence"</td></tr><tr><td><strong>2. Write it as a workflow</strong></td><td>Steps, checkpoints, exit criteria — not an essay</td><td>With no artifact, you can't tell if it was followed</td></tr><tr><td><strong>3. Rebut the excuses in advance</strong></td><td>Anti-rationalization tables</td><td>LLMs rationalize well; rebutting later needs a human present</td></tr><tr><td><strong>4. Route, don't preload</strong></td><td>Progressive disclosure</td><td>Every token degrades performance somewhere</td></tr><tr><td><strong>5. Hooks do the enforcing</strong></td><td>Skills define; hooks block</td><td>Never leave a must-hold rule in a skill alone</td></tr></tbody></table>
+<p>And this is another axis of the same story the earlier posts have been telling.</p>
+<ul>
+<li><a href="/en/posts/2026-07-05-meta-harness/">Self-healing harness</a> — verify when you <strong>add</strong> a rule</li>
+<li><a href="/en/posts/2026-07-31-context-engineering-claude5/">Context engineering by subtraction</a> — verify when you <strong>remove</strong> one</li>
+<li><a href="/en/posts/2026-08-23-ai-native-sdlc-playbook/">The AI-native SDLC</a> — verify when you <strong>change the process</strong></li>
+<li><a href="/en/posts/2026-08-25-agentic-code-quality/">Quality lives in the constraints</a> — verify with what <strong>surrounds</strong> the agent</li>
+<li>This post — what you <strong>push into</strong> it. That's a skill</li>
+</ul>
+<p>The closing framing fits here too: an AI coding agent is <strong>an extremely capable junior with no instinct for the parts of the job that don't show up in the diff</strong> — and that senior work will be skipped right up until skipping becomes impossible.</p>
+<blockquote>
+<p><strong>That the work isn't optional doesn't change just because the engineer is a model.</strong></p>
+</blockquote>
+<hr>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Addy Osmani, <a href="https://addyosmani.com/blog/agent-skills">Agent Skills</a> (2026-05-03) · <a href="https://github.com/addyosmani/agent-skills">repo</a> (MIT)</li>
+<li>Titus Winters et al., <em>Software Engineering at Google</em> (2020)</li>
+<li>Earlier posts — <a href="/en/posts/2026-08-25-agentic-code-quality/">Quality Lives in the Constraints</a> · <a href="/en/posts/2026-08-23-ai-native-sdlc-playbook/">The AI-Native SDLC Playbook</a> · <a href="/en/posts/2026-07-31-context-engineering-claude5/">Context Engineering by Subtraction</a></li>
+</ul>7:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$c"}}]}]
+8:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/en/posts/2026-08-25-agentic-code-quality","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Quality Lives in the Constraints — Holding the Bar at a Scale Nobody Can Review"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+9:["$","div",null,{"className":"hidden lg:block","children":["$","$Ld",null,{"headings":[{"id":"1-what-is-this-post-about","text":"1. What Is This Post About?","depth":1},{"id":"why-they-skip","text":"Why They Skip","depth":2},{"id":"2-a-skill-is-a-workflow-not-a-document","text":"2. A Skill Is a Workflow, Not a Document","depth":1},{"id":"3-five-principles-doing-the-work","text":"3. Five Principles Doing the Work","depth":1},{"id":"3-1-process-over-prose","text":"3-1. Process Over Prose","depth":2},{"id":"3-2-anti-rationalization-tables--the-thing-most-worth-stealing","text":"3-2. Anti-Rationalization Tables — The Thing Most Worth Stealing","depth":2},{"id":"3-3-verification-is-non-negotiable","text":"3-3. Verification Is Non-Negotiable","depth":2},{"id":"3-4-progressive-disclosure","text":"3-4. Progressive Disclosure","depth":2},{"id":"3-5-scope-discipline","text":"3-5. Scope Discipline","depth":2},{"id":"4-the-google-dna--public-already-just-not-built-in","text":"4. The Google DNA — Public Already, Just Not Built In","depth":1},{"id":"5-where-skills-sit-in-the-harness--and-the-limit-that-matters-most","text":"5. Where Skills Sit in the Harness — and the Limit That Matters Most","depth":1},{"id":"6-what-to-take-even-without-installing-anything","text":"6. What to Take Even Without Installing Anything","depth":1},{"id":"7-applying-it-to-this-repo--the-skills-were-there-the-hook-did-the-enforcing","text":"7. Applying It to This Repo — the Skills Were There; the Hook Did the Enforcing","depth":1},{"id":"8-easy-things-to-get-wrong","text":"8. Easy Things to Get Wrong","depth":1},{"id":"misreading-1--a-skill-is-just-a-well-written-prompt","text":"Misreading 1 — \"A skill is just a well-written prompt\"","depth":2},{"id":"misreading-2--more-skills-installed-is-better","text":"Misreading 2 — \"More skills installed is better\"","depth":2},{"id":"misreading-3--this-is-an-agent-thing","text":"Misreading 3 — \"This is an agent thing\"","depth":2},{"id":"misreading-4--we-installed-the-skills-so-the-process-is-followed","text":"Misreading 4 — \"We installed the skills, so the process is followed\"","depth":2},{"id":"9-wrapping-up","text":"9. Wrapping Up","depth":1},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true}]
+b:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+10:null
