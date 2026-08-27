@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25",
+  "updatedAt": "2026-08-27",
   "rangeDays": 90,
   "items": [
     {
@@ -8,7 +8,7 @@
     },
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 25
+      "views": 28
     },
     {
       "slug": "2026-08-01-choosing-claude-model",
@@ -20,7 +20,7 @@
     },
     {
       "slug": "2026-07-31-context-engineering-claude5",
-      "views": 9
+      "views": 10
     },
     {
       "slug": "2026-07-05-meta-harness",
@@ -40,6 +40,10 @@
     },
     {
       "slug": "2026-08-22-delete-and-verify",
+      "views": 4
+    },
+    {
+      "slug": "2026-08-23-ai-native-sdlc-playbook",
       "views": 4
     },
     {
@@ -64,10 +68,6 @@
     },
     {
       "slug": "2025-09-07-vite7.0",
-      "views": 3
-    },
-    {
-      "slug": "2026-08-23-ai-native-sdlc-playbook",
       "views": 3
     },
     {
@@ -155,6 +155,10 @@
       "views": 2
     },
     {
+      "slug": "2026-08-26-agent-skills",
+      "views": 2
+    },
+    {
       "slug": "2020-02-17-c-c++",
       "views": 1
     },
@@ -164,6 +168,10 @@
     },
     {
       "slug": "2021-12-01-deno",
+      "views": 1
+    },
+    {
+      "slug": "2021-12-02-svelte",
       "views": 1
     },
     {
@@ -256,6 +264,10 @@
     },
     {
       "slug": "2025-02-09-git-to-mp4-convert",
+      "views": 1
+    },
+    {
+      "slug": "2026-08-25-agentic-code-quality",
       "views": 1
     }
   ]
