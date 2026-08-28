@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-08-28",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-02-LLM-WIKI",
-      "views": 34
+      "views": 35
     },
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 28
+      "views": 33
     },
     {
       "slug": "2026-08-01-choosing-claude-model",
@@ -68,6 +68,18 @@
     },
     {
       "slug": "2025-09-07-vite7.0",
+      "views": 3
+    },
+    {
+      "slug": "2026-06-03-claude-marketplace",
+      "views": 3
+    },
+    {
+      "slug": "2026-07-12-product-spec-harness",
+      "views": 3
+    },
+    {
+      "slug": "2026-07-14-typescript7.0",
       "views": 3
     },
     {
@@ -140,18 +152,6 @@
     },
     {
       "slug": "2025-06-29-vite6.0",
-      "views": 2
-    },
-    {
-      "slug": "2026-06-03-claude-marketplace",
-      "views": 2
-    },
-    {
-      "slug": "2026-07-12-product-spec-harness",
-      "views": 2
-    },
-    {
-      "slug": "2026-07-14-typescript7.0",
       "views": 2
     },
     {
