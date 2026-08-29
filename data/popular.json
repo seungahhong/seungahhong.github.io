@@ -4,7 +4,7 @@
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 40
+      "views": 41
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
@@ -31,6 +31,10 @@
       "views": 5
     },
     {
+      "slug": "2026-08-23-ai-native-sdlc-playbook",
+      "views": 5
+    },
+    {
       "slug": "2022-03-12-react-router-v6",
       "views": 4
     },
@@ -40,10 +44,6 @@
     },
     {
       "slug": "2026-08-22-delete-and-verify",
-      "views": 4
-    },
-    {
-      "slug": "2026-08-23-ai-native-sdlc-playbook",
       "views": 4
     },
     {
@@ -152,6 +152,10 @@
     },
     {
       "slug": "2025-06-29-vite6.0",
+      "views": 2
+    },
+    {
+      "slug": "2026-08-25-agentic-code-quality",
       "views": 2
     },
     {
@@ -264,10 +268,6 @@
     },
     {
       "slug": "2025-02-09-git-to-mp4-convert",
-      "views": 1
-    },
-    {
-      "slug": "2026-08-25-agentic-code-quality",
       "views": 1
     }
   ]
