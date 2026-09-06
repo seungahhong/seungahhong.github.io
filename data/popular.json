@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-06",
   "rangeDays": 90,
   "items": [
     {
@@ -59,6 +59,10 @@
       "views": 4
     },
     {
+      "slug": "2026-08-26-agent-skills",
+      "views": 4
+    },
+    {
       "slug": "2020-02-16-winapi",
       "views": 3
     },
@@ -100,10 +104,6 @@
     },
     {
       "slug": "2025-09-07-vite7.0",
-      "views": 3
-    },
-    {
-      "slug": "2026-08-26-agent-skills",
       "views": 3
     },
     {
@@ -180,6 +180,10 @@
     },
     {
       "slug": "2026-08-25-agentic-code-quality",
+      "views": 2
+    },
+    {
+      "slug": "2026-09-06-skills-governance",
       "views": 2
     },
     {
