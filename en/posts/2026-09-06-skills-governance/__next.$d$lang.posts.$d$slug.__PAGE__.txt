@@ -1,0 +1,456 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+4:I[52881,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],""]
+d:I[27722,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+e:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+2:T649,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Your Org's Know-How Now Lives in Skills — Ungoverned, It Becomes Technical Debt","description":"1. What Is This Post About? Notes on AI-Native Organisations Run on Skills: How to Structure and Scale Them, a talk by Imad Touil of QuantumBlack (AI by…","datePublished":"2026-09-06","dateModified":"2026-09-06","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-09-06-skills-governance/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-09-06-skills-governance/"},"image":"https://seungahhong.github.io/blog-assets/2026/09/assets/06/thumbnail.png","keywords":["AI","agents","skills","governance","harness"],"articleSection":"Development","wordCount":2737,"timeRequired":"PT14M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Your Org's Know-How Now Lives in Skills — Ungoverned, It Becomes Technical Debt\",\"item\":\"https://seungahhong.github.io/en/posts/2026-09-06-skills-governance/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"Your Org's Know-How Now Lives in Skills — Ungoverned, It Becomes Technical Debt"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"Your Org's Know-How Now Lives in Skills — Ungoverned, It Becomes Technical Debt"}],"$L5",false,"$L6"]}],"$L7","$L8"]}],"$L9"]}]}]],["$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"EfFJowp8jujhDUG7vTX7k"}
+5:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-09-06","className":"meta-mono","children":"09/06/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[14,"min read"]}]]}]
+6:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","agents",{"children":["$","$L4",null,{"href":"/en/tags?tag=agents","className":"tag-pill","children":"agents"}]}],["$","li","skills",{"children":["$","$L4",null,{"href":"/en/tags?tag=skills","className":"tag-pill","children":"skills"}]}],["$","li","governance",{"children":["$","$L4",null,{"href":"/en/tags?tag=governance","className":"tag-pill","children":"governance"}]}],["$","li","harness",{"children":["$","$L4",null,{"href":"/en/tags?tag=harness","className":"tag-pill","children":"harness"}]}]]}]
+c:T7597,<h2 id="1-what-is-this-post-about">1. What Is This Post About?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-what-is-this-post-about"><span class="icon icon-link"></span></a></h2>
+<p>Notes on <a href="https://www.youtube.com/watch?v=M05vON8i0aI">AI-Native Organisations Run on Skills: How to Structure and Scale Them</a>, a talk by Imad Touil of QuantumBlack (AI by McKinsey) at the AI Engineer World's Fair.</p>
+<p>It opens with three show-of-hands questions. The <strong>order in which the hands drop</strong> is the entire talk.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"Who has built and is using skills?"          → most of the room</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"Who shares them with their team?"            → fewer</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"Who governs and maintains them org-wide?"    → a handful</span></span></code></pre></figure>
+<p>If the <a href="/en/posts/2026-08-26-agent-skills/">last post</a> was about <strong>how to use a skill inside my own repo</strong>, this one is a level up: <strong>who owns the organization's skills, how they get distributed, and what verifies them.</strong> The moment a personal habit becomes an asset, it turns into a completely different problem.</p>
+<p>The claim, in one line:</p>
+<blockquote>
+<p><strong>Skills have become where an organization's know-how actually lives.</strong> And if you don't govern them now, they become <strong>a new class of technical debt.</strong></p>
+</blockquote>
+<hr>
+<h2 id="2-of-the-four-pieces-in-a-workflow-why-only-skills-are-left">2. Of the Four Pieces in a Workflow, Why Only Skills Are Left<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-of-the-four-pieces-in-a-workflow-why-only-skills-are-left"><span class="icon icon-link"></span></a></h2>
+<p>The talk splits the agentic stack into two loops.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Loop</th><th>Components</th></tr></thead><tbody><tr><td><strong>Inner loop</strong> (coding agent harness)</td><td>context manager · tools/MCP · memory &#x26; state · <strong>skills loader</strong></td></tr><tr><td><strong>Outer loop</strong> (workflows)</td><td><strong>skills</strong> · sub-agents · MCP servers · hooks</td></tr></tbody></table>
+<p>Then it eliminates the four outer-loop pieces one by one. This subtraction is the sharpest part of the talk.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Piece</th><th>The diagnosis</th></tr></thead><tbody><tr><td><strong>Hooks</strong></td><td>They only fire on events</td></tr><tr><td><strong>MCP servers</strong></td><td>Almost nobody builds their own. We consume what the tools we already use provide</td></tr><tr><td><strong>Sub-agents</strong></td><td>Mostly exist to <strong>protect the context window</strong> — delegating a specific task</td></tr><tr><td><strong>Skills</strong></td><td><strong>This is what's left</strong></td></tr></tbody></table>
+<blockquote>
+<p>All of your know-how ends up <strong>at the skills level.</strong> And if your skills aren't properly structured, then your workflow was never deterministic to begin with.</p>
+</blockquote>
+<p>That last sentence is the crux. "Our workflow is deterministic" is only true when the skills are structured. If skills are a pile of text each person wrote differently, the workflow is a workflow in name only.</p>
+<p>The talk also defines workflows as <strong>harness blueprints</strong> — the design that shapes a harness's runtime behavior. That definition returns later as "put whole workflows in the catalog too."</p>
+<hr>
+<h2 id="3-what-we-call-a-workflow-is-one-cell-of-the-whole">3. What We Call a Workflow Is One Cell of the Whole<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-what-we-call-a-workflow-is-one-cell-of-the-whole"><span class="icon icon-link"></span></a></h2>
+<p>This section was the most valuable part of the talk for me.</p>
+<p>The development workflow we know is usually four steps:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">specify → design/plan → tasks → implement</span></span></code></pre></figure>
+<p>Most coding agents are shaped exactly like this. But the observation is: <strong>at organizational scale, all four steps are one cell in the journey</strong> — the cell that builds a single product increment.</p>
+<p>The real end-to-end lifecycle, from a business defining value to shipping it to a client, looks like this:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Stage</th><th>What happens</th></tr></thead><tbody><tr><td><strong>Product strategy</strong></td><td>What to build and why · define success metrics · break down the roadmap (market research, competitive analysis, customer interviews as input)</td></tr><tr><td><strong>Discovery</strong></td><td>Problem statements · find a solution · validate · experiment · user stories</td></tr><tr><td><strong>Data preparation</strong></td><td>Clean up the data catalog · adjust endpoint integrations to core systems</td></tr><tr><td><strong>Data product delivery</strong></td><td>Build pipelines · validate data quality · make catalogued data assets ready</td></tr><tr><td><strong>Product increment</strong></td><td>← <strong>the four steps we call "the workflow" live here</strong></td></tr><tr><td><strong>Platform engineering / ops</strong></td><td>Provision infrastructure · IaC modules · launch</td></tr><tr><td><strong>Operate &#x26; optimize</strong></td><td>Performance optimization · incident resolution → loop again</td></tr></tbody></table>
+<p>And a second point matters even more. <strong>An organization doesn't run just one of these.</strong> Across an 18-year career, every organization had several SDLCs scattered across it — one for mobile, others per department or per platform, some internal for employees, others customer-facing. <strong>There is no single workflow that builds anything you want.</strong></p>
+<p>My conclusion: <strong>the coding-agent industry has been optimizing the innermost 10%.</strong> The specify→implement stretch is drowning in tooling, while the six stages around it mostly live in people's heads and Confluence pages. And that outer region is exactly where organizations differ from one another — which is to say, <strong>where the know-how is concentrated.</strong></p>
+<hr>
+<h2 id="4-design-skills-like-microservices">4. Design Skills Like Microservices<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-design-skills-like-microservices"><span class="icon icon-link"></span></a></h2>
+<p>The talk doesn't treat skill design as a new problem. It's <strong>a problem we already solved during the microservices era.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Principle</th><th>What it means for skills</th></tr></thead><tbody><tr><td><strong>Reusable</strong></td><td>Not written once and thrown away</td></tr><tr><td><strong>Modular</strong></td><td>Clear boundaries</td></tr><tr><td><strong>Discoverable</strong></td><td>Another team can find it automatically when they need it</td></tr><tr><td><strong>Portable</strong></td><td>Across workflows — and <strong>across harnesses</strong></td></tr><tr><td><strong>Specialized</strong></td><td>Not one monolithic skill. <strong>One task per skill</strong></td></tr><tr><td><strong>Composable</strong></td><td>Stack without duplication. No conflicts between them</td></tr><tr><td><strong>Consistent</strong></td><td>Determinism is the whole reason skills exist</td></tr><tr><td><strong>Cost-efficient</strong></td><td><strong>Progressive disclosure</strong> — the right skills, the right amount, at the right time</td></tr></tbody></table>
+<p>Portability is a big practical deal. Because the standard is shared, <strong>a skill you wrote for Claude Code just works when you move it to Cursor.</strong> Skills aren't vendor-locked, which is what qualifies them to be an organizational asset.</p>
+<p>The summarizing line:</p>
+<blockquote>
+<p>Skills define a new unit that makes your organization's know-how <strong>executable, portable, and cheap.</strong></p>
+</blockquote>
+<h3 id="a-composition-example--regulatory-compliance">A Composition Example — Regulatory Compliance<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#a-composition-example--regulatory-compliance"><span class="icon icon-link"></span></a></h3>
+<p>The example given is concrete enough to repeat. Skill catalog on the left, harness in the middle, output on the right.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[skill catalog]                    [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">runtime</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]                       [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">output</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">data retention policy        ┐</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">disclosure standards         ├→ regulatory disclosure review →  audit report (storable)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">GDPR rules                   │   workflow (pulls at runtime)    identified improvements</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">fill-in templates            ┘                                  → feedback loop to codebase</span></span></code></pre></figure>
+<p>This is how you make every feature — web, mobile, whatever application it was built in — respect the same rules. And it matters that the output is an audit report: it's the <strong>"does a verifiable artifact remain?"</strong> test from the <a href="/en/posts/2026-08-26-agent-skills/">last post</a>, raised to organizational scale.</p>
+<hr>
+<h2 id="5-what-happens-without-governance--a-new-class-of-technical-debt">5. What Happens Without Governance — A New Class of Technical Debt<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-what-happens-without-governance--a-new-class-of-technical-debt"><span class="icon icon-link"></span></a></h2>
+<p>The list from the talk. Every item is something we lived through in the microservices era.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Debt</th><th>How it forms</th></tr></thead><tbody><tr><td><strong>Duplication</strong></td><td>Teams on the same stack and infra <strong>build the same skill over and over</strong></td></tr><tr><td><strong>Quality decay</strong></td><td>Unless you retest skills <strong>against new models, not just against the original task</strong>, they rot</td></tr><tr><td><strong>Undiscoverable</strong></td><td>Without governance you can't find them at all</td></tr><tr><td><strong>No ownership</strong></td><td>The exact problem Backstage-style IDPs solved — with no known <strong>owner</strong>, nobody maintains it</td></tr><tr><td><strong>Not composable</strong></td><td>Composability isn't a default. It comes from <strong>deliberately drawn boundaries</strong>, like domain-driven design</td></tr><tr><td><strong>Security</strong></td><td>Public skills can carry prompt injection, and <strong>skills contain scripts</strong></td></tr><tr><td><strong>Permissions</strong></td><td>Not everyone in the org needs access to a skill holding sensitive business logic</td></tr></tbody></table>
+<h3 id="the-single-most-important-sentence-in-the-talk">The Single Most Important Sentence in the Talk<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-single-most-important-sentence-in-the-talk"><span class="icon icon-link"></span></a></h3>
+<p>The logic on security is especially sharp.</p>
+<blockquote>
+<p><strong>Skills have scripts. That's the deterministic part of them.</strong></p>
+</blockquote>
+<p>The fact that these two sentences sit together is the point. Skills are deterministic <strong>because they actually run a specific script for a specific task</strong> — and that is also exactly what makes a skill a <strong>supply chain</strong>. They're two faces of the same property; you can't take only one.</p>
+<p>So: <strong>pulling a public skill without a checking pipeline is a supply-chain decision.</strong> It's the same lesson we learned about <code>npm install</code>, except this time it arrives as <strong>a markdown file with no compile step and no type signature</strong> — which means it arrives more quietly.</p>
+<h3 id="quality-decay--skills-rot-differently-than-code">Quality Decay — Skills Rot Differently Than Code<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#quality-decay--skills-rot-differently-than-code"><span class="icon icon-link"></span></a></h3>
+<p><strong>"Validate against the latest models, not just the task"</strong> is worth chewing on.</p>
+<p>Skills are usually written <strong>against a model's failure modes.</strong> "This model skips tests, so tell it explicitly." "This model overruns scope, so nail it down." But models ship a new version every few weeks. At that point part of your skill becomes <strong>an instruction that's no longer needed</strong> (pure token waste), and part becomes <strong>an anti-pattern suppressing the new model's better defaults.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Ordinary code:  if the runtime is unchanged, what was right yesterday is right today</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Skills:         the execution environment (the model) turns over every few weeks</span></span></code></pre></figure>
+<p><strong>A skill is code whose assumed environment keeps changing.</strong> Which is why "write it well once and you're done" simply doesn't hold for this kind of asset.</p>
+<hr>
+<h2 id="6-the-maturity-ladder--individual--team--central-platform">6. The Maturity Ladder — Individual → Team → Central Platform<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-the-maturity-ladder--individual--team--central-platform"><span class="icon icon-link"></span></a></h2>
+<p>The adoption path has three rungs.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Stage</th><th>What you do</th></tr></thead><tbody><tr><td><strong>① Individual</strong></td><td>Create, test, improve, and use skills — <strong>in a structured way, not randomly</strong></td></tr><tr><td><strong>② Team</strong></td><td>Share them. Same stack, same products, so they <strong>evolve fast</strong></td></tr><tr><td><strong>③ Central platform</strong></td><td>Catalog · dependencies · versioning · access control · evaluation &#x26; observability</td></tr></tbody></table>
+<p>The central platform requirements are specific:</p>
+<ul>
+<li><strong>A catalog with metadata</strong> — it must be searchable</li>
+<li><strong>An MCP plugged into the catalog, plus a CLI</strong> — the path to <strong>pull</strong> a skill into your IDE or sandbox</li>
+<li><strong>Dependencies</strong> — you need to know how skills depend on each other</li>
+<li><strong>Versioning and lifecycle</strong> — the agent <strong>notices a newer version exists and pulls it</strong></li>
+<li><strong>Access control</strong> — who accesses what</li>
+<li><strong>Evaluation and observability</strong></li>
+</ul>
+<p>And then the most honest line in the talk:</p>
+<blockquote>
+<p>All of this runs on governance. And <strong>this is where technology stops solving the problem.</strong></p>
+</blockquote>
+<p>You can build the entire catalog and <strong>"so who governs it?"</strong> still remains. The answer given: architects, engineering leads, infra leads, and security leads each owning a domain and keeping skills aligned with policy. It's refreshing that the talk doesn't hide that this is <strong>an org-chart problem.</strong></p>
+<h3 id="a-15-team-six-month-simulation">A 15-Team, Six-Month Simulation<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#a-15-team-six-month-simulation"><span class="icon icon-link"></span></a></h3>
+<p>The talk simulates 15 teams (5–12 engineers each) with skill contribution per engineer, average daily skill utilization, cross-team duplication ratio, and quality &#x26; security ratios, run over six months.</p>
+<p>The ungoverned observation rings true:</p>
+<blockquote>
+<p>Without a skill for the regulation, someone is <strong>vibe-coding back and forth trying to steer the agent</strong> into implementing it properly. That burns more tokens on the cost side, and on the productivity side you spend time to get an answer that could have come in one shot.</p>
+</blockquote>
+<p>Quality and security follow the same shape. When skills aren't defined and maintained, <strong>every judgment falls back on the human</strong>, and differences in team maturity show up directly as variance in output.</p>
+<p>And with governance? The talk doesn't oversell it — <strong>it doesn't become perfect, and some teams still diverge.</strong> But common ground appears. Publish one skill, and when the next engineer starts building a new one, <strong>the harness spots the existing skill and pulls it.</strong></p>
+<hr>
+<h2 id="7-what-comes-next--and-why-the-order-matters">7. What Comes Next — and Why the Order Matters<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-what-comes-next--and-why-the-order-matters"><span class="icon icon-link"></span></a></h2>
+<p>Three things the talk points at:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Next</th><th>Status</th></tr></thead><tbody><tr><td><strong>Skills registry</strong></td><td>The IDP (internal developer portal) vendors have already started centralizing this capability</td></tr><tr><td><strong>Skills evaluation</strong></td><td>Still unsettled. The most valuable approach so far: <strong>statically evaluate skills against Anthropic's best practices</strong> — a skill that isn't invoked properly or isn't structured properly is likely low quality</td></tr><tr><td><strong>Auto-evolving skills</strong></td><td>A closed loop that evolves skills automatically. <strong>The current next hype</strong></td></tr></tbody></table>
+<p>With a warning attached:</p>
+<blockquote>
+<p>Turn on auto-evolution without governance acting as guardrails, and <strong>the impact is far larger than it is today.</strong></p>
+</blockquote>
+<p>I read this ordering as the talk's real conclusion. <strong>Automation is an amplifier.</strong> Switch on auto-evolution while duplication, decay, and ownerlessness are present, and all three propagate automatically. It's the same argument as the <a href="/en/posts/2026-07-05-meta-harness/">self-healing harness post</a> — <strong>before you build the machine that adds rules automatically, you need the machine that checks whether the added rules made things worse.</strong></p>
+<hr>
+<h2 id="8-applied-to-this-repo--im-on-rung-2-and-i-dont-need-rung-3">8. Applied to This Repo — I'm on Rung 2, and I Don't Need Rung 3<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-applied-to-this-repo--im-on-rung-2-and-i-dont-need-rung-3"><span class="icon icon-link"></span></a></h2>
+<p>Reading without applying leaves nothing, so I measured this blog repo against the ladder.</p>
+<p>This repo has several harness skills attached: <code>frontend-harness</code>, <code>product-spec-harness</code>, <code>test-layering-harness</code>, <code>git-harness</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Stage</th><th>This repo</th><th>Verdict</th></tr></thead><tbody><tr><td><strong>① Individual</strong></td><td>Skills are built and used</td><td>✅</td></tr><tr><td><strong>② Team</strong></td><td>Bundled as plugins, reusable</td><td>✅ (a team of one, effectively)</td></tr><tr><td><strong>③ Central platform</strong></td><td>Catalog ❌ · versioning ❌ · access control ❌ · <strong>eval ❌</strong></td><td>❌</td></tr></tbody></table>
+<p>Here's the honest split: <strong>I don't need all of rung 3.</strong> The talk's audience is an organization with 15 teams; this is one blog. A catalog, an MCP search layer, and access control are plainly over-engineering here.</p>
+<p>But <strong>two things are needed regardless of team size.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Scales with org size:  catalog · search MCP · access control · named owners · duplicate detection</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Independent of size:   versioning (when and why a skill changed) · eval (did the change make it worse)</span></span></code></pre></figure>
+<p>And this repo has <strong>neither.</strong> I flagged the same gap in the <a href="/en/posts/2026-08-26-agent-skills/">last post</a> and in the <a href="/en/posts/2026-08-25-agentic-code-quality/">one before</a>, but this talk adds a new reason: <strong>skills rot quietly every time the model changes.</strong> That's section 5. Quality drops when the environment turns over even if I never touch the skill — and I have zero instruments that would notice.</p>
+<p>So the actual to-do for this repo narrows to two lines:</p>
+<ol>
+<li><strong>Make skill changes traceable per commit</strong> — you can only roll back if there's a record of what changed when and why</li>
+<li><strong>A handful of regression tests for skills</strong> — run a few representative tasks with and without the skill, across model versions, and compare</li>
+</ol>
+<p>That's worth far more than building a catalog. And the order is the same at organizational scale, because <strong>a catalog without evaluation is a machine for distributing rotten skills more efficiently.</strong></p>
+<hr>
+<h2 id="9-easy-things-to-get-wrong">9. Easy Things to Get Wrong<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-easy-things-to-get-wrong"><span class="icon icon-link"></span></a></h2>
+<h3 id="misconception-1--a-catalog-is-governance">Misconception 1 — "A catalog is governance"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misconception-1--a-catalog-is-governance"><span class="icon icon-link"></span></a></h3>
+<p>The talk nails this directly. Build the catalog, versioning, and access control, and <strong>"this is where technology stops solving the problem."</strong> A catalog solves <strong>discovery</strong>; governance solves <strong>ownership and policy.</strong> A catalog with no owner names on it is just a well-organized warehouse.</p>
+<h3 id="misconception-2--we-did-this-with-microservices-so-were-safe">Misconception 2 — "We did this with microservices, so we're safe"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misconception-2--we-did-this-with-microservices-so-were-safe"><span class="icon icon-link"></span></a></h3>
+<p>The prescription borrows microservices governance wholesale. It's a good prescription, but I'd add a caveat: <strong>microservices governance mostly didn't work.</strong> And skills drift faster.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>Microservices</th><th>Skills</th></tr></thead><tbody><tr><td><strong>Cost to copy</strong></td><td>Requires a deploy pipeline</td><td><strong>One file copy</strong></td></tr><tr><td><strong>Interface contract</strong></td><td>Schemas and types enforce it</td><td>None. It's natural language</td></tr><tr><td><strong>When it breaks</strong></td><td>Builds and health checks catch it</td><td><strong>You get a plausible-looking result</strong></td></tr></tbody></table>
+<p>Replicates fast, has no contract, and looks fine when wrong — that means governance is <strong>more urgent</strong>, not that we can relax because we've seen this movie.</p>
+<h3 id="misconception-3--skills-are-just-text-so-theyre-safe">Misconception 3 — "Skills are just text, so they're safe"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misconception-3--skills-are-just-text-so-theyre-safe"><span class="icon icon-link"></span></a></h3>
+<p>Section 5, again. <strong>Skills contain scripts, and that's the source of their determinism.</strong> Pulling a public skill without inspection carries the same weight as adding a dependency.</p>
+<h3 id="misconception-4--auto-pulling-the-latest-version-is-good">Misconception 4 — "Auto-pulling the latest version is good"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misconception-4--auto-pulling-the-latest-version-is-good"><span class="icon icon-link"></span></a></h3>
+<p>The talk presents an agent noticing and pulling the newest skill version as an upside. As convenience, sure. But <strong>auto-pull-latest with no signing or checking</strong> is a failure pattern we already know. Convenience and supply-chain safety pull in opposite directions, and what bridges them is the <strong>checking pipeline</strong> from section 6. Adopting only one of the two is the mistake.</p>
+<hr>
+<h2 id="10-summary">10. Summary<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#10-summary"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>Point</th><th>Why</th></tr></thead><tbody><tr><td><strong>1. Know-how collects in skills</strong></td><td>Hooks are events, MCPs are someone else's, sub-agents protect context</td><td>Eliminate the rest and skills are what remain</td></tr><tr><td><strong>2. Structured skills are what make a workflow deterministic</strong></td><td>Otherwise it's a workflow in name only</td><td>Determinism is decided at the skill level</td></tr><tr><td><strong>3. The workflow we know is one cell</strong></td><td>Strategy, discovery, data, platform, and ops sit outside it</td><td>The industry has optimized the innermost 10%</td></tr><tr><td><strong>4. Microservices design principles, unchanged</strong></td><td>Specialized, composable, portable, progressively disclosed</td><td>Not a new problem — but it drifts faster</td></tr><tr><td><strong>5. A skill is a supply chain</strong></td><td>It's deterministic because it carries scripts</td><td>Determinism and supply-chain risk are two faces of one property</td></tr><tr><td><strong>6. Skills rot when models change</strong></td><td>Retest against <strong>new models</strong>, not just the task</td><td>The execution environment turns over every few weeks</td></tr><tr><td><strong>7. Auto-evolution without governance is an amplifier</strong></td><td>Don't get the order wrong</td><td>Duplication and decay propagate on their own</td></tr></tbody></table>
+<p>It's also the next cell in a thread running through this blog.</p>
+<ul>
+<li><a href="/en/posts/2026-07-05-meta-harness/">Self-healing harness</a> — verify when you <strong>add</strong> a rule</li>
+<li><a href="/en/posts/2026-07-31-context-engineering-claude5/">Context engineering by subtraction</a> — verify when you <strong>remove</strong> one</li>
+<li><a href="/en/posts/2026-08-23-ai-native-sdlc-playbook/">AI-native SDLC</a> — verify when you <strong>change the process</strong></li>
+<li><a href="/en/posts/2026-08-25-agentic-code-quality/">Code quality lives in the constraints</a> — verify by what <strong>surrounds</strong> the agent</li>
+<li><a href="/en/posts/2026-08-26-agent-skills/">What agents skip is the senior work</a> — skills are what you <strong>push into</strong> the agent</li>
+<li>This post — what you need once those skills <strong>start passing through many hands</strong></li>
+</ul>
+<p>Back to the three questions and the dropping hands: raising your hand for the first one is easy now. The third is the hard one. And the honest admission at the center of this talk is that the difficulty isn't technical — it's <strong>who is going to own it.</strong></p>
+<hr>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Imad Touil (QuantumBlack, AI by McKinsey), <a href="https://www.youtube.com/watch?v=M05vON8i0aI">AI-Native Organisations Run on Skills: How to Structure and Scale Them</a> — AI Engineer World's Fair</li>
+<li>Previous posts — <a href="/en/posts/2026-08-26-agent-skills/">What Agents Skip Is Always the Senior Work</a> · <a href="/en/posts/2026-08-25-agentic-code-quality/">Code Quality Lives in the Constraints</a> · <a href="/en/posts/2026-08-23-ai-native-sdlc-playbook/">The AI-Native SDLC Playbook</a></li>
+</ul>7:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$c"}}]}]
+8:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/en/posts/2026-09-05-frontier-development-teams","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"The Tool Was Not the Variable — Where 50 Teams Using the Same Tool Split"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+9:["$","div",null,{"className":"hidden lg:block","children":["$","$Ld",null,{"headings":[{"id":"1-what-is-this-post-about","text":"1. What Is This Post About?","depth":1},{"id":"2-of-the-four-pieces-in-a-workflow-why-only-skills-are-left","text":"2. Of the Four Pieces in a Workflow, Why Only Skills Are Left","depth":1},{"id":"3-what-we-call-a-workflow-is-one-cell-of-the-whole","text":"3. What We Call a Workflow Is One Cell of the Whole","depth":1},{"id":"4-design-skills-like-microservices","text":"4. Design Skills Like Microservices","depth":1},{"id":"a-composition-example--regulatory-compliance","text":"A Composition Example — Regulatory Compliance","depth":2},{"id":"5-what-happens-without-governance--a-new-class-of-technical-debt","text":"5. What Happens Without Governance — A New Class of Technical Debt","depth":1},{"id":"the-single-most-important-sentence-in-the-talk","text":"The Single Most Important Sentence in the Talk","depth":2},{"id":"quality-decay--skills-rot-differently-than-code","text":"Quality Decay — Skills Rot Differently Than Code","depth":2},{"id":"6-the-maturity-ladder--individual--team--central-platform","text":"6. The Maturity Ladder — Individual → Team → Central Platform","depth":1},{"id":"a-15-team-six-month-simulation","text":"A 15-Team, Six-Month Simulation","depth":2},{"id":"7-what-comes-next--and-why-the-order-matters","text":"7. What Comes Next — and Why the Order Matters","depth":1},{"id":"8-applied-to-this-repo--im-on-rung-2-and-i-dont-need-rung-3","text":"8. Applied to This Repo — I'm on Rung 2, and I Don't Need Rung 3","depth":1},{"id":"9-easy-things-to-get-wrong","text":"9. Easy Things to Get Wrong","depth":1},{"id":"misconception-1--a-catalog-is-governance","text":"Misconception 1 — \"A catalog is governance\"","depth":2},{"id":"misconception-2--we-did-this-with-microservices-so-were-safe","text":"Misconception 2 — \"We did this with microservices, so we're safe\"","depth":2},{"id":"misconception-3--skills-are-just-text-so-theyre-safe","text":"Misconception 3 — \"Skills are just text, so they're safe\"","depth":2},{"id":"misconception-4--auto-pulling-the-latest-version-is-good","text":"Misconception 4 — \"Auto-pulling the latest version is good\"","depth":2},{"id":"10-summary","text":"10. Summary","depth":1},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true}]
+b:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+10:null

@@ -5,7 +5,7 @@
 <xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://seungahhong.github.io/ko/" />
-<lastmod>2026-08-26</lastmod>
+<lastmod>2026-09-06</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -14,7 +14,7 @@
 <xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://seungahhong.github.io/ko/" />
-<lastmod>2026-08-26</lastmod>
+<lastmod>2026-09-06</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -23,7 +23,7 @@
 <xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/posts/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://seungahhong.github.io/ko/posts/" />
-<lastmod>2026-08-26</lastmod>
+<lastmod>2026-09-06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.9</priority>
 </url>
@@ -32,7 +32,7 @@
 <xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/posts/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://seungahhong.github.io/ko/posts/" />
-<lastmod>2026-08-26</lastmod>
+<lastmod>2026-09-06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.9</priority>
 </url>
@@ -41,7 +41,7 @@
 <xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/tags/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/tags/" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://seungahhong.github.io/ko/tags/" />
-<lastmod>2026-08-26</lastmod>
+<lastmod>2026-09-06</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
 </url>
@@ -50,7 +50,7 @@
 <xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/tags/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/tags/" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://seungahhong.github.io/ko/tags/" />
-<lastmod>2026-08-26</lastmod>
+<lastmod>2026-09-06</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
 </url>
@@ -1417,6 +1417,42 @@
 <xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/2026-08-26-agent-skills/" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://seungahhong.github.io/ko/posts/2026-08-26-agent-skills/" />
 <lastmod>2026-08-26</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://seungahhong.github.io/ko/posts/2026-09-05-frontier-development-teams/</loc>
+<xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/posts/2026-09-05-frontier-development-teams/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/2026-09-05-frontier-development-teams/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://seungahhong.github.io/ko/posts/2026-09-05-frontier-development-teams/" />
+<lastmod>2026-09-05</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://seungahhong.github.io/en/posts/2026-09-05-frontier-development-teams/</loc>
+<xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/posts/2026-09-05-frontier-development-teams/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/2026-09-05-frontier-development-teams/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://seungahhong.github.io/ko/posts/2026-09-05-frontier-development-teams/" />
+<lastmod>2026-09-05</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://seungahhong.github.io/ko/posts/2026-09-06-skills-governance/</loc>
+<xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/posts/2026-09-06-skills-governance/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/2026-09-06-skills-governance/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://seungahhong.github.io/ko/posts/2026-09-06-skills-governance/" />
+<lastmod>2026-09-06</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://seungahhong.github.io/en/posts/2026-09-06-skills-governance/</loc>
+<xhtml:link rel="alternate" hreflang="ko" href="https://seungahhong.github.io/ko/posts/2026-09-06-skills-governance/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://seungahhong.github.io/en/posts/2026-09-06-skills-governance/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://seungahhong.github.io/ko/posts/2026-09-06-skills-governance/" />
+<lastmod>2026-09-06</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>

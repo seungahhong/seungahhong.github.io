@@ -1,0 +1,312 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+4:I[52881,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],""]
+d:I[27722,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+e:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+2:T65f,{"@context":"https://schema.org","@type":"BlogPosting","headline":"The Tool Was Not the Variable — Where 50 Teams Using the Same Tool Split","description":"1. What Is This Post About? Notes on Clare Liguori's talk From AI-Assisted to AI-Native: Building a Frontier Development Team. In one sentence: Ninety percent…","datePublished":"2026-09-05","dateModified":"2026-09-05","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-09-05-frontier-development-teams/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-09-05-frontier-development-teams/"},"image":"https://seungahhong.github.io/blog-assets/2026/09/assets/05/thumbnail.png","keywords":["AI","agents","dev-process","productivity","teams"],"articleSection":"Development","wordCount":1915,"timeRequired":"PT10M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"The Tool Was Not the Variable — Where 50 Teams Using the Same Tool Split\",\"item\":\"https://seungahhong.github.io/en/posts/2026-09-05-frontier-development-teams/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"The Tool Was Not the Variable — Where 50 Teams Using the Same Tool Split"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"The Tool Was Not the Variable — Where 50 Teams Using the Same Tool Split"}],"$L5",false,"$L6"]}],"$L7","$L8"]}],"$L9"]}]}]],["$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"EfFJowp8jujhDUG7vTX7k"}
+5:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-09-05","className":"meta-mono","children":"09/05/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[10,"min read"]}]]}]
+6:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","agents",{"children":["$","$L4",null,{"href":"/en/tags?tag=agents","className":"tag-pill","children":"agents"}]}],["$","li","dev-process",{"children":["$","$L4",null,{"href":"/en/tags?tag=dev-process","className":"tag-pill","children":"dev-process"}]}],["$","li","productivity",{"children":["$","$L4",null,{"href":"/en/tags?tag=productivity","className":"tag-pill","children":"productivity"}]}],["$","li","teams",{"children":["$","$L4",null,{"href":"/en/tags?tag=teams","className":"tag-pill","children":"teams"}]}]]}]
+c:T6252,<h2 id="1-what-is-this-post-about">1. What Is This Post About?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-what-is-this-post-about"><span class="icon icon-link"></span></a></h2>
+<p>Notes on Clare Liguori's talk <a href="https://www.youtube.com/watch?v=pqlWNihgdjI">From AI-Assisted to AI-Native: Building a Frontier Development Team</a>. In one sentence:</p>
+<blockquote>
+<p><strong>Ninety percent of the 50 teams used the same coding assistant. Half saw under 3x. The other half saw a median of 4.5x, sometimes past 10x.</strong> The tool was the same — so <strong>the tool was not the variable.</strong></p>
+</blockquote>
+<p>If the <a href="/en/posts/2026-08-23-ai-native-sdlc-playbook/">AI-Native SDLC Playbook</a> was a proposal for how to rebuild the process, this talk is <strong>what happened when roughly a year of real teams were actually watched.</strong> Proposal and observation are different things.</p>
+<h3 id="why-this-talk-is-different">Why This Talk Is Different<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#why-this-talk-is-different"><span class="icon icon-link"></span></a></h3>
+<p>Most AI productivity stories come in two flavors: blow up <strong>one success story</strong>, or blow up <strong>the skepticism</strong>. This talk is interesting because it's neither.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Studied:    50 ordinary teams (normal seniority mixes, existing codebases)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Duration:   the better part of a year</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Same:       90% used the same coding assistant</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Different:  how they worked</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Result:     half under 3x · half a median of 4.5x</span></span></code></pre></figure>
+<p>Not greenfield, not a hand-picked all-star squad, not a two-week pilot. <strong>Ordinary teams watched for a long time</strong> — which is why the conclusion lands on something other than tooling.</p>
+<hr>
+<h2 id="2-what-the-pilots-actually-measured">2. What the Pilots Actually Measured<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-what-the-pilots-actually-measured"><span class="icon icon-link"></span></a></h2>
+<p>The talk leads with the flashy numbers, then discounts them itself. That order matters.</p>
+<h3 id="the-flashy-side">The Flashy Side<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-flashy-side"><span class="icon icon-link"></span></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Case</th><th>Original estimate</th><th>Actual</th></tr></thead><tbody><tr><td><strong>Bedrock team</strong></td><td>30 people · 12–18 months</td><td><strong>6 people · 76 days</strong></td></tr><tr><td><strong>Prime Video</strong></td><td>90 weeks</td><td><strong>24 weeks</strong></td></tr></tbody></table>
+<p>Per-engineer that's close to 20x. Stop here and you have great marketing collateral.</p>
+<h3 id="except-it-doesnt-reproduce">Except It Doesn't Reproduce<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#except-it-doesnt-reproduce"><span class="icon icon-link"></span></a></h3>
+<p>The talk immediately explains <strong>why that team is not a reproducible case.</strong> Selected people, a fresh codebase, a tight scope, full organizational backing — the conditions themselves were special. The ten-day-sprint story gets a similar asterisk.</p>
+<p>That's where the talk earned my trust. <strong>A talk that annotates the number it just showed you is rare.</strong> And because it does, the 50-team section that follows carries weight.</p>
+<blockquote>
+<p>Pilots show you <strong>what's possible.</strong> Fifty teams show you <strong>what reproduces.</strong> Organizations need the second one.</p>
+</blockquote>
+<hr>
+<h2 id="3-the-real-split-was-outside-the-tool">3. The Real Split Was Outside the Tool<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-the-real-split-was-outside-the-tool"><span class="icon icon-link"></span></a></h2>
+<p>Line up the 50 teams and it looks like this:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ┌─ half ───────────────────────────────┐</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   │ under 3x deployment velocity          │  ← agents sprinkled on the old way</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   └───────────────────────────────────────┘</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ┌─ other half ─────────────────────────┐</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   │ median 4.5x · sometimes past 10x      │  ← changed how they worked</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   └───────────────────────────────────────┘</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">             ↑ 90% used the same tool</span></span></code></pre></figure>
+<p>The talk's phrasing is precise. The trailing half had <strong>sprinkled agents on top of the way they already worked;</strong> the leading half had <strong>deliberately changed how they worked.</strong></p>
+<h3 id="what-sprinkled-means">What "Sprinkled" Means<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#what-sprinkled-means"><span class="icon icon-link"></span></a></h3>
+<p>A familiar picture:</p>
+<ul>
+<li>Sprint structure unchanged, ticket sizing unchanged, review queue unchanged</li>
+<li>An assistant bolted onto the editor</li>
+<li>The agent writes what a person used to write, and <strong>every other stage stays as it was</strong></li>
+</ul>
+<p>One stage gets faster. This is exactly the point from the <a href="/en/posts/2026-08-23-ai-native-sdlc-playbook/">last post</a>, now confirmed with measurements — <strong>speed up one stage and the whole doesn't speed up; the bottleneck just moves.</strong> "Under 3x" is the size of that relocated bottleneck.</p>
+<hr>
+<h2 id="4-frontier-development-is-behavior-not-attitude">4. Frontier Development Is Behavior, Not Attitude<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-frontier-development-is-behavior-not-attitude"><span class="icon icon-link"></span></a></h2>
+<p>The talk doesn't define "frontier development" as a mindset. It defines it by <strong>observable behavior.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Metric</th><th>Frontier team's value</th></tr></thead><tbody><tr><td>Share of code the engineer <strong>types themselves</strong></td><td><strong>1–2%</strong></td></tr><tr><td>How long agents run <strong>uninterrupted</strong></td><td><strong>hours</strong></td></tr><tr><td>Agents running <strong>at once</strong></td><td><strong>several</strong></td></tr></tbody></table>
+<p>This framing is good because <strong>you can immediately tell where your own team sits.</strong> "We're using AI well" can't be adjudicated; those three lines can.</p>
+<p>And the three interlock:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">For hand-written code to be 1–2%</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → agents have to run alone for hours</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → to run alone for hours, you can't be sitting next to them</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → and only then can you run several at once</span></span></code></pre></figure>
+<p>The reverse holds too. <strong>If you're in a conversation with the agent, none of the three lines happens.</strong> That's the basis for habit three.</p>
+<hr>
+<h2 id="5-the-five-habits">5. The Five Habits<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-the-five-habits"><span class="icon icon-link"></span></a></h2>
+<p>The main body — and none of the five is glamorous.</p>
+<h3 id="habit-1--write-down-what-lives-in-your-head-and-keep-pruning-it">Habit 1 — Write Down What Lives in Your Head (and Keep Pruning It)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#habit-1--write-down-what-lives-in-your-head-and-keep-pruning-it"><span class="icon icon-link"></span></a></h3>
+<p>Treat the agent's context as an asset: conventions, coding standards, testing patterns, repository layout. The Bedrock team used a monorepo and <strong>kept the agent's own comments as a persistent memory</strong> rather than deleting them.</p>
+<p>Then the talk goes a layer deeper:</p>
+<blockquote>
+<p><strong>Prune context as models improve.</strong> Guidance written to work around an old model's weakness stays behind and bloats the context.</p>
+</blockquote>
+<p>Same argument as <a href="/en/posts/2026-07-31-context-engineering-claude5/">Context Engineering by Subtraction</a> — except here the <strong>trigger</strong> is named: a model upgrade is a context audit. Most teams only ever add guidance; nobody deletes.</p>
+<h3 id="habit-2--expect-to-get-slower-first">Habit 2 — Expect to Get Slower First<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#habit-2--expect-to-get-slower-first"><span class="icon icon-link"></span></a></h3>
+<p>The least-quoted and most decisive habit.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Put agents into a brownfield codebase</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → it gets slower first</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → teams that quit here never see the acceleration</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → only teams that push through see it compound</span></span></code></pre></figure>
+<p>What matters is <strong>what you do during the slow stretch.</strong> The examples are concrete: <strong>improve error messages, build tools that didn't exist, restructure the repository outright.</strong></p>
+<p>What's interesting is that all of it is <strong>work you should have done anyway, not agent-specific work.</strong> The agent just surfaces the cost of skipping it more honestly than a person does. A human routes around a bad error message from experience; an agent simply gets stuck.</p>
+<h3 id="habit-3--feed-them-dont-babysit-them">Habit 3 — Feed Them, Don't Babysit Them<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#habit-3--feed-them-dont-babysit-them"><span class="icon icon-link"></span></a></h3>
+<p>The sharpest diagnosis in the talk:</p>
+<blockquote>
+<p><strong>A running conversation keeps you in the loop, and being in the loop makes parallelism impossible.</strong></p>
+</blockquote>
+<p>The back-and-forth feels like collaboration, but what it actually is, is <strong>a human acting as the scheduler.</strong> So the leading teams change shape: <strong>keep a backlog of well-scoped tasks, run several agents at once, review asynchronously.</strong> Some run them overnight.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>Babysitting</th><th>Feeding</th></tr></thead><tbody><tr><td>Human role</td><td>real-time response</td><td><strong>queue management + async review</strong></td></tr><tr><td>Concurrency</td><td>1</td><td><strong>several</strong></td></tr><tr><td>Requires</td><td>contiguous focus time</td><td><strong>well-defined units of work</strong></td></tr></tbody></table>
+<p>One engineer shipped a complete change with only <strong>"a couple of hours of contiguous time."</strong> Contiguous time didn't shrink — <strong>the work was restructured so it wasn't needed.</strong></p>
+<h3 id="habit-4--fix-intent-in-a-document-before-arguing-with-code">Habit 4 — Fix Intent in a Document Before Arguing With Code<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#habit-4--fix-intent-in-a-document-before-arguing-with-code"><span class="icon icon-link"></span></a></h3>
+<p>Iterating on generated code with "no, not like that…" is <strong>the most expensive mode there is.</strong> Leading teams pin intent down in structured specs and requirements before code exists.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Slow:  prompt → code → "not that" → code → "not that either" → ...</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Fast:  intent doc settled → code → (checked against the doc)</span></span></code></pre></figure>
+<p>The difference is <strong>what you argue with.</strong> Argue with code and you re-read it from scratch every round; argue with a document and the agreement persists. Same axis as the "verifiable artifact" idea from the <a href="/en/posts/2026-08-26-agent-skills/">Agent Skills post</a>.</p>
+<h3 id="habit-5--shift-testing-left">Habit 5 — Shift Testing Left<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#habit-5--shift-testing-left"><span class="icon icon-link"></span></a></h3>
+<p>The feedback loop has to be fast enough for <strong>the agent to correct itself.</strong> So leading teams make integration tests runnable locally against deterministic mocks. If results come back twenty minutes later from a pipeline, self-correction never happens.</p>
+<p>There's a side effect: <strong>code review moves from style to architecture,</strong> because style was already filtered locally.</p>
+<hr>
+<h2 id="6-why-45x--the-multiplication">6. Why 4.5x — the Multiplication<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-why-45x--the-multiplication"><span class="icon icon-link"></span></a></h2>
+<p>The AWS write-up decomposes the number like this:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">1.5x  acceleration of low-judgment work</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ×</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">1.5x  focus on high-judgment work (no context switching)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ×</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">1.5x  instant access to domain expertise captured in agents</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  =</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">~3.4x → measured median 4.5x</span></span></code></pre></figure>
+<p>The decomposition is useful because <strong>you can check which term is empty.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Term</th><th>If it isn't happening</th></tr></thead><tbody><tr><td>Low-judgment acceleration</td><td>you use agents but have no scoped tasks (habit 3)</td></tr><tr><td>High-judgment focus</td><td>you're babysitting, so you keep getting interrupted (habit 3)</td></tr><tr><td>Domain expertise access</td><td>it's in your head, not written down (habit 1)</td></tr></tbody></table>
+<p>Because it's multiplication, <strong>a term stuck at 1 caps the whole thing.</strong> Finding the term that equals 1 comes before raising all three.</p>
+<hr>
+<h2 id="7-holding-it-against-this-blogs-repository">7. Holding It Against This Blog's Repository<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-holding-it-against-this-blogs-repository"><span class="icon icon-link"></span></a></h2>
+<p>As usual, not leaving it as someone else's story.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Habit</th><th>State of this repo</th></tr></thead><tbody><tr><td><strong>1. Write down context</strong></td><td><code>CLAUDE.md</code>, 35 lines, plus <code>.claude/commands</code>. Exists — but <strong>has never been pruned</strong></td></tr><tr><td><strong>2. Get slower first</strong></td><td>tests, E2E, typecheck are in place. This one roughly passes</td></tr><tr><td><strong>3. Feed, don't babysit</strong></td><td><strong>barely happening.</strong> Mostly one interactive session, zero parallelism</td></tr><tr><td><strong>4. Fix intent first</strong></td><td><code>.claude/_docs</code> gives artifacts somewhere to accumulate</td></tr><tr><td><strong>5. Shift testing left</strong></td><td><code>pnpm test</code> / <code>test:smoke</code> / <code>e2e:mock</code> run locally — passes</td></tr></tbody></table>
+<p>Honestly: <strong>habit 3 is completely empty.</strong> And by section 6's multiplication, the moment habit 3 is 1, both low-judgment acceleration and high-judgment focus are capped with it. If I'm looking for why productivity here doesn't rise as much as expected, it's this, not the tooling.</p>
+<p>Habit 1 is weak too, honestly. <code>CLAUDE.md</code> records the deployment quirks and content conventions, but <strong>I have never re-read and deleted from it when the model changed.</strong> The second half of habit 1 — the pruning — simply isn't happening.</p>
+<p>One thing does work well. Adding a post breaks four hardcoded test expectations, and those <strong>fail locally and immediately.</strong> Annoying, but it's exactly the structure habit 5 describes: the agent can fix itself without waiting on a pipeline.</p>
+<hr>
+<h2 id="8-easy-things-to-get-wrong">8. Easy Things to Get Wrong<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-easy-things-to-get-wrong"><span class="icon icon-link"></span></a></h2>
+<h3 id="1--45x-isnt-about-teams-like-ours">1 — "4.5x isn't about teams like ours"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1--45x-isnt-about-teams-like-ours"><span class="icon icon-link"></span></a></h3>
+<p>Half true. But <strong>the under-3x half was the same company, the same tool, ordinary codebases too.</strong> The point of the study is that the conditions weren't different — <strong>the way of working was.</strong></p>
+<h3 id="2--the-20x-case-is-the-target">2 — "The 20x case is the target"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2--the-20x-case-is-the-target"><span class="icon icon-link"></span></a></h3>
+<p>The talk denies this directly. Bedrock's conditions were special and don't reproduce. <strong>The reproducible target is 4.5x, and it's the result of the five habits.</strong></p>
+<h3 id="3--writing-12-of-your-own-code-means-skill-stops-mattering">3 — "Writing 1–2% of your own code means skill stops mattering"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3--writing-12-of-your-own-code-means-skill-stops-mattering"><span class="icon icon-link"></span></a></h3>
+<p>The opposite. Habits 4 and 5 demand <strong>the ability to state intent precisely and to design verification.</strong> Judgment moves into the space typing vacated. The talk's closing line nails it:</p>
+<blockquote>
+<p><strong>The new bottleneck is decision speed.</strong></p>
+</blockquote>
+<h3 id="4--you-can-skip-the-slow-stretch">4 — "You can skip the slow stretch"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4--you-can-skip-the-slow-stretch"><span class="icon icon-link"></span></a></h3>
+<p>Habit 2 exists precisely to stop that. For agents to succeed in a brownfield codebase, the codebase has to be prepared first. <strong>The teams that quit during that stretch are the under-3x group.</strong></p>
+<h3 id="5--this-is-a-tool-adoption-problem">5 — "This is a tool adoption problem"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5--this-is-a-tool-adoption-problem"><span class="icon icon-link"></span></a></h3>
+<p>The whole talk refutes it. Ninety percent used the same tool. <strong>Adopting a tool is what everyone already did; the split came after.</strong></p>
+<hr>
+<h2 id="9-summary">9. Summary<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-summary"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>Point</th><th>Why</th></tr></thead><tbody><tr><td><strong>1. The tool is not the variable</strong></td><td>90% same assistant, results split in half</td><td>adoption is finished; the method isn't</td></tr><tr><td><strong>2. Frontier is defined by behavior</strong></td><td>1–2% own code · hours uninterrupted · several at once</td><td>only adjudicable metrics tell you where you stand</td></tr><tr><td><strong>3. You get slower first</strong></td><td>fix error messages, tooling, structure first</td><td>quit here and the acceleration never arrives</td></tr><tr><td><strong>4. Feed, don't babysit</strong></td><td>a running conversation makes parallelism impossible</td><td>when the human is the scheduler, concurrency is 1</td></tr><tr><td><strong>5. It multiplies, so one term caps it</strong></td><td>1.5 × 1.5 × 1.5</td><td>find the term stuck at 1 before raising all three</td></tr></tbody></table>
+<p>Read against the earlier posts, this adds one more axis:</p>
+<ul>
+<li><a href="/en/posts/2026-08-23-ai-native-sdlc-playbook/">AI-Native SDLC</a> — <strong>how to rebuild the process</strong> (proposal)</li>
+<li><a href="/en/posts/2026-08-25-agentic-code-quality/">Code Quality Lives in Constraints</a> — what goes <strong>around</strong> the agent</li>
+<li><a href="/en/posts/2026-08-26-agent-skills/">Agent Skills</a> — what goes <strong>into</strong> the agent</li>
+<li>This post — <strong>what actually split, in practice</strong> (observation)</li>
+</ul>
+<p>The first three were all arguments that something is the right way to work. This talk is <strong>a report after watching 50 ordinary teams for a year,</strong> which is a different kind of claim. That the report points the same direction as the arguments is the most practically useful confirmation this series has produced.</p>
+<blockquote>
+<p>The tools are already the same. <strong>The only variable left is how you work.</strong></p>
+</blockquote>
+<hr>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Clare Liguori, <a href="https://www.youtube.com/watch?v=pqlWNihgdjI">From AI-Assisted to AI-Native: Building a Frontier Development Team</a> — AI Engineer World's Fair 2026</li>
+<li>AWS, <a href="https://aws.amazon.com/blogs/machine-learning/how-frontier-teams-are-reinventing-ai-native-development/">How frontier teams are reinventing AI-native development</a></li>
+<li>Kiro, <a href="https://kiro.dev/topics/frontier-teams/">Frontier teams &#x26; spec-driven development</a></li>
+<li>Earlier posts — <a href="/en/posts/2026-08-26-agent-skills/">Agent Skills</a> · <a href="/en/posts/2026-08-25-agentic-code-quality/">Code Quality Lives in Constraints</a> · <a href="/en/posts/2026-08-23-ai-native-sdlc-playbook/">AI-Native SDLC Playbook</a></li>
+</ul>7:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$c"}}]}]
+8:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/en/posts/2026-08-26-agent-skills","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"What Agents Skip Is Always the Senior Work — What Agent Skills Enforces"}]]}],["$","$L4",null,{"href":"/en/posts/2026-09-06-skills-governance","className":"group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent","rel":"next","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":["Next",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Your Org's Know-How Now Lives in Skills — Ungoverned, It Becomes Technical Debt"}]]}]]}]
+9:["$","div",null,{"className":"hidden lg:block","children":["$","$Ld",null,{"headings":[{"id":"1-what-is-this-post-about","text":"1. What Is This Post About?","depth":1},{"id":"why-this-talk-is-different","text":"Why This Talk Is Different","depth":2},{"id":"2-what-the-pilots-actually-measured","text":"2. What the Pilots Actually Measured","depth":1},{"id":"the-flashy-side","text":"The Flashy Side","depth":2},{"id":"except-it-doesnt-reproduce","text":"Except It Doesn't Reproduce","depth":2},{"id":"3-the-real-split-was-outside-the-tool","text":"3. The Real Split Was Outside the Tool","depth":1},{"id":"what-sprinkled-means","text":"What \"Sprinkled\" Means","depth":2},{"id":"4-frontier-development-is-behavior-not-attitude","text":"4. Frontier Development Is Behavior, Not Attitude","depth":1},{"id":"5-the-five-habits","text":"5. The Five Habits","depth":1},{"id":"habit-1--write-down-what-lives-in-your-head-and-keep-pruning-it","text":"Habit 1 — Write Down What Lives in Your Head (and Keep Pruning It)","depth":2},{"id":"habit-2--expect-to-get-slower-first","text":"Habit 2 — Expect to Get Slower First","depth":2},{"id":"habit-3--feed-them-dont-babysit-them","text":"Habit 3 — Feed Them, Don't Babysit Them","depth":2},{"id":"habit-4--fix-intent-in-a-document-before-arguing-with-code","text":"Habit 4 — Fix Intent in a Document Before Arguing With Code","depth":2},{"id":"habit-5--shift-testing-left","text":"Habit 5 — Shift Testing Left","depth":2},{"id":"6-why-45x--the-multiplication","text":"6. Why 4.5x — the Multiplication","depth":1},{"id":"7-holding-it-against-this-blogs-repository","text":"7. Holding It Against This Blog's Repository","depth":1},{"id":"8-easy-things-to-get-wrong","text":"8. Easy Things to Get Wrong","depth":1},{"id":"1--45x-isnt-about-teams-like-ours","text":"1 — \"4.5x isn't about teams like ours\"","depth":2},{"id":"2--the-20x-case-is-the-target","text":"2 — \"The 20x case is the target\"","depth":2},{"id":"3--writing-12-of-your-own-code-means-skill-stops-mattering","text":"3 — \"Writing 1–2% of your own code means skill stops mattering\"","depth":2},{"id":"4--you-can-skip-the-slow-stretch","text":"4 — \"You can skip the slow stretch\"","depth":2},{"id":"5--this-is-a-tool-adoption-problem","text":"5 — \"This is a tool adoption problem\"","depth":2},{"id":"9-summary","text":"9. Summary","depth":1},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true}]
+b:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+10:null

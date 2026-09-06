@@ -1,0 +1,460 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+4:I[52881,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],""]
+11:I[27722,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+12:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
+13:"$Sreact.suspense"
+2:T691,{"@context":"https://schema.org","@type":"BlogPosting","headline":"조직의 노하우는 이제 스킬에 산다 — 거버넌스 없는 스킬은 새로운 기술부채다","description":"1. 이 글은 무엇에 관한 글인가? QuantumBlack(McKinsey)의 Imad Touil이 AI Engineer World's Fair에서 한 발표 AI-Native Organisations Run on Skills: How to Structure and Scale Them을…","datePublished":"2026-09-06","dateModified":"2026-09-06","inLanguage":"ko-KR","url":"https://seungahhong.github.io/ko/posts/2026-09-06-skills-governance/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/ko/posts/2026-09-06-skills-governance/"},"image":"https://seungahhong.github.io/blog-assets/2026/09/assets/06/thumbnail.png","keywords":["AI","에이전트","스킬","거버넌스","하네스"],"articleSection":"개발","wordCount":5471,"timeRequired":"PT12M","isPartOf":{"@id":"https://seungahhong.github.io/ko/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"홈\",\"item\":\"https://seungahhong.github.io/ko/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"포스트\",\"item\":\"https://seungahhong.github.io/ko/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"조직의 노하우는 이제 스킬에 산다 — 거버넌스 없는 스킬은 새로운 기술부채다\",\"item\":\"https://seungahhong.github.io/ko/posts/2026-09-06-skills-governance/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"조직의 노하우는 이제 스킬에 산다 — 거버넌스 없는 스킬은 새로운 기술부채다"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"조직의 노하우는 이제 스킬에 산다 — 거버넌스 없는 스킬은 새로운 기술부채다"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],"$L5","$L6","$L7","$L8","$L9"]}],false,"$La"]}],"$Lb","$Lc"]}],"$Ld"]}]}]],["$Le"],"$Lf"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"EfFJowp8jujhDUG7vTX7k"}
+5:["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}]
+6:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+7:["$","time",null,{"dateTime":"2026-09-06","className":"meta-mono","children":"2026.09.06"}]
+8:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+9:["$","span",null,{"className":"meta-mono","children":[12,"분"]}]
+a:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/ko/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","에이전트",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8","className":"tag-pill","children":"에이전트"}]}],["$","li","스킬",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EC%8A%A4%ED%82%AC","className":"tag-pill","children":"스킬"}]}],["$","li","거버넌스",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4","className":"tag-pill","children":"거버넌스"}]}],["$","li","하네스",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%ED%95%98%EB%84%A4%EC%8A%A4","className":"tag-pill","children":"하네스"}]}]]}]
+10:T8258,<h2 id="1-이-글은-무엇에-관한-글인가">1. 이 글은 무엇에 관한 글인가?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-이-글은-무엇에-관한-글인가"><span class="icon icon-link"></span></a></h2>
+<p>QuantumBlack(McKinsey)의 Imad Touil이 AI Engineer World's Fair에서 한 발표 <a href="https://www.youtube.com/watch?v=M05vON8i0aI">AI-Native Organisations Run on Skills: How to Structure and Scale Them</a>을 보고 정리한 글입니다.</p>
+<p>발표는 청중에게 손을 들라는 질문 세 개로 시작합니다. 그리고 그 <strong>손이 접히는 순서</strong> 가 발표 전체입니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"스킬을 만들어 쓰고 계신 분?"              → 방의 대부분</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"팀과 공유하고 계신 분?"                   → 더 적게</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"조직 차원에서 관리·유지보수하고 계신 분?"   → 몇 명</span></span></code></pre></figure>
+<p><a href="/ko/posts/2026-08-26-agent-skills/">지난 글</a>이 <strong>"내 저장소 안의 스킬을 어떻게 쓸 것인가"</strong> 였다면, 이번 글은 그 한 층 위입니다 — <strong>"조직 전체의 스킬을 누가 소유하고, 어떻게 배포하고, 무엇으로 검증할 것인가."</strong> 개인의 습관이었던 것이 자산이 되는 순간 완전히 다른 문제가 됩니다.</p>
+<p>발표의 주장을 한 줄로 줄이면 이렇습니다.</p>
+<blockquote>
+<p><strong>스킬은 조직의 노하우가 실제로 사는 곳이 됐다.</strong> 그리고 지금 관리하지 않으면, 그건 <strong>새로운 종류의 기술부채</strong> 가 된다.</p>
+</blockquote>
+<hr>
+<h2 id="2-워크플로우의-네-조각-중-왜-스킬만-남는가">2. 워크플로우의 네 조각 중 왜 스킬만 남는가<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-워크플로우의-네-조각-중-왜-스킬만-남는가"><span class="icon icon-link"></span></a></h2>
+<p>발표는 에이전틱 스택을 두 개의 루프로 나눕니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>루프</th><th>구성</th></tr></thead><tbody><tr><td><strong>이너 루프</strong> (코딩 에이전트 하네스)</td><td>컨텍스트 매니저 · 툴/MCP · 메모리·상태 · <strong>스킬 로더</strong></td></tr><tr><td><strong>아우터 루프</strong> (워크플로우)</td><td><strong>스킬</strong> · 서브에이전트 · MCP 서버 · 훅</td></tr></tbody></table>
+<p>그리고 아우터 루프의 네 조각을 하나씩 지웁니다. 이 소거법이 이 발표에서 제일 날카로운 부분입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>조각</th><th>발표의 진단</th></tr></thead><tbody><tr><td><strong>훅</strong></td><td>이벤트에 걸려 트리거될 뿐이다</td></tr><tr><td><strong>MCP 서버</strong></td><td>자기 MCP를 직접 만드는 사람이 거의 없다. 쓰던 툴이 제공하는 걸 가져다 쓸 뿐이다</td></tr><tr><td><strong>서브에이전트</strong></td><td>대부분 <strong>컨텍스트 윈도우를 지키려고</strong> 존재한다. 특정 작업을 위임할 뿐이다</td></tr><tr><td><strong>스킬</strong></td><td><strong>남는 건 여기다</strong></td></tr></tbody></table>
+<blockquote>
+<p>결국 당신의 <strong>노하우는 전부 스킬 레벨에 있습니다.</strong> 그리고 스킬의 구조가 잡혀 있지 않다면, 그 워크플로우는 애초에 결정론적이었던 적이 없습니다.</p>
+</blockquote>
+<p>이 마지막 문장이 핵심입니다. <strong>"우리 워크플로우는 결정론적이다"</strong> 라는 말은 스킬이 구조화돼 있을 때만 참입니다. 스킬이 사람마다 다르게 써진 텍스트 뭉치라면, 워크플로우는 이름만 워크플로우입니다.</p>
+<p>참고로 발표는 워크플로우를 <strong>하네스 블루프린트</strong> 로 정의합니다 — 런타임에 하네스의 행동을 규정하는 설계도. 이 정의가 뒤에서 "워크플로우도 카탈로그에 올려라"로 이어집니다.</p>
+<hr>
+<h2 id="3-우리가-워크플로우라-부르는-건-전체의-한-칸이다">3. 우리가 워크플로우라 부르는 건 전체의 한 칸이다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-우리가-워크플로우라-부르는-건-전체의-한-칸이다"><span class="icon icon-link"></span></a></h2>
+<p>이 절이 개인적으로 이 발표에서 제일 값어치 있었습니다.</p>
+<p>우리가 아는 개발 워크플로우는 보통 네 단계입니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">specify → design/plan → tasks → implement</span></span></code></pre></figure>
+<p>대부분의 코딩 에이전트가 이 모양으로 만들어져 있습니다. 그런데 발표의 지적은 이겁니다 — <strong>조직 규모에서 보면 이 네 단계 전체가 여정의 한 칸</strong> 입니다. 제품 증분(product increment) 하나를 만드는 칸.</p>
+<p>비즈니스가 가치를 만들어 고객에게 배송하기까지의 실제 전체 수명주기는 이렇습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>단계</th><th>하는 일</th></tr></thead><tbody><tr><td><strong>제품 전략</strong></td><td>무엇을 왜 만들지 · 성공지표 정의 · 로드맵 분해 (시장조사 · 경쟁분석 · 고객 인터뷰가 입력)</td></tr><tr><td><strong>디스커버리</strong></td><td>문제 정의 · 솔루션 도출 · 검증 · 실험 · 사용자 스토리</td></tr><tr><td><strong>데이터 준비</strong></td><td>데이터 카탈로그 정리 · 코어 시스템 연동 엔드포인트 조정</td></tr><tr><td><strong>데이터 프로덕트 전달</strong></td><td>파이프라인 구축 · 데이터 품질 검증 · 카탈로그된 데이터 자산 준비</td></tr><tr><td><strong>제품 증분</strong></td><td>← <strong>우리가 "워크플로우"라 부르는 네 단계가 여기다</strong></td></tr><tr><td><strong>플랫폼 엔지니어링/운영</strong></td><td>인프라 프로비저닝 · IaC 모듈 · 런치</td></tr><tr><td><strong>운영·최적화</strong></td><td>성능 최적화 · 인시던트 대응 → 다시 루프</td></tr></tbody></table>
+<p>그리고 더 중요한 지적이 하나 더 붙습니다. <strong>조직은 이 수명주기를 하나만 돌리지 않습니다.</strong> 18년 커리어에서 본 모든 조직에 SDLC가 여러 벌 흩어져 있었다는 것 — 모바일 앱용, 부서별, 플랫폼별, 사내 임직원용, 고객 대면용. <strong>무엇이든 만들어낼 수 있는 하나의 워크플로우 같은 건 없습니다.</strong></p>
+<p>여기서 제 결론은 이렇습니다. <strong>코딩 에이전트 업계는 지금까지 가장 안쪽 10%를 최적화해왔습니다.</strong> specify→implement 구간은 도구가 넘쳐나지만, 그 바깥 여섯 단계는 대부분 사람의 머릿속과 컨플루언스 문서에 있습니다. 그리고 그 바깥이야말로 조직마다 다른, 즉 <strong>노하우가 몰려 있는</strong> 구간입니다.</p>
+<hr>
+<h2 id="4-스킬을-마이크로서비스처럼-설계하라">4. 스킬을 마이크로서비스처럼 설계하라<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-스킬을-마이크로서비스처럼-설계하라"><span class="icon icon-link"></span></a></h2>
+<p>발표는 스킬 설계를 새 문제로 다루지 않습니다. <strong>마이크로서비스 시절에 이미 풀어본 문제</strong> 라는 겁니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>원칙</th><th>스킬에서의 의미</th></tr></thead><tbody><tr><td><strong>재사용 가능(reusable)</strong></td><td>한 번 쓰고 버리는 게 아니다</td></tr><tr><td><strong>모듈화(modular)</strong></td><td>경계가 분명하다</td></tr><tr><td><strong>발견 가능(discoverable)</strong></td><td>다른 팀이 필요할 때 자동으로 찾아낼 수 있다</td></tr><tr><td><strong>이식 가능(portable)</strong></td><td>워크플로우 사이는 물론, <strong>하네스 사이에도</strong> 옮겨진다</td></tr><tr><td><strong>특화(specialized)</strong></td><td>모놀리식 스킬 하나가 아니라 <strong>한 작업에 하나</strong></td></tr><tr><td><strong>조합 가능(composable)</strong></td><td>중복 없이 겹쳐 쓸 수 있다. 서로 충돌하지 않는다</td></tr><tr><td><strong>일관성(consistent)</strong></td><td>결정론이 스킬의 존재 이유다</td></tr><tr><td><strong>비용 효율(cost-efficient)</strong></td><td><strong>점진적 공개</strong> — 맞는 스킬을, 맞는 양만큼, 맞는 시점에</td></tr></tbody></table>
+<p>이식성 항목은 실무적으로 큰 얘기입니다. 표준이 공유되니 <strong>Claude Code에서 쓰던 스킬을 Cursor로 옮겨도 그대로 돌아간다</strong> 는 것. 스킬이 특정 벤더에 묶이지 않는다는 뜻이고, 그래서 조직 자산이 될 자격이 생깁니다.</p>
+<p>발표의 정리 문장은 이렇습니다.</p>
+<blockquote>
+<p>스킬은 조직의 노하우를 <strong>실행 가능하고(executable), 이식 가능하고(portable), 저렴하게(cheap)</strong> 만드는 새로운 단위다.</p>
+</blockquote>
+<h3 id="조합-예시--규제-대응">조합 예시 — 규제 대응<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#조합-예시--규제-대응"><span class="icon icon-link"></span></a></h3>
+<p>발표가 든 예가 구체적이라 옮깁니다. 왼쪽에 스킬 카탈로그, 오른쪽에 하네스가 있습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[스킬 카탈로그]                        [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">런타임</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]                    [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">산출물</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">데이터 보존 정책(retention policy)  ┐</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">공시 표준(disclosure standards)     ├→ 규제 공시 리뷰 워크플로우 →  감사 리포트(보관 가능)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">GDPR 규칙                           │   (런타임에 자동으로 pull)     개선 지점 식별</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">채워 넣을 템플릿                    ┘                              → 코드베이스로 피드백 루프</span></span></code></pre></figure>
+<p>웹이든 모바일이든 어느 애플리케이션에서 만들어진 기능이든 <strong>같은 규칙을 지키게 만드는 방법</strong> 이 이겁니다. 그리고 산출물이 감사 리포트라는 게 중요합니다 — <a href="/ko/posts/2026-08-26-agent-skills/">지난 글</a>에서 정리한 <strong>"검증 가능한 산출물이 남는가"</strong> 기준을 조직 단위로 올린 형태입니다.</p>
+<hr>
+<h2 id="5-거버넌스가-없으면-생기는-것--새로운-기술부채">5. 거버넌스가 없으면 생기는 것 — 새로운 기술부채<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-거버넌스가-없으면-생기는-것--새로운-기술부채"><span class="icon icon-link"></span></a></h2>
+<p>발표가 꼽는 목록입니다. 하나하나가 마이크로서비스 시절에 겪어본 것들입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>부채</th><th>어떻게 생기나</th></tr></thead><tbody><tr><td><strong>중복</strong></td><td>같은 스택·같은 인프라를 쓰는 팀들이 <strong>같은 스킬을 각자 반복해서</strong> 만든다</td></tr><tr><td><strong>품질 저하</strong></td><td>스킬을 <strong>원래 작업이 아니라 새로 나온 모델에 대고</strong> 재검증하지 않으면 시간이 갈수록 썩는다</td></tr><tr><td><strong>발견 불가</strong></td><td>거버넌스가 없으면 애초에 찾을 수가 없다</td></tr><tr><td><strong>주인 없음</strong></td><td>Backstage 같은 IDP가 풀던 문제 그대로 — <strong>누가 소유하는지</strong> 모르면 아무도 유지보수하지 않는다</td></tr><tr><td><strong>조합 불가</strong></td><td>조합성은 기본값이 아니다. 도메인 주도 설계처럼 <strong>의도적으로 경계를 잡아야</strong> 생긴다</td></tr><tr><td><strong>보안</strong></td><td>공개 스킬에는 프롬프트 인젝션이 섞일 수 있고, <strong>스킬은 스크립트를 포함한다</strong></td></tr><tr><td><strong>권한</strong></td><td>민감한 비즈니스 로직을 담은 스킬을 조직 전원이 볼 이유는 없다</td></tr></tbody></table>
+<h3 id="이-발표에서-가장-중요한-한-문장">이 발표에서 가장 중요한 한 문장<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#이-발표에서-가장-중요한-한-문장"><span class="icon icon-link"></span></a></h3>
+<p>보안 항목의 논리가 특히 날카롭습니다.</p>
+<blockquote>
+<p><strong>스킬은 스크립트를 갖고 있습니다. 그게 결정론적인 부분이기 때문입니다.</strong></p>
+</blockquote>
+<p>이 두 문장이 붙어 있는 게 핵심입니다. 스킬이 결정론적인 이유가 <strong>특정 작업에 특정 스크립트를 실제로 실행하기 때문</strong> 이고, 그건 동시에 스킬이 <strong>공급망(supply chain)</strong> 이라는 뜻입니다. 둘은 같은 성질의 양면이라 하나만 취할 수 없습니다.</p>
+<p>그래서 발표의 결론은 이겁니다 — <strong>검사 파이프라인 없이 공개 스킬을 pull 하는 건 공급망 결정</strong> 입니다. <code>npm install</code>에 대해 우리가 배운 것과 정확히 같은 얘기이고, 다만 이번엔 <strong>컴파일 단계도 타입 시그니처도 없는 마크다운 파일</strong> 이라 더 조용히 들어옵니다.</p>
+<h3 id="품질-저하--스킬은-코드와-다르게-썩는다">품질 저하 — 스킬은 코드와 다르게 썩는다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#품질-저하--스킬은-코드와-다르게-썩는다"><span class="icon icon-link"></span></a></h3>
+<p><strong>"작업이 아니라 최신 모델에 대고 검증하라"</strong> 는 지적은 한 번 더 씹어볼 만합니다.</p>
+<p>스킬은 대개 <strong>모델의 실패 양상을 상대로</strong> 씁니다. "이 모델은 테스트를 건너뛰니까 명시적으로 시켜라", "이 모델은 스코프를 넘으니까 못박아라." 그런데 모델은 몇 주마다 새 버전이 나옵니다. 그러면 스킬의 일부는 <strong>이미 필요 없어진 지시</strong> 가 되고(순수 토큰 낭비), 일부는 <strong>새 모델의 더 나은 기본 동작을 억누르는 안티패턴</strong> 이 됩니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">일반 코드:  런타임이 그대로면 어제 맞던 게 오늘도 맞다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">스킬:      실행 환경(모델)이 몇 주마다 새 버전으로 갈린다</span></span></code></pre></figure>
+<p><strong>스킬은 자기가 가정하는 환경이 계속 바뀌는 코드</strong> 입니다. 그래서 "한 번 잘 써두면 끝"이 성립하지 않는 종류의 자산입니다.</p>
+<hr>
+<h2 id="6-성숙도-사다리--개인--팀--중앙-플랫폼">6. 성숙도 사다리 — 개인 → 팀 → 중앙 플랫폼<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-성숙도-사다리--개인--팀--중앙-플랫폼"><span class="icon icon-link"></span></a></h2>
+<p>발표가 제시하는 도입 경로는 세 칸입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>단계</th><th>하는 일</th></tr></thead><tbody><tr><td><strong>① 개인</strong></td><td>스킬을 만들고 · 테스트하고 · 개선하고 · 쓴다. <strong>다만 무작위가 아니라 구조를 갖춰서</strong></td></tr><tr><td><strong>② 팀</strong></td><td>공유한다. 같은 스택·같은 제품을 만드니 <strong>빠르게 진화한다</strong></td></tr><tr><td><strong>③ 중앙 플랫폼</strong></td><td>카탈로그 · 의존성 · 버저닝 · 접근제어 · 평가/관측</td></tr></tbody></table>
+<p>중앙 플랫폼에 필요한 것들이 구체적입니다.</p>
+<ul>
+<li><strong>메타데이터가 붙은 카탈로그</strong> — 검색 가능해야 한다</li>
+<li><strong>카탈로그에 붙은 MCP + CLI</strong> — 스킬을 검색해서 IDE나 샌드박스로 <strong>pull 해오는 경로</strong></li>
+<li><strong>의존성</strong> — 스킬 간 의존 관계를 알아야 한다</li>
+<li><strong>버저닝과 수명주기</strong> — 에이전트가 <strong>최신 버전이 있다는 걸 알아채고 끌어온다</strong></li>
+<li><strong>접근제어</strong> — 누가 무엇에 접근하는지</li>
+<li><strong>평가와 관측성</strong></li>
+</ul>
+<p>그리고 발표에서 제일 정직한 문장이 여기서 나옵니다.</p>
+<blockquote>
+<p>이 모든 게 거버넌스 위에서 돌아갑니다. 그리고 <strong>여기가 기술이 문제를 푸는 걸 멈추는 지점</strong> 입니다.</p>
+</blockquote>
+<p>카탈로그를 다 만들어놔도 <strong>"그래서 누가 관리하는가"</strong> 는 남습니다. 발표는 아키텍트·엔지니어링 리드·인프라 리드·보안 리드가 각자 도메인을 소유하고 정책에 맞게 스킬을 갱신해야 한다고 말합니다. <strong>조직도 문제</strong> 라는 걸 숨기지 않는 게 좋습니다.</p>
+<h3 id="15개-팀-6개월-시뮬레이션">15개 팀 6개월 시뮬레이션<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#15개-팀-6개월-시뮬레이션"><span class="icon icon-link"></span></a></h3>
+<p>발표는 팀 15개(팀당 5~12명)에 엔지니어당 스킬 기여도 · 하루 평균 스킬 사용량 · 팀 간 중복 비율 · 품질·보안 비율을 넣고 6개월을 돌려봅니다.</p>
+<p>거버넌스가 없을 때의 관찰이 현실적입니다.</p>
+<blockquote>
+<p>규제 스킬이 없으면, 누군가는 <strong>에이전트를 제대로 조종하려고 앞뒤로 바이브 코딩</strong> 을 합니다. 비용 측면에서 토큰을 더 태우고, 생산성 측면에서 한 번에 나올 답을 시간을 들여 받습니다.</p>
+</blockquote>
+<p>그리고 품질·보안도 같습니다. 스킬이 정의·유지되지 않으면 <strong>판단이 전부 사람에게 떨어지고</strong>, 팀별 성숙도 차이가 그대로 결과물 편차가 됩니다.</p>
+<p>거버넌스를 넣으면? 발표는 과장하지 않습니다 — <strong>완벽해지지 않고, 갈라지는 팀도 여전히 있습니다.</strong> 다만 공통 지반이 생깁니다. 스킬 하나가 퍼블리시되면 다음 엔지니어가 새 스킬을 만들려 할 때 <strong>하네스가 이미 있는 스킬을 알아보고 끌어옵니다.</strong></p>
+<hr>
+<h2 id="7-다음에-오는-것--그리고-순서를-틀리면-안-되는-이유">7. 다음에 오는 것 — 그리고 순서를 틀리면 안 되는 이유<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-다음에-오는-것--그리고-순서를-틀리면-안-되는-이유"><span class="icon icon-link"></span></a></h2>
+<p>발표가 마지막에 꼽는 세 가지입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>다음</th><th>상태</th></tr></thead><tbody><tr><td><strong>스킬 레지스트리</strong></td><td>IDP(내부 개발자 포털) 진영이 이미 이 기능을 중앙화하기 시작했다</td></tr><tr><td><strong>스킬 평가(eval)</strong></td><td>아직 정답이 없다. 지금 가장 값어치 있던 방법은 <strong>Anthropic 베스트 프랙티스에 대고 정적 평가</strong> 하는 것 — 제대로 invoke되지 않거나 구조가 어긋난 스킬은 품질이 낮을 확률이 높다</td></tr><tr><td><strong>자가 진화(auto-evolving)</strong></td><td>스킬을 자동으로 진화시키는 폐루프. <strong>지금의 다음 하이프</strong></td></tr></tbody></table>
+<p>그리고 경고가 붙습니다.</p>
+<blockquote>
+<p>가드레일이 되는 거버넌스 없이 자가 진화를 켜면, <strong>그 영향은 지금보다 훨씬 커집니다.</strong></p>
+</blockquote>
+<p>저는 이 순서 얘기가 이 발표의 진짜 결론이라고 봤습니다. <strong>자동화는 증폭기</strong> 입니다. 중복·품질저하·주인 없음이 있는 상태에서 자동 진화를 켜면 그 셋이 자동으로 증식합니다. <a href="/ko/posts/2026-07-05-meta-harness/">자가치유 하네스 글</a>에서 정리했던 것과 같은 이야기 — <strong>규칙을 자동으로 더하는 장치를 만들기 전에, 더해진 규칙이 나빠졌는지 확인하는 장치가 먼저</strong> 있어야 합니다.</p>
+<hr>
+<h2 id="8-이-저장소에-대입해보면--나는-2단에-있고-3단은-필요-없다">8. 이 저장소에 대입해보면 — 나는 2단에 있고, 3단은 필요 없다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-이-저장소에-대입해보면--나는-2단에-있고-3단은-필요-없다"><span class="icon icon-link"></span></a></h2>
+<p>읽기만 하면 남는 게 없으니 이 블로그 저장소에 대봤습니다.</p>
+<p>이 저장소에는 하네스 스킬이 여러 개 붙어 있습니다 — <code>frontend-harness</code>, <code>product-spec-harness</code>, <code>test-layering-harness</code>, <code>git-harness</code>. 발표의 사다리로 재보면 이렇습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>단계</th><th>이 저장소</th><th>판정</th></tr></thead><tbody><tr><td><strong>① 개인</strong></td><td>스킬을 만들고 쓰고 있다</td><td>✅</td></tr><tr><td><strong>② 팀</strong></td><td>플러그인 형태로 묶여 재사용 가능하다</td><td>✅ (사실상 1인 팀)</td></tr><tr><td><strong>③ 중앙 플랫폼</strong></td><td>카탈로그 ❌ · 버저닝 ❌ · 접근제어 ❌ · <strong>eval ❌</strong></td><td>❌</td></tr></tbody></table>
+<p>여기서 정직하게 갈라야 할 게 있습니다. <strong>3단 전체가 나에게 필요한 건 아닙니다.</strong> 발표의 청중은 팀 15개짜리 조직이고, 이 저장소는 블로그 한 개입니다. 카탈로그·MCP 검색·접근제어는 명백한 오버엔지니어링입니다.</p>
+<p>그런데 <strong>팀 규모와 무관하게 필요한 두 개</strong> 가 있습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">규모를 타는 것:  카탈로그 · 검색 MCP · 접근제어 · 소유자 지정 · 중복 탐지</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">규모를 안 타는 것: 버저닝(스킬이 언제 왜 바뀌었나) · eval(바뀐 스킬이 나빠졌나)</span></span></code></pre></figure>
+<p>그리고 이 저장소에는 <strong>그 두 개가 다 없습니다.</strong> <a href="/ko/posts/2026-08-26-agent-skills/">지난 글</a>에서도, <a href="/ko/posts/2026-08-25-agentic-code-quality/">그 전 글</a>에서도 같은 구멍을 지적했는데 이번 발표가 이유를 하나 더 줍니다 — <strong>모델이 바뀔 때마다 스킬이 조용히 썩는다.</strong> 5절에서 정리한 그 이야기입니다. 스킬을 안 건드려도 환경이 갈리면 품질이 떨어지는데, 그걸 알아챌 장치가 0개입니다.</p>
+<p>그래서 이 저장소에서 실제로 할 일은 이 두 줄로 좁혀집니다.</p>
+<ol>
+<li><strong>스킬 변경을 커밋 단위로 추적 가능하게</strong> — 어떤 스킬이 언제 왜 바뀌었는지가 남아야 롤백이 된다</li>
+<li><strong>스킬에 대한 회귀 테스트 몇 개</strong> — 대표 작업 몇 개를 스킬 유무·모델 버전별로 돌려 비교</li>
+</ol>
+<p>카탈로그를 만드는 것보다 이쪽이 훨씬 값이 큽니다. 그리고 이건 조직에서도 순서가 같습니다 — <strong>평가 없는 카탈로그는 썩은 스킬을 더 효율적으로 배포하는 장치</strong> 이기 때문입니다.</p>
+<hr>
+<h2 id="9-오해하기-쉬운-지점">9. 오해하기 쉬운 지점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-오해하기-쉬운-지점"><span class="icon icon-link"></span></a></h2>
+<h3 id="오해-1--카탈로그를-만들면-거버넌스다">오해 1 — "카탈로그를 만들면 거버넌스다"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-1--카탈로그를-만들면-거버넌스다"><span class="icon icon-link"></span></a></h3>
+<p>발표가 직접 못박습니다. 카탈로그·버저닝·접근제어를 다 만들어도 <strong>"여기서 기술이 문제 푸는 걸 멈춥니다."</strong> 카탈로그는 <strong>발견</strong> 을 풀고, 거버넌스는 <strong>소유와 정책</strong> 을 푸는 문제입니다. 소유자 이름이 붙지 않은 카탈로그는 잘 정리된 창고일 뿐입니다.</p>
+<h3 id="오해-2--마이크로서비스에서-해봤으니-안전하다">오해 2 — "마이크로서비스에서 해봤으니 안전하다"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-2--마이크로서비스에서-해봤으니-안전하다"><span class="icon icon-link"></span></a></h3>
+<p>발표의 처방은 마이크로서비스 거버넌스를 통째로 빌려옵니다. 좋은 처방인데, 저는 여기에 단서를 답니다. <strong>마이크로서비스 거버넌스는 대체로 잘 안 됐습니다.</strong> 그리고 스킬은 더 빨리 어긋납니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>마이크로서비스</th><th>스킬</th></tr></thead><tbody><tr><td><strong>복제 비용</strong></td><td>배포 파이프라인이 필요</td><td><strong>파일 복사 한 번</strong></td></tr><tr><td><strong>인터페이스 계약</strong></td><td>스키마·타입이 강제</td><td>없음. 자연어다</td></tr><tr><td><strong>깨졌을 때</strong></td><td>빌드·헬스체크가 잡아준다</td><td><strong>그럴듯한 결과가 나온다</strong></td></tr></tbody></table>
+<p>빠르게 복제되고, 계약이 없고, 틀려도 그럴듯한 것 — 이건 거버넌스가 <strong>더 급하다</strong> 는 뜻이지 해본 문제라 안심해도 된다는 뜻이 아닙니다.</p>
+<h3 id="오해-3--스킬은-텍스트니까-안전하다">오해 3 — "스킬은 텍스트니까 안전하다"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-3--스킬은-텍스트니까-안전하다"><span class="icon icon-link"></span></a></h3>
+<p>5절 그대로입니다. <strong>스킬은 스크립트를 포함하고, 그게 결정론의 원천입니다.</strong> 공개 스킬을 검사 없이 가져오는 건 의존성을 추가하는 것과 같은 무게의 결정입니다.</p>
+<h3 id="오해-4--최신-버전을-자동으로-끌어오면-좋다">오해 4 — "최신 버전을 자동으로 끌어오면 좋다"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-4--최신-버전을-자동으로-끌어오면-좋다"><span class="icon icon-link"></span></a></h3>
+<p>발표는 에이전트가 최신 스킬 버전을 알아채고 pull 하는 걸 장점으로 듭니다. 편의로는 맞습니다. 다만 <strong>자동 최신 pull + 서명·검사 없음</strong> 조합은 우리가 이미 아는 사고 패턴입니다. 편의와 공급망 안전은 반대 방향으로 당기고, 그 사이를 메우는 게 6절의 <strong>검사 파이프라인</strong> 입니다. 둘 중 하나만 도입하면 안 됩니다.</p>
+<hr>
+<h2 id="10-정리">10. 정리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#10-정리"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>내용</th><th>왜</th></tr></thead><tbody><tr><td><strong>1. 노하우는 스킬에 모인다</strong></td><td>훅은 이벤트, MCP는 남의 것, 서브에이전트는 컨텍스트 보호용</td><td>소거하면 스킬만 남는다</td></tr><tr><td><strong>2. 스킬이 구조화돼야 워크플로우가 결정론적</strong></td><td>아니면 이름만 워크플로우다</td><td>결정론은 스킬 레벨에서 결정된다</td></tr><tr><td><strong>3. 우리가 아는 워크플로우는 한 칸</strong></td><td>전략·디스커버리·데이터·플랫폼·운영이 밖에 있다</td><td>업계는 가장 안쪽 10%를 최적화해왔다</td></tr><tr><td><strong>4. 마이크로서비스 설계 원칙 그대로</strong></td><td>특화·조합·이식·점진적 공개</td><td>새 문제가 아니다 — 다만 더 빨리 어긋난다</td></tr><tr><td><strong>5. 스킬은 공급망이다</strong></td><td>스크립트를 갖고 있어서 결정론적이다</td><td>결정론과 공급망 리스크는 같은 성질의 양면</td></tr><tr><td><strong>6. 스킬은 모델이 바뀌면 썩는다</strong></td><td>작업이 아니라 <strong>새 모델</strong> 에 대고 재검증하라</td><td>실행 환경이 몇 주마다 갈린다</td></tr><tr><td><strong>7. 거버넌스 없이 자가 진화는 증폭기</strong></td><td>순서를 틀리면 안 된다</td><td>중복·품질저하가 자동으로 증식한다</td></tr></tbody></table>
+<p>이 블로그에서 이어온 이야기의 다음 칸이기도 합니다.</p>
+<ul>
+<li><a href="/ko/posts/2026-07-05-meta-harness/">자가치유 하네스</a> — 규칙을 <strong>더할 때</strong> 검증하라</li>
+<li><a href="/ko/posts/2026-07-31-context-engineering-claude5/">덜어내는 컨텍스트 엔지니어링</a> — 규칙을 <strong>덜어낼 때</strong> 검증하라</li>
+<li><a href="/ko/posts/2026-08-23-ai-native-sdlc-playbook/">AI 네이티브 SDLC</a> — <strong>프로세스를 바꿀 때</strong> 검증하라</li>
+<li><a href="/ko/posts/2026-08-25-agentic-code-quality/">코드 품질은 제약에 있다</a> — 에이전트를 <strong>둘러싸는 것</strong> 으로 검증하라</li>
+<li><a href="/ko/posts/2026-08-26-agent-skills/">에이전트가 건너뛰는 건 시니어의 일</a> — 에이전트에게 <strong>집어넣는 것</strong> 이 스킬이다</li>
+<li>이번 글 — 그 스킬이 <strong>여러 사람 손을 타기 시작하면</strong> 무엇이 필요한가</li>
+</ul>
+<p>발표의 손 접히는 세 질문으로 돌아가면, 첫 질문에 손을 드는 건 이제 쉽습니다. 어려운 건 세 번째입니다. 그리고 그 어려움은 기술 문제가 아니라 <strong>누가 소유할 것인가</strong> 의 문제라는 게, 이 발표가 정직하게 인정하는 지점입니다.</p>
+<hr>
+<h2 id="참고-문서">참고 문서<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고-문서"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Imad Touil (QuantumBlack, AI by McKinsey), <a href="https://www.youtube.com/watch?v=M05vON8i0aI">AI-Native Organisations Run on Skills: How to Structure and Scale Them</a> — AI Engineer World's Fair</li>
+<li>이전 글 — <a href="/ko/posts/2026-08-26-agent-skills/">에이전트가 건너뛰는 건 언제나 시니어의 일이다</a> · <a href="/ko/posts/2026-08-25-agentic-code-quality/">코드 품질은 제약에 있다</a> · <a href="/ko/posts/2026-08-23-ai-native-sdlc-playbook/">AI 네이티브 SDLC 플레이북</a></li>
+</ul>b:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$10"}}]}]
+c:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/ko/posts/2026-09-05-frontier-development-teams","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"도구는 변수가 아니었다 — 같은 도구를 쓴 50개 팀이 갈린 지점"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+d:["$","div",null,{"className":"hidden lg:block","children":["$","$L11",null,{"headings":[{"id":"1-이-글은-무엇에-관한-글인가","text":"1. 이 글은 무엇에 관한 글인가?","depth":1},{"id":"2-워크플로우의-네-조각-중-왜-스킬만-남는가","text":"2. 워크플로우의 네 조각 중 왜 스킬만 남는가","depth":1},{"id":"3-우리가-워크플로우라-부르는-건-전체의-한-칸이다","text":"3. 우리가 워크플로우라 부르는 건 전체의 한 칸이다","depth":1},{"id":"4-스킬을-마이크로서비스처럼-설계하라","text":"4. 스킬을 마이크로서비스처럼 설계하라","depth":1},{"id":"조합-예시--규제-대응","text":"조합 예시 — 규제 대응","depth":2},{"id":"5-거버넌스가-없으면-생기는-것--새로운-기술부채","text":"5. 거버넌스가 없으면 생기는 것 — 새로운 기술부채","depth":1},{"id":"이-발표에서-가장-중요한-한-문장","text":"이 발표에서 가장 중요한 한 문장","depth":2},{"id":"품질-저하--스킬은-코드와-다르게-썩는다","text":"품질 저하 — 스킬은 코드와 다르게 썩는다","depth":2},{"id":"6-성숙도-사다리--개인--팀--중앙-플랫폼","text":"6. 성숙도 사다리 — 개인 → 팀 → 중앙 플랫폼","depth":1},{"id":"15개-팀-6개월-시뮬레이션","text":"15개 팀 6개월 시뮬레이션","depth":2},{"id":"7-다음에-오는-것--그리고-순서를-틀리면-안-되는-이유","text":"7. 다음에 오는 것 — 그리고 순서를 틀리면 안 되는 이유","depth":1},{"id":"8-이-저장소에-대입해보면--나는-2단에-있고-3단은-필요-없다","text":"8. 이 저장소에 대입해보면 — 나는 2단에 있고, 3단은 필요 없다","depth":1},{"id":"9-오해하기-쉬운-지점","text":"9. 오해하기 쉬운 지점","depth":1},{"id":"오해-1--카탈로그를-만들면-거버넌스다","text":"오해 1 — \"카탈로그를 만들면 거버넌스다\"","depth":2},{"id":"오해-2--마이크로서비스에서-해봤으니-안전하다","text":"오해 2 — \"마이크로서비스에서 해봤으니 안전하다\"","depth":2},{"id":"오해-3--스킬은-텍스트니까-안전하다","text":"오해 3 — \"스킬은 텍스트니까 안전하다\"","depth":2},{"id":"오해-4--최신-버전을-자동으로-끌어오면-좋다","text":"오해 4 — \"최신 버전을 자동으로 끌어오면 좋다\"","depth":2},{"id":"10-정리","text":"10. 정리","depth":1},{"id":"참고-문서","text":"참고 문서","depth":1}],"title":"목차"}]}]
+e:["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true}]
+f:["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]
+14:null
