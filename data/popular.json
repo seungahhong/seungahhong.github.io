@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-09",
+  "updatedAt": "2026-09-10",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 58
+      "views": 59
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
@@ -47,6 +47,10 @@
       "views": 5
     },
     {
+      "slug": "2026-06-03-claude-marketplace",
+      "views": 5
+    },
+    {
       "slug": "2026-08-22-delete-and-verify",
       "views": 5
     },
@@ -71,11 +75,11 @@
       "views": 4
     },
     {
-      "slug": "2026-06-03-claude-marketplace",
+      "slug": "2026-07-12-product-spec-harness",
       "views": 4
     },
     {
-      "slug": "2026-07-12-product-spec-harness",
+      "slug": "2026-08-25-agentic-code-quality",
       "views": 4
     },
     {
@@ -112,10 +116,6 @@
     },
     {
       "slug": "2025-02-09-git-to-mp4-convert",
-      "views": 3
-    },
-    {
-      "slug": "2026-08-25-agentic-code-quality",
       "views": 3
     },
     {
