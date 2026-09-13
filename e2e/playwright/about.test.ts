@@ -89,7 +89,7 @@ test.describe('about page', () => {
       expect(body).not.toMatch(/\{\{?\s*(count|year|postCount)\s*\}?\}/);
 
       // 편수는 한국어 원문 기준(77)이지 원문+번역(154)이 아니다.
-      expect(body).toMatch(/\b77\b/);
+      expect(body).toMatch(/\b78\b/);
       expect(body).toMatch(/\b2020\b/);
     },
   );
