@@ -1,0 +1,416 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+4:I[52881,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],""]
+11:I[27722,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+12:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
+13:"$Sreact.suspense"
+2:T70d,{"@context":"https://schema.org","@type":"BlogPosting","headline":"지시를 늘릴수록 덜 지켜진다 — 에이전트가 실제로 따르는 스펙 쓰는 법","description":"1. 이 글은 무엇에 관한 글인가? Addy Osmani의 글 How to write a good spec for AI agents를 읽고 정리한 글입니다. 글은 저자가 받은 질문 하나에서 출발합니다. \"에이전트용 스펙을 잘 쓰라는 얘기는 많이 들었는데, 제대로 된 프레임워크는 아직…","datePublished":"2026-09-13","dateModified":"2026-09-13","inLanguage":"ko-KR","url":"https://seungahhong.github.io/ko/posts/2026-09-13-writing-specs-for-agents/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/ko/posts/2026-09-13-writing-specs-for-agents/"},"image":"https://seungahhong.github.io/blog-assets/2026/09/assets/13/thumbnail.png","keywords":["AI","에이전트","스펙","컨텍스트엔지니어링","PRD"],"articleSection":"개발","wordCount":4976,"timeRequired":"PT11M","isPartOf":{"@id":"https://seungahhong.github.io/ko/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"홈\",\"item\":\"https://seungahhong.github.io/ko/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"포스트\",\"item\":\"https://seungahhong.github.io/ko/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"지시를 늘릴수록 덜 지켜진다 — 에이전트가 실제로 따르는 스펙 쓰는 법\",\"item\":\"https://seungahhong.github.io/ko/posts/2026-09-13-writing-specs-for-agents/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"지시를 늘릴수록 덜 지켜진다 — 에이전트가 실제로 따르는 스펙 쓰는 법"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"지시를 늘릴수록 덜 지켜진다 — 에이전트가 실제로 따르는 스펙 쓰는 법"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],"$L5","$L6","$L7","$L8","$L9"]}],false,"$La"]}],"$Lb","$Lc"]}],"$Ld"]}]}]],["$Le"],"$Lf"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"oWtornNyx6Ce1w6JzT4fn"}
+5:["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"홍승아"}]
+6:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+7:["$","time",null,{"dateTime":"2026-09-13","className":"meta-mono","children":"2026.09.13"}]
+8:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+9:["$","span",null,{"className":"meta-mono","children":[11,"분"]}]
+a:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/ko/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","에이전트",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8","className":"tag-pill","children":"에이전트"}]}],["$","li","스펙",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EC%8A%A4%ED%8E%99","className":"tag-pill","children":"스펙"}]}],["$","li","컨텍스트엔지니어링",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81","className":"tag-pill","children":"컨텍스트엔지니어링"}]}],["$","li","PRD",{"children":["$","$L4",null,{"href":"/ko/tags?tag=PRD","className":"tag-pill","children":"PRD"}]}]]}]
+10:T8bd4,<h2 id="1-이-글은-무엇에-관한-글인가">1. 이 글은 무엇에 관한 글인가?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-이-글은-무엇에-관한-글인가"><span class="icon icon-link"></span></a></h2>
+<p>Addy Osmani의 글 <a href="https://addyo.substack.com/p/how-to-write-a-good-spec-for-ai-agents">How to write a good spec for AI agents</a>를 읽고 정리한 글입니다.</p>
+<p>글은 저자가 받은 질문 하나에서 출발합니다.</p>
+<blockquote>
+<p>"에이전트용 스펙을 잘 쓰라는 얘기는 많이 들었는데, <strong>제대로 된 프레임워크는 아직 못 봤습니다.</strong>"</p>
+</blockquote>
+<p>이 질문이 정확합니다. "스펙을 잘 써라"는 조언은 어디에나 있는데, <strong>무엇을 얼마나 쓰라는 것인지</strong> 를 말해주는 자료는 드뭅니다. 그리고 이 글의 답은 직관과 반대 방향입니다.</p>
+<blockquote>
+<p><strong>스펙을 크게 쓰면 안 됩니다.</strong> 컨텍스트 윈도우 한계와 모델의 <strong>어텐션 예산(attention budget)</strong> 이 가로막습니다.</p>
+</blockquote>
+<p><a href="/ko/posts/2026-07-31-context-engineering-claude5/">컨텍스트 엔지니어링 글</a>이 <strong>"규칙을 덜어내라"</strong> 였다면, 이 글은 그 바로 옆 칸입니다 — <strong>"그러면 남길 규칙은 무엇이고, 어떤 모양이어야 하는가."</strong> 덜어내기는 뺄셈이고, 스펙 쓰기는 <strong>무엇을 남길지 고르는 일</strong> 입니다.</p>
+<hr>
+<h2 id="2-비전을-먼저-디테일은-에이전트에게">2. 비전을 먼저, 디테일은 에이전트에게<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-비전을-먼저-디테일은-에이전트에게"><span class="icon icon-link"></span></a></h2>
+<p>글의 첫 번째 원칙은 순서에 관한 것입니다. <strong>사람이 상세 스펙을 다 쓰고 시작하지 말라</strong> 는 겁니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">❌ 사람이 50페이지 스펙 작성 → 에이전트에 투입</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">✅ 사람이 짧은 제품 브리프 작성 → 에이전트가 상세 스펙 초안 → 사람이 교정 → 실행</span></span></code></pre></figure>
+<p>이유가 실무적입니다. <strong>부연(elaboration)은 모델이 잘하는 일</strong> 이고, <strong>방향(direction)은 사람만 정할 수 있는 일</strong> 입니다. 둘을 섞어서 사람이 다 하면, 사람은 잘 못하는 일에 시간을 쓰고 모델은 잘하는 일을 못 씁니다.</p>
+<p>글이 드는 예시 브리프는 이 정도로 짧습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"사용자 계정과 영속 저장소를 가진 할 일 앱을 만든다."</span></span></code></pre></figure>
+<p>여기서 에이전트가 스키마·라우팅·에러 케이스·테스트 전략을 펼쳐내면, 사람은 <strong>그걸 읽고 틀린 곳만 고칩니다.</strong> 백지에서 쓰는 것보다 빠르고, 무엇보다 <strong>빠진 항목이 눈에 보입니다.</strong></p>
+<h3 id="플랜-모드가-여기에-붙는-이유">플랜 모드가 여기에 붙는 이유<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#플랜-모드가-여기에-붙는-이유"><span class="icon icon-link"></span></a></h3>
+<p>글은 이 단계에서 <strong>Plan Mode(읽기 전용)</strong> 를 쓰라고 말합니다. 파일을 못 고치는 상태로 스펙을 다듬는 것.</p>
+<p>이게 왜 중요하냐면, <strong>스펙 교정과 코드 작성이 섞이면 교정이 끝나기 전에 코드가 생기기</strong> 때문입니다. 코드가 생기면 스펙을 고치는 비용이 갑자기 올라갑니다. 읽기 전용은 그 비용을 0으로 묶어두는 장치입니다.</p>
+<p>그리고 다듬은 결과는 <code>SPEC.md</code> 같은 파일로 <strong>남깁니다.</strong> 대화가 아니라 파일이어야 하는 이유는 3절과 6절에서 계속 나옵니다.</p>
+<hr>
+<h2 id="3-2500개-에이전트-설정-파일이-말해주는-여섯-칸">3. 2,500개 에이전트 설정 파일이 말해주는 여섯 칸<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-2500개-에이전트-설정-파일이-말해주는-여섯-칸"><span class="icon icon-link"></span></a></h2>
+<p>글에서 가장 손에 잡히는 부분입니다. GitHub이 <strong>에이전트 설정 파일 2,500개 이상</strong> 을 분석한 결과, 좋은 파일에는 공통으로 여섯 개 영역이 있었다는 것.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>영역</th><th>들어가야 하는 것</th><th>흔한 실패</th></tr></thead><tbody><tr><td><strong>명령어(Commands)</strong></td><td>플래그까지 포함한 <strong>실행 가능한 전체 명령</strong> (<code>pnpm test</code>, <code>pytest -v</code>)</td><td>"테스트를 돌린다"로만 적혀 있음</td></tr><tr><td><strong>테스트(Testing)</strong></td><td>프레임워크 · 테스트 위치 · 커버리지 기대치</td><td>어떤 러너인지 안 적혀 있음</td></tr><tr><td><strong>프로젝트 구조</strong></td><td>소스·테스트·문서가 각각 어디인지</td><td>에이전트가 파일을 엉뚱한 곳에 만든다</td></tr><tr><td><strong>코드 스타일</strong></td><td><strong>실제 코드 예시</strong> 로 보여준 컨벤션</td><td>형용사로만 적혀 있음("깔끔하게")</td></tr><tr><td><strong>Git 워크플로우</strong></td><td>브랜치 명명 · 커밋 포맷 · PR 요건</td><td>매번 사람이 고쳐준다</td></tr><tr><td><strong>경계(Boundaries)</strong></td><td>하드 제약 · <strong>절대 건드리면 안 되는 것</strong></td><td>아예 없다</td></tr></tbody></table>
+<p>여섯 칸 중 실무에서 제일 자주 비는 건 <strong>경계</strong> 입니다. 나머지 다섯은 "설명"이라 쓰다 보면 채워지는데, 경계는 <strong>사고를 겪어봐야 떠오르는 항목</strong> 이기 때문입니다.</p>
+<p>글이 인용하는 한 문장이 이걸 요약합니다.</p>
+<blockquote>
+<p><strong>"절대 시크릿을 커밋하지 마라(Never commit secrets)"</strong> 가 가장 흔하게 등장한, 그리고 가장 도움이 된 제약이었다.</p>
+</blockquote>
+<h3 id="권장-골격">권장 골격<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#권장-골격"><span class="icon icon-link"></span></a></h3>
+<p>글이 제시하는 마크다운 구조는 이렇습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold"># Project Spec: [</span><span style="--shiki-light:#032563;--shiki-light-font-weight:bold;--shiki-dark:#ADDCFF;--shiki-dark-font-weight:bold">이름</span><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold">]</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold">## Objective</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[명확한 목표 한 문장]</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold">## Tech Stack</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[구체적인 버전과 의존성]</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold">## Commands</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Build: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`npm run build`</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Test: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`npm test`</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold">## Project Structure</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> `src/`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> – 애플리케이션 코드</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> `tests/`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> – 유닛/통합 테스트</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold">## Boundaries</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ✅ 항상: [안전한 행동]</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ⚠️ 먼저 물어볼 것: [영향이 큰 변경]</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> 🚫 절대 금지: [하드 스톱]</span></span></code></pre></figure>
+<p>눈여겨볼 건 <strong>분량이 아니라 형태</strong> 입니다. 각 항목이 <strong>한 줄에 하나의 사실</strong> 이고, 형용사가 아니라 <strong>명령어·경로·이름</strong> 입니다. 모델이 지킬 수 있는 건 이 모양뿐입니다.</p>
+<hr>
+<h2 id="4-지시의-저주--스펙이-커지면-오히려-안-지켜진다">4. 지시의 저주 — 스펙이 커지면 오히려 안 지켜진다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-지시의-저주--스펙이-커지면-오히려-안-지켜진다"><span class="icon icon-link"></span></a></h2>
+<p>이 글의 이론적 뼈대입니다. 학계에서 <strong>"지시의 저주(the curse of instructions)"</strong> 라 부르는 현상.</p>
+<blockquote>
+<p>프롬프트 안의 지시·데이터가 늘어날수록, <strong>각각의 요구사항을 지키는 비율이 눈에 띄게 떨어진다.</strong> GPT-4나 Claude 같은 모델도 동시에 많은 요구를 만족시키는 데 어려움을 겪는다.</p>
+</blockquote>
+<p>읽고 나서 제일 오래 남은 문장입니다. 우리가 스펙을 늘리는 동기는 보통 <strong>"이것도 빠뜨리면 안 되니까"</strong> 인데, 그 동기가 만들어낸 문서가 <strong>앞서 적어둔 항목까지 같이 무너뜨립니다.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">직관:  규칙을 20개 적으면 20개가 지켜진다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">실제:  규칙을 20개 적으면 5개짜리 문서보다 개별 준수율이 떨어진다</span></span></code></pre></figure>
+<p>그래서 스펙 작성은 <strong>덧셈이 아니라 예산 배분</strong> 입니다. 새 규칙 하나를 넣는 건 공짜가 아니라, <strong>기존 규칙들의 준수 확률을 조금씩 깎아서 사는 것</strong> 입니다. 이 관점이 <a href="/ko/posts/2026-07-31-context-engineering-claude5/">덜어내는 컨텍스트 엔지니어링</a>과 정확히 같은 지점에서 만납니다.</p>
+<h3 id="쪼개는-네-가지-방법">쪼개는 네 가지 방법<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#쪼개는-네-가지-방법"><span class="icon icon-link"></span></a></h3>
+<p>글이 제시하는 해법은 전부 "나누기"입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>방법</th><th>내용</th></tr></thead><tbody><tr><td><strong>컴포넌트별 분할</strong></td><td>백엔드 스펙 · 프론트엔드 스펙을 나눠 <strong>맥락에 맞는 것만</strong> 넣는다</td></tr><tr><td><strong>요약이 붙은 확장 목차</strong></td><td>상세 절을 참조하는 압축 목차를 만들어 <strong>필요할 때만 펼친다</strong></td></tr><tr><td><strong>서브에이전트 / 스킬</strong></td><td>도메인별 특화 에이전트가 <strong>스펙의 자기 몫만</strong> 들고 간다</td></tr><tr><td><strong>순차 집중</strong></td><td>프롬프트 하나에 작업 하나. 중간에 컨텍스트를 새로 간다</td></tr></tbody></table>
+<p>세 번째 항목이 <a href="/ko/posts/2026-09-06-skills-governance/">스킬 거버넌스 글</a>과 이어집니다. 거기서 서브에이전트는 <strong>"대부분 컨텍스트 윈도우를 지키려고 존재한다"</strong> 고 정리했는데, 이 글은 그 방어의 <strong>이론적 근거</strong> 를 대주는 셈입니다. 컨텍스트를 지키는 건 용량 문제가 아니라 <strong>준수율 문제</strong> 입니다.</p>
+<h3 id="병렬-에이전트에-붙은-단서">병렬 에이전트에 붙은 단서<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#병렬-에이전트에-붙은-단서"><span class="icon icon-link"></span></a></h3>
+<p>글은 독립적인 기능이라면 <strong>"하나는 코딩, 하나는 테스트, 하나는 리뷰"</strong> 로 동시에 돌리는 방식도 소개합니다. 다만 조건을 답니다 — <strong>처음엔 2~3개로 제한하고</strong>, 작업 분리가 명확해야 하며, 공유 컨텍스트를 조율할 오케스트레이션이 필요하다는 것.</p>
+<p>저는 이 단서가 본문보다 중요하다고 봤습니다. 병렬 에이전트는 <strong>컨텍스트를 나누는 장치인 동시에 충돌을 만드는 장치</strong> 입니다. 작업 경계가 흐린 상태로 늘리면, 지시의 저주를 피하려다 <strong>머지 충돌과 서로 덮어쓰기</strong> 를 삽니다.</p>
+<hr>
+<h2 id="5-세-단계-경계----️--">5. 세 단계 경계 — ✅ / ⚠️ / 🚫<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-세-단계-경계----️--"><span class="icon icon-link"></span></a></h2>
+<p>3절에서 가장 자주 빈다고 한 그 칸의 구체적인 모양입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>단계</th><th>의미</th><th>예시</th></tr></thead><tbody><tr><td><strong>✅ 항상</strong></td><td>확인 없이 해야 하는 것</td><td>"커밋 전에 항상 테스트를 돌린다"</td></tr><tr><td><strong>⚠️ 먼저 물어볼 것</strong></td><td>되돌리기 비싼 것</td><td>"DB 스키마를 고치기 전에 물어본다"</td></tr><tr><td><strong>🚫 절대 금지</strong></td><td>예외 없는 하드 스톱</td><td>"시크릿을 커밋하지 않는다"</td></tr></tbody></table>
+<p>세 칸으로 나뉜 게 핵심입니다. 경계를 <strong>금지 목록 하나로만</strong> 쓰면 두 가지가 동시에 망가집니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">금지만 있을 때: 애매한 것이 전부 "금지 아님"으로 흘러가 그냥 실행된다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">금지만 있을 때: 반대로 조심시키려고 전부 금지에 넣으면 에이전트가 아무것도 못 한다</span></span></code></pre></figure>
+<p><strong>⚠️ 칸은 "사람에게 되돌려주는 밸브"</strong> 입니다. 이 밸브가 없으면 모든 판단이 흑백이 되고, 실제 개발에서 중요한 결정은 대부분 회색이라 밸브 없는 스펙은 늘 둘 중 한쪽으로 고장 납니다.</p>
+<h3 id="자가-점검을-스펙-안에-심기">자가 점검을 스펙 안에 심기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#자가-점검을-스펙-안에-심기"><span class="icon icon-link"></span></a></h3>
+<p>글은 경계 외에도 세 가지를 더 권합니다.</p>
+<ul>
+<li><strong>스펙 대조 검증</strong> — 코드를 쓴 뒤 에이전트가 <strong>자기 결과물을 스펙 요구사항과 대조</strong> 하게 시킨다</li>
+<li><strong>LLM-as-a-Judge</strong> — 주관적 판단이 필요한 항목에 심사용 모델을 둔다</li>
+<li><strong>적합성 테스트(conformance test)</strong> — <strong>스펙에서 직접 도출한</strong> 테스트를 붙인다</li>
+</ul>
+<p>세 번째가 가장 값이 큽니다. 스펙 문장이 테스트가 되면, 스펙은 <strong>읽히기를 바라는 문서</strong> 에서 <strong>안 지키면 빨간불이 켜지는 장치</strong> 로 바뀝니다. <a href="/ko/posts/2026-08-25-agentic-code-quality/">코드 품질은 제약에 있다</a>에서 정리한 "에이전트를 둘러싸는 것"이 바로 이 모양입니다.</p>
+<hr>
+<h2 id="6-스펙은-살아-있는-산출물이다">6. 스펙은 살아 있는 산출물이다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-스펙은-살아-있는-산출물이다"><span class="icon icon-link"></span></a></h2>
+<p>글의 마지막 원칙입니다. 한 번 쓰고 끝나는 문서가 아니라는 것.</p>
+<blockquote>
+<p>스펙은 <strong>공유된 진실의 원천(shared source of truth)</strong> 이 된다 — 프로젝트와 함께 진화하는 <strong>살아 있고 실행 가능한 산출물.</strong></p>
+</blockquote>
+<p>실천 항목은 이렇습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>항목</th><th>내용</th></tr></thead><tbody><tr><td><strong>마일스톤마다 테스트</strong></td><td>스펙과 구현이 어긋난 걸 <strong>일찍</strong> 잡는다</td></tr><tr><td><strong>스펙 갱신</strong></td><td>요구사항이 빠졌던 걸 발견하면 <strong>문서를 고친다</strong> (대화에서 때우지 않는다)</td></tr><tr><td><strong>스펙의 버전 관리</strong></td><td>스펙 자체를 형상관리한다</td></tr><tr><td><strong>에이전트 행동 로그</strong></td><td>지시를 어떻게 오해했는지 역추적한다</td></tr><tr><td><strong>컨텍스트 관리 도구</strong></td><td>큰 스펙은 RAG·MCP·벡터 DB로 <strong>필요한 절만 꺼내 쓴다</strong></td></tr></tbody></table>
+<p>마지막 항목이 4절의 해법과 같은 얘기입니다. 스펙이 커지는 걸 못 막는다면, 적어도 <strong>한꺼번에 들어가는 걸</strong> 막으라는 것.</p>
+<h3 id="모델-선택과-비용">모델 선택과 비용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#모델-선택과-비용"><span class="icon icon-link"></span></a></h3>
+<p>글은 실무 항목도 하나 답니다 — <strong>계획과 중요한 단계에는 좋은 모델을, 기계적인 부연에는 싼 모델을.</strong> 그리고 컨텍스트 크기를 적절히 조절하라고 덧붙입니다.</p>
+<blockquote>
+<p><strong>토큰이 많다고 결과가 좋아지지 않는다. 길이보다 컨텍스트의 품질이 중요하다.</strong></p>
+</blockquote>
+<p><a href="/ko/posts/2026-08-01-choosing-claude-model/">Claude 모델 고르기</a>에서 정리했던 것과 같은 결론입니다. 단계마다 필요한 게 다르고, 전 단계에 최고 모델을 쓰는 건 <strong>비용을 태우는 방식으로 게으른 것</strong> 입니다.</p>
+<hr>
+<h2 id="7-안티패턴--github-연구가-꼽은-실패들">7. 안티패턴 — GitHub 연구가 꼽은 실패들<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-안티패턴--github-연구가-꼽은-실패들"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>안티패턴</th><th>왜 실패하나</th></tr></thead><tbody><tr><td><strong>모호한 프롬프트</strong></td><td>"멋진 거 만들어줘"에는 <strong>붙잡을 앵커가 없다</strong></td></tr><tr><td><strong>요약 없는 초장문 컨텍스트</strong></td><td>50페이지 문서 투하는 실패한다 (4절)</td></tr><tr><td><strong>사람 리뷰 건너뛰기</strong></td><td><strong>테스트 통과 = 정확함</strong> 이 아니다</td></tr><tr><td><strong>프로토타이핑과 프로덕션을 뭉뚱그림</strong></td><td><strong>어디서 엄격해야 하는지</strong> 를 스펙에 적어야 한다</td></tr><tr><td><strong>여섯 칸 중 일부 누락</strong></td><td>빈 칸이 그대로 구멍이 된다 (3절)</td></tr><tr><td><strong>속도·비확정성·비용 리스크 무시</strong></td><td><strong>검증이 에이전트 속도를 따라가야</strong> 한다</td></tr></tbody></table>
+<p>네 번째가 특히 자주 보입니다. 같은 저장소 안에서도 <strong>버려질 프로토타입</strong> 과 <strong>1년 갈 코드</strong> 가 섞여 있는데, 스펙이 그 구분을 안 하면 에이전트는 둘 다 같은 강도로 처리합니다. 결과는 둘 다 나쁩니다 — 프로토타입은 과하게 만들어지고, 프로덕션 코드는 프로토타입 취급을 받습니다.</p>
+<p>마지막 항목의 <strong>"검증이 속도를 따라가야 한다"</strong> 도 한 번 더 씹을 만합니다. 에이전트는 사람보다 빠르게 코드를 만들어내는데, 리뷰 속도는 그대로입니다. 그 격차가 벌어지면 <strong>검토되지 않은 코드의 재고</strong> 가 쌓이고, 그건 속도가 아니라 <strong>부채를 빨리 쌓는 것</strong> 입니다.</p>
+<hr>
+<h2 id="8-이-저장소에-대입해보면--여섯-칸-중-네-칸이-비어-있다">8. 이 저장소에 대입해보면 — 여섯 칸 중 네 칸이 비어 있다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-이-저장소에-대입해보면--여섯-칸-중-네-칸이-비어-있다"><span class="icon icon-link"></span></a></h2>
+<p>읽기만 하면 남는 게 없으니 이 블로그 저장소의 <code>CLAUDE.md</code>를 3절의 여섯 칸에 대봤습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>영역</th><th>이 저장소의 현재</th><th>판정</th></tr></thead><tbody><tr><td><strong>명령어</strong></td><td>"나머지는 <code>package.json</code> scripts 참고"로 위임 + <code>pnpm fetch:popular</code>만 명시</td><td>⚠️</td></tr><tr><td><strong>테스트</strong></td><td>없음 — vitest인지 playwright인지, 어디 있는지 안 적혀 있다</td><td>❌</td></tr><tr><td><strong>프로젝트 구조</strong></td><td><code>contents/blog/YYYY/MM/*.md</code> 규약은 있음. <code>src/</code> 배치는 없음</td><td>⚠️</td></tr><tr><td><strong>코드 스타일</strong></td><td>없음</td><td>❌</td></tr><tr><td><strong>Git 워크플로우</strong></td><td>배포 경로(<code>develop</code> → <code>master</code> → <code>gh-pages</code>)는 상세함</td><td>✅</td></tr><tr><td><strong>경계</strong></td><td>없음 — ✅/⚠️/🚫 구분이 하나도 없다</td><td>❌</td></tr></tbody></table>
+<p>재보고 나서 흥미로웠던 건, <strong>비어 있는 칸이 실제로 사고가 났던 칸과 겹친다</strong> 는 점입니다.</p>
+<p>이 저장소에는 글 하나를 추가할 때마다 같이 고쳐야 하는 <strong>하드코딩된 테스트 기대값이 네 군데</strong> 있습니다(글 수, 카테고리 카운트, 최신 글 날짜, About 페이지 편수). <code>CLAUDE.md</code>에는 이게 한 줄도 없습니다. <strong>테스트 칸이 비어 있으니 매번 빨간불로 배웁니다.</strong></p>
+<p>경계 칸도 마찬가지입니다. 이 저장소에는 명백한 🚫와 ⚠️가 이미 존재합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">🚫 </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`pnpm format`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">을 기존 글에 돌리지 말 것 — 표 정렬이 전부 바뀐다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">🚫 </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`public/blog-assets/`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">를 커밋하지 말 것 — gitignore된 파생물이다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">⚠️ </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`develop`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">에서 </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`pnpm fetch:popular`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">를 돌려 커밋하면 머지 때 충돌할 수 있다</span></span></code></pre></figure>
+<p>세 번째는 <code>CLAUDE.md</code>에 산문으로 적혀 있지만, <strong>⚠️로 표시돼 있지 않습니다.</strong> 문단 속에 묻힌 경고와 <code>⚠️</code>가 붙은 한 줄은 <strong>같은 정보가 아닙니다.</strong> 전자는 읽히길 기대하는 것이고, 후자는 <strong>분류된 것</strong> 입니다.</p>
+<p>그래서 이 저장소에서 실제로 할 일은 이렇게 좁혀집니다.</p>
+<ol>
+<li><strong>경계 절을 만들고 이미 아는 🚫/⚠️를 옮긴다</strong> — 새로 발견할 게 아니라, <strong>이미 산문에 흩어져 있는 걸 분류</strong> 하는 일이다</li>
+<li><strong>테스트 칸을 채운다</strong> — 러너·위치·그리고 "새 글 추가 시 같이 고칠 네 곳"</li>
+<li><strong>늘리지 않는다</strong> — 4절이 있으니, 코드 스타일 칸은 실제로 사고가 난 뒤에 채운다</li>
+</ol>
+<p>3번을 적어두는 게 중요합니다. 여섯 칸을 보면 <strong>여섯 칸을 다 채우고 싶어지는데</strong>, 그게 바로 이 글이 경고한 방향입니다. 빈 칸은 결함이 아니라 <strong>아직 비용을 치르지 않은 칸</strong> 일 수도 있습니다.</p>
+<hr>
+<h2 id="9-오해하기-쉬운-지점">9. 오해하기 쉬운 지점<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-오해하기-쉬운-지점"><span class="icon icon-link"></span></a></h2>
+<h3 id="오해-1--스펙을-쓰라는-건-워터폴로-돌아가라는-뜻이다">오해 1 — "스펙을 쓰라는 건 워터폴로 돌아가라는 뜻이다"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-1--스펙을-쓰라는-건-워터폴로-돌아가라는-뜻이다"><span class="icon icon-link"></span></a></h3>
+<p>글의 주장은 반대입니다. 스펙은 <strong>한 번 확정하고 얼어붙는 문서</strong> 가 아니라 6절의 <strong>살아 있는 산출물</strong> 입니다. 그리고 초안은 사람이 아니라 에이전트가 씁니다(2절). 워터폴의 핵심은 "앞단계를 확정하고 넘어간다"인데, 여기서는 <strong>매 마일스톤마다 스펙으로 돌아옵니다.</strong></p>
+<p>오히려 이건 <strong>스펙을 코드처럼 다루자</strong> 는 얘기에 가깝습니다. 버전이 있고, 테스트가 붙고, 커밋으로 바뀌는 것.</p>
+<h3 id="오해-2--긴-컨텍스트-모델이-나오면-해결된다">오해 2 — "긴 컨텍스트 모델이 나오면 해결된다"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-2--긴-컨텍스트-모델이-나오면-해결된다"><span class="icon icon-link"></span></a></h3>
+<p>4절이 그 기대에 대한 답입니다. 지시의 저주는 <strong>용량 문제가 아니라 주의(attention) 문제</strong> 입니다. 창이 넓어져도 <strong>지시 20개를 동시에 지키는 문제</strong> 는 그대로 남습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">컨텍스트 윈도우:  얼마나 넣을 수 있는가  → 하드웨어/모델이 푼다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">어텐션 예산:      얼마나 지켜지는가      → 넣는 사람이 푼다</span></span></code></pre></figure>
+<h3 id="오해-3--여섯-칸을-다-채우면-좋은-스펙이다">오해 3 — "여섯 칸을 다 채우면 좋은 스펙이다"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-3--여섯-칸을-다-채우면-좋은-스펙이다"><span class="icon icon-link"></span></a></h3>
+<p>8절에서 걸린 지점입니다. 여섯 칸은 <strong>체크리스트가 아니라 진단 도구</strong> 입니다. 아무 일도 안 일어난 영역을 추측으로 채우면, 그건 4절이 말한 <strong>준수율을 깎는 지시</strong> 가 됩니다. 칸이 비었으면 <strong>왜 비었는지</strong> 를 먼저 보는 게 맞습니다 — 사고가 안 난 건지, 사고가 났는데 안 적은 건지.</p>
+<h3 id="오해-4--자가-검증을-붙였으니-사람-리뷰는-줄여도-된다">오해 4 — "자가 검증을 붙였으니 사람 리뷰는 줄여도 된다"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#오해-4--자가-검증을-붙였으니-사람-리뷰는-줄여도-된다"><span class="icon icon-link"></span></a></h3>
+<p>안티패턴 목록이 직접 못박습니다. <strong>테스트 통과 = 정확함이 아닙니다.</strong> 그리고 5절의 자가 점검은 전부 <strong>에이전트가 자기 작업을 자기 스펙에 대보는 것</strong> 이라, <strong>스펙 자체가 틀렸을 때는 전부 통과합니다.</strong> 스펙이 틀렸는지는 스펙 안에서 알 수 없고, 이건 사람이 볼 수밖에 없는 자리입니다.</p>
+<hr>
+<h2 id="10-정리">10. 정리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#10-정리"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>내용</th><th>왜</th></tr></thead><tbody><tr><td><strong>1. 비전은 사람, 디테일은 에이전트</strong></td><td>짧은 브리프 → 에이전트 초안 → 사람 교정</td><td>방향은 사람만, 부연은 모델이 잘한다</td></tr><tr><td><strong>2. 여섯 칸으로 진단하라</strong></td><td>명령어·테스트·구조·스타일·Git·<strong>경계</strong></td><td>2,500개 파일에서 공통으로 나온 축</td></tr><tr><td><strong>3. 경계는 세 단계로</strong></td><td>✅ 항상 / ⚠️ 먼저 묻기 / 🚫 절대 금지</td><td>⚠️가 없으면 판단이 전부 흑백이 된다</td></tr><tr><td><strong>4. 지시를 늘리면 준수율이 떨어진다</strong></td><td>지시의 저주</td><td>새 규칙은 기존 규칙의 확률을 깎아서 산다</td></tr><tr><td><strong>5. 그래서 쪼갠다</strong></td><td>컴포넌트별 · 목차 · 서브에이전트 · 순차</td><td>컨텍스트 분리는 용량이 아니라 준수율 장치</td></tr><tr><td><strong>6. 스펙 문장을 테스트로</strong></td><td>적합성 테스트 · 스펙 대조 검증</td><td>읽히길 바라는 문서 → 빨간불이 켜지는 장치</td></tr><tr><td><strong>7. 검증이 속도를 따라가야 한다</strong></td><td>테스트 통과 ≠ 정확함</td><td>안 그러면 미검토 코드의 재고가 쌓인다</td></tr></tbody></table>
+<p>이 블로그에서 이어온 이야기와 겹쳐보면 자리가 분명해집니다.</p>
+<ul>
+<li><a href="/ko/posts/2026-07-12-product-spec-harness/">제품 스펙 하네스</a> — 스펙을 <strong>만드는 절차</strong> 를 하네스로</li>
+<li><a href="/ko/posts/2026-07-31-context-engineering-claude5/">컨텍스트 엔지니어링</a> — 규칙을 <strong>덜어낼 때</strong> 검증하라</li>
+<li><a href="/ko/posts/2026-08-01-choosing-claude-model/">Claude 모델 고르기</a> — 단계마다 <strong>필요한 모델이 다르다</strong></li>
+<li><a href="/ko/posts/2026-08-25-agentic-code-quality/">코드 품질은 제약에 있다</a> — 에이전트를 <strong>둘러싸는 것</strong> 으로 검증하라</li>
+<li><a href="/ko/posts/2026-09-06-skills-governance/">스킬 거버넌스</a> — 그 규칙이 <strong>여러 사람 손을 타면</strong> 무엇이 필요한가</li>
+<li>이번 글 — 그 규칙을 <strong>무슨 모양으로, 얼마나</strong> 적을 것인가</li>
+</ul>
+<p>질문으로 돌아가면, "제대로 된 프레임워크"는 결국 <strong>여섯 칸과 세 단계 경계, 그리고 늘리지 않겠다는 규율</strong> 입니다. 앞의 둘은 목록이라 오늘 바로 쓸 수 있고, 어려운 건 세 번째입니다. 스펙은 쓸수록 길어지고 싶어지는 문서인데, <strong>길어지는 순간 자기가 적어둔 것부터 지켜지지 않기 시작하기</strong> 때문입니다.</p>
+<hr>
+<h2 id="참고-문서">참고 문서<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고-문서"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Addy Osmani, <a href="https://addyo.substack.com/p/how-to-write-a-good-spec-for-ai-agents">How to write a good spec for AI agents</a></li>
+<li>GitHub, <a href="https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/">Spec-driven development</a> · <a href="https://github.com/github/spec-kit">Spec Kit</a></li>
+<li>Anthropic, <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">Effective context engineering for AI agents</a></li>
+<li>이전 글 — <a href="/ko/posts/2026-09-06-skills-governance/">스킬 거버넌스</a> · <a href="/ko/posts/2026-08-25-agentic-code-quality/">코드 품질은 제약에 있다</a> · <a href="/ko/posts/2026-07-31-context-engineering-claude5/">컨텍스트 엔지니어링</a></li>
+</ul>b:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$10"}}]}]
+c:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/ko/posts/2026-09-06-skills-governance","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"이전 글"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"조직의 노하우는 이제 스킬에 산다 — 거버넌스 없는 스킬은 새로운 기술부채다"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+d:["$","div",null,{"className":"hidden lg:block","children":["$","$L11",null,{"headings":[{"id":"1-이-글은-무엇에-관한-글인가","text":"1. 이 글은 무엇에 관한 글인가?","depth":1},{"id":"2-비전을-먼저-디테일은-에이전트에게","text":"2. 비전을 먼저, 디테일은 에이전트에게","depth":1},{"id":"플랜-모드가-여기에-붙는-이유","text":"플랜 모드가 여기에 붙는 이유","depth":2},{"id":"3-2500개-에이전트-설정-파일이-말해주는-여섯-칸","text":"3. 2,500개 에이전트 설정 파일이 말해주는 여섯 칸","depth":1},{"id":"권장-골격","text":"권장 골격","depth":2},{"id":"4-지시의-저주--스펙이-커지면-오히려-안-지켜진다","text":"4. 지시의 저주 — 스펙이 커지면 오히려 안 지켜진다","depth":1},{"id":"쪼개는-네-가지-방법","text":"쪼개는 네 가지 방법","depth":2},{"id":"병렬-에이전트에-붙은-단서","text":"병렬 에이전트에 붙은 단서","depth":2},{"id":"5-세-단계-경계----️--","text":"5. 세 단계 경계 — ✅ / ⚠️ / 🚫","depth":1},{"id":"자가-점검을-스펙-안에-심기","text":"자가 점검을 스펙 안에 심기","depth":2},{"id":"6-스펙은-살아-있는-산출물이다","text":"6. 스펙은 살아 있는 산출물이다","depth":1},{"id":"모델-선택과-비용","text":"모델 선택과 비용","depth":2},{"id":"7-안티패턴--github-연구가-꼽은-실패들","text":"7. 안티패턴 — GitHub 연구가 꼽은 실패들","depth":1},{"id":"8-이-저장소에-대입해보면--여섯-칸-중-네-칸이-비어-있다","text":"8. 이 저장소에 대입해보면 — 여섯 칸 중 네 칸이 비어 있다","depth":1},{"id":"9-오해하기-쉬운-지점","text":"9. 오해하기 쉬운 지점","depth":1},{"id":"오해-1--스펙을-쓰라는-건-워터폴로-돌아가라는-뜻이다","text":"오해 1 — \"스펙을 쓰라는 건 워터폴로 돌아가라는 뜻이다\"","depth":2},{"id":"오해-2--긴-컨텍스트-모델이-나오면-해결된다","text":"오해 2 — \"긴 컨텍스트 모델이 나오면 해결된다\"","depth":2},{"id":"오해-3--여섯-칸을-다-채우면-좋은-스펙이다","text":"오해 3 — \"여섯 칸을 다 채우면 좋은 스펙이다\"","depth":2},{"id":"오해-4--자가-검증을-붙였으니-사람-리뷰는-줄여도-된다","text":"오해 4 — \"자가 검증을 붙였으니 사람 리뷰는 줄여도 된다\"","depth":2},{"id":"10-정리","text":"10. 정리","depth":1},{"id":"참고-문서","text":"참고 문서","depth":1}],"title":"목차"}]}]
+e:["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true}]
+f:["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]
+14:null

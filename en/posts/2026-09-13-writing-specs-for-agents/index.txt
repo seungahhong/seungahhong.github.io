@@ -1,0 +1,427 @@
+1:"$Sreact.fragment"
+2:I[38246,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"ThemeProvider"]
+3:I[6240,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"default"]
+4:I[37849,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"default"]
+5:I[52881,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],""]
+6:I[17937,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],""]
+9:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"OutletBoundary"]
+a:"$Sreact.suspense"
+d:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"ViewportBoundary"]
+f:I[10301,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"MetadataBoundary"]
+11:I[71654,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"default",1]
+:HL["/_next/static/chunks/2i-iwyf_he_5t.css","style"]
+0:{"P":null,"c":["","en","posts","2026-09-13-writing-specs-for-agents",""],"q":"","i":false,"f":[[["",{"children":[["lang","en","d",null],{"children":["posts",{"children":[["slug","2026-09-13-writing-specs-for-agents","d",null],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2i-iwyf_he_5t.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2ms7ksip1tdnv.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/36ctrt31gt9v_.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":[["$","$L2",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"mx-auto flex min-h-[70vh] max-w-content flex-col items-center justify-center px-6 py-20 text-center","children":[["$","p",null,{"className":"font-mono text-[14px] font-bold tracking-widest text-accent","children":"404"}],["$","h1",null,{"className":"mt-3 text-[clamp(24px,3vw,32px)] font-extrabold tracking-tight text-ink","children":"페이지를 찾을 수 없습니다"}],["$","p",null,{"className":"mt-3 max-w-[40ch] text-[15px] text-muted","children":"요청하신 페이지가 존재하지 않거나 이동되었습니다."}],["$","$L5",null,{"href":"/ko","className":"mt-6 rounded-lg border border-line bg-surface px-5 py-2.5 text-[14px] font-semibold text-ink transition-colors hover:border-accent hover:text-accent","children":"홈으로 돌아가기"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],[["$","$L6",null,{"id":"ga4-loader","strategy":"afterInteractive","src":"https://www.googletagmanager.com/gtag/js?id=G-G8Z1HZWWYL"}],["$","$L6",null,{"id":"ga4-init","strategy":"afterInteractive","children":"window.dataLayer = window.dataLayer || [];\nwindow.gtag = function gtag() { window.dataLayer.push(arguments); };\nif (location.hostname === \"seungahhong.github.io\") {\n  gtag('js', new Date());\n  gtag('config', \"G-G8Z1HZWWYL\");\n}"}]]]}]}]]}],{"children":[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/254ntqngyi-zx.js","async":true,"nonce":"$undefined"}]],"$L7"]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","script","script-0",{"src":"/_next/static/chunks/32rgvlw6eslze.js","async":true,"nonce":"$undefined"}]],["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]]}],{},null,false,null]},null,false,"$@c"]},null,false,"$@c"]},null,false,null]},null,false,null],["$","$1","h",{"children":[null,["$","$Ld",null,{"children":"$Le"}],["$","div",null,{"hidden":true,"children":["$","$Lf",null,{"children":["$","$a",null,{"name":"Next.Metadata","children":"$L10"}]}]}],null]}],false]],"m":"$undefined","G":["$11",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2i-iwyf_he_5t.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"oWtornNyx6Ce1w6JzT4fn"}
+12:[]
+c:"$W12"
+13:I[90976,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js"],"default"]
+7:["$","$L13",null,{"index":[{"slug":"2026-09-13-writing-specs-for-agents","title":"More Instructions, Less Compliance — Writing Specs Agents Actually Follow","category":"Development","tags":["AI","agents","spec","context engineering","PRD"],"excerpt":"1. What Is This Post About? Notes on Addy Osmani's How to write a good spec for AI agents. The piece opens with a question the author received: \"I've heard a…","date":"2026-09-13"},{"slug":"2026-09-06-skills-governance","title":"Your Org's Know-How Now Lives in Skills — Ungoverned, It Becomes Technical Debt","category":"Development","tags":["AI","agents","skills","governance","harness"],"excerpt":"1. What Is This Post About? Notes on AI-Native Organisations Run on Skills: How to Structure and Scale Them, a talk by Imad Touil of QuantumBlack (AI by…","date":"2026-09-06"},{"slug":"2026-09-05-frontier-development-teams","title":"The Tool Was Not the Variable — Where 50 Teams Using the Same Tool Split","category":"Development","tags":["AI","agents","dev-process","productivity","teams"],"excerpt":"1. What Is This Post About? Notes on Clare Liguori's talk From AI-Assisted to AI-Native: Building a Frontier Development Team. In one sentence: Ninety percent…","date":"2026-09-05"},{"slug":"2026-08-26-agent-skills","title":"What Agents Skip Is Always the Senior Work — What Agent Skills Enforces","category":"Development","tags":["AI","agents","skills","harness","dev-process"],"excerpt":"1. What Is This Post About? Notes on Addy Osmani's Agent Skills. In one sentence: Most of a senior engineer's job never shows up in the diff. Specs, tests,…","date":"2026-08-26"},{"slug":"2026-08-25-agentic-code-quality","title":"Quality Lives in the Constraints — Holding the Bar at a Scale Nobody Can Review","category":"Development","tags":["AI","agents","code-quality","testing","harness"],"excerpt":"1. What Is This Post About? Notes on Addy Osmani's Agentic Code Quality. In one sentence: Judging quality by reading code breaks down at agent scale. So the…","date":"2026-08-25"},{"slug":"2026-08-23-ai-native-sdlc-playbook","title":"The AI-Native SDLC Playbook — Code Is No Longer the Bottleneck","category":"Development","tags":["AI","Claude","SDLC","harness","dev-process"],"excerpt":"1. What Is This Post About? Here it is in a single sentence. As writing code got faster, the bottleneck moved to everything around it. Planning, design,…","date":"2026-08-23"},{"slug":"2026-08-22-delete-and-verify","title":"How the Creator of Claude Code Works — Delete, Overshoot, Verify","category":"Development","tags":["AI","Claude","agent","verification","harness"],"excerpt":"1. What is this post about? In one line: Getting good with agents is not about writing better instructions. It is about deleting the instructions you have and…","date":"2026-08-22"},{"slug":"2026-08-01-choosing-claude-model","title":"Choosing a Claude Model — Start Smart","category":"Development","tags":["AI","Claude","model-selection","LLM"],"excerpt":"1. What Is This Post About? Here it is in a single sentence. The order of \"try the cheap model first, move up if it falls short\" has been inverted. The…","date":"2026-08-01"},{"slug":"2026-07-31-context-engineering-claude5","title":"The New Rules of Context Engineering for Claude 5","category":"Development","tags":["AI","harness","Claude","context-engineering"],"excerpt":"1. What Is This Post About? Here it is in a single sentence. The conventional wisdom that \"the more rules you write for the AI, the better it performs\" has…","date":"2026-07-31"},{"slug":"2026-07-14-typescript7.0","title":"TypeScript 7.0","category":"Development","tags":["typescript"],"excerpt":"TypeScript 7.0 Release: A Native Compiler Rewritten in Go TypeScript 7.0 has been officially released. The heart of this major version is a complete native…","date":"2026-07-14"},{"slug":"2026-07-13-vite8.0","title":"Vite 8.0","category":"Development","tags":["bundler"],"excerpt":"Vite 8.0 Release: The Unified Toolchain and Migration Guide On March 12, 2026, Vite 8.0 was officially released. The heart of this major version is the Unified…","date":"2026-07-13"},{"slug":"2026-07-12-product-spec-harness","title":"Product Spec Harness (product-spec-harness)","category":"Development","tags":["AI","Harness","PRD","Product Spec","Claude"],"excerpt":"Introduction product-spec-harness is a domain-agnostic, interactive multi-agent harness with which a product manager (PM) drafts and validates a Product…","date":"2026-07-12"},{"slug":"2026-07-05-meta-harness","title":"Self-Healing Harness Engineering (meta-harness)","category":"Development","tags":["AI","harness","Claude","self-healing"],"excerpt":"1. What Is This Post About? Here it is in a single sentence. This is a story about a tool that, when the AI keeps making the same mistake, fixes the AI's…","date":"2026-07-05"},{"slug":"2026-06-04-fe-harness","title":"Frontend Harness Engineering","category":"Development","tags":["AI","Harness","Claude"],"excerpt":"1. What Is Harness Engineering? It is the discipline of designing the entire execution environment surrounding an AI model (tools, feedback loops, safeguards,…","date":"2026-06-04"},{"slug":"2026-06-03-claude-marketplace","title":"Building a Claude Code Plugin Marketplace","category":"Development","tags":["Claude","AI","Plugin"],"excerpt":"Overview This document describes how to register, install, and use the Claude Code plugin marketplace. Plugins are shared through the seungah-claude-plugins…","date":"2026-06-03"},{"slug":"2026-06-02-LLM-WIKI","title":"LLM Wiki: A Wiki Pattern That Organizes Knowledge Up Front, Beyond RAG","category":"Development","tags":["LLM","AI"],"excerpt":"Overview LLM Wiki is a repository where you collect source materials such as planning documents, specs, and meeting notes, and Claude reads them, organizes…","date":"2026-06-02"},{"slug":"2026-06-01-RAG","title":"Building a Hybrid Semantic + Keyword Search RAG System","category":"Development","tags":["RAG","AI","MCP"],"excerpt":"0. Background Certain pieces of business logic (payments, authentication, campaigns, and so on) are implemented across multiple repositories spanning frontend…","date":"2026-06-01"},{"slug":"2025-09-07-vite7.0","title":"Vite 7.0","category":"Development","tags":["bundler"],"excerpt":"Vite 7.0 Release: Key Changes and Migration Guide On June 24, 2025, Vite 7.0 was officially released. This major version includes significant changes such as…","date":"2025-09-07"},{"slug":"2025-06-29-vite6.0","title":"Vite 6.0","category":"Development","tags":["bundler"],"excerpt":"Installing Changes - Introduction of the Environment API - A new API designed to provide a development experience closer to production - Enhanced flexibility…","date":"2025-06-29"},{"slug":"2025-06-28-figma-mcp-link","title":"figma mcp link","category":"Development","tags":["mcp"],"excerpt":"Development Environment - VSCode version: 1.99 or higher - Copilot account required How to Integrate with Copilot Issuing a Figma API access token Step 1:…","date":"2025-06-28"},{"slug":"2025-02-09-git-to-mp4-convert","title":"FE Performance Improvement - Converting gif to mp4","category":"Development","tags":["performance"],"excerpt":"Overview Among our resources, the gif format tends to be large in size. To reduce the amount of data users need to download and to improve loading speed, I…","date":"2025-02-09"},{"slug":"2024-12-05-react-v19","title":"react v19","category":"Development","tags":["react"],"excerpt":"Overview React 19 introduces a number of new features and improvements that enhance the developer experience, simplify common patterns, and boost performance.…","date":"2024-12-05"},{"slug":"2024-11-23-nextjs-v15-migration","title":"nextjs 15","category":"Development","tags":["nextjs"],"excerpt":"Overview This release incorporates features that were built on top of RC1 and RC2. It focuses on stability while also introducing a number of other features.…","date":"2024-11-23"},{"slug":"2024-11-16-vite","title":"CRA To Vite Migration","category":"Development","tags":["bundler"],"excerpt":"Why You Should Use Vite Problems with Traditional Module Bundlers - Before browsers natively supported ES Modules (Native ESM), JavaScript modularization could…","date":"2024-11-16"},{"slug":"2023-10-30-nextjs-v14","title":"Nextjs(v14)","category":"Development","tags":["nextjs"],"excerpt":"Installation Summary - Internet Explorer has been dropped from the list of supported browsers, and support has shifted to modern browsers. - Chrome 64+ - Edge…","date":"2024-10-30"},{"slug":"2024-05-12-development-improvements","title":"Improving Development Productivity & Build Performance","category":"Development","tags":["performance"],"excerpt":"Overview I would like to share some cases where I improved development productivity and build performance while working on development. Improving Lint Speed To…","date":"2024-05-12"},{"slug":"2024-04-28-esbuild","title":"esbuild","category":"Development","tags":["bundler"],"excerpt":"Characteristics of esbuild - Written in Go and compiled using static (native) code There are three ways to describe how code written in a programming language…","date":"2024-04-28"},{"slug":"2024-03-18-pnpm","title":"PNPM","category":"Development","tags":["package manager"],"excerpt":"Background Problems with the NPM and Yarn Classic (1.0) Package Managers Phantom Dependencies - Both yarn classic (1.0) and npm (v3+) use hoisting and merging…","date":"2024-03-18"},{"slug":"2024-03-17-remove-unused-dependencies","title":"Removing Unused Dependencies","category":"Development","tags":["performance"],"excerpt":"npm-check Installization Batch Update yarn autoclean What is yarn autoclean - Cleans up and removes unnecessary files from package dependencies (files…","date":"2024-03-17"},{"slug":"2024-01-27-react-v18-migration","title":"React v18 migration","category":"Development","tags":["react"],"excerpt":"React v16 to v18 Migration Guide (with Best Practice Code) Updates to Client Rendering APIs Migration The new root API also enables the new concurrent…","date":"2024-01-27"},{"slug":"2024-01-20-nextjs-v14-migration","title":"next14 migration","category":"Development","tags":["nextjs"],"excerpt":"Update React Installation When you get the \"'Component' cannot be used as a JSX component.\" error This issue occurs because installing the latest version of…","date":"2024-01-20"},{"slug":"2024-01-14-cors","title":"CORS (Cross-Origin Resource Sharing)","category":"Development","tags":["server"],"excerpt":"Overview CORS (Cross-Origin Resource Sharing) is a mechanism that tells the browser whether it is allowed to access resources from a different origin (origin:…","date":"2024-01-14"},{"slug":"2023-11-26-react-hook-form-inside","title":"react-hook-form inside code","category":"Development","tags":["form"],"excerpt":"Creating the Form object There are cases where, after setting data in useForm for the first time and setting defaultValues, changing it again afterward does…","date":"2023-11-26"},{"slug":"2023-09-17-gatsby-v5","title":"Gatsby(v5)","category":"Development","tags":["Gatsby"],"excerpt":"Key Features Slice API Common components can now be built just once, which improves build performance. In other words, when a component split out as a Slice…","date":"2023-09-17"},{"slug":"2023-09-10-react-state","title":"A Summary of React State Management","category":"Development","tags":["State Management"],"excerpt":"The Background Behind the Emergence of Global State Management Libraries When React was first released, it was announced as a library responsible only for the…","date":"2023-09-10"},{"slug":"2023-08-27-nextjs-v13","title":"Nextjs(v13)","category":"Development","tags":["nextjs"],"excerpt":"Installation Summary - Internet Explorer has been dropped from the list of supported browsers, and the set of modern browsers is now supported instead. -…","date":"2023-08-27"},{"slug":"2023-08-26-react-hook-form-v7","title":"react-hook-form v7","category":"Development","tags":["form"],"excerpt":"Installation react-hook-form v5 → v7 changes useForm Removed the validation prefix from config option names The errors object was moved to become a property of…","date":"2023-08-26"},{"slug":"2023-08-25-nodejs","title":"nodejs","category":"Development","tags":["nodejs"],"excerpt":"Concepts - Introduction to node.js and its internal architecture http://bcho.tistory.com/881 - Installation and setting up a development environment…","date":"2023-08-25"},{"slug":"2023-08-16-treeshaking","title":"Tree Shaking","category":"Development","tags":["performance"],"excerpt":"Overview An optimization technique that removes unnecessary code , much like shaking a tree to knock off its dead branches. - When using Webpack version 4 or…","date":"2023-08-16"},{"slug":"2023-08-15-ecmascript","title":"ECMAScript","category":"Development","tags":["javascript"],"excerpt":"ES2024(ES15) Features added in ES2024 ECMAScript® 2024 Language Specification ECMAScript 2024, the 15th edition, added facilities for resizing and transferring…","date":"2023-08-15"},{"slug":"2023-07-23-react-query-v5","title":"react-query(v5)","category":"Development","tags":["state management"],"excerpt":"What's new in v5 Install react-query renamed to @tanstack/react-query Requirements New Features - Simplified optimistic updates - Using the variables needed…","date":"2023-07-23"},{"slug":"2023-07-22-zustand","title":"zustand","category":"Development","tags":["state management"],"excerpt":"Reference code: GitHub - seungahhong/states-todos Installation zustand Concepts - State management overview These days, approaches to state management can…","date":"2023-07-22"},{"slug":"2023-06-30-react-query-v4","title":"react-query(v4)","category":"Development","tags":["State Management"],"excerpt":"Install Migrating from react-query → @tanstack/react-query Supported Range - typescript - TypeScript v4.1 or greater - Supported Browsers - Starting from v4,…","date":"2023-06-30"},{"slug":"2023-04-02-playwright","title":"Playwright","category":"Development","tags":["test"],"excerpt":"Before We Begin.. (vs. Cypress) Why Did We Move from Cypress to Playwright?? Pain Points When Developing with Cypress - We felt that loading the test…","date":"2023-04-02"},{"slug":"2023-01-01-fe-process","title":"FE Development Process","category":"Development","tags":["process"],"excerpt":"Preliminary Work 1. Review Planning and Design - Review wireframes and design drafts - Design and share a plan for shared componentization based on the design…","date":"2023-01-01"},{"slug":"2022-12-30-react-query","title":"react-query","category":"Development","tags":["state management"],"excerpt":"Overview - A Data Synchronization Library for React - It makes fetching, caching, synchronizing, and updating server state in a React application easy. Server…","date":"2022-12-30"},{"slug":"2022-08-07-cypress","title":"cypress","category":"Development","tags":["test"],"excerpt":"What is E2E Testing? - E2E testing is a way to test the final product from the user's perspective. It refers to End-to-End Testing that verifies, from the…","date":"2022-08-07"},{"slug":"2022-07-25-msw","title":"msw","category":"Development","tags":["msw"],"excerpt":"Why You Should Adopt a Mocking Library Current Frontend Issues - When developing a new feature - When frontend development proceeds in parallel with backend…","date":"2022-07-25"},{"slug":"2022-07-24-jest","title":"jest","category":"Development","tags":["test"],"excerpt":"Basic Usage react testing library - Installation - Things to watch out for when using it Reference URLs…","date":"2022-07-24"},{"slug":"2022-07-23-emotion","title":"emotion","category":"Development","tags":["css"],"excerpt":"Without a React Framework - Installation - Description - It doesn't require any additional setup, a babel plugin, or other configuration. - It supports auto…","date":"2022-07-23"},{"slug":"2022-06-14-jotai","title":"jotai","category":"Development","tags":["state management"],"excerpt":"Installation Reference Code Reference code: GitHub - seungahhong/states-todos Explaining Jotai's Concepts and Strengths - State management overview Recent…","date":"2022-06-14"},{"slug":"2022-06-08-react18","title":"React 18","category":"Development","tags":["react"],"excerpt":"Installation Upgrading React DOM 17 → 18 Client Starting from React 18, react-dom's render function is deprecated. Automatic Batching (fewer renders) Batching…","date":"2022-06-08"},{"slug":"2022-05-31-css-in-js","title":"css-in-js","category":"Development","tags":["css"],"excerpt":"Why was CSS-in-JS created? CSS-in-JS, as the name suggests, refers to the approach of writing CSS within JavaScript code. It was first introduced in 2014 by…","date":"2022-05-31"},{"slug":"2022-05-30-form","title":"form","category":"Development","tags":["form"],"excerpt":"Javascript Form Design hook-form vanilla javascript design Javascript Form vs React Form easier data control easier inputs, inputs event better validation…","date":"2022-05-30"},{"slug":"2022-03-30-SWR","title":"SWR","category":"Development","tags":["state management"],"excerpt":"What is SWR? - A React Hooks library for remote data fetching, created by zeit, the group behind Next.js - SWR is a strategy that first returns the data from…","date":"2022-03-30"},{"slug":"2022-03-29-canvas","title":"canvas","category":"Development","tags":["canvas"],"excerpt":"Canvas API - The Canvas API provides a means for drawing graphics via JavaScript and the HTML CANVAS element. Among other things, it is used for animation,…","date":"2022-03-29"},{"slug":"2022-03-28-javascript","title":"javascript","category":"Development","tags":["javascript"],"excerpt":"- JavaScript 6 10 reference sites Nomad Courses","date":"2022-03-28"},{"slug":"2022-03-26-redux-toolkit","title":"redux-toolkit","category":"Development","tags":["state management"],"excerpt":"What is Redux Toolkit? - The Redux Toolkit library was created to address three concerns the Redux team had. 1. Configuring a Redux store is too complicated.…","date":"2022-03-26"},{"slug":"2022-03-22-recoil","title":"recoil","category":"Development","tags":["state management"],"excerpt":"What is Recoil? Reference code (redux-toolkit vs recoil): https://github.com/seungahhong/states-todos Limitations of React's state management logic -…","date":"2022-03-22"},{"slug":"2022-03-19-storybook","title":"storybook","category":"Development","tags":["storybook"],"excerpt":"Purpose of Adoption - As planning and design proceed in parallel and the spec keeps changing, the goal is to reflect those changes and share them with planners…","date":"2022-03-19"},{"slug":"2022-03-12-react-router-v6","title":"react-router-v6","category":"Development","tags":["react-router"],"excerpt":"v6 React Router v6 Official Release The v6.0.0 beta was promoted to a full release on November 4, 2021. Upgrading to React v16.8 or Higher That said, since…","date":"2022-03-12"},{"slug":"2022-03-07-redux-saga","title":"redux-saga","category":"Development","tags":["state management"],"excerpt":"What is redux-saga? A middleware library whose purpose is to make handling side effects in React/Redux applications easier and cleaner. Installation Installing…","date":"2022-03-07"},{"slug":"2022-02-13-react17","title":"React 17","category":"Development","tags":["react"],"excerpt":"v17 Installation No more 'import React ...' To use JSX, you always had to import React (even if you didn't reference it explicitly). This was because JSX code…","date":"2022-02-13"},{"slug":"2022-01-16-typescript","title":"typescript","category":"Development","tags":["typescript"],"excerpt":"Why should we use TypeScript? TypeScript makes code easier to read. - By explicitly annotating types for variables, return values, interfaces, and so on, the…","date":"2022-01-16"},{"slug":"2022-01-10-RxJS","title":"RxJS","category":"Development","tags":["RxJS"],"excerpt":"RxJS Concepts RxJS is the Reactive Extensions For JavaScript library. ReactiveX combines the Observer pattern, the Iterator pattern, and functional programming…","date":"2022-01-10"},{"slug":"2022-01-09-graphql","title":"graphql","category":"Development","tags":["graphql"],"excerpt":"What Is a REST API - A format agreed upon between the parties that exchange data - GET: retrieve information - POST: submit information - PUT/PATCH: update…","date":"2022-01-09"},{"slug":"2022-01-08-webassembly","title":"webassembly","category":"Development","tags":["webassembly"],"excerpt":"Why WebAssembly Emerged Various attempts to bring native machine code to the web and to execute it quickly—such as Google's NaCI(Native Client) and Mozilla's…","date":"2022-01-08"},{"slug":"2021-12-31-mobx","title":"mobx","category":"Development","tags":["state management"],"excerpt":"What is mobx? Reference code: GitHub - seungahhong/states-todos Installation 1. Concepts and key strengths of Mobx - Core concepts of Mobx - observable state -…","date":"2021-12-31"},{"slug":"2021-12-30-redux","title":"redux","category":"Development","tags":["state management"],"excerpt":"Redux Concepts Action When some change needs to happen to the state, we dispatch what is called an action. An action is represented as a single object, and an…","date":"2021-12-30"},{"slug":"2021-12-02-svelte","title":"svelte","category":"Development","tags":["svelte"],"excerpt":"SVELTE Svelte is a frontend framework created by Rich Harris that takes a fresh approach. Svelte introduces itself as a \"framework without a framework\" or a…","date":"2021-12-02"},{"slug":"2021-12-01-deno","title":"deno","category":"Development","tags":["server"],"excerpt":"deno Ryan Dahl, the creator of node.js, introduced his new project, \"Deno,\" at the JS Fest 2019 Spring conference. In this talk titled \"A New Way to…","date":"2021-12-01"},{"slug":"2020-09-12-fe-performance","title":"Front-End Performance","category":"Development","tags":["performance"],"excerpt":"JavaScript Memory Leaks Accidental Global Variables - Global variables cannot have their memory released (when they are not set to null or reassigned).…","date":"2020-09-12"},{"slug":"2020-06-28-concept","title":"Concept","category":"Development","tags":["Archive"],"excerpt":"Client-Side Storage Cookies - Once a cookie is set, every subsequent web request is sent to the server including the cookie information - Stores strings only,…","date":"2020-06-28"},{"slug":"2020-04-12-webtools","title":"web tools","category":"Tools","tags":["tools"],"excerpt":"Blog Theme - Creating a personal blog using a Jekyll theme - Blog Theme 1 - Blog Theme 2 Open Icon - A page where you can download the icons you need for web…","date":"2020-04-12"},{"slug":"2020-02-17-c-c++","title":"C/C++","category":"Development","tags":["windows"],"excerpt":"C Global Variables 1. Characteristics - Declared outside of functions - Occupies a specific region of memory (heap) and is accessible from all functions -…","date":"2020-02-17"},{"slug":"2020-02-16-winapi","title":"Windows API","category":"Development","tags":["windows"],"excerpt":"windows programming - Advantages of Windows 1. A graphics-based operating system - The screen is handled in pixels, the smallest unit of digital…","date":"2020-02-16"},{"slug":"2020-02-14-mssql","title":"MSSQL","category":"Development","tags":["database"],"excerpt":"Terminology - Transaction: Treating multiple data changes as a single logical unit of work so that everything is either completed or rolled back, maintaining…","date":"2020-02-14"},{"slug":"2020-01-01-pdf","title":"pdf","category":"Docs","tags":["pdf"],"excerpt":"PDF File Format The PDF file format is broadly divided into four areas: the Header, the Body, the Cross-reference Table, and the File Trailer. The role of each…","date":"2020-01-01"}],"locale":"en","dict":{"meta":{"siteTitle":"SeungAh Hong · Tech Blog","siteDescription":"SeungAh Hong's Tech Blog — notes on what I learn and think about while building, sharing hands-on experience and technical knowledge.","author":"SeungAh Hong"},"brand":{"name":"SeungAh Hong"},"nav":{"home":"Home","posts":"Posts","tags":"Tags","about":"About","search":"Search","searchPlaceholder":"Search posts, tags…","toggleTheme":"Toggle theme","openMenu":"Open menu","closeMenu":"Close menu","language":"Language","skipToContent":"Skip to content","noResults":"No results found.","searchHint":"Search by title, tag, or category"},"home":{"eyebrow":"Frontend Engineer","heroTitlePre":"SeungAh Hong's ","heroTitleEm":"Tech Blog","heroTitlePost":"","heroSubtitle":"Notes on what I learn and think about while building — sharing hands-on experience and technical knowledge.","statPosts":"Posts","statCategories":"Categories","statSince":"Since","recentPosts":"Recent posts","viewAll":"View all →","popular":"Top 5 popular","views":"views","categories":"Categories","tags":"Tags"},"post":{"backToList":"Back to list","tableOfContents":"Contents","prev":"Previous","next":"Next","on":"Published","by":"By","tags":"Tags","translationFallbackNotice":"This article is currently shown in its original Korean."},"posts":{"title":"Posts","subtitle":"All posts grouped by category","all":"All","filterByCategory":"Category"},"tags":{"title":"Tags","subtitle":"Browse posts by topic","postCount":" posts","clearFilter":"Clear filter"},"about":{"eyebrow":"About","title":"SeungAh Hong","subtitle":"A developer who cares about frontend craft and scalable, extensible architecture.","introHeading":"Intro","skillsHeading":"Skills","linksHeading":"Links","faqHeading":"Frequently asked questions","faq":[{"question":"What topics does this blog cover?","answer":"Frontend development, mostly: frameworks such as React and Next.js, state management (Redux, Recoil, Zustand, Jotai, MobX, React Query), bundlers and build tooling (Vite, esbuild, Webpack), web performance, and testing. More recently it also covers AI engineering topics such as RAG, MCP, and LLM harnesses. {postCount} posts are published so far."},{"question":"What languages are the posts available in?","answer":"Korean and English. Every post has both a /ko and an /en URL; posts without an English translation yet fall back to the Korean original, and the page says so at the top of the article."},{"question":"Who writes it?","answer":"SeungAh Hong, a frontend engineer, writes every post. The recurring interests are component reuse and extensibility, and building a development ecosystem that grows together rather than individually. GitHub, LinkedIn, and portfolio links are in the links section of this page."},{"question":"How often are new posts published?","answer":"Posts have been published since {since}. There is no fixed schedule — a post goes up whenever something learned at work or in a side project is worth writing down. The newest posts are listed first on the home page and the posts index."},{"question":"How is this blog built?","answer":"It is a Next.js 16 App Router static export deployed to GitHub Pages, written in TypeScript with Tailwind CSS. Markdown is rendered through unified (remark/rehype) with shiki for syntax highlighting. The source code is public on GitHub."}],"intro":["A frontend developer with a deep interest in the craft.","Always thinking about component reuse and extensibility.","Wants to build a shared ecosystem where the community grows together, not just the individual."],"skills":[{"label":"Languages","items":["JavaScript","TypeScript","C / C++"]},{"label":"Frameworks & Runtime","items":["React","Next.js","Svelte","Gatsby","Node.js","Deno"]},{"label":"State & Data","items":["Redux","Recoil","Zustand","Jotai","MobX","React Query","SWR","GraphQL"]},{"label":"Build & Tooling","items":["Vite","esbuild","Webpack","pnpm"]},{"label":"Testing","items":["Jest","Playwright","Cypress","MSW","Storybook"]},{"label":"Styling","items":["CSS","Emotion","styled-components"]},{"label":"AI & LLM","items":["RAG","MCP","Claude","LLM harness"]},{"label":"More","items":["WebAssembly","Canvas","RxJS"]}]},"footer":{"builtWith":"Built with Next.js · Tailwind CSS.","rights":"SeungAh Hong. All rights reserved."},"units":{"minutesRead":"min read","postsCount":"posts"},"notFound":{"title":"Page not found","description":"The page you requested does not exist or has moved.","backHome":"Back to home"}},"children":"$L14"}]
+15:I[87086,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js"],"default"]
+16:I[3374,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js"],"default"]
+14:["$","div",null,{"className":"flex min-h-screen flex-col","children":[["$","$L15",null,{"lang":"en"}],["$","a",null,{"href":"#main-content","className":"sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:border focus:border-accent focus:bg-surface focus:px-4 focus:py-2 focus:text-ink","children":"Skip to content"}],["$","$L16",null,{"locale":"en","dict":"$7:props:dict"}],["$","main",null,{"id":"main-content","className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"mt-16 border-t border-line bg-bg","children":["$","div",null,{"className":"mx-auto flex max-w-deck flex-col gap-4 px-[18px] py-8 sm:flex-row sm:items-center sm:justify-between md:px-[34px]","children":[["$","div",null,{"children":[["$","p",null,{"children":["$","span",null,{"className":"text-[15px] font-extrabold tracking-tight text-ink","children":"SeungAh Hong"}]}],["$","p",null,{"className":"mt-1.5 text-[12.5px] text-muted","children":"Built with Next.js · Tailwind CSS."}],["$","p",null,{"className":"mt-0.5 text-[12px] text-faint","children":["© ",2020,"–",2026," ","SeungAh Hong. All rights reserved."]}]]}],["$","nav",null,{"aria-label":"social","className":"flex items-center gap-2","children":[["$","a","GitHub",{"href":"https://github.com/seungahhong","target":"_blank","rel":"noreferrer noopener","aria-label":"GitHub","lang":"en","className":"grid h-[34px] w-[34px] place-items-center rounded-lg border border-line bg-surface text-muted transition-colors hover:border-accent hover:text-accent","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-4 w-4","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","a","LinkedIn",{"href":"https://www.linkedin.com/in/seungahhong/","target":"_blank","rel":"noreferrer noopener","aria-label":"LinkedIn","lang":"en","className":"grid h-[34px] w-[34px] place-items-center rounded-lg border border-line bg-surface text-muted transition-colors hover:border-accent hover:text-accent","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-linkedin h-4 w-4","aria-hidden":"true","children":[["$","path","c2jq9f",{"d":"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"}],["$","rect","mk3on5",{"width":"4","height":"12","x":"2","y":"9"}],["$","circle","bt5ra8",{"cx":"4","cy":"4","r":"2"}],"$undefined"]}]}],["$","a","Notion",{"href":"https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1","target":"_blank","rel":"noreferrer noopener","aria-label":"Notion","lang":"en","className":"grid h-[34px] w-[34px] place-items-center rounded-lg border border-line bg-surface text-muted transition-colors hover:border-accent hover:text-accent","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-notebook-text h-4 w-4","aria-hidden":"true","children":[["$","path","aawbzj",{"d":"M2 6h4"}],["$","path","l0bgd4",{"d":"M2 10h4"}],["$","path","1gsvsf",{"d":"M2 14h4"}],["$","path","1bu2t1",{"d":"M2 18h4"}],["$","rect","1nb95v",{"width":"16","height":"20","x":"4","y":"2","rx":"2"}],["$","path","11mslq",{"d":"M9.5 8h5"}],["$","path","ktog6x",{"d":"M9.5 12H16"}],["$","path","p1seyn",{"d":"M9.5 16H14"}],"$undefined"]}]}]]}]]}]}]]}]
+18:I[53403,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+17:T65a,{"@context":"https://schema.org","@type":"BlogPosting","headline":"More Instructions, Less Compliance — Writing Specs Agents Actually Follow","description":"1. What Is This Post About? Notes on Addy Osmani's How to write a good spec for AI agents. The piece opens with a question the author received: \"I've heard a…","datePublished":"2026-09-13","dateModified":"2026-09-13","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-09-13-writing-specs-for-agents/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-09-13-writing-specs-for-agents/"},"image":"https://seungahhong.github.io/blog-assets/2026/09/assets/13/thumbnail.png","keywords":["AI","agents","spec","context engineering","PRD"],"articleSection":"Development","wordCount":2478,"timeRequired":"PT13M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}8:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$17"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"More Instructions, Less Compliance — Writing Specs Agents Actually Follow\",\"item\":\"https://seungahhong.github.io/en/posts/2026-09-13-writing-specs-for-agents/\"}]}"}}],["$","$L18",null,{}],["$","div",null,{"className":"mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"min-w-0 max-w-prose","children":[["$","header",null,{"className":"border-b border-line pb-7 pt-10","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"font-mono text-[12px] text-faint","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L5",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L5",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"max-w-[40ch] truncate text-muted","children":"More Instructions, Less Compliance — Writing Specs Agents Actually Follow"}]]}]}],["$","h1",null,{"className":"my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink","children":"More Instructions, Less Compliance — Writing Specs Agents Actually Follow"}],"$L19",false,"$L1a"]}],"$L1b","$L1c"]}],"$L1d"]}]}]]
+1f:I[27722,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js","/_next/static/chunks/254ntqngyi-zx.js","/_next/static/chunks/32rgvlw6eslze.js"],"default"]
+19:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-[13.5px] font-semibold text-ink","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-09-13","className":"meta-mono","children":"09/13/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[13,"min read"]}]]}]
+1a:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L5",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","agents",{"children":["$","$L5",null,{"href":"/en/tags?tag=agents","className":"tag-pill","children":"agents"}]}],["$","li","spec",{"children":["$","$L5",null,{"href":"/en/tags?tag=spec","className":"tag-pill","children":"spec"}]}],["$","li","context engineering",{"children":["$","$L5",null,{"href":"/en/tags?tag=context%20engineering","className":"tag-pill","children":"context engineering"}]}],["$","li","PRD",{"children":["$","$L5",null,{"href":"/en/tags?tag=PRD","className":"tag-pill","children":"PRD"}]}]]}]
+1e:T7de5,<h2 id="1-what-is-this-post-about">1. What Is This Post About?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-what-is-this-post-about"><span class="icon icon-link"></span></a></h2>
+<p>Notes on Addy Osmani's <a href="https://addyo.substack.com/p/how-to-write-a-good-spec-for-ai-agents">How to write a good spec for AI agents</a>.</p>
+<p>The piece opens with a question the author received:</p>
+<blockquote>
+<p>"I've heard a lot about writing good specs for AI agents, but <strong>haven't found a solid framework yet.</strong>"</p>
+</blockquote>
+<p>That question is exactly right. Advice to "write a good spec" is everywhere; material that tells you <strong>what to write and how much</strong> is rare. And the answer here runs against intuition.</p>
+<blockquote>
+<p><strong>Don't write a big spec.</strong> Context window limits and the model's <strong>attention budget</strong> get in the way.</p>
+</blockquote>
+<p>If the <a href="/en/posts/2026-07-31-context-engineering-claude5/">context engineering post</a> was about <strong>removing rules</strong>, this one sits right next to it: <strong>what's left, and what shape should it take.</strong> Removal is subtraction; spec-writing is <strong>choosing what survives.</strong></p>
+<hr>
+<h2 id="2-vision-first-details-from-the-agent">2. Vision First, Details From the Agent<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-vision-first-details-from-the-agent"><span class="icon icon-link"></span></a></h2>
+<p>The first principle is about order: <strong>don't write the full detailed spec yourself before starting.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">❌ Human writes 50-page spec → feed it to the agent</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">✅ Human writes short product brief → agent drafts detailed spec → human corrects → execute</span></span></code></pre></figure>
+<p>The reasoning is practical. <strong>Elaboration is what models are good at</strong>; <strong>direction is what only humans can set.</strong> Mix the two and do both yourself, and you spend time on what you're worse at while the model never uses what it's best at.</p>
+<p>The example brief in the article is this short:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"Build a to-do app with user accounts and persistent storage."</span></span></code></pre></figure>
+<p>The agent expands that into schema, routing, error cases, and a test strategy — and the human <strong>reads it and fixes only what's wrong.</strong> Faster than a blank page, and more importantly, <strong>the gaps become visible.</strong></p>
+<h3 id="why-plan-mode-belongs-here">Why Plan Mode Belongs Here<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#why-plan-mode-belongs-here"><span class="icon icon-link"></span></a></h3>
+<p>The article recommends <strong>Plan Mode (read-only)</strong> for this stage — refining the spec while the agent cannot touch files.</p>
+<p>This matters because <strong>once spec correction and code writing are mixed, code appears before correction finishes.</strong> The moment code exists, the cost of changing the spec jumps. Read-only pins that cost at zero.</p>
+<p>And the refined result gets <strong>saved</strong> — as something like <code>SPEC.md</code>. Why it has to be a file rather than a conversation comes back in sections 3 and 6.</p>
+<hr>
+<h2 id="3-what-2500-agent-config-files-say--six-areas">3. What 2,500 Agent Config Files Say — Six Areas<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-what-2500-agent-config-files-say--six-areas"><span class="icon icon-link"></span></a></h2>
+<p>The most concrete part of the article. GitHub analyzed <strong>over 2,500 agent configuration files</strong>, and six areas showed up consistently in the good ones.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Area</th><th>What belongs there</th><th>Common failure</th></tr></thead><tbody><tr><td><strong>Commands</strong></td><td><strong>Full executable commands</strong> including flags (<code>pnpm test</code>, <code>pytest -v</code>)</td><td>Written as "run the tests"</td></tr><tr><td><strong>Testing</strong></td><td>Framework · test locations · coverage expectations</td><td>The runner is never named</td></tr><tr><td><strong>Project structure</strong></td><td>Where source, tests, and docs each live</td><td>The agent creates files in the wrong place</td></tr><tr><td><strong>Code style</strong></td><td>Conventions shown as <strong>real code examples</strong></td><td>Written as adjectives only ("keep it clean")</td></tr><tr><td><strong>Git workflow</strong></td><td>Branch naming · commit format · PR requirements</td><td>A human fixes it every time</td></tr><tr><td><strong>Boundaries</strong></td><td>Hard constraints · <strong>what must never be touched</strong></td><td>Missing entirely</td></tr></tbody></table>
+<p>Of the six, the one most often empty in practice is <strong>boundaries.</strong> The other five are descriptive, so they fill in as you write. Boundaries are the entries <strong>you only think of after an incident.</strong></p>
+<p>One line from the article sums it up:</p>
+<blockquote>
+<p><strong>"Never commit secrets"</strong> was the single most common — and most helpful — constraint.</p>
+</blockquote>
+<h3 id="the-recommended-skeleton">The Recommended Skeleton<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-recommended-skeleton"><span class="icon icon-link"></span></a></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold"># Project Spec: [</span><span style="--shiki-light:#032563;--shiki-light-font-weight:bold;--shiki-dark:#ADDCFF;--shiki-dark-font-weight:bold">Name</span><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold">]</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold">## Objective</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[One clear goal statement]</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold">## Tech Stack</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[Specific versions and dependencies]</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold">## Commands</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Build: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`npm run build`</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Test: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`npm test`</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold">## Project Structure</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> `src/`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> – Application code</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> `tests/`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> – Unit/integration tests</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-light-font-weight:bold;--shiki-dark:#91CBFF;--shiki-dark-font-weight:bold">## Boundaries</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ✅ Always: [Safe actions]</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ⚠️ Ask first: [High-impact changes]</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">-</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> 🚫 Never: [Hard stops]</span></span></code></pre></figure>
+<p>What to notice is <strong>the shape, not the length.</strong> Every entry is <strong>one fact per line</strong>, and it's a <strong>command, a path, or a name</strong> — not an adjective. That's the only shape a model can actually comply with.</p>
+<hr>
+<h2 id="4-the-curse-of-instructions--bigger-specs-get-followed-less">4. The Curse of Instructions — Bigger Specs Get Followed Less<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-the-curse-of-instructions--bigger-specs-get-followed-less"><span class="icon icon-link"></span></a></h2>
+<p>This is the theoretical spine of the article: the phenomenon research calls <strong>"the curse of instructions."</strong></p>
+<blockquote>
+<p>As instructions and data in a prompt increase, <strong>the rate at which each individual requirement is satisfied drops noticeably.</strong> Even GPT-4 and Claude struggle to satisfy many requirements simultaneously.</p>
+</blockquote>
+<p>This is the line that stayed with me longest. Our motive for growing a spec is usually <strong>"I can't afford to leave this out"</strong> — and the document that motive produces <strong>degrades the entries already in it.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Intuition: write 20 rules and 20 rules get followed</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Reality:   write 20 rules and per-rule compliance falls below a 5-rule document</span></span></code></pre></figure>
+<p>So writing a spec is <strong>budget allocation, not addition.</strong> Adding a rule isn't free — you <strong>buy it by shaving a little compliance probability off every existing rule.</strong> This meets <a href="/en/posts/2026-07-31-context-engineering-claude5/">context engineering by subtraction</a> at exactly the same point.</p>
+<h3 id="four-ways-to-split">Four Ways to Split<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#four-ways-to-split"><span class="icon icon-link"></span></a></h3>
+<p>Every remedy in the article is a form of dividing.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Method</th><th>What it means</th></tr></thead><tbody><tr><td><strong>Split by component</strong></td><td>Separate backend and frontend specs; feed <strong>only what's contextually relevant</strong></td></tr><tr><td><strong>Extended TOC with summaries</strong></td><td>A condensed outline referencing detailed sections, <strong>expanded only when needed</strong></td></tr><tr><td><strong>Sub-agents / skills</strong></td><td>Domain-specialized agents carry <strong>only their portion</strong> of the spec</td></tr><tr><td><strong>Sequential focus</strong></td><td>One task per prompt, refreshing context in between</td></tr></tbody></table>
+<p>The third connects to the <a href="/en/posts/2026-09-06-skills-governance/">skills governance post</a>. There, sub-agents were characterized as <strong>"mostly existing to protect the context window"</strong> — and this article supplies <strong>the reason that defense matters.</strong> Protecting context isn't a capacity problem; it's a <strong>compliance</strong> problem.</p>
+<h3 id="the-caveat-on-parallel-agents">The Caveat on Parallel Agents<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-caveat-on-parallel-agents"><span class="icon icon-link"></span></a></h3>
+<p>The article also mentions running agents concurrently for independent features — <strong>"one codes, one tests, one reviews."</strong> But with conditions: <strong>start with 2–3</strong>, keep task separation clear, and use orchestration to coordinate shared context.</p>
+<p>I'd argue the caveat matters more than the headline. Parallel agents are <strong>a device for splitting context and a device for creating conflicts at the same time.</strong> Scale them up with fuzzy task boundaries and you dodge the curse of instructions by buying <strong>merge conflicts and agents overwriting each other.</strong></p>
+<hr>
+<h2 id="5-three-tier-boundaries----️--">5. Three-Tier Boundaries — ✅ / ⚠️ / 🚫<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-three-tier-boundaries----️--"><span class="icon icon-link"></span></a></h2>
+<p>The concrete shape of the area section 3 called most often empty.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Tier</th><th>Meaning</th><th>Example</th></tr></thead><tbody><tr><td><strong>✅ Always</strong></td><td>Do it without asking</td><td>"Always run tests before commits"</td></tr><tr><td><strong>⚠️ Ask first</strong></td><td>Expensive to undo</td><td>"Ask before modifying database schemas"</td></tr><tr><td><strong>🚫 Never</strong></td><td>Hard stop, no exceptions</td><td>"Never commit secrets"</td></tr></tbody></table>
+<p>The split into three is the point. Write boundaries as <strong>a single prohibition list</strong> and two things break at once.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Prohibitions only: everything ambiguous drifts into "not prohibited" and just runs</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Prohibitions only: or you put everything in to be safe, and the agent can't act at all</span></span></code></pre></figure>
+<p><strong>The ⚠️ tier is the valve that hands a decision back to a human.</strong> Without it every judgment becomes binary — and the decisions that matter in real development are mostly gray, so a valveless spec always fails toward one extreme or the other.</p>
+<h3 id="embedding-self-checks-in-the-spec">Embedding Self-Checks in the Spec<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#embedding-self-checks-in-the-spec"><span class="icon icon-link"></span></a></h3>
+<p>Beyond boundaries, the article suggests three more:</p>
+<ul>
+<li><strong>Verify against the spec</strong> — after writing code, have the agent <strong>check its own output against the spec's requirements</strong></li>
+<li><strong>LLM-as-a-Judge</strong> — a judging model for items that need subjective evaluation</li>
+<li><strong>Conformance tests</strong> — tests <strong>derived directly from the spec</strong></li>
+</ul>
+<p>The third carries the most value. When a spec sentence becomes a test, the spec shifts from <strong>a document you hope gets read</strong> to <strong>a device that turns red when it isn't followed.</strong> That's exactly the shape described in <a href="/en/posts/2026-08-25-agentic-code-quality/">code quality lives in the constraints</a>.</p>
+<hr>
+<h2 id="6-the-spec-is-a-living-artifact">6. The Spec Is a Living Artifact<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-the-spec-is-a-living-artifact"><span class="icon icon-link"></span></a></h2>
+<p>The final principle: not a write-once document.</p>
+<blockquote>
+<p>Specs become the <strong>shared source of truth</strong> — <strong>living, executable artifacts that evolve with the project.</strong></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Practice</th><th>What it means</th></tr></thead><tbody><tr><td><strong>Test at every milestone</strong></td><td>Catch spec/implementation drift <strong>early</strong></td></tr><tr><td><strong>Update the spec</strong></td><td>When you find a missing requirement, <strong>fix the document</strong> (don't patch it in chat)</td></tr><tr><td><strong>Version the spec</strong></td><td>Put the spec itself under source control</td></tr><tr><td><strong>Log agent actions</strong></td><td>Trace back how instructions were misread</td></tr><tr><td><strong>Context management tooling</strong></td><td>For large specs, pull <strong>only the relevant sections</strong> via RAG, MCP, vector DBs</td></tr></tbody></table>
+<p>The last item is the same remedy as section 4. If you can't stop a spec from growing, at least stop <strong>all of it from entering at once.</strong></p>
+<h3 id="model-selection-and-cost">Model Selection and Cost<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#model-selection-and-cost"><span class="icon icon-link"></span></a></h3>
+<p>One practical note: <strong>capable models for planning and critical steps, cheaper ones for routine expansion</strong> — and throttle context sizes appropriately.</p>
+<blockquote>
+<p><strong>More tokens don't guarantee better outcomes. Context quality matters more than length.</strong></p>
+</blockquote>
+<p>The same conclusion as <a href="/en/posts/2026-08-01-choosing-claude-model/">choosing a Claude model</a>. Each stage needs something different, and using the top model everywhere is <strong>laziness paid for in tokens.</strong></p>
+<hr>
+<h2 id="7-anti-patterns-the-github-study-found">7. Anti-Patterns the GitHub Study Found<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-anti-patterns-the-github-study-found"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Anti-pattern</th><th>Why it fails</th></tr></thead><tbody><tr><td><strong>Vague prompts</strong></td><td>"Build something cool" gives <strong>nothing to anchor to</strong></td></tr><tr><td><strong>Overlong context without summarization</strong></td><td>Dumping 50 pages fails (section 4)</td></tr><tr><td><strong>Skipping human review</strong></td><td><strong>Passing tests ≠ correct</strong></td></tr><tr><td><strong>Conflating prototyping with production</strong></td><td>The spec has to say <strong>where rigor applies</strong></td></tr><tr><td><strong>Missing some of the six areas</strong></td><td>An empty area becomes a gap</td></tr><tr><td><strong>Ignoring speed, non-determinism, cost</strong></td><td><strong>Verification has to keep pace with agent velocity</strong></td></tr></tbody></table>
+<p>The fourth shows up constantly. A single repo holds both <strong>throwaway prototypes</strong> and <strong>code that will live a year</strong> — and if the spec doesn't make that distinction, the agent treats both identically. Both outcomes are bad: the prototype gets over-built, and production code gets prototype treatment.</p>
+<p>The last one is worth a second pass too. Agents produce code faster than humans do, while review speed stays fixed. As that gap widens you accumulate <strong>an inventory of unreviewed code</strong> — which isn't speed, it's <strong>accruing debt faster.</strong></p>
+<hr>
+<h2 id="8-applied-to-this-repo--four-of-six-areas-are-empty">8. Applied to This Repo — Four of Six Areas Are Empty<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-applied-to-this-repo--four-of-six-areas-are-empty"><span class="icon icon-link"></span></a></h2>
+<p>Reading without applying leaves nothing behind, so I measured this blog's <code>CLAUDE.md</code> against the six areas from section 3.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Area</th><th>Current state</th><th>Verdict</th></tr></thead><tbody><tr><td><strong>Commands</strong></td><td>Delegates to "see <code>package.json</code> scripts" + spells out only <code>pnpm fetch:popular</code></td><td>⚠️</td></tr><tr><td><strong>Testing</strong></td><td>Absent — no mention of vitest vs. playwright, or where tests live</td><td>❌</td></tr><tr><td><strong>Project structure</strong></td><td>The <code>contents/blog/YYYY/MM/*.md</code> convention exists. The <code>src/</code> layout doesn't</td><td>⚠️</td></tr><tr><td><strong>Code style</strong></td><td>Absent</td><td>❌</td></tr><tr><td><strong>Git workflow</strong></td><td>The deploy path (<code>develop</code> → <code>master</code> → <code>gh-pages</code>) is detailed</td><td>✅</td></tr><tr><td><strong>Boundaries</strong></td><td>Absent — no ✅/⚠️/🚫 distinction anywhere</td><td>❌</td></tr></tbody></table>
+<p>What made this interesting is that <strong>the empty areas overlap with the areas where things have actually gone wrong.</strong></p>
+<p>Adding a single post to this repo breaks <strong>four hardcoded test expectations</strong> (post count, category count, latest post date, the count rendered on the About page). <code>CLAUDE.md</code> says nothing about any of it. <strong>The testing area is empty, so the lesson arrives as a red build every time.</strong></p>
+<p>Boundaries are the same. This repo already has obvious 🚫 and ⚠️ entries.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">🚫 Don't run </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`pnpm format`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> over existing posts — it rewrites every table's alignment</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">🚫 Don't commit </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`public/blog-assets/`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> — it's a gitignored derived artifact</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">⚠️ Running </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`pnpm fetch:popular`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> on </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">`develop`</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> and committing it can conflict at merge time</span></span></code></pre></figure>
+<p>The third one <em>is</em> in <code>CLAUDE.md</code> — as prose, <strong>not marked ⚠️.</strong> A warning buried in a paragraph and a line tagged <code>⚠️</code> are <strong>not the same information.</strong> The first hopes to be read; the second has been <strong>classified.</strong></p>
+<p>So the actual work here narrows to:</p>
+<ol>
+<li><strong>Add a boundaries section and move the 🚫/⚠️ we already know into it</strong> — this isn't discovery, it's <strong>classifying what's already scattered through prose</strong></li>
+<li><strong>Fill the testing area</strong> — runner, locations, and "the four places to update when adding a post"</li>
+<li><strong>Don't grow it</strong> — given section 4, leave code style empty until an incident actually costs something</li>
+</ol>
+<p>Writing down #3 matters. Seeing six areas makes you <strong>want to fill all six</strong> — and that's precisely the direction this article warns against. An empty area isn't a defect; it may just be an area <strong>that hasn't cost anything yet.</strong></p>
+<hr>
+<h2 id="9-easy-things-to-misread">9. Easy Things to Misread<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-easy-things-to-misread"><span class="icon icon-link"></span></a></h2>
+<h3 id="misreading-1--writing-specs-means-going-back-to-waterfall">Misreading 1 — "Writing specs means going back to waterfall"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-1--writing-specs-means-going-back-to-waterfall"><span class="icon icon-link"></span></a></h3>
+<p>The claim is the opposite. A spec isn't <strong>fixed and frozen once</strong>; it's the <strong>living artifact</strong> of section 6. And the draft is written by the agent, not the human (section 2). Waterfall's essence is "finalize a phase and move on" — here you <strong>return to the spec at every milestone.</strong></p>
+<p>If anything this is closer to <strong>treat the spec like code</strong>: versioned, tested, changed through commits.</p>
+<h3 id="misreading-2--longer-context-models-will-solve-this">Misreading 2 — "Longer-context models will solve this"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-2--longer-context-models-will-solve-this"><span class="icon icon-link"></span></a></h3>
+<p>Section 4 is the answer to that hope. The curse of instructions is <strong>an attention problem, not a capacity problem.</strong> Widen the window and <strong>satisfying 20 simultaneous instructions</strong> remains exactly as hard.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Context window: how much fits         → solved by hardware/models</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Attention budget: how much is obeyed  → solved by whoever writes it</span></span></code></pre></figure>
+<h3 id="misreading-3--filling-all-six-areas-makes-a-good-spec">Misreading 3 — "Filling all six areas makes a good spec"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-3--filling-all-six-areas-makes-a-good-spec"><span class="icon icon-link"></span></a></h3>
+<p>This is where section 8 caught me. The six areas are <strong>a diagnostic, not a checklist.</strong> Filling an area by guesswork, where nothing has ever gone wrong, produces exactly the <strong>compliance-shaving instructions</strong> section 4 describes. When an area is empty, ask <strong>why</strong> first — nothing has gone wrong, or something went wrong and nobody wrote it down?</p>
+<h3 id="misreading-4--with-self-checks-in-place-we-can-cut-human-review">Misreading 4 — "With self-checks in place we can cut human review"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#misreading-4--with-self-checks-in-place-we-can-cut-human-review"><span class="icon icon-link"></span></a></h3>
+<p>The anti-pattern list settles this: <strong>passing tests is not correctness.</strong> And every self-check in section 5 is <strong>the agent measuring its own work against its own spec</strong>, which means <strong>they all pass when the spec itself is wrong.</strong> Whether the spec is wrong cannot be determined from inside the spec — that seat belongs to a human.</p>
+<hr>
+<h2 id="10-summary">10. Summary<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#10-summary"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>Point</th><th>Why</th></tr></thead><tbody><tr><td><strong>1. Vision from humans, detail from agents</strong></td><td>Short brief → agent draft → human correction</td><td>Only humans set direction; models elaborate better</td></tr><tr><td><strong>2. Diagnose with the six areas</strong></td><td>Commands · Testing · Structure · Style · Git · <strong>Boundaries</strong></td><td>The axes common to 2,500 files</td></tr><tr><td><strong>3. Boundaries in three tiers</strong></td><td>✅ Always / ⚠️ Ask first / 🚫 Never</td><td>Without ⚠️, every judgment turns binary</td></tr><tr><td><strong>4. More instructions, less compliance</strong></td><td>The curse of instructions</td><td>New rules are bought by shaving existing ones</td></tr><tr><td><strong>5. So you split</strong></td><td>By component · TOC · sub-agents · sequential</td><td>Splitting context is a compliance device, not a capacity one</td></tr><tr><td><strong>6. Turn spec sentences into tests</strong></td><td>Conformance tests · verify-against-spec</td><td>From a document you hope gets read to one that turns red</td></tr><tr><td><strong>7. Verification must keep pace</strong></td><td>Passing tests ≠ correct</td><td>Otherwise you stockpile unreviewed code</td></tr></tbody></table>
+<p>Overlaid on the thread this blog has been following, the position is clear:</p>
+<ul>
+<li><a href="/en/posts/2026-07-12-product-spec-harness/">Product spec harness</a> — the <strong>procedure for producing</strong> a spec, as a harness</li>
+<li><a href="/en/posts/2026-07-31-context-engineering-claude5/">Context engineering</a> — verify when you <strong>remove</strong> rules</li>
+<li><a href="/en/posts/2026-08-01-choosing-claude-model/">Choosing a Claude model</a> — <strong>each stage needs a different model</strong></li>
+<li><a href="/en/posts/2026-08-25-agentic-code-quality/">Code quality lives in the constraints</a> — verify by what <strong>surrounds</strong> the agent</li>
+<li><a href="/en/posts/2026-09-06-skills-governance/">Skills governance</a> — what those rules need once they <strong>pass through many hands</strong></li>
+<li>This post — <strong>what shape, and how much</strong> to write them in</li>
+</ul>
+<p>Back to the original question: the "solid framework" turns out to be <strong>six areas, three tiers of boundaries, and the discipline not to grow it.</strong> The first two are lists you can apply today. The third is the hard one — a spec is a document that always wants to get longer, and <strong>the moment it does, the entries already in it start going unfollowed.</strong></p>
+<hr>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Addy Osmani, <a href="https://addyo.substack.com/p/how-to-write-a-good-spec-for-ai-agents">How to write a good spec for AI agents</a></li>
+<li>GitHub, <a href="https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/">Spec-driven development</a> · <a href="https://github.com/github/spec-kit">Spec Kit</a></li>
+<li>Anthropic, <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">Effective context engineering for AI agents</a></li>
+<li>Previous posts — <a href="/en/posts/2026-09-06-skills-governance/">Skills Governance</a> · <a href="/en/posts/2026-08-25-agentic-code-quality/">Code Quality Lives in the Constraints</a> · <a href="/en/posts/2026-07-31-context-engineering-claude5/">Context Engineering</a></li>
+</ul>1b:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$1e"}}]}]
+1c:["$","nav",null,{"aria-label":"Previous / Next","className":"mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2","children":[["$","$L5",null,{"href":"/en/posts/2026-09-06-skills-governance","className":"group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent","rel":"prev","children":[["$","span",null,{"className":"flex items-center gap-1.5 font-mono text-[12px] text-accent","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left h-3.5 w-3.5","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Previous"]}],["$","span",null,{"className":"text-[15px] font-bold leading-snug text-ink group-hover:text-accent","children":"Your Org's Know-How Now Lives in Skills — Ungoverned, It Becomes Technical Debt"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+1d:["$","div",null,{"className":"hidden lg:block","children":["$","$L1f",null,{"headings":[{"id":"1-what-is-this-post-about","text":"1. What Is This Post About?","depth":1},{"id":"2-vision-first-details-from-the-agent","text":"2. Vision First, Details From the Agent","depth":1},{"id":"why-plan-mode-belongs-here","text":"Why Plan Mode Belongs Here","depth":2},{"id":"3-what-2500-agent-config-files-say--six-areas","text":"3. What 2,500 Agent Config Files Say — Six Areas","depth":1},{"id":"the-recommended-skeleton","text":"The Recommended Skeleton","depth":2},{"id":"4-the-curse-of-instructions--bigger-specs-get-followed-less","text":"4. The Curse of Instructions — Bigger Specs Get Followed Less","depth":1},{"id":"four-ways-to-split","text":"Four Ways to Split","depth":2},{"id":"the-caveat-on-parallel-agents","text":"The Caveat on Parallel Agents","depth":2},{"id":"5-three-tier-boundaries----️--","text":"5. Three-Tier Boundaries — ✅ / ⚠️ / 🚫","depth":1},{"id":"embedding-self-checks-in-the-spec","text":"Embedding Self-Checks in the Spec","depth":2},{"id":"6-the-spec-is-a-living-artifact","text":"6. The Spec Is a Living Artifact","depth":1},{"id":"model-selection-and-cost","text":"Model Selection and Cost","depth":2},{"id":"7-anti-patterns-the-github-study-found","text":"7. Anti-Patterns the GitHub Study Found","depth":1},{"id":"8-applied-to-this-repo--four-of-six-areas-are-empty","text":"8. Applied to This Repo — Four of Six Areas Are Empty","depth":1},{"id":"9-easy-things-to-misread","text":"9. Easy Things to Misread","depth":1},{"id":"misreading-1--writing-specs-means-going-back-to-waterfall","text":"Misreading 1 — \"Writing specs means going back to waterfall\"","depth":2},{"id":"misreading-2--longer-context-models-will-solve-this","text":"Misreading 2 — \"Longer-context models will solve this\"","depth":2},{"id":"misreading-3--filling-all-six-areas-makes-a-good-spec","text":"Misreading 3 — \"Filling all six areas makes a good spec\"","depth":2},{"id":"misreading-4--with-self-checks-in-place-we-can-cut-human-review","text":"Misreading 4 — \"With self-checks in place we can cut human review\"","depth":2},{"id":"10-summary","text":"10. Summary","depth":1},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
+e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+20:I[29421,["/_next/static/chunks/2ms7ksip1tdnv.js","/_next/static/chunks/36ctrt31gt9v_.js"],"IconMark"]
+b:null
+10:[["$","title","0",{"children":"More Instructions, Less Compliance — Writing Specs Agents Actually Follow · SeungAh Hong · Tech Blog"}],["$","meta","1",{"name":"description","content":"1. What Is This Post About? Notes on Addy Osmani's How to write a good spec for AI agents. The piece opens with a question the author received: \"I've heard a…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"SeungAh Hong"}],["$","meta","4",{"name":"keywords","content":"AI,agents,spec,context engineering,PRD"}],["$","meta","5",{"name":"creator","content":"홍승아"}],["$","meta","6",{"name":"publisher","content":"홍승아"}],["$","meta","7",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://seungahhong.github.io/en/posts/2026-09-13-writing-specs-for-agents/"}],["$","link","9",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-09-13-writing-specs-for-agents/"}],["$","link","10",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-09-13-writing-specs-for-agents/"}],["$","link","11",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-09-13-writing-specs-for-agents/"}],["$","meta","12",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","13",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","14",{"property":"og:title","content":"More Instructions, Less Compliance — Writing Specs Agents Actually Follow"}],["$","meta","15",{"property":"og:description","content":"1. What Is This Post About? Notes on Addy Osmani's How to write a good spec for AI agents. The piece opens with a question the author received: \"I've heard a…"}],["$","meta","16",{"property":"og:url","content":"https://seungahhong.github.io/en/posts/2026-09-13-writing-specs-for-agents/"}],["$","meta","17",{"property":"og:locale","content":"en"}],["$","meta","18",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/13/thumbnail.png"}],["$","meta","19",{"property":"og:image:alt","content":"More Instructions, Less Compliance — Writing Specs Agents Actually Follow"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2026-09-13"}],["$","meta","22",{"property":"article:modified_time","content":"2026-09-13"}],["$","meta","23",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","24",{"property":"article:section","content":"Development"}],["$","meta","25",{"property":"article:tag","content":"AI"}],["$","meta","26",{"property":"article:tag","content":"agents"}],["$","meta","27",{"property":"article:tag","content":"spec"}],["$","meta","28",{"property":"article:tag","content":"context engineering"}],["$","meta","29",{"property":"article:tag","content":"PRD"}],["$","meta","30",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","31",{"name":"twitter:title","content":"More Instructions, Less Compliance — Writing Specs Agents Actually Follow"}],["$","meta","32",{"name":"twitter:description","content":"1. What Is This Post About? Notes on Addy Osmani's How to write a good spec for AI agents. The piece opens with a question the author received: \"I've heard a…"}],["$","meta","33",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/13/thumbnail.png"}],["$","link","34",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L20","35",{}]]
