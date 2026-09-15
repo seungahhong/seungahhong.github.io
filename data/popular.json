@@ -4,7 +4,7 @@
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 61
+      "views": 63
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
@@ -179,6 +179,10 @@
       "views": 2
     },
     {
+      "slug": "2023-11-26-react-hook-form-inside",
+      "views": 2
+    },
+    {
       "slug": "2024-01-27-react-v18-migration",
       "views": 2
     },
@@ -200,6 +204,10 @@
     },
     {
       "slug": "2026-09-05-frontier-development-teams",
+      "views": 2
+    },
+    {
+      "slug": "2026-09-13-writing-specs-for-agents",
       "views": 2
     },
     {
@@ -263,10 +271,6 @@
       "views": 1
     },
     {
-      "slug": "2023-11-26-react-hook-form-inside",
-      "views": 1
-    },
-    {
       "slug": "2024-01-14-cors",
       "views": 1
     },
@@ -284,10 +288,6 @@
     },
     {
       "slug": "2024-12-05-react-v19",
-      "views": 1
-    },
-    {
-      "slug": "2026-09-13-writing-specs-for-agents",
       "views": 1
     }
   ]
