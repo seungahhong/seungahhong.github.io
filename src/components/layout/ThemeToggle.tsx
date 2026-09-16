@@ -25,7 +25,7 @@ export default function ThemeToggle({ label }: { label: string }) {
       aria-label={label}
       title={label}
       onClick={toggle}
-      className="grid h-[34px] w-[34px] place-items-center rounded-lg border border-line bg-surface text-muted transition-colors hover:border-accent hover:text-accent"
+      className="border-line bg-surface text-muted hover:border-accent hover:text-accent grid h-[34px] w-[34px] place-items-center rounded-lg border transition-colors"
     >
       <Moon className="theme-icon-light h-4 w-4" aria-hidden="true" />
       <Sun className="theme-icon-dark h-4 w-4" aria-hidden="true" />

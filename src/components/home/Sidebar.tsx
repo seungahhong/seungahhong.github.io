@@ -10,8 +10,8 @@ import SearchTrigger from '@/components/search/SearchTrigger';
 
 function WidgetTitle({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mb-3.5 flex items-center gap-2 font-mono text-[12px] font-semibold uppercase tracking-wider text-muted">
-      <span className="h-0.5 w-3.5 bg-signal" aria-hidden="true" />
+    <h2 className="text-muted mb-3.5 flex items-center gap-2 font-mono text-[12px] font-semibold tracking-wider uppercase">
+      <span className="bg-signal h-0.5 w-3.5" aria-hidden="true" />
       {children}
     </h2>
   );
@@ -46,14 +46,14 @@ export default function Sidebar({
     <aside className="flex flex-col gap-7 lg:sticky lg:top-20">
       <SearchTrigger
         ariaLabel={dict.nav.search}
-        className="flex w-full items-center gap-2.5 rounded-[10px] border border-line bg-surface px-3.5 py-3 text-left text-[13.5px] text-faint transition-colors hover:border-accent"
+        className="border-line bg-surface text-faint hover:border-accent flex w-full items-center gap-2.5 rounded-[10px] border px-3.5 py-3 text-left text-[13.5px] transition-colors"
       >
-        <Search className="h-4 w-4 text-muted" aria-hidden="true" />
+        <Search className="text-muted h-4 w-4" aria-hidden="true" />
         <span>{dict.nav.searchPlaceholder}</span>
       </SearchTrigger>
 
       {popular.length > 0 && (
-        <section className="rounded-xl border border-line bg-surface p-[18px]">
+        <section className="border-line bg-surface rounded-xl border p-[18px]">
           <WidgetTitle>{dict.home.popular}</WidgetTitle>
           <ol className="flex flex-col gap-3.5">
             {popular.map((post, i) => (
@@ -70,13 +70,13 @@ export default function Sidebar({
                   href={postPath(locale, post.slug)}
                   className="group block"
                 >
-                  <p className="mb-1.5 text-[13.5px] font-semibold leading-snug text-ink group-hover:text-accent">
+                  <p className="text-ink group-hover:text-accent mb-1.5 text-[13.5px] leading-snug font-semibold">
                     {post.title}
                   </p>
                   <div className="signal-track" aria-hidden="true">
                     <i style={{ width: `${barWidth(post, i)}%` }} />
                   </div>
-                  <p className="mt-1.5 font-mono text-[10.5px] text-faint">
+                  <p className="text-faint mt-1.5 font-mono text-[10.5px]">
                     {post.category}
                     {post.tags[0] ? ` · ${post.tags[0]}` : ''}
                     {post.views !== null
@@ -90,7 +90,7 @@ export default function Sidebar({
         </section>
       )}
 
-      <section className="rounded-xl border border-line bg-surface p-[18px]">
+      <section className="border-line bg-surface rounded-xl border p-[18px]">
         <WidgetTitle>{dict.home.categories}</WidgetTitle>
         <ul className="flex flex-col">
           {categories.map((cat) => {
@@ -100,12 +100,12 @@ export default function Sidebar({
                 <Link
                   href={categoryPath(locale, cat.category)}
                   aria-current={active ? 'true' : undefined}
-                  className={`flex items-center justify-between border-b border-dashed border-line py-[7px] text-sm last:border-0 hover:text-accent ${
+                  className={`border-line hover:text-accent flex items-center justify-between border-b border-dashed py-[7px] text-sm last:border-0 ${
                     active ? 'text-accent' : 'text-ink'
                   }`}
                 >
                   <span>{cat.category}</span>
-                  <span className="font-mono text-[12px] text-faint">
+                  <span className="text-faint font-mono text-[12px]">
                     {cat.count}
                   </span>
                 </Link>
@@ -115,7 +115,7 @@ export default function Sidebar({
         </ul>
       </section>
 
-      <section className="rounded-xl border border-line bg-surface p-[18px]">
+      <section className="border-line bg-surface rounded-xl border p-[18px]">
         <WidgetTitle>{dict.home.tags}</WidgetTitle>
         <div className="flex flex-wrap gap-[7px]">
           {tags.map((tag) => (

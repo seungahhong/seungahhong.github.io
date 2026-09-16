@@ -15,7 +15,7 @@ export default function Breadcrumb({
   title: string;
 }) {
   return (
-    <nav aria-label="breadcrumb" className="font-mono text-[12px] text-faint">
+    <nav aria-label="breadcrumb" className="text-faint font-mono text-[12px]">
       <ol className="flex flex-wrap items-center gap-1.5">
         <li>
           <Link
@@ -39,7 +39,7 @@ export default function Breadcrumb({
           <span className="text-accent">{category}</span>
         </li>
         <li aria-hidden="true">/</li>
-        <li aria-current="page" className="max-w-[40ch] truncate text-muted">
+        <li aria-current="page" className="text-muted max-w-[40ch] truncate">
           {title}
         </li>
       </ol>

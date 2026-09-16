@@ -56,15 +56,15 @@ export default function PostsExplorer({
   );
 
   return (
-    <div className="mx-auto max-w-content px-[18px] py-8 md:px-[34px]">
+    <div className="max-w-content mx-auto px-[18px] py-8 md:px-[34px]">
       <header className="mb-6">
-        <p className="mb-2 font-mono text-[12px] uppercase tracking-[0.16em] text-accent">
+        <p className="text-accent mb-2 font-mono text-[12px] tracking-[0.16em] uppercase">
           {dict.posts.title}
         </p>
-        <h1 className="text-[clamp(24px,3vw,32px)] font-extrabold tracking-tight text-ink">
+        <h1 className="text-ink text-[clamp(24px,3vw,32px)] font-extrabold tracking-tight">
           {dict.posts.title}
         </h1>
-        <p className="mt-2 text-[15px] text-muted">{dict.posts.subtitle}</p>
+        <p className="text-muted mt-2 text-[15px]">{dict.posts.subtitle}</p>
       </header>
 
       <div

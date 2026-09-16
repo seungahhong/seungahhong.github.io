@@ -83,7 +83,7 @@ export default async function LangLayout({
         <HtmlLang lang={localeHtmlLang[locale]} />
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:border focus:border-accent focus:bg-surface focus:px-4 focus:py-2 focus:text-ink"
+          className="focus:border-accent focus:bg-surface focus:text-ink sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-100 focus:rounded-lg focus:border focus:px-4 focus:py-2"
         >
           {dict.nav.skipToContent}
         </a>

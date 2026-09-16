@@ -18,7 +18,7 @@ export default function LanguageSwitcher({
     <div
       role="group"
       aria-label={label}
-      className="flex items-center overflow-hidden rounded-lg border border-line bg-surface font-mono text-[11px]"
+      className="border-line bg-surface flex items-center overflow-hidden rounded-lg border font-mono text-[11px]"
     >
       {locales.map((target) => {
         const active = target === locale;
@@ -32,8 +32,8 @@ export default function LanguageSwitcher({
             }}
             className={
               active
-                ? 'bg-ink px-2.5 py-1.5 text-bg'
-                : 'px-2.5 py-1.5 text-muted transition-colors hover:text-accent'
+                ? 'bg-ink text-bg px-2.5 py-1.5'
+                : 'text-muted hover:text-accent px-2.5 py-1.5 transition-colors'
             }
           >
             {target.toUpperCase()}

@@ -16,6 +16,7 @@ const eslintConfig = [
       '**/*.config.js',
       '**/*.config.cjs',
       '**/*.config.mjs',
+      '**/*.config.mts',
       '**/*.config.ts',
       'vitest.setup.ts',
     ],
