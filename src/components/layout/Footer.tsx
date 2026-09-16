@@ -1,4 +1,5 @@
-import { Github, Linkedin, NotebookText } from 'lucide-react';
+import { NotebookText } from 'lucide-react';
+import { Github, Linkedin } from '@/components/icons/BrandIcons';
 import type { Locale } from '@/i18n/config';
 import type { Dictionary } from '@/lib/i18n';
 import { siteConfig } from '@/lib/site';
@@ -18,18 +19,18 @@ export default function Footer({
   ];
 
   return (
-    <footer className="mt-16 border-t border-line bg-bg">
-      <div className="mx-auto flex max-w-deck flex-col gap-4 px-[18px] py-8 sm:flex-row sm:items-center sm:justify-between md:px-[34px]">
+    <footer className="border-line bg-bg mt-16 border-t">
+      <div className="max-w-deck mx-auto flex flex-col gap-4 px-[18px] py-8 sm:flex-row sm:items-center sm:justify-between md:px-[34px]">
         <div>
           <p>
-            <span className="text-[15px] font-extrabold tracking-tight text-ink">
+            <span className="text-ink text-[15px] font-extrabold tracking-tight">
               {dict.brand.name}
             </span>
           </p>
-          <p className="mt-1.5 text-[12.5px] text-muted">
+          <p className="text-muted mt-1.5 text-[12.5px]">
             {dict.footer.builtWith}
           </p>
-          <p className="mt-0.5 text-[12px] text-faint">
+          <p className="text-faint mt-0.5 text-[12px]">
             © {siteConfig.since}–{year} {dict.footer.rights}
           </p>
         </div>
@@ -42,7 +43,7 @@ export default function Footer({
               rel="noreferrer noopener"
               aria-label={label}
               lang={locale === 'ko' ? undefined : 'en'}
-              className="grid h-[34px] w-[34px] place-items-center rounded-lg border border-line bg-surface text-muted transition-colors hover:border-accent hover:text-accent"
+              className="border-line bg-surface text-muted hover:border-accent hover:text-accent grid h-[34px] w-[34px] place-items-center rounded-lg border transition-colors"
             >
               <Icon className="h-4 w-4" aria-hidden="true" />
             </a>

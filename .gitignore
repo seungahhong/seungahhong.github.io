@@ -19,6 +19,8 @@ next-env.d.ts
 coverage
 .nyc_output
 /test-results/
+# vitest 5는 산출물(blob·attachments·리포트)을 .vitest/ 아래로 모은다
+/.vitest/
 /playwright-report/
 /e2e/**/reports/
 /e2e/**/videos/

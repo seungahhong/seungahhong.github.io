@@ -39,18 +39,18 @@ export default async function HomePage({ params }: { params: LangParams }) {
           since: siteConfig.since,
         }}
       />
-      <div className="mx-auto grid max-w-deck grid-cols-1 gap-10 px-[18px] py-8 md:px-[34px] lg:grid-cols-[1fr_300px]">
+      <div className="max-w-deck mx-auto grid grid-cols-1 gap-10 px-[18px] py-8 md:px-[34px] lg:grid-cols-[1fr_300px]">
         <section aria-labelledby="recent-heading">
           <div className="mb-1.5 flex items-baseline justify-between">
             <h2
               id="recent-heading"
-              className="font-mono text-[14px] font-semibold uppercase tracking-wide text-muted"
+              className="text-muted font-mono text-[14px] font-semibold tracking-wide uppercase"
             >
               {dict.home.recentPosts}
             </h2>
             <Link
               href={localePath(locale, '/posts')}
-              className="font-mono text-[12px] text-accent hover:underline"
+              className="text-accent font-mono text-[12px] hover:underline"
             >
               {dict.home.viewAll}
             </Link>

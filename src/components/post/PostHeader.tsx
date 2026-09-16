@@ -16,7 +16,7 @@ export default function PostHeader({
   dict: Dictionary;
 }) {
   return (
-    <header className="border-b border-line pb-7 pt-10">
+    <header className="border-line border-b pt-10 pb-7">
       <Breadcrumb
         locale={locale}
         dict={dict}
@@ -24,7 +24,7 @@ export default function PostHeader({
         title={post.title}
       />
 
-      <h1 className="my-4 text-[clamp(24px,3vw,34px)] font-extrabold leading-[1.22] tracking-tight text-ink">
+      <h1 className="text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight">
         {post.title}
       </h1>
 
@@ -38,7 +38,7 @@ export default function PostHeader({
         >
           {dict.brand.name.slice(0, 1)}
         </span>
-        <span className="text-[13.5px] font-semibold text-ink">
+        <span className="text-ink text-[13.5px] font-semibold">
           {dict.meta.author}
         </span>
         <span className="text-line" aria-hidden="true">
@@ -57,7 +57,7 @@ export default function PostHeader({
       </div>
 
       {post.contentLocale !== locale && (
-        <p className="mt-4 rounded-lg border border-line bg-wash px-3.5 py-2 text-[13px] text-muted">
+        <p className="border-line bg-wash text-muted mt-4 rounded-lg border px-3.5 py-2 text-[13px]">
           {dict.post.translationFallbackNotice}
         </p>
       )}

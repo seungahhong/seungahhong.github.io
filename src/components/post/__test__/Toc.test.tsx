@@ -110,12 +110,10 @@ describe('Toc 활성 항목 전환 @regression', () => {
     expect(capturedCallback).not.toBeNull();
 
     act(() => {
-
       capturedCallback!([
-      entry('body', true, 300),
-      entry('deep', true, 120), // 더 위쪽
-    ]);
-
+        entry('body', true, 300),
+        entry('deep', true, 120), // 더 위쪽
+      ]);
     });
 
     const deep = screen.getByRole('link', { name: '세부' }).closest('li');
@@ -126,9 +124,9 @@ describe('Toc 활성 항목 전환 @regression', () => {
     render(<Toc headings={headings} title="목차" />);
     act(() => {
       capturedCallback!([
-      entry('intro', false, 10), // 가장 위지만 보이지 않음
-      entry('body', true, 200),
-    ]);
+        entry('intro', false, 10), // 가장 위지만 보이지 않음
+        entry('body', true, 200),
+      ]);
     });
 
     expect(

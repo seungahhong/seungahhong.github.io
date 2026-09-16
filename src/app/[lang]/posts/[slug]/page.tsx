@@ -90,9 +90,9 @@ export default async function PostPage({ params }: { params: PostParams }) {
       <JsonLd data={blogPostingJsonLd(post, locale, dict)} />
       <JsonLd data={breadcrumbJsonLd(post, locale, dict)} />
       <ReadingProgress />
-      <div className="mx-auto max-w-deck px-[18px] pb-10 md:px-[34px]">
+      <div className="max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]">
-          <article className="min-w-0 max-w-prose">
+          <article className="max-w-article min-w-0">
             <PostHeader post={post} locale={locale} dict={dict} />
             <div className="pt-6">
               <ProseContent html={post.html} />

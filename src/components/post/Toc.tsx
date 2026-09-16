@@ -35,8 +35,8 @@ export default function Toc({
   if (headings.length === 0) return null;
 
   return (
-    <nav aria-label={title} className="sticky top-20 border-l border-line pl-5">
-      <p className="mb-3.5 font-mono text-[11px] uppercase tracking-[0.12em] text-faint">
+    <nav aria-label={title} className="border-line sticky top-20 border-l pl-5">
+      <p className="text-faint mb-3.5 font-mono text-[11px] tracking-[0.12em] uppercase">
         {title}
       </p>
       <ol className="toc-list">

@@ -1,32 +1,254 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-signal: var(--signal);
+  --color-wash: var(--wash);
+
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard',
+    'Malgun Gothic', 'Segoe UI', sans-serif;
+  --font-mono:
+    'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+
+  --container-deck: 1180px;
+  --container-content: 900px;
+  /* max-w-prose는 v4 코어에 65ch로 하드코딩돼 있어 덮이지 않으므로 전용 이름을 쓴다. */
+  --container-article: 720px;
+
+  --shadow-card: var(--shadow);
+
+  --animate-menu-drop: menu-drop 0.18s ease;
+  --animate-sheet-up: sheet-up 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+
+  @keyframes menu-drop {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes sheet-up {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: none;
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 /* ============================================================
+   재사용 조각 (칩/태그/커버) — 시안과 동일
+   ============================================================ */
+
+@utility chip {
+  @apply text-accent inline-block rounded-[5px] px-[9px] py-[3px] font-mono text-[11px] font-semibold tracking-wide;
+  background: var(--wash);
+}
+
+@utility tag-pill {
+  @apply border-line text-muted inline-flex items-center rounded-full border px-[10px] py-[3px] font-mono text-[11.5px] transition-colors;
+  &::before {
+    content: '#';
+    color: var(--accent);
+    margin-right: 1px;
+  }
+  &:hover {
+    border-color: var(--accent);
+    color: var(--ink);
+  }
+  &[data-active='true'] {
+    background: var(--signal);
+    border-color: var(--signal);
+    color: #1a1206;
+    font-weight: 600;
+  }
+  &[data-active='true']::before {
+    color: #1a1206;
+  }
+}
+
+@utility meta-mono {
+  @apply text-faint font-mono text-[12px] tracking-wide;
+}
+
+@utility cover {
+  /* 카드 커버(그래픽) — 실제 이미지 대신 시그니처 그라디언트 */
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 26px 26px;
+    opacity: 0.18;
+  }
+}
+
+@utility cover-glyph {
+  position: absolute;
+  right: 10px;
+  bottom: -14px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1;
+  color: var(--ink);
+  opacity: 0.09;
+  letter-spacing: -0.04em;
+}
+
+@utility cover1 {
+  background:
+    radial-gradient(130% 150% at 100% 0%, var(--wash), transparent 55%),
+    linear-gradient(135deg, var(--surface-2), var(--surface));
+}
+
+@utility cover2 {
+  background:
+    radial-gradient(120% 130% at 0% 100%, var(--wash), transparent 60%),
+    linear-gradient(200deg, var(--surface), var(--surface-2));
+}
+
+@utility cover3 {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--surface-2) 0 12px,
+    var(--surface) 12px 24px
+  );
+}
+
+@utility cover4 {
+  background:
+    radial-gradient(90% 120% at 50% 0%, var(--wash), transparent 65%),
+    var(--surface-2);
+}
+
+@utility cover5 {
+  background:
+    conic-gradient(from 210deg at 80% 20%, var(--wash), transparent 40%),
+    linear-gradient(160deg, var(--surface-2), var(--surface));
+}
+
+@utility signal-track {
+  /* Top 5 시그널 미터 */
+  height: 4px;
+  border-radius: 3px;
+  background: var(--surface-2);
+  overflow: hidden;
+  & > i {
+    display: block;
+    height: 100%;
+    background: var(--signal);
+    border-radius: 3px;
+  }
+}
+
+@utility reading-progress {
+  /* 읽기 진행 바 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: transparent;
+  z-index: 60;
+  & > i {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: var(--signal);
+    transition: width 0.1s linear;
+  }
+}
+
+@layer utilities {
+  /* ============================================================
    Design tokens — 리디자인 시안(amber) 라이트/다크
    next-themes가 <html data-theme="light|dark">를 토글한다.
    ============================================================ */
-:root {
-  --bg: #fbfbfc;
-  --surface: #ffffff;
-  --surface-2: #f5f5f7;
-  --ink: #17171c;
-  --muted: #5b5b64;
-  --faint: #6a6a74;
-  --line: #e6e6ec;
-  --accent: #965708;
-  --signal: #efa83c;
-  --wash: rgba(239, 168, 60, 0.15);
-  --shadow:
-    0 1px 2px rgba(20, 20, 30, 0.04), 0 12px 34px rgba(20, 20, 30, 0.1);
-  --font-mono: 'SF Mono', 'JetBrains Mono', ui-monospace, Menlo, Consolas,
-    monospace;
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
-    'Pretendard', 'Malgun Gothic', 'Segoe UI', sans-serif;
-}
+  :root {
+    --bg: #fbfbfc;
+    --surface: #ffffff;
+    --surface-2: #f5f5f7;
+    --ink: #17171c;
+    --muted: #5b5b64;
+    --faint: #6a6a74;
+    --line: #e6e6ec;
+    --accent: #965708;
+    --signal: #efa83c;
+    --wash: rgba(239, 168, 60, 0.15);
+    --shadow:
+      0 1px 2px rgba(20, 20, 30, 0.04), 0 12px 34px rgba(20, 20, 30, 0.1);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) {
+      --bg: #0d0d10;
+      --surface: #16161b;
+      --surface-2: #1d1d24;
+      --ink: #ececf0;
+      --muted: #90909c;
+      --faint: #8b8b95;
+      --line: #24242c;
+      --accent: #f2b84b;
+      --signal: #f2b84b;
+      --wash: rgba(242, 184, 75, 0.12);
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 16px 40px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  :root[data-theme='light'] {
+    --bg: #fbfbfc;
+    --surface: #ffffff;
+    --surface-2: #f5f5f7;
+    --ink: #17171c;
+    --muted: #5b5b64;
+    --faint: #6a6a74;
+    --line: #e6e6ec;
+    --accent: #965708;
+    --signal: #efa83c;
+    --wash: rgba(239, 168, 60, 0.15);
+    --shadow:
+      0 1px 2px rgba(20, 20, 30, 0.04), 0 12px 34px rgba(20, 20, 30, 0.1);
+  }
+
+  :root[data-theme='dark'] {
     --bg: #0d0d10;
     --surface: #16161b;
     --surface-2: #1d1d24;
@@ -39,35 +261,6 @@
     --wash: rgba(242, 184, 75, 0.12);
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 16px 40px rgba(0, 0, 0, 0.5);
   }
-}
-
-:root[data-theme='light'] {
-  --bg: #fbfbfc;
-  --surface: #ffffff;
-  --surface-2: #f5f5f7;
-  --ink: #17171c;
-  --muted: #5b5b64;
-  --faint: #6a6a74;
-  --line: #e6e6ec;
-  --accent: #965708;
-  --signal: #efa83c;
-  --wash: rgba(239, 168, 60, 0.15);
-  --shadow:
-    0 1px 2px rgba(20, 20, 30, 0.04), 0 12px 34px rgba(20, 20, 30, 0.1);
-}
-
-:root[data-theme='dark'] {
-  --bg: #0d0d10;
-  --surface: #16161b;
-  --surface-2: #1d1d24;
-  --ink: #ececf0;
-  --muted: #90909c;
-  --faint: #8b8b95;
-  --line: #24242c;
-  --accent: #f2b84b;
-  --signal: #f2b84b;
-  --wash: rgba(242, 184, 75, 0.12);
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 16px 40px rgba(0, 0, 0, 0.5);
 }
 
 @layer base {
@@ -103,129 +296,6 @@
     outline: 2px solid var(--accent);
     outline-offset: 2px;
     border-radius: 2px;
-  }
-}
-
-/* ============================================================
-   재사용 조각 (칩/태그/커버) — 시안과 동일
-   ============================================================ */
-@layer components {
-  .chip {
-    @apply inline-block rounded-[5px] px-[9px] py-[3px] font-mono text-[11px] font-semibold tracking-wide text-accent;
-    background: var(--wash);
-  }
-
-  .tag-pill {
-    @apply inline-flex items-center rounded-full border border-line px-[10px] py-[3px] font-mono text-[11.5px] text-muted transition-colors;
-  }
-  .tag-pill::before {
-    content: '#';
-    color: var(--accent);
-    margin-right: 1px;
-  }
-  .tag-pill:hover {
-    border-color: var(--accent);
-    color: var(--ink);
-  }
-  .tag-pill[data-active='true'] {
-    background: var(--signal);
-    border-color: var(--signal);
-    color: #1a1206;
-    font-weight: 600;
-  }
-  .tag-pill[data-active='true']::before {
-    color: #1a1206;
-  }
-
-  .meta-mono {
-    @apply font-mono text-[12px] tracking-wide text-faint;
-  }
-
-  /* 카드 커버(그래픽) — 실제 이미지 대신 시그니처 그라디언트 */
-  .cover {
-    position: relative;
-    overflow: hidden;
-  }
-  .cover::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(var(--line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size: 26px 26px;
-    opacity: 0.18;
-  }
-  .cover-glyph {
-    position: absolute;
-    right: 10px;
-    bottom: -14px;
-    font-family: var(--font-mono);
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 1;
-    color: var(--ink);
-    opacity: 0.09;
-    letter-spacing: -0.04em;
-  }
-  .cover1 {
-    background:
-      radial-gradient(130% 150% at 100% 0%, var(--wash), transparent 55%),
-      linear-gradient(135deg, var(--surface-2), var(--surface));
-  }
-  .cover2 {
-    background:
-      radial-gradient(120% 130% at 0% 100%, var(--wash), transparent 60%),
-      linear-gradient(200deg, var(--surface), var(--surface-2));
-  }
-  .cover3 {
-    background: repeating-linear-gradient(
-      -45deg,
-      var(--surface-2) 0 12px,
-      var(--surface) 12px 24px
-    );
-  }
-  .cover4 {
-    background:
-      radial-gradient(90% 120% at 50% 0%, var(--wash), transparent 65%),
-      var(--surface-2);
-  }
-  .cover5 {
-    background:
-      conic-gradient(from 210deg at 80% 20%, var(--wash), transparent 40%),
-      linear-gradient(160deg, var(--surface-2), var(--surface));
-  }
-
-  /* Top 5 시그널 미터 */
-  .signal-track {
-    height: 4px;
-    border-radius: 3px;
-    background: var(--surface-2);
-    overflow: hidden;
-  }
-  .signal-track > i {
-    display: block;
-    height: 100%;
-    background: var(--signal);
-    border-radius: 3px;
-  }
-
-  /* 읽기 진행 바 */
-  .reading-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: transparent;
-    z-index: 60;
-  }
-  .reading-progress > i {
-    display: block;
-    height: 100%;
-    width: 0;
-    background: var(--signal);
-    transition: width 0.1s linear;
   }
 }
 

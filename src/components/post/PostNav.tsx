@@ -19,19 +19,19 @@ export default function PostNav({
   return (
     <nav
       aria-label={`${dict.post.prev} / ${dict.post.next}`}
-      className="mt-11 grid grid-cols-1 gap-3.5 border-t border-line pt-7 sm:grid-cols-2"
+      className="border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2"
     >
       {previous ? (
         <Link
           href={postPath(locale, previous.slug)}
-          className="group flex flex-col gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 transition-colors hover:border-accent"
+          className="group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors"
           rel="prev"
         >
-          <span className="flex items-center gap-1.5 font-mono text-[12px] text-accent">
+          <span className="text-accent flex items-center gap-1.5 font-mono text-[12px]">
             <ArrowLeft className="h-3.5 w-3.5" aria-hidden="true" />
             {dict.post.prev}
           </span>
-          <span className="text-[15px] font-bold leading-snug text-ink group-hover:text-accent">
+          <span className="text-ink group-hover:text-accent text-[15px] leading-snug font-bold">
             {previous.title}
           </span>
         </Link>
@@ -42,14 +42,14 @@ export default function PostNav({
       {next ? (
         <Link
           href={postPath(locale, next.slug)}
-          className="group flex flex-col items-end gap-1.5 rounded-xl border border-line bg-surface px-[18px] py-4 text-right transition-colors hover:border-accent"
+          className="group border-line bg-surface hover:border-accent flex flex-col items-end gap-1.5 rounded-xl border px-[18px] py-4 text-right transition-colors"
           rel="next"
         >
-          <span className="flex items-center gap-1.5 font-mono text-[12px] text-accent">
+          <span className="text-accent flex items-center gap-1.5 font-mono text-[12px]">
             {dict.post.next}
             <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
           </span>
-          <span className="text-[15px] font-bold leading-snug text-ink group-hover:text-accent">
+          <span className="text-ink group-hover:text-accent text-[15px] leading-snug font-bold">
             {next.title}
           </span>
         </Link>

@@ -19,9 +19,9 @@ export default function PostCard({
   const cover = `cover cover${coverVariant(post.slug)}`;
 
   return (
-    <article className="group relative flex flex-col gap-3 border-b border-line py-5 last:border-0 sm:flex-row sm:gap-[18px]">
+    <article className="group border-line relative flex flex-col gap-3 border-b py-5 last:border-0 sm:flex-row sm:gap-[18px]">
       <div
-        className={`relative aspect-[16/9] w-full flex-none overflow-hidden rounded-[10px] border border-line sm:w-[176px] ${
+        className={`border-line relative aspect-video w-full flex-none overflow-hidden rounded-[10px] border sm:w-[176px] ${
           post.thumbnail ? 'bg-surface-2' : cover
         }`}
         aria-hidden="true"
@@ -37,7 +37,7 @@ export default function PostCard({
         ) : (
           <span className="cover-glyph">{coverGlyph(post.slug)}</span>
         )}
-        <span className="absolute left-2.5 top-2.5 z-[2] rounded-[5px] border border-line bg-bg px-2 py-0.5 font-mono text-[10px] text-accent">
+        <span className="border-line bg-bg text-accent absolute top-2.5 left-2.5 z-2 rounded-[5px] border px-2 py-0.5 font-mono text-[10px]">
           {post.category}
         </span>
       </div>
@@ -50,7 +50,7 @@ export default function PostCard({
           </time>
         </div>
 
-        <h3 className="text-[18px] font-bold leading-tight tracking-tight text-ink transition-colors group-hover:text-accent">
+        <h3 className="text-ink group-hover:text-accent text-[18px] leading-tight font-bold tracking-tight transition-colors">
           <Link
             href={href}
             className="after:absolute after:inset-0 after:content-['']"
@@ -59,7 +59,7 @@ export default function PostCard({
           </Link>
         </h3>
 
-        <p className="line-clamp-2 text-[13.5px] leading-[1.55] text-muted">
+        <p className="text-muted line-clamp-2 text-[13.5px] leading-[1.55]">
           {post.excerpt}
         </p>
 

@@ -95,10 +95,18 @@ describe('PostsExplorer 카테고리 필터 @regression', () => {
 
   it('칩에 각 카테고리 글 수를 함께 보여준다', () => {
     renderExplorer();
-    expect(screen.getByRole('button', { name: '개발 2' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: '문서 1' })).toBeInTheDocument();
+    // 라벨과 카운트 사이 공백은 접근성 이름 계산이 span을 block으로 보는지에 달렸고,
+    // 그건 CSS(flex)에 좌우된다. jsdom은 Tailwind를 적용하지 않으므로 공백을 강제하지 않는다.
     expect(
-      screen.getByRole('button', { name: `${dict.posts.all} 3` }),
+      screen.getByRole('button', { name: /^개발\s*2$/ }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: /^문서\s*1$/ }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', {
+        name: new RegExp(`^${dict.posts.all}\\s*3$`),
+      }),
     ).toBeInTheDocument();
   });
 
@@ -147,7 +155,9 @@ describe('PostsExplorer 빈 상태(관측된 갭) @regression', () => {
   it('글이 0편이어도 필터 칩은 렌더되고 개수는 0이다', () => {
     renderExplorer([], []);
     expect(
-      screen.getByRole('button', { name: `${dict.posts.all} 0` }),
+      screen.getByRole('button', {
+        name: new RegExp(`^${dict.posts.all}\\s*0$`),
+      }),
     ).toBeInTheDocument();
   });
 });

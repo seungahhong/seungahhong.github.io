@@ -30,10 +30,10 @@ export default function Header({
   const { open: openSearch } = useSearch();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-bg">
+    <header className="border-line bg-bg sticky top-0 z-50 border-b">
       <nav
         aria-label={dict.nav.home}
-        className="mx-auto flex max-w-deck items-center justify-between px-[18px] py-[14px] md:px-[34px] md:py-[18px]"
+        className="max-w-deck mx-auto flex items-center justify-between px-[18px] py-[14px] md:px-[34px] md:py-[18px]"
       >
         {/* Brand */}
         <Link
@@ -41,7 +41,7 @@ export default function Header({
           className="flex items-baseline gap-2.5"
           aria-label={dict.brand.name}
         >
-          <span className="text-[19px] font-extrabold tracking-tight text-ink">
+          <span className="text-ink text-[19px] font-extrabold tracking-tight">
             {dict.brand.name}
           </span>
         </Link>
@@ -55,7 +55,7 @@ export default function Header({
                 <Link
                   href={localePath(locale, item.sub)}
                   aria-current={active ? 'page' : undefined}
-                  className={`text-sm font-medium transition-colors hover:text-accent ${
+                  className={`hover:text-accent text-sm font-medium transition-colors ${
                     active ? 'text-ink' : 'text-muted'
                   }`}
                 >
@@ -71,12 +71,12 @@ export default function Header({
           <button
             type="button"
             onClick={openSearch}
-            className="hidden items-center gap-2 rounded-lg border border-line bg-surface-2 px-3 py-[7px] text-[13px] text-faint transition-colors hover:border-accent md:flex"
+            className="border-line bg-surface-2 text-faint hover:border-accent hidden items-center gap-2 rounded-lg border px-3 py-[7px] text-[13px] transition-colors md:flex"
             aria-label={dict.nav.search}
           >
             <Search className="h-[15px] w-[15px]" aria-hidden="true" />
             <span>{dict.nav.search}</span>
-            <kbd className="ml-2 rounded border border-line bg-bg px-[5px] font-mono text-[10px] text-faint">
+            <kbd className="border-line bg-bg text-faint ml-2 rounded-sm border px-[5px] font-mono text-[10px]">
               ⌘K
             </kbd>
           </button>
@@ -90,7 +90,7 @@ export default function Header({
             aria-expanded={open}
             aria-controls="mobile-menu"
             onClick={() => setOpen((v) => !v)}
-            className="grid h-[34px] w-[34px] place-items-center rounded-lg border border-line bg-surface text-ink transition-colors hover:border-accent md:hidden"
+            className="border-line bg-surface text-ink hover:border-accent grid h-[34px] w-[34px] place-items-center rounded-lg border transition-colors md:hidden"
           >
             {open ? (
               <X className="h-4 w-4" aria-hidden="true" />
@@ -105,7 +105,7 @@ export default function Header({
       {open && (
         <div
           id="mobile-menu"
-          className="animate-menu-drop border-t border-line bg-surface px-[18px] py-4 md:hidden"
+          className="animate-menu-drop border-line bg-surface border-t px-[18px] py-4 md:hidden"
         >
           <button
             type="button"
@@ -113,7 +113,7 @@ export default function Header({
               setOpen(false);
               openSearch();
             }}
-            className="mb-3 flex w-full items-center gap-2.5 rounded-lg border border-line bg-bg px-3 py-2.5 text-[13.5px] text-faint"
+            className="border-line bg-bg text-faint mb-3 flex w-full items-center gap-2.5 rounded-lg border px-3 py-2.5 text-[13.5px]"
           >
             <Search className="h-4 w-4" aria-hidden="true" />
             <span>{dict.nav.searchPlaceholder}</span>
@@ -127,14 +127,14 @@ export default function Header({
                     href={localePath(locale, item.sub)}
                     onClick={() => setOpen(false)}
                     aria-current={active ? 'page' : undefined}
-                    className={`flex items-center justify-between border-b border-line py-3 text-base font-semibold ${
+                    className={`border-line flex items-center justify-between border-b py-3 text-base font-semibold ${
                       active ? 'text-accent' : 'text-ink'
                     }`}
                   >
                     {dict.nav[item.key]}
                     <span
                       aria-hidden="true"
-                      className="font-mono text-[13px] text-faint"
+                      className="text-faint font-mono text-[13px]"
                     >
                       →
                     </span>

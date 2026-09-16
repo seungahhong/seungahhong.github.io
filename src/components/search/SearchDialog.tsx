@@ -90,7 +90,7 @@ export default function SearchDialog({
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-end justify-center bg-black/40 md:items-start md:px-4 md:pt-[12vh]"
+      className="fixed inset-0 z-100 flex items-end justify-center bg-black/40 md:items-start md:px-4 md:pt-[12vh]"
       role="presentation"
       onClick={onClose}
     >
@@ -98,7 +98,7 @@ export default function SearchDialog({
         role="dialog"
         aria-modal="true"
         aria-label={dict.nav.search}
-        className="flex max-h-[85vh] w-full animate-sheet-up flex-col overflow-hidden rounded-t-2xl border border-line bg-surface shadow-card md:max-h-[70vh] md:max-w-xl md:animate-menu-drop md:rounded-xl"
+        className="animate-sheet-up border-line bg-surface shadow-card md:animate-menu-drop flex max-h-[85vh] w-full flex-col overflow-hidden rounded-t-2xl border md:max-h-[70vh] md:max-w-xl md:rounded-xl"
         onClick={(event) => event.stopPropagation()}
       >
         {/* 모바일 바텀시트 드래그 핸들(시각 표시) */}
@@ -106,11 +106,11 @@ export default function SearchDialog({
           className="flex justify-center pt-2.5 md:hidden"
           aria-hidden="true"
         >
-          <span className="h-1 w-9 rounded-full bg-line" />
+          <span className="bg-line h-1 w-9 rounded-full" />
         </div>
 
-        <div className="flex items-center gap-2.5 border-b border-line px-4">
-          <Search className="h-4 w-4 flex-none text-muted" aria-hidden="true" />
+        <div className="border-line flex items-center gap-2.5 border-b px-4">
+          <Search className="text-muted h-4 w-4 flex-none" aria-hidden="true" />
           <input
             ref={inputRef}
             type="text"
@@ -125,13 +125,13 @@ export default function SearchDialog({
             role="combobox"
             aria-expanded="true"
             aria-controls="search-results"
-            className="w-full bg-transparent py-3.5 text-[15px] text-ink outline-none placeholder:text-faint"
+            className="text-ink placeholder:text-faint w-full bg-transparent py-3.5 text-[15px] outline-hidden"
           />
           <button
             type="button"
             onClick={onClose}
             aria-label={dict.nav.closeMenu}
-            className="grid h-7 w-7 flex-none place-items-center rounded-md border border-line text-muted transition-colors hover:border-accent hover:text-accent"
+            className="border-line text-muted hover:border-accent hover:text-accent grid h-7 w-7 flex-none place-items-center rounded-md border transition-colors"
           >
             <X className="h-3.5 w-3.5" aria-hidden="true" />
           </button>
@@ -141,10 +141,10 @@ export default function SearchDialog({
           id="search-results"
           role="listbox"
           aria-label={dict.nav.search}
-          className="scrollbar-thin min-h-0 flex-1 overflow-y-auto p-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] md:pb-2"
+          className="min-h-0 flex-1 scrollbar-thin overflow-y-auto p-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] md:pb-2"
         >
           {results.length === 0 ? (
-            <li className="px-3 py-8 text-center text-[13.5px] text-muted">
+            <li className="text-muted px-3 py-8 text-center text-[13.5px]">
               {dict.nav.noResults}
             </li>
           ) : (
@@ -164,11 +164,11 @@ export default function SearchDialog({
                       {formatDate(doc.date, locale)}
                     </span>
                   </span>
-                  <span className="text-[14.5px] font-semibold text-ink">
+                  <span className="text-ink text-[14.5px] font-semibold">
                     {doc.title}
                   </span>
                   {doc.tags.length > 0 && (
-                    <span className="font-mono text-[11px] text-faint">
+                    <span className="text-faint font-mono text-[11px]">
                       {doc.tags.map((tag) => `#${tag}`).join('  ')}
                     </span>
                   )}
