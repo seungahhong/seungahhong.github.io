@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-17",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 63
+      "views": 64
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
@@ -35,11 +35,11 @@
       "views": 7
     },
     {
-      "slug": "2022-03-12-react-router-v6",
-      "views": 6
+      "slug": "2026-09-06-skills-governance",
+      "views": 7
     },
     {
-      "slug": "2026-09-06-skills-governance",
+      "slug": "2022-03-12-react-router-v6",
       "views": 6
     },
     {
@@ -135,6 +135,10 @@
       "views": 3
     },
     {
+      "slug": "2026-09-13-writing-specs-for-agents",
+      "views": 3
+    },
+    {
       "slug": "2020-09-12-fe-performance",
       "views": 2
     },
@@ -204,10 +208,6 @@
     },
     {
       "slug": "2026-09-05-frontier-development-teams",
-      "views": 2
-    },
-    {
-      "slug": "2026-09-13-writing-specs-for-agents",
       "views": 2
     },
     {
@@ -288,6 +288,10 @@
     },
     {
       "slug": "2024-12-05-react-v19",
+      "views": 1
+    },
+    {
+      "slug": "2026-09-15-vitest5",
       "views": 1
     }
   ]
