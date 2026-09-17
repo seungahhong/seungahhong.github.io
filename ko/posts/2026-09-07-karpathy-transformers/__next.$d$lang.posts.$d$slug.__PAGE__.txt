@@ -1,0 +1,478 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+4:I[64893,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],""]
+2:T6f2,{"@context":"https://schema.org","@type":"BlogPosting","headline":"트랜스포머는 범용 미분 가능 컴퓨터다 — 카파시 강의를 2026년에 다시 보기","description":"1. 이 글은 무엇에 관한 글인가? 안드레이 카파시(Andrej Karpathy)가 스탠포드 CS25에서 한 트랜스포머 특강 Introduction to Transformers를 보고 정리한 글입니다. 원 강의는 2023년 1월이고, 제가 본 건 한영 자막이 붙은 재업로드본입니다.…","datePublished":"2026-09-07","dateModified":"2026-09-07","inLanguage":"ko-KR","url":"https://seungahhong.github.io/ko/posts/2026-09-07-karpathy-transformers/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/ko/posts/2026-09-07-karpathy-transformers/"},"image":"https://seungahhong.github.io/blog-assets/2026/09/assets/07/thumbnail.png","keywords":["AI","LLM","트랜스포머","어텐션","nanoGPT"],"articleSection":"개발","wordCount":3972,"timeRequired":"PT9M","isPartOf":{"@id":"https://seungahhong.github.io/ko/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}11:X
+16:X
+16:C
+0:{"buildId":"7r92JUqy0AmDxDBdaPz9f","data":[{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"홈\",\"item\":\"https://seungahhong.github.io/ko/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"포스트\",\"item\":\"https://seungahhong.github.io/ko/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"트랜스포머는 범용 미분 가능 컴퓨터다 — 카파시 강의를 2026년에 다시 보기\",\"item\":\"https://seungahhong.github.io/ko/posts/2026-09-07-karpathy-transformers/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"트랜스포머는 범용 미분 가능 컴퓨터다 — 카파시 강의를 2026년에 다시 보기"}]]}]}],["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"트랜스포머는 범용 미분 가능 컴퓨터다 — 카파시 강의를 2026년에 다시 보기"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],"$L5","$L6","$L7","$L8","$L9"]}],false,"$La"]}],"$Lb","$Lc"]}],"$Ld"]}]}]],["$Le"],"$Lf"]}],"isPartial":"$@10","staleTime":"$11","varyParams":null},{"rsc":"$L12","isPartial":"$@13","staleTime":"$11","varyParams":null},{"rsc":"$L14","isPartial":"$@15","staleTime":"$11","varyParams":"$16"},{"rsc":"$L17","isPartial":"$@18","staleTime":"$11","varyParams":"$16"}],"isUpgradeableISRFallback":false,"a":"$@19","rootVaryParams":null,"needsRuntimeRequest":"$@1a"}
+1c:I[94917,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+1d:I[27722,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+1e:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"OutletBoundary"]
+1f:"$Sreact.suspense"
+21:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"ViewportBoundary"]
+22:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"MetadataBoundary"]
+23:I[20665,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"IconMark"]
+24:I[47221,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+25:I[60184,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+5:["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"홍승아"}]
+6:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+7:["$","time",null,{"dateTime":"2026-09-07","className":"meta-mono","children":"2026.09.07"}]
+8:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+9:["$","span",null,{"className":"meta-mono","children":[9,"분"]}]
+a:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/ko/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","LLM",{"children":["$","$L4",null,{"href":"/ko/tags?tag=LLM","className":"tag-pill","children":"LLM"}]}],["$","li","트랜스포머",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A8%B8","className":"tag-pill","children":"트랜스포머"}]}],["$","li","어텐션",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EC%96%B4%ED%85%90%EC%85%98","className":"tag-pill","children":"어텐션"}]}],["$","li","nanoGPT",{"children":["$","$L4",null,{"href":"/ko/tags?tag=nanoGPT","className":"tag-pill","children":"nanoGPT"}]}]]}]
+1b:T71b2,<h2 id="1-이-글은-무엇에-관한-글인가">1. 이 글은 무엇에 관한 글인가?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-이-글은-무엇에-관한-글인가"><span class="icon icon-link"></span></a></h2>
+<p>안드레이 카파시(Andrej Karpathy)가 스탠포드 CS25에서 한 트랜스포머 특강 <a href="https://www.youtube.com/watch?v=y2p8Va_zu00">Introduction to Transformers</a>를 보고 정리한 글입니다. 원 강의는 2023년 1월이고, 제가 본 건 한영 자막이 붙은 <a href="https://www.youtube.com/watch?v=y2p8Va_zu00">재업로드본</a>입니다.</p>
+<p>3년 전 강의를 지금 정리하는 게 이상해 보일 수 있습니다. 그런데 이 블로그가 최근에 쓴 글들을 늘어놓고 보면 이유가 분명해집니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">스킬 거버넌스 · 스펙 쓰는 법 · 하네스 · 컨텍스트 엔지니어링</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → 전부 "모델을 어떻게 둘러쌀 것인가"에 대한 글이다</span></span></code></pre></figure>
+<p>둘러싸는 얘기만 계속하다 보면 <strong>둘러싸이는 물건이 무엇인지</strong> 가 흐릿해집니다. 이 강의는 그 물건을 정확히 300줄짜리 코드로 뜯어서 보여줍니다.</p>
+<p>그리고 강의의 결론이 3년을 견뎠습니다. 한 줄로 줄이면 이렇습니다.</p>
+<blockquote>
+<p>트랜스포머는 번역을 위한 신경망이 아니다. <strong>표현력 있고, 최적화 가능하고, 하드웨어에서 효율적인 — 범용 미분 가능 컴퓨터</strong>다.</p>
+</blockquote>
+<p>이 문장이 왜 예언이 됐는지가 이 글의 내용입니다.</p>
+<hr>
+<h2 id="2-2012년-이전--작업마다-다른-도구였다">2. 2012년 이전 — 작업마다 다른 도구였다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-2012년-이전--작업마다-다른-도구였다"><span class="icon icon-link"></span></a></h2>
+<p>강의는 회고로 시작합니다. 딥러닝 이전에 AI 분야가 어떤 모양이었는지.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>분야</th><th>당시의 표준</th><th>무엇을 손으로 했나</th></tr></thead><tbody><tr><td><strong>컴퓨터 비전</strong></td><td>SIFT·HOG 같은 수동 특징 + 분류기</td><td><strong>특징 추출기를 사람이 설계</strong></td></tr><tr><td><strong>음성 인식</strong></td><td>음향 모델 + 발음 사전 + 언어 모델</td><td>단계마다 다른 모델을 따로 학습</td></tr><tr><td><strong>자연어 처리</strong></td><td>n-gram·파싱 파이프라인</td><td>언어학 지식을 규칙으로 인코딩</td></tr><tr><td><strong>강화학습</strong></td><td>작업별 정책 표현</td><td>상태 표현을 사람이 고름</td></tr></tbody></table>
+<p>핵심은 성능이 낮았다는 게 아닙니다. <strong>분야를 옮기면 배운 게 거의 안 통했다</strong> 는 것입니다. 비전 연구자와 음성 연구자는 같은 학회에 가지 않았고, 같은 코드를 읽지 않았습니다.</p>
+<p>2012년 AlexNet 이후 특징 추출이 학습으로 넘어갔고, 그다음 트랜스포머가 <strong>모델링 툴킷 자체를 하나로 합쳤습니다.</strong></p>
+<p>지금 우리가 "AI 엔지니어"라는 <strong>하나의 직군</strong>을 말할 수 있는 이유가 여기 있습니다. 2012년이었다면 그건 최소 네 개의 직군이었습니다.</p>
+<hr>
+<h2 id="3-어텐션은-아이디어가-아니라-병목에서-나왔다">3. 어텐션은 아이디어가 아니라 병목에서 나왔다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-어텐션은-아이디어가-아니라-병목에서-나왔다"><span class="icon icon-link"></span></a></h2>
+<p>강의에서 제일 재미있는 대목은 어텐션의 탄생 비화입니다. 카파시가 드미트리 바흐다나우(Dzmitry Bahdanau)에게 직접 받은 이메일을 읽어줍니다.</p>
+<p>문제는 이랬습니다. 당시 신경망 기계번역은 <strong>인코더가 문장 전체를 고정 길이 벡터 하나로 압축</strong> 하고, 디코더가 그걸 보고 번역했습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"나는 어제 도서관에서 빌린 책을 오늘 다 읽었다"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → [ 하나의 고정 길이 벡터 ]        ← 여기가 병목</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → "I finished the book ... today"</span></span></code></pre></figure>
+<p>문장이 길어지면 성능이 급격히 무너졌습니다. 벡터 하나에 다 안 들어가니까요.</p>
+<p>바흐다나우의 직관은 기술적이지 않았습니다. <strong>사람이 번역할 때 원문을 계속 흘끔거린다</strong> 는 것. 그래서 디코더가 매 단어를 낼 때마다 원문의 어느 위치를 볼지 <strong>직접 고르게</strong> 만들었습니다.</p>
+<p>세부 사항 두 개가 이 얘기를 좋아하게 만듭니다.</p>
+<ul>
+<li>처음 이름은 어텐션이 아니라 <strong>RNNSearch</strong> 였습니다. 검색에 가까운 이름이었던 것</li>
+<li><strong>"attention"이라는 이름은 요슈아 벤지오가 제안</strong> 했습니다. 이름이 붙자 개념이 퍼졌습니다</li>
+</ul>
+<p>그리고 2017년 <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a>가 나옵니다. 강의의 지적은 이 논문이 <strong>무언가를 더한 논문이 아니라 뺀 논문</strong> 이라는 것입니다. RNN을 들어내고 어텐션만 남겼습니다.</p>
+<blockquote>
+<p>병목을 메우려고 만든 보조 장치가, 결국 <strong>본체를 밀어냈습니다.</strong></p>
+</blockquote>
+<p>더 놀라운 건 그다음입니다. 그 아키텍처가 <strong>5년 넘게 거의 안 바뀌었습니다.</strong> 의미 있는 변경이라고 할 만한 건 레이어 노멀라이제이션 위치를 블록 앞으로 옮긴 정도입니다.</p>
+<hr>
+<h2 id="4-어텐션은-그래프-위의-메시지-전달이다">4. 어텐션은 그래프 위의 메시지 전달이다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-어텐션은-그래프-위의-메시지-전달이다"><span class="icon icon-link"></span></a></h2>
+<p>강의의 가장 값어치 있는 부분은 여기입니다. 어텐션을 수식이 아니라 <strong>통신 구조</strong> 로 설명합니다.</p>
+<p>토큰들을 <strong>방향 그래프의 노드</strong> 로 봅니다. 각 노드는 자기 벡터를 갖고 있고, 매 레이어마다 이웃과 한 번 통신합니다. 그 통신이 어텐션입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>내놓는 것</th><th>의미</th><th>사람 말로</th></tr></thead><tbody><tr><td><strong>Query</strong></td><td>이 노드가 찾는 것</td><td>"나는 지금 무엇이 궁금한가"</td></tr><tr><td><strong>Key</strong></td><td>이 노드가 가진 것</td><td>"나는 무엇에 대한 정보인가"</td></tr><tr><td><strong>Value</strong></td><td>이 노드가 전달할 것</td><td>"골라준다면 이걸 주겠다"</td></tr></tbody></table>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="python" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 노드마다 세 개를 내놓는다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">q </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Wq   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 나는 무엇을 찾고 있는가</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">k </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Wk   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 나는 무엇을 갖고 있는가</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">v </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Wv   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 내가 전달할 것은 무엇인가</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 내 query와 남의 key의 내적 = 그 노드에 얼마나 주목할지</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">w </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> softmax(q </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> k.T </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> sqrt(d))</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">out </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> w </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> v   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 가중 평균으로 정보를 받아온다</span></span></code></pre></figure>
+<p>여기서 결정적인 문장이 나옵니다.</p>
+<blockquote>
+<p>가중치가 <strong>데이터에 따라 달라집니다.</strong> 어텐션은 고정된 배선이 아니라 <strong>매 입력마다 새로 그려지는 라우팅</strong> 입니다.</p>
+</blockquote>
+<p>컨볼루션은 배선이 고정입니다 — 항상 옆 픽셀을 봅니다. 어텐션은 <strong>무엇을 볼지를 입력이 정합니다.</strong> 이 한 가지 차이가 뒤에 나올 확장성 전부의 원인입니다.</p>
+<p>그리고 이 관점이 좋은 이유가 하나 더 있습니다. <strong>아키텍처 변종이 전부 "간선을 어떻게 놓느냐"로 환원됩니다.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>변종</th><th>간선 배치</th></tr></thead><tbody><tr><td><strong>인코더</strong></td><td>모든 노드가 모든 노드를 본다</td></tr><tr><td><strong>디코더</strong></td><td>과거만 본다 (인과적 마스킹)</td></tr><tr><td><strong>크로스 어텐션</strong></td><td>다른 집합의 노드를 본다</td></tr><tr><td><strong>ViT</strong></td><td>이미지 패치를 노드로 놓는다</td></tr></tbody></table>
+<hr>
+<h2 id="5-nanogpt--아키텍처는-생각보다-작다">5. nanoGPT — 아키텍처는 생각보다 작다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-nanogpt--아키텍처는-생각보다-작다"><span class="icon icon-link"></span></a></h2>
+<p>강의는 중반부터 <a href="https://github.com/karpathy/nanoGPT">nanoGPT</a>를 띄워 놓고 한 줄씩 읽습니다. GPT 아키텍처 전체가 <strong>300줄 남짓</strong>입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>조각</th><th>하는 일</th></tr></thead><tbody><tr><td><strong>토큰 임베딩</strong></td><td>토큰 id → 벡터</td></tr><tr><td><strong>위치 임베딩</strong></td><td>어텐션은 순서를 모른다. 순서를 따로 넣어준다</td></tr><tr><td><strong>블록 × N</strong></td><td>인과적 셀프 어텐션 + MLP, 각각 잔차 연결</td></tr><tr><td><strong>레이어 노름</strong></td><td>블록 <strong>앞</strong> 에 붙는다(pre-LN)</td></tr><tr><td><strong>최종 선형층</strong></td><td>벡터 → 어휘 전체에 대한 로짓</td></tr></tbody></table>
+<p>블록 하나의 모양은 이렇게 요약됩니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">x = x + attention(layernorm(x))   ← 노드끼리 정보를 주고받는다 (통신)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">x = x + mlp(layernorm(x))         ← 받아온 정보를 각자 소화한다 (계산)</span></span></code></pre></figure>
+<p>카파시가 강조하는 건 <strong>잔차 연결(residual)</strong> 입니다. <code>x + ...</code> 모양 덕분에 입력에서 출력까지 <strong>덧셈만으로 이어지는 길</strong>이 뚫려 있습니다. 역전파에서 기울기가 이 길을 그대로 타고 내려가기 때문에, 층을 아주 깊게 쌓아도 학습이 됩니다.</p>
+<p>여기서 놀라야 할 것은 복잡함이 아니라 <strong>작음</strong>입니다. 우리가 "거대 언어 모델"이라 부르는 것의 거대함은 아키텍처가 아니라 <strong>파라미터 수와 데이터</strong>에 있습니다. 설계도 자체는 한 파일에 들어갑니다.</p>
+<hr>
+<h2 id="6-인과적-마스킹--한-줄이-만드는-훈련-효율">6. 인과적 마스킹 — 한 줄이 만드는 훈련 효율<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-인과적-마스킹--한-줄이-만드는-훈련-효율"><span class="icon icon-link"></span></a></h2>
+<p>디코더가 미래를 보면 안 됩니다. 다음 토큰을 맞히는 게 과제인데 답을 보고 있으면 학습이 안 되니까요.</p>
+<p>구현은 허무할 만큼 짧습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="python" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 상삼각(미래) 위치를 -inf로 채우면 softmax 후 가중치가 0이 된다</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">att </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> att.masked_fill(tril </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">==</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">float</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'-inf'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">))</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">att </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> softmax(att, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">dim</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span></code></pre></figure>
+<p>강의가 짚는 포인트는 "미래를 가린다"가 아니라 그 <strong>부수 효과</strong>입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>RNN</th><th>트랜스포머 + 인과 마스킹</th></tr></thead><tbody><tr><td><strong>시퀀스 처리</strong></td><td>앞에서 뒤로 순차</td><td>전 위치 <strong>동시에</strong></td></tr><tr><td><strong>한 시퀀스에서 얻는 학습 신호</strong></td><td>순차적으로 누적</td><td>길이 T면 <strong>T개를 한 번에</strong></td></tr><tr><td><strong>GPU 활용</strong></td><td>순차 의존 때문에 놀린다</td><td>큰 행렬 곱 하나로 채운다</td></tr></tbody></table>
+<p>길이 1024짜리 문장 하나를 넣으면, 1번째 토큰까지 보고 2번째를 맞히는 문제부터 1023번째까지 보고 1024번째를 맞히는 문제까지 <strong>1024개의 문제를 동시에 푸는</strong> 셈입니다. 마스킹 한 줄이 이걸 가능하게 합니다.</p>
+<p>학습 효율이 이렇게 높지 않았다면, 오늘의 스케일은 애초에 불가능했을 겁니다.</p>
+<hr>
+<h2 id="7-같은-블록이-도메인을-건너다닌다">7. 같은 블록이 도메인을 건너다닌다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-같은-블록이-도메인을-건너다닌다"><span class="icon icon-link"></span></a></h2>
+<p>강의 후반은 확장 사례입니다. 그리고 목록이 곧 논증입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>모델</th><th>도메인</th><th>무엇을 토큰으로 놓았나</th></tr></thead><tbody><tr><td><strong>ViT</strong></td><td>이미지</td><td>16×16 패치</td></tr><tr><td><strong>Whisper</strong></td><td>음성</td><td>스펙트로그램 조각</td></tr><tr><td><strong>Decision Transformer</strong></td><td>강화학습</td><td>(보상, 상태, 행동) 시퀀스</td></tr><tr><td><strong>AlphaFold</strong></td><td>단백질</td><td>아미노산 잔기</td></tr></tbody></table>
+<p>블록은 그대로입니다. 바뀐 건 <strong>무엇을 노드로 볼 것인가</strong> 하나뿐입니다.</p>
+<blockquote>
+<p>새 분야에 트랜스포머를 붙일 때 설계해야 하는 건 아키텍처가 아니라 <strong>토큰화</strong> 입니다.</p>
+</blockquote>
+<p>2012년 표와 나란히 놓으면 대비가 선명합니다. 분야마다 다른 도구였던 것이, 분야마다 <strong>다른 토큰 정의</strong>만 있으면 되는 것으로 바뀌었습니다.</p>
+<hr>
+<h2 id="8-gpt-3의-인컨텍스트-러닝--가중치를-안-고치고-배운다">8. GPT-3의 인컨텍스트 러닝 — 가중치를 안 고치고 배운다<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-gpt-3의-인컨텍스트-러닝--가중치를-안-고치고-배운다"><span class="icon icon-link"></span></a></h2>
+<p>강의는 GPT-3의 few-shot 능력을 다루면서 방향을 한 번 틉니다.</p>
+<p>기존의 "배운다"는 <strong>가중치를 고치는 일</strong>이었습니다. 그런데 GPT-3는 프롬프트에 예시 몇 개를 넣으면, <strong>가중치를 하나도 안 고치고</strong> 그 작업을 해냅니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">sea otter  → loutre de mer</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">cheese     → fromage</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">plush girafe → ???        ← 학습이 아니라 순전파 안에서 일어난다</span></span></code></pre></figure>
+<p>카파시가 붙이는 해석이 이 강의에서 제일 멀리 가는 지점입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>바깥 루프</th><th>안쪽 루프</th></tr></thead><tbody><tr><td><strong>무엇</strong></td><td>사전학습 (경사하강)</td><td>컨텍스트를 읽는 순전파</td></tr><tr><td><strong>무엇이 바뀌나</strong></td><td>가중치</td><td>활성값만</td></tr><tr><td><strong>언제</strong></td><td>학습 시점</td><td>추론 시점, 매번</td></tr></tbody></table>
+<p>바깥 루프가 안쪽 루프를 <strong>학습시킨 것</strong>입니다. 경사하강이 "패턴을 보고 맞춰가는 절차"를 가중치 안에 심었고, 그 절차가 순전파 안에서 돕니다. 카파시는 이걸 <strong>메타 러닝</strong>이라고 부릅니다.</p>
+<p>이 관점을 받아들이면 실무 하나가 재해석됩니다. <strong>컨텍스트 윈도우는 저장 공간이 아니라 프로그램이 적히는 곳</strong>입니다. 이 블로그가 <a href="/ko/posts/2026-07-31-context-engineering-claude5/">컨텍스트 엔지니어링</a>이나 <a href="/ko/posts/2026-09-13-writing-specs-for-agents/">스펙 쓰는 법</a>에서 계속 말해온 것 — 프롬프트를 코드처럼 다루라는 조언 — 의 근거가 여기 있습니다. 은유가 아니라, 진짜로 거기서 계산이 일어납니다.</p>
+<hr>
+<h2 id="9-트랜스포머가-이길-수밖에-없었던-세-가지">9. 트랜스포머가 이길 수밖에 없었던 세 가지<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-트랜스포머가-이길-수밖에-없었던-세-가지"><span class="icon icon-link"></span></a></h2>
+<p>강의의 결론입니다. 트랜스포머가 운이 좋았던 게 아니라, <strong>세 조건을 동시에 만족한 드문 후보</strong>였다는 것.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>조건</th><th>뜻</th><th>트랜스포머가 갖춘 방식</th></tr></thead><tbody><tr><td><strong>표현력이 있다</strong></td><td>순전파가 충분히 많은 것을 표현할 수 있다</td><td>데이터 의존 라우팅 + 층마다 전역 통신</td></tr><tr><td><strong>최적화가 된다</strong></td><td>역전파로 실제로 학습이 된다</td><td>잔차 연결 · 레이어 노름 · 부드러운 softmax</td></tr><tr><td><strong>효율적이다</strong></td><td>하드웨어를 채운다</td><td>순차 의존이 없어 <strong>큰 행렬 곱</strong>으로 환원된다</td></tr></tbody></table>
+<p>세 번째가 자주 과소평가됩니다. RNN은 앞 단계 결과가 나와야 다음을 계산하니 GPU를 놀립니다. 트랜스포머는 그 의존이 없어서 하드웨어를 꽉 채웁니다.</p>
+<blockquote>
+<p>아무리 표현력이 좋아도 학습이 안 되면 죽고, 학습이 돼도 GPU를 못 채우면 스케일에서 집니다. <strong>셋 다 맞춘 게 드물었습니다.</strong></p>
+</blockquote>
+<p>그래서 강의가 트랜스포머를 <strong>범용 미분 가능 컴퓨터</strong>라고 부릅니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>비유</th><th>의미</th></tr></thead><tbody><tr><td><strong>범용</strong></td><td>도메인에 묶이지 않는다 (7절)</td></tr><tr><td><strong>미분 가능</strong></td><td>데이터로 프로그래밍된다 — 사람이 짜지 않는다</td></tr><tr><td><strong>컴퓨터</strong></td><td>순전파가 곧 실행이다 (8절)</td></tr></tbody></table>
+<hr>
+<h2 id="10-qa에-남은-숙제--메모장">10. Q&#x26;A에 남은 숙제 — 메모장<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#10-qa에-남은-숙제--메모장"><span class="icon icon-link"></span></a></h2>
+<p>강의 말미의 Q&#x26;A에서 카파시는 앞으로 필요한 것으로 <strong>외부 메모리</strong>를 듭니다. 모델이 생각을 적어둘 <strong>메모장</strong>이 없다는 것.</p>
+<p>2023년엔 아쉬움이었습니다. 3년 뒤에 보면, 우리가 지금 매일 쓰는 게 대체로 그 메모장입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>2023년의 아쉬움</th><th>2026년의 대응물</th></tr></thead><tbody><tr><td>생각을 적어둘 곳이 없다</td><td>파일에 쓰는 계획·스펙·<code>SPEC.md</code></td></tr><tr><td>필요한 지식을 그때 불러올 수 없다</td><td>스킬 · 점진적 공개</td></tr><tr><td>컨텍스트가 한 덩어리다</td><td>서브에이전트 · 컨텍스트 분리</td></tr><tr><td>절차가 매번 즉흥이다</td><td>하네스 · 워크플로우</td></tr></tbody></table>
+<p>이 표가 이 글을 쓴 진짜 이유입니다. <strong>하네스와 스킬은 아키텍처 바깥의 유행이 아니라, 아키텍처가 비워둔 칸을 메우는 물건</strong>입니다. 모델이 못 하는 걸 대신 하는 게 아니라, 모델이 <strong>안 갖고 태어난 것</strong>을 붙여주는 쪽에 가깝습니다.</p>
+<hr>
+<h2 id="11-마무리--3년-전-강의가-지금-읽히는-방식">11. 마무리 — 3년 전 강의가 지금 읽히는 방식<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#11-마무리--3년-전-강의가-지금-읽히는-방식"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>강의의 주장</th><th>2026년에 확인된 것</th></tr></thead><tbody><tr><td><strong>1</strong></td><td>도구가 하나로 합쳐졌다</td><td>토큰화만 정의하면 도메인이 바뀐다</td></tr><tr><td><strong>2</strong></td><td>어텐션은 병목에서 나왔다</td><td>보조 장치가 본체를 밀어냈다</td></tr><tr><td><strong>3</strong></td><td>어텐션은 데이터 의존 라우팅이다</td><td>아키텍처 변종 = 간선 배치</td></tr><tr><td><strong>4</strong></td><td>아키텍처는 300줄이다</td><td>거대함은 설계도가 아니라 스케일에 있다</td></tr><tr><td><strong>5</strong></td><td>순전파가 곧 실행이다</td><td>컨텍스트 = 저장소가 아니라 프로그램</td></tr><tr><td><strong>6</strong></td><td>표현력·최적화·효율을 동시에</td><td>후속 아키텍처들의 채점 기준이 됐다</td></tr><tr><td><strong>7</strong></td><td>메모장이 필요하다</td><td>그게 지금의 스킬·하네스다</td></tr></tbody></table>
+<p>이 블로그가 최근에 쓴 글들과 겹쳐 보면 자리가 분명해집니다.</p>
+<ul>
+<li><a href="/ko/posts/2026-07-31-context-engineering-claude5/">컨텍스트 엔지니어링</a> — 순전파에 무엇을 적어 넣을 것인가</li>
+<li><a href="/ko/posts/2026-09-13-writing-specs-for-agents/">에이전트가 따르는 스펙 쓰는 법</a> — 그 프로그램을 <strong>무슨 모양</strong>으로 적을 것인가</li>
+<li><a href="/ko/posts/2026-09-06-skills-governance/">스킬 거버넌스</a> — 적어둔 것을 <strong>여러 사람이</strong> 공유할 때</li>
+<li>이번 글 — 그걸 <strong>읽는 물건</strong>이 애초에 어떻게 생겼는가</li>
+</ul>
+<p>에이전트를 다루는 일은 갈수록 모델 바깥의 일이 됩니다. 프롬프트, 스킬, 하네스, 검증. 그래서 오히려 <strong>안쪽을 한 번쯤 정확히 아는 게 값어치가 있습니다.</strong> 컨텍스트에 규칙을 더 넣을지 말지 같은 판단이, 안쪽 모양을 알면 감이 아니라 근거가 됩니다.</p>
+<p>300줄짜리 파일 하나를 읽는 데 한 시간이면 충분합니다.</p>
+<hr>
+<h2 id="참고-문서">참고 문서<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고-문서"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Andrej Karpathy, Stanford CS25 — <a href="https://www.youtube.com/watch?v=y2p8Va_zu00">Introduction to Transformers</a> (한영 자막본) · <a href="https://www.youtube.com/watch?v=XfpMkf4rD6E">원본</a></li>
+<li><a href="https://web.stanford.edu/class/cs25/">Stanford CS25: Transformers United</a></li>
+<li>Vaswani et al., <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a></li>
+<li>Bahdanau, Cho, Bengio, <a href="https://arxiv.org/abs/1409.0473">Neural Machine Translation by Jointly Learning to Align and Translate</a></li>
+<li>Karpathy, <a href="https://github.com/karpathy/nanoGPT">nanoGPT</a></li>
+<li>이전 글 — <a href="/ko/posts/2026-09-13-writing-specs-for-agents/">에이전트가 따르는 스펙 쓰는 법</a> · <a href="/ko/posts/2026-09-06-skills-governance/">스킬 거버넌스</a> · <a href="/ko/posts/2026-07-31-context-engineering-claude5/">컨텍스트 엔지니어링</a></li>
+</ul>b:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$1b"}}]}]
+c:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/ko/posts/2026-09-06-skills-governance","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L1c",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"이전 글"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"조직의 노하우는 이제 스킬에 산다 — 거버넌스 없는 스킬은 새로운 기술부채다"}]]}],["$","$L4",null,{"href":"/ko/posts/2026-09-13-writing-specs-for-agents","className":"group border-line bg-surface hover:border-accent flex flex-col items-end gap-1.5 rounded-xl border px-[18px] py-4 text-right transition-colors","rel":"next","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":["다음 글",["$","$L1c",null,{"icon":{"name":"arrow-right","size":24,"node":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}]]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"지시를 늘릴수록 덜 지켜진다 — 에이전트가 실제로 따르는 스펙 쓰는 법"}]]}]]}]
+d:["$","div",null,{"className":"hidden lg:block","children":["$","$L1d",null,{"headings":[{"id":"1-이-글은-무엇에-관한-글인가","text":"1. 이 글은 무엇에 관한 글인가?","depth":1},{"id":"2-2012년-이전--작업마다-다른-도구였다","text":"2. 2012년 이전 — 작업마다 다른 도구였다","depth":1},{"id":"3-어텐션은-아이디어가-아니라-병목에서-나왔다","text":"3. 어텐션은 아이디어가 아니라 병목에서 나왔다","depth":1},{"id":"4-어텐션은-그래프-위의-메시지-전달이다","text":"4. 어텐션은 그래프 위의 메시지 전달이다","depth":1},{"id":"5-nanogpt--아키텍처는-생각보다-작다","text":"5. nanoGPT — 아키텍처는 생각보다 작다","depth":1},{"id":"6-인과적-마스킹--한-줄이-만드는-훈련-효율","text":"6. 인과적 마스킹 — 한 줄이 만드는 훈련 효율","depth":1},{"id":"7-같은-블록이-도메인을-건너다닌다","text":"7. 같은 블록이 도메인을 건너다닌다","depth":1},{"id":"8-gpt-3의-인컨텍스트-러닝--가중치를-안-고치고-배운다","text":"8. GPT-3의 인컨텍스트 러닝 — 가중치를 안 고치고 배운다","depth":1},{"id":"9-트랜스포머가-이길-수밖에-없었던-세-가지","text":"9. 트랜스포머가 이길 수밖에 없었던 세 가지","depth":1},{"id":"10-qa에-남은-숙제--메모장","text":"10. Q&A에 남은 숙제 — 메모장","depth":1},{"id":"11-마무리--3년-전-강의가-지금-읽히는-방식","text":"11. 마무리 — 3년 전 강의가 지금 읽히는 방식","depth":1},{"id":"참고-문서","text":"참고 문서","depth":1}],"title":"목차"}]}]
+e:["$","script","script-0",{"src":"/_next/static/chunks/13tuup7jbc8xe.js","async":true}]
+f:["$","$L1e",null,{"children":["$","$1f",null,{"name":"Next.MetadataOutlet","children":"$@20"}]}]
+12:["$","$1","h",{"children":[null,["$","$L21",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L22",null,{"children":["$","$1f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"트랜스포머는 범용 미분 가능 컴퓨터다 — 카파시 강의를 2026년에 다시 보기 · 홍승아 기술 블로그"}],["$","meta","1",{"name":"description","content":"1. 이 글은 무엇에 관한 글인가? 안드레이 카파시(Andrej Karpathy)가 스탠포드 CS25에서 한 트랜스포머 특강 Introduction to Transformers를 보고 정리한 글입니다. 원 강의는 2023년 1월이고, 제가 본 건 한영 자막이 붙은 재업로드본입니다.…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"홍승아"}],["$","meta","4",{"name":"keywords","content":"AI,LLM,트랜스포머,어텐션,nanoGPT"}],["$","meta","5",{"name":"creator","content":"홍승아"}],["$","meta","6",{"name":"publisher","content":"홍승아"}],["$","meta","7",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://seungahhong.github.io/ko/posts/2026-09-07-karpathy-transformers/"}],["$","link","9",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-09-07-karpathy-transformers/"}],["$","link","10",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-09-07-karpathy-transformers/"}],["$","link","11",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-09-07-karpathy-transformers/"}],["$","meta","12",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","13",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","14",{"property":"og:title","content":"트랜스포머는 범용 미분 가능 컴퓨터다 — 카파시 강의를 2026년에 다시 보기"}],["$","meta","15",{"property":"og:description","content":"1. 이 글은 무엇에 관한 글인가? 안드레이 카파시(Andrej Karpathy)가 스탠포드 CS25에서 한 트랜스포머 특강 Introduction to Transformers를 보고 정리한 글입니다. 원 강의는 2023년 1월이고, 제가 본 건 한영 자막이 붙은 재업로드본입니다.…"}],["$","meta","16",{"property":"og:url","content":"https://seungahhong.github.io/ko/posts/2026-09-07-karpathy-transformers/"}],["$","meta","17",{"property":"og:locale","content":"ko-KR"}],["$","meta","18",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/07/thumbnail.png"}],["$","meta","19",{"property":"og:image:alt","content":"트랜스포머는 범용 미분 가능 컴퓨터다 — 카파시 강의를 2026년에 다시 보기"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2026-09-07"}],["$","meta","22",{"property":"article:modified_time","content":"2026-09-07"}],["$","meta","23",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","24",{"property":"article:section","content":"개발"}],["$","meta","25",{"property":"article:tag","content":"AI"}],["$","meta","26",{"property":"article:tag","content":"LLM"}],["$","meta","27",{"property":"article:tag","content":"트랜스포머"}],["$","meta","28",{"property":"article:tag","content":"어텐션"}],["$","meta","29",{"property":"article:tag","content":"nanoGPT"}],["$","meta","30",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","31",{"name":"twitter:title","content":"트랜스포머는 범용 미분 가능 컴퓨터다 — 카파시 강의를 2026년에 다시 보기"}],["$","meta","32",{"name":"twitter:description","content":"1. 이 글은 무엇에 관한 글인가? 안드레이 카파시(Andrej Karpathy)가 스탠포드 CS25에서 한 트랜스포머 특강 Introduction to Transformers를 보고 정리한 글입니다. 원 강의는 2023년 1월이고, 제가 본 건 한영 자막이 붙은 재업로드본입니다.…"}],["$","meta","33",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/07/thumbnail.png"}],["$","link","34",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L23","35",{}]]}]}]}],null]}]
+14:["$","$1","c",{"children":[null,["$","$L24",null,{"parallelRouterKey":"children","template":["$","$L25",null,{}]}]]}]
+17:["$","$1","c",{"children":[null,["$","$L24",null,{"parallelRouterKey":"children","template":["$","$L25",null,{}]}]]}]
+1a:true
+20:null
+11:300
+11:C
+19:0
+13:"$undefined"
+15:"$undefined"
+18:"$undefined"
+10:"$undefined"

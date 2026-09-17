@@ -1,0 +1,304 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+4:I[64893,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],""]
+2:T6cc,{"@context":"https://schema.org","@type":"BlogPosting","headline":"작동한다는 건 안전하다는 뜻이 아니다 — AI가 쓴 코드를 지키는 5가지 원칙","description":"1. 이 글은 무엇에 관한 글인가? IBM의 보안 아키텍트 Jeff Crume이 IBM Technology 채널에 올린 How Developers Secure AI-Generated Code: 5 Security Best Practices를 보고 정리한 글입니다. 한국어 자막본은…","datePublished":"2026-09-14","dateModified":"2026-09-14","inLanguage":"ko-KR","url":"https://seungahhong.github.io/ko/posts/2026-09-14-securing-ai-generated-code/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/ko/posts/2026-09-14-securing-ai-generated-code/"},"image":"https://seungahhong.github.io/blog-assets/2026/09/assets/14/thumbnail.png","keywords":["AI","보안","시프트레프트","DevSecOps","에이전트"],"articleSection":"개발","wordCount":3731,"timeRequired":"PT9M","isPartOf":{"@id":"https://seungahhong.github.io/ko/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}11:X
+16:X
+16:C
+0:{"buildId":"7r92JUqy0AmDxDBdaPz9f","data":[{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"홈\",\"item\":\"https://seungahhong.github.io/ko/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"포스트\",\"item\":\"https://seungahhong.github.io/ko/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"작동한다는 건 안전하다는 뜻이 아니다 — AI가 쓴 코드를 지키는 5가지 원칙\",\"item\":\"https://seungahhong.github.io/ko/posts/2026-09-14-securing-ai-generated-code/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"작동한다는 건 안전하다는 뜻이 아니다 — AI가 쓴 코드를 지키는 5가지 원칙"}]]}]}],["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"작동한다는 건 안전하다는 뜻이 아니다 — AI가 쓴 코드를 지키는 5가지 원칙"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],"$L5","$L6","$L7","$L8","$L9"]}],false,"$La"]}],"$Lb","$Lc"]}],"$Ld"]}]}]],["$Le"],"$Lf"]}],"isPartial":"$@10","staleTime":"$11","varyParams":null},{"rsc":"$L12","isPartial":"$@13","staleTime":"$11","varyParams":null},{"rsc":"$L14","isPartial":"$@15","staleTime":"$11","varyParams":"$16"},{"rsc":"$L17","isPartial":"$@18","staleTime":"$11","varyParams":"$16"}],"isUpgradeableISRFallback":false,"a":"$@19","rootVaryParams":null,"needsRuntimeRequest":"$@1a"}
+1c:I[94917,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+1d:I[27722,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+1e:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"OutletBoundary"]
+1f:"$Sreact.suspense"
+21:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"ViewportBoundary"]
+22:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"MetadataBoundary"]
+23:I[20665,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"IconMark"]
+24:I[47221,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+25:I[60184,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+5:["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"홍승아"}]
+6:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+7:["$","time",null,{"dateTime":"2026-09-14","className":"meta-mono","children":"2026.09.14"}]
+8:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+9:["$","span",null,{"className":"meta-mono","children":[9,"분"]}]
+a:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/ko/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","보안",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EB%B3%B4%EC%95%88","className":"tag-pill","children":"보안"}]}],["$","li","시프트레프트",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EC%8B%9C%ED%94%84%ED%8A%B8%EB%A0%88%ED%94%84%ED%8A%B8","className":"tag-pill","children":"시프트레프트"}]}],["$","li","DevSecOps",{"children":["$","$L4",null,{"href":"/ko/tags?tag=DevSecOps","className":"tag-pill","children":"DevSecOps"}]}],["$","li","에이전트",{"children":["$","$L4",null,{"href":"/ko/tags?tag=%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8","className":"tag-pill","children":"에이전트"}]}]]}]
+1b:T5c43,<h2 id="1-이-글은-무엇에-관한-글인가">1. 이 글은 무엇에 관한 글인가?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-이-글은-무엇에-관한-글인가"><span class="icon icon-link"></span></a></h2>
+<p>IBM의 보안 아키텍트 Jeff Crume이 IBM Technology 채널에 올린 <a href="https://www.youtube.com/watch?v=X0UI0O8YzJM">How Developers Secure AI-Generated Code: 5 Security Best Practices</a>를 보고 정리한 글입니다. 한국어 자막본은 <a href="https://www.youtube.com/watch?v=xdtHydnLmcU">여기</a>에 있습니다.</p>
+<p>11분짜리 영상이고, 주장은 한 문장으로 줄어듭니다.</p>
+<blockquote>
+<p>AI는 <strong>코드를 만드는 속도</strong> 는 바꿨지만, <strong>코드를 검증하는 속도</strong> 는 바꾸지 않았다. 그 격차를 메우는 방법은 검증을 왼쪽으로 옮기는 것뿐이다.</p>
+</blockquote>
+<p>익숙한 이야기처럼 들립니다. 시프트 레프트는 10년 넘은 단어니까요. 그런데 이 영상이 짚는 건 <strong>왜 하필 지금 그게 필수가 되었는가</strong> 입니다. 사후 보안 검토라는 방식은 원래 <strong>"사람이 쓴 코드의 양"</strong> 을 전제로 설계된 것이었습니다. 그 전제가 깨지면 방식도 같이 깨집니다.</p>
+<p><a href="/ko/posts/2026-09-13-writing-specs-for-agents/">지난 글</a>이 <strong>에이전트에게 무엇을 시킬 것인가</strong> 였다면, 이 글은 그 반대편입니다 — <strong>에이전트가 만들어낸 것을 무엇으로 붙잡을 것인가.</strong></p>
+<hr>
+<h2 id="2-왜-나중에-보안-검토가-더-이상-안-통하는가">2. 왜 "나중에 보안 검토"가 더 이상 안 통하는가<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-왜-나중에-보안-검토가-더-이상-안-통하는가"><span class="icon icon-link"></span></a></h2>
+<p>전통적인 파이프라인에서 보안은 대체로 오른쪽 끝에 있었습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">기획 → 설계 → 개발 → 테스트 → [보안 검토] → 배포</span></span></code></pre></figure>
+<p>이 배치가 성립했던 이유는 단순합니다. <strong>개발이 느렸기 때문입니다.</strong> 한 스프린트에 나오는 코드의 양이 보안팀이 감당할 수 있는 양보다 적었고, 그래서 마지막에 한 번 훑는 것으로 충분했습니다.</p>
+<p>AI 지원 개발은 이 수식의 한쪽 항만 몇 배로 키웁니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>사람이 쓰던 시절</th><th>AI가 쓰는 지금</th></tr></thead><tbody><tr><td><strong>코드 생산량</strong></td><td>스프린트당 수백~수천 줄</td><td>하루에도 수천 줄</td></tr><tr><td><strong>리뷰 역량</strong></td><td>같음</td><td><strong>같음</strong></td></tr><tr><td><strong>보안 검토 지점</strong></td><td>배포 직전 1회</td><td>배포 직전 1회</td></tr></tbody></table>
+<p>생산만 10배가 되고 검증은 그대로면, 오른쪽 끝의 게이트는 <strong>병목이 되거나, 형식이 되거나</strong> 둘 중 하나입니다. 병목이 되면 팀이 우회하고, 형식이 되면 아무것도 못 잡습니다. 어느 쪽이든 결과는 같습니다.</p>
+<p>그리고 여기에 비용 곡선이 겹칩니다. 결함을 늦게 발견할수록 고치는 비용이 커진다는 건 오래된 관찰인데, 이 비대칭이야말로 시프트 레프트의 원래 논거입니다. 코딩 중에 잡으면 편집기 안에서 끝나고, 운영에서 잡으면 인시던트가 됩니다.</p>
+<blockquote>
+<p>요점은 <strong>"AI 코드가 특별히 위험하다"</strong> 가 아닙니다. <strong>검토받지 않은 코드가 위험한 것</strong> 이고, AI는 검토받지 않은 코드를 만들기 아주 쉽게 만들어줬을 뿐입니다.</p>
+</blockquote>
+<hr>
+<h2 id="3-원칙-1--과정이-아니라-결과를-검증하라">3. 원칙 1 — 과정이 아니라 결과를 검증하라<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-원칙-1--과정이-아니라-결과를-검증하라"><span class="icon icon-link"></span></a></h2>
+<p>첫 번째 원칙이 가장 반직관적입니다. <strong>"AI가 어떻게 만들었는지"를 붙잡으려 하지 말라</strong> 는 것입니다.</p>
+<p>프롬프트를 다듬고, 모델을 바꾸고, "보안을 지켜서 짜줘"를 시스템 프롬프트에 박는 건 전부 <strong>생성 과정</strong> 에 거는 베팅입니다. 확률적으로 나아질 수는 있지만, <strong>보장이 되지는 않습니다.</strong> 같은 프롬프트가 내일 다른 코드를 뱉을 수 있고, 모델 업데이트 한 번에 조용히 달라질 수 있습니다.</p>
+<p>그래서 붙잡아야 하는 건 산출물입니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">❌ "이 모델은 안전한 코드를 쓴다" → 신뢰</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">✅ "이 코드가 안전한지 확인했다" → 검증</span></span></code></pre></figure>
+<p>특히 조심해야 할 착각이 하나 있습니다.</p>
+<blockquote>
+<p><strong>테스트가 통과한다 ≠ 안전하다</strong></p>
+</blockquote>
+<p>테스트는 <strong>의도한 동작</strong> 을 검사합니다. 보안 결함은 대체로 <strong>의도하지 않은 동작</strong> 입니다. SQL 인젝션이 되는 코드도 정상 입력에는 완벽하게 잘 돌아갑니다. 권한 체크를 빠뜨린 엔드포인트도 권한 있는 사용자의 요청에는 정확히 200을 돌려줍니다. 기능 테스트 스위트가 초록이라는 사실은 그 자리에서 아무 말도 해주지 않습니다.</p>
+<p>영상이 강조하는 검증 축은 <strong>실제 운영 환경에서의 동작과 권한</strong> 입니다. 로컬에서 되는 것과, 실제 자격증명·실제 네트워크 경계·실제 데이터 접근 권한을 가진 채로 도는 것은 다른 이야기입니다.</p>
+<hr>
+<h2 id="4-원칙-2--검사를-코딩하는-자리로-끌어와라">4. 원칙 2 — 검사를 코딩하는 자리로 끌어와라<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-원칙-2--검사를-코딩하는-자리로-끌어와라"><span class="icon icon-link"></span></a></h2>
+<p>두 번째가 시프트 레프트의 본체입니다. 보안 검사를 <strong>파이프라인의 단계가 아니라 편집 중의 피드백</strong> 으로 만드는 것.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>옮기기 전</th><th>옮긴 후</th></tr></thead><tbody><tr><td>배포 직전 SAST 리포트</td><td>저장할 때마다 정적 분석</td></tr><tr><td>분기별 취약점 스캔</td><td>PR마다 의존성 스캔</td></tr><tr><td>사고 후 시크릿 로테이션</td><td>커밋 훅에서 시크릿 탐지</td></tr><tr><td>보안팀이 티켓으로 통보</td><td>작성자가 그 자리에서 빨간 줄로 확인</td></tr></tbody></table>
+<p>여기서 중요한 건 도구 목록이 아니라 <strong>누가 언제 보는가</strong> 입니다. 같은 SAST라도 2주 뒤 티켓으로 오면 컨텍스트 스위칭 비용이 붙고, 대개 "나중에"로 밀립니다. 코딩 중에 뜨면 그냥 고칩니다. 도구가 바뀐 게 아니라 <strong>비용이 바뀐 것</strong> 입니다.</p>
+<p>에이전트를 쓰는 환경에서는 이 원칙이 한 단계 더 나갑니다. 검사를 에이전트의 루프 <strong>안</strong> 에 두면, 에이전트가 자기가 만든 결함을 자기 턴에 고칩니다. 훅이나 하네스로 린트·타입체크·테스트를 강제로 돌리는 구성은 이미 이 블로그에서 여러 번 다룬 이야기인데(<a href="/ko/posts/2026-08-25-agentic-code-quality/">코드 품질은 제약에 있다</a>), 보안 스캔도 그 목록에 들어가야 할 항목이라는 게 이 절의 결론입니다.</p>
+<hr>
+<h2 id="5-원칙-3--ai가-끌고-들어온-의존성을-의심하라">5. 원칙 3 — AI가 끌고 들어온 의존성을 의심하라<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-원칙-3--ai가-끌고-들어온-의존성을-의심하라"><span class="icon icon-link"></span></a></h2>
+<p>세 번째가 실무에서 제일 자주 놓치는 지점입니다. <strong>생성된 코드는 읽는데, 생성된 <code>package.json</code>은 안 읽습니다.</strong></p>
+<p>에이전트에게 "이미지 리사이즈 기능 붙여줘"라고 하면 코드만 오지 않습니다. 패키지가 딸려 옵니다. 그리고 그 패키지는 대개 <strong>리뷰 없이</strong> 들어옵니다 — diff에서 한 줄이고, 설치가 성공했고, 테스트가 통과했으니까요.</p>
+<p>확인해야 할 축은 셋입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>축</th><th>질문</th></tr></thead><tbody><tr><td><strong>평판·유지보수</strong></td><td>실제로 쓰이는 패키지인가? 마지막 커밋이 언제인가? 이름이 유명 패키지와 한 글자 다르지 않은가(타이포스쿼팅)?</td></tr><tr><td><strong>라이선스</strong></td><td>우리 배포 형태에서 쓸 수 있는 라이선스인가?</td></tr><tr><td><strong>공급망 위험</strong></td><td>전이 의존성까지 포함해 알려진 CVE가 있는가? 설치 스크립트가 붙어 있는가?</td></tr></tbody></table>
+<p>특히 첫 번째 칸에 AI 고유의 위험이 하나 있습니다. 모델은 <strong>존재하지 않는 패키지 이름을 그럴듯하게 지어내기도</strong> 하고, 이 환각된 이름을 공격자가 선점해 실제 패키지로 올려두는 수법이 알려져 있습니다. 에이전트가 제안한 이름을 그대로 <code>pnpm add</code> 하는 습관은 그래서 위험합니다. <strong>패키지 이름은 코드가 아니라 신뢰 결정입니다.</strong></p>
+<p>실천은 의외로 싱겁습니다 — 락파일 diff를 리뷰 대상에 포함시키고, 의존성 추가를 사람이 승인하는 지점으로 두는 것. 에이전트 스펙에 "새 의존성 추가는 먼저 물어볼 것"을 ⚠️ 등급으로 박아두는 것만으로도 대부분 걸립니다.</p>
+<hr>
+<h2 id="6-원칙-4--구현이-아니라-의도를-검증하라">6. 원칙 4 — 구현이 아니라 의도를 검증하라<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-원칙-4--구현이-아니라-의도를-검증하라"><span class="icon icon-link"></span></a></h2>
+<p>네 번째가 가장 사람 손이 필요한 자리입니다.</p>
+<p>정적 분석은 <strong>코드가 잘못 쓰였는지</strong> 를 찾습니다. 찾지 못하는 건 <strong>코드가 잘못된 것을 하고 있는지</strong> 입니다. 후자는 문법의 문제가 아니라 <strong>요구사항 해석의 문제</strong> 라서, 스캐너에게는 완벽히 정상으로 보입니다.</p>
+<p>전형적인 모양은 이렇습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">요구: "사용자가 자기 주문 내역을 조회할 수 있어야 한다"</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">에이전트 구현: GET /orders → 전체 주문 반환</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  -</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> 인젝션 없음 ✅</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  -</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> 인증 통과 ✅        (로그인은 확인함)</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  -</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> 인가 누락 ❌        (누구의 주문인지는 확인 안 함)</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  -</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> 테스트 통과 ✅      (본인 주문으로만 테스트했으니까)</span></span></code></pre></figure>
+<p>여기서 실패한 건 코딩이 아니라 <strong>"자기"라는 단어의 해석</strong> 입니다. 에이전트는 요구사항을 문자 그대로 만족시켰고, 모든 자동 검사를 통과했습니다. 이걸 잡으려면 누군가 <strong>"이 코드가 요구사항이 의도한 범위 안에서만 움직이는가"</strong> 를 물어야 합니다.</p>
+<p>체크할 만한 질문들:</p>
+<ul>
+<li>이 코드가 <strong>접근 권한 밖의 데이터</strong> 에 닿을 수 있는가?</li>
+<li>비즈니스 규칙(한도·상태 전이·소유권)이 코드에 실제로 들어가 있는가, 아니면 프론트엔드에만 있는가?</li>
+<li>에러 경로·경계값·빈 값에서도 같은 규칙이 지켜지는가?</li>
+</ul>
+<p>이 절은 <a href="/ko/posts/2026-09-13-writing-specs-for-agents/">스펙 글</a>의 마지막 문단과 정확히 이어집니다. 자가 검증은 <strong>에이전트가 자기 작업을 자기 스펙에 대보는 것</strong> 이라, <strong>스펙 자체가 애매하면 전부 통과합니다.</strong> 의도 검증이 사람의 자리로 남는 이유가 그것입니다.</p>
+<hr>
+<h2 id="7-원칙-5--게이트가-아니라-습관으로">7. 원칙 5 — 게이트가 아니라 습관으로<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-원칙-5--게이트가-아니라-습관으로"><span class="icon icon-link"></span></a></h2>
+<p>마지막은 시간축입니다. 앞의 넷을 다 해도, 그게 <strong>한 번뿐이면</strong> 유효기간이 짧습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">개발 → 테스트 → 배포 → 모니터링 → 다시 개발</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   ↑</span><span style="--shiki-light:#0E1116;--shiki-light-font-style:italic;--shiki-dark:#F0F3F6;--shiki-dark-font-style:italic">__</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">____________________________________|</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        보안은 이 루프 전체에 붙어 있어야 한다</span></span></code></pre></figure>
+<p>배포 시점에 깨끗했던 코드가 나중에 취약해지는 경로는 여럿입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>경로</th><th>설명</th></tr></thead><tbody><tr><td><strong>새 CVE 공개</strong></td><td>코드는 그대로인데 의존성에 취약점이 생긴다</td></tr><tr><td><strong>설정 드리프트</strong></td><td>권한·시크릿·네트워크 규칙이 운영 중에 느슨해진다</td></tr><tr><td><strong>에이전트의 후속 변경</strong></td><td>다음 턴의 에이전트가 앞의 방어를 지운다</td></tr></tbody></table>
+<p>세 번째가 AI 시대의 새 항목입니다. 에이전트는 <strong>이전에 왜 그렇게 짜여 있었는지</strong> 를 모릅니다. 방어적으로 넣어둔 검증 한 줄이 "불필요한 코드"로 보이면 리팩터링하면서 지웁니다. 그래서 <strong>가드레일은 코드가 아니라 코드 밖에 있어야</strong> 합니다 — 지워지면 테스트가 빨개지거나, 훅이 막거나, 정책이 거부하는 형태로.</p>
+<p>이 지점에서 원칙 1이 다시 돌아옵니다. 에이전트의 <strong>행동</strong> 을 믿는 대신, 에이전트가 <strong>넘지 못하는 경계</strong> 를 만드는 것. 프롬프트는 부탁이고, 훅과 테스트와 권한은 제약입니다.</p>
+<hr>
+<h2 id="8-이-저장소에-대입해보면">8. 이 저장소에 대입해보면<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-이-저장소에-대입해보면"><span class="icon icon-link"></span></a></h2>
+<p>이 블로그 저장소 기준으로 다섯 원칙이 어디까지 와 있는지 세어봤습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>원칙</th><th>현재 상태</th></tr></thead><tbody><tr><td><strong>1. 결과 검증</strong></td><td>부분적 — <code>pnpm test</code>·<code>pnpm e2e</code>가 있고 axe 접근성 검사까지 돌지만, 전부 <strong>기능</strong> 오라클이다</td></tr><tr><td><strong>2. 시프트 레프트</strong></td><td>있음 — husky <code>pre-commit</code>이 lint → vitest → playwright를 커밋 전에 강제한다</td></tr><tr><td><strong>3. 의존성 검증</strong></td><td><strong>없음</strong> — 자동 감사가 없다. 최근 메이저 업그레이드도 사람이 판단했다</td></tr><tr><td><strong>4. 의도 검증</strong></td><td>사람 — 콘텐츠 규약 테스트가 일부를 맡지만(카테고리 표기·번역 1:1), 나머지는 리뷰</td></tr><tr><td><strong>5. 지속 검증</strong></td><td>부분적 — <code>deploy.yml</code>이 푸시마다 전부 돌리지만, 코드가 안 바뀌면 아무것도 안 돈다</td></tr></tbody></table>
+<p>정직하게 보면 <strong>3번이 비어 있고, 5번이 이벤트 기반이라 새 CVE를 못 잡습니다.</strong> 정적 블로그라 공격 표면이 작긴 하지만, 빈 칸은 빈 칸입니다. 값싼 보강 두 개는 이렇습니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="yaml" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="yaml" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># ① pre-commit이나 CI에 감사 한 줄 — 원칙 3</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">pnpm audit --audit-level=high</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># ② 코드 변경이 없어도 도는 주기 검사 — 원칙 5</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#    refresh-popular.yml처럼 schedule 트리거를 쓰면 된다</span></span>
+<span data-line=""><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">on</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">:</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  schedule</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">:</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    - </span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">cron</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'0 0 * * 1'</span></span></code></pre></figure>
+<p>이미 인기글 스냅샷을 갱신하는 크론(<code>refresh-popular.yml</code>)이 매일 도는 저장소라 <strong>주기 실행의 배관은 이미 깔려 있습니다.</strong> 5번이 비어 있는 건 어려워서가 아니라, 그냥 안 해서입니다. 대개 그렇습니다.</p>
+<hr>
+<h2 id="9-정리">9. 정리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-정리"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>원칙</th><th>한 줄</th></tr></thead><tbody><tr><td><strong>1</strong></td><td>과정이 아니라 결과를 검증하라</td><td>잘 도는 것과 안전한 것은 다르다. 테스트 통과 ≠ 안전</td></tr><tr><td><strong>2</strong></td><td>검사를 코딩 자리로 끌어와라</td><td>도구가 아니라 <strong>발견 시점의 비용</strong> 을 바꾸는 일이다</td></tr><tr><td><strong>3</strong></td><td>생성된 의존성을 의심하라</td><td>코드는 읽으면서 <code>package.json</code>은 안 읽는다. 환각된 패키지명 주의</td></tr><tr><td><strong>4</strong></td><td>구현이 아니라 의도를 검증하라</td><td>스캐너가 못 잡는 건 <strong>요구사항 해석</strong>의 결함이다</td></tr><tr><td><strong>5</strong></td><td>게이트가 아니라 습관으로</td><td>배포 시점에 깨끗했다는 건 오늘도 깨끗하다는 뜻이 아니다</td></tr></tbody></table>
+<p>이 블로그에서 이어온 이야기와 겹쳐보면 자리가 분명해집니다.</p>
+<ul>
+<li><a href="/ko/posts/2026-08-25-agentic-code-quality/">코드 품질은 제약에 있다</a> — 리뷰가 안 되는 규모에서 <strong>제약</strong> 으로 품질을 지킨다</li>
+<li><a href="/ko/posts/2026-08-23-ai-native-sdlc-playbook/">AI 네이티브 SDLC 플레이북</a> — 코드가 병목이 아니게 되면 <strong>검증이 병목이 된다</strong></li>
+<li><a href="/ko/posts/2026-09-13-writing-specs-for-agents/">지시를 늘릴수록 덜 지켜진다</a> — 스펙이 애매하면 자가 검증은 전부 통과한다</li>
+<li>이번 글 — 그 검증 목록에 <strong>보안</strong> 을 어떤 모양으로 끼워 넣을 것인가</li>
+</ul>
+<p>다섯 원칙을 다시 보면 새로운 건 사실 하나도 없습니다. 시프트 레프트도, 의존성 검사도, 의도 검증도 전부 예전부터 하라고 하던 것들입니다. 달라진 건 <strong>안 해도 버틸 수 있었던 여유가 사라졌다</strong> 는 점뿐입니다. 생산 속도만 10배가 되면, 지금까지 관성으로 메우던 간극이 그대로 드러납니다.</p>
+<hr>
+<h2 id="참고-문서">참고 문서<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고-문서"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>IBM Technology, <a href="https://www.youtube.com/watch?v=X0UI0O8YzJM">How Developers Secure AI-Generated Code: 5 Security Best Practices</a> (한국어 자막본: <a href="https://www.youtube.com/watch?v=xdtHydnLmcU">Tech Bridge</a>)</li>
+<li>IBM, <a href="https://www.ibm.com/think/topics/shift-left-security">What Is Shift-Left Security?</a></li>
+<li>OWASP, <a href="https://owasp.org/www-project-top-ten/">Top 10</a> · <a href="https://owasp.org/www-project-dependency-check/">Dependency-Check</a></li>
+<li>이전 글 — <a href="/ko/posts/2026-09-13-writing-specs-for-agents/">지시를 늘릴수록 덜 지켜진다</a> · <a href="/ko/posts/2026-08-25-agentic-code-quality/">코드 품질은 제약에 있다</a> · <a href="/ko/posts/2026-08-23-ai-native-sdlc-playbook/">AI 네이티브 SDLC 플레이북</a></li>
+</ul>b:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$1b"}}]}]
+c:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/ko/posts/2026-09-13-writing-specs-for-agents","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L1c",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"이전 글"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"지시를 늘릴수록 덜 지켜진다 — 에이전트가 실제로 따르는 스펙 쓰는 법"}]]}],["$","$L4",null,{"href":"/ko/posts/2026-09-15-vitest5","className":"group border-line bg-surface hover:border-accent flex flex-col items-end gap-1.5 rounded-xl border px-[18px] py-4 text-right transition-colors","rel":"next","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":["다음 글",["$","$L1c",null,{"icon":{"name":"arrow-right","size":24,"node":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}]]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"Vitest 5.0"}]]}]]}]
+d:["$","div",null,{"className":"hidden lg:block","children":["$","$L1d",null,{"headings":[{"id":"1-이-글은-무엇에-관한-글인가","text":"1. 이 글은 무엇에 관한 글인가?","depth":1},{"id":"2-왜-나중에-보안-검토가-더-이상-안-통하는가","text":"2. 왜 \"나중에 보안 검토\"가 더 이상 안 통하는가","depth":1},{"id":"3-원칙-1--과정이-아니라-결과를-검증하라","text":"3. 원칙 1 — 과정이 아니라 결과를 검증하라","depth":1},{"id":"4-원칙-2--검사를-코딩하는-자리로-끌어와라","text":"4. 원칙 2 — 검사를 코딩하는 자리로 끌어와라","depth":1},{"id":"5-원칙-3--ai가-끌고-들어온-의존성을-의심하라","text":"5. 원칙 3 — AI가 끌고 들어온 의존성을 의심하라","depth":1},{"id":"6-원칙-4--구현이-아니라-의도를-검증하라","text":"6. 원칙 4 — 구현이 아니라 의도를 검증하라","depth":1},{"id":"7-원칙-5--게이트가-아니라-습관으로","text":"7. 원칙 5 — 게이트가 아니라 습관으로","depth":1},{"id":"8-이-저장소에-대입해보면","text":"8. 이 저장소에 대입해보면","depth":1},{"id":"9-정리","text":"9. 정리","depth":1},{"id":"참고-문서","text":"참고 문서","depth":1}],"title":"목차"}]}]
+e:["$","script","script-0",{"src":"/_next/static/chunks/13tuup7jbc8xe.js","async":true}]
+f:["$","$L1e",null,{"children":["$","$1f",null,{"name":"Next.MetadataOutlet","children":"$@20"}]}]
+12:["$","$1","h",{"children":[null,["$","$L21",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L22",null,{"children":["$","$1f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"작동한다는 건 안전하다는 뜻이 아니다 — AI가 쓴 코드를 지키는 5가지 원칙 · 홍승아 기술 블로그"}],["$","meta","1",{"name":"description","content":"1. 이 글은 무엇에 관한 글인가? IBM의 보안 아키텍트 Jeff Crume이 IBM Technology 채널에 올린 How Developers Secure AI-Generated Code: 5 Security Best Practices를 보고 정리한 글입니다. 한국어 자막본은…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"홍승아"}],["$","meta","4",{"name":"keywords","content":"AI,보안,시프트레프트,DevSecOps,에이전트"}],["$","meta","5",{"name":"creator","content":"홍승아"}],["$","meta","6",{"name":"publisher","content":"홍승아"}],["$","meta","7",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://seungahhong.github.io/ko/posts/2026-09-14-securing-ai-generated-code/"}],["$","link","9",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-09-14-securing-ai-generated-code/"}],["$","link","10",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-09-14-securing-ai-generated-code/"}],["$","link","11",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-09-14-securing-ai-generated-code/"}],["$","meta","12",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","13",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","14",{"property":"og:title","content":"작동한다는 건 안전하다는 뜻이 아니다 — AI가 쓴 코드를 지키는 5가지 원칙"}],["$","meta","15",{"property":"og:description","content":"1. 이 글은 무엇에 관한 글인가? IBM의 보안 아키텍트 Jeff Crume이 IBM Technology 채널에 올린 How Developers Secure AI-Generated Code: 5 Security Best Practices를 보고 정리한 글입니다. 한국어 자막본은…"}],["$","meta","16",{"property":"og:url","content":"https://seungahhong.github.io/ko/posts/2026-09-14-securing-ai-generated-code/"}],["$","meta","17",{"property":"og:locale","content":"ko-KR"}],["$","meta","18",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/14/thumbnail.png"}],["$","meta","19",{"property":"og:image:alt","content":"작동한다는 건 안전하다는 뜻이 아니다 — AI가 쓴 코드를 지키는 5가지 원칙"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2026-09-14"}],["$","meta","22",{"property":"article:modified_time","content":"2026-09-14"}],["$","meta","23",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","24",{"property":"article:section","content":"개발"}],["$","meta","25",{"property":"article:tag","content":"AI"}],["$","meta","26",{"property":"article:tag","content":"보안"}],["$","meta","27",{"property":"article:tag","content":"시프트레프트"}],["$","meta","28",{"property":"article:tag","content":"DevSecOps"}],["$","meta","29",{"property":"article:tag","content":"에이전트"}],["$","meta","30",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","31",{"name":"twitter:title","content":"작동한다는 건 안전하다는 뜻이 아니다 — AI가 쓴 코드를 지키는 5가지 원칙"}],["$","meta","32",{"name":"twitter:description","content":"1. 이 글은 무엇에 관한 글인가? IBM의 보안 아키텍트 Jeff Crume이 IBM Technology 채널에 올린 How Developers Secure AI-Generated Code: 5 Security Best Practices를 보고 정리한 글입니다. 한국어 자막본은…"}],["$","meta","33",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/14/thumbnail.png"}],["$","link","34",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L23","35",{}]]}]}]}],null]}]
+14:["$","$1","c",{"children":[null,["$","$L24",null,{"parallelRouterKey":"children","template":["$","$L25",null,{}]}]]}]
+17:["$","$1","c",{"children":[null,["$","$L24",null,{"parallelRouterKey":"children","template":["$","$L25",null,{}]}]]}]
+1a:true
+20:null
+11:300
+11:C
+19:0
+13:"$undefined"
+15:"$undefined"
+18:"$undefined"
+10:"$undefined"

@@ -1,0 +1,475 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+4:I[64893,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],""]
+2:T66d,{"@context":"https://schema.org","@type":"BlogPosting","headline":"The Transformer Is a General-Purpose Differentiable Computer — Rewatching Karpathy's Lecture in 2026","description":"1. What Is This Post About? Notes from watching Andrej Karpathy's Stanford CS25 guest lecture, Introduction to Transformers. The original talk is from January…","datePublished":"2026-09-07","dateModified":"2026-09-07","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-09-07-karpathy-transformers/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-09-07-karpathy-transformers/"},"image":"https://seungahhong.github.io/blog-assets/2026/09/assets/07/thumbnail.png","keywords":["AI","LLM","transformer","attention","nanoGPT"],"articleSection":"Development","wordCount":2041,"timeRequired":"PT11M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}d:X
+12:X
+12:C
+0:{"buildId":"7r92JUqy0AmDxDBdaPz9f","data":[{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"The Transformer Is a General-Purpose Differentiable Computer — Rewatching Karpathy's Lecture in 2026\",\"item\":\"https://seungahhong.github.io/en/posts/2026-09-07-karpathy-transformers/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"The Transformer Is a General-Purpose Differentiable Computer — Rewatching Karpathy's Lecture in 2026"}]]}]}],["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"The Transformer Is a General-Purpose Differentiable Computer — Rewatching Karpathy's Lecture in 2026"}],"$L5",false,"$L6"]}],"$L7","$L8"]}],"$L9"]}]}]],["$La"],"$Lb"]}],"isPartial":"$@c","staleTime":"$d","varyParams":null},{"rsc":"$Le","isPartial":"$@f","staleTime":"$d","varyParams":null},{"rsc":"$L10","isPartial":"$@11","staleTime":"$d","varyParams":"$12"},{"rsc":"$L13","isPartial":"$@14","staleTime":"$d","varyParams":"$12"}],"isUpgradeableISRFallback":false,"a":"$@15","rootVaryParams":null,"needsRuntimeRequest":"$@16"}
+18:I[94917,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+19:I[27722,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+1a:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"OutletBoundary"]
+1b:"$Sreact.suspense"
+1d:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"ViewportBoundary"]
+1e:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"MetadataBoundary"]
+20:I[47221,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+21:I[60184,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+5:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-09-07","className":"meta-mono","children":"09/07/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[11,"min read"]}]]}]
+6:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","LLM",{"children":["$","$L4",null,{"href":"/en/tags?tag=LLM","className":"tag-pill","children":"LLM"}]}],["$","li","transformer",{"children":["$","$L4",null,{"href":"/en/tags?tag=transformer","className":"tag-pill","children":"transformer"}]}],["$","li","attention",{"children":["$","$L4",null,{"href":"/en/tags?tag=attention","className":"tag-pill","children":"attention"}]}],["$","li","nanoGPT",{"children":["$","$L4",null,{"href":"/en/tags?tag=nanoGPT","className":"tag-pill","children":"nanoGPT"}]}]]}]
+17:T6917,<h2 id="1-what-is-this-post-about">1. What Is This Post About?<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-what-is-this-post-about"><span class="icon icon-link"></span></a></h2>
+<p>Notes from watching Andrej Karpathy's Stanford CS25 guest lecture, <a href="https://www.youtube.com/watch?v=y2p8Va_zu00">Introduction to Transformers</a>. The original talk is from January 2023; what I watched is a <a href="https://www.youtube.com/watch?v=y2p8Va_zu00">re-upload with Korean/English subtitles</a>.</p>
+<p>Writing up a three-year-old lecture may look odd. But line up what this blog has been publishing lately and the reason becomes clear.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">skill governance · how to write specs · harnesses · context engineering</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → all of it is about "how do we wrap the model"</span></span></code></pre></figure>
+<p>Talk about the wrapping long enough and <strong>what's being wrapped</strong> goes blurry. This lecture pulls that thing apart in roughly 300 lines of code.</p>
+<p>And the lecture's conclusion has held up for three years. In one line:</p>
+<blockquote>
+<p>The Transformer isn't a neural net for translation. It's a <strong>general-purpose differentiable computer</strong> — expressive, optimizable, and efficient on hardware.</p>
+</blockquote>
+<p>Why that sentence turned out to be a prediction is what this post is about.</p>
+<hr>
+<h2 id="2-before-2012--every-task-had-its-own-toolkit">2. Before 2012 — Every Task Had Its Own Toolkit<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-before-2012--every-task-had-its-own-toolkit"><span class="icon icon-link"></span></a></h2>
+<p>The lecture opens with a retrospective: what AI looked like before deep learning.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Field</th><th>The standard of the day</th><th>What humans did by hand</th></tr></thead><tbody><tr><td><strong>Computer vision</strong></td><td>Hand-designed features (SIFT, HOG) + a classifier</td><td><strong>People designed the feature extractor</strong></td></tr><tr><td><strong>Speech recognition</strong></td><td>Acoustic model + pronunciation lexicon + language model</td><td>Each stage trained as a separate model</td></tr><tr><td><strong>NLP</strong></td><td>n-grams, parsing pipelines</td><td>Linguistic knowledge encoded as rules</td></tr><tr><td><strong>Reinforcement learning</strong></td><td>Task-specific policy representations</td><td>People picked the state representation</td></tr></tbody></table>
+<p>The point isn't that performance was low. It's that <strong>almost nothing transferred when you changed fields.</strong> Vision researchers and speech researchers didn't attend the same conferences or read the same code.</p>
+<p>AlexNet moved feature extraction into learning in 2012. Then the Transformer merged <strong>the modeling toolkit itself.</strong></p>
+<p>That's why we can talk about "AI engineer" as <strong>a single role</strong> today. In 2012 it was at least four roles.</p>
+<hr>
+<h2 id="3-attention-came-out-of-a-bottleneck-not-an-idea">3. Attention Came Out of a Bottleneck, Not an Idea<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-attention-came-out-of-a-bottleneck-not-an-idea"><span class="icon icon-link"></span></a></h2>
+<p>The most entertaining stretch of the lecture is the origin story of attention. Karpathy reads an email he received directly from Dzmitry Bahdanau.</p>
+<p>The problem was this. Neural machine translation at the time had the <strong>encoder squeeze an entire sentence into a single fixed-length vector</strong>, and the decoder translated from that.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">"I finally finished the book I borrowed from the library yesterday"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → [ one fixed-length vector ]        ← the bottleneck is here</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">   → "..."</span></span></code></pre></figure>
+<p>Longer sentences collapsed. One vector couldn't hold them.</p>
+<p>Bahdanau's intuition wasn't technical. <strong>A human translator keeps glancing back at the source.</strong> So he let the decoder, at each output word, <strong>choose for itself</strong> which part of the source to look at.</p>
+<p>Two details make the story worth keeping.</p>
+<ul>
+<li>The first name for it wasn't attention — it was <strong>RNNSearch</strong>, a name closer to retrieval</li>
+<li><strong>Yoshua Bengio suggested the name "attention."</strong> Once it had a name, the concept spread</li>
+</ul>
+<p>Then came <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a> in 2017. The lecture's observation is that this paper <strong>removed things rather than adding them.</strong> It took out the RNN and kept only attention.</p>
+<blockquote>
+<p>The auxiliary device built to patch a bottleneck ended up <strong>pushing out the main body.</strong></p>
+</blockquote>
+<p>What follows is more surprising still. That architecture went <strong>more than five years nearly unchanged.</strong> The one change worth calling significant is moving layer normalization to the front of the block.</p>
+<hr>
+<h2 id="4-attention-is-message-passing-on-a-graph">4. Attention Is Message Passing on a Graph<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-attention-is-message-passing-on-a-graph"><span class="icon icon-link"></span></a></h2>
+<p>This is the most valuable part of the lecture. It explains attention as a <strong>communication structure</strong> rather than a formula.</p>
+<p>Treat tokens as <strong>nodes in a directed graph</strong>. Each node holds a vector, and at every layer it communicates once with its neighbors. That communication is attention.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>What it emits</th><th>Meaning</th><th>In plain words</th></tr></thead><tbody><tr><td><strong>Query</strong></td><td>what this node is looking for</td><td>"what am I curious about right now"</td></tr><tr><td><strong>Key</strong></td><td>what this node holds</td><td>"what am I information about"</td></tr><tr><td><strong>Value</strong></td><td>what this node will pass along</td><td>"if you pick me, here's what you get"</td></tr></tbody></table>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="python" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># each node emits three things</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">q </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Wq   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># what am I looking for</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">k </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Wk   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># what do I have</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">v </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> x </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Wv   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># what will I communicate</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># my query dotted with your key = how much I attend to you</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">w </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> softmax(q </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> k.T </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> sqrt(d))</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">out </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> w </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> v   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># information arrives as a weighted average</span></span></code></pre></figure>
+<p>And here's the decisive sentence.</p>
+<blockquote>
+<p>The weights <strong>depend on the data.</strong> Attention isn't fixed wiring — it's <strong>routing redrawn for every input.</strong></p>
+</blockquote>
+<p>Convolution has fixed wiring: it always looks at neighboring pixels. Attention lets <strong>the input decide what to look at.</strong> That single difference is the cause of everything that follows.</p>
+<p>The view earns its keep one more way: <strong>every architectural variant reduces to "how do you place the edges."</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Variant</th><th>Edge layout</th></tr></thead><tbody><tr><td><strong>Encoder</strong></td><td>every node sees every node</td></tr><tr><td><strong>Decoder</strong></td><td>only the past (causal masking)</td></tr><tr><td><strong>Cross-attention</strong></td><td>nodes from a different set</td></tr><tr><td><strong>ViT</strong></td><td>image patches become the nodes</td></tr></tbody></table>
+<hr>
+<h2 id="5-nanogpt--the-architecture-is-smaller-than-you-think">5. nanoGPT — the Architecture Is Smaller Than You Think<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-nanogpt--the-architecture-is-smaller-than-you-think"><span class="icon icon-link"></span></a></h2>
+<p>From the midpoint the lecture puts <a href="https://github.com/karpathy/nanoGPT">nanoGPT</a> on screen and reads it line by line. The entire GPT architecture is <strong>about 300 lines.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Piece</th><th>What it does</th></tr></thead><tbody><tr><td><strong>Token embedding</strong></td><td>token id → vector</td></tr><tr><td><strong>Positional embedding</strong></td><td>attention has no notion of order; order is supplied separately</td></tr><tr><td><strong>Block × N</strong></td><td>causal self-attention + MLP, each with a residual connection</td></tr><tr><td><strong>Layer norm</strong></td><td>sits <strong>in front of</strong> the block (pre-LN)</td></tr><tr><td><strong>Final linear layer</strong></td><td>vector → logits over the whole vocabulary</td></tr></tbody></table>
+<p>One block reduces to this shape.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">x = x + attention(layernorm(x))   ← nodes exchange information (communicate)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">x = x + mlp(layernorm(x))         ← each digests what it received (compute)</span></span></code></pre></figure>
+<p>What Karpathy emphasizes is the <strong>residual connection</strong>. Because of the <code>x + ...</code> shape, there's a path from input to output made purely of additions. Gradients ride that path straight down during backprop, which is why you can stack the thing very deep and still train it.</p>
+<p>The thing to be surprised by isn't the complexity — it's <strong>how small it is.</strong> The bigness in "large language model" lives in <strong>parameters and data</strong>, not in the architecture. The blueprint fits in one file.</p>
+<hr>
+<h2 id="6-causal-masking--one-line-that-buys-training-efficiency">6. Causal Masking — One Line That Buys Training Efficiency<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-causal-masking--one-line-that-buys-training-efficiency"><span class="icon icon-link"></span></a></h2>
+<p>The decoder must not see the future. If the task is predicting the next token, looking at the answer teaches nothing.</p>
+<p>The implementation is almost anticlimactically short.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="python" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="python" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># fill the upper-triangular (future) positions with -inf; softmax then zeroes them</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">att </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> att.masked_fill(tril </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">==</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">float</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'-inf'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">))</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">att </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> softmax(att, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">dim</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span></code></pre></figure>
+<p>The lecture's point isn't "hide the future" — it's the <strong>side effect.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>RNN</th><th>Transformer + causal masking</th></tr></thead><tbody><tr><td><strong>Sequence processing</strong></td><td>front to back, sequentially</td><td><strong>all positions at once</strong></td></tr><tr><td><strong>Training signal per sequence</strong></td><td>accumulated sequentially</td><td>length T gives you <strong>T of them at once</strong></td></tr><tr><td><strong>GPU utilization</strong></td><td>starved by sequential dependence</td><td>filled by one big matmul</td></tr></tbody></table>
+<p>Feed in a single sequence of length 1024 and you're solving <strong>1024 problems simultaneously</strong> — predict token 2 from token 1, all the way to predicting token 1024 from the first 1023. One line of masking makes that possible.</p>
+<p>Without training efficiency like that, today's scale would never have been reachable.</p>
+<hr>
+<h2 id="7-the-same-block-walks-across-domains">7. The Same Block Walks Across Domains<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-the-same-block-walks-across-domains"><span class="icon icon-link"></span></a></h2>
+<p>The back half of the lecture is extensions. The list is the argument.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Model</th><th>Domain</th><th>What became a token</th></tr></thead><tbody><tr><td><strong>ViT</strong></td><td>images</td><td>16×16 patches</td></tr><tr><td><strong>Whisper</strong></td><td>speech</td><td>slices of a spectrogram</td></tr><tr><td><strong>Decision Transformer</strong></td><td>reinforcement learning</td><td>(reward, state, action) sequences</td></tr><tr><td><strong>AlphaFold</strong></td><td>proteins</td><td>amino acid residues</td></tr></tbody></table>
+<p>The block is unchanged. The only thing that moved is <strong>what counts as a node.</strong></p>
+<blockquote>
+<p>When you bring a Transformer to a new field, the thing you design isn't the architecture — it's the <strong>tokenization.</strong></p>
+</blockquote>
+<p>Set that next to the table from section 2 and the contrast is sharp. What used to be a different toolkit per field became a different <strong>token definition</strong> per field.</p>
+<hr>
+<h2 id="8-gpt-3s-in-context-learning--learning-without-touching-weights">8. GPT-3's In-Context Learning — Learning Without Touching Weights<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-gpt-3s-in-context-learning--learning-without-touching-weights"><span class="icon icon-link"></span></a></h2>
+<p>Covering GPT-3's few-shot ability, the lecture makes a turn.</p>
+<p>"Learning" used to mean <strong>changing weights</strong>. But put a few examples in GPT-3's prompt and it does the task <strong>without changing a single weight.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">sea otter    → loutre de mer</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">cheese       → fromage</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">plush girafe → ???        ← this happens inside a forward pass, not training</span></span></code></pre></figure>
+<p>Karpathy's reading of it is where the lecture reaches furthest.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>Outer loop</th><th>Inner loop</th></tr></thead><tbody><tr><td><strong>What</strong></td><td>pretraining (gradient descent)</td><td>the forward pass reading the context</td></tr><tr><td><strong>What changes</strong></td><td>weights</td><td>activations only</td></tr><tr><td><strong>When</strong></td><td>at training time</td><td>at inference, every time</td></tr></tbody></table>
+<p>The outer loop <strong>trained the inner loop.</strong> Gradient descent planted a procedure — "look at the patterns and follow them" — inside the weights, and that procedure runs during the forward pass. Karpathy calls this <strong>meta-learning.</strong></p>
+<p>Accept that view and one piece of practice gets reinterpreted. <strong>The context window isn't storage; it's where the program is written.</strong> What this blog keeps saying in <a href="/en/posts/2026-07-31-context-engineering-claude5/">context engineering</a> and <a href="/en/posts/2026-09-13-writing-specs-for-agents/">how to write specs</a> — treat prompts like code — has its basis here. It isn't a metaphor. Computation genuinely happens there.</p>
+<hr>
+<h2 id="9-three-reasons-the-transformer-was-going-to-win">9. Three Reasons the Transformer Was Going to Win<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-three-reasons-the-transformer-was-going-to-win"><span class="icon icon-link"></span></a></h2>
+<p>The lecture's conclusion. The Transformer didn't get lucky; it was a <strong>rare candidate that satisfied three conditions at once.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Condition</th><th>Meaning</th><th>How the Transformer gets it</th></tr></thead><tbody><tr><td><strong>Expressive</strong></td><td>the forward pass can express enough</td><td>data-dependent routing + global communication at every layer</td></tr><tr><td><strong>Optimizable</strong></td><td>backprop actually trains it</td><td>residuals · layer norm · a smooth softmax</td></tr><tr><td><strong>Efficient</strong></td><td>it fills the hardware</td><td>no sequential dependence, so it reduces to <strong>big matmuls</strong></td></tr></tbody></table>
+<p>The third gets undervalued most often. An RNN needs the previous step's result before computing the next, so it starves the GPU. The Transformer has no such dependence and saturates the hardware.</p>
+<blockquote>
+<p>However expressive, it dies if it won't train; however trainable, it loses at scale if it can't fill a GPU. <strong>Hitting all three was rare.</strong></p>
+</blockquote>
+<p>Which is why the lecture calls the Transformer a <strong>general-purpose differentiable computer.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>The phrase</th><th>What it means</th></tr></thead><tbody><tr><td><strong>General-purpose</strong></td><td>not tied to a domain (§7)</td></tr><tr><td><strong>Differentiable</strong></td><td>programmed by data, not written by people</td></tr><tr><td><strong>Computer</strong></td><td>the forward pass is execution (§8)</td></tr></tbody></table>
+<hr>
+<h2 id="10-the-open-problem-left-in-the-qa--a-notepad">10. The Open Problem Left in the Q&#x26;A — a Notepad<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#10-the-open-problem-left-in-the-qa--a-notepad"><span class="icon icon-link"></span></a></h2>
+<p>In the closing Q&#x26;A, Karpathy names <strong>external memory</strong> as what's missing: models have no <strong>notepad</strong> to write their thinking down on.</p>
+<p>In 2023 that was a wish. Three years later, most of what we use daily is that notepad.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>The 2023 gap</th><th>The 2026 counterpart</th></tr></thead><tbody><tr><td>nowhere to write down thinking</td><td>plans and specs written to files, <code>SPEC.md</code></td></tr><tr><td>can't pull in knowledge on demand</td><td>skills · progressive disclosure</td></tr><tr><td>context is one undifferentiated block</td><td>subagents · context separation</td></tr><tr><td>procedure is improvised every time</td><td>harnesses · workflows</td></tr></tbody></table>
+<p>That table is the real reason I wrote this post. <strong>Harnesses and skills aren't a fashion outside the architecture — they fill the slots the architecture left empty.</strong> They're less about doing what the model can't, and more about bolting on what the model <strong>wasn't born with.</strong></p>
+<hr>
+<h2 id="11-wrapping-up--how-a-three-year-old-lecture-reads-now">11. Wrapping Up — How a Three-Year-Old Lecture Reads Now<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#11-wrapping-up--how-a-three-year-old-lecture-reads-now"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>The lecture's claim</th><th>What 2026 confirmed</th></tr></thead><tbody><tr><td><strong>1</strong></td><td>the toolkit merged into one</td><td>change the tokenization and the domain changes</td></tr><tr><td><strong>2</strong></td><td>attention came from a bottleneck</td><td>the auxiliary device pushed out the main body</td></tr><tr><td><strong>3</strong></td><td>attention is data-dependent routing</td><td>architectural variants = edge layouts</td></tr><tr><td><strong>4</strong></td><td>the architecture is 300 lines</td><td>the bigness is scale, not the blueprint</td></tr><tr><td><strong>5</strong></td><td>the forward pass is execution</td><td>context = a program, not a store</td></tr><tr><td><strong>6</strong></td><td>expressive, optimizable, efficient</td><td>it became the scorecard for successor architectures</td></tr><tr><td><strong>7</strong></td><td>we need a notepad</td><td>that's what skills and harnesses are now</td></tr></tbody></table>
+<p>Overlay this blog's recent posts and the place it occupies is clear.</p>
+<ul>
+<li><a href="/en/posts/2026-07-31-context-engineering-claude5/">Context engineering</a> — what to write into the forward pass</li>
+<li><a href="/en/posts/2026-09-13-writing-specs-for-agents/">How to write specs agents follow</a> — <strong>what shape</strong> to write that program in</li>
+<li><a href="/en/posts/2026-09-06-skills-governance/">Skill governance</a> — what happens when <strong>many people</strong> share what's written</li>
+<li>This post — what the thing <strong>reading it</strong> is actually made of</li>
+</ul>
+<p>Working with agents keeps becoming work outside the model: prompts, skills, harnesses, verification. Which is exactly why <strong>knowing the inside precisely, once, pays off.</strong> A call like "should I add one more rule to the context" turns from instinct into reasoning when you know the shape underneath.</p>
+<p>An hour is enough to read one 300-line file.</p>
+<hr>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Andrej Karpathy, Stanford CS25 — <a href="https://www.youtube.com/watch?v=y2p8Va_zu00">Introduction to Transformers</a> (subtitled re-upload) · <a href="https://www.youtube.com/watch?v=XfpMkf4rD6E">original</a></li>
+<li><a href="https://web.stanford.edu/class/cs25/">Stanford CS25: Transformers United</a></li>
+<li>Vaswani et al., <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a></li>
+<li>Bahdanau, Cho, Bengio, <a href="https://arxiv.org/abs/1409.0473">Neural Machine Translation by Jointly Learning to Align and Translate</a></li>
+<li>Karpathy, <a href="https://github.com/karpathy/nanoGPT">nanoGPT</a></li>
+<li>Earlier posts — <a href="/en/posts/2026-09-13-writing-specs-for-agents/">How to write specs agents follow</a> · <a href="/en/posts/2026-09-06-skills-governance/">Skill governance</a> · <a href="/en/posts/2026-07-31-context-engineering-claude5/">Context engineering</a></li>
+</ul>7:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]}]
+8:["$","nav",null,{"aria-label":"Previous / Next","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/en/posts/2026-09-06-skills-governance","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L18",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"Previous"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"Your Org's Know-How Now Lives in Skills — Ungoverned, It Becomes Technical Debt"}]]}],["$","$L4",null,{"href":"/en/posts/2026-09-13-writing-specs-for-agents","className":"group border-line bg-surface hover:border-accent flex flex-col items-end gap-1.5 rounded-xl border px-[18px] py-4 text-right transition-colors","rel":"next","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":["Next",["$","$L18",null,{"icon":{"name":"arrow-right","size":24,"node":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}]]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"More Instructions, Less Compliance — Writing Specs Agents Actually Follow"}]]}]]}]
+9:["$","div",null,{"className":"hidden lg:block","children":["$","$L19",null,{"headings":[{"id":"1-what-is-this-post-about","text":"1. What Is This Post About?","depth":1},{"id":"2-before-2012--every-task-had-its-own-toolkit","text":"2. Before 2012 — Every Task Had Its Own Toolkit","depth":1},{"id":"3-attention-came-out-of-a-bottleneck-not-an-idea","text":"3. Attention Came Out of a Bottleneck, Not an Idea","depth":1},{"id":"4-attention-is-message-passing-on-a-graph","text":"4. Attention Is Message Passing on a Graph","depth":1},{"id":"5-nanogpt--the-architecture-is-smaller-than-you-think","text":"5. nanoGPT — the Architecture Is Smaller Than You Think","depth":1},{"id":"6-causal-masking--one-line-that-buys-training-efficiency","text":"6. Causal Masking — One Line That Buys Training Efficiency","depth":1},{"id":"7-the-same-block-walks-across-domains","text":"7. The Same Block Walks Across Domains","depth":1},{"id":"8-gpt-3s-in-context-learning--learning-without-touching-weights","text":"8. GPT-3's In-Context Learning — Learning Without Touching Weights","depth":1},{"id":"9-three-reasons-the-transformer-was-going-to-win","text":"9. Three Reasons the Transformer Was Going to Win","depth":1},{"id":"10-the-open-problem-left-in-the-qa--a-notepad","text":"10. The Open Problem Left in the Q&A — a Notepad","depth":1},{"id":"11-wrapping-up--how-a-three-year-old-lecture-reads-now","text":"11. Wrapping Up — How a Three-Year-Old Lecture Reads Now","depth":1},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/13tuup7jbc8xe.js","async":true}]
+b:["$","$L1a",null,{"children":["$","$1b",null,{"name":"Next.MetadataOutlet","children":"$@1c"}]}]
+e:["$","$1","h",{"children":[null,["$","$L1d",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L1e",null,{"children":["$","$1b",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"The Transformer Is a General-Purpose Differentiable Computer — Rewatching Karpathy's Lecture in 2026 · SeungAh Hong · Tech Blog"}],["$","meta","1",{"name":"description","content":"1. What Is This Post About? Notes from watching Andrej Karpathy's Stanford CS25 guest lecture, Introduction to Transformers. The original talk is from January…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"SeungAh Hong"}],["$","meta","4",{"name":"keywords","content":"AI,LLM,transformer,attention,nanoGPT"}],["$","meta","5",{"name":"creator","content":"홍승아"}],["$","meta","6",{"name":"publisher","content":"홍승아"}],["$","meta","7",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://seungahhong.github.io/en/posts/2026-09-07-karpathy-transformers/"}],["$","link","9",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-09-07-karpathy-transformers/"}],["$","link","10",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-09-07-karpathy-transformers/"}],["$","link","11",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-09-07-karpathy-transformers/"}],["$","meta","12",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","13",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","14",{"property":"og:title","content":"The Transformer Is a General-Purpose Differentiable Computer — Rewatching Karpathy's Lecture in 2026"}],["$","meta","15",{"property":"og:description","content":"1. What Is This Post About? Notes from watching Andrej Karpathy's Stanford CS25 guest lecture, Introduction to Transformers. The original talk is from January…"}],["$","meta","16",{"property":"og:url","content":"https://seungahhong.github.io/en/posts/2026-09-07-karpathy-transformers/"}],["$","meta","17",{"property":"og:locale","content":"en"}],["$","meta","18",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/07/thumbnail.png"}],["$","meta","19",{"property":"og:image:alt","content":"The Transformer Is a General-Purpose Differentiable Computer — Rewatching Karpathy's Lecture in 2026"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2026-09-07"}],["$","meta","22",{"property":"article:modified_time","content":"2026-09-07"}],["$","meta","23",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","24",{"property":"article:section","content":"Development"}],["$","meta","25",{"property":"article:tag","content":"AI"}],["$","meta","26",{"property":"article:tag","content":"LLM"}],["$","meta","27",{"property":"article:tag","content":"transformer"}],["$","meta","28",{"property":"article:tag","content":"attention"}],["$","meta","29",{"property":"article:tag","content":"nanoGPT"}],["$","meta","30",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","31",{"name":"twitter:title","content":"The Transformer Is a General-Purpose Differentiable Computer — Rewatching Karpathy's Lecture in 2026"}],["$","meta","32",{"name":"twitter:description","content":"1. What Is This Post About? Notes from watching Andrej Karpathy's Stanford CS25 guest lecture, Introduction to Transformers. The original talk is from January…"}],["$","meta","33",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/07/thumbnail.png"}],["$","link","34",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],"$L1f"]}]}]}],null]}]
+10:["$","$1","c",{"children":[null,["$","$L20",null,{"parallelRouterKey":"children","template":["$","$L21",null,{}]}]]}]
+13:["$","$1","c",{"children":[null,["$","$L20",null,{"parallelRouterKey":"children","template":["$","$L21",null,{}]}]]}]
+16:true
+22:I[20665,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"IconMark"]
+1c:null
+1f:["$","$L22","35",{}]
+d:300
+d:C
+15:0
+11:"$undefined"
+14:"$undefined"
+f:"$undefined"
+c:"$undefined"

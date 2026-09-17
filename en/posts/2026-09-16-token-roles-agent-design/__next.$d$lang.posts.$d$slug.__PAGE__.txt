@@ -1,0 +1,283 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+4:I[64893,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],""]
+2:T652,{"@context":"https://schema.org","@type":"BlogPosting","headline":"More Tokens Won't Make It Smarter — 76 to 89 on the Same Budget","description":"1. What This Post Is About Notes on a talk by Katelyn Lesse (platform engineering lead) and Angela Jiang (platform product lead) at Anthropic — Every Token…","datePublished":"2026-09-16","dateModified":"2026-09-16","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-09-16-token-roles-agent-design/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-09-16-token-roles-agent-design/"},"image":"https://seungahhong.github.io/blog-assets/2026/09/assets/16/thumbnail.png","keywords":["AI","Claude","agents","context-engineering","cost"],"articleSection":"Development","wordCount":2018,"timeRequired":"PT11M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}d:X
+12:X
+12:C
+0:{"buildId":"7r92JUqy0AmDxDBdaPz9f","data":[{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"More Tokens Won't Make It Smarter — 76 to 89 on the Same Budget\",\"item\":\"https://seungahhong.github.io/en/posts/2026-09-16-token-roles-agent-design/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"More Tokens Won't Make It Smarter — 76 to 89 on the Same Budget"}]]}]}],["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"More Tokens Won't Make It Smarter — 76 to 89 on the Same Budget"}],"$L5",false,"$L6"]}],"$L7","$L8"]}],"$L9"]}]}]],["$La"],"$Lb"]}],"isPartial":"$@c","staleTime":"$d","varyParams":null},{"rsc":"$Le","isPartial":"$@f","staleTime":"$d","varyParams":null},{"rsc":"$L10","isPartial":"$@11","staleTime":"$d","varyParams":"$12"},{"rsc":"$L13","isPartial":"$@14","staleTime":"$d","varyParams":"$12"}],"isUpgradeableISRFallback":false,"a":"$@15","rootVaryParams":null,"needsRuntimeRequest":"$@16"}
+18:I[94917,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+19:I[27722,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+1a:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"OutletBoundary"]
+1b:"$Sreact.suspense"
+1d:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"ViewportBoundary"]
+1e:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"MetadataBoundary"]
+1f:I[20665,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"IconMark"]
+20:I[47221,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+21:I[60184,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+5:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-09-16","className":"meta-mono","children":"09/16/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[11,"min read"]}]]}]
+6:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","Claude",{"children":["$","$L4",null,{"href":"/en/tags?tag=Claude","className":"tag-pill","children":"Claude"}]}],["$","li","agents",{"children":["$","$L4",null,{"href":"/en/tags?tag=agents","className":"tag-pill","children":"agents"}]}],["$","li","context-engineering",{"children":["$","$L4",null,{"href":"/en/tags?tag=context-engineering","className":"tag-pill","children":"context-engineering"}]}],["$","li","cost",{"children":["$","$L4",null,{"href":"/en/tags?tag=cost","className":"tag-pill","children":"cost"}]}]]}]
+17:T5c91,<h2 id="1-what-this-post-is-about">1. What This Post Is About<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-what-this-post-is-about"><span class="icon icon-link"></span></a></h2>
+<p>Notes on a talk by Katelyn Lesse (platform engineering lead) and Angela Jiang (platform product lead) at Anthropic — <a href="https://www.youtube.com/watch?v=ULhklk4PCO4">Every Token Needs a Role — How Anthropic Designs Agents</a>. One line:</p>
+<blockquote>
+<p><strong>Raising the token budget is not a strategy. Giving tokens different roles inside a fixed budget is.</strong></p>
+</blockquote>
+<p>The measured result: a <strong>fixed 600,000-token budget</strong>, a financial-analysis benchmark, the same model. <strong>76 points to 89.</strong> Not one extra token.</p>
+<p>Placed against the thread this blog has been pulling on:</p>
+<ul>
+<li><a href="/en/posts/2026-07-31-context-engineering-claude5/">Context Engineering for Claude 5</a> — what to <strong>remove</strong> from context</li>
+<li><a href="/en/posts/2026-08-01-choosing-claude-model/">Choosing a Claude Model</a> — <strong>which model</strong> gets your spend</li>
+<li>This post — <strong>where the tokens go</strong> inside a budget you can't raise</li>
+</ul>
+<p>The first two are about total volume. This talk is about <strong>allocation.</strong></p>
+<hr>
+<h2 id="2-tokens-are-not-fungible">2. Tokens Are Not Fungible<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-tokens-are-not-fungible"><span class="icon icon-link"></span></a></h2>
+<p>The talk opens by breaking a familiar intuition.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Common assumption:  performance is short → give it more tokens → performance rises</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                    (tokens are a uniform resource; more is better)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Reality:            performance is short → give it more tokens</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                    → it makes the same mistake for longer</span></span></code></pre></figure>
+<p>Anyone who has run agents knows what brute-forcing the budget looks like. <strong>A run that starts in the wrong direction travels further when the budget is large.</strong> Reasoning longer does not self-correct a bad premise set at the beginning. It just piles more tokens on top of that premise, which makes it harder to reverse.</p>
+<p>So the framing is exact — <strong>not all tokens are the same token.</strong> The same 1,000 tokens spent on</p>
+<ul>
+<li>executing,</li>
+<li>steering before and during execution,</li>
+<li>grading the artifact that came out</li>
+</ul>
+<p>have different expected returns. If the budget is fixed, that <strong>ratio is the design.</strong></p>
+<hr>
+<h2 id="3-three-roles--advising-grading-dreaming">3. Three Roles — Advising, Grading, Dreaming<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-three-roles--advising-grading-dreaming"><span class="icon icon-link"></span></a></h2>
+<p>Beyond execution, the talk proposes three roles.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Role</th><th>What it does</th><th>Where the tokens sit</th></tr></thead><tbody><tr><td><strong>Advising</strong></td><td>Steers direction before and during execution</td><td><strong>In front of</strong> execution</td></tr><tr><td><strong>Grading</strong></td><td>Scores the artifact against explicit criteria</td><td><strong>Behind</strong> execution</td></tr><tr><td><strong>Dreaming</strong></td><td>Captures what this run learned</td><td><strong>Outside</strong> execution</td></tr></tbody></table>
+<p>Each one blocks waste at a different point.</p>
+<h3 id="advising--kills-waste-at-the-front">Advising — kills waste at the front<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#advising--kills-waste-at-the-front"><span class="icon icon-link"></span></a></h3>
+<p>The most expensive failure is <strong>a run that went all the way in the wrong direction.</strong> Advising tokens intervene before execution gets long. The executor can be a cheap, fast model that consults something stronger only at the forks that need judgment.</p>
+<h3 id="grading--kills-waste-at-the-back">Grading — kills waste at the back<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#grading--kills-waste-at-the-back"><span class="icon icon-link"></span></a></h3>
+<p>An agent saying "done" and <strong>an artifact that actually cleared the bar</strong> are different things. Grading tokens put a separate grader against a rubric, scoring criterion by criterion and handing the gaps back. The key detail: <strong>the grader does not share the executor's context.</strong> Grade your own answer and you grade it generously.</p>
+<h3 id="dreaming--kills-waste-in-the-next-run">Dreaming — kills waste in the next run<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#dreaming--kills-waste-in-the-next-run"><span class="icon icon-link"></span></a></h3>
+<p>The third is the unfamiliar one. Dreaming tokens produce <strong>not this run's artifact but the next run's input</strong> — where it got stuck, what worked, which assumption was wrong. Pure cost this session; recovered from the next one on.</p>
+<p>Tied together:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Advising = fewer tokens spent going the wrong way    (recovered this run)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Grading  = fewer tokens spent finishing wrong        (recovered this run)</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Dreaming = fewer tokens spent repeating a mistake    (recovered next run)</span></span></code></pre></figure>
+<hr>
+<h2 id="4-the-fixed-budget-experiment">4. The Fixed-Budget Experiment<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-the-fixed-budget-experiment"><span class="icon icon-link"></span></a></h2>
+<p>The important design choice in the talk is that <strong>the budget was held constant.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Benchmark:  practical financial analysis</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Budget:     600,000 tokens (identical on both sides)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">A. Everything into execution                     →  76</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">B. Execution + advising + grading + dreaming     →  89</span></span></code></pre></figure>
+<p>The comparison is fair, and that's what makes it persuasive. "We added an advisor and it got better" usually means more tokens were spent, so of course it got better. Fixing the budget changes the question to: <strong>did the advising tokens earn more than the execution tokens they took?</strong></p>
+<p>The answer is yes, and 13 points is the size of it.</p>
+<blockquote>
+<p>One caveat. Thirteen points is a number for <strong>this benchmark, this budget, this split.</strong> The right ratio depends on the shape of the work, and the talk doesn't hand out a fixed recipe. What transfers is not the number but the <strong>method: fix the budget, change the allocation, measure.</strong></p>
+</blockquote>
+<hr>
+<h2 id="5-why-80-accuracy-is-useless-in-production">5. Why 80% Accuracy Is Useless in Production<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-why-80-accuracy-is-useless-in-production"><span class="icon icon-link"></span></a></h2>
+<p>The middle of the talk is, to me, the most important part.</p>
+<p>On a benchmark, 80% is a decent score. In production it isn't.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="markdown" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Benchmark view:   80 of 100 correct → 80 points → "pretty good"</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">Production view:  20 of 100 are wrong</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                  → you don't know which 20</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                  → all 100 need human review</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">                  → 0 were actually automated</span></span></code></pre></figure>
+<p><strong>If you don't know where the wrong answers are, you can't trust the right ones either.</strong> In a domain like financial analysis, where one number moves a decision, this is harsher still. An 80% artifact is not "80% of a job done" — it's <strong>a job with 100% of the review still attached.</strong></p>
+<p>Which changes the unit you measure in.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>Wrong unit</th><th>Right unit</th></tr></thead><tbody><tr><td>What you measure</td><td>Tokens per request</td><td><strong>Tokens per completed correct answer</strong></td></tr><tr><td>What 80% means</td><td>Respectable performance</td><td>100% human review required</td></tr><tr><td>A cheap executor</td><td>Low unit price</td><td>Expensive once retries and review are counted</td></tr></tbody></table>
+<p>Under that unit, grading tokens change character. Grading isn't overhead — it's <strong>moving review cost off humans and onto the model.</strong> Instead of a person reading all 100, they read the items the grader flagged.</p>
+<p>The "verify" half of <a href="/en/posts/2026-08-22-delete-and-verify/">Delete, Make It Hard, Verify</a> meets cost accounting right here. Verification is a quality mechanism, but it is also <strong>a token-efficiency mechanism.</strong></p>
+<hr>
+<h2 id="6-mapping-to-primitives--claude-managed-agents">6. Mapping to Primitives — Claude Managed Agents<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-mapping-to-primitives--claude-managed-agents"><span class="icon icon-link"></span></a></h2>
+<p>The talk's closing axis: don't build these strategies from scratch, compose them from primitives that already exist. Claude Managed Agents runs the agent loop and the execution sandbox server-side, and each of the three roles has something it maps onto.</p>
+<blockquote>
+<p>The mapping below is <strong>my reading</strong>, not something the talk stated verbatim. Check the official docs for parameter names and constraints.</p>
+</blockquote>
+<h3 id="advising--advisor">Advising → Advisor<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#advising--advisor"><span class="icon icon-link"></span></a></h3>
+<p>Pair an executor model with an advisor model: the cheap one does the bulk of the generation and calls the stronger one only when judgment is required. On the Messages API it's the <code>advisor</code> tool; on Managed Agents it's an advisor entry in the multiagent roster.</p>
+<p>One hard constraint — <strong>the advisor must be at least as capable as the executor.</strong> Pair them the other way and the request is rejected.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="json" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"advisor_20260301"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "name"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"advisor"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "model"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"claude-opus-5"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<p>A caution as well. Advisor wins on cost when <strong>the capability gap is wide and the executor actually consults often.</strong> Let the consult rate fall and the pairing can score below the executor alone. Measure before you wire it in.</p>
+<h3 id="grading--outcomes">Grading → Outcomes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#grading--outcomes"><span class="icon icon-link"></span></a></h3>
+<p>Give the session a rubric defining what "done" means, and <strong>a grader with its own context window</strong> scores each iteration and hands the shortfalls back — looping until the bar is cleared or the iteration cap is hit.</p>
+<p>The rule for rubrics is explicit: <strong>"the data looks good" is not a criterion.</strong> "The CSV has a numeric <code>price</code> column" is — each item has to be independently decidable. Vague criteria make noisy scores, and noisy scores turn the revision loop into waste.</p>
+<p>Same axis as <a href="/en/posts/2026-09-13-writing-specs-for-agents/">Writing Specs Agents Actually Follow</a>. If it isn't written as a decidable statement, neither a human nor a grader can decide it.</p>
+<h3 id="dreaming--memory-stores">Dreaming → Memory Stores<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#dreaming--memory-stores"><span class="icon icon-link"></span></a></h3>
+<p>Sessions are ephemeral by default. A memory store is a set of small text documents that outlives the session; attach it and it mounts into the container as a directory the agent reads and writes with ordinary file tools. That's where dreaming tokens put their output.</p>
+<p>Worth nailing down: <strong>never put credentials there.</strong> Memories are replayed verbatim into later contexts, so a key written once keeps coming back.</p>
+<h3 id="fan-out--multiagent">Fan-out → Multiagent<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#fan-out--multiagent"><span class="icon icon-link"></span></a></h3>
+<p>When reading-heavy work splits into independent pieces, the coordinator hands them to sub-threads. Each gets its own context window, and only <strong>the report</strong> comes back. Same spirit as advising and grading — <strong>managing context pollution by choosing where tokens live.</strong></p>
+<hr>
+<h2 id="7-against-this-blogs-repository">7. Against This Blog's Repository<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-against-this-blogs-repository"><span class="icon icon-link"></span></a></h2>
+<p>As usual, not leaving it as someone else's story. What an agent does in this repo is mostly "add one post and fix the tests that break."</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Role</th><th>State of this repo</th></tr></thead><tbody><tr><td><strong>Execution</strong></td><td>Almost everything. One interactive session</td></tr><tr><td><strong>Advising</strong></td><td>None. A wrong direction stays wrong to the end</td></tr><tr><td><strong>Grading</strong></td><td><strong>Present.</strong> <code>pnpm test</code> / <code>e2e</code> / <code>typecheck</code> act as the rubric</td></tr><tr><td><strong>Dreaming</strong></td><td>Partial. <code>CLAUDE.md</code> plus three memory files</td></tr></tbody></table>
+<p>Honestly:</p>
+<p><strong>Grading works here by accident.</strong> Adding a post breaks four hardcoded test expectations — annoying, but it means <strong>the completion condition is written down in machine-decidable form.</strong> In the unit from section 5, "one completed correct answer" is not ambiguous in this repo.</p>
+<p><strong>Dreaming is half there.</strong> <code>CLAUDE.md</code> records the deployment quirks, and separate memory files record "the four tests that break when you add a post" and "there is no thumbnail generation script." Both are <strong>one session's dig handed to the next</strong> — dreaming tokens that got recovered.</p>
+<p><strong>Advising is completely empty.</strong> And the most expensive failure in this repo has exactly that shape: getting a post's structure wrong, writing it to the end, then deleting it and starting over. It burns the most execution tokens of anything here, and there is nothing in front of it.</p>
+<p>One reservation, on scale. The work here isn't a 600,000-token job, so whether an advisor pays for itself <strong>is unknown until measured.</strong> Exactly the caution from section 6.</p>
+<hr>
+<h2 id="8-easy-misreadings">8. Easy Misreadings<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#8-easy-misreadings"><span class="icon icon-link"></span></a></h2>
+<h3 id="1--so-dont-spend-more-tokens">1 — "So don't spend more tokens"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1--so-dont-spend-more-tokens"><span class="icon icon-link"></span></a></h3>
+<p>No. What the talk rejects is <strong>the idea that adding tokens is itself a strategy.</strong> Raise the budget if you can. But a raised budget still has to be allocated, and a bad allocation wastes the increase at the same rate.</p>
+<h3 id="2--you-need-all-three">2 — "You need all three"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2--you-need-all-three"><span class="icon icon-link"></span></a></h3>
+<p>The three block waste at different points. Start by finding <strong>where your work actually leaks.</strong> Direction goes wrong often → advising. "Done" is often false → grading. Same dig, repeatedly → dreaming. A mechanism bolted where nothing leaks is pure cost.</p>
+<h3 id="3--a-grader-guarantees-quality">3 — "A grader guarantees quality"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3--a-grader-guarantees-quality"><span class="icon icon-link"></span></a></h3>
+<p>A vague rubric grades vaguely. The grader only decides the rubric; <strong>writing the rubric is still a human job.</strong> Most of the cost of grading is not tokens — it's the time spent writing criteria.</p>
+<h3 id="4--89-is-good-enough-to-ship">4 — "89 is good enough to ship"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4--89-is-good-enough-to-ship"><span class="icon icon-link"></span></a></h3>
+<p>Apply section 5 and 89 has the same problem. If you don't know where the 11 are, you read all 100. The point isn't "89 is enough" — it's <strong>"there were 13 points available on the same budget."</strong> What to do about the remaining 11 is a separate design question.</p>
+<h3 id="5--this-is-only-for-big-agent-systems">5 — "This is only for big agent systems"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5--this-is-only-for-big-agent-systems"><span class="icon icon-link"></span></a></h3>
+<p>Allocation doesn't care about scale. But <strong>the mechanisms have fixed setup costs, so small work may never recover them.</strong> That's the reservation in section 7. The criterion is recoverability, not size.</p>
+<hr>
+<h2 id="9-summary">9. Summary<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#9-summary"><span class="icon icon-link"></span></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>What</th><th>Why</th></tr></thead><tbody><tr><td><strong>1. Tokens are not uniform</strong></td><td>Execution, advising, grading, dreaming pay differently</td><td>With a fixed budget, the ratio is the design</td></tr><tr><td><strong>2. Fix the budget, change the split</strong></td><td>600K held constant, 76 → 89</td><td>Adding tokens is not a fair comparison</td></tr><tr><td><strong>3. Each role blocks a different waste</strong></td><td>Front · back · next run</td><td>Bolted where nothing leaks, it's pure cost</td></tr><tr><td><strong>4. Change the unit</strong></td><td>Not tokens per request — <strong>tokens per completed correct answer</strong></td><td>80% means 100% review</td></tr><tr><td><strong>5. Compose, don't build</strong></td><td>Advisor · Outcomes · Memory · Multiagent</td><td>This is not a loop you should hand-roll</td></tr></tbody></table>
+<p>Lined up with the rest of the thread:</p>
+<ul>
+<li><a href="/en/posts/2026-07-31-context-engineering-claude5/">Context Engineering</a> — <strong>subtraction</strong>: what not to leave in context</li>
+<li><a href="/en/posts/2026-08-01-choosing-claude-model/">Choosing a Model</a> — <strong>selection</strong>: which model gets the spend</li>
+<li><a href="/en/posts/2026-08-22-delete-and-verify/">Delete, Make It Hard, Verify</a> — <strong>verification</strong>: how you believe "done"</li>
+<li>This post — <strong>allocation</strong>: where tokens go inside the budget you have</li>
+</ul>
+<p>All four are about <strong>getting more without raising the total.</strong> This talk adds a measurable method to that list: fix the budget, change the allocation, and measure.</p>
+<blockquote>
+<p>When you can't raise the budget, one question remains. <strong>What role is this token playing?</strong></p>
+</blockquote>
+<hr>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Katelyn Lesse · Angela Jiang, <a href="https://www.youtube.com/watch?v=ULhklk4PCO4">Every Token Needs a Role — How Anthropic Designs Agents</a></li>
+<li>Anthropic, <a href="https://docs.claude.com/en/api/agent-sdk/overview">Managed Agents overview</a></li>
+<li>Anthropic, <a href="https://docs.claude.com/en/docs/agents-and-tools/tool-use/overview">Tool use — Advisor</a></li>
+<li>Earlier posts — <a href="/en/posts/2026-09-13-writing-specs-for-agents/">Writing Specs Agents Actually Follow</a> · <a href="/en/posts/2026-08-22-delete-and-verify/">Delete, Make It Hard, Verify</a> · <a href="/en/posts/2026-08-01-choosing-claude-model/">Choosing a Claude Model</a> · <a href="/en/posts/2026-07-31-context-engineering-claude5/">Context Engineering for Claude 5</a></li>
+</ul>7:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]}]
+8:["$","nav",null,{"aria-label":"Previous / Next","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/en/posts/2026-09-15-vitest5","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L18",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"Previous"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"Vitest 5.0"}]]}],["$","$L4",null,{"href":"/en/posts/2026-09-17-ai-native-revenue-org","className":"group border-line bg-surface hover:border-accent flex flex-col items-end gap-1.5 rounded-xl border px-[18px] py-4 text-right transition-colors","rel":"next","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":["Next",["$","$L18",null,{"icon":{"name":"arrow-right","size":24,"node":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}]]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"Hours Saved Is the Floor — Building an AI-Native Revenue Organization"}]]}]]}]
+9:["$","div",null,{"className":"hidden lg:block","children":["$","$L19",null,{"headings":[{"id":"1-what-this-post-is-about","text":"1. What This Post Is About","depth":1},{"id":"2-tokens-are-not-fungible","text":"2. Tokens Are Not Fungible","depth":1},{"id":"3-three-roles--advising-grading-dreaming","text":"3. Three Roles — Advising, Grading, Dreaming","depth":1},{"id":"advising--kills-waste-at-the-front","text":"Advising — kills waste at the front","depth":2},{"id":"grading--kills-waste-at-the-back","text":"Grading — kills waste at the back","depth":2},{"id":"dreaming--kills-waste-in-the-next-run","text":"Dreaming — kills waste in the next run","depth":2},{"id":"4-the-fixed-budget-experiment","text":"4. The Fixed-Budget Experiment","depth":1},{"id":"5-why-80-accuracy-is-useless-in-production","text":"5. Why 80% Accuracy Is Useless in Production","depth":1},{"id":"6-mapping-to-primitives--claude-managed-agents","text":"6. Mapping to Primitives — Claude Managed Agents","depth":1},{"id":"advising--advisor","text":"Advising → Advisor","depth":2},{"id":"grading--outcomes","text":"Grading → Outcomes","depth":2},{"id":"dreaming--memory-stores","text":"Dreaming → Memory Stores","depth":2},{"id":"fan-out--multiagent","text":"Fan-out → Multiagent","depth":2},{"id":"7-against-this-blogs-repository","text":"7. Against This Blog's Repository","depth":1},{"id":"8-easy-misreadings","text":"8. Easy Misreadings","depth":1},{"id":"1--so-dont-spend-more-tokens","text":"1 — \"So don't spend more tokens\"","depth":2},{"id":"2--you-need-all-three","text":"2 — \"You need all three\"","depth":2},{"id":"3--a-grader-guarantees-quality","text":"3 — \"A grader guarantees quality\"","depth":2},{"id":"4--89-is-good-enough-to-ship","text":"4 — \"89 is good enough to ship\"","depth":2},{"id":"5--this-is-only-for-big-agent-systems","text":"5 — \"This is only for big agent systems\"","depth":2},{"id":"9-summary","text":"9. Summary","depth":1},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/13tuup7jbc8xe.js","async":true}]
+b:["$","$L1a",null,{"children":["$","$1b",null,{"name":"Next.MetadataOutlet","children":"$@1c"}]}]
+e:["$","$1","h",{"children":[null,["$","$L1d",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L1e",null,{"children":["$","$1b",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"More Tokens Won't Make It Smarter — 76 to 89 on the Same Budget · SeungAh Hong · Tech Blog"}],["$","meta","1",{"name":"description","content":"1. What This Post Is About Notes on a talk by Katelyn Lesse (platform engineering lead) and Angela Jiang (platform product lead) at Anthropic — Every Token…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"SeungAh Hong"}],["$","meta","4",{"name":"keywords","content":"AI,Claude,agents,context-engineering,cost"}],["$","meta","5",{"name":"creator","content":"홍승아"}],["$","meta","6",{"name":"publisher","content":"홍승아"}],["$","meta","7",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://seungahhong.github.io/en/posts/2026-09-16-token-roles-agent-design/"}],["$","link","9",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-09-16-token-roles-agent-design/"}],["$","link","10",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-09-16-token-roles-agent-design/"}],["$","link","11",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-09-16-token-roles-agent-design/"}],["$","meta","12",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","13",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","14",{"property":"og:title","content":"More Tokens Won't Make It Smarter — 76 to 89 on the Same Budget"}],["$","meta","15",{"property":"og:description","content":"1. What This Post Is About Notes on a talk by Katelyn Lesse (platform engineering lead) and Angela Jiang (platform product lead) at Anthropic — Every Token…"}],["$","meta","16",{"property":"og:url","content":"https://seungahhong.github.io/en/posts/2026-09-16-token-roles-agent-design/"}],["$","meta","17",{"property":"og:locale","content":"en"}],["$","meta","18",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/16/thumbnail.png"}],["$","meta","19",{"property":"og:image:alt","content":"More Tokens Won't Make It Smarter — 76 to 89 on the Same Budget"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2026-09-16"}],["$","meta","22",{"property":"article:modified_time","content":"2026-09-16"}],["$","meta","23",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","24",{"property":"article:section","content":"Development"}],["$","meta","25",{"property":"article:tag","content":"AI"}],["$","meta","26",{"property":"article:tag","content":"Claude"}],["$","meta","27",{"property":"article:tag","content":"agents"}],["$","meta","28",{"property":"article:tag","content":"context-engineering"}],["$","meta","29",{"property":"article:tag","content":"cost"}],["$","meta","30",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","31",{"name":"twitter:title","content":"More Tokens Won't Make It Smarter — 76 to 89 on the Same Budget"}],["$","meta","32",{"name":"twitter:description","content":"1. What This Post Is About Notes on a talk by Katelyn Lesse (platform engineering lead) and Angela Jiang (platform product lead) at Anthropic — Every Token…"}],["$","meta","33",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/16/thumbnail.png"}],["$","link","34",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L1f","35",{}]]}]}]}],null]}]
+10:["$","$1","c",{"children":[null,["$","$L20",null,{"parallelRouterKey":"children","template":["$","$L21",null,{}]}]]}]
+13:["$","$1","c",{"children":[null,["$","$L20",null,{"parallelRouterKey":"children","template":["$","$L21",null,{}]}]]}]
+16:true
+1c:null
+d:300
+d:C
+15:0
+f:"$undefined"
+11:"$undefined"
+14:"$undefined"
+c:"$undefined"
