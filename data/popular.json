@@ -4,7 +4,7 @@
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 64
+      "views": 66
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
@@ -12,7 +12,7 @@
     },
     {
       "slug": "2026-07-13-vite8.0",
-      "views": 13
+      "views": 14
     },
     {
       "slug": "2026-07-31-context-engineering-claude5",
@@ -27,15 +27,15 @@
       "views": 9
     },
     {
+      "slug": "2026-09-06-skills-governance",
+      "views": 9
+    },
+    {
       "slug": "2026-07-14-typescript7.0",
       "views": 7
     },
     {
       "slug": "2026-08-23-ai-native-sdlc-playbook",
-      "views": 7
-    },
-    {
-      "slug": "2026-09-06-skills-governance",
       "views": 7
     },
     {
@@ -87,6 +87,14 @@
       "views": 4
     },
     {
+      "slug": "2026-09-13-writing-specs-for-agents",
+      "views": 4
+    },
+    {
+      "slug": "2026-09-15-vitest5",
+      "views": 4
+    },
+    {
       "slug": "2022-01-08-webassembly",
       "views": 3
     },
@@ -135,10 +143,6 @@
       "views": 3
     },
     {
-      "slug": "2026-09-13-writing-specs-for-agents",
-      "views": 3
-    },
-    {
       "slug": "2020-09-12-fe-performance",
       "views": 2
     },
@@ -160,6 +164,10 @@
     },
     {
       "slug": "2022-07-23-emotion",
+      "views": 2
+    },
+    {
+      "slug": "2022-07-24-jest",
       "views": 2
     },
     {
@@ -251,10 +259,6 @@
       "views": 1
     },
     {
-      "slug": "2022-07-24-jest",
-      "views": 1
-    },
-    {
       "slug": "2023-01-01-fe-process",
       "views": 1
     },
@@ -288,10 +292,6 @@
     },
     {
       "slug": "2024-12-05-react-v19",
-      "views": 1
-    },
-    {
-      "slug": "2026-09-15-vitest5",
       "views": 1
     }
   ]
