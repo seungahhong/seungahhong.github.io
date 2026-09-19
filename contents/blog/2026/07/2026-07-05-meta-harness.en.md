@@ -6,7 +6,7 @@ published: 2026-07-05
 category: Development
 tags: ['AI', 'harness', 'Claude', 'self-healing']
 comments: true
-thumbnail: './assets/05/thumbnail.png'
+thumbnail: './assets/05/thumbnail.en.png'
 github: ''
 ---
 

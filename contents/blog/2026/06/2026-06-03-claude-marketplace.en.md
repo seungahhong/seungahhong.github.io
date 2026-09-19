@@ -6,7 +6,7 @@ published: 2026-06-03
 category: Development
 tags: ['Claude', 'AI', 'Plugin']
 comments: true
-thumbnail: './assets/03/thumbnail.png'
+thumbnail: './assets/03/thumbnail.en.png'
 github: 'https://github.com/seungahhong/seungah-claude-plugins'
 ---
 

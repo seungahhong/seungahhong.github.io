@@ -6,7 +6,7 @@ published: 2026-07-31
 category: Development
 tags: ['AI', 'harness', 'Claude', 'context-engineering']
 comments: true
-thumbnail: './assets/31/thumbnail.png'
+thumbnail: './assets/31/thumbnail.en.png'
 github: ''
 ---
 

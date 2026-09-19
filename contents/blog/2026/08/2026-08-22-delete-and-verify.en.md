@@ -6,7 +6,7 @@ published: 2026-08-22
 category: Development
 tags: ['AI', 'Claude', 'agent', 'verification', 'harness']
 comments: true
-thumbnail: './assets/22/thumbnail.png'
+thumbnail: './assets/22/thumbnail.en.png'
 github: ''
 ---
 

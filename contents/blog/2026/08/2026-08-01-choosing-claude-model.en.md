@@ -6,7 +6,7 @@ published: 2026-08-01
 category: Development
 tags: ['AI', 'Claude', 'model-selection', 'LLM']
 comments: true
-thumbnail: './assets/01/thumbnail.png'
+thumbnail: './assets/01/thumbnail.en.png'
 github: ''
 ---
 

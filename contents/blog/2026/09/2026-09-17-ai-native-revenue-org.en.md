@@ -6,7 +6,7 @@ published: 2026-09-17
 category: Development
 tags: ['AI', 'Claude', 'adoption', 'organization', 'ROI']
 comments: true
-thumbnail: './assets/17/thumbnail.png'
+thumbnail: './assets/17/thumbnail.en.png'
 github: ''
 ---
 

@@ -6,7 +6,7 @@ published: 2026-09-13
 category: Development
 tags: ['AI', 'agents', 'spec', 'context engineering', 'PRD']
 comments: true
-thumbnail: './assets/13/thumbnail.png'
+thumbnail: './assets/13/thumbnail.en.png'
 github: ''
 ---
 

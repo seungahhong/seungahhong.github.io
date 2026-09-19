@@ -6,7 +6,7 @@ published: 2026-09-14
 category: Development
 tags: ['AI', 'security', 'shift-left', 'DevSecOps', 'agents']
 comments: true
-thumbnail: './assets/14/thumbnail.png'
+thumbnail: './assets/14/thumbnail.en.png'
 github: ''
 ---
 
