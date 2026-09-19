@@ -220,9 +220,9 @@ describe('translation fallback', () => {
 describe('real blog content', () => {
   const all = getAllPosts('ko', CONTENT_ROOT);
 
-  it('discovers all 83 posts with unique slugs', () => {
-    expect(all).toHaveLength(83);
-    expect(new Set(all.map((p) => p.slug)).size).toBe(83);
+  it('discovers all 84 posts with unique slugs', () => {
+    expect(all).toHaveLength(84);
+    expect(new Set(all.map((p) => p.slug)).size).toBe(84);
   });
 
   it('parses valid, well-formed metadata for every post', () => {
@@ -236,13 +236,13 @@ describe('real blog content', () => {
   });
 
   it('sorts newest-first', () => {
-    expect(all[0].date).toBe('2026-09-17');
+    expect(all[0].date).toBe('2026-09-19');
   });
 
   it('reflects known category and tag counts', () => {
     expect(getCategoryCounts(all)).toContainEqual({
       category: '개발',
-      count: 81,
+      count: 82,
     });
     expect(getTagCounts(all)).toContainEqual({ tag: '상태관리', count: 12 });
   });

@@ -6,7 +6,7 @@ published: 2026-07-12
 category: Development
 tags: ['AI', 'Harness', 'PRD', 'Product Spec', 'Claude']
 comments: true
-thumbnail: './assets/12/thumbnail.png'
+thumbnail: './assets/12/thumbnail.en.png'
 github: ''
 ---
 

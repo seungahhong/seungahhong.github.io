@@ -6,7 +6,7 @@ published: 2026-09-16
 category: Development
 tags: ['AI', 'Claude', 'agents', 'context-engineering', 'cost']
 comments: true
-thumbnail: './assets/16/thumbnail.png'
+thumbnail: './assets/16/thumbnail.en.png'
 github: ''
 ---
 

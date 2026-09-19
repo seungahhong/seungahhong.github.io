@@ -6,7 +6,7 @@ published: 2026-08-23
 category: Development
 tags: ['AI', 'Claude', 'SDLC', 'harness', 'dev-process']
 comments: true
-thumbnail: './assets/23/thumbnail.png'
+thumbnail: './assets/23/thumbnail.en.png'
 github: ''
 ---
 

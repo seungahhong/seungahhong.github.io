@@ -6,7 +6,7 @@ published: 2026-09-06
 category: Development
 tags: ['AI', 'agents', 'skills', 'governance', 'harness']
 comments: true
-thumbnail: './assets/06/thumbnail.png'
+thumbnail: './assets/06/thumbnail.en.png'
 github: ''
 ---
 

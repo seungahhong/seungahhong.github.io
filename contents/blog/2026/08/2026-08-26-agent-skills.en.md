@@ -6,7 +6,7 @@ published: 2026-08-26
 category: Development
 tags: ['AI', 'agents', 'skills', 'harness', 'dev-process']
 comments: true
-thumbnail: './assets/26/thumbnail.png'
+thumbnail: './assets/26/thumbnail.en.png'
 github: ''
 ---
 

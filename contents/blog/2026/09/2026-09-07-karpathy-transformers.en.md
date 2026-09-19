@@ -6,7 +6,7 @@ published: 2026-09-07
 category: Development
 tags: ['AI', 'LLM', 'transformer', 'attention', 'nanoGPT']
 comments: true
-thumbnail: './assets/07/thumbnail.png'
+thumbnail: './assets/07/thumbnail.en.png'
 github: ''
 ---
 

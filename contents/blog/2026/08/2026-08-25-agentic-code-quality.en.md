@@ -6,7 +6,7 @@ published: 2026-08-25
 category: Development
 tags: ['AI', 'agents', 'code-quality', 'testing', 'harness']
 comments: true
-thumbnail: './assets/25/thumbnail.png'
+thumbnail: './assets/25/thumbnail.en.png'
 github: ''
 ---
 

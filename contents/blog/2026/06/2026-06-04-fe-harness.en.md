@@ -6,7 +6,7 @@ published: 2026-06-04
 category: Development
 tags: ['AI', 'Harness', 'Claude']
 comments: true
-thumbnail: './assets/04/thumbnail.png'
+thumbnail: './assets/04/thumbnail.en.png'
 github: ''
 ---
 
