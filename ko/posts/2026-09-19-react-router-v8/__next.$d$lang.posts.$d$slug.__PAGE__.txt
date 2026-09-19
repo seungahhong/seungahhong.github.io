@@ -1,0 +1,537 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+4:I[64893,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],""]
+2:T67e,{"@context":"https://schema.org","@type":"BlogPosting","headline":"React Router v8","description":"React Router v8 출시: \"지루한 메이저\"와 v7 → v8 업그레이드 가이드 ✍️ 한 줄 요약 React Router v8은 새 기능을 싣고 온 릴리스가 아니라, v7에서 future flag로 미리 풀어둔 변경을 기본값으로 굳히고 최소 버전을 올린 릴리스입니다. v7에서…","datePublished":"2026-09-19","dateModified":"2026-09-19","inLanguage":"ko-KR","url":"https://seungahhong.github.io/ko/posts/2026-09-19-react-router-v8/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/ko/posts/2026-09-19-react-router-v8/"},"image":"https://seungahhong.github.io/blog-assets/2026/09/assets/19/thumbnail.png","keywords":["react-router","react"],"articleSection":"개발","wordCount":3930,"timeRequired":"PT10M","isPartOf":{"@id":"https://seungahhong.github.io/ko/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}11:X
+16:X
+16:C
+0:{"buildId":"6N96irpV6SekKlynbsf87","data":[{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"홈\",\"item\":\"https://seungahhong.github.io/ko/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"포스트\",\"item\":\"https://seungahhong.github.io/ko/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"React Router v8\",\"item\":\"https://seungahhong.github.io/ko/posts/2026-09-19-react-router-v8/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"React Router v8"}]]}]}],["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"React Router v8"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],"$L5","$L6","$L7","$L8","$L9"]}],false,"$La"]}],"$Lb","$Lc"]}],"$Ld"]}]}]],["$Le"],"$Lf"]}],"isPartial":"$@10","staleTime":"$11","varyParams":null},{"rsc":"$L12","isPartial":"$@13","staleTime":"$11","varyParams":null},{"rsc":"$L14","isPartial":"$@15","staleTime":"$11","varyParams":"$16"},{"rsc":"$L17","isPartial":"$@18","staleTime":"$11","varyParams":"$16"}],"isUpgradeableISRFallback":false,"a":"$@19","rootVaryParams":null,"needsRuntimeRequest":"$@1a"}
+1c:I[94917,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+1d:I[27722,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+1e:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"OutletBoundary"]
+1f:"$Sreact.suspense"
+21:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"ViewportBoundary"]
+22:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"MetadataBoundary"]
+23:I[20665,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"IconMark"]
+24:I[47221,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+25:I[60184,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+5:["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"홍승아"}]
+6:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+7:["$","time",null,{"dateTime":"2026-09-19","className":"meta-mono","children":"2026.09.19"}]
+8:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+9:["$","span",null,{"className":"meta-mono","children":[10,"분"]}]
+a:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","react-router",{"children":["$","$L4",null,{"href":"/ko/tags?tag=react-router","className":"tag-pill","children":"react-router"}]}],["$","li","react",{"children":["$","$L4",null,{"href":"/ko/tags?tag=react","className":"tag-pill","children":"react"}]}]]}]
+1b:T110d1,<h2 id="react-router-v8-출시-지루한-메이저와-v7--v8-업그레이드-가이드">React Router v8 출시: "지루한 메이저"와 v7 → v8 업그레이드 가이드<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-router-v8-출시-지루한-메이저와-v7--v8-업그레이드-가이드"><span class="icon icon-link"></span></a></h2>
+<h3 id="️-한-줄-요약">✍️ 한 줄 요약<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#️-한-줄-요약"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p><strong>React Router v8은 새 기능을 싣고 온 릴리스가 아니라, v7에서 future flag로 미리 풀어둔 변경을 기본값으로 굳히고 최소 버전을 올린 릴리스입니다.</strong> v7에서 플래그를 모두 켜두었다면 업그레이드는 사실상 <code>pnpm i react-router@latest</code> 한 줄입니다.</p>
+</blockquote>
+<h4 id="요약">요약<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#요약"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><strong>출시</strong>: 2026년 6월 17일, Remix 블로그 공지. 팀 스스로 "가장 지루한(boring) 메이저"라고 부릅니다.</li>
+<li><strong>최소 버전</strong>: Node <strong>22.22.0+</strong> · React <strong>19.2.7+</strong> · Vite <strong>7+</strong>(Framework 모드). 패키지는 <strong>ESM 전용</strong>이 되었고 tsconfig target/lib는 ES2022로 올라갔습니다.</li>
+<li><strong>기본값이 된 future flag 5개</strong>: <code>v8_middleware</code> · <code>v8_splitRouteModules</code>(최상위 <code>splitRouteModules</code>로 이동) · <code>v8_viteEnvironmentApi</code> · <code>v8_passThroughRequests</code> · <code>v8_trailingSlashAwareDataRequests</code></li>
+<li><strong>제거된 것 4가지</strong>: <code>react-router-dom</code> 패키지 · <code>meta</code>/<code>matches</code>의 <code>data</code>(→ <code>loaderData</code>) · Cloudflare dev proxy(→ <code>@cloudflare/vite-plugin</code>) · <code>@react-router/architect</code>의 <code>useRequestContextDomainName</code> 옵션</li>
+<li><strong>업그레이드 순서</strong>: v7 최신 → future flag 하나씩 켜고 커밋 → 제거된 API 정리 → v8 설치. 모든 변경을 <strong>v7에서 미리 적용</strong>할 수 있다는 게 핵심입니다.</li>
+<li><strong>조용히 깨질 수 있는 곳</strong>: <code>.data</code> 요청 URL을 직접 다루는 서버·CDN·캐시 규칙(<code>/_root.data</code> → <code>/_.data</code>), <code>request.url</code>로 경로를 비교하던 loader, <code>isSsrBuild</code>에 기대던 Vite 설정.</li>
+<li><strong>앞으로</strong>: <strong>매년 메이저</strong>를 내는 일정으로 전환. v6와 Remix v2는 <strong>EOL</strong>(보안 업데이트 종료), v7은 보안 업데이트 계속. v9(2027년 중반 예상)는 <strong>Node 24+</strong> 를 요구할 예정이고, RSC 지원은 아직 unstable입니다.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>항목</th><th>내용</th></tr></thead><tbody><tr><td><strong>런타임 기준</strong></td><td>Node 22.22.0+ · React 19.2.7+ · Vite 7+ · ESM-only</td></tr><tr><td><strong>기본값 전환</strong></td><td>미들웨어 · 라우트 모듈 분할 · Vite Environment API · 원본 요청 전달 · trailing slash 인식</td></tr><tr><td><strong>제거</strong></td><td><code>react-router-dom</code> · <code>data</code> 파라미터 · Cloudflare dev proxy · architect 옵션</td></tr><tr><td><strong>지원 정책</strong></td><td>v6·Remix v2 EOL · v7 보안 패치 유지 · 연 1회 메이저</td></tr></tbody></table>
+<p>아래부터는 상세 내용입니다.</p>
+<hr>
+<h3 id="-목차">📋 목차<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-목차"><span class="icon icon-link"></span></a></h3>
+<ol>
+<li><a href="#%EC%99%9C-%EC%A7%80%EB%A3%A8%ED%95%9C-%EB%A9%94%EC%9D%B4%EC%A0%80%EC%9D%B8%EA%B0%80">왜 "지루한 메이저"인가</a></li>
+<li><a href="#v7-%EC%9D%B4%ED%9B%84-%EC%8C%93%EC%9D%B8-%EA%B2%83%EB%93%A4">v7 이후 쌓인 것들</a></li>
+<li><a href="#%EB%AC%B4%EC%97%87%EC%9D%B4-%EB%B0%94%EB%80%8C%EB%82%98">무엇이 바뀌나</a></li>
+<li><a href="#v7--v8-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C-%EA%B0%80%EC%9D%B4%EB%93%9C">v7 → v8 업그레이드 가이드</a></li>
+<li><a href="#%EC%A1%B0%EC%9A%A9%ED%9E%88-%EA%B9%A8%EC%A7%88-%EC%88%98-%EC%9E%88%EB%8A%94-%EA%B3%B3">조용히 깨질 수 있는 곳</a></li>
+<li><a href="#v9%EB%A5%BC-%EB%AF%B8%EB%A6%AC-%EB%B3%B4%EB%A9%B4">v9를 미리 보면</a></li>
+<li><a href="#%EC%95%9E%EC%9C%BC%EB%A1%9C%EC%9D%98-react-router-%EA%B7%B8%EB%A6%AC%EA%B3%A0-remix">앞으로의 React Router, 그리고 Remix</a></li>
+<li><a href="#%EB%A7%88%EB%AC%B4%EB%A6%AC">마무리</a></li>
+</ol>
+<h3 id="왜-지루한-메이저인가">왜 "지루한 메이저"인가<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#왜-지루한-메이저인가"><span class="icon icon-link"></span></a></h3>
+<p>React Router는 12년 동안 여러 번 모양을 바꿨고, 오래 쓴 사람일수록 "메이저 = 대공사"라는 기억이 있습니다. <a href="/ko/posts/2022-03-12-react-router-v6/">v6 때</a>만 해도 <code>Switch</code>가 <code>Routes</code>로, <code>useHistory</code>가 <code>useNavigate</code>로 바뀌는 식이었죠.</p>
+<p>v7부터 팀의 전략은 <strong>future flag</strong> 입니다. 다음 메이저에서 바뀔 동작을 현재 메이저에서 플래그로 먼저 제공하고, 사용자는 원하는 시점에 하나씩 켜서 적응합니다. 메이저가 나오는 날에는 그 플래그들이 기본값이 될 뿐이라, <strong>업그레이드 당일에 새로 고칠 게 거의 없습니다.</strong></p>
+<p>공지문 작성자(Brooks Lybrand)의 표현을 빌리면, 이 방식의 유일한 단점은 "블로그 글로 띄우기 어렵다"는 것입니다. 그리고 팀은 이 지루함을 제도화하기로 했습니다 — <strong>앞으로 메이저는 매년 한 번</strong> 나옵니다.</p>
+<h3 id="v7-이후-쌓인-것들">v7 이후 쌓인 것들<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v7-이후-쌓인-것들"><span class="icon icon-link"></span></a></h3>
+<p>v7의 헤드라인은 <strong>Framework 모드</strong>였습니다. Vite 플러그인 하나로 타입 안전한 Route Module API, 코드 분할, SPA/SSR/정적 렌더링, 데이터 로딩·뮤테이션을 얹는 구조입니다. 동시에 단순한 클라이언트 라우터(Declarative 모드), 직접 프레임워크를 만드는 Data 모드도 계속 지원합니다. 이 <strong>세 가지 모드를 모두 유지</strong>한다는 방침은 v8에서도 그대로입니다.</p>
+<p>v7 이후 40번이 넘는 릴리스에서 추가된 것들은 다음과 같습니다(공지 기준, 전체 목록은 아님).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>분류</th><th>추가된 것</th></tr></thead><tbody><tr><td><strong>데이터/서버</strong></td><td>미들웨어·개선된 context · Pass-through Requests · Call-site revalidation · <code>fetcher.reset</code></td></tr><tr><td><strong>번들/빌드</strong></td><td>Split Route Modules · Vite Environment API 지원 · Object 기반 <code>route.lazy</code> · 설정 가능한 Lazy Route Discovery</td></tr><tr><td><strong>렌더링</strong></td><td>SPA 모드 개선 · 프리렌더링 개선 · (unstable) RSC 지원</td></tr><tr><td><strong>API</strong></td><td>타입 안전 <code>href</code> · <code>useRoute</code>/<code>useRouterState</code>(unstable) · <code>useTransitions</code> 라우터 prop · RouterProvider <code>onError</code> · Link masking</td></tr><tr><td><strong>운영</strong></td><td>Instrumentation API · Subresource integrity · 다수의 성능 개선 · Agent Skills</td></tr></tbody></table>
+<p>v8에서 "새로 생긴" 기능이 적어 보이는 이유가 여기 있습니다. 새 기능은 이미 v7 마이너 릴리스로 다 나와 있었고, v8은 그중 일부를 <strong>기본값으로 확정</strong>하는 자리입니다.</p>
+<h3 id="무엇이-바뀌나">무엇이 바뀌나<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#무엇이-바뀌나"><span class="icon icon-link"></span></a></h3>
+<h4 id="1-최소-지원-버전">1. 최소 지원 버전<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-최소-지원-버전"><span class="icon icon-link"></span></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>대상</th><th>최소 버전</th><th>비고</th></tr></thead><tbody><tr><td><strong>Node</strong></td><td>22.22.0+</td><td>Maintenance LTS는 최신 마이너 라인만 지원</td></tr><tr><td><strong>React</strong></td><td>19.2.7+</td><td><code>react</code>, <code>react-dom</code> 모두</td></tr><tr><td><strong>Vite</strong></td><td>7+</td><td>Framework 모드만 해당. 커스텀 Vite 플러그인도 Vite 7 호환인지 확인</td></tr></tbody></table>
+<p>여기에 두 가지가 더 붙습니다.</p>
+<ul>
+<li><strong>ESM 전용 배포</strong> — CommonJS 빌드가 빠졌습니다.</li>
+<li><strong>tsconfig target/lib를 ES2022로</strong> 일괄 상향했습니다.</li>
+</ul>
+<p>Node 지원 정책도 명문화됐습니다. <strong>Active LTS는 모든 버전</strong>, <strong>Maintenance LTS는 최신 마이너 라인만</strong> 공식 지원합니다. 공지 시점 기준으로:</p>
+<ul>
+<li>Node 24는 Active LTS → 24.x 전부 지원</li>
+<li>Node 22는 Maintenance LTS → <strong>22.22.x만</strong> 지원</li>
+<li>Node 22.23.x가 나오면 React Router의 <strong>마이너 릴리스</strong>에서 최소 버전을 22.23.x로 올림</li>
+<li>Node 22가 EOL이 되면 <strong>메이저 릴리스</strong>에서 지원 중단</li>
+</ul>
+<p>보안 패치가 들어간 Node 버전을 빠르게 최소 기준으로 삼기 위한 정책입니다. 뒤집어 말하면, Node 22를 쓰는 팀은 <strong>마이너 업데이트만으로도 Node 버전을 올려야 할 수 있다</strong>는 뜻이니, CI와 배포 이미지의 Node 버전을 느슨하게 두지 않는 편이 안전합니다.</p>
+<h4 id="2-기본값이-된-future-flag">2. 기본값이 된 future flag<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-기본값이-된-future-flag"><span class="icon icon-link"></span></a></h4>
+<p>v7의 v8 future flag 다섯 개가 삭제되고, 그 동작이 기본값이 되었습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>플래그</th><th>v8에서의 상태</th><th>대상 모드</th></tr></thead><tbody><tr><td><code>future.v8_middleware</code></td><td>기본 동작</td><td>Framework · Data</td></tr><tr><td><code>future.v8_splitRouteModules</code></td><td>최상위 <code>splitRouteModules</code> 옵션으로 이동, 기본 활성</td><td>Framework</td></tr><tr><td><code>future.v8_viteEnvironmentApi</code></td><td>기본 동작</td><td>Framework</td></tr><tr><td><code>future.v8_passThroughRequests</code></td><td>기본 동작</td><td>Framework</td></tr><tr><td><code>future.v8_trailingSlashAwareDataRequests</code></td><td>기본 동작</td><td>Framework</td></tr></tbody></table>
+<h4 id="3-제거된-api">3. 제거된 API<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-제거된-api"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><strong><code>react-router-dom</code> 패키지</strong> — v6 → v7 전환을 부드럽게 하려고 남겨둔 <code>react-router</code>의 미러였습니다. <code>react-router</code>와 <code>react-router/dom</code>을 쓰면 됩니다.</li>
+<li><strong><code>meta</code> API의 <code>data</code> 파라미터</strong> — <code>loaderData</code>로 대체.</li>
+<li><strong>Cloudflare dev proxy</strong>(<code>@react-router/dev/vite/cloudflare</code>) — Cloudflare의 공식 <code>@cloudflare/vite-plugin</code>으로 대체.</li>
+<li><strong><code>@react-router/architect</code>의 <code>useRequestContextDomainName</code> 옵션</strong> — 그 동작이 기본값이 되어 옵션 자체가 사라짐.</li>
+</ul>
+<h3 id="v7--v8-업그레이드-가이드">v7 → v8 업그레이드 가이드<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v7--v8-업그레이드-가이드"><span class="icon icon-link"></span></a></h3>
+<p>공식 가이드의 권장 사항은 하나입니다. <strong>한 번에 다 하지 말고 단계마다 커밋하라.</strong> 플래그는 대부분 순서와 무관하게 켤 수 있고, 예외는 아래에 표시했습니다.</p>
+<h4 id="0단계-최소-버전-먼저">0단계: 최소 버전 먼저<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#0단계-최소-버전-먼저"><span class="icon icon-link"></span></a></h4>
+<p>React Router를 올리기 <strong>전에</strong> 런타임부터 맞춥니다.</p>
+<ul>
+<li><code>node@22.22+</code></li>
+<li><code>react@19.2.7+</code> / <code>react-dom@19.2.7+</code></li>
+<li>Framework 모드라면 <code>vite@7+</code> — 그리고 커스텀 Vite 플러그인·설정이 Vite 7과 호환되는지 확인</li>
+</ul>
+<h4 id="1단계-v7-최신-버전으로">1단계: v7 최신 버전으로<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1단계-v7-최신-버전으로"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-router@7</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @react-router/{dev,node,etc.}@7</span></span></code></pre></figure>
+<h4 id="2단계-future-flag를-하나씩-켜기">2단계: future flag를 하나씩 켜기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2단계-future-flag를-하나씩-켜기"><span class="icon icon-link"></span></a></h4>
+<p>Framework 모드는 <code>react-router.config.ts</code>에, Data 모드는 <code>createBrowserRouter</code>의 옵션에 켭니다.</p>
+<h5 id="v8_middleware-framework--data"><code>v8_middleware</code> (Framework · Data)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v8_middleware-framework--data"><span class="icon icon-link"></span></a></h5>
+<p>라우트가 매칭된 뒤 응답을 만들기 전·후에 코드를 끼워 넣는 미들웨어입니다. 인증, 로깅, 에러 처리 같은 공통 로직에 씁니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Framework 모드: react-router.config.ts</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> type</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { Config } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@react-router/dev/config'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    v8_middleware: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">satisfies</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Config</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Data 모드</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { createBrowserRouter } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> router</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createBrowserRouter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(routes, {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    v8_middleware: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<ul>
+<li><code>react-router-serve</code>를 쓴다면 코드 변경 없음</li>
+<li><strong>커스텀 서버</strong>라면 <code>getLoadContext</code>/<code>AppLoadContext</code> 변경 사항을 확인해야 합니다</li>
+<li><strong>Data 모드</strong>라면 <code>context</code> 타입을 맞추기 위해 <code>Future</code> 모듈 augmentation을 추가합니다</li>
+</ul>
+<h5 id="v8_splitroutemodules-framework"><code>v8_splitRouteModules</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v8_splitroutemodules-framework"><span class="icon icon-link"></span></a></h5>
+<p>라우트 모듈의 클라이언트 전용 export(<code>clientLoader</code>, <code>clientAction</code>, <code>clientMiddleware</code>, <code>HydrateFallback</code>)를 별도 청크로 쪼개, 컴포넌트와 독립적으로 로드되게 합니다. <code>true</code>는 가능한 곳만 분할, <code>"enforce"</code>는 <strong>모든 라우트가 분할 가능해야</strong> 빌드가 통과합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    v8_splitRouteModules: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 또는 "enforce"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">satisfies</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Config</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>코드 변경은 필요 없습니다. v8에서는 이 옵션이 <code>future</code> 밖, 최상위 <code>splitRouteModules</code>로 옮겨집니다.</p>
+<h5 id="v8_viteenvironmentapi-framework"><code>v8_viteEnvironmentApi</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v8_viteenvironmentapi-framework"><span class="icon icon-link"></span></a></h5>
+<p>Vite Environment API 지원을 켭니다(플래그 자체는 Vite 6+에서 동작하지만, <strong>v8은 Vite 7+를 요구</strong>하므로 이 단계에서 Vite 7로 올려두는 게 자연스럽습니다).</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    v8_viteEnvironmentApi: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">satisfies</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Config</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p><code>isSsrBuild</code>로 SSR 빌드를 분기하던 Vite 설정은 <strong>환경별(<code>environments</code>) 설정</strong>으로 옮겨야 합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Before</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> defineConfig</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">(({ isSsrBuild }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  build: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    rollupOptions: isSsrBuild</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      ?</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          input: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./server/app.ts'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        }</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      :</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> undefined</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}))</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// After</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { reactRouter } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@react-router/dev/vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { defineConfig } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> defineConfig</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  environments: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ssr: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      build: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        rollupOptions: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          input: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./server/app.ts'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  plugins: [</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">reactRouter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()]</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">})</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h5 id="v8_passthroughrequests-framework"><code>v8_passThroughRequests</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v8_passthroughrequests-framework"><span class="icon icon-link"></span></a></h5>
+<p><code>loader</code>·<code>action</code>·<code>middleware</code>에 정규화된 요청 대신 <strong>원본 HTTP <code>request</code></strong> 를 그대로 넘깁니다. 서버에서 <code>new Request()</code>를 여러 번 만들던 오버헤드가 줄고, <code>.data</code> 접미사로 문서 요청과 데이터 요청을 구분할 수 있어 관측(observability)에도 유리합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    v8_passThroughRequests: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">satisfies</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Config</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>대신 <strong><code>request.url</code>의 pathname에 <code>.data</code>가 붙어 올 수 있으므로</strong>, 라우팅 판단에는 새로 제공되는 정규화된 <code>url</code> 인자를 써야 합니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Before — pathname에 .data 접미사가 붙으면 비교가 실패할 수 있음</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> async</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> loader</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">request</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Route</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">LoaderArgs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> url </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> URL</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(request.url);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (url.pathname </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '/path'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // ...</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// After — 라우팅 판단은 정규화된 url, 요청 종류 판단은 원본 request</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> async</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> loader</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">request</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">url</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Route</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">LoaderArgs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (url.pathname </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '/path'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // .data 접미사가 없는 정규화된 경로</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> isDataRequest </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> URL</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(request.url).pathname.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">endsWith</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'.data'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<h5 id="v8_trailingslashawaredatarequests-framework"><code>v8_trailingSlashAwareDataRequests</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v8_trailingslashawaredatarequests-framework"><span class="icon icon-link"></span></a></h5>
+<p>데이터 요청 URL에서 trailing slash의 의미를 보존해, <code>/path</code>와 <code>/path/</code>가 같은 데이터 URL로 뭉개지는 모호함을 없앱니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>라우트</th><th>데이터 요청 URL</th></tr></thead><tbody><tr><td>trailing slash 없음</td><td><code>/path.data</code> (그대로)</td></tr><tr><td>trailing slash 있음</td><td><code>/path/_.data</code> (<strong>새 형식</strong>)</td></tr><tr><td>루트</td><td><code>/_.data</code> (기존 <code>/_root.data</code>에서 변경)</td></tr></tbody></table>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    v8_trailingSlashAwareDataRequests: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">satisfies</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Config</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>앱 코드보다는 <strong>앱 바깥의 CDN·캐시·리라이트 규칙</strong>이 영향을 받습니다. <code>/_root.data</code>나 <code>*.data</code> 패턴을 다루는 설정이 있다면 새 형식에 맞춰야 합니다.</p>
+<h4 id="3단계-제거될-api-정리">3단계: 제거될 API 정리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3단계-제거될-api-정리"><span class="icon icon-link"></span></a></h4>
+<h5 id="metamatches의-data--loaderdata-framework"><code>meta</code>/<code>matches</code>의 <code>data</code> → <code>loaderData</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#metamatches의-data--loaderdata-framework"><span class="icon icon-link"></span></a></h5>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Before</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> meta</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Route</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">MetaArgs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [{ title: data.title }];</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// After</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> meta</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">loaderData</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Route</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">MetaArgs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [{ title: loaderData.title }];</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<p>부모 라우트 데이터를 <code>matches</code>에서 꺼내던 코드와 <code>useMatches()</code>도 같은 방식으로 바꿉니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// meta 안에서 부모 match 참조</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> rootMatch </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> matches.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">find</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">((</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">match</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> match.id </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'root'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> rootData </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> rootMatch?.loaderData; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 기존: rootMatch?.data</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 컴포넌트에서</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> matches </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useMatches</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> rootLoaderData</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> matches[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">].loaderData; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 기존: matches[0].data</span></span></code></pre></figure>
+<h5 id="react-router-dom-제거-모든-모드"><code>react-router-dom</code> 제거 (모든 모드)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-router-dom-제거-모든-모드"><span class="icon icon-link"></span></a></h5>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> uninstall</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-router-dom</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Before</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { Link, useLocation } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router-dom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { RouterProvider } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router-dom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// After</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { Link, useLocation } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { RouterProvider } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router/dom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// DOM 전용 API</span></span></code></pre></figure>
+<p>import 경로만 바꾸면 되는 기계적인 작업이라, 코드베이스 전체를 한 번에 치환하기 좋습니다.</p>
+<h5 id="cloudflare-dev-proxy--cloudflarevite-plugin-framework">Cloudflare dev proxy → <code>@cloudflare/vite-plugin</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cloudflare-dev-proxy--cloudflarevite-plugin-framework"><span class="icon icon-link"></span></a></h5>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Before</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { reactRouter } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@react-router/dev/vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { cloudflareDevProxy } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@react-router/dev/vite/cloudflare'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { defineConfig } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> defineConfig</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  plugins: [</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">cloudflareDevProxy</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(), </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">reactRouter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()]</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">})</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// After</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { reactRouter } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@react-router/dev/vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { cloudflare } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@cloudflare/vite-plugin'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { defineConfig } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> defineConfig</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  plugins: [</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">cloudflare</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(), </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">reactRouter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()]</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">})</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h5 id="react-routerarchitect의-도메인-판별-framework"><code>@react-router/architect</code>의 도메인 판별 (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-routerarchitect의-도메인-판별-framework"><span class="icon icon-link"></span></a></h5>
+<p>v8의 architect 어댑터는 <code>X-Forwarded-Host</code> 대신 <code>event.requestContext.domainName</code>을 기본으로 쓰고, 없으면 <code>Host</code> 헤더로 폴백합니다. v7에서 미리 맞춰보려면:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { createRequestHandler } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@react-router/architect'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> *</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> as</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> build </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> './build/server'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> handler</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createRequestHandler</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  build,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  useRequestContextDomainName: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<p>v8로 올린 뒤에는 이 옵션을 지웁니다(옵션 자체가 제거됨).</p>
+<h4 id="4단계-v8-설치">4단계: v8 설치<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4단계-v8-설치"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Data / Declarative 모드</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-router@latest</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Framework 모드</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-router@latest</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @react-router/{dev,node,etc.}@latest</span></span></code></pre></figure>
+<p>1~3단계를 v7에서 끝냈다면 여기서 추가로 고칠 코드는 거의 없습니다. 공지문에는 업그레이드 가이드를 "솔직히 AI 에이전트한테 던져도 된다"는 말도 있는데, 단계별로 before/after가 명확하게 정리돼 있어 실제로 에이전트에게 맡기기 좋은 형태입니다.</p>
+<h3 id="조용히-깨질-수-있는-곳">조용히 깨질 수 있는 곳<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#조용히-깨질-수-있는-곳"><span class="icon icon-link"></span></a></h3>
+<p>공식 문서가 "변경 없음"이라고 하는 곳과 "업데이트 필요"라고 하는 곳을 나눠 보면, 실제 사고가 나기 쉬운 지점은 <strong>타입 체크나 빌드가 잡아주지 못하는 곳</strong>입니다. 아래는 가이드 내용을 바탕으로 한 제 정리입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>지점</th><th>왜 조용한가</th><th>확인 방법</th></tr></thead><tbody><tr><td><code>request.url</code>로 경로를 비교하는 loader</td><td>문서 요청에선 통과, <strong>클라이언트 내비게이션의 데이터 요청에서만</strong> 실패</td><td><code>new URL(request.url)</code> 사용처를 검색해 <code>url</code> 인자로 교체</td></tr><tr><td>CDN·캐시·리라이트 규칙</td><td>앱 저장소 밖에 있어 코드 리뷰에 안 걸림</td><td><code>_root.data</code>, <code>.data</code> 패턴을 인프라 설정에서 검색</td></tr><tr><td><code>isSsrBuild</code> 분기 Vite 설정</td><td>설정이 무시되면 서버 엔트리가 바뀌어도 에러 없이 빌드될 수 있음</td><td><code>environments.ssr</code>로 옮긴 뒤 서버 번들 엔트리 확인</td></tr><tr><td>커스텀 서버의 load context</td><td>미들웨어 기본 활성화로 context 전달 방식이 달라짐</td><td><code>getLoadContext</code> 반환값과 <code>context</code> 타입 점검</td></tr><tr><td>Node 버전 핀</td><td>22.12 같은 "22 계열"이면 괜찮다고 착각하기 쉬움</td><td><code>.nvmrc</code>·CI 이미지·<code>engines</code>를 22.22+로</td></tr></tbody></table>
+<h3 id="v9를-미리-보면">v9를 미리 보면<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v9를-미리-보면"><span class="icon icon-link"></span></a></h3>
+<p>v8 업그레이드 문서와 짝을 이루는 "Future Changes" 문서는 이미 <strong>v9(2027년 중반 예상)</strong> 를 향해 있습니다.</p>
+<ul>
+<li><strong>최소 버전</strong>: <code>node@24+</code> — v8을 쓰는 동안 미리 올려둘 수 있습니다.</li>
+<li><strong>Future flag</strong>: 아직 없음</li>
+<li><strong>예정된 breaking change</strong>: 아직 없음</li>
+</ul>
+<p>대신 프로덕션 비권장인 <strong>unstable 플래그</strong> 세 개가 있습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>플래그</th><th>모드</th><th>내용</th></tr></thead><tbody><tr><td><code>unstable_enableNodeReadableStream</code></td><td>Framework</td><td>Node 22+의 안정화된 Web Streams를 활용해 Node에서도 <code>renderToPipeableStream</code> 대신 <code>renderToReadableStream</code> 사용</td></tr><tr><td><code>unstable_optimizeDeps</code></td><td>Framework</td><td>클라이언트 엔트리·라우트 모듈을 Vite 의존성 최적화 대상에 넘겨 개발 서버 최적화 개선</td></tr><tr><td><code>unstable_routePatternMatching</code></td><td>Data Router</td><td><code>@remix-run/route-pattern</code> 기반의 새 매처로 교체</td></tr></tbody></table>
+<p>가장 눈여겨볼 건 마지막 플래그입니다. 새 매처는 세그먼트 점수 합산이 아니라 <strong>위치별 구체성</strong>(앞쪽 정적 접두사가 길수록 우선)으로 순위를 매깁니다.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { createBrowserRouter } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { unstable_preloadRoutePattern } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router/route-pattern'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">unstable_preloadRoutePattern</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 라우터 생성 전에 호출하지 않으면 생성 시 throw</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> router</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createBrowserRouter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(routes, {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    unstable_routePatternMatching: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> routes</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  { path: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/products/*'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, id: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'products'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  { path: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/:first/:second/:third/:fourth'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, id: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'segments'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// 새 매처: /products/one/two/three → 'products'</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// (같은 위치에서 정적 세그먼트 'products'가 동적 ':first'보다 구체적)</span></span></code></pre></figure>
+<p>주의할 점도 있습니다. <code>matchRoutes</code>·<code>matchPath</code>·<code>useMatch</code> 같은 독립 API는 <strong>여전히 기존 매처</strong>를 쓰고, 대소문자 구분 라우트는 이 플래그에서 아직 지원되지 않습니다. 라우트 패턴이 겹치는 앱이라면, 이 플래그가 정식이 되기 전에 겹치는 패턴을 한 번 정리해 두는 게 좋겠습니다.</p>
+<h3 id="앞으로의-react-router-그리고-remix">앞으로의 React Router, 그리고 Remix<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#앞으로의-react-router-그리고-remix"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li><strong>연 1회 메이저</strong> — 메이저 버전을 정기적이고 예측 가능하게, 그래서 지루하게 만들겠다는 방침입니다.</li>
+<li><strong>지원 종료</strong> — v8 출시와 함께 <strong>React Router v6와 Remix v2가 EOL</strong>이 되어 보안 업데이트도 끊깁니다. v7은 계속 보안 업데이트를 받습니다. 아직 v6에 머물러 있다면 지금이 v7로 올라갈 시점입니다.</li>
+<li><strong>Server Components / Server Actions</strong> — 작업은 진행 중이지만 API를 확정하기 전이라 unstable로 남아 있습니다. opt-in 아키텍처이며, <strong>마이너 버전에서 안정화</strong>할 계획입니다.</li>
+<li><strong>Open Governance</strong> — 커뮤니티 제안(Proposals) 기반으로 개발 우선순위를 정하는 모델을 유지합니다.</li>
+<li><strong>설계 원칙</strong> — Less is More · Routing and Data Focused · Simple Migration Paths · Lowest Common Mode</li>
+</ul>
+<p>Remix와의 관계도 정리됐습니다. Remix v0~v2는 사실상 React Router의 <strong>feature branch</strong>였고, 성숙한 아이디어와 API는 React Router로 다시 합쳐졌습니다. 덕분에 Remix는 React Router와 별개로 <strong>"진정한 풀스택, 의존성 없는 JavaScript 웹 프레임워크"</strong>(Remix 3 베타) 방향으로 갑니다.</p>
+<p>어느 쪽을 써야 하느냐는 질문에 대한 팀의 답은 간단합니다. <strong>검증된 것이 필요하면 React Router, 새로운 시도에 끌린다면 Remix 3.</strong></p>
+<h3 id="마무리">마무리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#마무리"><span class="icon icon-link"></span></a></h3>
+<p>v8을 한 문장으로 정리하면 <strong>"v7에서 이미 할 수 있던 일을, 이제 해야 하는 일로 바꾼 릴리스"</strong> 입니다. 기능 목록은 v7 마이너 릴리스들에서 다 나왔고, v8은 그 기본값과 바닥(최소 버전)을 올렸을 뿐입니다.</p>
+<p>그래서 업그레이드 난이도는 <strong>v7에서 플래그를 얼마나 켜두었느냐</strong>에 달려 있습니다. 다 켜두었다면 한 줄이고, 하나도 안 켰다면 이 글의 2~3단계를 v7 위에서 차례로 밟으면 됩니다. 어느 쪽이든 v8 설치는 마지막 단계여야 합니다.</p>
+<p><strong>업그레이드 체크리스트:</strong></p>
+<ul>
+<li>✅ Node 22.22+ · React/React DOM 19.2.7+ · (Framework) Vite 7+ — <code>.nvmrc</code>·CI·배포 이미지까지</li>
+<li>✅ v7 최신으로 올리기</li>
+<li>✅ <code>v8_middleware</code> — 커스텀 서버면 <code>getLoadContext</code>, Data 모드면 <code>Future</code> 타입 augmentation</li>
+<li>✅ <code>v8_splitRouteModules</code> — v8에선 최상위 <code>splitRouteModules</code></li>
+<li>✅ <code>v8_viteEnvironmentApi</code> — <code>isSsrBuild</code> 분기를 <code>environments.ssr</code>로</li>
+<li>✅ <code>v8_passThroughRequests</code> — <code>new URL(request.url)</code> 경로 비교를 <code>url</code> 인자로</li>
+<li>✅ <code>v8_trailingSlashAwareDataRequests</code> — CDN·캐시·리라이트의 <code>/_root.data</code> → <code>/_.data</code></li>
+<li>✅ <code>meta</code>/<code>matches</code>/<code>useMatches()</code>의 <code>data</code> → <code>loaderData</code></li>
+<li>✅ <code>react-router-dom</code> 제거, import를 <code>react-router</code> / <code>react-router/dom</code>으로</li>
+<li>✅ Cloudflare dev proxy → <code>@cloudflare/vite-plugin</code>, architect 옵션 정리</li>
+<li>✅ 마지막에 <code>react-router@latest</code> 설치</li>
+<li>✅ (선택) v9 대비 Node 24 검토</li>
+</ul>
+<hr>
+<h2 id="참고-문서">참고 문서<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#참고-문서"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Remix, <a href="https://remix.run/blog/react-router-v8">React Router v8</a></li>
+<li>React Router, <a href="https://reactrouter.com/upgrading/v7">Updating from v7</a></li>
+<li>React Router, <a href="https://reactrouter.com/upgrading/future">Future Changes</a></li>
+<li>React Router, <a href="https://reactrouter.com/brand">Brand Assets</a> — 썸네일 로고 출처</li>
+<li>이전 글 — <a href="/ko/posts/2022-03-12-react-router-v6/">React Router v6</a> · <a href="/ko/posts/2026-09-15-vitest5/">Vitest 5.0</a></li>
+</ul>b:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$1b"}}]}]
+c:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/ko/posts/2026-09-17-ai-native-revenue-org","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L1c",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"이전 글"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"절약한 시간은 바닥값이다 — AI 네이티브 매출 조직을 만드는 법"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+d:["$","div",null,{"className":"hidden lg:block","children":["$","$L1d",null,{"headings":[{"id":"react-router-v8-출시-지루한-메이저와-v7--v8-업그레이드-가이드","text":"React Router v8 출시: \"지루한 메이저\"와 v7 → v8 업그레이드 가이드","depth":1},{"id":"️-한-줄-요약","text":"✍️ 한 줄 요약","depth":2},{"id":"요약","text":"요약","depth":3},{"id":"-목차","text":"📋 목차","depth":2},{"id":"왜-지루한-메이저인가","text":"왜 \"지루한 메이저\"인가","depth":2},{"id":"v7-이후-쌓인-것들","text":"v7 이후 쌓인 것들","depth":2},{"id":"무엇이-바뀌나","text":"무엇이 바뀌나","depth":2},{"id":"1-최소-지원-버전","text":"1. 최소 지원 버전","depth":3},{"id":"2-기본값이-된-future-flag","text":"2. 기본값이 된 future flag","depth":3},{"id":"3-제거된-api","text":"3. 제거된 API","depth":3},{"id":"v7--v8-업그레이드-가이드","text":"v7 → v8 업그레이드 가이드","depth":2},{"id":"0단계-최소-버전-먼저","text":"0단계: 최소 버전 먼저","depth":3},{"id":"1단계-v7-최신-버전으로","text":"1단계: v7 최신 버전으로","depth":3},{"id":"2단계-future-flag를-하나씩-켜기","text":"2단계: future flag를 하나씩 켜기","depth":3},{"id":"3단계-제거될-api-정리","text":"3단계: 제거될 API 정리","depth":3},{"id":"4단계-v8-설치","text":"4단계: v8 설치","depth":3},{"id":"조용히-깨질-수-있는-곳","text":"조용히 깨질 수 있는 곳","depth":2},{"id":"v9를-미리-보면","text":"v9를 미리 보면","depth":2},{"id":"앞으로의-react-router-그리고-remix","text":"앞으로의 React Router, 그리고 Remix","depth":2},{"id":"마무리","text":"마무리","depth":2},{"id":"참고-문서","text":"참고 문서","depth":1}],"title":"목차"}]}]
+e:["$","script","script-0",{"src":"/_next/static/chunks/13tuup7jbc8xe.js","async":true}]
+f:["$","$L1e",null,{"children":["$","$1f",null,{"name":"Next.MetadataOutlet","children":"$@20"}]}]
+12:["$","$1","h",{"children":[null,["$","$L21",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L22",null,{"children":["$","$1f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"React Router v8 · 홍승아 기술 블로그"}],["$","meta","1",{"name":"description","content":"React Router v8 출시: \"지루한 메이저\"와 v7 → v8 업그레이드 가이드 ✍️ 한 줄 요약 React Router v8은 새 기능을 싣고 온 릴리스가 아니라, v7에서 future flag로 미리 풀어둔 변경을 기본값으로 굳히고 최소 버전을 올린 릴리스입니다. v7에서…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"홍승아"}],["$","meta","4",{"name":"keywords","content":"react-router,react"}],["$","meta","5",{"name":"creator","content":"홍승아"}],["$","meta","6",{"name":"publisher","content":"홍승아"}],["$","meta","7",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://seungahhong.github.io/ko/posts/2026-09-19-react-router-v8/"}],["$","link","9",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-09-19-react-router-v8/"}],["$","link","10",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-09-19-react-router-v8/"}],["$","link","11",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-09-19-react-router-v8/"}],["$","meta","12",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","13",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","14",{"property":"og:title","content":"React Router v8"}],["$","meta","15",{"property":"og:description","content":"React Router v8 출시: \"지루한 메이저\"와 v7 → v8 업그레이드 가이드 ✍️ 한 줄 요약 React Router v8은 새 기능을 싣고 온 릴리스가 아니라, v7에서 future flag로 미리 풀어둔 변경을 기본값으로 굳히고 최소 버전을 올린 릴리스입니다. v7에서…"}],["$","meta","16",{"property":"og:url","content":"https://seungahhong.github.io/ko/posts/2026-09-19-react-router-v8/"}],["$","meta","17",{"property":"og:locale","content":"ko-KR"}],["$","meta","18",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/19/thumbnail.png"}],["$","meta","19",{"property":"og:image:alt","content":"React Router v8"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2026-09-19"}],["$","meta","22",{"property":"article:modified_time","content":"2026-09-19"}],["$","meta","23",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","24",{"property":"article:section","content":"개발"}],["$","meta","25",{"property":"article:tag","content":"react-router"}],["$","meta","26",{"property":"article:tag","content":"react"}],["$","meta","27",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","28",{"name":"twitter:title","content":"React Router v8"}],["$","meta","29",{"name":"twitter:description","content":"React Router v8 출시: \"지루한 메이저\"와 v7 → v8 업그레이드 가이드 ✍️ 한 줄 요약 React Router v8은 새 기능을 싣고 온 릴리스가 아니라, v7에서 future flag로 미리 풀어둔 변경을 기본값으로 굳히고 최소 버전을 올린 릴리스입니다. v7에서…"}],["$","meta","30",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/19/thumbnail.png"}],["$","link","31",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L23","32",{}]]}]}]}],null]}]
+14:["$","$1","c",{"children":[null,["$","$L24",null,{"parallelRouterKey":"children","template":["$","$L25",null,{}]}]]}]
+17:["$","$1","c",{"children":[null,["$","$L24",null,{"parallelRouterKey":"children","template":["$","$L25",null,{}]}]]}]
+1a:true
+20:null
+11:300
+11:C
+19:0
+13:"$undefined"
+15:"$undefined"
+18:"$undefined"
+10:"$undefined"

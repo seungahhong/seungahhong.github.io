@@ -1,0 +1,537 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+4:I[64893,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],""]
+2:T5fc,{"@context":"https://schema.org","@type":"BlogPosting","headline":"React Router v8","description":"React Router v8: The \"Boring Major\" and the v7 → v8 Upgrade Guide ✍️ TL;DR React Router v8 isn't a release that ships new features — it locks in, as defaults,…","datePublished":"2026-09-19","dateModified":"2026-09-19","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-09-19-react-router-v8/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-09-19-react-router-v8/"},"image":"https://seungahhong.github.io/blog-assets/2026/09/assets/19/thumbnail.png","keywords":["react-router","react"],"articleSection":"Development","wordCount":2144,"timeRequired":"PT11M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}11:X
+16:X
+16:C
+0:{"buildId":"6N96irpV6SekKlynbsf87","data":[{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"React Router v8\",\"item\":\"https://seungahhong.github.io/en/posts/2026-09-19-react-router-v8/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"React Router v8"}]]}]}],["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"React Router v8"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],"$L5","$L6","$L7","$L8","$L9"]}],false,"$La"]}],"$Lb","$Lc"]}],"$Ld"]}]}]],["$Le"],"$Lf"]}],"isPartial":"$@10","staleTime":"$11","varyParams":null},{"rsc":"$L12","isPartial":"$@13","staleTime":"$11","varyParams":null},{"rsc":"$L14","isPartial":"$@15","staleTime":"$11","varyParams":"$16"},{"rsc":"$L17","isPartial":"$@18","staleTime":"$11","varyParams":"$16"}],"isUpgradeableISRFallback":false,"a":"$@19","rootVaryParams":null,"needsRuntimeRequest":"$@1a"}
+1c:I[94917,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+1d:I[27722,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+1e:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"OutletBoundary"]
+1f:"$Sreact.suspense"
+21:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"ViewportBoundary"]
+22:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"MetadataBoundary"]
+23:I[20665,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"IconMark"]
+24:I[47221,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+25:I[60184,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+5:["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"SeungAh Hong"}]
+6:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+7:["$","time",null,{"dateTime":"2026-09-19","className":"meta-mono","children":"09/19/2026"}]
+8:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+9:["$","span",null,{"className":"meta-mono","children":[11,"min read"]}]
+a:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","react-router",{"children":["$","$L4",null,{"href":"/en/tags?tag=react-router","className":"tag-pill","children":"react-router"}]}],["$","li","react",{"children":["$","$L4",null,{"href":"/en/tags?tag=react","className":"tag-pill","children":"react"}]}]]}]
+1b:T1063e,<h2 id="react-router-v8-the-boring-major-and-the-v7--v8-upgrade-guide">React Router v8: The "Boring Major" and the v7 → v8 Upgrade Guide<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-router-v8-the-boring-major-and-the-v7--v8-upgrade-guide"><span class="icon icon-link"></span></a></h2>
+<h3 id="️-tldr">✍️ TL;DR<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#️-tldr"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p><strong>React Router v8 isn't a release that ships new features — it locks in, as defaults, the changes v7 already exposed behind future flags, and raises the minimum versions.</strong> If you turned every flag on while on v7, the upgrade is essentially one line: <code>pnpm i react-router@latest</code>.</p>
+</blockquote>
+<h4 id="summary">Summary<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#summary"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><strong>Released</strong>: June 17, 2026, announced on the Remix blog. The team itself calls it their most "boring" major yet.</li>
+<li><strong>Minimum versions</strong>: Node <strong>22.22.0+</strong> · React <strong>19.2.7+</strong> · Vite <strong>7+</strong> (Framework mode). The package is now <strong>ESM-only</strong>, and tsconfig target/lib moved to ES2022.</li>
+<li><strong>Five future flags became defaults</strong>: <code>v8_middleware</code> · <code>v8_splitRouteModules</code> (moved to top-level <code>splitRouteModules</code>) · <code>v8_viteEnvironmentApi</code> · <code>v8_passThroughRequests</code> · <code>v8_trailingSlashAwareDataRequests</code></li>
+<li><strong>Four removals</strong>: the <code>react-router-dom</code> package · <code>data</code> in <code>meta</code>/<code>matches</code> (→ <code>loaderData</code>) · the Cloudflare dev proxy (→ <code>@cloudflare/vite-plugin</code>) · the <code>useRequestContextDomainName</code> option in <code>@react-router/architect</code></li>
+<li><strong>Upgrade order</strong>: latest v7 → turn flags on one at a time and commit → clean up removed APIs → install v8. The key point is that <strong>every change can be made on v7 first.</strong></li>
+<li><strong>What can break quietly</strong>: server/CDN/cache rules that handle <code>.data</code> URLs directly (<code>/_root.data</code> → <code>/_.data</code>), loaders comparing paths via <code>request.url</code>, and Vite configs relying on <code>isSsrBuild</code>.</li>
+<li><strong>Going forward</strong>: a <strong>yearly major</strong> cadence. v6 and Remix v2 are <strong>EOL</strong> (no more security updates); v7 keeps getting security fixes. v9 (expected mid-2027) will require <strong>Node 24+</strong>, and RSC support is still unstable.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Item</th><th>Details</th></tr></thead><tbody><tr><td><strong>Runtime baseline</strong></td><td>Node 22.22.0+ · React 19.2.7+ · Vite 7+ · ESM-only</td></tr><tr><td><strong>New defaults</strong></td><td>Middleware · split route modules · Vite Environment API · pass-through requests · trailing-slash awareness</td></tr><tr><td><strong>Removed</strong></td><td><code>react-router-dom</code> · <code>data</code> param · Cloudflare dev proxy · architect option</td></tr><tr><td><strong>Support policy</strong></td><td>v6 &#x26; Remix v2 EOL · v7 security patches continue · one major per year</td></tr></tbody></table>
+<p>The details follow below.</p>
+<hr>
+<h3 id="-table-of-contents">📋 Table of Contents<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-table-of-contents"><span class="icon icon-link"></span></a></h3>
+<ol>
+<li><a href="#why-a-boring-major">Why a "Boring Major"</a></li>
+<li><a href="#what-piled-up-since-v7">What Piled Up Since v7</a></li>
+<li><a href="#whats-changing">What's Changing</a></li>
+<li><a href="#the-v7--v8-upgrade-guide">The v7 → v8 Upgrade Guide</a></li>
+<li><a href="#where-things-break-quietly">Where Things Break Quietly</a></li>
+<li><a href="#a-peek-at-v9">A Peek at v9</a></li>
+<li><a href="#react-router-going-forward-and-remix">React Router Going Forward, and Remix</a></li>
+<li><a href="#wrapping-up">Wrapping Up</a></li>
+</ol>
+<h3 id="why-a-boring-major">Why a "Boring Major"<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#why-a-boring-major"><span class="icon icon-link"></span></a></h3>
+<p>React Router has changed shape many times over its 12 years, and long-time users remember "major = major surgery." Back in <a href="/en/posts/2022-03-12-react-router-v6/">v6</a>, <code>Switch</code> became <code>Routes</code> and <code>useHistory</code> became <code>useNavigate</code>.</p>
+<p>Since v7, the team's strategy has been <strong>future flags</strong>. Behavior that will change in the next major ships behind a flag in the current one, and you turn each on whenever you're ready. On release day the flags simply become defaults, so <strong>there's almost nothing left to fix the day you upgrade.</strong></p>
+<p>As the announcement's author (Brooks Lybrand) puts it, the only downside is that it's hard to hype up in a blog post. And the team is institutionalizing that boredom: <strong>from now on, there will be one major per year.</strong></p>
+<h3 id="what-piled-up-since-v7">What Piled Up Since v7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#what-piled-up-since-v7"><span class="icon icon-link"></span></a></h3>
+<p>The headline of v7 was <strong>Framework mode</strong>: a single Vite plugin that adds a type-safe Route Module API, code splitting, SPA/SSR/static rendering, and data loading and mutations. At the same time it still supports a plain client-side router (Declarative mode) and Data mode for building your own framework. The commitment to <strong>keep all three modes</strong> carries over into v8.</p>
+<p>Here's what landed across the 40+ releases since v7 (per the announcement; not exhaustive).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Area</th><th>Additions</th></tr></thead><tbody><tr><td><strong>Data/server</strong></td><td>Middleware &#x26; better context · Pass-through Requests · Call-site revalidation · <code>fetcher.reset</code></td></tr><tr><td><strong>Bundling/build</strong></td><td>Split Route Modules · Vite Environment API support · object-based <code>route.lazy</code> · configurable Lazy Route Discovery</td></tr><tr><td><strong>Rendering</strong></td><td>SPA mode improvements · pre-rendering improvements · (unstable) RSC support</td></tr><tr><td><strong>APIs</strong></td><td>Type-safe <code>href</code> · <code>useRoute</code>/<code>useRouterState</code> (unstable) · <code>useTransitions</code> router prop · RouterProvider <code>onError</code> · Link masking</td></tr><tr><td><strong>Operations</strong></td><td>Instrumentation API · Subresource integrity · many performance improvements · Agent Skills</td></tr></tbody></table>
+<p>That's why v8 looks light on "new" features. The features already shipped in v7 minors; v8 is where some of them get <strong>locked in as defaults</strong>.</p>
+<h3 id="whats-changing">What's Changing<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#whats-changing"><span class="icon icon-link"></span></a></h3>
+<h4 id="1-minimum-supported-versions">1. Minimum supported versions<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-minimum-supported-versions"><span class="icon icon-link"></span></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Target</th><th>Minimum</th><th>Notes</th></tr></thead><tbody><tr><td><strong>Node</strong></td><td>22.22.0+</td><td>Only the latest minor line of Maintenance LTS is supported</td></tr><tr><td><strong>React</strong></td><td>19.2.7+</td><td>Both <code>react</code> and <code>react-dom</code></td></tr><tr><td><strong>Vite</strong></td><td>7+</td><td>Framework mode only. Check that custom Vite plugins are Vite 7 compatible</td></tr></tbody></table>
+<p>Two more come with it:</p>
+<ul>
+<li><strong>ESM-only publishing</strong> — the CommonJS build is gone.</li>
+<li><strong>tsconfig target/lib bumped to ES2022</strong> across the board.</li>
+</ul>
+<p>The Node support policy is now explicit too: <strong>all versions of Active LTS</strong>, and <strong>only the latest minor line of Maintenance LTS</strong>. As of the announcement:</p>
+<ul>
+<li>Node 24 is Active LTS → all 24.x supported</li>
+<li>Node 22 is Maintenance LTS → <strong>only 22.22.x</strong> supported</li>
+<li>If Node 22.23.x ships, React Router raises its minimum to 22.23.x in a <strong>minor release</strong></li>
+<li>When Node 22 hits EOL, support is dropped in a <strong>major release</strong></li>
+</ul>
+<p>The goal is to quickly adopt Node versions that carry security patches as the baseline. Put differently, teams on Node 22 <strong>may need to bump Node even for a React Router minor update</strong>, so it's safer not to leave the Node version loose in CI and deploy images.</p>
+<h4 id="2-future-flags-that-became-defaults">2. Future flags that became defaults<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-future-flags-that-became-defaults"><span class="icon icon-link"></span></a></h4>
+<p>Five v8 future flags from v7 are removed, and their behavior is now the default.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Flag</th><th>Status in v8</th><th>Modes</th></tr></thead><tbody><tr><td><code>future.v8_middleware</code></td><td>Default</td><td>Framework · Data</td></tr><tr><td><code>future.v8_splitRouteModules</code></td><td>Moved to top-level <code>splitRouteModules</code>, on by default</td><td>Framework</td></tr><tr><td><code>future.v8_viteEnvironmentApi</code></td><td>Default</td><td>Framework</td></tr><tr><td><code>future.v8_passThroughRequests</code></td><td>Default</td><td>Framework</td></tr><tr><td><code>future.v8_trailingSlashAwareDataRequests</code></td><td>Default</td><td>Framework</td></tr></tbody></table>
+<h4 id="3-removed-apis">3. Removed APIs<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-removed-apis"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><strong>The <code>react-router-dom</code> package</strong> — a mirror of <code>react-router</code> kept around to smooth the v6 → v7 upgrade. Use <code>react-router</code> and <code>react-router/dom</code>.</li>
+<li><strong>The <code>data</code> parameter in <code>meta</code> APIs</strong> — replaced by <code>loaderData</code>.</li>
+<li><strong>The Cloudflare dev proxy</strong> (<code>@react-router/dev/vite/cloudflare</code>) — replaced by Cloudflare's official <code>@cloudflare/vite-plugin</code>.</li>
+<li><strong>The <code>useRequestContextDomainName</code> option in <code>@react-router/architect</code></strong> — its behavior is now the default, so the option itself is gone.</li>
+</ul>
+<h3 id="the-v7--v8-upgrade-guide">The v7 → v8 Upgrade Guide<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-v7--v8-upgrade-guide"><span class="icon icon-link"></span></a></h3>
+<p>The official guide's main advice: <strong>don't do it all at once — commit after each step.</strong> Most flags can be adopted in any order; exceptions are noted below.</p>
+<h4 id="step-0-minimum-versions-first">Step 0: Minimum versions first<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-0-minimum-versions-first"><span class="icon icon-link"></span></a></h4>
+<p>Align the runtime <strong>before</strong> touching React Router.</p>
+<ul>
+<li><code>node@22.22+</code></li>
+<li><code>react@19.2.7+</code> / <code>react-dom@19.2.7+</code></li>
+<li>In Framework mode, <code>vite@7+</code> — and make sure custom Vite plugins and config work with Vite 7</li>
+</ul>
+<h4 id="step-1-update-to-the-latest-v7">Step 1: Update to the latest v7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-1-update-to-the-latest-v7"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-router@7</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @react-router/{dev,node,etc.}@7</span></span></code></pre></figure>
+<h4 id="step-2-turn-on-future-flags-one-at-a-time">Step 2: Turn on future flags one at a time<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-2-turn-on-future-flags-one-at-a-time"><span class="icon icon-link"></span></a></h4>
+<p>In Framework mode, flags go in <code>react-router.config.ts</code>; in Data mode, in the <code>createBrowserRouter</code> options.</p>
+<h5 id="v8_middleware-framework--data"><code>v8_middleware</code> (Framework · Data)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v8_middleware-framework--data"><span class="icon icon-link"></span></a></h5>
+<p>Middleware lets you run code before and after the Response is generated for matched routes — for auth, logging, error handling, and other cross-cutting logic.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Framework mode: react-router.config.ts</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> type</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { Config } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@react-router/dev/config'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    v8_middleware: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">satisfies</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Config</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Data mode</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { createBrowserRouter } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> router</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createBrowserRouter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(routes, {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    v8_middleware: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<ul>
+<li>With <code>react-router-serve</code>: no code changes</li>
+<li>With a <strong>custom server</strong>: review the <code>getLoadContext</code>/<code>AppLoadContext</code> changes</li>
+<li>In <strong>Data mode</strong>: add the <code>Future</code> module augmentation so <code>context</code> is typed correctly</li>
+</ul>
+<h5 id="v8_splitroutemodules-framework"><code>v8_splitRouteModules</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v8_splitroutemodules-framework"><span class="icon icon-link"></span></a></h5>
+<p>Splits a route module's client-only exports (<code>clientLoader</code>, <code>clientAction</code>, <code>clientMiddleware</code>, <code>HydrateFallback</code>) into separate chunks so they load independently of the component. <code>true</code> splits where possible; <code>"enforce"</code> <strong>fails the build unless every route is splittable.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    v8_splitRouteModules: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// or "enforce"</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">satisfies</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Config</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>No code changes needed. In v8 the option moves out of <code>future</code> to the top-level <code>splitRouteModules</code>.</p>
+<h5 id="v8_viteenvironmentapi-framework"><code>v8_viteEnvironmentApi</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v8_viteenvironmentapi-framework"><span class="icon icon-link"></span></a></h5>
+<p>Enables Vite Environment API support. (The flag itself works on Vite 6+, but <strong>v8 requires Vite 7+</strong>, so this is a natural point to move to Vite 7.)</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    v8_viteEnvironmentApi: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">satisfies</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Config</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>Vite configs that branch on <code>isSsrBuild</code> need to move to <strong>per-environment (<code>environments</code>) config.</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Before</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> defineConfig</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">(({ isSsrBuild }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> ({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  build: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    rollupOptions: isSsrBuild</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      ?</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          input: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./server/app.ts'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        }</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      :</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> undefined</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">}))</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// After</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { reactRouter } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@react-router/dev/vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { defineConfig } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> defineConfig</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  environments: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ssr: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      build: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        rollupOptions: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          input: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'./server/app.ts'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  plugins: [</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">reactRouter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()]</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">})</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h5 id="v8_passthroughrequests-framework"><code>v8_passThroughRequests</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v8_passthroughrequests-framework"><span class="icon icon-link"></span></a></h5>
+<p>Passes the <strong>raw HTTP <code>request</code></strong> to <code>loader</code>, <code>action</code>, and <code>middleware</code> instead of a normalized one. That cuts the overhead of creating multiple <code>new Request()</code> objects on the server, and lets you tell document requests from data requests via the <code>.data</code> suffix — useful for observability.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    v8_passThroughRequests: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">satisfies</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Config</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>The catch: <strong><code>request.url</code>'s pathname may now carry a <code>.data</code> suffix</strong>, so routing decisions should use the new normalized <code>url</code> argument.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Before — comparison can fail when the pathname has a .data suffix</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> async</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> loader</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">request</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Route</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">LoaderArgs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> url </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> URL</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(request.url);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (url.pathname </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '/path'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // ...</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// After — route on the normalized url, classify on the raw request</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> async</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> loader</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">request</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">url</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Route</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">LoaderArgs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (url.pathname </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '/path'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // normalized path, no .data suffix</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> isDataRequest </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> new</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> URL</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(request.url).pathname.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">endsWith</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'.data'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<h5 id="v8_trailingslashawaredatarequests-framework"><code>v8_trailingSlashAwareDataRequests</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#v8_trailingslashawaredatarequests-framework"><span class="icon icon-link"></span></a></h5>
+<p>Preserves trailing-slash semantics in data request URLs so <code>/path</code> and <code>/path/</code> no longer collapse into the same data URL.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Route</th><th>Data request URL</th></tr></thead><tbody><tr><td>No trailing slash</td><td><code>/path.data</code> (unchanged)</td></tr><tr><td>Trailing slash</td><td><code>/path/_.data</code> (<strong>new format</strong>)</td></tr><tr><td>Root</td><td><code>/_.data</code> (changed from <code>/_root.data</code>)</td></tr></tbody></table>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    v8_trailingSlashAwareDataRequests: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">satisfies</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Config</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<p>This affects <strong>CDN, cache, and rewrite rules outside the app</strong> more than app code. If any config handles <code>/_root.data</code> or <code>*.data</code> patterns, update it for the new format.</p>
+<h4 id="step-3-clean-up-apis-being-removed">Step 3: Clean up APIs being removed<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-3-clean-up-apis-being-removed"><span class="icon icon-link"></span></a></h4>
+<h5 id="data--loaderdata-in-metamatches-framework"><code>data</code> → <code>loaderData</code> in <code>meta</code>/<code>matches</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#data--loaderdata-in-metamatches-framework"><span class="icon icon-link"></span></a></h5>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Before</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> meta</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">data</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Route</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">MetaArgs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [{ title: data.title }];</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// After</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> function</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> meta</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">loaderData</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">:</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> Route</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">.</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">MetaArgs</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  return</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [{ title: loaderData.title }];</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre></figure>
+<p>Code that reads parent route data from <code>matches</code>, and <code>useMatches()</code>, change the same way.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Referencing a parent match inside meta</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> rootMatch </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> matches.</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">find</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">((</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">match</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> match.id </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">===</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'root'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> rootData </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> rootMatch?.loaderData; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// was: rootMatch?.data</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// In a component</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">let</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> matches </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> useMatches</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">();</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> rootLoaderData</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> matches[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">].loaderData; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// was: matches[0].data</span></span></code></pre></figure>
+<h5 id="removing-react-router-dom-all-modes">Removing <code>react-router-dom</code> (all modes)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#removing-react-router-dom-all-modes"><span class="icon icon-link"></span></a></h5>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> uninstall</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-router-dom</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Before</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { Link, useLocation } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router-dom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { RouterProvider } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router-dom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// After</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { Link, useLocation } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { RouterProvider } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router/dom'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// DOM-specific APIs</span></span></code></pre></figure>
+<p>It's a mechanical import-path change, well suited to a single codebase-wide replace.</p>
+<h5 id="cloudflare-dev-proxy--cloudflarevite-plugin-framework">Cloudflare dev proxy → <code>@cloudflare/vite-plugin</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#cloudflare-dev-proxy--cloudflarevite-plugin-framework"><span class="icon icon-link"></span></a></h5>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// Before</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { reactRouter } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@react-router/dev/vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { cloudflareDevProxy } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@react-router/dev/vite/cloudflare'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { defineConfig } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> defineConfig</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  plugins: [</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">cloudflareDevProxy</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(), </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">reactRouter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()]</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">})</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// After</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { reactRouter } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@react-router/dev/vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { cloudflare } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@cloudflare/vite-plugin'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { defineConfig } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'vite'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> default</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> defineConfig</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  plugins: [</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">cloudflare</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(), </span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">reactRouter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">()]</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">,</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">})</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span></code></pre></figure>
+<h5 id="domain-detection-in-react-routerarchitect-framework">Domain detection in <code>@react-router/architect</code> (Framework)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#domain-detection-in-react-routerarchitect-framework"><span class="icon icon-link"></span></a></h5>
+<p>In v8 the architect adapter uses <code>event.requestContext.domainName</code> by default instead of <code>X-Forwarded-Host</code>, falling back to the <code>Host</code> header. To try it on v7:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { createRequestHandler } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '@react-router/architect'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> *</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> as</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> build </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> './build/server'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">export</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> handler</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createRequestHandler</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">({</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  build,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  useRequestContextDomainName: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<p>Remove the option after moving to v8 (the option itself no longer exists).</p>
+<h4 id="step-4-install-v8">Step 4: Install v8<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#step-4-install-v8"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Data / Declarative mode</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-router@latest</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Framework mode</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">npm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> react-router@latest</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> @react-router/{dev,node,etc.}@latest</span></span></code></pre></figure>
+<p>If you finished steps 1–3 on v7, there's almost nothing left to fix here. The announcement even suggests you could "throw [the upgrade guide] at your AI agent" — and with clear before/after pairs for each step, it really is a good shape for handing to an agent.</p>
+<h3 id="where-things-break-quietly">Where Things Break Quietly<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#where-things-break-quietly"><span class="icon icon-link"></span></a></h3>
+<p>Comparing where the official docs say "no changes" versus "update needed," the risky spots are the ones <strong>type-checking and the build won't catch.</strong> The following is my own synthesis based on the guide.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Spot</th><th>Why it's quiet</th><th>How to check</th></tr></thead><tbody><tr><td>Loaders comparing paths via <code>request.url</code></td><td>Passes on document requests, fails <strong>only on data requests during client navigation</strong></td><td>Search for <code>new URL(request.url)</code> and switch to the <code>url</code> arg</td></tr><tr><td>CDN / cache / rewrite rules</td><td>Lives outside the app repo, so code review never sees it</td><td>Search infra config for <code>_root.data</code> and <code>.data</code> patterns</td></tr><tr><td>Vite config branching on <code>isSsrBuild</code></td><td>If the config is ignored, the build may succeed with a different server entry</td><td>After moving to <code>environments.ssr</code>, verify the server bundle entry</td></tr><tr><td>Load context in custom servers</td><td>Middleware on by default changes how context is passed</td><td>Review <code>getLoadContext</code> return values and <code>context</code> types</td></tr><tr><td>Node version pins</td><td>Easy to assume "any 22.x" (e.g. 22.12) is fine</td><td>Set <code>.nvmrc</code>, CI images, and <code>engines</code> to 22.22+</td></tr></tbody></table>
+<h3 id="a-peek-at-v9">A Peek at v9<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#a-peek-at-v9"><span class="icon icon-link"></span></a></h3>
+<p>The "Future Changes" doc that pairs with the v8 upgrade guide is already pointed at <strong>v9 (expected mid-2027)</strong>.</p>
+<ul>
+<li><strong>Minimum version</strong>: <code>node@24+</code> — you can move to it while still on v8.</li>
+<li><strong>Future flags</strong>: none yet</li>
+<li><strong>Planned breaking changes</strong>: none yet</li>
+</ul>
+<p>What it does have are three <strong>unstable flags</strong>, not recommended for production.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Flag</th><th>Mode</th><th>What it does</th></tr></thead><tbody><tr><td><code>unstable_enableNodeReadableStream</code></td><td>Framework</td><td>Uses Node 22+'s stable Web Streams so Node also uses <code>renderToReadableStream</code> instead of <code>renderToPipeableStream</code></td></tr><tr><td><code>unstable_optimizeDeps</code></td><td>Framework</td><td>Feeds client entry and route module files to Vite's dependency optimizer for better dev optimization</td></tr><tr><td><code>unstable_routePatternMatching</code></td><td>Data Router</td><td>Swaps in a new matcher powered by <code>@remix-run/route-pattern</code></td></tr></tbody></table>
+<p>The last one is the most interesting. The new matcher ranks by <strong>positional specificity</strong> (longer static prefixes win) rather than an aggregate segment score.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { createBrowserRouter } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> { unstable_preloadRoutePattern } </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">from</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> 'react-router/route-pattern'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">unstable_preloadRoutePattern</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(); </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// must run before router creation, or creation throws</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> router</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> createBrowserRouter</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(routes, {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  future: {</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    unstable_routePatternMatching: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">true</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">});</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">const</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> routes</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> =</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  { path: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/products/*'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, id: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'products'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  { path: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'/:first/:second/:third/:fourth'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, id: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'segments'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">];</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// New matcher: /products/one/two/three → 'products'</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">// (the static 'products' segment is more specific than dynamic ':first' in the same position)</span></span></code></pre></figure>
+<p>Some caveats: standalone APIs like <code>matchRoutes</code>, <code>matchPath</code>, and <code>useMatch</code> <strong>still use the legacy matcher</strong>, and case-sensitive routes aren't supported with this flag yet. If your app has overlapping route patterns, it's worth tidying them up before this flag stabilizes.</p>
+<h3 id="react-router-going-forward-and-remix">React Router Going Forward, and Remix<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-router-going-forward-and-remix"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li><strong>One major per year</strong> — making major versions regular, predictable, and therefore boring.</li>
+<li><strong>End of life</strong> — with v8, <strong>React Router v6 and Remix v2 are EOL</strong> and no longer receive security updates. v7 continues to get security updates. If you're still on v6, now is the time to move to v7.</li>
+<li><strong>Server Components / Server Actions</strong> — work is in progress but still unstable while the APIs settle. It's an opt-in architecture, and the team plans to <strong>stabilize it in a minor version.</strong></li>
+<li><strong>Open Governance</strong> — development priorities continue to come from community Proposals.</li>
+<li><strong>Design goals</strong> — Less is More · Routing and Data Focused · Simple Migration Paths · Lowest Common Mode</li>
+</ul>
+<p>The relationship with Remix is clearer now too. Remix v0–v2 was effectively a <strong>feature branch</strong> of React Router, and its matured ideas and APIs were merged back into React Router. That frees Remix to go its own way as a <strong>"truly full-stack, zero-dependency JavaScript web framework"</strong> (the Remix 3 beta).</p>
+<p>The team's answer to "which should I use?" is simple: <strong>React Router if you need something battle-tested, Remix 3 if new approaches appeal to you.</strong></p>
+<h3 id="wrapping-up">Wrapping Up<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#wrapping-up"><span class="icon icon-link"></span></a></h3>
+<p>In one sentence, v8 is <strong>"a release that turns what you could already do on v7 into what you now must do."</strong> The feature list shipped across v7 minors; v8 just raised the defaults and the floor (the minimum versions).</p>
+<p>So the upgrade's difficulty depends on <strong>how many flags you turned on in v7.</strong> All of them, and it's one line; none of them, and you walk steps 2–3 of this post on top of v7. Either way, installing v8 should be the last step.</p>
+<p><strong>Upgrade checklist:</strong></p>
+<ul>
+<li>✅ Node 22.22+ · React/React DOM 19.2.7+ · (Framework) Vite 7+ — including <code>.nvmrc</code>, CI, and deploy images</li>
+<li>✅ Update to the latest v7</li>
+<li>✅ <code>v8_middleware</code> — <code>getLoadContext</code> for custom servers, <code>Future</code> type augmentation in Data mode</li>
+<li>✅ <code>v8_splitRouteModules</code> — top-level <code>splitRouteModules</code> in v8</li>
+<li>✅ <code>v8_viteEnvironmentApi</code> — move <code>isSsrBuild</code> branches to <code>environments.ssr</code></li>
+<li>✅ <code>v8_passThroughRequests</code> — replace <code>new URL(request.url)</code> path checks with the <code>url</code> arg</li>
+<li>✅ <code>v8_trailingSlashAwareDataRequests</code> — CDN/cache/rewrite rules: <code>/_root.data</code> → <code>/_.data</code></li>
+<li>✅ <code>data</code> → <code>loaderData</code> in <code>meta</code>/<code>matches</code>/<code>useMatches()</code></li>
+<li>✅ Remove <code>react-router-dom</code>; import from <code>react-router</code> / <code>react-router/dom</code></li>
+<li>✅ Cloudflare dev proxy → <code>@cloudflare/vite-plugin</code>; clean up the architect option</li>
+<li>✅ Finally, install <code>react-router@latest</code></li>
+<li>✅ (Optional) Evaluate Node 24 ahead of v9</li>
+</ul>
+<hr>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Remix, <a href="https://remix.run/blog/react-router-v8">React Router v8</a></li>
+<li>React Router, <a href="https://reactrouter.com/upgrading/v7">Updating from v7</a></li>
+<li>React Router, <a href="https://reactrouter.com/upgrading/future">Future Changes</a></li>
+<li>React Router, <a href="https://reactrouter.com/brand">Brand Assets</a> — source of the thumbnail logo</li>
+<li>Earlier posts — <a href="/en/posts/2022-03-12-react-router-v6/">React Router v6</a> · <a href="/en/posts/2026-09-15-vitest5/">Vitest 5.0</a></li>
+</ul>b:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$1b"}}]}]
+c:["$","nav",null,{"aria-label":"Previous / Next","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/en/posts/2026-09-17-ai-native-revenue-org","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L1c",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"Previous"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"Hours Saved Is the Floor — Building an AI-Native Revenue Organization"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+d:["$","div",null,{"className":"hidden lg:block","children":["$","$L1d",null,{"headings":[{"id":"react-router-v8-the-boring-major-and-the-v7--v8-upgrade-guide","text":"React Router v8: The \"Boring Major\" and the v7 → v8 Upgrade Guide","depth":1},{"id":"️-tldr","text":"✍️ TL;DR","depth":2},{"id":"summary","text":"Summary","depth":3},{"id":"-table-of-contents","text":"📋 Table of Contents","depth":2},{"id":"why-a-boring-major","text":"Why a \"Boring Major\"","depth":2},{"id":"what-piled-up-since-v7","text":"What Piled Up Since v7","depth":2},{"id":"whats-changing","text":"What's Changing","depth":2},{"id":"1-minimum-supported-versions","text":"1. Minimum supported versions","depth":3},{"id":"2-future-flags-that-became-defaults","text":"2. Future flags that became defaults","depth":3},{"id":"3-removed-apis","text":"3. Removed APIs","depth":3},{"id":"the-v7--v8-upgrade-guide","text":"The v7 → v8 Upgrade Guide","depth":2},{"id":"step-0-minimum-versions-first","text":"Step 0: Minimum versions first","depth":3},{"id":"step-1-update-to-the-latest-v7","text":"Step 1: Update to the latest v7","depth":3},{"id":"step-2-turn-on-future-flags-one-at-a-time","text":"Step 2: Turn on future flags one at a time","depth":3},{"id":"step-3-clean-up-apis-being-removed","text":"Step 3: Clean up APIs being removed","depth":3},{"id":"step-4-install-v8","text":"Step 4: Install v8","depth":3},{"id":"where-things-break-quietly","text":"Where Things Break Quietly","depth":2},{"id":"a-peek-at-v9","text":"A Peek at v9","depth":2},{"id":"react-router-going-forward-and-remix","text":"React Router Going Forward, and Remix","depth":2},{"id":"wrapping-up","text":"Wrapping Up","depth":2},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
+e:["$","script","script-0",{"src":"/_next/static/chunks/13tuup7jbc8xe.js","async":true}]
+f:["$","$L1e",null,{"children":["$","$1f",null,{"name":"Next.MetadataOutlet","children":"$@20"}]}]
+12:["$","$1","h",{"children":[null,["$","$L21",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L22",null,{"children":["$","$1f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"React Router v8 · SeungAh Hong · Tech Blog"}],["$","meta","1",{"name":"description","content":"React Router v8: The \"Boring Major\" and the v7 → v8 Upgrade Guide ✍️ TL;DR React Router v8 isn't a release that ships new features — it locks in, as defaults,…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"SeungAh Hong"}],["$","meta","4",{"name":"keywords","content":"react-router,react"}],["$","meta","5",{"name":"creator","content":"홍승아"}],["$","meta","6",{"name":"publisher","content":"홍승아"}],["$","meta","7",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://seungahhong.github.io/en/posts/2026-09-19-react-router-v8/"}],["$","link","9",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-09-19-react-router-v8/"}],["$","link","10",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-09-19-react-router-v8/"}],["$","link","11",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-09-19-react-router-v8/"}],["$","meta","12",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","13",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","14",{"property":"og:title","content":"React Router v8"}],["$","meta","15",{"property":"og:description","content":"React Router v8: The \"Boring Major\" and the v7 → v8 Upgrade Guide ✍️ TL;DR React Router v8 isn't a release that ships new features — it locks in, as defaults,…"}],["$","meta","16",{"property":"og:url","content":"https://seungahhong.github.io/en/posts/2026-09-19-react-router-v8/"}],["$","meta","17",{"property":"og:locale","content":"en"}],["$","meta","18",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/19/thumbnail.png"}],["$","meta","19",{"property":"og:image:alt","content":"React Router v8"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2026-09-19"}],["$","meta","22",{"property":"article:modified_time","content":"2026-09-19"}],["$","meta","23",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","24",{"property":"article:section","content":"Development"}],["$","meta","25",{"property":"article:tag","content":"react-router"}],["$","meta","26",{"property":"article:tag","content":"react"}],["$","meta","27",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","28",{"name":"twitter:title","content":"React Router v8"}],["$","meta","29",{"name":"twitter:description","content":"React Router v8: The \"Boring Major\" and the v7 → v8 Upgrade Guide ✍️ TL;DR React Router v8 isn't a release that ships new features — it locks in, as defaults,…"}],["$","meta","30",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/09/assets/19/thumbnail.png"}],["$","link","31",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L23","32",{}]]}]}]}],null]}]
+14:["$","$1","c",{"children":[null,["$","$L24",null,{"parallelRouterKey":"children","template":["$","$L25",null,{}]}]]}]
+17:["$","$1","c",{"children":[null,["$","$L24",null,{"parallelRouterKey":"children","template":["$","$L25",null,{}]}]]}]
+1a:true
+20:null
+11:300
+11:C
+19:0
+13:"$undefined"
+15:"$undefined"
+18:"$undefined"
+10:"$undefined"
