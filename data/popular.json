@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19",
+  "updatedAt": "2026-09-20",
   "rangeDays": 90,
   "items": [
     {
@@ -9,6 +9,10 @@
     {
       "slug": "2026-06-02-LLM-WIKI",
       "views": 50
+    },
+    {
+      "slug": "2026-09-19-react-router-v8",
+      "views": 16
     },
     {
       "slug": "2026-07-13-vite8.0",
@@ -23,12 +27,24 @@
       "views": 11
     },
     {
+      "slug": "2026-09-06-skills-governance",
+      "views": 11
+    },
+    {
       "slug": "2026-07-05-meta-harness",
       "views": 10
     },
     {
-      "slug": "2026-09-06-skills-governance",
+      "slug": "2026-09-15-vitest5",
       "views": 9
+    },
+    {
+      "slug": "2026-08-23-ai-native-sdlc-playbook",
+      "views": 8
+    },
+    {
+      "slug": "2026-09-13-writing-specs-for-agents",
+      "views": 8
     },
     {
       "slug": "2026-06-01-RAG",
@@ -39,7 +55,11 @@
       "views": 7
     },
     {
-      "slug": "2026-08-23-ai-native-sdlc-playbook",
+      "slug": "2026-08-22-delete-and-verify",
+      "views": 7
+    },
+    {
+      "slug": "2026-08-26-agent-skills",
       "views": 7
     },
     {
@@ -47,7 +67,7 @@
       "views": 6
     },
     {
-      "slug": "2026-09-15-vitest5",
+      "slug": "2026-08-25-agentic-code-quality",
       "views": 6
     },
     {
@@ -64,14 +84,6 @@
     },
     {
       "slug": "2026-06-03-claude-marketplace",
-      "views": 5
-    },
-    {
-      "slug": "2026-08-22-delete-and-verify",
-      "views": 5
-    },
-    {
-      "slug": "2026-08-26-agent-skills",
       "views": 5
     },
     {
@@ -95,11 +107,7 @@
       "views": 4
     },
     {
-      "slug": "2026-08-25-agentic-code-quality",
-      "views": 4
-    },
-    {
-      "slug": "2026-09-13-writing-specs-for-agents",
+      "slug": "2026-09-05-frontier-development-teams",
       "views": 4
     },
     {
@@ -120,6 +128,10 @@
     },
     {
       "slug": "2022-06-08-react18",
+      "views": 3
+    },
+    {
+      "slug": "2022-07-23-emotion",
       "views": 3
     },
     {
@@ -171,10 +183,6 @@
       "views": 2
     },
     {
-      "slug": "2022-07-23-emotion",
-      "views": 2
-    },
-    {
       "slug": "2022-07-24-jest",
       "views": 2
     },
@@ -195,11 +203,19 @@
       "views": 2
     },
     {
+      "slug": "2023-08-27-nextjs-v13",
+      "views": 2
+    },
+    {
       "slug": "2023-11-26-react-hook-form-inside",
       "views": 2
     },
     {
       "slug": "2024-01-27-react-v18-migration",
+      "views": 2
+    },
+    {
+      "slug": "2024-03-18-pnpm",
       "views": 2
     },
     {
@@ -215,7 +231,19 @@
       "views": 2
     },
     {
-      "slug": "2026-09-05-frontier-development-teams",
+      "slug": "2026-09-07-karpathy-transformers",
+      "views": 2
+    },
+    {
+      "slug": "2026-09-14-securing-ai-generated-code",
+      "views": 2
+    },
+    {
+      "slug": "2026-09-16-token-roles-agent-design",
+      "views": 2
+    },
+    {
+      "slug": "2026-09-17-ai-native-revenue-org",
       "views": 2
     },
     {
@@ -271,10 +299,6 @@
       "views": 1
     },
     {
-      "slug": "2023-08-27-nextjs-v13",
-      "views": 1
-    },
-    {
       "slug": "2024-01-14-cors",
       "views": 1
     },
@@ -283,19 +307,11 @@
       "views": 1
     },
     {
-      "slug": "2024-03-18-pnpm",
-      "views": 1
-    },
-    {
       "slug": "2024-04-28-esbuild",
       "views": 1
     },
     {
       "slug": "2024-12-05-react-v19",
-      "views": 1
-    },
-    {
-      "slug": "2026-09-19-react-router-v8",
       "views": 1
     }
   ]
