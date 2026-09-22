@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-20",
+  "updatedAt": "2026-09-22",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 67
+      "views": 69
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
@@ -67,15 +67,15 @@
       "views": 6
     },
     {
+      "slug": "2022-06-14-jotai",
+      "views": 6
+    },
+    {
       "slug": "2026-08-25-agentic-code-quality",
       "views": 6
     },
     {
       "slug": "2020-02-16-winapi",
-      "views": 5
-    },
-    {
-      "slug": "2022-06-14-jotai",
       "views": 5
     },
     {
@@ -96,6 +96,10 @@
     },
     {
       "slug": "2023-09-10-react-state",
+      "views": 4
+    },
+    {
+      "slug": "2024-11-16-vite",
       "views": 4
     },
     {
@@ -152,10 +156,6 @@
     },
     {
       "slug": "2024-05-12-development-improvements",
-      "views": 3
-    },
-    {
-      "slug": "2024-11-16-vite",
       "views": 3
     },
     {
