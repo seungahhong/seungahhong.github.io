@@ -4,7 +4,7 @@
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 69
+      "views": 70
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
@@ -12,7 +12,7 @@
     },
     {
       "slug": "2026-09-19-react-router-v8",
-      "views": 16
+      "views": 18
     },
     {
       "slug": "2026-07-13-vite8.0",
@@ -87,6 +87,10 @@
       "views": 5
     },
     {
+      "slug": "2022-06-08-react18",
+      "views": 4
+    },
+    {
       "slug": "2022-07-25-msw",
       "views": 4
     },
@@ -115,6 +119,18 @@
       "views": 4
     },
     {
+      "slug": "2026-09-14-securing-ai-generated-code",
+      "views": 4
+    },
+    {
+      "slug": "2026-09-16-token-roles-agent-design",
+      "views": 4
+    },
+    {
+      "slug": "2026-09-17-ai-native-revenue-org",
+      "views": 4
+    },
+    {
       "slug": "2022-01-08-webassembly",
       "views": 3
     },
@@ -128,10 +144,6 @@
     },
     {
       "slug": "2022-05-31-css-in-js",
-      "views": 3
-    },
-    {
-      "slug": "2022-06-08-react18",
       "views": 3
     },
     {
@@ -232,18 +244,6 @@
     },
     {
       "slug": "2026-09-07-karpathy-transformers",
-      "views": 2
-    },
-    {
-      "slug": "2026-09-14-securing-ai-generated-code",
-      "views": 2
-    },
-    {
-      "slug": "2026-09-16-token-roles-agent-design",
-      "views": 2
-    },
-    {
-      "slug": "2026-09-17-ai-native-revenue-org",
       "views": 2
     },
     {
