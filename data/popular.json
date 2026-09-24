@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22",
+  "updatedAt": "2026-09-24",
   "rangeDays": 90,
   "items": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "slug": "2026-09-19-react-router-v8",
-      "views": 18
+      "views": 19
     },
     {
       "slug": "2026-07-13-vite8.0",
@@ -39,16 +39,16 @@
       "views": 9
     },
     {
+      "slug": "2026-06-01-RAG",
+      "views": 8
+    },
+    {
       "slug": "2026-08-23-ai-native-sdlc-playbook",
       "views": 8
     },
     {
       "slug": "2026-09-13-writing-specs-for-agents",
       "views": 8
-    },
-    {
-      "slug": "2026-06-01-RAG",
-      "views": 7
     },
     {
       "slug": "2026-07-14-typescript7.0",
