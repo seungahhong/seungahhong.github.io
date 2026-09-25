@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-09-25",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 70
+      "views": 71
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
@@ -43,16 +43,16 @@
       "views": 8
     },
     {
+      "slug": "2026-07-14-typescript7.0",
+      "views": 8
+    },
+    {
       "slug": "2026-08-23-ai-native-sdlc-playbook",
       "views": 8
     },
     {
       "slug": "2026-09-13-writing-specs-for-agents",
       "views": 8
-    },
-    {
-      "slug": "2026-07-14-typescript7.0",
-      "views": 7
     },
     {
       "slug": "2026-08-22-delete-and-verify",
@@ -84,6 +84,14 @@
     },
     {
       "slug": "2026-06-03-claude-marketplace",
+      "views": 5
+    },
+    {
+      "slug": "2026-09-14-securing-ai-generated-code",
+      "views": 5
+    },
+    {
+      "slug": "2026-09-16-token-roles-agent-design",
       "views": 5
     },
     {
@@ -119,14 +127,6 @@
       "views": 4
     },
     {
-      "slug": "2026-09-14-securing-ai-generated-code",
-      "views": 4
-    },
-    {
-      "slug": "2026-09-16-token-roles-agent-design",
-      "views": 4
-    },
-    {
       "slug": "2026-09-17-ai-native-revenue-org",
       "views": 4
     },
@@ -151,6 +151,10 @@
       "views": 3
     },
     {
+      "slug": "2023-08-16-treeshaking",
+      "views": 3
+    },
+    {
       "slug": "2023-08-26-react-hook-form-v7",
       "views": 3
     },
@@ -172,6 +176,10 @@
     },
     {
       "slug": "2025-02-09-git-to-mp4-convert",
+      "views": 3
+    },
+    {
+      "slug": "2025-06-29-vite6.0",
       "views": 3
     },
     {
@@ -211,10 +219,6 @@
       "views": 2
     },
     {
-      "slug": "2023-08-16-treeshaking",
-      "views": 2
-    },
-    {
       "slug": "2023-08-27-nextjs-v13",
       "views": 2
     },
@@ -236,10 +240,6 @@
     },
     {
       "slug": "2025-06-28-figma-mcp-link",
-      "views": 2
-    },
-    {
-      "slug": "2025-06-29-vite6.0",
       "views": 2
     },
     {
