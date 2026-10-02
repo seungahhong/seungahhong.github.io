@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-10-02",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 77
+      "views": 78
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
@@ -75,6 +75,10 @@
       "views": 7
     },
     {
+      "slug": "2026-09-14-securing-ai-generated-code",
+      "views": 7
+    },
+    {
       "slug": "2020-02-16-winapi",
       "views": 6
     },
@@ -88,10 +92,6 @@
     },
     {
       "slug": "2026-08-25-agentic-code-quality",
-      "views": 6
-    },
-    {
-      "slug": "2026-09-14-securing-ai-generated-code",
       "views": 6
     },
     {
@@ -121,6 +121,10 @@
     {
       "slug": "2026-09-17-ai-native-revenue-org",
       "views": 5
+    },
+    {
+      "slug": "2021-12-02-svelte",
+      "views": 4
     },
     {
       "slug": "2021-12-30-redux",
@@ -187,7 +191,7 @@
       "views": 3
     },
     {
-      "slug": "2021-12-02-svelte",
+      "slug": "2020-09-12-fe-performance",
       "views": 3
     },
     {
@@ -247,10 +251,6 @@
       "views": 2
     },
     {
-      "slug": "2020-09-12-fe-performance",
-      "views": 2
-    },
-    {
       "slug": "2021-12-01-deno",
       "views": 2
     },
@@ -276,6 +276,10 @@
     },
     {
       "slug": "2022-12-30-react-query",
+      "views": 2
+    },
+    {
+      "slug": "2023-01-01-fe-process",
       "views": 2
     },
     {
@@ -320,10 +324,6 @@
     },
     {
       "slug": "2022-05-30-form",
-      "views": 1
-    },
-    {
-      "slug": "2023-01-01-fe-process",
       "views": 1
     },
     {
