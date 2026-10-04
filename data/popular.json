@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-04",
   "rangeDays": 90,
   "items": [
     {
@@ -8,7 +8,7 @@
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
-      "views": 62
+      "views": 63
     },
     {
       "slug": "2026-09-19-react-router-v8",
@@ -55,6 +55,10 @@
       "views": 9
     },
     {
+      "slug": "2026-08-22-delete-and-verify",
+      "views": 8
+    },
+    {
       "slug": "2022-03-12-react-router-v6",
       "views": 7
     },
@@ -68,10 +72,6 @@
     },
     {
       "slug": "2026-06-03-claude-marketplace",
-      "views": 7
-    },
-    {
-      "slug": "2026-08-22-delete-and-verify",
       "views": 7
     },
     {
@@ -91,12 +91,20 @@
       "views": 6
     },
     {
+      "slug": "2023-08-16-treeshaking",
+      "views": 6
+    },
+    {
       "slug": "2024-11-16-vite",
       "views": 6
     },
     {
       "slug": "2026-08-25-agentic-code-quality",
       "views": 6
+    },
+    {
+      "slug": "2021-12-30-redux",
+      "views": 5
     },
     {
       "slug": "2022-03-22-recoil",
@@ -119,10 +127,6 @@
       "views": 5
     },
     {
-      "slug": "2023-08-16-treeshaking",
-      "views": 5
-    },
-    {
       "slug": "2026-09-16-token-roles-agent-design",
       "views": 5
     },
@@ -132,10 +136,6 @@
     },
     {
       "slug": "2021-12-02-svelte",
-      "views": 4
-    },
-    {
-      "slug": "2021-12-30-redux",
       "views": 4
     },
     {
@@ -227,6 +227,10 @@
       "views": 3
     },
     {
+      "slug": "2023-01-01-fe-process",
+      "views": 3
+    },
+    {
       "slug": "2023-07-22-zustand",
       "views": 3
     },
@@ -284,10 +288,6 @@
     },
     {
       "slug": "2022-03-28-javascript",
-      "views": 2
-    },
-    {
-      "slug": "2023-01-01-fe-process",
       "views": 2
     },
     {
