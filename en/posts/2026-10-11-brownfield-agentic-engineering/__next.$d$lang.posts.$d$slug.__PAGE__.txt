@@ -1,0 +1,374 @@
+1:"$Sreact.fragment"
+3:I[53403,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+4:I[64893,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],""]
+2:T662,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Running Agents in a Codebase Older Than the Team — Brownfield Agentic Engineering","description":"Brownfield Agentic Engineering: Make Hidden Constraints Visible and Cheap Changes Trustworthy Notes on Addy Osmani's Brownfield Agentic Engineering…","datePublished":"2026-10-11","dateModified":"2026-10-11","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-10-11-brownfield-agentic-engineering/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-10-11-brownfield-agentic-engineering/"},"image":"https://seungahhong.github.io/blog-assets/2026/10/assets/11/thumbnail.en.png","keywords":["AI","agents","legacy","migration","harness"],"articleSection":"Development","wordCount":3188,"timeRequired":"PT16M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}d:X
+12:X
+12:C
+0:{"buildId":"bkZ2I0gD6rBexVZNTYsTg","data":[{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Running Agents in a Codebase Older Than the Team — Brownfield Agentic Engineering\",\"item\":\"https://seungahhong.github.io/en/posts/2026-10-11-brownfield-agentic-engineering/\"}]}"}}],["$","$L3",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L4",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L4",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"Running Agents in a Codebase Older Than the Team — Brownfield Agentic Engineering"}]]}]}],["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"Running Agents in a Codebase Older Than the Team — Brownfield Agentic Engineering"}],"$L5",false,"$L6"]}],"$L7","$L8"]}],"$L9"]}]}]],["$La"],"$Lb"]}],"isPartial":"$@c","staleTime":"$d","varyParams":null},{"rsc":"$Le","isPartial":"$@f","staleTime":"$d","varyParams":null},{"rsc":"$L10","isPartial":"$@11","staleTime":"$d","varyParams":"$12"},{"rsc":"$L13","isPartial":"$@14","staleTime":"$d","varyParams":"$12"}],"isUpgradeableISRFallback":false,"a":"$@15","rootVaryParams":null,"needsRuntimeRequest":"$@16"}
+18:I[94917,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+19:I[27722,["/_next/static/chunks/2w5r4vn1dqj_q.js","/_next/static/chunks/1k1y_2_55-p0x.js","/_next/static/chunks/13tuup7jbc8xe.js"],"default"]
+1a:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"OutletBoundary"]
+1b:"$Sreact.suspense"
+1d:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"ViewportBoundary"]
+1e:I[70815,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"MetadataBoundary"]
+1f:I[20665,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"IconMark"]
+20:I[47221,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+21:I[60184,["/_next/static/chunks/2w5r4vn1dqj_q.js"],"default"]
+5:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-10-11","className":"meta-mono","children":"10/11/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[16,"min read"]}]]}]
+6:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L4",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","agents",{"children":["$","$L4",null,{"href":"/en/tags?tag=agents","className":"tag-pill","children":"agents"}]}],["$","li","legacy",{"children":["$","$L4",null,{"href":"/en/tags?tag=legacy","className":"tag-pill","children":"legacy"}]}],["$","li","migration",{"children":["$","$L4",null,{"href":"/en/tags?tag=migration","className":"tag-pill","children":"migration"}]}],["$","li","harness",{"children":["$","$L4",null,{"href":"/en/tags?tag=harness","className":"tag-pill","children":"harness"}]}]]}]
+17:T69ed,<h2 id="brownfield-agentic-engineering-make-hidden-constraints-visible-and-cheap-changes-trustworthy">Brownfield Agentic Engineering: Make Hidden Constraints Visible and Cheap Changes Trustworthy<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#brownfield-agentic-engineering-make-hidden-constraints-visible-and-cheap-changes-trustworthy"><span class="icon icon-link"></span></a></h2>
+<p>Notes on Addy Osmani's <a href="https://addyo.substack.com/p/brownfield-agentic-engineering">Brownfield Agentic Engineering</a> (2026-09-14, subtitled "What it takes to run agents in a codebase older than the team").</p>
+<h3 id="️-tldr">✍️ TL;DR<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#️-tldr"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p><strong>What makes agents succeed in an old codebase is structure, not supervision.</strong> People draw the risk map, you write down only what the code can't say, repeated corrections move into the harness, today's behavior gets locked by tests, migrations land in complete units, and parallelism comes last.</p>
+</blockquote>
+<h4 id="summary">Summary<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#summary"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><strong>What brownfield means</strong>: a codebase whose repository no longer fully describes how the system actually behaves. Institutional knowledge, duct tape, legacy services, and behavior other teams depend on live <strong>outside the tree</strong>.</li>
+<li><strong>Zones</strong>: green (well tested, isolated → autonomous loop) · yellow (mixed quality → characterization tests first) · red (auth, billing, permissions, payroll → a human pairing on every step). <strong>People draw the map</strong>, and zones only move <strong>when it's earned</strong>.</li>
+<li><strong>Write down only what the code can't say</strong>: agents infer structure well. Document only business nuance, trade-offs, rules tooling doesn't enforce, domain rules, and the history behind counter-intuitive implementations.</li>
+<li><strong>Research should outlive the session</strong>: for yellow and red work, a read-only pass first produces a <strong>comprehension memo</strong> (entry points, owners, callers, tests, production signals, open questions — every claim cited).</li>
+<li><strong>A repeated correction = a missing piece of the harness</strong>: when the same review comment shows up twice, move it into a lint rule, hook, type, test, or skill. Prose is only for constraints that can't be enforced mechanically.</li>
+<li><strong>Start zero-risk, migrate in complete units</strong>: characterization tests that lock current behavior (ugly parts included) → mechanical transforms → finish one path <strong>all the way to deleting the old dependency</strong>. Don't let one session author both the tests and the implementation.</li>
+<li><strong>Parallelize last</strong>: parallelism multiplies the bottleneck you already have. Scale out only after one unit has a dependable judge, recovery path, and review format.</li>
+<li><strong>Agents put a price on ambiguity</strong>: track lead time, review minutes, interventions, escaped defects, rollbacks, remaining old imports, and traffic on the new path — not lines generated.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Principle</th><th>Key line</th></tr></thead><tbody><tr><td><strong>Zones</strong></td><td>Autonomy follows blast radius, observability, and recoverability — not model confidence</td></tr><tr><td><strong>Docs</strong></td><td>Write down what the code can't say, and nothing else</td></tr><tr><td><strong>Research</strong></td><td>Exploration with no durable artifact makes the next agent redo the archaeology</td></tr><tr><td><strong>Harness</strong></td><td>Every repeated correction is a missing piece of the harness</td></tr><tr><td><strong>Starting</strong></td><td>Lock today's behavior before you let anything improve it</td></tr><tr><td><strong>Migration</strong></td><td>Complete when the new path works and the old dependency is demonstrably gone</td></tr><tr><td><strong>Lessons from big ones</strong></td><td>What transfers between companies is the structure around the agents</td></tr><tr><td><strong>What changed</strong></td><td>The price of trying several implementations changed; the evidence to choose didn't</td></tr><tr><td><strong>Parallelism</strong></td><td>Parallelism multiplies the bottleneck you already have</td></tr><tr><td><strong>Metrics</strong></td><td>Agents put a visible price on ambiguity</td></tr></tbody></table>
+<p>The details follow below.</p>
+<hr>
+<h3 id="-table-of-contents">📋 Table of Contents<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-table-of-contents"><span class="icon icon-link"></span></a></h3>
+<ol>
+<li><a href="#what-brownfield-means">What Brownfield Means</a></li>
+<li><a href="#zones">Zones</a></li>
+<li><a href="#write-down-what-the-code-cant-say">Write Down What the Code Can't Say</a></li>
+<li><a href="#make-the-research-survive-the-session">Make the Research Survive the Session</a></li>
+<li><a href="#when-instructions-become-a-harness">When Instructions Become a Harness</a></li>
+<li><a href="#start-with-zero-risk-work">Start with Zero-Risk Work</a></li>
+<li><a href="#migrate-in-complete-units">Migrate in Complete Units</a></li>
+<li><a href="#lessons-from-bigger-migrations">Lessons from Bigger Migrations</a></li>
+<li><a href="#whats-actually-changed">What's Actually Changed</a></li>
+<li><a href="#parallelize-last">Parallelize Last</a></li>
+<li><a href="#agents-put-a-price-on-ambiguity">Agents Put a Price on Ambiguity</a></li>
+<li><a href="#wrapping-up">Wrapping Up</a></li>
+</ol>
+<h3 id="what-brownfield-means">What Brownfield Means<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#what-brownfield-means"><span class="icon icon-link"></span></a></h3>
+<p>A brownfield system is a codebase where <strong>the repository no longer fully describes how the thing actually behaves</strong>. Institutional knowledge, duct-tape fixes, legacy services, and expectations other teams depend on all live outside the tree. You have to learn those constraints before writing new code, and after a change you have to <strong>prove</strong> you didn't break them.</p>
+<p>The author loves coding with agents, but warns that throwing them at an older codebase unsupervised can produce something that "works" yet has <strong>the wrong system design and brittle tests</strong>. Even before AI, modernization had to happen piecemeal, on top of strong tests, keeping things working as intended through real user-journey testing and a barrage of repeatable tests.</p>
+<p>Some now argue that the moment an agent drops code you didn't author decision by decision, you're already in brownfield. Either way, the goal is the same — <strong>make cheap changes safe.</strong> Bringing agentic engineering or software-factory patterns into a large codebase without extra mindfulness is signing up for a world of technical debt.</p>
+<p>The whole piece rests on one premise: <strong>the code is the source of truth.</strong> Anything layered on top should be what can't easily be inferred from it.</p>
+<h3 id="zones">Zones<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#zones"><span class="icon icon-link"></span></a></h3>
+<p>Walking into an old codebase, the first thing you want to know is <strong>what you shouldn't touch</strong>. Split it into zones.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Zone</th><th>Traits</th><th>What agents may do</th></tr></thead><tbody><tr><td>🟢 Green</td><td>Good test coverage · current conventions · well isolated</td><td>Tight autonomous loop</td></tr><tr><td>🟡 Yellow</td><td>Mixed quality</td><td>Change code <strong>after</strong> characterization tests</td></tr><tr><td>🔴 Red</td><td>Auth · billing · permissions · payroll, understood by few</td><td>A human pairing on every step, or not at all</td></tr></tbody></table>
+<p>On commerce sites the author worked on, five or six departments often ran their own microsites behind what felt like a single experience to users. A team that built its area in the last couple of years had solid tests; others didn't. That's why zones split even within one repository.</p>
+<p>Three rules turn zones from a metaphor into an operating procedure.</p>
+<ol>
+<li><strong>A person draws the map, not the agent.</strong> Left to choose, the agent starts in the scariest file — because the scariest file has the most interesting names.</li>
+<li><strong>Zones only move when it's earned.</strong> Yellow becomes green once characterization tests exist and the module's owner has reviewed the agent's first changes.</li>
+<li><strong>The zone sets the verbs.</strong> Green is a tight loop, yellow is tests first, red is a human pairing on every step — or the work not happening.</li>
+</ol>
+<h3 id="write-down-what-the-code-cant-say">Write Down What the Code Can't Say<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#write-down-what-the-code-cant-say"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p>Autonomy should follow blast radius, observability, and recoverability. A model's confidence is a poor guide.</p>
+</blockquote>
+<p>For a while people turned everything into markdown files and stuffed them into context windows. But agents are actually <strong>pretty good at understanding the map of a system</strong> from code alone. What you should give them is what the code doesn't show.</p>
+<ul>
+<li>Business- or team-specific nuance</li>
+<li>Trade-offs explaining why the system is structured the way it is</li>
+<li>Guidelines not enforced by static analysis or tooling</li>
+<li>Domain-specific rules</li>
+<li>External constraints and the historical context behind counter-intuitive implementations</li>
+</ul>
+<blockquote>
+<p><strong>Write down what the code can't say, and nothing else.</strong></p>
+</blockquote>
+<p>This lines up with "the more instructions, the less they're followed" from <a href="/en/posts/2026-09-13-writing-specs-for-agents/">Writing Specs Agents Actually Follow</a>. The shorter and sharper the doc, the more it actually gets followed.</p>
+<h3 id="make-the-research-survive-the-session">Make the Research Survive the Session<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#make-the-research-survive-the-session"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p>If your agent's exploration produces no durable artifact, the next agent pays for the same archaeology again.</p>
+</blockquote>
+<p>The default loop wastes its research. The agent figures out how the auth flow behaves, finishes the task, and loses that model when the session ends. Chat history isn't a great system of record — <strong>especially after compaction.</strong></p>
+<p>So for yellow and red work, start with <strong>a separate read-only pass</strong> that produces a short <strong>comprehension memo</strong>:</p>
+<ul>
+<li>Entry points and owners</li>
+<li>Callers and existing abstractions</li>
+<li>Tests and production signals</li>
+<li>Relevant history and open questions</li>
+</ul>
+<p>Every claim should cite a <strong>file, issue, ownership record, or dashboard</strong>.</p>
+<p>After research, keep cutting the context as you go:</p>
+<ol>
+<li><strong>Plan in a clean context</strong> — ask which files the plausible approaches touch, which invariants they preserve, and how you'd reverse them.</li>
+<li><strong>A human picks the path.</strong></li>
+<li><strong>Implementation stops if it discovers the map was wrong.</strong></li>
+<li><strong>Review starts fresh and works backward from the acceptance criteria.</strong> A clean reviewer is more likely to notice a test that proves the implementation while missing the requirement.</li>
+</ol>
+<h3 id="when-instructions-become-a-harness">When Instructions Become a Harness<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#when-instructions-become-a-harness"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p>Every repeated correction is a missing piece of the harness.</p>
+</blockquote>
+<p>It helps to be precise about where each piece fits.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Piece</th><th>Role</th></tr></thead><tbody><tr><td><strong>Instructions</strong></td><td>Record unusual facts about the repository</td></tr><tr><td><strong>Skills</strong></td><td>Package reusable procedures like checking blast radius or verifying a schema change</td></tr><tr><td><strong>Plugins</strong></td><td>Provide governed access to the ownership catalog, incident archive, or dashboards</td></tr></tbody></table>
+<p>The <strong>harness</strong> is the whole working environment around the agent — context, tools, permissions, tests, logs, and recovery. A <strong>factory</strong> schedules many dependable loops, keeps durable state, and hands novel cases back to people.</p>
+<p>The practical test is <strong>what happens when the agent gets something wrong</strong>. If you quietly repair the diff, the next session can repeat it. When the same review comment appears again, move it into a lint rule, hook, type, test, or skill, and <strong>keep prose only for constraints that can't be enforced mechanically.</strong></p>
+<p>A deny rule, scoped credential, or CI check <strong>doesn't have to remember.</strong> Over time the harness becomes a record of failures the team has decided not to pay for twice. (The skill packaging covered in <a href="/en/posts/2026-08-26-agent-skills/">Agent Skills</a> slots in right here.)</p>
+<h3 id="start-with-zero-risk-work">Start with Zero-Risk Work<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#start-with-zero-risk-work"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p>Lock today's behavior before you let anything improve it.</p>
+</blockquote>
+<p>Bringing agents into an existing codebase looks a lot like any other modernization effort. Not "let's rewrite the monolith in Rust," but <strong>"first, explain how this works."</strong></p>
+<p><strong>Characterization tests</strong> are automated tests that document a system's <strong>actual current behavior</strong> so you can safely refactor or change legacy code. The point is to pin down what the module does today <strong>ugly parts included</strong>. In an old system, some of that ugly behavior is what the business runs on — and an agent will happily "fix" it behind a green suite.</p>
+<p>The technique is old because the problem is old. Netflix used the same idea at production scale in its GraphQL cutover — <strong>replaying and shadowing traffic</strong> against the old and new paths, diffing the payloads, and promoting only when they matched. When a homepage-class surface has no honest unit suite, that's the promotion path. <strong>Don't guess; run both and compare.</strong></p>
+<p>And one important rule:</p>
+<ul>
+<li><strong>When an agent is the one making the tests pass, don't let that same session be the only author of the tests.</strong> Pin the behavior first, in a separate pass or by a person; then let the agent work. Otherwise you get a green suite that encodes the implementation you just invented.</li>
+</ul>
+<p>Next come <strong>mechanical transforms</strong> — dead-code and unused-export inventories. Avoid the trickiest, hairiest parts at first.</p>
+<p>The author adds a story from AOL. On a day off, browsing a comic book store near the office, they got a text from their boss: <strong>the AOL.com homepage was completely broken</strong>, and there weren't enough JavaScript experts around. "How complicated can a homepage be?" — but when dozens of departments own components, criteria, scripts, and A/B tests, the job becomes not breaking the world for everyone else. In the end, anything without its own unit tests had to be <strong>user-tested by hand</strong>.</p>
+<blockquote>
+<p>That's still the job. Agents don't remove the dozens-of-departments problem; they make it cheaper to attempt a change against it.</p>
+</blockquote>
+<p>A surface that only production traffic really understands is <strong>a red zone by definition</strong>, and until you've built a stand-in for that traffic, the user testing the author did on their day off is still the gate.</p>
+<h3 id="migrate-in-complete-units">Migrate in Complete Units<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#migrate-in-complete-units"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p>A migration is complete when the new path works and the old dependency is demonstrably gone.</p>
+</blockquote>
+<p>Half-finished migrations are especially confusing to agents. Search returns the old approach in forty files, the replacement in twelve, and a shim that presents both as current. The agent sees <strong>contradictory precedent</strong>.</p>
+<p>So the author would rather finish <strong>one route end to end, including removing the old path</strong>, than convert thirty files and leave both patterns alive. If deletion is a future cleanup ticket, the migration unit isn't complete.</p>
+<p>Tests can stay green while a replacement still calls the legacy implementation. <a href="https://arxiv.org/abs/2608.23564">SWE Refactor Bench</a> calls this migration <strong>"Blindness"</strong>: across 520 agent runs, only <strong>28</strong> passed its migration audit, behavioral tests, and independent verification.</p>
+<p>If a codemod can make the routine change, use the agent to help <strong>write and check the codemod</strong>, and give agents the <strong>exception queue</strong>. Stripe's migration is a useful example precisely because no agents were involved — the durable artifact was <strong>the migration machine</strong> itself.</p>
+<h3 id="lessons-from-bigger-migrations">Lessons from Bigger Migrations<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#lessons-from-bigger-migrations"><span class="icon icon-link"></span></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Case</th><th>Scale · time</th><th>Structure worth copying</th></tr></thead><tbody><tr><td><a href="https://bun.com/blog/bun-in-rust">Bun Zig → Rust</a></td><td>535K lines, ~50 workflows, 11 days</td><td>Two adversarial reviewers per generated unit · the full existing test suite as merge gate · a Zig→Rust idiom porting guide written <strong>before</strong> any agent ran</td></tr><tr><td><a href="https://claude.com/blog/ai-code-migration">Anthropic's migration process</a></td><td>—</td><td>Stress-test the rulebook on a disposable mini-migration, throw the output away, then do the broad run</td></tr><tr><td><a href="https://arxiv.org/abs/2608.28972">Controlled VB6 → C# study</a></td><td>—</td><td>92% behavioral equivalence on simple features, 47% on complex → <strong>unit size is the lever</strong></td></tr><tr><td><a href="https://stripe.dev/blog/migrating-to-typescript">Stripe TypeScript</a></td><td>3.7M lines, one PR</td><td>Months of codemod work, no agents</td></tr><tr><td><a href="https://abseil.io/resources/swe-book/html/ch22.html">Google large-scale changes</a></td><td>—</td><td>Atomic changes shrink as codebases grow</td></tr><tr><td>Spotify</td><td>650+ agent PRs merged monthly</td><td>On rails Backstage built years earlier</td></tr><tr><td><a href="https://openai.com/index/asana/">Asana</a></td><td>Multi-year Enzyme backlog, two weeks, ~$12,000</td><td>A narrow mechanical migration · a pre-existing suite · humans reviewing every change</td></tr></tbody></table>
+<p>Asana's $12,000 is a token bill, not a substitute for the five-year staffing estimate on the books. The author is careful to frame it as <strong>a vendor-reported cost of generation</strong>, not a controlled savings study.</p>
+<blockquote>
+<p>What transfers between companies is the structure around the agents.</p>
+</blockquote>
+<h3 id="whats-actually-changed">What's Actually Changed<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#whats-actually-changed"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p>Agents have changed the price of trying several plausible implementations. They haven't changed the evidence required to choose one.</p>
+</blockquote>
+<p>This year we've been reading more cases of established companies using agents for big rewrites. Some CTOs the author talked to let teams have agents <strong>attempt multiple rewrites in different languages or frameworks</strong> at once, because it's now cheap enough to do.</p>
+<p>Shopify rebuilt the Shop consumer app from React Native to native Swift and Kotlin <strong>in twelve weeks</strong> with a small team and <strong>agent-gated, screen-sized checkpoints</strong>. The much larger merchant app is still the brownfield problem — hundreds of screens, deep platform integration, same gates, longer clock.</p>
+<p>Where one team used to pick a single option and go all in, you can now have them <strong>implement all the competing options</strong>, check each against your unit tests, performance-profile each, and then decide — in some cases far more cheaply. That's a completely different ball game for teams.</p>
+<h3 id="parallelize-last">Parallelize Last<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#parallelize-last"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p>More generated code should lead to more selective human review, not less human ownership.</p>
+</blockquote>
+<p>Before you think about loops, goals, or parallelism, seriously consider what will set your brownfield project up for success. Software factories can run many changes at once, but the author would copy that part only <strong>after one unit has a dependable judge, a recovery path, and a review format people can absorb.</strong></p>
+<p><strong>Parallelism multiplies the bottleneck you already have.</strong> Automated verification can handle five checked changes. One senior reading every line gets a queue, fragmented attention, and eventually <strong>ceremonial approval</strong>.</p>
+<p>Automated review should lead with:</p>
+<ol>
+<li>Intent</li>
+<li>Changed invariants</li>
+<li>Test results</li>
+<li>Parity mismatches</li>
+<li>The rollback route</li>
+</ol>
+<p>The complete diff stays available, but human attention goes first to <strong>the largest blast radius and the weakest oracle</strong>.</p>
+<p>One more thing: <strong>worktrees isolate changes, not behavior.</strong> They may share Git metadata, credentials, local services, and network access. Trusted work may accept that trade-off; unattended agents consuming untrusted content need stronger sandboxes and scoped credentials.</p>
+<h3 id="agents-put-a-price-on-ambiguity">Agents Put a Price on Ambiguity<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#agents-put-a-price-on-ambiguity"><span class="icon icon-link"></span></a></h3>
+<p>Lines generated don't tell you whether the codebase improved. Here's what the author would track.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Category</th><th>Metrics</th></tr></thead><tbody><tr><td><strong>General</strong></td><td>Lead time · review minutes · human interventions · escaped defects · rollbacks · oracle mismatches · suppressions left behind</td></tr><tr><td><strong>Migration</strong></td><td>Remaining old imports · traffic served by the new path · parity mismatches · legacy dependencies removed</td></tr></tbody></table>
+<p>A green suite with all traffic still taking the old path is <strong>busywork</strong>.</p>
+<blockquote>
+<p>Agents put a visible price on ambiguity. Tribal conventions become recurring review comments.</p>
+</blockquote>
+<p>That cost was always there — paid during onboarding, review, and incident recovery. Agents make more of it <strong>countable</strong>, which gives a stronger argument for the maintenance work teams already knew was valuable.</p>
+<p>The next time an agent works on a homepage-equivalent, the author wants it to leave behind more than the repair: <strong>a synthetic user journey, an ownership record, and a regression test.</strong> What the next engineer and the next agent inherit matters too.</p>
+<h3 id="wrapping-up">Wrapping Up<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#wrapping-up"><span class="icon icon-link"></span></a></h3>
+<p>Boiled down to one sentence: <strong>the structure around the agent decides the outcome more than the agent's capability does.</strong> What Bun, Stripe, Asana, and Shopify share across different languages, scales, and tools is an existing test suite as the gate, narrow units, human review, and a guide written before the agents ran.</p>
+<p>Two points hit home for me. One is the rule <strong>"don't let one session write both the tests and the implementation."</strong> Agent-written green tests that prove the implementation just invented rather than the requirement are something I see all the time. The other is the observation that <strong>"a half-finished migration is contradictory precedent for an agent."</strong> The dual patterns that confused humans become training data for the agent as-is.</p>
+<p><strong>Checklist before bringing agents into a brownfield codebase:</strong></p>
+<ul>
+<li>✅ Has a person drawn the green/yellow/red zone map?</li>
+<li>✅ Are zone-promotion criteria (characterization tests + owner review) defined?</li>
+<li>✅ Do instruction docs contain only what the code can't say?</li>
+<li>✅ Does yellow/red work start with a cited comprehension memo?</li>
+<li>✅ Are repeated review comments moving into lint, hooks, types, tests, or skills?</li>
+<li>✅ Are behavior-locking tests written by a <strong>different</strong> pass (or a person) than the agent doing the work?</li>
+<li>✅ Does "done" for a migration unit include deleting the old dependency?</li>
+<li>✅ Do you parallelize only after one unit's judge, recovery, and review format are proven?</li>
+<li>✅ Are you watching lead time, interventions, rollbacks, and remaining old imports instead of lines generated?</li>
+</ul>
+<hr>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Addy Osmani, <a href="https://addyo.substack.com/p/brownfield-agentic-engineering">Brownfield Agentic Engineering</a> (2026-09-14)</li>
+<li>Bun, <a href="https://bun.com/blog/bun-in-rust">Bun in Rust</a></li>
+<li>Anthropic, <a href="https://claude.com/blog/ai-code-migration">AI code migration</a></li>
+<li>Stripe, <a href="https://stripe.dev/blog/migrating-to-typescript">Migrating to TypeScript</a></li>
+<li>Google, <a href="https://abseil.io/resources/swe-book/html/ch22.html">Software Engineering at Google — Large-Scale Changes</a></li>
+<li>Earlier posts — <a href="/en/posts/2026-09-13-writing-specs-for-agents/">Writing Specs Agents Actually Follow</a> · <a href="/en/posts/2026-08-25-agentic-code-quality/">Agentic Code Quality</a> · <a href="/en/posts/2026-08-26-agent-skills/">Agent Skills</a></li>
+</ul>7:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]}]
+8:["$","nav",null,{"aria-label":"Previous / Next","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L4",null,{"href":"/en/posts/2026-09-19-react-router-v8","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L18",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"Previous"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"React Router v8"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+9:["$","div",null,{"className":"hidden lg:block","children":["$","$L19",null,{"headings":[{"id":"brownfield-agentic-engineering-make-hidden-constraints-visible-and-cheap-changes-trustworthy","text":"Brownfield Agentic Engineering: Make Hidden Constraints Visible and Cheap Changes Trustworthy","depth":1},{"id":"️-tldr","text":"✍️ TL;DR","depth":2},{"id":"summary","text":"Summary","depth":3},{"id":"-table-of-contents","text":"📋 Table of Contents","depth":2},{"id":"what-brownfield-means","text":"What Brownfield Means","depth":2},{"id":"zones","text":"Zones","depth":2},{"id":"write-down-what-the-code-cant-say","text":"Write Down What the Code Can't Say","depth":2},{"id":"make-the-research-survive-the-session","text":"Make the Research Survive the Session","depth":2},{"id":"when-instructions-become-a-harness","text":"When Instructions Become a Harness","depth":2},{"id":"start-with-zero-risk-work","text":"Start with Zero-Risk Work","depth":2},{"id":"migrate-in-complete-units","text":"Migrate in Complete Units","depth":2},{"id":"lessons-from-bigger-migrations","text":"Lessons from Bigger Migrations","depth":2},{"id":"whats-actually-changed","text":"What's Actually Changed","depth":2},{"id":"parallelize-last","text":"Parallelize Last","depth":2},{"id":"agents-put-a-price-on-ambiguity","text":"Agents Put a Price on Ambiguity","depth":2},{"id":"wrapping-up","text":"Wrapping Up","depth":2},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/13tuup7jbc8xe.js","async":true}]
+b:["$","$L1a",null,{"children":["$","$1b",null,{"name":"Next.MetadataOutlet","children":"$@1c"}]}]
+e:["$","$1","h",{"children":[null,["$","$L1d",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L1e",null,{"children":["$","$1b",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Running Agents in a Codebase Older Than the Team — Brownfield Agentic Engineering · SeungAh Hong · Tech Blog"}],["$","meta","1",{"name":"description","content":"Brownfield Agentic Engineering: Make Hidden Constraints Visible and Cheap Changes Trustworthy Notes on Addy Osmani's Brownfield Agentic Engineering…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"SeungAh Hong"}],["$","meta","4",{"name":"keywords","content":"AI,agents,legacy,migration,harness"}],["$","meta","5",{"name":"creator","content":"홍승아"}],["$","meta","6",{"name":"publisher","content":"홍승아"}],["$","meta","7",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://seungahhong.github.io/en/posts/2026-10-11-brownfield-agentic-engineering/"}],["$","link","9",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-10-11-brownfield-agentic-engineering/"}],["$","link","10",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-10-11-brownfield-agentic-engineering/"}],["$","link","11",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-10-11-brownfield-agentic-engineering/"}],["$","meta","12",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","13",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","14",{"property":"og:title","content":"Running Agents in a Codebase Older Than the Team — Brownfield Agentic Engineering"}],["$","meta","15",{"property":"og:description","content":"Brownfield Agentic Engineering: Make Hidden Constraints Visible and Cheap Changes Trustworthy Notes on Addy Osmani's Brownfield Agentic Engineering…"}],["$","meta","16",{"property":"og:url","content":"https://seungahhong.github.io/en/posts/2026-10-11-brownfield-agentic-engineering/"}],["$","meta","17",{"property":"og:locale","content":"en"}],["$","meta","18",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/10/assets/11/thumbnail.en.png"}],["$","meta","19",{"property":"og:image:alt","content":"Running Agents in a Codebase Older Than the Team — Brownfield Agentic Engineering"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2026-10-11"}],["$","meta","22",{"property":"article:modified_time","content":"2026-10-11"}],["$","meta","23",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","24",{"property":"article:section","content":"Development"}],["$","meta","25",{"property":"article:tag","content":"AI"}],["$","meta","26",{"property":"article:tag","content":"agents"}],["$","meta","27",{"property":"article:tag","content":"legacy"}],["$","meta","28",{"property":"article:tag","content":"migration"}],["$","meta","29",{"property":"article:tag","content":"harness"}],["$","meta","30",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","31",{"name":"twitter:title","content":"Running Agents in a Codebase Older Than the Team — Brownfield Agentic Engineering"}],["$","meta","32",{"name":"twitter:description","content":"Brownfield Agentic Engineering: Make Hidden Constraints Visible and Cheap Changes Trustworthy Notes on Addy Osmani's Brownfield Agentic Engineering…"}],["$","meta","33",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/10/assets/11/thumbnail.en.png"}],["$","link","34",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L1f","35",{}]]}]}]}],null]}]
+10:["$","$1","c",{"children":[null,["$","$L20",null,{"parallelRouterKey":"children","template":["$","$L21",null,{}]}]]}]
+13:["$","$1","c",{"children":[null,["$","$L20",null,{"parallelRouterKey":"children","template":["$","$L21",null,{}]}]]}]
+16:true
+1c:null
+d:300
+d:C
+15:0
+f:"$undefined"
+11:"$undefined"
+14:"$undefined"
+c:"$undefined"
