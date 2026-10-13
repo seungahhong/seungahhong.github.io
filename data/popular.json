@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-13",
   "rangeDays": 90,
   "items": [
     {
@@ -8,7 +8,7 @@
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
-      "views": 66
+      "views": 71
     },
     {
       "slug": "2026-09-19-react-router-v8",
@@ -47,8 +47,16 @@
       "views": 10
     },
     {
+      "slug": "2026-08-23-ai-native-sdlc-playbook",
+      "views": 10
+    },
+    {
       "slug": "2026-09-15-vitest5",
       "views": 10
+    },
+    {
+      "slug": "2020-02-16-winapi",
+      "views": 9
     },
     {
       "slug": "2023-04-02-playwright",
@@ -59,7 +67,7 @@
       "views": 9
     },
     {
-      "slug": "2026-08-23-ai-native-sdlc-playbook",
+      "slug": "2026-08-22-delete-and-verify",
       "views": 9
     },
     {
@@ -71,19 +79,11 @@
       "views": 9
     },
     {
-      "slug": "2020-02-16-winapi",
-      "views": 8
-    },
-    {
       "slug": "2022-06-14-jotai",
       "views": 8
     },
     {
       "slug": "2022-07-25-msw",
-      "views": 8
-    },
-    {
-      "slug": "2026-08-22-delete-and-verify",
       "views": 8
     },
     {
@@ -124,6 +124,10 @@
     },
     {
       "slug": "2024-01-14-cors",
+      "views": 6
+    },
+    {
+      "slug": "2024-04-28-esbuild",
       "views": 6
     },
     {
@@ -168,10 +172,6 @@
     },
     {
       "slug": "2023-10-30-nextjs-v14",
-      "views": 5
-    },
-    {
-      "slug": "2024-04-28-esbuild",
       "views": 5
     },
     {
@@ -255,6 +255,10 @@
       "views": 3
     },
     {
+      "slug": "2022-01-10-RxJS",
+      "views": 3
+    },
+    {
       "slug": "2022-02-13-react17",
       "views": 3
     },
@@ -303,6 +307,10 @@
       "views": 3
     },
     {
+      "slug": "2026-10-11-brownfield-agentic-engineering",
+      "views": 3
+    },
+    {
       "slug": "2020-01-01-pdf",
       "views": 2
     },
@@ -312,10 +320,6 @@
     },
     {
       "slug": "2021-12-01-deno",
-      "views": 2
-    },
-    {
-      "slug": "2022-01-10-RxJS",
       "views": 2
     },
     {
