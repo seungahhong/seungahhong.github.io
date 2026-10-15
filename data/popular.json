@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-14",
+  "updatedAt": "2026-10-15",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 90
+      "views": 93
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
-      "views": 72
+      "views": 73
     },
     {
       "slug": "2026-09-19-react-router-v8",
@@ -39,6 +39,10 @@
       "views": 11
     },
     {
+      "slug": "2023-04-02-playwright",
+      "views": 11
+    },
+    {
       "slug": "2026-08-01-choosing-claude-model",
       "views": 11
     },
@@ -63,11 +67,11 @@
       "views": 9
     },
     {
-      "slug": "2023-04-02-playwright",
+      "slug": "2023-08-15-ecmascript",
       "views": 9
     },
     {
-      "slug": "2023-08-15-ecmascript",
+      "slug": "2024-01-14-cors",
       "views": 9
     },
     {
@@ -100,10 +104,6 @@
     },
     {
       "slug": "2023-08-16-treeshaking",
-      "views": 7
-    },
-    {
-      "slug": "2024-01-14-cors",
       "views": 7
     },
     {
@@ -247,12 +247,20 @@
       "views": 4
     },
     {
+      "slug": "2025-02-09-git-to-mp4-convert",
+      "views": 4
+    },
+    {
       "slug": "2025-09-07-vite7.0",
       "views": 4
     },
     {
       "slug": "2026-09-05-frontier-development-teams",
       "views": 4
+    },
+    {
+      "slug": "2020-01-01-pdf",
+      "views": 3
     },
     {
       "slug": "2020-09-12-fe-performance",
@@ -264,6 +272,10 @@
     },
     {
       "slug": "2022-01-10-RxJS",
+      "views": 3
+    },
+    {
+      "slug": "2022-01-16-typescript",
       "views": 3
     },
     {
@@ -299,10 +311,6 @@
       "views": 3
     },
     {
-      "slug": "2025-02-09-git-to-mp4-convert",
-      "views": 3
-    },
-    {
       "slug": "2025-06-28-figma-mcp-link",
       "views": 3
     },
@@ -311,19 +319,11 @@
       "views": 3
     },
     {
-      "slug": "2020-01-01-pdf",
-      "views": 2
-    },
-    {
       "slug": "2020-02-17-c-c++",
       "views": 2
     },
     {
       "slug": "2021-12-01-deno",
-      "views": 2
-    },
-    {
-      "slug": "2022-01-16-typescript",
       "views": 2
     },
     {
