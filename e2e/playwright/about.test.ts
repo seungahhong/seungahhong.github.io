@@ -88,8 +88,8 @@ test.describe('about page', () => {
       // 치환되지 않은 자리표시자가 그대로 노출되면 안 된다.
       expect(body).not.toMatch(/\{\{?\s*(count|year|postCount)\s*\}?\}/);
 
-      // 편수는 한국어 원문 기준(85)이지 원문+번역(170)이 아니다.
-      expect(body).toMatch(/\b85\b/);
+      // 편수는 한국어 원문 기준(86)이지 원문+번역(172)이 아니다.
+      expect(body).toMatch(/\b86\b/);
       expect(body).toMatch(/\b2020\b/);
     },
   );
