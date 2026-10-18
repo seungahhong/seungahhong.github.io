@@ -6,6 +6,7 @@ published: 2026-10-17
 category: 개발
 tags: ['릴리스', '패키지', '주간정리']
 comments: true
+thumbnail: './assets/17/thumbnail.png'
 github: ''
 ---
 
