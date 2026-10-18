@@ -6,6 +6,7 @@ published: 2026-10-17
 category: Development
 tags: ['release', 'packages', 'weekly']
 comments: true
+thumbnail: './assets/17/thumbnail.en.png'
 github: ''
 ---
 
