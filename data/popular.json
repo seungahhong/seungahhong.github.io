@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-17",
+  "updatedAt": "2026-10-18",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 94
+      "views": 95
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
-      "views": 76
+      "views": 77
     },
     {
       "slug": "2026-09-19-react-router-v8",
@@ -19,12 +19,12 @@
       "views": 16
     },
     {
-      "slug": "2026-07-14-typescript7.0",
+      "slug": "2026-07-05-meta-harness",
       "views": 15
     },
     {
-      "slug": "2026-07-05-meta-harness",
-      "views": 14
+      "slug": "2026-07-14-typescript7.0",
+      "views": 15
     },
     {
       "slug": "2026-07-31-context-engineering-claude5",
@@ -47,6 +47,10 @@
       "views": 12
     },
     {
+      "slug": "2026-06-03-claude-marketplace",
+      "views": 11
+    },
+    {
       "slug": "2026-08-01-choosing-claude-model",
       "views": 11
     },
@@ -55,8 +59,8 @@
       "views": 11
     },
     {
-      "slug": "2026-06-03-claude-marketplace",
-      "views": 10
+      "slug": "2026-10-17-package-release-weekly",
+      "views": 11
     },
     {
       "slug": "2026-08-23-ai-native-sdlc-playbook",
@@ -183,6 +187,10 @@
       "views": 5
     },
     {
+      "slug": "2023-08-25-nodejs",
+      "views": 5
+    },
+    {
       "slug": "2023-08-26-react-hook-form-v7",
       "views": 5
     },
@@ -228,10 +236,6 @@
     },
     {
       "slug": "2022-12-30-react-query",
-      "views": 4
-    },
-    {
-      "slug": "2023-08-25-nodejs",
       "views": 4
     },
     {
