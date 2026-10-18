@@ -44,10 +44,7 @@ export default function Sidebar({
 
   return (
     <aside className="flex flex-col gap-7 lg:sticky lg:top-20">
-      <SearchTrigger
-        ariaLabel={dict.nav.search}
-        className="border-line bg-surface text-faint hover:border-accent flex w-full items-center gap-2.5 rounded-[10px] border px-3.5 py-3 text-left text-[13.5px] transition-colors"
-      >
+      <SearchTrigger className="border-line bg-surface text-faint hover:border-accent flex w-full items-center gap-2.5 rounded-[10px] border px-3.5 py-3 text-left text-[13.5px] transition-colors">
         <Search className="text-muted h-4 w-4" aria-hidden="true" />
         <span>{dict.nav.searchPlaceholder}</span>
       </SearchTrigger>
