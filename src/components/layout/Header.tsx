@@ -72,11 +72,13 @@ export default function Header({
             type="button"
             onClick={openSearch}
             className="border-line bg-surface-2 text-faint hover:border-accent hidden items-center gap-2 rounded-lg border px-3 py-[7px] text-[13px] transition-colors md:flex"
-            aria-label={dict.nav.search}
           >
             <Search className="h-[15px] w-[15px]" aria-hidden="true" />
             <span>{dict.nav.search}</span>
-            <kbd className="border-line bg-bg text-faint ml-2 rounded-sm border px-[5px] font-mono text-[10px]">
+            <kbd
+              aria-hidden="true"
+              className="border-line bg-bg text-faint ml-2 rounded-sm border px-[5px] font-mono text-[10px]"
+            >
               ⌘K
             </kbd>
           </button>
