@@ -3,4 +3,4 @@
 3:[["children",{"s":{"n":"slug","t":"d","k":"2020-06-28-concept","s":[]},"h":96,"c":"$Q4"}]]
 2:[["children",{"s":"posts","h":64,"c":"$Q3"}]]
 1:[["children",{"s":{"n":"lang","t":"d","k":"en","s":["about","blog"]},"h":32,"c":"$Q2"}]]
-0:{"b":"eK7YkhCP2ueBR_TMH9-Kr","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"bGZhndjepbTji65U8q40q","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
