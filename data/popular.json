@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "rangeDays": 90,
   "items": [
     {
@@ -8,7 +8,7 @@
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
-      "views": 78
+      "views": 82
     },
     {
       "slug": "2026-09-19-react-router-v8",
@@ -25,6 +25,10 @@
     {
       "slug": "2026-07-14-typescript7.0",
       "views": 15
+    },
+    {
+      "slug": "2026-10-17-package-release-weekly",
+      "views": 14
     },
     {
       "slug": "2026-07-31-context-engineering-claude5",
@@ -44,10 +48,6 @@
     },
     {
       "slug": "2026-09-06-skills-governance",
-      "views": 12
-    },
-    {
-      "slug": "2026-10-17-package-release-weekly",
       "views": 12
     },
     {
