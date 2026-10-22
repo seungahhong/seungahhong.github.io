@@ -3,4 +3,4 @@
 3:[["children",{"s":{"n":"slug","t":"d","k":"2022-12-30-react-query","s":[]},"h":96,"c":"$Q4"}]]
 2:[["children",{"s":"posts","h":64,"c":"$Q3"}]]
 1:[["children",{"s":{"n":"lang","t":"d","k":"en","s":["about","blog"]},"h":32,"c":"$Q2"}]]
-0:{"b":"_1_0EsBYXvg-RhnYyAtlv","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"yIQ7M51JWFRMyUaXobMKv","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
