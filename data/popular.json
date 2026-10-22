@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21",
+  "updatedAt": "2026-10-22",
   "rangeDays": 90,
   "items": [
     {
@@ -8,7 +8,7 @@
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
-      "views": 82
+      "views": 85
     },
     {
       "slug": "2026-09-19-react-router-v8",
@@ -71,6 +71,10 @@
       "views": 9
     },
     {
+      "slug": "2023-07-23-react-query-v5",
+      "views": 9
+    },
+    {
       "slug": "2023-08-15-ecmascript",
       "views": 9
     },
@@ -95,19 +99,19 @@
       "views": 8
     },
     {
+      "slug": "2022-03-12-react-router-v6",
+      "views": 8
+    },
+    {
       "slug": "2022-07-25-msw",
       "views": 8
     },
     {
-      "slug": "2023-07-23-react-query-v5",
+      "slug": "2026-08-25-agentic-code-quality",
       "views": 8
     },
     {
       "slug": "2022-01-08-webassembly",
-      "views": 7
-    },
-    {
-      "slug": "2022-03-12-react-router-v6",
       "views": 7
     },
     {
@@ -119,7 +123,7 @@
       "views": 7
     },
     {
-      "slug": "2026-08-25-agentic-code-quality",
+      "slug": "2024-04-28-esbuild",
       "views": 7
     },
     {
@@ -139,15 +143,15 @@
       "views": 6
     },
     {
+      "slug": "2023-08-26-react-hook-form-v7",
+      "views": 6
+    },
+    {
       "slug": "2023-10-30-nextjs-v14",
       "views": 6
     },
     {
       "slug": "2024-03-18-pnpm",
-      "views": 6
-    },
-    {
-      "slug": "2024-04-28-esbuild",
       "views": 6
     },
     {
@@ -188,10 +192,6 @@
     },
     {
       "slug": "2023-08-25-nodejs",
-      "views": 5
-    },
-    {
-      "slug": "2023-08-26-react-hook-form-v7",
       "views": 5
     },
     {
