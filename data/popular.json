@@ -4,11 +4,11 @@
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 95
+      "views": 98
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
-      "views": 88
+      "views": 92
     },
     {
       "slug": "2026-09-19-react-router-v8",
@@ -16,7 +16,7 @@
     },
     {
       "slug": "2026-07-13-vite8.0",
-      "views": 16
+      "views": 17
     },
     {
       "slug": "2026-07-14-typescript7.0",
@@ -127,6 +127,10 @@
       "views": 7
     },
     {
+      "slug": "2024-11-16-vite",
+      "views": 7
+    },
+    {
       "slug": "2026-08-26-agent-skills",
       "views": 7
     },
@@ -152,10 +156,6 @@
     },
     {
       "slug": "2024-03-18-pnpm",
-      "views": 6
-    },
-    {
-      "slug": "2024-11-16-vite",
       "views": 6
     },
     {
@@ -311,6 +311,10 @@
       "views": 3
     },
     {
+      "slug": "2024-03-17-remove-unused-dependencies",
+      "views": 3
+    },
+    {
       "slug": "2024-12-05-react-v19",
       "views": 3
     },
@@ -336,10 +340,6 @@
     },
     {
       "slug": "2022-05-30-form",
-      "views": 2
-    },
-    {
-      "slug": "2024-03-17-remove-unused-dependencies",
       "views": 2
     },
     {
