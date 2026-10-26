@@ -1,0 +1,445 @@
+3:"$Sreact.fragment"
+4:"/_next/static/chunks/12-fpzohv1xd4.js"
+5:I[9619,["$4"],"default"]
+6:I[23615,["$4"],"default"]
+e:"/_next/static/chunks/2kf7_4zlzxl0h.js"
+f:"/_next/static/chunks/0-jsxcg-veu-w.js"
+10:I[53403,["$4","$e","$f"],"default"]
+11:I[34242,["$4","$e","$f"],""]
+1b:"ViewportBoundary"
+1c:I[52085,["$4"],"$1b"]
+1d:"MetadataBoundary"
+1e:I[52085,["$4"],"$1d"]
+1f:"$Sreact.suspense"
+20:I[3142,["$4"],"IconMark"]
+8:X
+8:C
+9:X
+d:T622,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Weekly Package Releases — 2026-10-26","description":"✍️ One-line summary Patches that stop trusting the compromised eMudhra intermediate certificate landed across many tools at once — Electron, Deno, Bazel,…","datePublished":"2026-10-26","dateModified":"2026-10-26","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-10-26-package-release-weekly/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-10-26-package-release-weekly/"},"image":"https://seungahhong.github.io/blog-assets/2026/10/assets/26/thumbnail.en.png","keywords":["release","packages","weekly"],"articleSection":"Development","wordCount":5720,"timeRequired":"PT29M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}c:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$d"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Weekly Package Releases — 2026-10-26\",\"item\":\"https://seungahhong.github.io/en/posts/2026-10-26-package-release-weekly/\"}]}"}}],["$","$L10",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L11",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L11",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"Weekly Package Releases — 2026-10-26"}]]}]}],"$L12","$L13",false,"$L14"]}],"$L15","$L16"]}],"$L17"]}]}]],["$L18"],"$L19"]}],"p":"$@1a","v":null,"s":"$9"}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"2026-10-26-package-release-weekly","s":[]},"h":96,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@b","v":"$8","s":"$9"},"c":"$Qc"}]]
+2:[["children",{"s":"posts","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"en","s":["about","blog"]},"h":32,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1c",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1e",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Weekly Package Releases — 2026-10-26 · SeungAh Hong · Tech Blog"}],["$","meta","1",{"name":"description","content":"✍️ One-line summary Patches that stop trusting the compromised eMudhra intermediate certificate landed across many tools at once — Electron, Deno, Bazel,…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"SeungAh Hong"}],["$","meta","4",{"name":"keywords","content":"release,packages,weekly"}],["$","meta","5",{"name":"creator","content":"홍승아"}],["$","meta","6",{"name":"publisher","content":"홍승아"}],["$","meta","7",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://seungahhong.github.io/en/posts/2026-10-26-package-release-weekly/"}],["$","link","9",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-10-26-package-release-weekly/"}],["$","link","10",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-10-26-package-release-weekly/"}],["$","link","11",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-10-26-package-release-weekly/"}],["$","meta","12",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","13",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","14",{"property":"og:title","content":"Weekly Package Releases — 2026-10-26"}],["$","meta","15",{"property":"og:description","content":"✍️ One-line summary Patches that stop trusting the compromised eMudhra intermediate certificate landed across many tools at once — Electron, Deno, Bazel,…"}],["$","meta","16",{"property":"og:url","content":"https://seungahhong.github.io/en/posts/2026-10-26-package-release-weekly/"}],["$","meta","17",{"property":"og:locale","content":"en"}],["$","meta","18",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/10/assets/26/thumbnail.en.png"}],["$","meta","19",{"property":"og:image:alt","content":"Weekly Package Releases — 2026-10-26"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2026-10-26"}],["$","meta","22",{"property":"article:modified_time","content":"2026-10-26"}],["$","meta","23",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","24",{"property":"article:section","content":"Development"}],["$","meta","25",{"property":"article:tag","content":"release"}],["$","meta","26",{"property":"article:tag","content":"packages"}],["$","meta","27",{"property":"article:tag","content":"weekly"}],["$","meta","28",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","29",{"name":"twitter:title","content":"Weekly Package Releases — 2026-10-26"}],["$","meta","30",{"name":"twitter:description","content":"✍️ One-line summary Patches that stop trusting the compromised eMudhra intermediate certificate landed across many tools at once — Electron, Deno, Bazel,…"}],["$","meta","31",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/10/assets/26/thumbnail.en.png"}],["$","link","32",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L20","33",{}]]}]}],null]}],null]}],"p":"$@21","v":null,"s":"$9"}},"a":"$@22","u":"$@23","b":"b4KluX_KxDeO6nieBlnpW"}
+25:I[15907,["$4","$e","$f"],"default"]
+26:I[27722,["$4","$e","$f"],"default"]
+27:I[52085,["$4"],"OutletBoundary"]
+12:["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"Weekly Package Releases — 2026-10-26"}]
+13:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-10-26","className":"meta-mono","children":"10/26/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[29,"min read"]}]]}]
+14:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","release",{"children":["$","$L11",null,{"href":"/en/tags?tag=release","className":"tag-pill","children":"release"}]}],["$","li","packages",{"children":["$","$L11",null,{"href":"/en/tags?tag=packages","className":"tag-pill","children":"packages"}]}],["$","li","weekly",{"children":["$","$L11",null,{"href":"/en/tags?tag=weekly","className":"tag-pill","children":"weekly"}]}]]}]
+24:Tb428,<h3 id="️-one-line-summary">✍️ One-line summary<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#️-one-line-summary"><span class="icon icon-link"></span></a></h3>
+<p>Patches that stop trusting the compromised eMudhra intermediate certificate landed across many tools at once — Electron, Deno, Bazel, Crossplane, Terraform, Argo CD and Turborepo — while Node.js (9 CVEs) and Kyverno (24 security advisories) shipped security releases. Electron 45 and Nx 24 are major releases, and a Bazel 9.x line showed up, so check for breaking changes (changes that require edits to existing code) before upgrading.</p>
+<h3 id="this-week-at-a-glance">This week at a glance<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#this-week-at-a-glance"><span class="icon icon-link"></span></a></h3>
+<p>The period is 2026-10-19 to 2026-10-26 (KST). Of the 87 tracked packages, 35 had a new stable release.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Package</th><th>Version</th><th>Release notes</th><th>Changes</th></tr></thead><tbody><tr><td>Node.js</td><td>v26.12.1 · v24.22.1 · v22.23.4</td><td><a href="https://github.com/nodejs/node/releases/tag/v26.12.1">Yes</a></td><td>Security release fixing 9 CVEs</td></tr><tr><td>astro</td><td>7.4.2</td><td><a href="https://github.com/withastro/astro/releases/tag/astro%407.4.2">Yes</a></td><td>Minimum Node.js 22.23.4, faster content sync</td></tr><tr><td>Zed</td><td>v1.25.3 (3 patches) · v1.24.4</td><td><a href="https://github.com/zed-industries/zed/releases/tag/v1.25.3">Yes</a></td><td>Smaller binaries, env-variable exposure fix</td></tr><tr><td>pnpm</td><td>v12.15.0 · v11.28.8 · v10.34.9</td><td><a href="https://github.com/pnpm/pnpm/releases/tag/v12.15.0">Yes</a></td><td><code>include</code> setting, stricter registry metadata checks</td></tr><tr><td>🔺 Electron</td><td>v45.0.0 · v44.9.3 · v43.8.3 · v42.11.18</td><td><a href="https://github.com/electron/electron/releases/tag/v45.0.0">Yes</a></td><td>Major: 32-bit removed, sync <code>safeStorage</code> methods deprecated</td></tr><tr><td>Oxfmt</td><td>v0.74.0</td><td><a href="https://github.com/oxc-project/oxc/releases/tag/oxfmt_v0.74.0">Yes</a></td><td>Formatter bug fixes, JSON errors rejected</td></tr><tr><td>Oxlint</td><td>v1.89.0</td><td><a href="https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.89.0">Yes</a></td><td>Many rules promoted to recommended</td></tr><tr><td>Next.js</td><td>v16.4.3</td><td><a href="https://github.com/vercel/next.js/releases/tag/v16.4.3">Yes</a></td><td>Backported bug fixes</td></tr><tr><td>🔺 Nx</td><td>24.0.0 · 24.0.1 · 23.3.1</td><td><a href="https://github.com/nrwl/nx/releases/tag/24.0.0">Yes</a></td><td>Major: deprecated features removed, project naming change</td></tr><tr><td>Deno</td><td>v2.9.8</td><td><a href="https://github.com/denoland/deno/releases/tag/v2.9.8">Yes</a></td><td>eMudhra CA distrusted, permission check fix</td></tr><tr><td>FastAPI</td><td>0.162.0 (10 releases)</td><td><a href="https://github.com/fastapi/fastapi/releases/tag/0.162.0">Yes</a></td><td>Form/parameter model extensions, 2 breaking changes</td></tr><tr><td>Grafana Tempo</td><td>v3.1.1 · v3.0.5 · v2.10.10 (2 patches)</td><td><a href="https://github.com/grafana/tempo/releases/tag/v3.1.1">Yes</a></td><td>CVEs resolved via Go updates</td></tr><tr><td>Homebrew</td><td>7.0.11 (2 patches)</td><td><a href="https://github.com/Homebrew/brew/releases/tag/7.0.11">Yes</a></td><td>Stricter package provenance and checksum checks</td></tr><tr><td>Vite</td><td>v8.3.5</td><td><a href="https://github.com/vitejs/vite/releases/tag/v8.3.5">Yes</a></td><td>Bundled dev mode and CSS <code>url()</code> bug fixes</td></tr><tr><td>Falco</td><td>0.45.1</td><td><a href="https://github.com/falcosecurity/falco/releases/tag/0.45.1">Yes</a></td><td>Old-kernel install and metrics crash fixes</td></tr><tr><td>Hono</td><td>v4.13.14</td><td><a href="https://github.com/honojs/hono/releases/tag/v4.13.14">Yes</a></td><td><code>serve-static</code> and path-parameter behavior fixes</td></tr><tr><td>Kyverno</td><td>v1.19.2</td><td><a href="https://github.com/kyverno/kyverno/releases/tag/v1.19.2">Yes</a></td><td>24 security advisories fixed</td></tr><tr><td>OpenSearch</td><td>3.9.0 · 2.19.7</td><td><a href="https://github.com/opensearch-project/OpenSearch/releases/tag/3.9.0">Yes</a></td><td>New APIs, 2 CVEs fixed</td></tr><tr><td>Turborepo</td><td>v2.11.10</td><td><a href="https://github.com/vercel/turborepo/releases/tag/v2.11.10">Yes</a></td><td>Windows hang fix, eMudhra CA distrusted</td></tr><tr><td>Argo CD</td><td>v3.5.6 · v3.4.12 · v3.3.18 (2 patches)</td><td><a href="https://github.com/argoproj/argo-cd/releases/tag/v3.5.6">Yes</a></td><td>SOCKS5 SSH fetch fix, CA security fix</td></tr><tr><td>🔺 Bazel</td><td>9.3.1 · 8.8.2 · 7.7.2</td><td><a href="https://github.com/bazelbuild/bazel/releases/tag/9.3.1">Yes</a></td><td>Revoked root CAs removed</td></tr><tr><td>Biome</td><td>v2.6.3</td><td><a href="https://github.com/biomejs/biome/releases/tag/%40biomejs%2Fbiome%402.6.3">Yes</a></td><td>Many nursery rules added, summary output moved to stderr</td></tr><tr><td>celld</td><td>v0.6.3</td><td><a href="https://github.com/denoland/celld/releases/tag/v0.6.3">Yes</a></td><td>rustls security fix, cells with lost ownership records refused</td></tr><tr><td>Consul</td><td>v2.1.0</td><td><a href="https://github.com/hashicorp/consul/releases/tag/v2.1.0">Yes</a></td><td>Includes breaking changes such as the nftables switch</td></tr><tr><td>Crossplane</td><td>v2.4.3 · v2.3.7 · v2.2.7 · v1.20.14</td><td><a href="https://github.com/crossplane/crossplane/releases/tag/v2.4.3">Yes</a></td><td>Go 1.26.10, eMudhra root removed</td></tr><tr><td>Gradle</td><td>9.8.2</td><td><a href="https://github.com/gradle/gradle/releases/tag/v9.8.2">Yes</a></td><td>Java 27 support and more</td></tr><tr><td>ollama</td><td>v0.40.11 (4 patches)</td><td><a href="https://github.com/ollama/ollama/releases/tag/v0.40.11">Yes</a></td><td>Speech generation, new models</td></tr><tr><td>React Native Skia</td><td>v3.8.0 · v3.7.4 (5 patches) · v2.15.2</td><td><a href="https://github.com/wcandillon/react-native-skia/releases/tag/v3.8.0">Yes</a></td><td><code>SkiaPictureView</code> removed</td></tr><tr><td>Rolldown</td><td>v1.2.15</td><td><a href="https://github.com/rolldown/rolldown/releases/tag/v1.2.15">Yes</a></td><td><code>isBundled</code> option, output comment format changed</td></tr><tr><td>Rstest</td><td>v0.12.4</td><td><a href="https://github.com/web-infra-dev/rstest/releases/tag/v0.12.4">Yes</a></td><td>Screenshot tests in browser mode</td></tr><tr><td>Spring AI</td><td>v2.0.2</td><td><a href="https://github.com/spring-projects/spring-ai/releases/tag/v2.0.2">Yes</a></td><td>Observability and MCP improvements, bug fixes</td></tr><tr><td>Spring Modulith</td><td>2.1.2 · 2.0.9 · 1.4.14</td><td><a href="https://github.com/spring-projects/spring-modulith/releases/tag/2.1.2">Yes</a></td><td>Event publication and test bug fixes</td></tr><tr><td>Spring Vault</td><td>4.1.1</td><td><a href="https://github.com/spring-projects/spring-vault/releases/tag/4.1.1">Yes</a></td><td><code>RestClientAdapter</code> POST body loss fixed</td></tr><tr><td>Storybook</td><td>v10.6.4 (2 patches)</td><td><a href="https://github.com/storybookjs/storybook/releases/tag/v10.6.4">Yes</a></td><td>Vitest 5 support, Jest loader fix</td></tr><tr><td>Terraform</td><td>v1.17.0 · v1.16.7</td><td><a href="https://github.com/hashicorp/terraform/releases/tag/v1.17.0">Yes</a></td><td>Variables in provider requirements, Policy GA</td></tr></tbody></table>
+<h3 id="changes-by-package">Changes by package<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#changes-by-package"><span class="icon icon-link"></span></a></h3>
+<h4 id="nodejs-v26121--v24221--v22234">Node.js v26.12.1 · v24.22.1 · v22.23.4<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nodejs-v26121--v24221--v22234"><span class="icon icon-link"></span></a></h4>
+<p>The runtime that executes JavaScript on servers.</p>
+<p><strong>What changed</strong> — The Current line v26.12.1 and the LTS line v24.22.1 are security releases fixing 9 CVEs. The High-severity items make TLS reject non-canonical IP address forms and fix an IP normalization regression, validate null bytes in DNS resolve input, and fix Brotli-related issues; Medium covers the HTTP agent data guard and cache randomization reset between snapshots; Low covers the zlib ZIP header cache, fs permission wildcards and the <code>realpathSync</code> permission check. Root certificates moved to NSS 3.131.1, c-ares to 1.34.9, and TLS now rejects certificate chains containing blocked public keys. The maintenance line v22.23.4 received the same set of security fixes.</p>
+<p><strong>What to check when upgrading</strong> — The notes list no breaking changes, but connections that were previously accepted may now be rejected (TLS, non-canonical IPs, certificate chains), so verify outbound connections after upgrading. These are security patches, so LTS users should upgrade soon.</p>
+<p>Release notes: <a href="https://github.com/nodejs/node/releases/tag/v26.12.1">v26.12.1</a> · <a href="https://github.com/nodejs/node/releases/tag/v24.22.1">v24.22.1</a> · <a href="https://github.com/nodejs/node/releases/tag/v22.23.4">v22.23.4</a></p>
+<h4 id="astro-742">astro 7.4.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#astro-742"><span class="icon icon-link"></span></a></h4>
+<p>A JavaScript web framework.</p>
+<p><strong>What changed</strong> — A patch release that raises the minimum supported Node.js to 22.23.4. With <code>experimental.collectionStorage: "chunked"</code>, content sync is much faster — from 60 seconds to under 1 second for about 44,000 entries. Fixes include a node-fetch error with the Cloudflare adapter and <code>astro dev</code>, a stale lock file that stopped unrelated processes, i18n types for <code>defaultLocale</code>, <code>fallback</code> and <code>domains</code>, a <code>server:defer</code> island error, and invalid JS generated from env values containing <code>$</code>.</p>
+<p><strong>What to check when upgrading</strong> — Confirm Node.js is 22.23.4 or later. Otherwise it is safe to upgrade as is.</p>
+<p>Release notes: <a href="https://github.com/withastro/astro/releases/tag/astro%407.4.2">astro@7.4.2</a></p>
+<h4 id="zed-v1253--v1244">Zed v1.25.3 · v1.24.4<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#zed-v1253--v1244"><span class="icon icon-link"></span></a></h4>
+<p>A fast code editor written in Rust.</p>
+<p><strong>What changed</strong> — v1.25.2 shrank binaries by about 33% on macOS, 28% on Windows and 7% on Linux, added GPT-6 Astra, Claude Fable 5.1 and Claude Opus 5.5 models on Amazon Bedrock, external agent (ACP) session notifications and context compaction, double-click editing of inlay hints, and faster SSH connections. As a security fix, environment variables and secrets passed to external agents and MCP servers on remote projects no longer show up in the local process list. v1.25.3 is a patch containing only dependency updates responding to software-ecosystem vulnerabilities, and v1.24.4 fixes OpenCode models failing to load because of a missing <code>npm</code> field.</p>
+<p><strong>What to check when upgrading</strong> — No breaking changes are listed. Safe to upgrade as is.</p>
+<p>Release notes: <a href="https://github.com/zed-industries/zed/releases/tag/v1.25.3">v1.25.3</a> · <a href="https://github.com/zed-industries/zed/releases/tag/v1.24.4">v1.24.4</a></p>
+<h4 id="pnpm-v12150--v11288--v10349">pnpm v12.15.0 · v11.28.8 · v10.34.9<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pnpm-v12150--v11288--v10349"><span class="icon icon-link"></span></a></h4>
+<p>A Node.js package manager.</p>
+<p><strong>What changed</strong> — v12.15.0 adds an <code>include</code> field to split configuration across files, <code>lockfile.integrityTarget: tar</code> with tar registry support, zstd response handling, and <code>SOURCE_DATE_EPOCH</code> support for <code>deploy</code> and <code>install</code>. It rejects registry metadata for a different package name and speeds up workspace installs and macOS linking. v11.28.8 bundles Node.js 26.12.1 in the standalone build, because the earlier 26.0.0 still trusted an intermediate CA that Node.js had decided to distrust. v11.28.7 applies <code>trustPolicy</code> and adds <code>maxTarballUnpackedSize</code> (default 4 GiB), and v10.34.9 records the pinned pnpm version from <code>packageManager</code> in a new <code>pnpm-lock.yaml</code> so later <code>--frozen-lockfile</code> installs succeed.</p>
+<p><strong>What to check when upgrading</strong> — No breaking changes are marked, but registry metadata validation is stricter, so if you use a private registry make sure installs still succeed.</p>
+<p>Release notes: <a href="https://github.com/pnpm/pnpm/releases/tag/v12.15.0">v12.15.0</a> · <a href="https://github.com/pnpm/pnpm/releases/tag/v11.28.8">v11.28.8</a> · <a href="https://github.com/pnpm/pnpm/releases/tag/v10.34.9">v10.34.9</a></p>
+<h4 id="-major-electron-v4500--v4493--v4383--v421118">🔺 Major Electron v45.0.0 · v44.9.3 · v43.8.3 · v42.11.18<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-major-electron-v4500--v4493--v4383--v421118"><span class="icon icon-link"></span></a></h4>
+<p>A platform for building desktop apps with web technology.</p>
+<p><strong>What changed</strong> — v45.0.0 ships Chromium 156.0.8078.48, Node v24.22.0 and V8 15.6. It adds a MenuItem <code>badge</code> on macOS 14+, a cross-platform window state save/restore API, <code>app.configureWebAuthn()</code> for iCloud Keychain passkeys, and a Windows Error Reporting helper. v44.9.1 is a security fix responding to the compromised eMudhra intermediate certificate (GHSA-jr5w-w6x2-84p9), and v44.9.3 and v43.8.3 are patches backporting ANGLE, Chromium, PDFium, Skia and V8 fixes. The v42.11.18 notes warn that Electron 42 has reached end of support.</p>
+<p><strong>What to check when upgrading</strong> — The breaking changes in v45 are removal of 32-bit builds, deprecation of synchronous <code>safeStorage</code> methods (scheduled for removal in v46), and a change in how screen-capture permission is reported. Check whether you support 32-bit, call <code>safeStorage</code> synchronously, or rely on screen-capture permission handling. (Only part of the v45.0.0 notes was reviewed.)</p>
+<p>Release notes: <a href="https://github.com/electron/electron/releases/tag/v45.0.0">v45.0.0</a> · <a href="https://github.com/electron/electron/releases/tag/v44.9.3">v44.9.3</a> · <a href="https://github.com/electron/electron/releases/tag/v43.8.3">v43.8.3</a> · <a href="https://github.com/electron/electron/releases/tag/v42.11.18">v42.11.18</a></p>
+<h4 id="oxfmt-v0740">Oxfmt v0.74.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#oxfmt-v0740"><span class="icon icon-link"></span></a></h4>
+<p>A JavaScript/TypeScript formatter.</p>
+<p><strong>What changed</strong> — Mostly formatter bug fixes, covering YAML, Markdown, JSDoc, TOML, BOM handling in config files, comment placement, parentheses and Vue bindings. JSON now rejects invalid input with an error instead of silently dropping it, and there are some performance improvements and docs updates.</p>
+<p><strong>What to check when upgrading</strong> — After upgrading, review the formatting diff and check for new JSON errors.</p>
+<p>Release notes: <a href="https://github.com/oxc-project/oxc/releases/tag/oxfmt_v0.74.0">oxfmt v0.74.0</a></p>
+<h4 id="oxlint-v1890">Oxlint v1.89.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#oxlint-v1890"><span class="icon icon-link"></span></a></h4>
+<p>A JavaScript/TypeScript linter (code checker).</p>
+<p><strong>What changed</strong> — Many rules in the Vue 3, React, Promise, Node, Next.js, JSX a11y, JSDoc, Jest/Vitest, import, unicorn, TypeScript and ESLint plugin families were promoted to recommended. Bugs in some ESLint and unicorn rules were fixed and <code>react/jsx-key</code> is faster. There is also a breaking change in how lone surrogates (unpaired Unicode code units) are preserved in static property and member names.</p>
+<p><strong>What to check when upgrading</strong> — The recommended promotions may produce new warnings, so review your lint results.</p>
+<p>Release notes: <a href="https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.89.0">oxlint v1.89.0</a></p>
+<h4 id="nextjs-v1643">Next.js v16.4.3<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nextjs-v1643"><span class="icon icon-link"></span></a></h4>
+<p>A server-rendering React application framework.</p>
+<p><strong>What changed</strong> — A backport release containing only bug fixes: handling of Google Font URLs without extensions (in both bundlers), the app-page runtime being loaded in <code>proxy.ts</code>, a revert of the Turbopack loader invalidation fix, keeping the OpenTelemetry request trace integration, and avoiding loading standalone React during server bootstrap.</p>
+<p><strong>What to check when upgrading</strong> — Safe to upgrade as is.</p>
+<p>Release notes: <a href="https://github.com/vercel/next.js/releases/tag/v16.4.3">v16.4.3</a></p>
+<h4 id="-major-nx-2400--2401--2331">🔺 Major Nx 24.0.0 · 24.0.1 · 23.3.1<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-major-nx-2400--2401--2331"><span class="icon icon-link"></span></a></h4>
+<p>A monorepo build system.</p>
+<p><strong>What changed</strong> — 24.0.0 adds Angular 22.2 support and makes the dev server wait for readiness by default. Deprecated features such as the SCAM generator, Module Federation, the Remix generator/executor and Gradle plugin-v1 were removed. 24.0.1 fixes about 24 issues involving the daemon, dev server readiness detection, caching, Rspack, Angular Rspack, Maven and Storybook, and 23.3.1 is a single fix that lets Angular packages declare Vitest 5 as a peer.</p>
+<p><strong>What to check when upgrading</strong> — The breaking changes are the change to inferred project naming, handing typecheck over to <code>@nx/js/typescript</code>, and making the dotnet restore target opt-in. Check whether you use removed features, whether task references break because of project renames, and whether your typecheck setup is still correct.</p>
+<p>Release notes: <a href="https://github.com/nrwl/nx/releases/tag/24.0.0">24.0.0</a> · <a href="https://github.com/nrwl/nx/releases/tag/24.0.1">24.0.1</a> · <a href="https://github.com/nrwl/nx/releases/tag/23.3.1">23.3.1</a></p>
+<h4 id="deno-v298">Deno v2.9.8<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#deno-v298"><span class="icon icon-link"></span></a></h4>
+<p>A TypeScript/JavaScript runtime.</p>
+<p><strong>What changed</strong> — Compiled binaries now check read permission for local files loaded with dynamic import, and bare <code>deno run</code> supports zsh completion. hyper and hyper-util were updated to resolve an fetch idle-interval problem, and fixes cover the napi boundary and exception handling, X.509v1 certificate handling aligned with OpenSSL, <code>mock.reset()</code> improvements, and npm package link name validation. The compromised eMudhra CA is now distrusted and the rand 0.9.x security update is included.</p>
+<p><strong>What to check when upgrading</strong> — No breaking changes are mentioned. If you use dynamic import in compiled binaries, check that the new read-permission check does not change behavior.</p>
+<p>Release notes: <a href="https://github.com/denoland/deno/releases/tag/v2.9.8">v2.9.8</a></p>
+<h4 id="fastapi-01570-to-01620">FastAPI 0.157.0 to 0.162.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#fastapi-01570-to-01620"><span class="icon icon-link"></span></a></h4>
+<p>A Python web framework.</p>
+<p><strong>What changed</strong> — Ten minor releases shipped this week (0.157.0–0.162.0); each has a different minor, so they are not collapsed. Most extend form models and query/header/cookie parameter models — combining them and using them as optional or union types — keep form media types in the OpenAPI output, and fix the schema of nullable form unions.</p>
+<p><strong>What to check when upgrading</strong> — There are two breaking changes. From 0.162.0, omitted <code>bool</code> and <code>bool | None</code> form fields no longer become <code>False</code>; they use the declared default or raise a missing-required error. From 0.160.0, a parameter model's <code>extra</code> setting applies to every field submitted in the same location, including fields declared elsewhere.</p>
+<p>Release notes: <a href="https://github.com/fastapi/fastapi/releases/tag/0.162.0">0.162.0</a> · <a href="https://github.com/fastapi/fastapi/releases/tag/0.160.0">0.160.0</a></p>
+<h4 id="grafana-tempo-v311--v305--v21010">Grafana Tempo v3.1.1 · v3.0.5 · v2.10.10<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#grafana-tempo-v311--v305--v21010"><span class="icon icon-link"></span></a></h4>
+<p>A distributed tracing backend.</p>
+<p><strong>What changed</strong> — All three lines are security patches. v3.1.1 updates Go to 1.27.3 and resolves several CVEs; v3.0.5 and v2.10.10 fix CVE-2026-111943 with Go 1.26.10. v2.10.9 (the earlier of the two 2.10 patches) fixed many CVEs through Go 1.26.9 and updates to golang.org/x/net, grpc and OpenTelemetry.</p>
+<p><strong>What to check when upgrading</strong> — These are rebuilt-binary security patches; move to the latest patch of the line you use.</p>
+<p>Release notes: <a href="https://github.com/grafana/tempo/releases/tag/v3.1.1">v3.1.1</a> · <a href="https://github.com/grafana/tempo/releases/tag/v3.0.5">v3.0.5</a> · <a href="https://github.com/grafana/tempo/releases/tag/v2.10.10">v2.10.10</a></p>
+<h4 id="homebrew-7011">Homebrew 7.0.11<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#homebrew-7011"><span class="icon icon-link"></span></a></h4>
+<p>A package manager for macOS/Linux.</p>
+<p><strong>What changed</strong> — 7.0.11 (about 43 changes) centers on security and verification. It verifies API formula patch downloads, makes official formula provenance verification mandatory, and honors checksums declared in casks. New casks need a <code>zap</code> stanza, and new casks that require Rosetta are rejected. 7.0.10 (about 50 changes) added trust for tap redirects, stricter bottle attestation (build provenance) verification, vulnerability-aware package management, protection of Brewfile formulae during cleanup, and mandatory livecheck for new packages.</p>
+<p><strong>What to check when upgrading</strong> — If you maintain your own taps or casks, check the <code>zap</code> stanza and checksum requirements. Regular users can upgrade as is.</p>
+<p>Release notes: <a href="https://github.com/Homebrew/brew/releases/tag/7.0.11">7.0.11</a> · <a href="https://github.com/Homebrew/brew/releases/tag/7.0.10">7.0.10</a></p>
+<h4 id="vite-v835">Vite v8.3.5<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite-v835"><span class="icon icon-link"></span></a></h4>
+<p>A frontend build tool.</p>
+<p><strong>What changed</strong> — Mostly bug fixes. Build (chunk import maps, preload dependencies) and bundled dev mode (server origin in asset URLs, UTF-8 fallback page, <code>import.meta.env</code> define, source-map error stacks, HMR propagation) were fixed, as were CSS <code>url()</code> handling, optimizer lockfile hashing, subpath imports and socket error handling. Internal cleanups such as source-map performance work and an Oxlint migration are included.</p>
+<p><strong>What to check when upgrading</strong> — No new features or breaking changes. If you use bundled dev mode or CSS <code>url()</code>, just verify behavior after upgrading.</p>
+<p>Release notes: <a href="https://github.com/vitejs/vite/releases/tag/v8.3.5">v8.3.5</a></p>
+<h4 id="falco-0451">Falco 0.45.1<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#falco-0451"><span class="icon icon-link"></span></a></h4>
+<p>A cloud-native runtime security tool.</p>
+<p><strong>What changed</strong> — On kernels without modern eBPF support (for example kernel 5.4 on Ubuntu 20.04), deb/rpm packages no longer stay half-configured. <code>file_output</code>'s <code>keep_alive</code> reopens the file at the next alert after a write failure (such as a full disk) and keeps writing. A crash caused by a race between Prometheus metrics scraping and event processing was fixed, and Falco no longer exits when a watched file disappears during a rules reload.</p>
+<p><strong>What to check when upgrading</strong> — Recommended if you run older kernels. Otherwise safe to upgrade as is.</p>
+<p>Release notes: <a href="https://github.com/falcosecurity/falco/releases/tag/0.45.1">0.45.1</a></p>
+<h4 id="hono-v41314">Hono v4.13.14<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#hono-v41314"><span class="icon icon-link"></span></a></h4>
+<p>A web framework for edge environments.</p>
+<p><strong>What changed</strong> — A patch with 17 changes, mostly bug fixes. <code>serve-static</code> handles only GET/HEAD and honors <code>Accept-Encoding</code> q-values for precompressed files. Regex parameters in <code>basePath()</code> now match the router, duplicate path parameters keep the first value, and <code>getPath</code> is not allowed when strict is false. JSX <code>cloneElement</code> preserves self-closing void elements, Bearer auth's <code>MessageFunction</code> can return a <code>Response</code>, and the hono peer range allows v5 prereleases.</p>
+<p><strong>What to check when upgrading</strong> — Check the <code>serve-static</code> method restriction and the changed path-parameter behavior.</p>
+<p>Release notes: <a href="https://github.com/honojs/hono/releases/tag/v4.13.14">v4.13.14</a></p>
+<h4 id="kyverno-v1192">Kyverno v1.19.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#kyverno-v1192"><span class="icon icon-link"></span></a></h4>
+<p>A Kubernetes policy engine.</p>
+<p><strong>What changed</strong> — A release fixing 24 published security advisories (9 Critical, 14 High, 1 Moderate). It includes script-injection hardening, API path and namespace restrictions, image verification, CEL cost limits and generate protections. There are also performance, CI and dependency updates; individual CVE numbers could not be confirmed.</p>
+<p><strong>What to check when upgrading</strong> — Given the number of security fixes, upgrading soon is recommended. Policy and RBAC behavior may change, so confirm after upgrading that existing policies still apply as before.</p>
+<p>Release notes: <a href="https://github.com/kyverno/kyverno/releases/tag/v1.19.2">v1.19.2</a></p>
+<h4 id="opensearch-390--2197">OpenSearch 3.9.0 · 2.19.7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#opensearch-390--2197"><span class="icon icon-link"></span></a></h4>
+<p>A distributed search engine.</p>
+<p><strong>What changed</strong> — 3.9.0 adds a DELETE task API for stored task results, deployment drain/finish APIs for zero-downtime node rollouts, per-action adaptive concurrency limits, virtual thread executor support, a pull-based ingestion payload decoder framework, and automatic remote store restore on node loss. Aggregation, cache and translog performance improved, and it includes a completion suggester fix (CVE-2026-63136) and a Log4j fix (CVE-2026-49844). 2.19.7 adds a hot_threads snapshot cap, a query_string nesting depth limit and a completion suggester regex state cap, disables Mustache partial resolution in search templates, and adds fs repository <code>base_path</code> validation.</p>
+<p><strong>What to check when upgrading</strong> — <code>RestHighLevelClient</code> is deprecated in 3.9.0, so plan to move to <code>opensearch-java</code>. For 2.19.7, check whether queries using search-template partials or deep query_string nesting are affected.</p>
+<p>Release notes: <a href="https://github.com/opensearch-project/OpenSearch/releases/tag/3.9.0">3.9.0</a> · <a href="https://github.com/opensearch-project/OpenSearch/releases/tag/2.19.7">2.19.7</a></p>
+<h4 id="turborepo-v21110">Turborepo v2.11.10<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#turborepo-v21110"><span class="icon icon-link"></span></a></h4>
+<p>A JavaScript/TypeScript monorepo build system.</p>
+<p><strong>What changed</strong> — A patch of about 18 changes. It allows non-recursive Turbo commands in root tasks and fixes a hang at exit on Windows with pnpm batch shims. Tool-managed directories are excluded from local dependency inputs, file hashing now matches git's binary detection, and cached symlinks are restored even when output already exists. It also stops trusting the compromised eMudhra intermediate certificate.</p>
+<p><strong>What to check when upgrading</strong> — The hashing change can cause a one-time increase in cache misses. There are no other breaking changes.</p>
+<p>Release notes: <a href="https://github.com/vercel/turborepo/releases/tag/v2.11.10">v2.11.10</a></p>
+<h4 id="argo-cd-v356--v3412--v3318">Argo CD v3.5.6 · v3.4.12 · v3.3.18<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#argo-cd-v356--v3412--v3318"><span class="icon icon-link"></span></a></h4>
+<p>A Kubernetes deployment (GitOps) tool.</p>
+<p><strong>What changed</strong> — All three lines fix SSH repository fetch through a SOCKS5 proxy and the reporting of server-side diffs for fields removed by another manager, and update DOMPurify and Go. v3.5.6 also fixes gRPC SRV lookups, and v3.3.18 contains a security fix related to the eMudhra CA certificate (v3.3.17 was released the same week).</p>
+<p><strong>What to check when upgrading</strong> — Move to the latest patch of the line you use. If you fetch SSH repositories behind a proxy, check connectivity once.</p>
+<p>Release notes: <a href="https://github.com/argoproj/argo-cd/releases/tag/v3.5.6">v3.5.6</a> · <a href="https://github.com/argoproj/argo-cd/releases/tag/v3.4.12">v3.4.12</a> · <a href="https://github.com/argoproj/argo-cd/releases/tag/v3.3.18">v3.3.18</a></p>
+<h4 id="-major-bazel-931--882--772">🔺 Major Bazel 9.3.1 · 8.8.2 · 7.7.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-major-bazel-931--882--772"><span class="icon icon-link"></span></a></h4>
+<p>A build tool.</p>
+<p><strong>What changed</strong> — All three LTS lines remove the eMudhra and Sectigo AAA root CA certificates, whose trust was revoked after a private-key leak, from the bundled JDK. 9.3.1 additionally preserves packages of top-level alias chains when the pre-execution cache is discarded, closes the lock file channel when lock acquisition fails, and rewinds and reruns actions whose outputs were lost before download.</p>
+<p><strong>What to check when upgrading</strong> — The 9.x line has a higher major than the version this digest uses as its baseline (8.7.0). The patches themselves are backward compatible with each line (9.3.1 with 9.0.1 and later), with nothing special to check.</p>
+<p>Release notes: <a href="https://github.com/bazelbuild/bazel/releases/tag/9.3.1">9.3.1</a> · <a href="https://github.com/bazelbuild/bazel/releases/tag/8.8.2">8.8.2</a> · <a href="https://github.com/bazelbuild/bazel/releases/tag/7.7.2">7.7.2</a></p>
+<h4 id="biome-v263">Biome v2.6.3<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#biome-v263"><span class="icon icon-link"></span></a></h4>
+<p>A frontend linter/formatter toolchain.</p>
+<p><strong>What changed</strong> — A large batch of nursery (experimental) lint rules for JavaScript, CSS, Vue, Playwright and TanStack Query was added, and bugs in the JS/TS/Markdown formatters, GraphQL and CSS were fixed. The CLI default reporter's summary is now written to stderr.</p>
+<p><strong>What to check when upgrading</strong> — CI scripts that parse stdout may appear to lose the summary, so check them.</p>
+<p>Release notes: <a href="https://github.com/biomejs/biome/releases/tag/%40biomejs%2Fbiome%402.6.3">v2.6.3</a></p>
+<h4 id="celld-v063">celld v0.6.3<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#celld-v063"><span class="icon icon-link"></span></a></h4>
+<p>A self-operable distributed durable object.</p>
+<p><strong>What changed</strong> — Outbound TLS no longer trusts emSign ECC Root CA - G3 and the 8 eMudhra intermediate CAs whose keys were exposed. rustls was upgraded to 0.23.46, fixing acceptance of messages at encryption-level boundaries in the TLS 1.3 handshake (GHSA-2mjx-qc3c-rqvc). Nodes refuse to acquire a cell that has no ownership record but still has LTX in the bucket, logging "celld ownership record lost" at most once per 10 seconds per cell.</p>
+<p><strong>What to check when upgrading</strong> — If v0.6.2 nodes are mixed in, a v0.6.2 node may start a cell with lost ownership records as empty, so bring every node to v0.6.3. Recovery steps are in the guarantees document.</p>
+<p>Release notes: <a href="https://github.com/denoland/celld/releases/tag/v0.6.3">v0.6.3</a></p>
+<h4 id="consul-v210">Consul v2.1.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#consul-v210"><span class="icon icon-link"></span></a></h4>
+<p>A service discovery and configuration tool.</p>
+<p><strong>What changed</strong> — It adds OIDC logout, HTTP2/gRPC support in API Gateway and a feature-gate framework, and upgrades security dependencies. On the other side, Enterprise request bodies now have a default 512 KiB limit, transparent proxy moved from iptables to nftables, and token permissions for leaf certificates and health checks are stricter.</p>
+<p><strong>What to check when upgrading</strong> — This release includes breaking changes. First check that your nodes support nftables, that token ACL permissions are sufficient, and that request bodies stay under 512 KiB.</p>
+<p>Release notes: <a href="https://github.com/hashicorp/consul/releases/tag/v2.1.0">v2.1.0</a></p>
+<h4 id="crossplane-v243--v237--v227--v12014">Crossplane v2.4.3 · v2.3.7 · v2.2.7 · v1.20.14<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#crossplane-v243--v237--v227--v12014"><span class="icon icon-link"></span></a></h4>
+<p>A Kubernetes add-on for managing external infrastructure.</p>
+<p><strong>What changed</strong> — v2.4.3 updates Go to 1.26.10 and removes the compromised eMudhra root, stops caching truncated package downloads, fixes Usage label rewriting, and allows XR scaling for crossplane-edit/admin. v2.3.7 has the same fixes plus fail-closed claim handling when XRDs cannot be listed. v2.2.7 has the same Go, download and Usage fixes with dependency updates, and v1.20.14 is a security-only patch with Go 1.26.10 and a new distroless base image.</p>
+<p><strong>What to check when upgrading</strong> — No breaking changes. Move to the latest patch of the line you use.</p>
+<p>Release notes: <a href="https://github.com/crossplane/crossplane/releases/tag/v2.4.3">v2.4.3</a> · <a href="https://github.com/crossplane/crossplane/releases/tag/v2.3.7">v2.3.7</a> · <a href="https://github.com/crossplane/crossplane/releases/tag/v2.2.7">v2.2.7</a> · <a href="https://github.com/crossplane/crossplane/releases/tag/v1.20.14">v1.20.14</a></p>
+<h4 id="gradle-982">Gradle 9.8.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#gradle-982"><span class="icon icon-link"></span></a></h4>
+<p>A Java build tool.</p>
+<p><strong>What changed</strong> — The release page highlights three things: Java 27 support, reuse of Maven mirror settings, and links to problem locations in build output. It does not list individual fixes and points to the release notes on docs.gradle.org.</p>
+<p><strong>What to check when upgrading</strong> — No breaking changes are visible in the notes. Follow the official release notes for the wrapper upgrade procedure.</p>
+<p>Release notes: <a href="https://github.com/gradle/gradle/releases/tag/v9.8.2">9.8.2</a></p>
+<h4 id="ollama-v04011-4-patches">ollama v0.40.11 (4 patches)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#ollama-v04011-4-patches"><span class="icon icon-link"></span></a></h4>
+<p>A tool for running open models locally.</p>
+<p><strong>What changed</strong> — v0.40.11 supports speech generation on macOS through <code>ollama run</code> and the <code>/v1/audio/speech</code> endpoint, and adds the d3 decision model family (2B–27B). v0.40.10 added NVIDIA Nemotron 3.5 Bolt E4B (Gemma 4-based vision-language, 128K context), and v0.40.8 introduced Flint, an MoE coding model (40B total, about 2.5B active, 262K context), starting macOS-only. v0.40.9 extends Flint to Linux and Windows, reports streaming generation failures, and passes cloud model context settings to coding tools.</p>
+<p><strong>What to check when upgrading</strong> — No breaking changes. Safe to upgrade as is.</p>
+<p>Release notes: <a href="https://github.com/ollama/ollama/releases/tag/v0.40.11">v0.40.11</a></p>
+<h4 id="react-native-skia-v380--v374--v2152">React Native Skia v3.8.0 · v3.7.4 · v2.15.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-native-skia-v380--v374--v2152"><span class="icon icon-link"></span></a></h4>
+<p>A 2D graphics (Skia) library for React Native.</p>
+<p><strong>What changed</strong> — v3.8.0 fixes factory method names that repeated the namespace and removes <code>SkiaPictureView</code>. v3.7.x (5 patches) updates to Skia m157, adds an Android triple-FIFO swapchain, full refresh rate presentation on ProMotion devices, Canvas children rendering via the React 19.2 reconciler, and recorder pooling, and exposes device loss to JS. v2.15.2 is a 2.x backport fixing native view ID handling, Metal device retention and more.</p>
+<p><strong>What to check when upgrading</strong> — If you use <code>SkiaPictureView</code>, migrate off it before moving to v3.8.0.</p>
+<p>Release notes: <a href="https://github.com/wcandillon/react-native-skia/releases/tag/v3.8.0">v3.8.0</a> · <a href="https://github.com/wcandillon/react-native-skia/releases/tag/v3.7.4">v3.7.4</a> · <a href="https://github.com/wcandillon/react-native-skia/releases/tag/v2.15.2">v2.15.2</a></p>
+<h4 id="rolldown-v1215">Rolldown v1.2.15<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rolldown-v1215"><span class="icon icon-link"></span></a></h4>
+<p>A JavaScript/TypeScript bundler.</p>
+<p><strong>What changed</strong> — A new <code>isBundled</code> option selects the browser external stub format, entry modules are marked in the HMR module graph, and module starts are now marked with <code>// &#x3C;id></code> comments instead of <code>#region</code>. Fixes cover <code>this.resolve</code> recursion among <code>skipSelf: true</code> plugins, external require when ssr.target is webworker, wrapping only static-specifier dynamic imports with <code>__vitePreload</code>, and eager module wrapping under strict execution order; oxc was bumped to 0.155.0.</p>
+<p><strong>What to check when upgrading</strong> — The comment format in output changed, so check any tools that depend on bundle output text.</p>
+<p>Release notes: <a href="https://github.com/rolldown/rolldown/releases/tag/v1.2.15">v1.2.15</a></p>
+<h4 id="rstest-v0124">Rstest v0.12.4<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rstest-v0124"><span class="icon icon-link"></span></a></h4>
+<p>A testing framework built on Rspack.</p>
+<p><strong>What changed</strong> — Browser mode gained screenshot testing. The <code>toMatchScreenshot()</code> matcher compares an element or whole page against a baseline image and saves actual and diff images on mismatch; page screenshots default to the viewport, with a <code>fullPage</code> option. Also added: <code>locator.pressSequentially</code>, hydration support in browser-react <code>render</code>, <code>--trace</code> in the programmatic API, host-side merging of raw coverage in coverage-v8, and retries for workers killed by OOM.</p>
+<p><strong>What to check when upgrading</strong> — No breaking changes are mentioned. Safe to upgrade as is.</p>
+<p>Release notes: <a href="https://github.com/web-infra-dev/rstest/releases/tag/v0.12.4">v0.12.4</a></p>
+<h4 id="spring-ai-v202">Spring AI v2.0.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#spring-ai-v202"><span class="icon icon-link"></span></a></h4>
+<p>Spring's application framework for AI engineering.</p>
+<p><strong>What changed</strong> — It includes Anthropic SDK 2.72.0 and adds observability for TTS, transcription and Stability AI image models, Redis vector store metadata configuration, and a stateless MCP server customizer. Many bugs in the Cassandra, Anthropic, OpenAI, Ollama, Bedrock and Neo4j integrations were fixed, and the OpenAI SDK moved to 4.80.0 and the AWS SDK to 2.55.14.</p>
+<p><strong>What to check when upgrading</strong> — When upgrading from 2.0.1, verify the integrations above still behave correctly if you use them.</p>
+<p>Release notes: <a href="https://github.com/spring-projects/spring-ai/releases/tag/v2.0.2">v2.0.2</a></p>
+<h4 id="spring-modulith-212--209--1414">Spring Modulith 2.1.2 · 2.0.9 · 1.4.14<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#spring-modulith-212--209--1414"><span class="icon icon-link"></span></a></h4>
+<p>A tool for building modular Spring Boot applications.</p>
+<p><strong>What changed</strong> — 2.1.2 makes <code>@ApplicationModuleTest</code> work in nested test classes on Spring Boot 4.2 and fixes about 15 issues including event publication resubmission, MongoDB archive mode, the staleness monitor, event hashing and AOT initializer ordering. 2.0.9 backports the same fixes to the 2.0 line and fixes a shared module listing itself as an allowed target, and 1.4.14 fixes that problem plus <code>WorkingDirectoryChangesDetector</code> failing in git submodule work trees.</p>
+<p><strong>What to check when upgrading</strong> — No breaking changes. Move to the latest patch of your line.</p>
+<p>Release notes: <a href="https://github.com/spring-projects/spring-modulith/releases/tag/2.1.2">2.1.2</a> · <a href="https://github.com/spring-projects/spring-modulith/releases/tag/2.0.9">2.0.9</a> · <a href="https://github.com/spring-projects/spring-modulith/releases/tag/1.4.14">1.4.14</a></p>
+<h4 id="spring-vault-411">Spring Vault 4.1.1<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#spring-vault-411"><span class="icon icon-link"></span></a></h4>
+<p>Spring's secrets management library.</p>
+<p><strong>What changed</strong> — Fixes cover <code>RestClientAdapter</code> dropping POST bodies, a health status deserialization problem, a <code>CertificateBundle</code> type error, and a null value error in <code>SecretLeaseCreatedEvent</code>. Dependencies such as Spring Framework, Jackson and Bouncy Castle were also upgraded.</p>
+<p><strong>What to check when upgrading</strong> — Safe to upgrade as is.</p>
+<p>Release notes: <a href="https://github.com/spring-projects/spring-vault/releases/tag/4.1.1">4.1.1</a></p>
+<h4 id="storybook-v1064-2-patches">Storybook v10.6.4 (2 patches)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#storybook-v1064-2-patches"><span class="icon icon-link"></span></a></h4>
+<p>A UI component development tool.</p>
+<p><strong>What changed</strong> — v10.6.3 adds Vitest 5 support and fixes an app-router mock crash with Next.js 16.4 and the <code>ArgsStore</code> return type. v10.6.4 is a single fix that skips registering the TypeScript loader hook in Jest.</p>
+<p><strong>What to check when upgrading</strong> — Safe to upgrade as is.</p>
+<p>Release notes: <a href="https://github.com/storybookjs/storybook/releases/tag/v10.6.4">v10.6.4</a> · <a href="https://github.com/storybookjs/storybook/releases/tag/v10.6.3">v10.6.3</a></p>
+<h4 id="terraform-v1170--v1167">Terraform v1.17.0 · v1.16.7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#terraform-v1170--v1167"><span class="icon icon-link"></span></a></h4>
+<p>An Infrastructure as Code tool.</p>
+<p><strong>What changed</strong> — v1.17.0 allows variables and locals in provider requirements, adds the <code>-minimal-refresh</code> plan option, and makes Terraform Policy generally available (GA). The init log now prints provider versions, mock providers support ephemeral resources, and panics in the <code>pow</code> and <code>log</code> functions were fixed. v1.16.7 fixes a panic when running <code>terraform test</code> against schemas with deprecated values and is built with Go 1.26.10, so it no longer trusts certificates chained through the compromised eMudhra intermediate CA.</p>
+<p><strong>What to check when upgrading</strong> — v1.17.0 adds a <code>format_version</code> field to JSON output, so check any tooling that parses it. If you stay on the 1.16 line, move to v1.16.7.</p>
+<p>Release notes: <a href="https://github.com/hashicorp/terraform/releases/tag/v1.17.0">v1.17.0</a> · <a href="https://github.com/hashicorp/terraform/releases/tag/v1.16.7">v1.16.7</a></p>
+<h3 id="wrap-up">Wrap-up<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#wrap-up"><span class="icon icon-link"></span></a></h3>
+<p>Prerelease versions — Storybook 11.0.0 alpha, Prisma 8.0.0 RC (<code>rc.20</code>), Vitest 5.1.0 beta, Rspack 2.3.0 beta, Omarchy 4.5.0 RC and podman 6.2.0 RC — are not stable releases and were left out. ClickHouse, LogTape, GitLab, Istio, React Router, Visual Studio Code, Flutter, Go and Obsidian had releases but their notes did not let us confirm what changed, so they were left out of the body; TypeScript, Expo SDK, GraalVM, JDK, PyTorch, Android, Cursor, GitButler, Manus and Xcode were skipped this week because their official pages could not be loaded or could not be verified well enough.</p>15:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$24"}}]}]
+16:["$","nav",null,{"aria-label":"Previous / Next","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L11",null,{"href":"/en/posts/2026-10-22-tanstack-start","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L25",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"Previous"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"TanStack Start 1.0"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+17:["$","div",null,{"className":"hidden lg:block","children":["$","$L26",null,{"headings":[{"id":"️-one-line-summary","text":"✍️ One-line summary","depth":2},{"id":"this-week-at-a-glance","text":"This week at a glance","depth":2},{"id":"changes-by-package","text":"Changes by package","depth":2},{"id":"nodejs-v26121--v24221--v22234","text":"Node.js v26.12.1 · v24.22.1 · v22.23.4","depth":3},{"id":"astro-742","text":"astro 7.4.2","depth":3},{"id":"zed-v1253--v1244","text":"Zed v1.25.3 · v1.24.4","depth":3},{"id":"pnpm-v12150--v11288--v10349","text":"pnpm v12.15.0 · v11.28.8 · v10.34.9","depth":3},{"id":"-major-electron-v4500--v4493--v4383--v421118","text":"🔺 Major Electron v45.0.0 · v44.9.3 · v43.8.3 · v42.11.18","depth":3},{"id":"oxfmt-v0740","text":"Oxfmt v0.74.0","depth":3},{"id":"oxlint-v1890","text":"Oxlint v1.89.0","depth":3},{"id":"nextjs-v1643","text":"Next.js v16.4.3","depth":3},{"id":"-major-nx-2400--2401--2331","text":"🔺 Major Nx 24.0.0 · 24.0.1 · 23.3.1","depth":3},{"id":"deno-v298","text":"Deno v2.9.8","depth":3},{"id":"fastapi-01570-to-01620","text":"FastAPI 0.157.0 to 0.162.0","depth":3},{"id":"grafana-tempo-v311--v305--v21010","text":"Grafana Tempo v3.1.1 · v3.0.5 · v2.10.10","depth":3},{"id":"homebrew-7011","text":"Homebrew 7.0.11","depth":3},{"id":"vite-v835","text":"Vite v8.3.5","depth":3},{"id":"falco-0451","text":"Falco 0.45.1","depth":3},{"id":"hono-v41314","text":"Hono v4.13.14","depth":3},{"id":"kyverno-v1192","text":"Kyverno v1.19.2","depth":3},{"id":"opensearch-390--2197","text":"OpenSearch 3.9.0 · 2.19.7","depth":3},{"id":"turborepo-v21110","text":"Turborepo v2.11.10","depth":3},{"id":"argo-cd-v356--v3412--v3318","text":"Argo CD v3.5.6 · v3.4.12 · v3.3.18","depth":3},{"id":"-major-bazel-931--882--772","text":"🔺 Major Bazel 9.3.1 · 8.8.2 · 7.7.2","depth":3},{"id":"biome-v263","text":"Biome v2.6.3","depth":3},{"id":"celld-v063","text":"celld v0.6.3","depth":3},{"id":"consul-v210","text":"Consul v2.1.0","depth":3},{"id":"crossplane-v243--v237--v227--v12014","text":"Crossplane v2.4.3 · v2.3.7 · v2.2.7 · v1.20.14","depth":3},{"id":"gradle-982","text":"Gradle 9.8.2","depth":3},{"id":"ollama-v04011-4-patches","text":"ollama v0.40.11 (4 patches)","depth":3},{"id":"react-native-skia-v380--v374--v2152","text":"React Native Skia v3.8.0 · v3.7.4 · v2.15.2","depth":3},{"id":"rolldown-v1215","text":"Rolldown v1.2.15","depth":3},{"id":"rstest-v0124","text":"Rstest v0.12.4","depth":3},{"id":"spring-ai-v202","text":"Spring AI v2.0.2","depth":3},{"id":"spring-modulith-212--209--1414","text":"Spring Modulith 2.1.2 · 2.0.9 · 1.4.14","depth":3},{"id":"spring-vault-411","text":"Spring Vault 4.1.1","depth":3},{"id":"storybook-v1064-2-patches","text":"Storybook v10.6.4 (2 patches)","depth":3},{"id":"terraform-v1170--v1167","text":"Terraform v1.17.0 · v1.16.7","depth":3},{"id":"wrap-up","text":"Wrap-up","depth":2}],"title":"Contents"}]}]
+18:["$","script","script-0",{"src":"/_next/static/chunks/0-jsxcg-veu-w.js","async":true}]
+19:["$","$L27",null,{"children":["$","$1f",null,{"name":"Next.MetadataOutlet","children":"$@28"}]}]
+23:true
+9:300
+28:null
+9:C
+22:0
+b:"$undefined"
+7:"$undefined"
+21:"$undefined"
+1a:"$undefined"
