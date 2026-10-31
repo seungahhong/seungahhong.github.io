@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-10-31",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 101
+      "views": 103
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
@@ -15,12 +15,12 @@
       "views": 23
     },
     {
-      "slug": "2026-06-03-claude-marketplace",
+      "slug": "2023-04-02-playwright",
       "views": 18
     },
     {
-      "slug": "2023-04-02-playwright",
-      "views": 17
+      "slug": "2026-06-03-claude-marketplace",
+      "views": 18
     },
     {
       "slug": "2026-07-13-vite8.0",
@@ -43,6 +43,10 @@
       "views": 14
     },
     {
+      "slug": "2022-07-25-msw",
+      "views": 13
+    },
+    {
       "slug": "2023-08-15-ecmascript",
       "views": 13
     },
@@ -63,10 +67,6 @@
       "views": 12
     },
     {
-      "slug": "2022-07-25-msw",
-      "views": 11
-    },
-    {
       "slug": "2026-08-01-choosing-claude-model",
       "views": 11
     },
@@ -83,11 +83,27 @@
       "views": 10
     },
     {
+      "slug": "2026-09-14-securing-ai-generated-code",
+      "views": 10
+    },
+    {
       "slug": "2022-06-14-jotai",
       "views": 9
     },
     {
+      "slug": "2023-06-30-react-query-v4",
+      "views": 9
+    },
+    {
       "slug": "2023-08-16-treeshaking",
+      "views": 9
+    },
+    {
+      "slug": "2023-10-30-nextjs-v14",
+      "views": 9
+    },
+    {
+      "slug": "2024-12-05-react-v19",
       "views": 9
     },
     {
@@ -96,10 +112,6 @@
     },
     {
       "slug": "2026-09-13-writing-specs-for-agents",
-      "views": 9
-    },
-    {
-      "slug": "2026-09-14-securing-ai-generated-code",
       "views": 9
     },
     {
@@ -115,15 +127,15 @@
       "views": 8
     },
     {
-      "slug": "2023-10-30-nextjs-v14",
+      "slug": "2022-03-22-recoil",
+      "views": 8
+    },
+    {
+      "slug": "2024-01-27-react-v18-migration",
       "views": 8
     },
     {
       "slug": "2024-11-23-nextjs-v15-migration",
-      "views": 8
-    },
-    {
-      "slug": "2024-12-05-react-v19",
       "views": 8
     },
     {
@@ -135,23 +147,19 @@
       "views": 8
     },
     {
-      "slug": "2022-03-22-recoil",
-      "views": 7
-    },
-    {
       "slug": "2022-08-07-cypress",
       "views": 7
     },
     {
-      "slug": "2023-06-30-react-query-v4",
-      "views": 7
-    },
-    {
-      "slug": "2024-01-27-react-v18-migration",
+      "slug": "2022-12-30-react-query",
       "views": 7
     },
     {
       "slug": "2024-04-28-esbuild",
+      "views": 7
+    },
+    {
+      "slug": "2024-05-12-development-improvements",
       "views": 7
     },
     {
@@ -161,6 +169,10 @@
     {
       "slug": "2026-08-26-agent-skills",
       "views": 7
+    },
+    {
+      "slug": "2020-06-28-concept",
+      "views": 6
     },
     {
       "slug": "2021-12-02-svelte",
@@ -175,11 +187,11 @@
       "views": 6
     },
     {
-      "slug": "2022-12-30-react-query",
+      "slug": "2023-07-22-zustand",
       "views": 6
     },
     {
-      "slug": "2023-07-22-zustand",
+      "slug": "2023-08-25-nodejs",
       "views": 6
     },
     {
@@ -195,20 +207,12 @@
       "views": 6
     },
     {
-      "slug": "2024-05-12-development-improvements",
-      "views": 6
-    },
-    {
       "slug": "2026-09-16-token-roles-agent-design",
       "views": 6
     },
     {
       "slug": "2026-10-11-brownfield-agentic-engineering",
       "views": 6
-    },
-    {
-      "slug": "2020-06-28-concept",
-      "views": 5
     },
     {
       "slug": "2022-03-29-canvas",
@@ -224,10 +228,6 @@
     },
     {
       "slug": "2022-07-23-emotion",
-      "views": 5
-    },
-    {
-      "slug": "2023-08-25-nodejs",
       "views": 5
     },
     {
@@ -327,6 +327,10 @@
       "views": 3
     },
     {
+      "slug": "2026-10-26-package-release-weekly",
+      "views": 3
+    },
+    {
       "slug": "2020-02-17-c-c++",
       "views": 2
     },
@@ -348,10 +352,6 @@
     },
     {
       "slug": "2026-10-22-tanstack-start",
-      "views": 1
-    },
-    {
-      "slug": "2026-10-26-package-release-weekly",
       "views": 1
     }
   ]
