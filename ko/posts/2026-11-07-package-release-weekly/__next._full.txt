@@ -1,0 +1,375 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/12-fpzohv1xd4.js"
+3:I[38246,["$2"],"ThemeProvider"]
+4:I[9619,["$2"],"default"]
+5:I[23615,["$2"],"default"]
+6:"/_next/static/chunks/2kf7_4zlzxl0h.js"
+7:"/_next/static/chunks/0-jsxcg-veu-w.js"
+8:I[34242,["$2","$6","$7"],""]
+9:I[73493,["$2"],""]
+11:I[52085,["$2"],"OutletBoundary"]
+12:"$Sreact.suspense"
+14:"ViewportBoundary"
+15:I[52085,["$2"],"$14"]
+17:"MetadataBoundary"
+18:I[52085,["$2"],"$17"]
+1a:I[99901,["$2"],"default",1]
+:HL["/_next/static/chunks/0nxfwr_zn8afn.css","style"]
+d:X
+f:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/0-jsxcg-veu-w.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}],"p":false,"v":null}}]]
+e:[["children",{"s":{"n":"slug","t":"d","k":"2026-11-07-package-release-weekly","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$d"},"c":"$Qf"}]]
+c:[["children",{"s":"posts","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$d"},"c":"$Qe"}]]
+a:[["children",{"s":{"n":"lang","t":"d","k":"ko","s":["about","blog"]},"h":512,"d":{"r":["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/2kf7_4zlzxl0h.js","async":true,"nonce":"$undefined"}]],"$Lb"]}],"p":false,"v":null},"c":"$Qc"}]]
+0:{"P":null,"c":["","ko","posts","2026-11-07-package-release-weekly",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0nxfwr_zn8afn.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/12-fpzohv1xd4.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":[["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"max-w-content mx-auto flex min-h-[70vh] flex-col items-center justify-center px-6 py-20 text-center","children":[["$","p",null,{"className":"text-accent font-mono text-[14px] font-bold tracking-widest","children":"404"}],["$","h1",null,{"className":"text-ink mt-3 text-[clamp(24px,3vw,32px)] font-extrabold tracking-tight","children":"페이지를 찾을 수 없습니다"}],["$","p",null,{"className":"text-muted mt-3 max-w-[40ch] text-[15px]","children":"요청하신 페이지가 존재하지 않거나 이동되었습니다."}],["$","$L8",null,{"href":"/ko","className":"border-line bg-surface text-ink hover:border-accent hover:text-accent mt-6 rounded-lg border px-5 py-2.5 text-[14px] font-semibold transition-colors","children":"홈으로 돌아가기"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],[["$","$L9",null,{"id":"ga4-loader","strategy":"afterInteractive","src":"https://www.googletagmanager.com/gtag/js?id=G-G8Z1HZWWYL"}],["$","$L9",null,{"id":"ga4-init","strategy":"afterInteractive","children":"window.dataLayer = window.dataLayer || [];\nwindow.gtag = function gtag() { window.dataLayer.push(arguments); };\nif (location.hostname === \"seungahhong.github.io\") {\n  gtag('js', new Date());\n  gtag('config', \"G-G8Z1HZWWYL\");\n}"}]]]}]}]]}],"p":false,"v":null},"c":"$Qa"},"h":{"r":["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","$L18",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$12",null,{"name":"Next.Metadata","children":"$L19"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$1a",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0nxfwr_zn8afn.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"bAvTODb-LgrbYXjDHAw5F"}
+1b:I[10455,["$2","$6"],"default"]
+d:C
+b:["$","$L1b",null,{"index":[{"slug":"2026-11-07-package-release-weekly","title":"이번 주 패키지 릴리스 정리 — 2026-11-07","category":"개발","tags":["릴리스","패키지","주간정리"],"excerpt":"✍️ 한 줄 요약 Next.js(16.4.5·15.5.29)가 엣지 응답의 내부 쿠키 헤더 제거 등 보안성 수정을 낸 데 이어, Nuxt 4.6.4는 개발 서버 Host 헤더 검증과 x-forwarded-proto 신뢰 범위 제한을, Hono 4.13.16은 JWT 서명 검증 강화와…","date":"2026-11-07"},{"slug":"2026-10-26-package-release-weekly","title":"이번 주 패키지 릴리스 정리 — 2026-10-26","category":"개발","tags":["릴리스","패키지","주간정리"],"excerpt":"✍️ 한 줄 요약 침해된 eMudhra 중간 인증서를 신뢰하지 않도록 바꾸는 패치가 Electron·Deno·Bazel·Crossplane·Terraform·Argo CD·Turborepo 등 여러 도구에 한꺼번에 나왔고, Node.js(CVE 9건)와 Kyverno(보안 권고…","date":"2026-10-26"},{"slug":"2026-10-22-tanstack-start","title":"TanStack Start 1.0","category":"개발","tags":["tanstack","react","framework"],"excerpt":"TanStack Start 1.0 정식 출시: 개요 · 사용법 · 마이그레이션 가이드 ✍️ 한 줄 요약 TanStack Start는 TanStack Router 위에 SSR · 스트리밍 · 서버 함수 · 미들웨어를 얹은 풀스택 React 프레임워크이고, 2026년 10월 13일…","date":"2026-10-22"},{"slug":"2026-10-17-package-release-weekly","title":"이번 주 패키지 릴리스 정리 — 2026-10-17","category":"개발","tags":["릴리스","패키지","주간정리"],"excerpt":"✍️ 한 줄 요약 Next.js 16.4.1·15.5.28은 인증 없이 원격 코드를 실행할 수 있는 치명적 취약점(이미지 최적화 API)을 고친 보안 릴리스이고, Grafana(CVE 4건)·Storybook(보안 강화 10건)·podman(CVE-2026-107935)도 보안 패치가…","date":"2026-10-17"},{"slug":"2026-10-11-brownfield-agentic-engineering","title":"팀보다 오래된 코드베이스에서 에이전트 굴리기 — 브라운필드 에이전틱 엔지니어링","category":"개발","tags":["AI","에이전트","레거시","마이그레이션","하네스"],"excerpt":"브라운필드 에이전틱 엔지니어링: 숨은 제약을 드러내고, 싼 변경을 믿을 수 있게 Addy Osmani의 글 Brownfield Agentic Engineering(2026-09-14, 부제 \"What it takes to run agents in a codebase older than…","date":"2026-10-11"},{"slug":"2026-09-19-react-router-v8","title":"React Router v8","category":"개발","tags":["react-router","react"],"excerpt":"React Router v8 출시: \"지루한 메이저\"와 v7 → v8 업그레이드 가이드 ✍️ 한 줄 요약 React Router v8은 새 기능을 싣고 온 릴리스가 아니라, v7에서 future flag로 미리 풀어둔 변경을 기본값으로 굳히고 최소 버전을 올린 릴리스입니다. v7에서…","date":"2026-09-19"},{"slug":"2026-09-17-ai-native-revenue-org","title":"절약한 시간은 바닥값이다 — AI 네이티브 매출 조직을 만드는 법","category":"개발","tags":["AI","Claude","도입","조직","ROI"],"excerpt":"1. 이 글은 무엇에 관한 글인가? Anthropic이 낸 가이드 Building an AI-native revenue organization과 동봉된 eBook을 읽고 정리한 글입니다. 제목만 보면 세일즈 조직 이야기이고, 실제로 예시는 전부 CRM·파이프라인·콜 프렙입니다. 그런데…","date":"2026-09-17"},{"slug":"2026-09-16-token-roles-agent-design","title":"토큰을 더 준다고 더 잘하지 않는다 — 같은 예산에서 76점을 89점으로","category":"개발","tags":["AI","Claude","에이전트","컨텍스트엔지니어링","비용"],"excerpt":"1. 이 글은 무엇에 관한 글인가 Anthropic의 플랫폼 엔지니어링 리드 Katelyn Lesse와 플랫폼 프로덕트 리드 Angela Jiang의 발표 토큰에게도 각자의 역할이 필요합니다 — Anthropic의 에이전트 설계법을 보고 정리한 글입니다. 한 줄로 요약하면 이렇습니다.…","date":"2026-09-16"},{"slug":"2026-09-15-vitest5","title":"Vitest 5.0","category":"개발","tags":["vitest","test"],"excerpt":"Vitest 5.0 출시: 성능·Trace View 및 마이그레이션 가이드 2026년 9월 3일, Vitest 5.0 이 출시되었습니다(최초 태그 5.0.1 ). 이번 메이저의 성격은 Vite 8처럼 엔진을 갈아끼우는 종류가 아니라, 기본값을 \"안전한 쪽\"으로 옮기고 흩어져 있던…","date":"2026-09-15"},{"slug":"2026-09-14-securing-ai-generated-code","title":"작동한다는 건 안전하다는 뜻이 아니다 — AI가 쓴 코드를 지키는 5가지 원칙","category":"개발","tags":["AI","보안","시프트레프트","DevSecOps","에이전트"],"excerpt":"1. 이 글은 무엇에 관한 글인가? IBM의 보안 아키텍트 Jeff Crume이 IBM Technology 채널에 올린 How Developers Secure AI-Generated Code: 5 Security Best Practices를 보고 정리한 글입니다. 한국어 자막본은…","date":"2026-09-14"},{"slug":"2026-09-13-writing-specs-for-agents","title":"지시를 늘릴수록 덜 지켜진다 — 에이전트가 실제로 따르는 스펙 쓰는 법","category":"개발","tags":["AI","에이전트","스펙","컨텍스트엔지니어링","PRD"],"excerpt":"1. 이 글은 무엇에 관한 글인가? Addy Osmani의 글 How to write a good spec for AI agents를 읽고 정리한 글입니다. 글은 저자가 받은 질문 하나에서 출발합니다. \"에이전트용 스펙을 잘 쓰라는 얘기는 많이 들었는데, 제대로 된 프레임워크는 아직…","date":"2026-09-13"},{"slug":"2026-09-07-karpathy-transformers","title":"트랜스포머는 범용 미분 가능 컴퓨터다 — 카파시 강의를 2026년에 다시 보기","category":"개발","tags":["AI","LLM","트랜스포머","어텐션","nanoGPT"],"excerpt":"1. 이 글은 무엇에 관한 글인가? 안드레이 카파시(Andrej Karpathy)가 스탠포드 CS25에서 한 트랜스포머 특강 Introduction to Transformers를 보고 정리한 글입니다. 원 강의는 2023년 1월이고, 제가 본 건 한영 자막이 붙은 재업로드본입니다.…","date":"2026-09-07"},{"slug":"2026-09-06-skills-governance","title":"조직의 노하우는 이제 스킬에 산다 — 거버넌스 없는 스킬은 새로운 기술부채다","category":"개발","tags":["AI","에이전트","스킬","거버넌스","하네스"],"excerpt":"1. 이 글은 무엇에 관한 글인가? QuantumBlack(McKinsey)의 Imad Touil이 AI Engineer World's Fair에서 한 발표 AI-Native Organisations Run on Skills: How to Structure and Scale Them을…","date":"2026-09-06"},{"slug":"2026-09-05-frontier-development-teams","title":"도구는 변수가 아니었다 — 같은 도구를 쓴 50개 팀이 갈린 지점","category":"개발","tags":["AI","에이전트","개발프로세스","생산성","팀"],"excerpt":"1. 이 글은 무엇에 관한 글인가? AWS의 Clare Liguori가 발표한 From AI-Assisted to AI-Native: Building a Frontier Development Team을 보고 정리한 글입니다. 한 줄로 요약하면 이렇습니다. 50개 팀 중 90%가 같은…","date":"2026-09-05"},{"slug":"2026-08-26-agent-skills","title":"에이전트가 건너뛰는 건 언제나 시니어의 일이다 — Agent Skills가 강제하는 것","category":"개발","tags":["AI","에이전트","스킬","하네스","개발프로세스"],"excerpt":"1. 이 글은 무엇에 관한 글인가? Addy Osmani가 쓴 Agent Skills를 읽고 정리한 글입니다. 한 줄로 요약하면 이렇습니다. 시니어 엔지니어의 일은 대부분 diff에 나타나지 않습니다. 스펙, 테스트, 리뷰, 스코프 규율, 검증할 수 없는 걸 내보내지 않는 것. 그리고…","date":"2026-08-26"},{"slug":"2026-08-25-agentic-code-quality","title":"코드 품질은 제약에 있다 — 리뷰가 안 되는 규모에서 품질을 지키는 법","category":"개발","tags":["AI","에이전트","코드품질","테스트","하네스"],"excerpt":"1. 이 글은 무엇에 관한 글인가? Addy Osmani가 쓴 Agentic Code Quality를 읽고 정리한 글입니다. 한 줄로 요약하면 이렇습니다. 코드를 읽어서 품질을 판정하는 방식은 에이전트 규모에서 무너집니다. 그래서 품질 검사는 코드가 아니라 에이전트를 둘러싼…","date":"2026-08-25"},{"slug":"2026-08-23-ai-native-sdlc-playbook","title":"AI 네이티브 SDLC 플레이북 — 코드는 더 이상 병목이 아니다","category":"개발","tags":["AI","Claude","SDLC","하네스","개발프로세스"],"excerpt":"1. 이 글은 무엇에 관한 글인가? 한 줄로 요약하면 이렇습니다. 코드 작성이 빨라진 만큼, 병목은 그 앞뒤로 옮겨갔습니다. 기획·설계·리뷰·테스트·배포는 여전히 사람 속도로 돌아갑니다. AI 네이티브 SDLC 플레이북은 \"그 나머지를 어떻게 다시 짤 것인가\" 에 대한…","date":"2026-08-23"},{"slug":"2026-08-22-delete-and-verify","title":"Claude Code 만든 사람의 손버릇 — 지우고, 어렵게 주고, 검증시켜라","category":"개발","tags":["AI","Claude","에이전트","검증","하네스"],"excerpt":"1. 이 글은 무엇에 관한 글인가? 한 줄로 요약하면 이렇습니다. 에이전트를 잘 쓰는 법은 더 좋은 지시문을 쓰는 게 아니라, 쓰던 지시문을 지우고 대신 채점기를 만드는 것 입니다. 여기서 채점기 는 에이전트가 스스로 돌려서 통과·실패를 알 수 있는 명령입니다 — 타입체크, 테스트,…","date":"2026-08-22"},{"slug":"2026-08-01-choosing-claude-model","title":"Claude 모델 고르기 — 똑똑한 것부터 시작하라","category":"개발","tags":["AI","Claude","모델선택","LLM"],"excerpt":"1. 이 글은 무엇에 관한 글인가? 한 줄로 요약하면 이렇습니다. \"싼 모델부터 써보고 부족하면 올린다\"는 순서가 뒤집혔습니다. 지금 권장되는 순서는 가장 똑똑한 모델로 시작해서, effort(노력 수준)를 낮춰가며 비용을 맞추는 것 입니다. 어제 글(덜어내는 컨텍스트 엔지니어링)에서…","date":"2026-08-01"},{"slug":"2026-07-31-context-engineering-claude5","title":"Claude 5 세대의 컨텍스트 엔지니어링 새 규칙","category":"개발","tags":["AI","하네스","Claude","컨텍스트엔지니어링"],"excerpt":"1. 이 글은 무엇에 관한 글인가? 한 줄로 요약하면 이렇습니다. \"AI에게 규칙을 더 많이 적어줄수록 잘한다\"는 상식이 뒤집혔습니다. Anthropic은 Claude Code의 시스템 프롬프트에서 80% 이상을 삭제 했고, 코딩 평가 점수는 떨어지지 않았습니다. 지난 글들에서 저는…","date":"2026-07-31"},{"slug":"2026-07-14-typescript7.0","title":"TypeScript 7.0","category":"개발","tags":["typescript"],"excerpt":"TypeScript 7.0 출시: Go로 다시 쓴 네이티브 컴파일러 TypeScript 7.0이 공식 출시되었습니다. 이번 메이저 버전의 핵심은 컴파일러를 Go 언어로 완전히 다시 이식(native port) 한 것입니다. 10년 넘게 JavaScript로 작성되어 온 tsc 를…","date":"2026-07-14"},{"slug":"2026-07-13-vite8.0","title":"Vite 8.0","category":"개발","tags":["bundler"],"excerpt":"Vite 8.0 출시: 통합 툴체인 및 마이그레이션 가이드 2026년 3월 12일, Vite 8.0이 공식 출시되었습니다. 이번 메이저 버전의 핵심은 통합 툴체인(Unified Toolchain) 으로, 기본 번들러가 Rolldown으로 전환되고 esbuild가 담당하던 변환·최소화가…","date":"2026-07-13"},{"slug":"2026-07-12-product-spec-harness","title":"제품 스펙 하네스 (product-spec-harness)","category":"개발","tags":["AI","하네스","PRD","기획","Claude"],"excerpt":"소개 product-spec-harness 는 기획자(PM)가 요구·문제 또는 기획안 초안으로부터 제품 기획문서(PRD)와 사용자 스토리를 단계별로 작성·검증하는 도메인 무관 인터랙티브 멀티 에이전트 하네스다. 개발 착수 전 단계의 제품 기획 산출물(문제 정의 → 기획 완성도…","date":"2026-07-12"},{"slug":"2026-07-05-meta-harness","title":"자가치유 하네스 엔지니어링 (meta-harness)","category":"개발","tags":["AI","하네스","Claude","자가치유"],"excerpt":"1. 이 글은 무엇에 관한 글인가? 한 줄로 요약하면 이렇습니다. AI가 같은 실수를 반복할 때, 그 실수를 막도록 AI 설정 파일을 스스로 고쳐주는 도구 이야기입니다. 단, 실제로 파일을 바꾸기 전엔 항상 사람에게 \"이렇게 고쳐도 될까요?\"라고 물어봅니다. 먼저, \"하네스\"가 뭐죠?…","date":"2026-07-05"},{"slug":"2026-06-04-fe-harness","title":"Frontend 하네스 엔지니어링","category":"개발","tags":["AI","하네스","Claude"],"excerpt":"1. 하네스 엔지니어링이란? AI 모델을 둘러싼 실행 환경 전체 (도구, 피드백 루프, 안전장치, 승인 게이트)를 설계하여, 신뢰할 수 있는 소프트웨어 로 만들어 가는 기술이다. AI 엔지니어링의 진화 (프롬프트 vs 컨텍스트 vs 하네스) AI를 다루는 방식은 프롬프트 엔지니어링 →…","date":"2026-06-04"},{"slug":"2026-06-03-claude-marketplace","title":"Claude Code 플러그인 마켓플레이스 구축","category":"개발","tags":["Claude","AI","Plugin"],"excerpt":"개요 본 문서는 Claude Code 플러그인 마켓플레이스의 등록, 설치 및 사용 방법을 기술합니다. seungah-claude-plugins 마켓플레이스를 통해 플러그인을 공유하고 있습니다. 현재 다음 4개의 팀별 플러그인으로 구성되어 있습니다. 마켓플레이스 버전: 1.4.0 ·…","date":"2026-06-03"},{"slug":"2026-06-02-LLM-WIKI","title":"LLM Wiki: RAG를 넘어 지식을 미리 정리해 두는 위키 패턴","category":"개발","tags":["LLM","AI"],"excerpt":"개요 LLM Wiki는 기획서, 스펙, 회의록 같은 원본 자료를 모아 두면 Claude가 그 내용을 읽고 정리해 하나의 한국어 위키로 만들어 두는 저장소입니다. 사람은 자료를 모으고 질문하는 역할을 맡고, 위키를 실제로 작성하고 관리하는 일은 Claude가 합니다. Andrej…","date":"2026-06-02"},{"slug":"2026-06-01-RAG","title":"시맨틱(의미 기반) + 키워드 하이브리드 검색 RAG 구축","category":"개발","tags":["RAG","AI","MCP"],"excerpt":"0. 배경 특정 비즈니스 로직(결제, 인증, 캠페인 등)이 프론트엔드·백엔드 서비스 등 여러 레포에 걸쳐 구현되어 있어, 관련 코드를 찾기 위해 각 레포를 개별적으로 검색해야 하는 비효율이 발생하고 있다. 기존 GitHub 검색은 키워드 기반으로만 동작하여 \"결제 처리 로직\",…","date":"2026-06-01"},{"slug":"2025-09-07-vite7.0","title":"Vite 7.0","category":"개발","tags":["bundler"],"excerpt":"Vite 7.0 출시: 주요 변경사항 및 마이그레이션 가이드 2025년 6월 24일, Vite 7.0이 공식 출시되었습니다. 이번 메이저 버전은 Node.js 지원 정책 변경, 브라우저 타겟 업데이트, Rolldown 통합 등 중요한 변경사항을 포함하고 있습니다. 주간 다운로드 수는…","date":"2025-09-07"},{"slug":"2025-06-29-vite6.0","title":"Vite 6.0","category":"개발","tags":["bundler"],"excerpt":"Installing Changes - 환경(Environment) API 도입 - 프로덕션과 더 가까운 개발 경험을 제공하기 위한 새로운 API - 프레임워크 및 플러그인 작성자를 위한 유연성 강화 - 가이드: Environment API 소개 - - ≤ v5 - - v6 ≥ -…","date":"2025-06-29"},{"slug":"2025-06-28-figma-mcp-link","title":"figma mcp link","category":"개발","tags":["mcp"],"excerpt":"개발 환경 - VSCode 버전: 1.99 이상 - Copilot 계정 필요 copilot 연동방법 Figma API access token 발급 1단계: 전제 조건 - Node.js (v16.0 이상) - npm (v7.0 이상) 또는 pnpm (v8.0 이상) - Figma 계정:…","date":"2025-06-28"},{"slug":"2025-02-09-git-to-mp4-convert","title":"FE 성능개선 - gif to mp4 변환","category":"개발","tags":["performance"],"excerpt":"개요 리소스 중에 용량이 큰 gif 포멧을 효율적인 압축 방식을 제공하는 mp4 비디오 포멧으로 변경해서 리소스 수신 용량을 줄이고 로딩 속도를 개선하기 위해서 해당 기능을 서비스에 적용을 위한 성능개선 작업을 진행하였습니다. 요구사항 분석 - 변환 형식 - img > gif →…","date":"2025-02-09"},{"slug":"2024-12-05-react-v19","title":"react v19","category":"개발","tags":["react"],"excerpt":"Overview React 19는 개발자 경험을 향상시키고, 일반적인 패턴을 간소화하며 성능을 개선하는 여러 새로운 기능과 개선 사항을 도입했다. 아래는 주요 변경 사항과 코드 예제를 포함한 요약이다. What’s new in React 19 Actions React 앱에서 일반적인…","date":"2024-12-05"},{"slug":"2024-11-23-nextjs-v15-migration","title":"nextjs 15","category":"개발","tags":["nextjs"],"excerpt":"개요 이번 릴리즈에서는 RC1, RC2 기반에 기능이 포함되어 있으며, 안정성에 중점/그 외에 여러 기능이 포함되어 있습니다. 그 내용에 대해서는 컨퍼런스에서 확인이 가능합니다. 10월 24일 목요일 컨퍼런스 → Next.js Conf Next.js Conf by Vercel 설치…","date":"2024-11-23"},{"slug":"2024-11-16-vite","title":"CRA To Vite Migration","category":"개발","tags":["bundler"],"excerpt":"Vite를 사용해야 하는 이유 기존 모듈 번들러 문제점 - 브라우저에서 Native ESM 방식을 지원하기 전까지는 Javascript 모듈화를 브라우저 레벨에서 진행할 수 없었고, 해당 소스 모듈을 브라우저에서 지원하기 위해서 require/IIFE/import,expor를 통한…","date":"2024-11-16"},{"slug":"2023-10-30-nextjs-v14","title":"Nextjs(v14)","category":"개발","tags":["nextjs"],"excerpt":"설치 요약 - 지원하는 브라우저에서 Internet Explorer를 삭제하고, 최신 브라우저를 지원하는걸로 변경되었습니다. - Chrome 64+ - Edge 79+ - Firefox 67+ - Opera 51+ - Safari 12+ - 최소 Node 버전이 12.22.0 →…","date":"2024-10-30"},{"slug":"2024-05-12-development-improvements","title":"개발 생산성 & 빌드 성능 개선","category":"개발","tags":["performance"],"excerpt":"개요 개발을 진행하면서 개발 생산성 & 빌드 성능 개선했던 사례들을 공유하려고 합니다. Lint 속도 개선 husky를 통해서 Lint 검사에 대한 속도 개선을 위해서 eslint, prettier cache 적용하였습니다. cache flag 적용 시 이전에 검사했던 파일이나 항목을…","date":"2024-05-12"},{"slug":"2024-04-28-esbuild","title":"esbuild","category":"개발","tags":["bundler"],"excerpt":"esbuild 특징 - Go언어를 기반으로 작성되었고 정적(네이티브) 코드 방식으로 컴파일 프로그래밍 언어로 작성된 코드를 기계가 이해할 수 있는 기계어로 바뀌는 변환 방식은 총 3가지로 표현됩니다. - 정적 컴파일 - 컴파일 진행 시 전체를 기계어로 변환되기 때문에 전체 실행시간이…","date":"2024-04-28"},{"slug":"2024-03-18-pnpm","title":"PNPM","category":"개발","tags":["package manager"],"excerpt":"도입 배경 NPM, Yarn Classic(1.0) 패키지 매니저 문제점 유령 의존성 - yarn classic(1.0), npm(v3 ) 둘 다 중복 패키지에 대한 용량을 효율적으로 관리하기 위해서 호이스팅 & 병합을 기법을 사용해서 평탄화 작업 진행(놀랍게도 npm v2 까지는…","date":"2024-03-18"},{"slug":"2024-03-17-remove-unused-dependencies","title":"미사용 의존성 제거","category":"개발","tags":["performance"],"excerpt":"npm-check Installization 일괄 업데이트 yarn autoclean yarn autoclean 설명 - 패키지 종속성에서 불필요한 파일을 정리하고 제거(빌드와 상관없는 파일) yarn autoclean 명령어 autoclean 활성화 조건 - yarn install…","date":"2024-03-17"},{"slug":"2024-01-27-react-v18-migration","title":"React v18 migration","category":"개발","tags":["react"],"excerpt":"React v16 to v18 마이그레이션 가이드(with Best Practice Code) Updates to Client Rendering APIs Migration The new root API also enables the new concurrent renderer,…","date":"2024-01-27"},{"slug":"2024-01-20-nextjs-v14-migration","title":"next14 migration","category":"개발","tags":["nextjs"],"excerpt":"Update React Installation 'Component' cannot be used as a JSX component. 에러가 날 경우 @types/react@latest 최신 버전을 올릴 경우 nextJS Component에 대한 타입 추가가 되지 않아서 나온 이슈여서…","date":"2024-01-20"},{"slug":"2024-01-14-cors","title":"CORS(교차 출처 리소스 공유)","category":"개발","tags":["server"],"excerpt":"개요 CORS(교차 출처 리소스 공유)는 다른 출처(origin:프로토콜, 호스트, 포트)출처의 자원을 접근할 수 있도록 알려주는 것을 것을 뜻한다. 다른 출처의 리소스를 불러올 때 올바를 CORS 헤더를 포함하지 않는다면 접근이 제한됨을 뜻합니다. CORS 사용 사례 -…","date":"2024-01-14"},{"slug":"2023-11-26-react-hook-form-inside","title":"react-hook-form inside code","category":"개발","tags":["form"],"excerpt":"Form 객체 생성 useForm에서 데이터를 최초 세팅 후 defaultValues 세팅 이후에 다시 변경 시 변경이 안되는 경우가 있는데 아래 코드 처럼 useRef 최초 1회 생성 시에만 defaultValues를 세팅함으로 변경이 안되는거 였다. 해당 이슈를 해결을 위해서는…","date":"2023-11-26"},{"slug":"2023-09-17-gatsby-v5","title":"Gatsby(v5)","category":"개발","tags":["Gatsby"],"excerpt":"주요 기능 Slice API 공통 구성요소를 한번만 빌드하게 해서 빌드 성능을 높일 수 있게 되었다. 즉, Slice로 분리된 컴포넌트가 변경 시 한번만 빌드 후에 다른 구성요소에 합쳐지게 됨으로 이전처럼 전체를 빌드할 필요가 없습니다. Partial Hydration (Beta)…","date":"2023-09-17"},{"slug":"2023-09-10-react-state","title":"리액트 상태관리 정리","category":"개발","tags":["상태관리"],"excerpt":"전역 상태 관리 라이브러리 등장 배경 리액트는 처음 출시될 때 Model View Controller 중 View만 담당하는 라이브러리로 발표되었기 때문에 상태를 구성하거나 관리하는 방안이 필요해졌고, 초창기에는 상태와 비즈니스 로직을 Container/Presenter에 몰아넣고…","date":"2023-09-10"},{"slug":"2023-08-27-nextjs-v13","title":"Nextjs(v13)","category":"개발","tags":["nextjs"],"excerpt":"설치 요약 - 지원하는 브라우저에서 Internet Explorer를 삭제하고, 최신 브라우저를 지원하는걸로 변경되었습니다. - Chrome 64+ - Edge 79+ - Firefox 67+ - Opera 51+ - Safari 12+ - 최소 Node 버전이 12.22.0 →…","date":"2023-08-27"},{"slug":"2023-08-26-react-hook-form-v7","title":"react-hook-form v7","category":"개발","tags":["form"],"excerpt":"설치 react-hook-form v5 → v7 변경사항 useForm config 파일명에 prefix에 validation 삭제 errors 객체가 formState 객체 속성으로 변경 shouldUnregister 기본 값이 false → true로 수정…","date":"2023-08-26"},{"slug":"2023-08-25-nodejs","title":"nodejs","category":"개발","tags":["nodejs"],"excerpt":"개념 - node.js의 소개와 내부 구조 http://bcho.tistory.com/881 - 설치와 개발환경 구축 http://bcho.tistory.com/884 - Event,Module,NPM http://bcho.tistory.com/885 - 웹 개발 프레임웍…","date":"2023-08-25"},{"slug":"2023-08-16-treeshaking","title":"Tree Shaking","category":"개발","tags":["performance"],"excerpt":"개요 나무를 흔들어 잔가지를 털어내듯 불필요한 코드를 제거 하는 최적화 작업 - Webpack 4버전 이상을 사용하는 경우에는 ES6 모듈을 대상으로 기본적인 트리쉐이킹을 제공한다.( import , export 를 사용하는 모듈) - Create React App을 통해 만든…","date":"2023-08-16"},{"slug":"2023-08-15-ecmascript","title":"ecmascript","category":"개발","tags":["javascript"],"excerpt":"ES2024(ES15) ES2024에 추가된 기능들 ECMAScript® 2024 Language Specification ECMAScript 2024, the 15th edition, added facilities for resizing and transferring…","date":"2023-08-15"},{"slug":"2023-07-23-react-query-v5","title":"react-query(v5)","category":"개발","tags":["상태관리"],"excerpt":"v5 변경사항 Install react-query → @tanstack/react-query로 변경 Requirements New Features - Simplified optimistic updates - 낙관적 UI 업데이트에 필요한 variables 사용방법이…","date":"2023-07-23"},{"slug":"2023-07-22-zustand","title":"zustand","category":"개발","tags":["상태관리"],"excerpt":"참고코드: GitHub - seungahhong/states-todos 설치 zustand 개념 - 상태관리 설명 요즘 상태관리에 대한 접근 방식을 3가지로 나눠서 볼 수 있을 것 같습니다. - Flux (Redux, Zustand) - 일반적으로 사용하는 Flux 방식으로써,…","date":"2023-07-22"},{"slug":"2023-06-30-react-query-v4","title":"react-query(v4)","category":"개발","tags":["상태관리"],"excerpt":"Install react-quey → @tanstack/react-query로 변경 지원범위 - typescript - TypeScript v4.1 or greater - Supported Browsers - v4부터 React Query는 최신 브라우저에 최적화 - Support…","date":"2023-06-30"},{"slug":"2023-04-02-playwright","title":"Playwright","category":"개발","tags":["test"],"excerpt":"들어가기 전에.. (vs. Cypress) Cypress에서 Playwright로 왜 넘어갔나?? Cypress 개발 시 어려움 점 - 테스트 환경 로딩, 테스트 수행 시 너무 많은 시간이 소요한다는 느낌을 받았습니다. - 테스트 환경에서 엘리먼트를 Cypress 선택 시 못 찾는…","date":"2023-04-02"},{"slug":"2023-01-01-fe-process","title":"FE 개발 프로세스","category":"개발","tags":["process"],"excerpt":"사전 작업 1. 기획 및 디자인 검토 - 와이어프레임 및 디자인 시안 검토 - 디자인 시안에 대한 공통 컴포넌트화 설계 및 공유 - 마케팅 수집 체크 2. API 검토 및 피드백 - API 인터페이스 검토 및 FE 피드백 전달 -…","date":"2023-01-01"},{"slug":"2022-12-30-react-query","title":"react-query","category":"개발","tags":["상태관리"],"excerpt":"개요 - React를 위한 Data Synchronization Library - React application에서 서버 상태 를 fetching, caching, synchronizing, updating 작업을 쉽게 만들어 줍니다. 서버 상태 - 원격에 위치한 공간에 저장되며…","date":"2022-12-30"},{"slug":"2022-08-07-cypress","title":"cypress","category":"개발","tags":["test"],"excerpt":"E2E 테스트란? - 최종 개발물을 사용자 관점에서 테스트 할 수 있는 방법으로써, 페이지에서 원하는 텍스트가 제대로 출력이 되는지 버튼 클릭 시 올바른 동작을 하는지를 사용자 관점에서 테스트하는 End-to-End Testing 을 의미합니다. E2E 테스트사항 -…","date":"2022-08-07"},{"slug":"2022-07-25-msw","title":"msw","category":"개발","tags":["msw"],"excerpt":"Mocking 라이브러리를 도입해야하는 이유 Frontend 현재 이슈 - 신규 개발 진행 시 - 백엔드 API 작업과 동시에 FE 개발을 진행할 경우 - FE 개발사항 - 백엔드 개발자와 API 인터페이스 상의 후 스펙정의 - mocking 데이터가 만들어지기 전까지는 샘플 데이터를…","date":"2022-07-25"},{"slug":"2022-07-24-jest","title":"jest","category":"개발","tags":["test"],"excerpt":"기본 사용법 react testing library - 설치 - 사용할때 주의할점 참고 url https://seongry.github.io/2021/06-20-common-mistakes-with-rty/ Common mistakes with React Testing Library…","date":"2022-07-24"},{"slug":"2022-07-23-emotion","title":"emotion","category":"개발","tags":["css"],"excerpt":"리액트 프레임워크 사용 X - 설치 - 설명 - 추가적인 setup, babel plugin, 다른 환경설정이 요구하지 않는다. - auto vendor-prefixing, nested selectors, media queries 지원한다.. - auto vendor-prefixing…","date":"2022-07-23"},{"slug":"2022-06-14-jotai","title":"jotai","category":"개발","tags":["상태관리"],"excerpt":"설치 참고코드 참고코드: GitHub - seungahhong/states-todos Jotai 개념, 특장점 설명 - 상태관리 설명 요즘 상태관리에 대한 접근 방식을 3가지로 나눠서 볼 수 있을 것 같습니다. - Flux (Redux, Zustand) - 일반적으로 사용하는 Flux…","date":"2022-06-14"},{"slug":"2022-06-08-react18","title":"react18","category":"개발","tags":["react"],"excerpt":"설치 React DOM 17 → 18 업그레이드 클라이언트 React 18부터 react-dom의 render 함수는 deprecated 됩니다. automatic batching(fewer renders) Batching 배칭(batching)은 리액트가 더 나은 성능을 위해…","date":"2022-06-08"},{"slug":"2022-05-31-css-in-js","title":"css-in-js","category":"개발","tags":["css"],"excerpt":"CSS-in-JS 왜 만들어졌나? CSS-in-JS는 단어 그대로 자바스크립트 코드에서 CSS를 작성하는 방식을 말합니다. 2014년 페이스북 개발자인 Christopher Chedeau aka Vjeux가 처음 소개하였습니다. Vjeux는 CSS를 작성하는 어려움을 다음과 같이…","date":"2022-05-31"},{"slug":"2022-05-30-form","title":"form","category":"개발","tags":["form"],"excerpt":"Javascript Form 설계 hook-form vanila javascript 설계 Javascript Form vs React Form easier data control easier inputs, inputs event better validation React Form vs…","date":"2022-05-30"},{"slug":"2022-03-30-SWR","title":"SWR","category":"개발","tags":["상태관리"],"excerpt":"SWR 이란? - NextJS를 만든 zeit이라는 그룹에서 만든 React Hooks for Remote Data Fetching Library - SWR은 먼저 캐시(스태일)로부터 데이터를 반환한 후, fetch 요청(재검증)을 하고, 최종적으로 최신화된 데이터를 가져오는 전략…","date":"2022-03-30"},{"slug":"2022-03-29-canvas","title":"canvas","category":"개발","tags":["canvas"],"excerpt":"Canvas API - Canvas API는 JavaScript와 HTML CANVAS 엘리먼트를 통해 그래픽을 그리기위한 수단을 제공합니다. 무엇보다도 애니메이션, 게임 그래픽, 데이터 시각화, 사진 조작 및 실시간 비디오 처리를 위해 사용됩니다. 샘플코드 -…","date":"2022-03-29"},{"slug":"2022-03-28-javascript","title":"javascript","category":"개발","tags":["javascript"],"excerpt":"- Javascript6 10 참고사이트 Nomad Courses","date":"2022-03-28"},{"slug":"2022-03-26-redux-toolkit","title":"redux-toolkit","category":"개발","tags":["상태관리"],"excerpt":"리덕스 툴킷이란? - redux toolkit 라이브러리는 리덕스팀의 3가지 걱정을 해결하기 위해 등장하였다. 1. 리덕스 스토어를 구성하는 것은 너무 복잡하다. 2. 리덕스가 유용해지려면 많은 패키지들을 추가로 설치해야한다. 3. 리덕스는 너무 많은 보일러플레이트 코드를 요구한다.…","date":"2022-03-26"},{"slug":"2022-03-22-recoil","title":"recoil","category":"개발","tags":["상태관리"],"excerpt":"recoil이란? 참고코드(redux-toolkit vs recoil): https://github.com/seungahhong/states-todos 리액트 상태 관리 로직의 한계점 - ContextAPI 부모와 자식간의 커플링에 의존성 발생 - 특히 리렌더링에 문제점 발생 -…","date":"2022-03-22"},{"slug":"2022-03-19-storybook","title":"storybook","category":"개발","tags":["storybook"],"excerpt":"도입목적 - 기획, 디자인이 병렬로 진행중인 사항에서 계속적으로 스펙이 변경됨을 반영해서 기획자, 디자이너에 공유를 목적으로 합니다. - 백엔드와도 병렬로 진행 시 로직(container), 화면(presentation) 분리해서 진행해야함으로 그것을 검증하기 위해서 storybook…","date":"2022-03-19"},{"slug":"2022-03-12-react-router-v6","title":"react-router-v6","category":"개발","tags":["react-router"],"excerpt":"v6 React Router v6 정식 릴리즈 2021년 11월 4일 v6.0.0 beta → release 출시되었습니다. React v16.8 이상으로 업그레이드 단, React ≥ 15 이상이면 react router v5 이상을 호환하고 있어서 v6로 업그레이드 하지 않더라도…","date":"2022-03-12"},{"slug":"2022-03-07-redux-saga","title":"redux-saga","category":"개발","tags":["상태관리"],"excerpt":"redux-saga란? 리액트/리덕스 애플리케이션의 side effect를 더 쉽고 좋게 만드는 것을 목적으로 하는 미들웨어 라이브러리 설치 typesafe-actions 설치 (v5) → 선택 redux-actions와 같은 Typescript 용 라이브러리입니다. 액션 생성 함수와…","date":"2022-03-07"},{"slug":"2022-02-13-react17","title":"react17","category":"개발","tags":["react"],"excerpt":"v17 설치 No more ‘import React ...’ JSX 를 사용하기 위해선 늘 React 를 import 해야 했다(그것을 명시적으로 사용하지 않더라도). JSX 코드는 babel, typescript 등을 통해 일반 javascript transpile 되었기 때문이다.…","date":"2022-02-13"},{"slug":"2022-01-16-typescript","title":"typescript","category":"개발","tags":["typescript"],"excerpt":"타입스크립트는 왜 사용해야하는 걸까?? Typescript는 코드를 보다 읽기 쉽게 만든다. - 변수,리턴,인터페이스 등등 타입을 명시함으로써 코드에 대한 이해가 쉬워진다. Typescript는 개발자의 실수를 줄여준다. - 코드 작성 중/컴파일 단계에서 에러 발견이 쉽다. - 에러에…","date":"2022-01-16"},{"slug":"2022-01-10-RxJS","title":"RxJS","category":"개발","tags":["RxJS"],"excerpt":"RxJS 개념 RxJS는 Reactive Extensions For JavaScript 라이브러리이다. ReactiveX 는 Observer 패턴, Iterator 패턴, 함수형 프로그래밍을 조합하여 제공한다. 동기와 비동기 처리를 하나의 스트림으로 관리하고 처리가 가능하다. -…","date":"2022-01-10"},{"slug":"2022-01-09-graphql","title":"graphql","category":"개발","tags":["graphql"],"excerpt":"RestAPI란 - 데이터를 주고받을 주체들간 약속된 형식 - GET: 정보 받아오기 - POST: 정보 입력하기 - PUT/PATCH: 정보 수정하기 - DELETE: 정보 삭제하기 RestAPI의 한계 - overfetching: 필요한 정보들만 받아올 수가 없다. -…","date":"2022-01-09"},{"slug":"2022-01-08-webassembly","title":"webassembly","category":"개발","tags":["webassembly"],"excerpt":"웹어셈블리 나온 이유 구글의 NaCI(Native Client), 모질라의 asm.js(JavaScript 서브셋) 등 네이티브 머신 코드를 웹으로 가져오기 위한, 그리고 빠르게 실행하기 위한 시도들은 결과적으로 웹어셈블리(이하 'wasm'으로 표기)로 귀결되면서 개발이 시작되었다.…","date":"2022-01-08"},{"slug":"2021-12-31-mobx","title":"mobx","category":"개발","tags":["상태관리"],"excerpt":"mobx란? 참고코드: GitHub - seungahhong/states-todos 설치 1. Mobx에 대한 개념, 특장점 설명 - Mobx 주요개념 - observable state - Observable State로 관찰 받고 있는 데이터이다. Mobx에서는 해당 State가…","date":"2021-12-31"},{"slug":"2021-12-30-redux","title":"redux","category":"개발","tags":["상태관리"],"excerpt":"redux 개념 액션 (Action) 상태에 어떠한 변화가 필요하게 될 땐, 우리는 액션이란 것을 발생시킵니다. 이는, 하나의 객체로 표현되는데요, 액션 객체는 다음과 같은 형식으로 이뤄져있습니다. 액션 객체는 type 필드를 필수적으로 가지고 있어야하고 그 외의 값들은 개발자…","date":"2021-12-30"},{"slug":"2021-12-02-svelte","title":"svelte","category":"개발","tags":["svelte"],"excerpt":"SVELTE Svelte(스벨트)는 Rich Harris가 제작한 새로운 접근 방식을 가지는 프론트엔드 프레임워크입니다. Svelte는 자신을 ‘프레임워크가 없는 프레임워크’ 혹은 ‘컴파일러’라고 소개합니다. 이는 Virtual(가상) DOM이 없고, Runtime(런타임)에 로드할…","date":"2021-12-02"},{"slug":"2021-12-01-deno","title":"deno","category":"개발","tags":["server"],"excerpt":"deno node.js를 만든 Ryan Dahl이 JS Fest 2019 Spring 컨퍼런스에서 새 프로젝트인 ‘Deno’를 소개했습니다. ‘A New Way to JavaScript’라는 제목의 이 발표에서 Ryan은 Deno가 node.js와 어떻게 다른지, 어떤 부분에서…","date":"2021-12-01"},{"slug":"2020-09-12-fe-performance","title":"Front-End Performance","category":"개발","tags":["performance"],"excerpt":"javascript 메모리 누수 의도치 않은 전역 변수 - 전역변수는 메모리를 해제할 수가 없다.(null 처리 또는 재할당 되지 않는 경우) 잊혀진 타이머 또는 콜백 DOM 외부에서의 참조 프론트엔드 성능 최적화 렌더링 최적화 - Reflow, Repaint 줄이기 지금까지 웹…","date":"2020-09-12"},{"slug":"2020-06-28-concept","title":"concept","category":"개발","tags":["아카이브"],"excerpt":"클라이언트 측의 저장소 쿠키 - 쿠키를 설정하면 이후 모든 웹 요청은 쿠키정보를 포함하여 서버로 전송 - 문자열만 저장, 4KB용량 제한 - 대개, 방문한 페이지를 저장하거나 유저의 로그인 정보를 저장 - Seesion cookies : 만료일이 포함되지 않는 쿠키(브라우저 탭이 열려…","date":"2020-06-28"},{"slug":"2020-04-12-webtools","title":"web tools","category":"도구","tags":["tools"],"excerpt":"Blog Theme - Jekyll theme 테마를 이용한 개인 블로그 만들기 - Blog Theme 1 - Blog Theme 2 Open Icon - 웹페이지 개발시 필요한 아이콘을 무료로 다운 받을 수 있는 페이지 - Icon 1 - Icon 2 Open Color - 글꼴,…","date":"2020-04-12"},{"slug":"2020-02-17-c-c++","title":"C/C++","category":"개발","tags":["windows"],"excerpt":"C 전역변수 1. 특징 - 함수외부에서 선언 - 메모리의 어느 특정공간(heap)에 자리를 차지하고 모든 함수 access 가능 - 프로그램 시작 시 생성 및 할당, 프로그램 종료가 되면 그 메모리 공간을 반환 2. 장점 - 사용하기 편리하다, 모든 함수에서 access 가능,…","date":"2020-02-17"},{"slug":"2020-02-16-winapi","title":"Windows API","category":"개발","tags":["windows"],"excerpt":"windows programming - 윈도우즈의 장점 1. 그래픽 기반의 운영체제 - 화면 처리를 문자 단위가 아닌 디지털 표현의 최소 단위인 픽셀로 처리해서 화면 처리 가능 2. 멀티 태스킹이 가능하다. - 한번에 여러가지 일을 수행함. 3. 장치에 영향을 받지 않는다. -…","date":"2020-02-16"},{"slug":"2020-02-14-mssql","title":"MSSQL","category":"개발","tags":["database"],"excerpt":"용어정리 - 트랜잭션 : 여러 데이터 변경에 대해 하나의 논리적 작업 단위로 취급하여 전체가 완료되거나 롤백되어 데이터의 무결성을 유지 - COMMIT : 모든 트랜잭션 수정이 영구적으로 데이터베이스 일부로 적용, 트랜잭션에 의해 사용된 리소스 해제 - ROLLBACK : 시작 상태로…","date":"2020-02-14"},{"slug":"2020-01-01-pdf","title":"pdf","category":"문서","tags":["pdf"],"excerpt":"PDF File Format PDF 파일 포맷은 크게 Header, Body, Cross-reference Table, File Trailer로 총 4가지 영역으로 구분된다. 각각의 역할은 아래와 같다. Header : 총 8바이트로, PDF의 시그니처와 PDF 문서의 버전 정보를…","date":"2020-01-01"}],"locale":"ko","dict":{"meta":{"siteTitle":"홍승아 기술 블로그","siteDescription":"홍승아 기술 블로그 — 개발하며 배우고 고민한 내용을 정리하고, 실무 경험과 기술 지식을 공유합니다.","author":"홍승아"},"brand":{"name":"홍승아"},"nav":{"home":"홈","posts":"포스트","tags":"태그","about":"About","search":"검색","searchPlaceholder":"포스트, 태그 검색…","toggleTheme":"테마 전환","openMenu":"메뉴 열기","closeMenu":"메뉴 닫기","language":"언어","skipToContent":"본문으로 건너뛰기","noResults":"검색 결과가 없습니다.","searchHint":"제목·태그·카테고리로 검색"},"home":{"eyebrow":"Frontend Engineer","heroTitlePre":"홍승아 ","heroTitleEm":"기술 블로그","heroTitlePost":"","heroSubtitle":"개발하며 배우고 고민한 내용을 정리하고, 실무 경험과 기술 지식을 공유합니다.","statPosts":"포스트","statCategories":"카테고리","statSince":"기록 시작","recentPosts":"최근 글","viewAll":"전체 보기 →","popular":"Top 5 인기 글","views":"조회","categories":"카테고리","tags":"태그"},"post":{"backToList":"목록으로","tableOfContents":"목차","prev":"이전 글","next":"다음 글","on":"게시","by":"작성자","tags":"태그","translationFallbackNotice":"이 글은 아직 한국어 원문으로 제공됩니다."},"posts":{"title":"포스트","subtitle":"카테고리별로 묶은 전체 글","all":"전체","filterByCategory":"카테고리"},"tags":{"title":"태그","subtitle":"관심 주제로 글 모아보기","postCount":"개의 글","clearFilter":"필터 해제"},"about":{"eyebrow":"About","title":"홍승아","subtitle":"프론트엔드 기술과 확장 가능한 구조를 고민하는 개발자입니다.","introHeading":"소개","skillsHeading":"관심 기술","linksHeading":"링크","faqHeading":"자주 묻는 질문","faq":[{"question":"이 블로그는 어떤 주제를 다루나요?","answer":"프론트엔드 개발이 중심입니다. React·Next.js 같은 프레임워크, 상태관리(Redux·Recoil·Zustand·Jotai·MobX·React Query), 번들러와 빌드 도구(Vite·esbuild·Webpack), 웹 성능, 테스트를 주로 다룹니다. 최근에는 RAG·MCP·LLM 하네스 같은 AI 엔지니어링 주제도 함께 기록하고 있습니다. 현재 {postCount}편의 글이 공개되어 있습니다."},{"question":"글은 어떤 언어로 읽을 수 있나요?","answer":"한국어와 영어 두 언어로 제공합니다. 모든 글에 /ko와 /en 경로가 있고, 영어 번역이 아직 없는 글은 한국어 원문으로 폴백되며 본문 상단에 그 사실이 표시됩니다."},{"question":"누가 쓰나요?","answer":"프론트엔드 엔지니어 홍승아가 직접 씁니다. 컴포넌트의 공통화와 확장성, 그리고 개인을 넘어 함께 성장하는 개발 생태계에 관심이 많습니다. GitHub·LinkedIn·포트폴리오 링크는 이 페이지의 링크 섹션에 있습니다."},{"question":"새 글은 얼마나 자주 올라오나요?","answer":"{since}년부터 기록해 왔습니다. 정해진 발행 주기는 없고, 실무나 개인 프로젝트에서 새로 배운 내용이 정리되면 올립니다. 최신 글은 홈과 포스트 목록에서 최신순으로 확인할 수 있습니다."},{"question":"이 블로그는 무엇으로 만들었나요?","answer":"Next.js 16 App Router의 정적 익스포트로 빌드해 GitHub Pages에 배포합니다. TypeScript와 Tailwind CSS를 쓰고, 마크다운은 unified(remark/rehype)와 shiki로 렌더합니다. 소스 코드는 GitHub 저장소에 공개되어 있습니다."}],"intro":["프론트엔드 기술에 관심이 많은 개발자입니다.","컴포넌트의 공통화와 확장성을 늘 고민합니다.","개인의 성장을 넘어 함께 발전하는 생태계(공유)를 만들고 싶습니다."],"skills":[{"label":"언어","items":["JavaScript","TypeScript","C / C++"]},{"label":"프레임워크 · 런타임","items":["React","Next.js","Svelte","Gatsby","Node.js","Deno"]},{"label":"상태관리 · 데이터","items":["Redux","Recoil","Zustand","Jotai","MobX","React Query","SWR","GraphQL"]},{"label":"빌드 · 툴링","items":["Vite","esbuild","Webpack","pnpm"]},{"label":"테스트","items":["Jest","Playwright","Cypress","MSW","Storybook"]},{"label":"스타일링","items":["CSS","Emotion","styled-components"]},{"label":"AI · LLM","items":["RAG","MCP","Claude","LLM 하네스"]},{"label":"기타","items":["WebAssembly","Canvas","RxJS"]}]},"footer":{"builtWith":"Next.js · Tailwind CSS로 만들었습니다.","rights":"홍승아. All rights reserved."},"units":{"minutesRead":"분","postsCount":"글"},"notFound":{"title":"페이지를 찾을 수 없습니다","description":"요청하신 페이지가 존재하지 않거나 이동되었습니다.","backHome":"홈으로 돌아가기"}},"children":"$L1c"}]
+1d:I[7416,["$2","$6"],"default"]
+1e:I[3374,["$2","$6"],"default"]
+1f:I[15907,["$2","$6","$7"],"default"]
+1c:["$","div",null,{"className":"flex min-h-screen flex-col","children":[["$","$L1d",null,{"lang":"ko-KR"}],["$","a",null,{"href":"#main-content","className":"focus:border-accent focus:bg-surface focus:text-ink sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-100 focus:rounded-lg focus:border focus:px-4 focus:py-2","children":"본문으로 건너뛰기"}],["$","$L1e",null,{"locale":"ko","dict":"$b:props:dict"}],["$","main",null,{"id":"main-content","className":"flex-1","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-line bg-bg mt-16 border-t","children":["$","div",null,{"className":"max-w-deck mx-auto flex flex-col gap-4 px-[18px] py-8 sm:flex-row sm:items-center sm:justify-between md:px-[34px]","children":[["$","div",null,{"children":[["$","p",null,{"children":["$","span",null,{"className":"text-ink text-[15px] font-extrabold tracking-tight","children":"홍승아"}]}],["$","p",null,{"className":"text-muted mt-1.5 text-[12.5px]","children":"Next.js · Tailwind CSS로 만들었습니다."}],["$","p",null,{"className":"text-faint mt-0.5 text-[12px]","children":["© ",2020,"–",2026," ","홍승아. All rights reserved."]}]]}],["$","nav",null,{"aria-label":"social","className":"flex items-center gap-2","children":[["$","a","GitHub",{"href":"https://github.com/seungahhong","target":"_blank","rel":"noreferrer noopener","aria-label":"GitHub","lang":"$undefined","className":"border-line bg-surface text-muted hover:border-accent hover:text-accent grid h-[34px] w-[34px] place-items-center rounded-lg border transition-colors","children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"24","height":"24","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","className":"h-4 w-4","aria-hidden":"true","children":[["$","path",null,{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path",null,{"d":"M9 18c-4.51 2-5-2-7-2"}]]}]}],["$","a","LinkedIn",{"href":"https://www.linkedin.com/in/seungahhong/","target":"_blank","rel":"noreferrer noopener","aria-label":"LinkedIn","lang":"$undefined","className":"border-line bg-surface text-muted hover:border-accent hover:text-accent grid h-[34px] w-[34px] place-items-center rounded-lg border transition-colors","children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"24","height":"24","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","className":"h-4 w-4","aria-hidden":"true","children":[["$","path",null,{"d":"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"}],["$","rect",null,{"width":"4","height":"12","x":"2","y":"9"}],["$","circle",null,{"cx":"4","cy":"4","r":"2"}]]}]}],["$","a","Notion",{"href":"https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1","target":"_blank","rel":"noreferrer noopener","aria-label":"Notion","lang":"$undefined","className":"border-line bg-surface text-muted hover:border-accent hover:text-accent grid h-[34px] w-[34px] place-items-center rounded-lg border transition-colors","children":["$","$L1f",null,{"ref":"$undefined","icon":{"name":"notebook-text","size":24,"node":[["path",{"d":"M2 6h4","key":"aawbzj"}],["path",{"d":"M2 10h4","key":"l0bgd4"}],["path",{"d":"M2 14h4","key":"1gsvsf"}],["path",{"d":"M2 18h4","key":"1bu2t1"}],["rect",{"width":"16","height":"20","x":"4","y":"2","rx":"2","key":"1nb95v"}],["path",{"d":"M9.5 8h5","key":"11mslq"}],["path",{"d":"M9.5 12H16","key":"ktog6x"}],["path",{"d":"M9.5 16H14","key":"p1seyn"}]]},"className":"h-4 w-4","aria-hidden":"true"}]}]]}]]}]}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+20:I[3142,["$2"],"IconMark"]
+13:null
+19:[["$","title","0",{"children":"이번 주 패키지 릴리스 정리 — 2026-11-07 · 홍승아 기술 블로그"}],["$","meta","1",{"name":"description","content":"✍️ 한 줄 요약 Next.js(16.4.5·15.5.29)가 엣지 응답의 내부 쿠키 헤더 제거 등 보안성 수정을 낸 데 이어, Nuxt 4.6.4는 개발 서버 Host 헤더 검증과 x-forwarded-proto 신뢰 범위 제한을, Hono 4.13.16은 JWT 서명 검증 강화와…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"홍승아"}],["$","meta","4",{"name":"keywords","content":"릴리스,패키지,주간정리"}],["$","meta","5",{"name":"creator","content":"홍승아"}],["$","meta","6",{"name":"publisher","content":"홍승아"}],["$","meta","7",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://seungahhong.github.io/ko/posts/2026-11-07-package-release-weekly/"}],["$","link","9",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-11-07-package-release-weekly/"}],["$","link","10",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-11-07-package-release-weekly/"}],["$","link","11",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-11-07-package-release-weekly/"}],["$","meta","12",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","13",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","14",{"property":"og:title","content":"이번 주 패키지 릴리스 정리 — 2026-11-07"}],["$","meta","15",{"property":"og:description","content":"✍️ 한 줄 요약 Next.js(16.4.5·15.5.29)가 엣지 응답의 내부 쿠키 헤더 제거 등 보안성 수정을 낸 데 이어, Nuxt 4.6.4는 개발 서버 Host 헤더 검증과 x-forwarded-proto 신뢰 범위 제한을, Hono 4.13.16은 JWT 서명 검증 강화와…"}],["$","meta","16",{"property":"og:url","content":"https://seungahhong.github.io/ko/posts/2026-11-07-package-release-weekly/"}],["$","meta","17",{"property":"og:locale","content":"ko-KR"}],["$","meta","18",{"property":"og:image","content":"https://seungahhong.github.io/og/ko.png"}],["$","meta","19",{"property":"og:image:alt","content":"이번 주 패키지 릴리스 정리 — 2026-11-07"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2026-11-07"}],["$","meta","22",{"property":"article:modified_time","content":"2026-11-07"}],["$","meta","23",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","24",{"property":"article:section","content":"개발"}],["$","meta","25",{"property":"article:tag","content":"릴리스"}],["$","meta","26",{"property":"article:tag","content":"패키지"}],["$","meta","27",{"property":"article:tag","content":"주간정리"}],["$","meta","28",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","29",{"name":"twitter:title","content":"이번 주 패키지 릴리스 정리 — 2026-11-07"}],["$","meta","30",{"name":"twitter:description","content":"✍️ 한 줄 요약 Next.js(16.4.5·15.5.29)가 엣지 응답의 내부 쿠키 헤더 제거 등 보안성 수정을 낸 데 이어, Nuxt 4.6.4는 개발 서버 Host 헤더 검증과 x-forwarded-proto 신뢰 범위 제한을, Hono 4.13.16은 JWT 서명 검증 강화와…"}],["$","meta","31",{"name":"twitter:image","content":"https://seungahhong.github.io/og/ko.png"}],["$","link","32",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L20","33",{}]]
+22:I[53403,["$2","$6","$7"],"default"]
+21:T67c,{"@context":"https://schema.org","@type":"BlogPosting","headline":"이번 주 패키지 릴리스 정리 — 2026-11-07","description":"✍️ 한 줄 요약 Next.js(16.4.5·15.5.29)가 엣지 응답의 내부 쿠키 헤더 제거 등 보안성 수정을 낸 데 이어, Nuxt 4.6.4는 개발 서버 Host 헤더 검증과 x-forwarded-proto 신뢰 범위 제한을, Hono 4.13.16은 JWT 서명 검증 강화와…","datePublished":"2026-11-07","dateModified":"2026-11-07","inLanguage":"ko-KR","url":"https://seungahhong.github.io/ko/posts/2026-11-07-package-release-weekly/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/ko/posts/2026-11-07-package-release-weekly/"},"image":"https://seungahhong.github.io/og/ko.png","keywords":["릴리스","패키지","주간정리"],"articleSection":"개발","wordCount":6285,"timeRequired":"PT16M","isPartOf":{"@id":"https://seungahhong.github.io/ko/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}10:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$21"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"홈\",\"item\":\"https://seungahhong.github.io/ko/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"포스트\",\"item\":\"https://seungahhong.github.io/ko/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"이번 주 패키지 릴리스 정리 — 2026-11-07\",\"item\":\"https://seungahhong.github.io/ko/posts/2026-11-07-package-release-weekly/\"}]}"}}],["$","$L22",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L8",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L8",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"개발"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"이번 주 패키지 릴리스 정리 — 2026-11-07"}]]}]}],["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"이번 주 패키지 릴리스 정리 — 2026-11-07"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],"$L23","$L24","$L25","$L26","$L27"]}],false,"$L28"]}],"$L29","$L2a"]}],"$L2b"]}]}]]
+2d:I[27722,["$2","$6","$7"],"default"]
+23:["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"홍승아"}]
+24:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+25:["$","time",null,{"dateTime":"2026-11-07","className":"meta-mono","children":"2026.11.07"}]
+26:["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}]
+27:["$","span",null,{"className":"meta-mono","children":[16,"분"]}]
+28:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","릴리스",{"children":["$","$L8",null,{"href":"/ko/tags?tag=%EB%A6%B4%EB%A6%AC%EC%8A%A4","className":"tag-pill","children":"릴리스"}]}],["$","li","패키지",{"children":["$","$L8",null,{"href":"/ko/tags?tag=%ED%8C%A8%ED%82%A4%EC%A7%80","className":"tag-pill","children":"패키지"}]}],["$","li","주간정리",{"children":["$","$L8",null,{"href":"/ko/tags?tag=%EC%A3%BC%EA%B0%84%EC%A0%95%EB%A6%AC","className":"tag-pill","children":"주간정리"}]}]]}]
+2c:T842e,<h3 id="️-한-줄-요약">✍️ 한 줄 요약<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#️-한-줄-요약"><span class="icon icon-link"></span></a></h3>
+<p>Next.js(16.4.5·15.5.29)가 엣지 응답의 내부 쿠키 헤더 제거 등 보안성 수정을 낸 데 이어, Nuxt 4.6.4는 개발 서버 Host 헤더 검증과 <code>x-forwarded-proto</code> 신뢰 범위 제한을, Hono 4.13.16은 JWT 서명 검증 강화와 라우터·<code>mount</code> 경로 처리 수정을 냈습니다. Rolldown 1.3.0은 CLI에서 <code>--input</code>과 위치 인자를 같이 쓰면 거부하는 breaking change(기존 코드를 고쳐야 하는 변경)가 있고, Omarchy는 4.5.0(🔺 메이저 라인)이 나왔습니다.</p>
+<h3 id="이번-주-한눈에-보기">이번 주 한눈에 보기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#이번-주-한눈에-보기"><span class="icon icon-link"></span></a></h3>
+<p>기간은 2026-10-31 ~ 2026-11-07(KST)이며, 추적 중인 87개 패키지 가운데 28개의 변경점을 확인했습니다. 변경점을 읽지 못해 뺀 패키지는 마무리 섹션에 적었습니다.</p>
+<p>이번 주는 GitHub 릴리스 페이지를 읽을 수 없어, CHANGELOG 파일이 있는 패키지는 그 파일을, 없는 패키지는 새 태그까지의 변경 이력(커밋 제목)을 읽고 정리했습니다. 이 경우 <code>릴리스 공지</code>는 <code>없음</code>으로 표시했습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>패키지</th><th>버전</th><th>릴리스 공지</th><th>변경점</th></tr></thead><tbody><tr><td>astro</td><td>7.4.7 (패치 3개)</td><td><a href="https://github.com/withastro/astro/blob/main/packages/astro/CHANGELOG.md">있음</a></td><td>이미지 엔드포인트 경로 검사, <code>astro check</code>, i18n fallback 버그 수정</td></tr><tr><td>pnpm</td><td>v12.18.0 · v11.28.11 (패치 1개)</td><td>없음</td><td>플랫폼별 변형 패키지 게시·설치, peer 경로 해석 수정</td></tr><tr><td>Electron</td><td>v45.2.3 (패치 3개) · v44.10.2 (패치 2개) · v43.8.7 (패치 3개)</td><td>없음</td><td>Chromium 변경 반영, <code>removeInsertedCSS()</code> 수정</td></tr><tr><td>Oxfmt</td><td>v0.76.0 · v0.77.0</td><td>없음</td><td>Vue 템플릿 포맷 지원 확대 (<code>parser:vue</code> 처리 변경)</td></tr><tr><td>Oxlint</td><td>v1.91.0 · v1.92.0</td><td><a href="https://github.com/oxc-project/oxc/blob/main/npm/oxlint/CHANGELOG.md">있음</a></td><td>규칙 옵션 추가</td></tr><tr><td>Next.js</td><td>v16.4.5 · v16.4.4 · v15.5.29</td><td>없음</td><td>내부 쿠키 헤더 제거, <code>'use cache'</code> 키 수정 등</td></tr><tr><td>Nx</td><td>24.0.5 (패치 3개)</td><td>없음</td><td>보안 하드닝과 캐시·데몬 수정 다수</td></tr><tr><td>Homebrew</td><td>7.0.12</td><td>없음</td><td><code>info</code>·attestation 조회 개선</td></tr><tr><td>🔺 메이저 Omarchy</td><td>v4.5.0</td><td>없음</td><td>클립보드·이모지 패널, Notion 설치 항목</td></tr><tr><td>Vite</td><td>v8.3.6</td><td><a href="https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md">있음</a></td><td>번들 dev 모드·CSS 의존성 수집 버그 수정</td></tr><tr><td>Angular</td><td>22.2.5 · 21.2.26 · 20.3.35</td><td><a href="https://github.com/angular/angular/blob/main/CHANGELOG.md">있음</a></td><td><code>rxResource</code> <code>debugName</code>, forms·router 수정</td></tr><tr><td>Hono</td><td>v4.13.16 (패치 2개)</td><td>없음</td><td>JWT 서명 검증 강화, 라우터·<code>mount</code> 경로 수정</td></tr><tr><td>Istio</td><td>1.31.4 · 1.30.8</td><td>없음</td><td>istiod 크래시·인증 정책 매칭 수정</td></tr><tr><td>Nuxt</td><td>v4.6.4</td><td>없음</td><td>개발 서버 Host 검증, 라우트 규칙 수정</td></tr><tr><td>Rspack</td><td>v2.3.1</td><td>없음</td><td>HMR·CSS·source map 수정</td></tr><tr><td>Visual Studio Code</td><td>1.145.0 · 1.145.1 · 1.145.2</td><td>없음</td><td>에이전트 호스트·채팅 관련 수정</td></tr><tr><td>Vitest</td><td>v5.1.0</td><td>없음</td><td>실패 스냅샷 대화형 검토, <code>vi.waitFor</code> 옵션</td></tr><tr><td>Argo CD</td><td>v3.6.0 · v3.6.1 · v3.5.7 · v3.4.13 · v3.3.19</td><td>없음</td><td>3.6 라인 UI·컨트롤러 수정</td></tr><tr><td>Bazel</td><td>9.3.2</td><td><a href="https://github.com/bazelbuild/bazel/blob/9.3.2/CHANGELOG.md">있음</a></td><td>linux-sandbox 조기 종료 수정</td></tr><tr><td>Biome</td><td>v2.6.5 · v2.6.6</td><td><a href="https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md">있음</a></td><td>nursery 규칙 대거 추가</td></tr><tr><td>Gradle</td><td>9.9.0</td><td><a href="https://github.com/gradle/gradle/blob/v9.9.0/platforms/documentation/docs/src/docs/release/notes.md">있음</a></td><td>Kotlin DSL 증분 컴파일, <code>--tests</code> 필터 확대</td></tr><tr><td>Lima</td><td>v2.3.0</td><td>없음</td><td>WSL2 마운트 지원, sudoers 매칭 수정</td></tr><tr><td>ollama</td><td>v0.40.15 (패치 2개)</td><td>없음</td><td>모델 런처·MLX 지원 확대</td></tr><tr><td>React Native Skia</td><td>v3.9.1 · v3.9.0</td><td>없음</td><td>iOS·Android 렌더링 스레드 수정</td></tr><tr><td>Rolldown</td><td>v1.3.0</td><td><a href="https://github.com/rolldown/rolldown/blob/main/CHANGELOG.md">있음</a></td><td>CLI breaking change, import attributes 지원</td></tr><tr><td>Rstest</td><td>v0.12.6</td><td>없음</td><td><code>sequence.setupFiles</code>, 병렬 라이프사이클 훅</td></tr><tr><td>Storybook</td><td>v10.6.6</td><td><a href="https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md">있음</a></td><td>StackBlitz embed 복구</td></tr><tr><td>Tailwind CSS</td><td>v4.3.5 · v4.3.4</td><td><a href="https://github.com/tailwindlabs/tailwindcss/blob/main/CHANGELOG.md">있음</a></td><td>Turbopack 로더 추가, <code>@scope</code>·<code>color-mix()</code> 수정</td></tr></tbody></table>
+<h3 id="패키지별-변경-내용">패키지별 변경 내용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#패키지별-변경-내용"><span class="icon icon-link"></span></a></h3>
+<h4 id="astro-747">astro 7.4.7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#astro-747"><span class="icon icon-link"></span></a></h4>
+<p>JavaScript 웹 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 패치 릴리스 3개가 이어졌습니다. 7.4.7은 이미지 엔드포인트가 대소문자만 다른 디렉토리를 빌드 폴더 안에 있는 것으로 잘못 취급하던 문제를 고쳤습니다. 7.4.6은 <code>astro check</code>가 오류가 있어도 종료 코드 0을 반환하던 문제, <code>glob()</code> 로더의 파일 처리, 첫 로드 때 불필요한 페이지 새로고침, 온디맨드 렌더링 페이지의 i18n fallback을 고쳤습니다. 7.4.5는 <code>astro dev status</code> 같은 백그라운드 명령과 <code>import.meta.env</code> 값 처리, 잘못된 퍼센트 인코딩 경로 요청을 다뤘습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — CI에서 <code>astro check</code>를 쓴다면 이전에는 통과하던 오류가 이제 실패로 잡힐 수 있으니 한 번 돌려 보세요. 그 외에는 그대로 올려도 됩니다.</p>
+<p>릴리스 공지: <a href="https://github.com/withastro/astro/blob/main/packages/astro/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="pnpm-v12180--v112811">pnpm v12.18.0 · v11.28.11<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pnpm-v12180--v112811"><span class="icon icon-link"></span></a></h4>
+<p>Node.js 패키지 매니저입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 12.18.0의 중심은 패키지를 플랫폼별 변형(variants)과 함께 게시하고 설치하는 기능입니다. 여러 머신에서 올린 변형을 한 버전으로 묶어 게시하고, 변형만 있는 버전도 설치할 수 있습니다. <code>supportedArchitectures</code>가 플랫폼 태그로 읽히고, <code>pack --json</code>에 아카이브별 무결성 값과 크기가 출력됩니다. 정의되지 않은 필수 peer 제공자에 대한 경고가 추가됐고, 상대 경로 <code>file:</code> peer·루트 override·catalog 경로 해석 버그가 고쳐졌습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다. 11.x 라인은 11.28.11로 올리는 패치이니, 12로 넘어가는 경우에만 공식 마이그레이션 안내를 따로 확인하세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="electron-v4523--v44102--v4387">Electron v45.2.3 · v44.10.2 · v43.8.7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#electron-v4523--v44102--v4387"><span class="icon icon-link"></span></a></h4>
+<p>웹 기술로 데스크톱 앱을 만드는 플랫폼입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 45.x는 2.0부터 2.3까지 패치가 이어졌고, 최신 45.2.3은 angle·chromium·dawn·ffmpeg·pdfium·skia·v8에서 120개 변경을 가져왔습니다. 앱 코드에 영향을 주는 수정으로는 <code>removeInsertedCSS()</code>가 사용자 출처 스타일시트까지 지우던 문제가 있습니다. 44.x와 43.x에도 같은 계열의 Chromium 패치가 이어졌습니다. 문서에서는 deprecated된 BrowserView API의 Experimental 표기가 빠졌습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — Chromium 패치가 대량으로 들어가므로 올린 뒤 렌더링과 PDF 보기를 확인하세요. API 변경 공지는 읽지 못했습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="oxfmt-v0760--v0770">Oxfmt v0.76.0 · v0.77.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#oxfmt-v0760--v0770"><span class="icon icon-link"></span></a></h4>
+<p>JS/TS 포매터입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 0.77.0 변경 이력에는 <code>parser:vue</code> 파일을 새 HTML 계열 포매터로 처리하도록 바꾼 항목이 <code>!</code>(호환성 깨짐 표시)와 함께 있고, Vue 템플릿의 식과 핸들러를 JS로 포맷하는 기능이 들어왔습니다. 그 밖에 임베디드 <code>doctype</code> 대소문자 보존, Vite+ 설정 루트 해석 수정이 있습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — Vue 파일을 포맷한다면 올린 뒤 변경 diff가 생기는지 확인하세요. 0.x 버전이라 마이너 올림에서도 출력이 바뀔 수 있습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="oxlint-v1910--v1920">Oxlint v1.91.0 · v1.92.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#oxlint-v1910--v1920"><span class="icon icon-link"></span></a></h4>
+<p>JS/TS Linter입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 1.91.0은 <code>react/capitalized-calls</code>에 <code>allow</code>·<code>allowPattern</code> 옵션을 추가했고, 1.92.0은 <code>eslint/no-redeclare</code>에 <code>ignoreDeclarationMerge</code> 옵션을 추가했습니다. 둘 다 기존 규칙에 예외를 주는 옵션입니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: <a href="https://github.com/oxc-project/oxc/blob/main/npm/oxlint/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="nextjs-v1645--v1644--v15529">Next.js v16.4.5 · v16.4.4 · v15.5.29<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nextjs-v1645--v1644--v15529"><span class="icon icon-link"></span></a></h4>
+<p>서버 렌더링 React 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 16.4.5는 엣지 응답에서 내부 미들웨어 쿠키 헤더를 제거하고, 프록시로 전달한 fetch 응답의 압축 프레임 문제를 고쳤습니다. 요청이 보낸 placeholder 파라미터로 공유 셸이 오염되는 문제, <code>'use cache'</code>에 바이너리 인자를 쓸 때 캐시 키 문제, 루트 파라미터가 다를 때 캐시가 재사용되는 문제도 수정했습니다. <code>next/image</code>는 AVIF/HEIC를 잘못 판별하던 문제가 고쳐졌습니다. 16.4.4는 <code>jsonwebtoken</code> 대신 <code>fast-jwt</code>를 쓰도록 바꿨습니다. 15.5.29는 같은 수정 중 쿠키 헤더·fetch 프레임·이미지 판별을 가져왔습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 캐시나 미들웨어를 쓰는 앱은 가급적 올리는 것이 좋습니다. 변경 이력만 읽어 CVE 번호는 확인하지 못했습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="nx-2405-패치-3개">Nx 24.0.5 (패치 3개)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nx-2405-패치-3개"><span class="icon icon-link"></span></a></h4>
+<p>모노레포 빌드 시스템입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 24.0.3~24.0.5에서 보안 하드닝 성격의 수정이 많았습니다. 그래프 서버를 같은 출처의 로컬 요청에만 응답하게 하고, Nx Cloud 자격 증명과 태스크 인자가 분석 데이터·URL에 들어가지 않게 했으며, <code>nx import</code>의 git 처리와 <code>nx release</code>에서 git·커밋 입력을 데이터로만 다루도록 강화했습니다. 캐시 복원이 태스크 출력 안에만 머물게 하고, 연속 태스크가 0이 아닌 코드로 끝나면 실행을 실패시키며, <code>nx migrate</code>가 받은 메타데이터를 검증합니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 연속 태스크(예: 서버 실행)의 비정상 종료가 이제 실행 실패로 잡히므로 CI를 확인하세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="homebrew-7012">Homebrew 7.0.12<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#homebrew-7012"><span class="icon icon-link"></span></a></h4>
+<p>macOS 패키지 매니저입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — <code>brew info</code>가 의존성 없이도 빠진 라이브러리를 보여 주고 최신 런타임 의존성을 먼저 확인하게 바뀌었습니다. 속도 제한에 걸린 attestation(출처 증명) 조회를 재시도하지 않고, 변경 없는 생성 파일을 오류로 보고하지 않습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="-메이저-omarchy-v450">🔺 메이저 Omarchy v4.5.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-메이저-omarchy-v450"><span class="icon icon-link"></span></a></h4>
+<p>Arch Linux에 Hyprland 설정을 입힌 배포용 구성입니다. 이번 정리의 기준 버전(v3.8.0)보다 메이저 숫자가 커서 표시했습니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 설치 메뉴에 Notion이 추가되고, 에이전트·지문 인식 설정 안내가 첫 업데이트 뒤가 아니라 온라인이 된 뒤에 나옵니다. 클립보드 패널과 이모지 선택기의 빈 결과·긴 메시지 표시가 고쳐졌고, 업데이트가 교체한 Hyprland가 새 설정을 다시 읽지 못하던 문제가 수정됐습니다. 2017년형 iMac 5K 지원이 추가됐습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 마이그레이션이 실행되므로 업데이트 전에 설정을 백업해 두세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="vite-v836">Vite v8.3.6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite-v836"><span class="icon icon-link"></span></a></h4>
+<p>프론트엔드 빌드 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 플러그인 컨테이너 종료가 겹쳐 호출될 때의 처리, 쿼리가 붙은 동적 import의 CSS 의존성 수집, 청크 import map 해시의 안정성을 고쳤습니다. 실험적 bundled-dev 모드에서는 Node 내장 모듈의 named import를 허용하고, 엔트리를 다시 실행하지 못할 때 리로드합니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: <a href="https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="angular-2225--21226--20335">Angular 22.2.5 · 21.2.26 · 20.3.35<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#angular-2225--21226--20335"><span class="icon icon-link"></span></a></h4>
+<p>JavaScript 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 22.2.5는 <code>rxResource</code>에 <code>debugName</code> 옵션을 추가하고, img/video의 <code>src</code>가 null이면 속성을 제거하며, 주석 표시 문자를 이스케이프합니다. forms는 호환 필드에서 required 검증을 반영하고 <code>FormValueControl</code>의 <code>updateOn</code> blur·submit을 지원합니다. router는 navigation extras의 <code>focusReset</code>을 읽습니다. 21.x와 20.x는 다운그레이드된 컴포넌트의 템플릿 내용만 컴파일하는 수정 하나입니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: <a href="https://github.com/angular/angular/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="hono-v41316-패치-2개">Hono v4.13.16 (패치 2개)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#hono-v41316-패치-2개"><span class="icon icon-link"></span></a></h4>
+<p>엣지 환경용 웹 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — JWT 서명 구간이 base64url 문자 범위를 벗어나거나 헤더에 <code>crit</code>가 있으면 거부합니다. 비공개 보안 권고에서 병합된 수정으로 보이는 항목이 여럿 있으며, <code>mount</code>가 전달 경로를 만드는 방식, RegExpRouter의 줄바꿈 처리와 와일드카드 미들웨어 범위, CSS 헬퍼의 닫는 태그 이스케이프가 바뀌었습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 권고 번호는 읽지 못했습니다. JWT 미들웨어나 <code>mount</code>, 와일드카드 라우트를 쓴다면 가급적 올리는 것이 좋습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="istio-1314--1308">Istio 1.31.4 · 1.30.8<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#istio-1314--1308"><span class="icon icon-link"></span></a></h4>
+<p>서비스 메시입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 1.31.4는 잘못된 형식의 디버그 리소스 이름 때문에 istiod가 죽던 문제, ambient 인증 정책의 nil to/from 항목 때문에 istiod가 죽던 문제를 고쳤습니다. 인증 정책의 authority와 Host 헤더 매칭을 대소문자 구분 없이 바꾸고, xDS 프록시 cluster ID를 인증된 클러스터에 묶었으며, HBONE 내부 리스너의 소스 IP 매칭을 고쳤습니다. 1.30.8은 같은 계열의 백포트 릴리스로 보이지만 항목별 확인은 하지 못했습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 인증 정책에서 Host 매칭이 대소문자 구분 없이 바뀌므로 정책 의도와 맞는지 확인하세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="nuxt-v464">Nuxt v4.6.4<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nuxt-v464"><span class="icon icon-link"></span></a></h4>
+<p>서버 렌더링 Vue.js 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 개발 서버가 예상치 못한 Host 헤더를 거부하고 <code>devServer.allowedHosts</code> 설정이 생겼습니다. <code>x-forwarded-proto</code>는 허용하도록 설정한 경우에만 신뢰하고, 신뢰할 수 없는 오류의 세부 정보를 노출하지 않습니다. 대소문자를 구분하지 않는 라우트 규칙의 와일드카드 꼬리, 인코딩된 슬래시 경로, 섬(island) 해시 인코딩이 고쳐졌습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 개발 서버를 별도 도메인이나 터널로 열어 쓴다면 <code>devServer.allowedHosts</code>를 설정해야 할 수 있습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="rspack-v231">Rspack v2.3.1<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rspack-v231"><span class="icon icon-link"></span></a></h4>
+<p>Rust 기반 웹 번들러입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — Module Federation 런타임의 비동기 시작 핸들러, HMR 청크 버전 검증, CSS 런타임에 공유 초기 청크 포함, source map에서 매핑되지 않은 소스 내용을 <code>null</code>로 보존하는 문제를 고쳤습니다. <code>split-chunks</code>는 타입·레이어 필터를 네이티브 경로에 유지해 성능이 개선됐습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="visual-studio-code-11450--11451--11452">Visual Studio Code 1.145.0 · 1.145.1 · 1.145.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#visual-studio-code-11450--11451--11452"><span class="icon icon-link"></span></a></h4>
+<p>에디터입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 1.145.2의 변경 이력은 에이전트 호스트(파일 승인 범위, 엔진 스냅샷, 로그인 전 에이전트 창 시작)와 채팅 성능, 검색에서 서러게이트 페어를 쪼개던 문제에 집중돼 있습니다. 1.145.0 본문 기능 목록은 읽지 못했습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 자동 업데이트를 쓰면 별도 조치는 필요 없습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="vitest-v510">Vitest v5.1.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vitest-v510"><span class="icon icon-link"></span></a></h4>
+<p>Vite 기반 유닛 테스트 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 실패한 스냅샷을 대화형으로 검토하며 갱신하는 기능이 들어왔습니다. 실험 기능으로 <code>vi.waitFor</code>와 <code>vi.waitUntil</code>의 <code>message</code> 옵션, Node 테스트의 트레이스 타임라인이 추가됐습니다. 프로젝트 경로에서 <code>rootDir</code>가 보존되고, 브라우저 모드는 테스터가 연결하지 못하면 실행을 실패시킵니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 브라우저 모드가 조용히 넘어가던 연결 실패를 이제 실패로 처리하니 CI를 확인하세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="argo-cd-v360--v361--v357--v3413--v3319">Argo CD v3.6.0 · v3.6.1 · v3.5.7 · v3.4.13 · v3.3.19<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#argo-cd-v360--v361--v357--v3413--v3319"><span class="icon icon-link"></span></a></h4>
+<p>Kubernetes 배포 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 3.6.1은 서버 측 diff 적용이 실패할 때 컨트롤러가 패닉하던 문제, Rollout에 status가 없을 때 액션 목록이 비던 문제, <code>--rootpath/--basehref</code>가 동작하지 않던 UI 문제를 고쳤습니다. CronJob의 마지막 예약·성공 시각이 요약 패널에 표시됩니다. 3.5.7·3.4.13·3.3.19는 같은 날 나온 이전 라인 패치로 내용은 읽지 못했습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 3.6.0 마이그레이션 안내는 읽지 못했으니 3.5에서 올린다면 공식 업그레이드 문서를 확인하세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="bazel-932">Bazel 9.3.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#bazel-932"><span class="icon icon-link"></span></a></h4>
+<p>빌드 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — linux-sandbox 액션이 중간에 종료되던 문제를 고쳤고, 원격 실행 액션 salt에서 원격 엔드포인트·인스턴스 플래그를 뺐으며, Java 규칙의 서버 JAR 재압축을 되살렸습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 원격 실행 salt가 바뀌어 첫 빌드에서 캐시가 한 번 새로 채워질 수 있습니다.</p>
+<p>릴리스 공지: <a href="https://github.com/bazelbuild/bazel/blob/9.3.2/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="biome-v265--v266">Biome v2.6.5 · v2.6.6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#biome-v265--v266"><span class="icon icon-link"></span></a></h4>
+<p>프론트엔드 툴체인입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 두 릴리스 모두 nursery(실험 단계) 린트 규칙을 대거 추가했습니다. 2.6.5는 배열 <code>forEach</code> 사용이나 <code>Promise.all</code> 안의 <code>await</code> 같은 패턴을 잡는 규칙 등을, 2.6.6은 <code>noArrayMethodsOnArguments</code>, <code>noConstantComparisons</code>, <code>noErasingOperation</code>, <code>noNegatedArrayPredicate</code>, <code>noNumberArgumentOutOfRange</code>, <code>noSharedBranchCode</code> 등을 추가했습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — nursery 규칙은 직접 켜지 않으면 동작하지 않으므로 그대로 올려도 됩니다.</p>
+<p>릴리스 공지: <a href="https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="gradle-990">Gradle 9.9.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#gradle-990"><span class="icon icon-link"></span></a></h4>
+<p>Java 빌드 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — Kotlin DSL 스크립트가 Kotlin Build Tools API로 컴파일돼 <code>buildSrc</code>나 included build를 바꾼 뒤 재컴파일이 큰 멀티 프로젝트 빌드에서 최대 65% 빨라졌습니다. <code>--tests</code> 필터가 ArchUnit 규칙 같은 메서드가 아닌 JUnit Platform 테스트에도 적용되고, wrapper 태스크는 사용자가 바꾼 속성을 업그레이드 뒤에도 유지합니다. Problems API가 문제를 영역별로 묶고, Windows Terminal 작업표시줄에 빌드 진행률이 표시됩니다. 사용자 매뉴얼이 Markdown으로 제공되고 빌드 보안 장이 추가됐습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 9.x 업그레이드 가이드의 deprecation과 breaking change 항목을 확인하세요. 호환 JDK·Groovy 범위는 공식 호환성 문서를 보세요.</p>
+<p>릴리스 공지: <a href="https://github.com/gradle/gradle/blob/v9.9.0/platforms/documentation/docs/src/docs/release/notes.md">릴리스 노트</a></p>
+<h4 id="lima-v230">Lima v2.3.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#lima-v230"><span class="icon icon-link"></span></a></h4>
+<p>리눅스 가상 머신을 쉽게 띄우는 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — WSL2 네이티브 마운트를 경로 변환과 부팅 시 bind mount로 지원합니다. sudoers 항목이 합쳐진 인자로 만족되던 문제를 막았고, QEMU를 현재 디렉토리가 아니라 인스턴스 디렉토리에서 실행하며, 기존 인스턴스의 VM 유형을 바꾸면 경고합니다. 겹치는 마운트는 지원하지 않는다는 점이 문서에 명시됐습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 겹치는 마운트를 쓰고 있다면 점검하세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="ollama-v04015-패치-2개">ollama v0.40.15 (패치 2개)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#ollama-v04015-패치-2개"><span class="icon icon-link"></span></a></h4>
+<p>로컬에서 오픈 모델을 실행하는 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — <code>ollama launch</code>에 Kimi Code CLI 지원이 추가됐고 Claude Desktop 모델 선택기에 게이트웨이 모델 이름이 표시됩니다. MLX 러너는 Qwen3 계열 YaRN 스케일링을 지원하고 지원하지 않는 CUDA 장치를 거부합니다. llama-server는 순환 구조·비전 모델의 병렬 요청을 허용합니다. 클라우드 웹 검색 응답 디코딩과 OpenAI 호환 API가 모델 기본 샘플러 값을 덮어쓰던 문제가 수정됐습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — OpenAI 호환 API로 샘플링 파라미터를 지정하지 않았다면 이제 모델 기본값이 쓰입니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="react-native-skia-v391--v390">React Native Skia v3.9.1 · v3.9.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-native-skia-v391--v390"><span class="icon icon-link"></span></a></h4>
+<p>React Native용 2D 그래픽 라이브러리입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 3.9.1은 iOS에서 뷰의 네이티브 뷰가 상위 뷰 밖으로 새지 않도록 하고, 앱이 백그라운드일 때 GPU 작업을 멈추며, vsync마다 기록 하나만 표시하도록 고쳤습니다. Android는 메인 스레드 작업 전달에서 Java 호출을 줄였고, Imagination GPU에서 TransientAttachments를 요청하지 않습니다. 3.9.0 변경은 읽지 못했습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="rolldown-v130">Rolldown v1.3.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rolldown-v130"><span class="icon icon-link"></span></a></h4>
+<p>Rust 기반 JS/TS 번들러입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — CLI가 <code>--input</code>과 위치 인자 엔트리를 함께 쓰면 Rollup처럼 거부합니다. 플러그인 훅(<code>resolveId</code>, <code>load</code>, <code>transform</code> 등)에 import attributes를 전달하는 실험 기능이 들어왔고 <code>notify</code> API가 노출됩니다. <code>NO_COLOR</code> 존중, 출력 디렉토리 심볼릭 링크를 따르지 않는 <code>output.cleanDir</code>, 트리 셰이킹 수정이 포함됩니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 스크립트가 <code>--input</code>과 엔트리 인자를 같이 넘기고 있지 않은지 확인하세요.</p>
+<p>릴리스 공지: <a href="https://github.com/rolldown/rolldown/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="rstest-v0126">Rstest v0.12.6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rstest-v0126"><span class="icon icon-link"></span></a></h4>
+<p>Rspack 기반 테스트 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — <code>sequence.setupFiles</code> 옵션과 병렬 라이프사이클 훅을 지원하고, <code>passWithNoTests</code> 출력을 간결하게 했으며, 테스트 파일 스케줄링에 모듈 로딩 시간을 포함하고, V8 커버리지의 CJS 래퍼 오프셋을 보정했습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="storybook-v1066">Storybook v10.6.6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#storybook-v1066"><span class="icon icon-link"></span></a></h4>
+<p>UI 컴포넌트 개발 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — StackBlitz가 dev 서버를 다시 embed할 수 있게 고쳤고, 텔레메트리에 VRT 패키지를 추가했습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: <a href="https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="tailwind-css-v435--v434">Tailwind CSS v4.3.5 · v4.3.4<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#tailwind-css-v435--v434"><span class="icon icon-link"></span></a></h4>
+<p>CSS 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 4.3.4는 Next.js용 Turbopack 로더 <code>@tailwindcss/turbopack</code>을 추가하고, <code>@scope</code> variant가 유틸리티를 감싸도록 고쳤으며, Vite <code>bundledDev</code>에서 편집 때마다 죽던 문제와 네이티브 바인딩이 없는 플랫폼에서 WASM으로 폴백하는 문제를 고쳤습니다. 4.3.5는 많은 variant 값에서 canonicalization 성능을 개선하고, 보간 방식이 없는 <code>color-mix()</code> 크래시를 고쳤습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: <a href="https://github.com/tailwindlabs/tailwindcss/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+<h3 id="마무리">마무리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#마무리"><span class="icon icon-link"></span></a></h3>
+<p>변경점을 읽지 못해 본문에서 뺀 릴리스 3건(생략)은 Zed v1.27.0, vLLM v0.33.0, Obsidian v1.15.0입니다. 모두 새 정식 버전이 확인됐지만 읽을 수 있는 변경 설명이 없었습니다.</p>
+<p>확인 실패 14개는 호스트가 세션 네트워크에서 막혀 읽지 못한 공식 사이트 기반 소스입니다. TypeScript(devblogs.microsoft.com), Expo SDK, GraalVM, JDK, Android, Boundary, Cursor, GitButler, Manus, Swift, Ubuntu, Xcode, PyTorch 블로그, Go 릴리스 페이지입니다.</p>
+<p>확인 방식: npm/PyPI/git 태그 기반 (GitHub 릴리스 본문 미접근)</p>29:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$2c"}}]}]
+2a:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L8",null,{"href":"/ko/posts/2026-10-26-package-release-weekly","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L1f",null,{"ref":"$undefined","icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"이전 글"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"이번 주 패키지 릴리스 정리 — 2026-10-26"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+2b:["$","div",null,{"className":"hidden lg:block","children":["$","$L2d",null,{"headings":[{"id":"️-한-줄-요약","text":"✍️ 한 줄 요약","depth":2},{"id":"이번-주-한눈에-보기","text":"이번 주 한눈에 보기","depth":2},{"id":"패키지별-변경-내용","text":"패키지별 변경 내용","depth":2},{"id":"astro-747","text":"astro 7.4.7","depth":3},{"id":"pnpm-v12180--v112811","text":"pnpm v12.18.0 · v11.28.11","depth":3},{"id":"electron-v4523--v44102--v4387","text":"Electron v45.2.3 · v44.10.2 · v43.8.7","depth":3},{"id":"oxfmt-v0760--v0770","text":"Oxfmt v0.76.0 · v0.77.0","depth":3},{"id":"oxlint-v1910--v1920","text":"Oxlint v1.91.0 · v1.92.0","depth":3},{"id":"nextjs-v1645--v1644--v15529","text":"Next.js v16.4.5 · v16.4.4 · v15.5.29","depth":3},{"id":"nx-2405-패치-3개","text":"Nx 24.0.5 (패치 3개)","depth":3},{"id":"homebrew-7012","text":"Homebrew 7.0.12","depth":3},{"id":"-메이저-omarchy-v450","text":"🔺 메이저 Omarchy v4.5.0","depth":3},{"id":"vite-v836","text":"Vite v8.3.6","depth":3},{"id":"angular-2225--21226--20335","text":"Angular 22.2.5 · 21.2.26 · 20.3.35","depth":3},{"id":"hono-v41316-패치-2개","text":"Hono v4.13.16 (패치 2개)","depth":3},{"id":"istio-1314--1308","text":"Istio 1.31.4 · 1.30.8","depth":3},{"id":"nuxt-v464","text":"Nuxt v4.6.4","depth":3},{"id":"rspack-v231","text":"Rspack v2.3.1","depth":3},{"id":"visual-studio-code-11450--11451--11452","text":"Visual Studio Code 1.145.0 · 1.145.1 · 1.145.2","depth":3},{"id":"vitest-v510","text":"Vitest v5.1.0","depth":3},{"id":"argo-cd-v360--v361--v357--v3413--v3319","text":"Argo CD v3.6.0 · v3.6.1 · v3.5.7 · v3.4.13 · v3.3.19","depth":3},{"id":"bazel-932","text":"Bazel 9.3.2","depth":3},{"id":"biome-v265--v266","text":"Biome v2.6.5 · v2.6.6","depth":3},{"id":"gradle-990","text":"Gradle 9.9.0","depth":3},{"id":"lima-v230","text":"Lima v2.3.0","depth":3},{"id":"ollama-v04015-패치-2개","text":"ollama v0.40.15 (패치 2개)","depth":3},{"id":"react-native-skia-v391--v390","text":"React Native Skia v3.9.1 · v3.9.0","depth":3},{"id":"rolldown-v130","text":"Rolldown v1.3.0","depth":3},{"id":"rstest-v0126","text":"Rstest v0.12.6","depth":3},{"id":"storybook-v1066","text":"Storybook v10.6.6","depth":3},{"id":"tailwind-css-v435--v434","text":"Tailwind CSS v4.3.5 · v4.3.4","depth":3},{"id":"마무리","text":"마무리","depth":2}],"title":"목차"}]}]
