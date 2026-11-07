@@ -68,12 +68,13 @@ test.describe('category filter', () => {
     async ({ page }) => {
       await page.goto('/ko/posts/');
 
-      await page.getByRole('button', { name: /^개발/ }).click();
-      await expect(page).toHaveURL(/category=(%EA%B0%9C%EB%B0%9C|개발)/);
-      await expect(page.getByRole('button', { name: /^개발/ })).toHaveAttribute(
-        'aria-pressed',
-        'true',
+      await page.getByRole('button', { name: /^상태관리/ }).click();
+      await expect(page).toHaveURL(
+        /category=(%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC|상태관리)/,
       );
+      await expect(
+        page.getByRole('button', { name: /^상태관리/ }),
+      ).toHaveAttribute('aria-pressed', 'true');
 
       await page.getByRole('button', { name: /전체/ }).click();
       await expect(page).toHaveURL(/\/ko\/posts\/(\?)?$/);
@@ -84,12 +85,11 @@ test.describe('category filter', () => {
     'AC-4.5 ?category= 로 진입하면 해당 칩이 선택된 채로 복원된다',
     { tag: ['@regression', '@e2e-mock'] },
     async ({ page }) => {
-      await page.goto('/ko/posts/?category=도구');
+      await page.goto('/ko/posts/?category=테스트');
 
-      await expect(page.getByRole('button', { name: /도구/ })).toHaveAttribute(
-        'aria-pressed',
-        'true',
-      );
+      await expect(
+        page.getByRole('button', { name: /^테스트/ }),
+      ).toHaveAttribute('aria-pressed', 'true');
       await expect(page.getByRole('button', { name: /전체/ })).toHaveAttribute(
         'aria-pressed',
         'false',
@@ -103,10 +103,13 @@ test.describe('category filter', () => {
     async ({ page }) => {
       await page.goto('/ko/');
       // 한글 카테고리라 href가 퍼센트 인코딩된다.
-      await page.locator('a[href*="category=%EB%8F%84%EA%B5%AC"]').click();
+      await page
+        .locator('a[href*="category=%EC%84%B1%EB%8A%A5"]')
+        .first()
+        .click();
 
-      await expect(page).toHaveURL(/category=(%EB%8F%84%EA%B5%AC|도구)/);
-      await expect(page.getByRole('button', { name: /도구/ })).toHaveAttribute(
+      await expect(page).toHaveURL(/category=(%EC%84%B1%EB%8A%A5|성능)/);
+      await expect(page.getByRole('button', { name: /^성능/ })).toHaveAttribute(
         'aria-pressed',
         'true',
       );

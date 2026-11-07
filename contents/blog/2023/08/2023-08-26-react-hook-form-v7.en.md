@@ -3,8 +3,8 @@ layout: post
 title: react-hook-form v7
 date: 2023-08-26
 published: 2023-08-26
-category: Development
-tags: ['form']
+category: React
+tags: ['react-hook-form', 'migration']
 comments: true,
 thumbnail: './assets/26/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

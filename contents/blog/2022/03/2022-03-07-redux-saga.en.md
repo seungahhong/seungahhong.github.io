@@ -3,8 +3,8 @@ layout: post
 title: redux-saga
 date: 2022-03-07
 published: 2022-03-07
-category: Development
-tags: ['state management']
+category: State Management
+tags: ['Flux']
 comments: true,
 thumbnail: './assets/07/thumbnail.png'
 github: 'https://github.com/seungahhong/states-todos'

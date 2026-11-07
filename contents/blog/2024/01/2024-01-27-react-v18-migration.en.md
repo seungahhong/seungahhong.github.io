@@ -3,8 +3,8 @@ layout: post
 title: React v18 migration
 date: 2024-01-27
 published: 2024-01-27
-category: Development
-tags: ['react']
+category: React
+tags: ['react', 'migration']
 comments: true
 thumbnail: './assets/27/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

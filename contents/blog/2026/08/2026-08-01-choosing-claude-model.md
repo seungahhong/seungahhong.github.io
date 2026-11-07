@@ -3,8 +3,8 @@ layout: post
 title: Claude 모델 고르기 — 똑똑한 것부터 시작하라
 date: 2026-08-01
 published: 2026-08-01
-category: 개발
-tags: ['AI', 'Claude', '모델선택', 'LLM']
+category: AI 엔지니어링
+tags: ['Claude', 'LLM']
 comments: true
 thumbnail: './assets/01/thumbnail.png'
 github: ''

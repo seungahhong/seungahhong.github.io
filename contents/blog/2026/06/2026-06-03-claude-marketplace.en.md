@@ -3,8 +3,8 @@ layout: post
 title: Building a Claude Code Plugin Marketplace
 date: 2026-06-03
 published: 2026-06-03
-category: Development
-tags: ['Claude', 'AI', 'Plugin']
+category: AI Engineering
+tags: ['Claude', 'skills', 'harness']
 comments: true
 thumbnail: './assets/03/thumbnail.en.png'
 github: 'https://github.com/seungahhong/seungah-claude-plugins'

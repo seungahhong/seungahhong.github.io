@@ -3,8 +3,8 @@ layout: post
 title: Your Org's Know-How Now Lives in Skills — Ungoverned, It Becomes Technical Debt
 date: 2026-09-06
 published: 2026-09-06
-category: Development
-tags: ['AI', 'agents', 'skills', 'governance', 'harness']
+category: Teams & Process
+tags: ['skills', 'ai-adoption', 'harness']
 comments: true
 thumbnail: './assets/06/thumbnail.en.png'
 github: ''

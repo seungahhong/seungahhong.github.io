@@ -3,8 +3,8 @@ layout: post
 title: FE 개발 프로세스
 date: 2023-01-01
 published: 2023-01-01
-category: 개발
-tags: ['process']
+category: 조직·프로세스
+tags: ['SDLC']
 comments: true,
 thumbnail: './assets/01/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

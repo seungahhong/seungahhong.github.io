@@ -3,8 +3,8 @@ layout: post
 title: FE 성능개선 - gif to mp4 변환
 date: 2025-02-09
 published: 2025-02-09
-category: 개발
-tags: ['performance']
+category: 성능
+tags: ['브라우저']
 comments: true
 thumbnail: './assets/09/thumbnail.jpeg'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

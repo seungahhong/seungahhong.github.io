@@ -3,8 +3,8 @@ layout: post
 title: 개발 생산성 & 빌드 성능 개선
 date: 2024-05-12
 published: 2024-05-12
-category: 개발
-tags: ['performance']
+category: 성능
+tags: ['번들러', '패키지매니저']
 comments: true,
 thumbnail: './assets/12/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

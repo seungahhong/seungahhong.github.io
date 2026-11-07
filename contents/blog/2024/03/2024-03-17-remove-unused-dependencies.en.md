@@ -3,8 +3,8 @@ layout: post
 title: Removing Unused Dependencies
 date: 2024-03-17
 published: 2024-03-17
-category: Development
-tags: ['performance']
+category: Performance
+tags: ['package-manager']
 comments: true
 thumbnail: './assets/17/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

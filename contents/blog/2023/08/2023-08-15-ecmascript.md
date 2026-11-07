@@ -3,7 +3,7 @@ layout: post
 title: ecmascript
 date: 2023-08-15
 published: 2023-08-15
-category: 개발
+category: JavaScript·웹
 tags: ['javascript']
 comments: true,
 thumbnail: './assets/15/thumbnail.jpeg'

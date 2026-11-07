@@ -3,8 +3,8 @@ layout: post
 title: nextjs 15
 date: 2024-11-23
 published: 2024-11-23
-category: Development
-tags: ['nextjs']
+category: Frameworks
+tags: ['nextjs', 'migration']
 comments: true,
 thumbnail: './assets/23/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

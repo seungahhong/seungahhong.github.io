@@ -3,8 +3,8 @@ layout: post
 title: A Summary of React State Management
 date: 2023-09-10
 published: 2023-09-10
-category: Development
-tags: ['State Management']
+category: State Management
+tags: ['Flux', 'Atomic', 'server-state']
 comments: true,
 thumbnail: './assets/10/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

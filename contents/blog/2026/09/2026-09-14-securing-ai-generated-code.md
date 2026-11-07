@@ -3,8 +3,8 @@ layout: post
 title: 작동한다는 건 안전하다는 뜻이 아니다 — AI가 쓴 코드를 지키는 5가지 원칙
 date: 2026-09-14
 published: 2026-09-14
-category: 개발
-tags: ['AI', '보안', '시프트레프트', 'DevSecOps', '에이전트']
+category: AI 엔지니어링
+tags: ['보안', '코드품질', '에이전트']
 comments: true
 thumbnail: './assets/14/thumbnail.png'
 github: ''

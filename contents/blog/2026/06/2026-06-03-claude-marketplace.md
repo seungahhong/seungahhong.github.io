@@ -3,8 +3,8 @@ layout: post
 title: Claude Code 플러그인 마켓플레이스 구축
 date: 2026-06-03
 published: 2026-06-03
-category: 개발
-tags: ['Claude', 'AI', 'Plugin']
+category: AI 엔지니어링
+tags: ['Claude', '스킬', '하네스']
 comments: true
 thumbnail: './assets/03/thumbnail.png'
 github: 'https://github.com/seungahhong/seungah-claude-plugins'

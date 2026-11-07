@@ -3,8 +3,8 @@ layout: post
 title: 도구는 변수가 아니었다 — 같은 도구를 쓴 50개 팀이 갈린 지점
 date: 2026-09-05
 published: 2026-09-05
-category: 개발
-tags: ['AI', '에이전트', '개발프로세스', '생산성', '팀']
+category: 조직·프로세스
+tags: ['AI도입', '에이전트']
 comments: true
 thumbnail: './assets/05/thumbnail.png'
 github: ''

@@ -3,8 +3,8 @@ layout: post
 title: next14 migration
 date: 2024-01-20
 published: 2024-01-20
-category: 개발
-tags: ['nextjs']
+category: 프레임워크
+tags: ['nextjs', '마이그레이션', 'css']
 comments: true,
 thumbnail: './assets/20/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

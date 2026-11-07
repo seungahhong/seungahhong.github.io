@@ -3,8 +3,8 @@ layout: post
 title: Weekly Package Releases — 2026-10-26
 date: 2026-10-26
 published: 2026-10-26
-category: Development
-tags: ['release', 'packages', 'weekly']
+category: Weekly Releases
+tags: []
 comments: true
 thumbnail: './assets/26/thumbnail.en.png'
 github: ''

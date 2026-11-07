@@ -3,8 +3,8 @@ layout: post
 title: More Tokens Won't Make It Smarter — 76 to 89 on the Same Budget
 date: 2026-09-16
 published: 2026-09-16
-category: Development
-tags: ['AI', 'Claude', 'agents', 'context-engineering', 'cost']
+category: AI Engineering
+tags: ['context-engineering', 'agents', 'Claude']
 comments: true
 thumbnail: './assets/16/thumbnail.en.png'
 github: ''

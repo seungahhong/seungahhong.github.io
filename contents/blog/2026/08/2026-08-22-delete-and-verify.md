@@ -3,8 +3,8 @@ layout: post
 title: Claude Code 만든 사람의 손버릇 — 지우고, 어렵게 주고, 검증시켜라
 date: 2026-08-22
 published: 2026-08-22
-category: 개발
-tags: ['AI', 'Claude', '에이전트', '검증', '하네스']
+category: AI 엔지니어링
+tags: ['에이전트', '하네스', 'Claude']
 comments: true
 thumbnail: './assets/22/thumbnail.png'
 github: ''

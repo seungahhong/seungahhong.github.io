@@ -3,8 +3,8 @@ layout: post
 title: 지시를 늘릴수록 덜 지켜진다 — 에이전트가 실제로 따르는 스펙 쓰는 법
 date: 2026-09-13
 published: 2026-09-13
-category: 개발
-tags: ['AI', '에이전트', '스펙', '컨텍스트엔지니어링', 'PRD']
+category: AI 엔지니어링
+tags: ['스펙', '컨텍스트엔지니어링', '에이전트']
 comments: true
 thumbnail: './assets/13/thumbnail.png'
 github: ''

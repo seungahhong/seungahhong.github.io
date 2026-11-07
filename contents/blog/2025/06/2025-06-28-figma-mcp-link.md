@@ -3,8 +3,8 @@ layout: post
 title: figma mcp link
 date: 2025-06-28
 published: 2025-06-28
-category: 개발
-tags: ['mcp']
+category: AI 엔지니어링
+tags: ['MCP', 'UI', 'Claude']
 comments: true
 thumbnail: './assets/28/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

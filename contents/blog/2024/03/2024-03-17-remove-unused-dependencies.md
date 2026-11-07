@@ -3,8 +3,8 @@ layout: post
 title: 미사용 의존성 제거
 date: 2024-03-17
 published: 2024-03-17
-category: 개발
-tags: ['performance']
+category: 성능
+tags: ['패키지매니저']
 comments: true
 thumbnail: './assets/17/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

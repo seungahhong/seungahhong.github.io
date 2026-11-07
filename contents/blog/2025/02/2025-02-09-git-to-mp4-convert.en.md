@@ -3,8 +3,8 @@ layout: post
 title: FE Performance Improvement - Converting gif to mp4
 date: 2025-02-09
 published: 2025-02-09
-category: Development
-tags: ['performance']
+category: Performance
+tags: ['browser']
 comments: true
 thumbnail: './assets/09/thumbnail.jpeg'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

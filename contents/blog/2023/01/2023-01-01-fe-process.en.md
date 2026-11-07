@@ -3,8 +3,8 @@ layout: post
 title: FE Development Process
 date: 2023-01-01
 published: 2023-01-01
-category: Development
-tags: ['process']
+category: Teams & Process
+tags: ['SDLC']
 comments: true,
 thumbnail: './assets/01/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

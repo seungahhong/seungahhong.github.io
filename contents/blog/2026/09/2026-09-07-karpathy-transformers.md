@@ -3,8 +3,8 @@ layout: post
 title: 트랜스포머는 범용 미분 가능 컴퓨터다 — 카파시 강의를 2026년에 다시 보기
 date: 2026-09-07
 published: 2026-09-07
-category: 개발
-tags: ['AI', 'LLM', '트랜스포머', '어텐션', 'nanoGPT']
+category: AI 엔지니어링
+tags: ['LLM']
 comments: true
 thumbnail: './assets/07/thumbnail.png'
 github: ''

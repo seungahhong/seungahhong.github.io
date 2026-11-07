@@ -3,8 +3,8 @@ layout: post
 title: The AI-Native SDLC Playbook — Code Is No Longer the Bottleneck
 date: 2026-08-23
 published: 2026-08-23
-category: Development
-tags: ['AI', 'Claude', 'SDLC', 'harness', 'dev-process']
+category: Teams & Process
+tags: ['SDLC', 'harness', 'Claude']
 comments: true
 thumbnail: './assets/23/thumbnail.en.png'
 github: ''

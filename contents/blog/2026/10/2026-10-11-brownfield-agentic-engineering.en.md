@@ -3,8 +3,8 @@ layout: post
 title: Running Agents in a Codebase Older Than the Team — Brownfield Agentic Engineering
 date: 2026-10-11
 published: 2026-10-11
-category: Development
-tags: ['AI', 'agents', 'legacy', 'migration', 'harness']
+category: AI Engineering
+tags: ['migration', 'agents', 'harness']
 comments: true
 thumbnail: './assets/11/thumbnail.en.png'
 github: ''

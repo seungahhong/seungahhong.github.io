@@ -3,8 +3,8 @@ layout: post
 title: react-query(v5)
 date: 2023-07-23
 published: 2023-07-23
-category: Development
-tags: ['state management']
+category: State Management
+tags: ['server-state', 'tanstack', 'migration']
 comments: true,
 thumbnail: './assets/23/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

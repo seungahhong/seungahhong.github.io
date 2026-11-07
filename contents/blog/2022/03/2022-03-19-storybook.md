@@ -3,8 +3,8 @@ layout: post
 title: storybook
 date: 2022-03-19
 published: 2022-03-19
-category: 개발
-tags: ['storybook']
+category: 빌드·도구
+tags: ['UI']
 comments: true,
 thumbnail: './assets/19/thumbnail.png'
 github: 'https://github.com/seungahhong/design-system'

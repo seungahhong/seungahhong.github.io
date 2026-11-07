@@ -3,8 +3,8 @@ layout: post
 title: react-query
 date: 2022-12-30
 published: 2022-12-30
-category: 개발
-tags: ['상태관리']
+category: 상태관리
+tags: ['서버상태']
 comments: true,
 thumbnail: './images/30/thumbnail.png'
 github: 'https://github.com/seungahhong/states-todos'

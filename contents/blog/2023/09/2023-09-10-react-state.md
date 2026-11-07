@@ -3,8 +3,8 @@ layout: post
 title: 리액트 상태관리 정리
 date: 2023-09-10
 published: 2023-09-10
-category: 개발
-tags: ['상태관리']
+category: 상태관리
+tags: ['Flux', 'Atomic', '서버상태']
 comments: true,
 thumbnail: './assets/10/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

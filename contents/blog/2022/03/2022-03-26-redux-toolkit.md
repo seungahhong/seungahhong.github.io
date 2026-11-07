@@ -3,8 +3,8 @@ layout: post
 title: redux-toolkit
 date: 2022-03-26
 published: 2022-03-26
-category: 개발
-tags: ['상태관리']
+category: 상태관리
+tags: ['Flux']
 comments: true,
 thumbnail: './assets/26/thumbnail.png'
 github: 'https://github.com/seungahhong/states-todos'

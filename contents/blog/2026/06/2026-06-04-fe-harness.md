@@ -3,8 +3,8 @@ layout: post
 title: Frontend 하네스 엔지니어링
 date: 2026-06-04
 published: 2026-06-04
-category: 개발
-tags: ['AI', '하네스', 'Claude']
+category: AI 엔지니어링
+tags: ['하네스', 'Claude']
 comments: true
 thumbnail: './assets/04/thumbnail.png'
 github: ''

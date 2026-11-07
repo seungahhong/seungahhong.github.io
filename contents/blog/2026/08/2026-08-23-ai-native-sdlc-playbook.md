@@ -3,8 +3,8 @@ layout: post
 title: AI 네이티브 SDLC 플레이북 — 코드는 더 이상 병목이 아니다
 date: 2026-08-23
 published: 2026-08-23
-category: 개발
-tags: ['AI', 'Claude', 'SDLC', '하네스', '개발프로세스']
+category: 조직·프로세스
+tags: ['SDLC', '하네스', 'Claude']
 comments: true
 thumbnail: './assets/23/thumbnail.png'
 github: ''

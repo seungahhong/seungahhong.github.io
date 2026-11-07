@@ -3,8 +3,8 @@ layout: post
 title: Playwright
 date: 2023-04-02
 published: 2023-04-02
-category: 개발
-tags: ['test']
+category: 테스트
+tags: ['E2E']
 comments: true,
 thumbnail: './assets/02/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

@@ -3,8 +3,8 @@ layout: post
 title: TypeScript 7.0
 date: 2026-07-14
 published: 2026-07-14
-category: 개발
-tags: ['typescript']
+category: JavaScript·웹
+tags: ['typescript', '컴파일러', '마이그레이션']
 comments: true
 thumbnail: './assets/14/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

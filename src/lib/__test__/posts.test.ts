@@ -240,11 +240,12 @@ describe('real blog content', () => {
   });
 
   it('reflects known category and tag counts', () => {
+    // 새 글이 거의 들어오지 않는 옛 주제를 골라, 글을 추가할 때마다 깨지지 않게 한다.
     expect(getCategoryCounts(all)).toContainEqual({
-      category: '개발',
-      count: 88,
+      category: 'CS·시스템',
+      count: 4,
     });
-    expect(getTagCounts(all)).toContainEqual({ tag: '상태관리', count: 12 });
+    expect(getTagCounts(all)).toContainEqual({ tag: 'Flux', count: 5 });
   });
 
   it('renders a real post and returns null for unknown slugs', async () => {

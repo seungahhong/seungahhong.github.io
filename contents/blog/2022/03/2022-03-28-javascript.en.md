@@ -3,7 +3,7 @@ layout: post
 title: javascript
 date: 2022-03-28
 published: 2022-03-28
-category: Development
+category: JavaScript & Web
 tags: ['javascript']
 comments: true,
 thumbnail: './assets/28/thumbnail.jpg'

@@ -3,8 +3,8 @@ layout: post
 title: The Transformer Is a General-Purpose Differentiable Computer — Rewatching Karpathy's Lecture in 2026
 date: 2026-09-07
 published: 2026-09-07
-category: Development
-tags: ['AI', 'LLM', 'transformer', 'attention', 'nanoGPT']
+category: AI Engineering
+tags: ['LLM']
 comments: true
 thumbnail: './assets/07/thumbnail.en.png'
 github: ''

@@ -3,8 +3,8 @@ layout: post
 title: 사람이 모든 줄을 읽지 않아도 되는 이유 — Claude Code 팀의 코드 리뷰 방식
 date: 2026-11-05
 published: 2026-11-05
-category: 개발
-tags: ['AI', '에이전트', '코드리뷰', 'Claude Code', '하네스']
+category: AI 엔지니어링
+tags: ['코드품질', '에이전트', 'Claude', '하네스']
 comments: true
 thumbnail: './assets/05/thumbnail.png'
 github: ''

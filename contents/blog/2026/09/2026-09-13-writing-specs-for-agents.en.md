@@ -3,8 +3,8 @@ layout: post
 title: More Instructions, Less Compliance — Writing Specs Agents Actually Follow
 date: 2026-09-13
 published: 2026-09-13
-category: Development
-tags: ['AI', 'agents', 'spec', 'context engineering', 'PRD']
+category: AI Engineering
+tags: ['spec', 'context-engineering', 'agents']
 comments: true
 thumbnail: './assets/13/thumbnail.en.png'
 github: ''

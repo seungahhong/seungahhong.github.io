@@ -3,8 +3,8 @@ layout: post
 title: Product Spec Harness (product-spec-harness)
 date: 2026-07-12
 published: 2026-07-12
-category: Development
-tags: ['AI', 'Harness', 'PRD', 'Product Spec', 'Claude']
+category: AI Engineering
+tags: ['harness', 'spec', 'Claude']
 comments: true
 thumbnail: './assets/12/thumbnail.en.png'
 github: ''

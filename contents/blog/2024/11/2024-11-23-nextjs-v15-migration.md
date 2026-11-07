@@ -3,8 +3,8 @@ layout: post
 title: nextjs 15
 date: 2024-11-23
 published: 2024-11-23
-category: 개발
-tags: ['nextjs']
+category: 프레임워크
+tags: ['nextjs', '마이그레이션']
 comments: true,
 thumbnail: './assets/23/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

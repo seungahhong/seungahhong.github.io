@@ -3,8 +3,8 @@ layout: post
 title: TanStack Start 1.0
 date: 2026-10-22
 published: 2026-10-22
-category: 개발
-tags: ['tanstack', 'react', 'framework']
+category: 프레임워크
+tags: ['tanstack', '마이그레이션']
 comments: true
 thumbnail: './assets/22/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'
