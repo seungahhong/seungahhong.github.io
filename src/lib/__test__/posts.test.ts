@@ -220,9 +220,9 @@ describe('translation fallback', () => {
 describe('real blog content', () => {
   const all = getAllPosts('ko', CONTENT_ROOT);
 
-  it('discovers all 89 posts with unique slugs', () => {
-    expect(all).toHaveLength(89);
-    expect(new Set(all.map((p) => p.slug)).size).toBe(89);
+  it('discovers all 90 posts with unique slugs', () => {
+    expect(all).toHaveLength(90);
+    expect(new Set(all.map((p) => p.slug)).size).toBe(90);
   });
 
   it('parses valid, well-formed metadata for every post', () => {
@@ -242,7 +242,7 @@ describe('real blog content', () => {
   it('reflects known category and tag counts', () => {
     expect(getCategoryCounts(all)).toContainEqual({
       category: '개발',
-      count: 87,
+      count: 88,
     });
     expect(getTagCounts(all)).toContainEqual({ tag: '상태관리', count: 12 });
   });
