@@ -1,0 +1,442 @@
+3:"$Sreact.fragment"
+4:"/_next/static/chunks/12-fpzohv1xd4.js"
+5:I[9619,["$4"],"default"]
+6:I[23615,["$4"],"default"]
+e:"/_next/static/chunks/2kf7_4zlzxl0h.js"
+f:"/_next/static/chunks/0-jsxcg-veu-w.js"
+10:I[53403,["$4","$e","$f"],"default"]
+11:I[34242,["$4","$e","$f"],""]
+1d:"ViewportBoundary"
+1e:I[52085,["$4"],"$1d"]
+1f:"MetadataBoundary"
+20:I[52085,["$4"],"$1f"]
+21:"$Sreact.suspense"
+8:X
+8:C
+9:X
+d:T671,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Why Humans Don't Have to Read Every Line — How the Claude Code Team Does Code Review","description":"Code Review on the Claude Code Team: Machines Do the Reading, People Go Where the Risk Is Notes on How the Claude Code team does code review by Addy Osmani,…","datePublished":"2026-11-05","dateModified":"2026-11-05","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-11-05-claude-code-team-code-review/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-11-05-claude-code-team-code-review/"},"image":"https://seungahhong.github.io/blog-assets/2026/11/assets/05/thumbnail.en.png","keywords":["AI","agents","code review","Claude Code","harness"],"articleSection":"Development","wordCount":4568,"timeRequired":"PT23M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}c:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$d"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Why Humans Don't Have to Read Every Line — How the Claude Code Team Does Code Review\",\"item\":\"https://seungahhong.github.io/en/posts/2026-11-05-claude-code-team-code-review/\"}]}"}}],["$","$L10",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L11",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L11",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Development"}]}],"$L12","$L13"]}]}],"$L14","$L15",false,"$L16"]}],"$L17","$L18"]}],"$L19"]}]}]],["$L1a"],"$L1b"]}],"p":"$@1c","v":null,"s":"$9"}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"2026-11-05-claude-code-team-code-review","s":[]},"h":96,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@b","v":"$8","s":"$9"},"c":"$Qc"}]]
+2:[["children",{"s":"posts","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"en","s":["about","blog"]},"h":32,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1e",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L20",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$21",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Why Humans Don't Have to Read Every Line — How the Claude Code Team Does Code Review · SeungAh Hong · Tech Blog"}],["$","meta","1",{"name":"description","content":"Code Review on the Claude Code Team: Machines Do the Reading, People Go Where the Risk Is Notes on How the Claude Code team does code review by Addy Osmani,…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"SeungAh Hong"}],["$","meta","4",{"name":"keywords","content":"AI,agents,code review,Claude Code,harness"}],["$","meta","5",{"name":"creator","content":"홍승아"}],["$","meta","6",{"name":"publisher","content":"홍승아"}],["$","meta","7",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://seungahhong.github.io/en/posts/2026-11-05-claude-code-team-code-review/"}],["$","link","9",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-11-05-claude-code-team-code-review/"}],["$","link","10",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-11-05-claude-code-team-code-review/"}],["$","link","11",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-11-05-claude-code-team-code-review/"}],["$","meta","12",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","13",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","14",{"property":"og:title","content":"Why Humans Don't Have to Read Every Line — How the Claude Code Team Does Code Review"}],["$","meta","15",{"property":"og:description","content":"Code Review on the Claude Code Team: Machines Do the Reading, People Go Where the Risk Is Notes on How the Claude Code team does code review by Addy Osmani,…"}],["$","meta","16",{"property":"og:url","content":"https://seungahhong.github.io/en/posts/2026-11-05-claude-code-team-code-review/"}],["$","meta","17",{"property":"og:locale","content":"en"}],["$","meta","18",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/11/assets/05/thumbnail.en.png"}],["$","meta","19",{"property":"og:image:alt","content":"Why Humans Don't Have to Read Every Line — How the Claude Code Team Does Code Review"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2026-11-05"}],["$","meta","22",{"property":"article:modified_time","content":"2026-11-05"}],["$","meta","23",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","24",{"property":"article:section","content":"Development"}],["$","meta","25",{"property":"article:tag","content":"AI"}],["$","meta","26",{"property":"article:tag","content":"agents"}],["$","meta","27",{"property":"article:tag","content":"code review"}],["$","meta","28",{"property":"article:tag","content":"Claude Code"}],["$","meta","29",{"property":"article:tag","content":"harness"}],["$","meta","30",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","31",{"name":"twitter:title","content":"Why Humans Don't Have to Read Every Line — How the Claude Code Team Does Code Review"}],["$","meta","32",{"name":"twitter:description","content":"Code Review on the Claude Code Team: Machines Do the Reading, People Go Where the Risk Is Notes on How the Claude Code team does code review by Addy Osmani,…"}],["$","meta","33",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/11/assets/05/thumbnail.en.png"}],["$","link","34",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],"$L22"]}]}],null]}],null]}],"p":"$@23","v":null,"s":"$9"}},"a":"$@24","u":"$@25","b":"AeYQzvhPF3xv68_NXWFxA"}
+27:I[15907,["$4","$e","$f"],"default"]
+28:I[27722,["$4","$e","$f"],"default"]
+29:I[52085,["$4"],"OutletBoundary"]
+2b:I[3142,["$4"],"IconMark"]
+12:["$","li",null,{"aria-hidden":"true","children":"/"}]
+13:["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"Why Humans Don't Have to Read Every Line — How the Claude Code Team Does Code Review"}]
+14:["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"Why Humans Don't Have to Read Every Line — How the Claude Code Team Does Code Review"}]
+15:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-11-05","className":"meta-mono","children":"11/05/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[23,"min read"]}]]}]
+16:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","AI",{"children":["$","$L11",null,{"href":"/en/tags?tag=AI","className":"tag-pill","children":"AI"}]}],["$","li","agents",{"children":["$","$L11",null,{"href":"/en/tags?tag=agents","className":"tag-pill","children":"agents"}]}],["$","li","code review",{"children":["$","$L11",null,{"href":"/en/tags?tag=code%20review","className":"tag-pill","children":"code review"}]}],["$","li","Claude Code",{"children":["$","$L11",null,{"href":"/en/tags?tag=Claude%20Code","className":"tag-pill","children":"Claude Code"}]}],["$","li","harness",{"children":["$","$L11",null,{"href":"/en/tags?tag=harness","className":"tag-pill","children":"harness"}]}]]}]
+26:T99e8,<h2 id="code-review-on-the-claude-code-team-machines-do-the-reading-people-go-where-the-risk-is">Code Review on the Claude Code Team: Machines Do the Reading, People Go Where the Risk Is<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#code-review-on-the-claude-code-team-machines-do-the-reading-people-go-where-the-risk-is"><span class="icon icon-link"></span></a></h2>
+<p>Notes on <a href="https://claude.dev/blog/solving-code-review-at-anthropic/">How the Claude Code team does code review</a> by Addy Osmani, Morgan Westlee Lunt, and Qing Wang on the claude.dev blog (2026-10-15).</p>
+<h3 id="️-tldr">✍️ TL;DR<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#️-tldr"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p><strong>They didn't remove review. They moved most of the reading to machines, optimized for human time and attention, and invested heavily in making mistakes fast and easy to undo.</strong> The goal: the minimum amount of human review time that doesn't raise reverts or incidents.</p>
+</blockquote>
+<h4 id="summary">Summary<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#summary"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><strong>Background</strong>: Claude writes about 90% of Claude Code's own code. From June to September, merged PRs to the Claude Code codebase <strong>more than doubled</strong>, while the share that had to be reverted fell by <strong>more than 40%</strong>.</li>
+<li><strong>Change the question</strong>: "Did a human read the code?" is an imprecise proxy. The real question is <strong>"What could go wrong with this change, and which check — automated or human — is the right one to catch it?"</strong></li>
+<li><strong>Review moved earlier</strong>: it's no longer a gate at the end of the road; it runs continuously, <strong>like spellcheck while you write</strong>. Most changes have been reviewed and fixed by Claude at least once before a person is asked to look.</li>
+<li><strong>The target</strong>: most PRs merge with <strong>at most one human in the loop (who can be the author)</strong>, with no increase in reverts or incidents. They track human approvals per PR (median and p95), human comments, and time waiting on a person, with <strong>revert and incident rates as the guardrail</strong>.</li>
+<li><strong>Seven layers</strong>: pre-PR verification → AI review on every PR → blocking security review → blocking automated checks → <strong>risk-scaled human approval</strong> → merge queue, flags, and gradual release → fast detection and rollback. Each layer has holes in different places.</li>
+<li><strong>A loop that improves the reviewer</strong>: past incidents become an eval, and every change to the reviewer is scored against it daily. Noise is measured by <strong>what people actually do with the comments</strong>.</li>
+<li><strong>Review has to converge</strong>: an agent author and an agent reviewer can keep each other busy indefinitely (one PR went 50+ rounds overnight). A round cap, diff-only re-review, flagging the class of bug, and no repeats moved <strong>one-round passes from 65% to 78%</strong>.</li>
+<li><strong>Where humans stay</strong>: deciding whether to build it, risky code, pattern-setting architecture, reading the evidence, and owning the outcome.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Layer</th><th>What it does</th><th>Who</th></tr></thead><tbody><tr><td><strong>1. Pre-PR verification</strong></td><td>Show runnable verification output; a fresh-context subagent reviews the diff</td><td>Author + Claude</td></tr><tr><td><strong>2. AI review</strong></td><td>Reads the diff against the whole repo and the PR's intent; other agents vote on findings</td><td>Automated</td></tr><tr><td><strong>3. Security review</strong></td><td>Any open finding blocks the merge</td><td>Automated</td></tr><tr><td><strong>4. Automated checks</strong></td><td>Lint · types · tests on every platform · build</td><td>Automated</td></tr><tr><td><strong>5. Human approval</strong></td><td>Zero, one, or two people depending on risk tier</td><td>People (risk-based)</td></tr><tr><td><strong>6. Merge queue · flags</strong></td><td>Re-check against main, internal use first, <code>latest</code> → <code>stable</code></td><td>Automated</td></tr><tr><td><strong>7. Detection · rollback</strong></td><td>Flags off without a deploy, weekly on-call, "which layer should have caught it?"</td><td>People + dashboards</td></tr></tbody></table>
+<p>Details follow below.</p>
+<hr>
+<h3 id="-table-of-contents">📋 Table of Contents<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-table-of-contents"><span class="icon icon-link"></span></a></h3>
+<ol>
+<li><a href="#rethinking-the-purpose-of-code-review">Rethinking the Purpose of Code Review</a></li>
+<li><a href="#the-scarce-resource-is-human-time-and-attention">The Scarce Resource Is Human Time and Attention</a></li>
+<li><a href="#the-life-of-a-change">The Life of a Change</a></li>
+<li><a href="#layer-by-layer">Layer by Layer</a></li>
+<li><a href="#making-the-reviewer-better">Making the Reviewer Better</a></li>
+<li><a href="#where-humans-stay-in-the-loop">Where Humans Stay in the Loop</a></li>
+<li><a href="#sharing-context-across-the-team">Sharing Context Across the Team</a></li>
+<li><a href="#you-land-it-you-own-it">You Land It, You Own It</a></li>
+<li><a href="#when-the-direction-changes">When the Direction Changes</a></li>
+<li><a href="#adopting-this-on-your-team">Adopting This on Your Team</a></li>
+<li><a href="#where-this-is-going">Where This Is Going</a></li>
+<li><a href="#wrapping-up">Wrapping Up</a></li>
+</ol>
+<h3 id="rethinking-the-purpose-of-code-review">Rethinking the Purpose of Code Review<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rethinking-the-purpose-of-code-review"><span class="icon icon-link"></span></a></h3>
+<p>Anthropic has said before that Claude writes about 90% of Claude Code's own code. So how do you review code at the volume it's produced? Does anyone read code anymore? And if something breaks, who catches it?</p>
+<p>When agents write code, the number of changes goes up, fast. In Anthropic's monorepo, changes landing per day went from <a href="https://www.anthropic.com/engineering/redesigning-source-control">about 2,500 in May to more than 30,000 in September</a>. Claude Code lives in its own repository, separate from the monorepo, but it feels the same pressure. At that pace, manual line-by-line review is close to impossible.</p>
+<p>Code review does two jobs:</p>
+<ol>
+<li>Find and fix issues before they ship</li>
+<li>Build shared context and codebase understanding across the team</li>
+</ol>
+<p>The article focuses mostly on the first, and comes back to the second near the end.</p>
+<p>The authors argue that <strong>"did a human read the code?"</strong> is an imprecise proxy for the real question:</p>
+<blockquote>
+<p>What could go wrong with this change, and which check — automated or human — is the right one to catch it?</p>
+</blockquote>
+<p>Asking that question also changed <strong>when</strong> review happens. Review used to be a gate at the end of the road: write the code, open a PR, wait for a colleague. Now it runs continuously, <strong>more like spellcheck while you write</strong>. Most changes have been reviewed and fixed by Claude at least once before a person is asked to look. That catches most routine mistakes and saves the team's attention for higher-level questions and scrutiny.</p>
+<h3 id="the-scarce-resource-is-human-time-and-attention">The Scarce Resource Is Human Time and Attention<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-scarce-resource-is-human-time-and-attention"><span class="icon icon-link"></span></a></h3>
+<p>The goal is to spend human time and attention on <strong>issues only humans can solve</strong> and let automated checks catch the rest. Even at the current rate of change, there's still an enormous amount of work for people, and the team runs into new problems almost daily.</p>
+<p>"Human time" here covers <strong>both sides</strong> of review's cost:</p>
+<ul>
+<li>the time people spend <strong>reviewing</strong></li>
+<li>the time people spend <strong>fixing what bad code breaks</strong></li>
+</ul>
+<p>Cutting the first doesn't help if the time just shows up in the second.</p>
+<p>So the goal was set like this: <strong>most pull requests in the Claude Code repos (the CLI, the desktop and web apps, and the mobile apps) merge with at most one human in the loop — who can be the author — with no increase in reverts or incidents.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Category</th><th>Metric</th></tr></thead><tbody><tr><td><strong>Human time</strong></td><td>Human approvals per PR (median · 95th percentile) · human comments · time a PR waits on a person</td></tr><tr><td><strong>Guardrail</strong></td><td>Revert rate · incident rate</td></tr></tbody></table>
+<blockquote>
+<p>If the guardrail numbers rise, you haven't saved human time — you've only <strong>moved</strong> it.</p>
+</blockquote>
+<h3 id="the-life-of-a-change">The Life of a Change<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-life-of-a-change"><span class="icon icon-link"></span></a></h3>
+<p>A typical change, starting from an engineer's laptop (or a Claude session in Slack), passes through several layers of code review.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span>[Before PR]   Work is verified ─────────────────────────── author + Claude</span></span>
+<span data-line=""><span>[Every PR]    Required CI → Claude code review → security ─ all automated</span></span>
+<span data-line=""><span>              Risk-based approval ──────────────────────── a person decides</span></span>
+<span data-line=""><span>[Merge]       Merge queue</span></span>
+<span data-line=""><span>[After merge] Internal-first flag → gradual release → watch · fix forward · roll back</span></span></code></pre></figure>
+<blockquote>
+<p>Most of the path is automated; a person's attention goes <strong>where the risk is</strong>.</p>
+</blockquote>
+<h3 id="layer-by-layer">Layer by Layer<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#layer-by-layer"><span class="icon icon-link"></span></a></h3>
+<p>The original draws this as a <strong>Swiss cheese model</strong>: six slices stacked top to bottom — verification, required CI, AI review, security review, human approval, and merge queue plus flags — each with holes <strong>in different places</strong>. A problem that slips through one slice's hole gets caught by a later one. The rare problem that passes through a hole in every slice lands in <strong>fast rollback</strong> at the bottom.</p>
+<blockquote>
+<p>Each layer catches some problems and misses others. Few get through all of them, and rollback handles the rest.</p>
+</blockquote>
+<h4 id="1-the-work-is-verified-before-anyone-else-looks">1. The Work Is Verified Before Anyone Else Looks<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-the-work-is-verified-before-anyone-else-looks"><span class="icon icon-link"></span></a></h4>
+<p>Most review now happens <strong>before a PR even exists</strong>. Two habits are central, and both come from the <a href="https://code.claude.com/docs/en/best-practices">Claude Code best-practices guide</a>:</p>
+<ul>
+<li>Give Claude <strong>something it can run</strong> — tests, a build, a screenshot to compare against the design — and ask it to <strong>show the output</strong> instead of saying it's done.</li>
+<li>Then have a <strong>fresh-context subagent</strong> review the diff.</li>
+</ul>
+<p>Many people on the team also run a few <a href="https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/">internal skills</a> before opening a PR: one hunts for bugs, one simplifies the diff, and one checks the behavior end to end. UI changes are also checked against the design guidelines.</p>
+<p>Boris Cherny, who created Claude Code, has called giving Claude a way to verify its work <a href="https://x.com/bcherny/status/2007179861115511237">probably the most important thing</a> for getting good results. He estimates it makes the final result <strong>two to three times</strong> better, and writes:</p>
+<blockquote>
+<p>Verification looks different for each domain. It might be as simple as running a bash command, or running a test suite, or testing the app in a browser or phone simulator.</p>
+</blockquote>
+<p>(I covered this in more depth in <a href="/en/posts/2026-08-22-delete-and-verify/">How the Creator of Claude Code Works</a>.)</p>
+<p><strong>When the automated reviewer keeps flagging the same thing, fix it at the source</strong> — in the skill, with a lint rule, or by updating instruction files.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>File</th><th>Written by</th><th>Role</th></tr></thead><tbody><tr><td><strong><code>CLAUDE.md</code></strong></td><td>The team</td><td>What the project is — the stack, conventions, goals, and non-goals. Every review loads it, so in a large codebase it stays <strong>short</strong> and points to other docs. The reviewer also flags code that breaks a convention in it, and <strong>changes that make a line in it out of date</strong>.</td></tr><tr><td><strong><code>REVIEW.md</code></strong></td><td>Code owners</td><td>What matters to the reviewer in their part of the code. Whether the reviewer actually follows it is <strong>checked separately</strong>.</td></tr></tbody></table>
+<p>What good <code>REVIEW.md</code> files have in common is concrete, too:</p>
+<ul>
+<li>They're <strong>short</strong>.</li>
+<li>They say <strong>what failure looks like</strong> in that repo — for docs it's "it lies," for config it's "it misroutes."</li>
+<li>They <strong>cap the nits</strong>.</li>
+<li>They list <strong>paths to skip</strong>.</li>
+<li>They ask for <strong>a file and line as evidence</strong> instead of a guess from a name.</li>
+<li>They ask for a summary that <strong>starts with a count</strong> and says <strong>plainly</strong> when there's nothing to fix.</li>
+</ul>
+<h4 id="2-ai-review-on-every-pull-request">2. AI Review on Every Pull Request<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-ai-review-on-every-pull-request"><span class="icon icon-link"></span></a></h4>
+<p>Every PR gets a Claude review before a person looks. The reviewer reads the diff against <strong>the whole repo and the PR's stated intent</strong>, and asks: does the change solve its problem, fit the system, or break something else? On a bug fix, it looks for the <strong>root cause</strong>.</p>
+<p>The public version, <a href="https://code.claude.com/docs/en/code-review">Code Review for Claude Code</a>, is generally available on Team and Enterprise plans, and <code>/code-review</code> runs a lighter version locally.</p>
+<p>When the <a href="https://claude.com/resources/articles/code-review">research preview launched</a>, the share of internal PRs getting substantive review comments went from <strong>16% to 54%</strong>. Most PRs over 1,000 lines get findings, and most small ones come back clean. Admins set each repo to <strong>Quick, Standard, or Deep</strong>; Deep is worth it where one missed bug costs more than the extra review time.</p>
+<p><strong>Findings get verified by other agents before humans see them.</strong></p>
+<ol>
+<li>Several agents look for bugs <strong>at the same time</strong>.</li>
+<li>A separate group of agents <strong>votes</strong> on each finding, and it's only posted if enough of them agree it's real.</li>
+<li>Findings that are only about style, diagnostics, or cleanup are <strong>dropped</strong>. Those filters were <strong>A/B tested</strong> on internal PRs before they were kept.</li>
+<li>What's left appears as inline comments sorted by severity, each tagged <strong>Important, Nit, or Pre-existing</strong> — so a bug the PR didn't introduce doesn't look like the author's fault.</li>
+</ol>
+<p><strong>Every finding has to be answered.</strong> You either fix it or resolve the thread with a reason. Often an agent picks up the fix overnight, so the author comes back to a PR that's already been through another round.</p>
+<h4 id="3-security-review-that-can-block">3. Security Review That Can Block<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-security-review-that-can-block"><span class="icon icon-link"></span></a></h4>
+<p>Security gets its own automated review. <strong>A PR can't merge while any finding from the bug review or the security review is still open.</strong> You either fix it or close the thread with a short reason — which is how a false positive gets cleared. If a later commit fixes the issue, the finding clears on its own.</p>
+<p>You can set up the same thing with the open-source security review GitHub Action or the <code>/security-review</code> command. Setup is covered in <a href="https://support.claude.com/en/articles/11932705-automated-security-reviews-in-claude-code">Automated security reviews in Claude Code</a>.</p>
+<h4 id="4-automated-checks-that-block">4. Automated Checks That Block<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-automated-checks-that-block"><span class="icon icon-link"></span></a></h4>
+<p>The usual: lint, type checks, tests on every platform, and a build. (There's <a href="https://claude.com/resources/articles/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic">a separate write-up</a> on scaling CI for this volume.) A typical CLI PR may run <strong>dozens of checks</strong> before anyone looks at it.</p>
+<p>The PR template asks <strong>how the change was tested</strong> and <strong>how to undo it</strong>. Claude can fill that in, but <strong>the person who asked for the change</strong> signs off on it.</p>
+<h4 id="5-human-approval-scaled-by-risk">5. Human Approval, Scaled by Risk<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-human-approval-scaled-by-risk"><span class="icon icon-link"></span></a></h4>
+<p>A docs fix and an auto-updater change carry different risk, so they get different review.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Risk</th><th>Examples</th><th>Human approvals</th></tr></thead><tbody><tr><td><strong>Low</strong></td><td>Docs, copy, internal-only features, additive changes behind a flag</td><td><strong>None</strong> once automated review and security checks are green</td></tr><tr><td><strong>Medium</strong></td><td>Ordinary product changes, and changes to sensitive areas like caching, the auto-updater, or system prompts</td><td><strong>One person</strong></td></tr><tr><td><strong>High</strong></td><td>The highest-risk code, plus a small set of paths that always need two people</td><td><strong>Two people</strong></td></tr></tbody></table>
+<p>Four rules make the table work:</p>
+<ul>
+<li><strong>The change sets the tier, not the author.</strong> A classifier reads the change and picks its risk tier. A second classifier asks whether <strong>this particular change</strong> needs another person even when its tier says it doesn't. Some paths always need a person — anything owners have listed as sensitive, and <strong>any CI workflow file</strong>.</li>
+<li><strong>Only trusted authors get the lighter paths.</strong> Only authors on the repo's trusted list (mostly the team that owns it) can use the lighter paths; everyone else needs a second person to approve. And <strong>an agent's approval never counts as a person's.</strong> Automated review can clear a low-risk change, but it can't fill a slot that calls for a human.</li>
+<li><strong>Whoever prompted the change is on the hook for it.</strong> On an agent-written PR, the person directing the agent counts as one of the required reviewers — the same as if they'd typed the code themselves.</li>
+<li><strong>An approval covers one specific commit.</strong> If new commits land that the system can't vouch for — an agent's push, or a merge someone resolved by hand — the approval has to be given again.</li>
+</ul>
+<h4 id="6-merge-queue-flags-and-a-gradual-release">6. Merge Queue, Flags, and a Gradual Release<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#6-merge-queue-flags-and-a-gradual-release"><span class="icon icon-link"></span></a></h4>
+<p>The merge queue re-runs <strong>every check</strong> against main with the change applied, so two PRs that pass separately can't combine into a broken main.</p>
+<p>New behavior usually ships <strong>behind a flag to Anthropic employees first</strong>, and heavy internal use often surfaces regressions before users see them. Public releases go to the <code>latest</code> channel first; the <code>stable</code> channel trails it.</p>
+<h4 id="7-fast-detection-fast-rollback">7. Fast Detection, Fast Rollback<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#7-fast-detection-fast-rollback"><span class="icon icon-link"></span></a></h4>
+<p>Some mistakes will still get through, so the last layer is about <strong>catching them fast</strong>.</p>
+<ul>
+<li>Flags turn off <strong>without a deploy</strong>.</li>
+<li>Claude Code has a <strong>weekly on-call rotation</strong>.</li>
+<li>Incident reviews ask <strong>"which layer should have caught this?"</strong></li>
+</ul>
+<p>The limits are stated plainly, too. Noticing a bad merge still depends on the author and on-call, plus the revert and incident dashboards. There are <strong>no circuit breakers yet</strong> that tighten approval when those numbers move, and engineers want them before more code moves to zero-human merges.</p>
+<blockquote>
+<p>One colleague said slowing down does lower your error rate, but mostly because <strong>you're doing less of everything</strong>. We'd rather get faster at noticing and fixing problems.</p>
+</blockquote>
+<h3 id="making-the-reviewer-better">Making the Reviewer Better<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#making-the-reviewer-better"><span class="icon icon-link"></span></a></h3>
+<p>The code review process itself keeps improving in a loop.</p>
+<p><strong>Every incident becomes an eval.</strong> The team collected past PRs that caused incidents, along with their fix-forwards and reverts, and had engineers who know that code confirm each bug and where it lived. The reviewer runs against that set <strong>daily</strong>.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span>Incident / revert ──▶ expert-checked case ──▶ added to the eval set</span></span>
+<span data-line=""><span>                                                    │</span></span>
+<span data-line=""><span>Reviewer change ──▶ daily eval run (scored on every case) ◀─┘</span></span>
+<span data-line=""><span>                        │</span></span>
+<span data-line=""><span>      score up → keep / otherwise → drop ──▶ repeat with the next change</span></span></code></pre></figure>
+<blockquote>
+<p>The eval grows with every incident, and every change to the reviewer is scored against all of it.</p>
+</blockquote>
+<p><strong>Noise is measured by watching what people do with the comments.</strong> It's easy to catch more bugs if you don't mind flagging lots of non-bugs, so there needs to be a check on that. Every comment the reviewer leaves is sorted by how the person on the PR responded:</p>
+<ul>
+<li>they fixed it</li>
+<li>they said it was wrong</li>
+<li>they said the behavior was intentional</li>
+<li>they decided it didn't matter</li>
+</ul>
+<p>The team also runs the reviewer on <strong>PRs known to be clean</strong> and counts how often it reports something that would have led someone to make a <strong>harmful change</strong>. The written-down priority is <strong>catching real bugs first, cutting review rounds second</strong>.</p>
+<p>Noise costs more when the author is an agent. A person can wave off a nit in seconds. An agent fixes it — which means another commit and another round of review.</p>
+<h4 id="review-has-to-converge">Review Has to Converge<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#review-has-to-converge"><span class="icon icon-link"></span></a></h4>
+<p>An agent author and an agent reviewer can <strong>keep each other busy indefinitely</strong>. One CLI PR went through <strong>more than fifty rounds</strong> of review and fixes overnight before its author stopped it.</p>
+<p>When the team ran <code>git blame</code> on what the reviewer kept flagging, about <strong>59%</strong> of it was code that had been there since the reviewer's first pass. The reviewer was rarely finding new bugs — it was finding <strong>a few more old ones each round</strong>.</p>
+<p>They'd also made it worse themselves: since each pass catches something new, they'd gotten used to running several rounds by default. That can be worth it on a risky change, but not on every PR. The team now tracks <strong>rounds-to-pass alongside recall</strong>, and changed re-review:</p>
+<ul>
+<li><strong>A round cap.</strong> After three rounds, the reviewer asks the author to step back and <strong>reconsider the approach</strong>.</li>
+<li><strong>Diff-only re-review</strong> after the first few passes.</li>
+<li><strong>Flag the class of bug</strong>, so the author fixes every instance, not one line.</li>
+<li><strong>No repeats</strong> of findings already posted.</li>
+</ul>
+<p>Review agents also run nightly over <strong>existing code</strong>, catching old bugs before they show up somewhere else.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Metric (internal PRs)</th><th>Before convergence work</th><th>After</th></tr></thead><tbody><tr><td>PRs passing after one review-and-fix round</td><td>65%</td><td><strong>78%</strong></td></tr><tr><td>PRs needing five or more rounds</td><td>8.9%</td><td><strong>1.5%</strong></td></tr><tr><td>Mean reviews to pass</td><td>2.08</td><td><strong>1.32</strong></td></tr></tbody></table>
+<h3 id="where-humans-stay-in-the-loop">Where Humans Stay in the Loop<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#where-humans-stay-in-the-loop"><span class="icon icon-link"></span></a></h3>
+<p>Pulling a senior engineer out of deep work to catch a routine mistake costs far more than an automated review. People on the team are still responsible for:</p>
+<ul>
+<li><strong>Deciding whether to build it.</strong> Direction, taste, and scope. One team that declared its review bottleneck solved still kept human review for <strong>changes from outside the team</strong>, so someone asks "should we even do this?"</li>
+<li><strong>Reviewing risky code</strong> such as billing, the auto-updater, and CI workflows.</li>
+<li><strong>Reviewing architecture</strong> that <strong>sets a pattern</strong> others will copy.</li>
+<li><strong>Reading the evidence.</strong> Test output, the command that ran and what it returned, a screenshot, the reviewer's findings. <strong>If you can't say what the checks would miss</strong>, ask for a real review rather than a quick approval.</li>
+<li><strong>Owning the outcome.</strong> A person is accountable for every change that ships, whoever typed it.</li>
+</ul>
+<h3 id="sharing-context-across-the-team">Sharing Context Across the Team<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#sharing-context-across-the-team"><span class="icon icon-link"></span></a></h3>
+<p>Code review's second job has always been to spread codebase understanding. Reading a teammate's diff is how you learn what changed and how the pieces fit. <strong>If machines do most of the reading, how does anyone learn the code?</strong></p>
+<p>The authors say there's no formal process for this. Nobody on the team keeps a complete mental model of Claude Code in their head, and <strong>they don't think anyone needs to</strong>. When someone wants to understand a part of the codebase, they ask Claude to write <strong>an explainer for exactly that slice</strong> — for example, "How does Claude Code retrieve managed settings?" It takes minutes and reflects <strong>the code as it is today</strong>.</p>
+<p>Some go a step further and have Claude <a href="https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/">build a small artifact</a> that visualizes that part of the code and teaches it <strong>the way that person likes to learn</strong>.</p>
+<p>If the goal is to spend human attention well, this beats reading trivial diffs line by line:</p>
+<ul>
+<li><strong>A one-line copy change</strong> teaches you almost nothing.</li>
+<li><strong>An explainer for the module you're about to change</strong> teaches you a lot.</li>
+</ul>
+<p>A culture of defaulting to open Slack channels helps too, since you see what others are building <strong>while they build it</strong>.</p>
+<h3 id="you-land-it-you-own-it">You Land It, You Own It<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#you-land-it-you-own-it"><span class="icon icon-link"></span></a></h3>
+<p>If you land a small or medium change and something still goes wrong, the team norm is that <strong>you usually fix it</strong>. A few things keep this from going badly:</p>
+<ul>
+<li><strong>Changes are small</strong>, so they're easy to review, debug, and revert.</li>
+<li><strong>Everything is reversible.</strong> Flags, reverts, and staged releases undo most mistakes in minutes.</li>
+<li><strong>Blast radius sets the bar.</strong> Expensive code gets more people and more checks.</li>
+<li><strong>Regressions surface fast</strong> through telemetry and internal use.</li>
+<li><strong>It isn't blame.</strong> Owning a fix means you have the most context; incident reviews look at <strong>the system</strong>.</li>
+</ul>
+<p>Ownership is also shared. Much of the team works in <a href="https://claude.com/product/tag">open channels</a> where anyone can see what others are building, pick up a thread, or point a Claude at a gap — and feedback comes from people who don't own the code, too. That openness is a big part of <strong>how quality stays high without a gate on every line</strong>.</p>
+<h3 id="when-the-direction-changes">When the Direction Changes<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#when-the-direction-changes"><span class="icon icon-link"></span></a></h3>
+<p>Agents make it cheap to <strong>start</strong> things, so some work shouldn't land. Usually someone in the channel asks why, points at an earlier decision, or suggests a simpler route, and the author closes or reshapes the PR.</p>
+<p>Since the code was fast to write, closing the PR doesn't feel like a loss. The trick is to raise a different direction <strong>early, in the thread</strong> — not as a blocking comment on a finished PR.</p>
+<h3 id="adopting-this-on-your-team">Adopting This on Your Team<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#adopting-this-on-your-team"><span class="icon icon-link"></span></a></h3>
+<p>Most of the pieces exist today.</p>
+<h4 id="before-the-pull-request">Before the Pull Request<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#before-the-pull-request"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>Give your agent <strong>checks it can run</strong>, listed in a short <code>CLAUDE.md</code>, plus <strong>hooks</strong> that run formatters and linters.</li>
+<li>Run <code>/code-review</code> and <code>/security-review</code> locally, or a fresh-context subagent review.</li>
+<li>Add a <code>REVIEW.md</code>, and <strong>move repeated review comments into it</strong>.</li>
+</ul>
+<h4 id="on-every-pull-request">On Every Pull Request<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#on-every-pull-request"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>Require CI, and add <strong>"Testing," "Risk," and "How to revert"</strong> to your PR template.</li>
+<li>Add an AI reviewer (Code Review for Claude Code, or the Claude Code GitHub Action) on <strong>one repo</strong>, tune <code>REVIEW.md</code> for a few weeks, then widen.</li>
+<li>Add automated security review, and require <strong>every review thread resolved</strong> before merge.</li>
+<li>Match review effort to risk: a quick pass on routine changes, a deep one where a missed bug is expensive (Quick, Standard, or Deep in Code Review).</li>
+<li><strong>Cap review rounds</strong>; after the first few, re-review <strong>only the new diff</strong>.</li>
+</ul>
+<h4 id="approval">Approval<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#approval"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>Write down risk tiers, set <strong>from the change rather than the author</strong>; <strong>start strict and loosen with evidence</strong>.</li>
+<li>Keep the lighter approval paths for <strong>authors you trust</strong>.</li>
+<li>Use CODEOWNERS and branch protection so auth, billing, CI and release workflows, and installers <strong>always need a person</strong>.</li>
+<li>Never let a bot's approval replace a required human's; <strong>dismiss approvals on new commits</strong>.</li>
+</ul>
+<h4 id="merge-and-after">Merge and After<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#merge-and-after"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li>Use a merge queue, feature flags, internal use first, staged releases, and <strong>one-step rollback</strong>.</li>
+<li>Turn incidents and reverts into an <strong>eval set</strong>, and rescore the reviewer whenever its prompts, tools, or model change.</li>
+<li>Measure <strong>human time</strong>, with revert and incident rates as the guardrail.</li>
+</ul>
+<h3 id="where-this-is-going">Where This Is Going<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#where-this-is-going"><span class="icon icon-link"></span></a></h3>
+<p>The Code Review <a href="https://claude.com/resources/articles/code-review">announcement</a> said approving a PR is still a human call; the product posts findings, not approvals. The Claude Code team's own repos go further, <strong>letting owners decide which low-risk changes merge on automated checks alone</strong> — and that line keeps moving.</p>
+<p>When a review misses something, the team asks <strong>"what didn't the model have in front of it?"</strong> and puts the fix into a <code>CLAUDE.md</code>, a skill, or a new check. The goal hasn't changed: <strong>less human time per change, and no more reverts than before.</strong></p>
+<h3 id="wrapping-up">Wrapping Up<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#wrapping-up"><span class="icon icon-link"></span></a></h3>
+<p>If I had to compress this into one sentence: <strong>the unit of review shifted from "did a human read it?" to "is there a right check for this risk?"</strong> Zero-human merges are possible not because review is skipped, but because there are layers from pre-PR verification all the way to rollback, and <strong>the risk call is attached to the change itself, not to the author</strong>.</p>
+<p>Three things stuck with me.</p>
+<p>First, the observation that <strong>noise costs more when the author is an agent</strong>. A nit a person would shrug off, an agent dutifully fixes — adding a commit and a review round each time. The round cap and "after three rounds, reconsider the approach" are rules any team running agent-on-agent review could adopt today.</p>
+<p>Second, the rule that <strong>an approval covers one specific commit</strong>. It closes exactly the gap where a commit an agent pushes after approval slips in unreviewed. On GitHub it's a single branch-protection option — "Dismiss stale pull request approvals when new commits are pushed" — so if agents push to your PRs, it's worth checking whether it's on.</p>
+<p>Third, <strong>fixing repeated findings at the source</strong>. It's the same idea as "every repeated correction is a missing piece of the harness" from <a href="/en/posts/2026-10-11-brownfield-agentic-engineering/">Brownfield Agentic Engineering</a>, and it reads like Anthropic's in-house, production version of "at a scale where review doesn't work, constraints protect quality" from <a href="/en/posts/2026-08-25-agentic-code-quality/">Quality Lives in the Constraints</a>.</p>
+<p><strong>A checklist for your team's code review:</strong></p>
+<ul>
+<li>✅ Before opening a PR, does the agent show <strong>verification it actually ran</strong> (test output, screenshots)?</li>
+<li>✅ Is <code>CLAUDE.md</code> short, and does <code>REVIEW.md</code> say what failure looks like in this repo?</li>
+<li>✅ Are AI review findings <strong>verified by other agents</strong> before they're posted?</li>
+<li>✅ Does an open review or security thread <strong>block the merge</strong>?</li>
+<li>✅ Is the risk tier set <strong>by the change, not the author</strong>, with CI workflows, billing, and auth always needing a person?</li>
+<li>✅ Does a <strong>bot approval never replace a human one</strong>, and do new commits dismiss approvals?</li>
+<li>✅ Are review rounds <strong>capped</strong>, with re-review limited to the new diff?</li>
+<li>✅ Have past incidents and reverts become <strong>the reviewer's eval set</strong>?</li>
+<li>✅ Are you measuring human review time with <strong>revert and incident rates as the guardrail</strong>?</li>
+</ul>
+<hr>
+<h2 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h2>
+<ul>
+<li>Addy Osmani, Morgan Westlee Lunt, Qing Wang, <a href="https://claude.dev/blog/solving-code-review-at-anthropic/">How the Claude Code team does code review</a> (2026-10-15)</li>
+<li>Anthropic, <a href="https://www.anthropic.com/engineering/redesigning-source-control">Redesigning source control</a></li>
+<li>Claude Code Docs, <a href="https://code.claude.com/docs/en/best-practices">Best practices</a> · <a href="https://code.claude.com/docs/en/code-review">Code Review</a></li>
+<li>Claude Help Center, <a href="https://support.claude.com/en/articles/11932705-automated-security-reviews-in-claude-code">Automated security reviews in Claude Code</a></li>
+<li>Anthropic, <a href="https://claude.com/resources/articles/code-review">Code Review announcement</a> · <a href="https://claude.com/resources/articles/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic">Agentic coding is straining CI</a></li>
+<li>Earlier posts — <a href="/en/posts/2026-10-11-brownfield-agentic-engineering/">Brownfield Agentic Engineering</a> · <a href="/en/posts/2026-08-25-agentic-code-quality/">Quality Lives in the Constraints</a> · <a href="/en/posts/2026-08-22-delete-and-verify/">How the Creator of Claude Code Works</a></li>
+</ul>17:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$26"}}]}]
+18:["$","nav",null,{"aria-label":"Previous / Next","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L11",null,{"href":"/en/posts/2026-10-26-package-release-weekly","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L27",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"Previous"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"Weekly Package Releases — 2026-10-26"}]]}],["$","$L11",null,{"href":"/en/posts/2026-11-07-package-release-weekly","className":"group border-line bg-surface hover:border-accent flex flex-col items-end gap-1.5 rounded-xl border px-[18px] py-4 text-right transition-colors","rel":"next","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":["Next",["$","$L27",null,{"icon":{"name":"arrow-right","size":24,"node":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}]]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"Weekly Package Releases — 2026-11-07"}]]}]]}]
+19:["$","div",null,{"className":"hidden lg:block","children":["$","$L28",null,{"headings":[{"id":"code-review-on-the-claude-code-team-machines-do-the-reading-people-go-where-the-risk-is","text":"Code Review on the Claude Code Team: Machines Do the Reading, People Go Where the Risk Is","depth":1},{"id":"️-tldr","text":"✍️ TL;DR","depth":2},{"id":"summary","text":"Summary","depth":3},{"id":"-table-of-contents","text":"📋 Table of Contents","depth":2},{"id":"rethinking-the-purpose-of-code-review","text":"Rethinking the Purpose of Code Review","depth":2},{"id":"the-scarce-resource-is-human-time-and-attention","text":"The Scarce Resource Is Human Time and Attention","depth":2},{"id":"the-life-of-a-change","text":"The Life of a Change","depth":2},{"id":"layer-by-layer","text":"Layer by Layer","depth":2},{"id":"1-the-work-is-verified-before-anyone-else-looks","text":"1. The Work Is Verified Before Anyone Else Looks","depth":3},{"id":"2-ai-review-on-every-pull-request","text":"2. AI Review on Every Pull Request","depth":3},{"id":"3-security-review-that-can-block","text":"3. Security Review That Can Block","depth":3},{"id":"4-automated-checks-that-block","text":"4. Automated Checks That Block","depth":3},{"id":"5-human-approval-scaled-by-risk","text":"5. Human Approval, Scaled by Risk","depth":3},{"id":"6-merge-queue-flags-and-a-gradual-release","text":"6. Merge Queue, Flags, and a Gradual Release","depth":3},{"id":"7-fast-detection-fast-rollback","text":"7. Fast Detection, Fast Rollback","depth":3},{"id":"making-the-reviewer-better","text":"Making the Reviewer Better","depth":2},{"id":"review-has-to-converge","text":"Review Has to Converge","depth":3},{"id":"where-humans-stay-in-the-loop","text":"Where Humans Stay in the Loop","depth":2},{"id":"sharing-context-across-the-team","text":"Sharing Context Across the Team","depth":2},{"id":"you-land-it-you-own-it","text":"You Land It, You Own It","depth":2},{"id":"when-the-direction-changes","text":"When the Direction Changes","depth":2},{"id":"adopting-this-on-your-team","text":"Adopting This on Your Team","depth":2},{"id":"before-the-pull-request","text":"Before the Pull Request","depth":3},{"id":"on-every-pull-request","text":"On Every Pull Request","depth":3},{"id":"approval","text":"Approval","depth":3},{"id":"merge-and-after","text":"Merge and After","depth":3},{"id":"where-this-is-going","text":"Where This Is Going","depth":2},{"id":"wrapping-up","text":"Wrapping Up","depth":2},{"id":"references","text":"References","depth":1}],"title":"Contents"}]}]
+1a:["$","script","script-0",{"src":"/_next/static/chunks/0-jsxcg-veu-w.js","async":true}]
+1b:["$","$L29",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@2a"}]}]
+22:["$","$L2b","35",{}]
+25:true
+9:300
+2a:null
+9:C
+24:0
+b:"$undefined"
+7:"$undefined"
+23:"$undefined"
+1c:"$undefined"
