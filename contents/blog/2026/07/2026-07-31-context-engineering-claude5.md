@@ -3,8 +3,8 @@ layout: post
 title: Claude 5 세대의 컨텍스트 엔지니어링 새 규칙
 date: 2026-07-31
 published: 2026-07-31
-category: 개발
-tags: ['AI', '하네스', 'Claude', '컨텍스트엔지니어링']
+category: AI 엔지니어링
+tags: ['컨텍스트엔지니어링', '하네스', 'Claude']
 comments: true
 thumbnail: './assets/31/thumbnail.png'
 github: ''

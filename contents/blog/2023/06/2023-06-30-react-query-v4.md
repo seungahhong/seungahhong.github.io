@@ -3,8 +3,8 @@ layout: post
 title: react-query(v4)
 date: 2023-06-30
 published: 2023-06-30
-category: 개발
-tags: ['상태관리']
+category: 상태관리
+tags: ['서버상태', 'tanstack', '마이그레이션']
 comments: true,
 thumbnail: './images/30/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

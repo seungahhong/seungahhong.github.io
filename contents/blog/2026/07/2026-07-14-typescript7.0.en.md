@@ -3,8 +3,8 @@ layout: post
 title: TypeScript 7.0
 date: 2026-07-14
 published: 2026-07-14
-category: Development
-tags: ['typescript']
+category: JavaScript & Web
+tags: ['typescript', 'compiler', 'migration']
 comments: true
 thumbnail: './assets/14/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

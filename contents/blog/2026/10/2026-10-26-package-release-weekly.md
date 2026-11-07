@@ -3,8 +3,8 @@ layout: post
 title: 이번 주 패키지 릴리스 정리 — 2026-10-26
 date: 2026-10-26
 published: 2026-10-26
-category: 개발
-tags: ['릴리스', '패키지', '주간정리']
+category: 주간 릴리스
+tags: []
 comments: true
 thumbnail: './assets/26/thumbnail.png'
 github: ''

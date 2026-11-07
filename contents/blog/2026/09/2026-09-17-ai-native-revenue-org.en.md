@@ -3,8 +3,8 @@ layout: post
 title: Hours Saved Is the Floor — Building an AI-Native Revenue Organization
 date: 2026-09-17
 published: 2026-09-17
-category: Development
-tags: ['AI', 'Claude', 'adoption', 'organization', 'ROI']
+category: Teams & Process
+tags: ['ai-adoption', 'Claude']
 comments: true
 thumbnail: './assets/17/thumbnail.en.png'
 github: ''

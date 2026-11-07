@@ -3,8 +3,8 @@ layout: post
 title: 코드 품질은 제약에 있다 — 리뷰가 안 되는 규모에서 품질을 지키는 법
 date: 2026-08-25
 published: 2026-08-25
-category: 개발
-tags: ['AI', '에이전트', '코드품질', '테스트', '하네스']
+category: AI 엔지니어링
+tags: ['코드품질', '에이전트', '하네스']
 comments: true
 thumbnail: './assets/25/thumbnail.png'
 github: ''

@@ -3,8 +3,8 @@ layout: post
 title: 제품 스펙 하네스 (product-spec-harness)
 date: 2026-07-12
 published: 2026-07-12
-category: 개발
-tags: ['AI', '하네스', 'PRD', '기획', 'Claude']
+category: AI 엔지니어링
+tags: ['하네스', '스펙', 'Claude']
 comments: true
 thumbnail: './assets/12/thumbnail.png'
 github: ''

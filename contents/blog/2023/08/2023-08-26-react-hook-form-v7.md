@@ -3,8 +3,8 @@ layout: post
 title: react-hook-form v7
 date: 2023-08-26
 published: 2023-08-26
-category: 개발
-tags: ['form']
+category: React
+tags: ['react-hook-form', '마이그레이션']
 comments: true,
 thumbnail: './assets/26/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

@@ -3,8 +3,8 @@ layout: post
 title: Tree Shaking
 date: 2023-08-16
 published: 2023-08-16
-category: Development
-tags: ['performance']
+category: Performance
+tags: ['bundler']
 comments: true,
 thumbnail: './assets/16/thumbnail.jpeg'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

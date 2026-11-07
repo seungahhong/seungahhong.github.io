@@ -3,8 +3,8 @@ layout: post
 title: Improving Development Productivity & Build Performance
 date: 2024-05-12
 published: 2024-05-12
-category: Development
-tags: ['performance']
+category: Performance
+tags: ['bundler', 'package-manager']
 comments: true,
 thumbnail: './assets/12/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

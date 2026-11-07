@@ -3,8 +3,8 @@ layout: post
 title: redux-toolkit
 date: 2022-03-26
 published: 2022-03-26
-category: Development
-tags: ['state management']
+category: State Management
+tags: ['Flux']
 comments: true,
 thumbnail: './assets/26/thumbnail.png'
 github: 'https://github.com/seungahhong/states-todos'

@@ -3,8 +3,8 @@ layout: post
 title: React Router v8
 date: 2026-09-19
 published: 2026-09-19
-category: Development
-tags: ['react-router', 'react']
+category: React
+tags: ['react-router', 'migration']
 comments: true
 thumbnail: './assets/19/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

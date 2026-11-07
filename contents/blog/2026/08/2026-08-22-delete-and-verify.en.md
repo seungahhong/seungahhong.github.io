@@ -3,8 +3,8 @@ layout: post
 title: How the Creator of Claude Code Works — Delete, Overshoot, Verify
 date: 2026-08-22
 published: 2026-08-22
-category: Development
-tags: ['AI', 'Claude', 'agent', 'verification', 'harness']
+category: AI Engineering
+tags: ['agents', 'harness', 'Claude']
 comments: true
 thumbnail: './assets/22/thumbnail.en.png'
 github: ''

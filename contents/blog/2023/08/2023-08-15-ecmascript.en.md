@@ -3,7 +3,7 @@ layout: post
 title: ECMAScript
 date: 2023-08-15
 published: 2023-08-15
-category: Development
+category: JavaScript & Web
 tags: ['javascript']
 comments: true,
 thumbnail: './assets/15/thumbnail.jpeg'

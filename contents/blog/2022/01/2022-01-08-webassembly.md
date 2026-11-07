@@ -3,8 +3,8 @@ layout: post
 title: webassembly
 date: 2022-01-08
 published: 2022-01-08
-category: 개발
-tags: ['webassembly']
+category: JavaScript·웹
+tags: ['브라우저', '컴파일러']
 comments: true,
 thumbnail: './assets/08/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

@@ -3,8 +3,8 @@ layout: post
 title: The New Rules of Context Engineering for Claude 5
 date: 2026-07-31
 published: 2026-07-31
-category: Development
-tags: ['AI', 'harness', 'Claude', 'context-engineering']
+category: AI Engineering
+tags: ['context-engineering', 'harness', 'Claude']
 comments: true
 thumbnail: './assets/31/thumbnail.en.png'
 github: ''

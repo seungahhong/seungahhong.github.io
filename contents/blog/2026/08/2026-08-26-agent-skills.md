@@ -3,8 +3,8 @@ layout: post
 title: 에이전트가 건너뛰는 건 언제나 시니어의 일이다 — Agent Skills가 강제하는 것
 date: 2026-08-26
 published: 2026-08-26
-category: 개발
-tags: ['AI', '에이전트', '스킬', '하네스', '개발프로세스']
+category: AI 엔지니어링
+tags: ['스킬', '에이전트', '하네스']
 comments: true
 thumbnail: './assets/26/thumbnail.png'
 github: ''

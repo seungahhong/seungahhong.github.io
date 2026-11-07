@@ -3,8 +3,8 @@ layout: post
 title: 절약한 시간은 바닥값이다 — AI 네이티브 매출 조직을 만드는 법
 date: 2026-09-17
 published: 2026-09-17
-category: 개발
-tags: ['AI', 'Claude', '도입', '조직', 'ROI']
+category: 조직·프로세스
+tags: ['AI도입', 'Claude']
 comments: true
 thumbnail: './assets/17/thumbnail.png'
 github: ''

@@ -3,8 +3,8 @@ layout: post
 title: What Agents Skip Is Always the Senior Work — What Agent Skills Enforces
 date: 2026-08-26
 published: 2026-08-26
-category: Development
-tags: ['AI', 'agents', 'skills', 'harness', 'dev-process']
+category: AI Engineering
+tags: ['skills', 'agents', 'harness']
 comments: true
 thumbnail: './assets/26/thumbnail.en.png'
 github: ''

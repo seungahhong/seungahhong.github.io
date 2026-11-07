@@ -3,8 +3,8 @@ layout: post
 title: react-hook-form inside code
 date: 2023-11-26
 published: 2023-11-26
-category: Development
-tags: ['form']
+category: React
+tags: ['react-hook-form']
 comments: true,
 thumbnail: './assets/26/thumbnail.png'
 github: 'https://github.com/seungahhong/seungahhong.github.io'

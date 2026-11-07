@@ -3,8 +3,8 @@ layout: post
 title: Running Is Not the Same as Safe — 5 Principles for Securing AI-Generated Code
 date: 2026-09-14
 published: 2026-09-14
-category: Development
-tags: ['AI', 'security', 'shift-left', 'DevSecOps', 'agents']
+category: AI Engineering
+tags: ['security', 'code-quality', 'agents']
 comments: true
 thumbnail: './assets/14/thumbnail.en.png'
 github: ''

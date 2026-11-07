@@ -3,8 +3,8 @@ layout: post
 title: Choosing a Claude Model — Start Smart
 date: 2026-08-01
 published: 2026-08-01
-category: Development
-tags: ['AI', 'Claude', 'model-selection', 'LLM']
+category: AI Engineering
+tags: ['Claude', 'LLM']
 comments: true
 thumbnail: './assets/01/thumbnail.en.png'
 github: ''

@@ -3,7 +3,7 @@ layout: post
 title: typescript
 date: 2022-01-16
 published: 2022-01-16
-category: Development
+category: JavaScript & Web
 tags: ['typescript']
 comments: true,
 thumbnail: './assets/16/thumbnail.jpeg'

@@ -3,8 +3,8 @@ layout: post
 title: 조직의 노하우는 이제 스킬에 산다 — 거버넌스 없는 스킬은 새로운 기술부채다
 date: 2026-09-06
 published: 2026-09-06
-category: 개발
-tags: ['AI', '에이전트', '스킬', '거버넌스', '하네스']
+category: 조직·프로세스
+tags: ['스킬', 'AI도입', '하네스']
 comments: true
 thumbnail: './assets/06/thumbnail.png'
 github: ''

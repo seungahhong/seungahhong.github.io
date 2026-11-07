@@ -3,8 +3,8 @@ layout: post
 title: 자가치유 하네스 엔지니어링 (meta-harness)
 date: 2026-07-05
 published: 2026-07-05
-category: 개발
-tags: ['AI', '하네스', 'Claude', '자가치유']
+category: AI 엔지니어링
+tags: ['하네스', 'Claude']
 comments: true
 thumbnail: './assets/05/thumbnail.png'
 github: ''

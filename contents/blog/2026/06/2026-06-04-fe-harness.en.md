@@ -3,8 +3,8 @@ layout: post
 title: Frontend Harness Engineering
 date: 2026-06-04
 published: 2026-06-04
-category: Development
-tags: ['AI', 'Harness', 'Claude']
+category: AI Engineering
+tags: ['harness', 'Claude']
 comments: true
 thumbnail: './assets/04/thumbnail.en.png'
 github: ''

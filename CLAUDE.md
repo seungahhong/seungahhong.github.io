@@ -6,6 +6,10 @@
 
 - `contents/blog/YYYY/MM/*.md` - 연/월별로 구성된 블로그 포스트
 - 영문 번역본은 `slug.en.md` 컨벤션. 번역본이 없으면 한국어 원문으로 폴백
+- `category`/`tags`는 `src/lib/__test__/content-conventions.test.ts`의 `CATEGORY_EN`·`TAG_EN`
+  어휘(한국어→영문 짝)에서만 고른다. `.en.md`는 원문의 짝을 같은 순서로 쓴다 — 테스트가 강제한다.
+  카테고리는 주제 하나, 태그는 카테고리를 가로지르는 기술·개념이다. 카테고리 이름을 되풀이하는
+  태그나 한 편에만 붙을 태그는 만들지 않는다(글 카드는 태그를 앞 3개만 보여주니 중요한 것부터)
 - `data/popular.json` - GA4 조회수 스냅샷(최근 90일, ko/en 합산). 커밋되며 빌드 시 읽는다.
   `items` 배열 순서가 곧 Top 5 노출 순서다 — 빌드는 재정렬하지 않으니 정렬은 수집 스크립트 책임.
   `.github/workflows/refresh-popular.yml`(매일 07:00 KST)이 갱신하고, 없거나 비어 있으면 최신순 폴백.

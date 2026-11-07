@@ -3,8 +3,8 @@ layout: post
 title: Front-End Performance
 date: 2020-09-12
 published: 2020-09-12
-category: Development
-tags: ['performance']
+category: Performance
+tags: ['browser', 'javascript']
 comments: true
 thumbnail: './images/12/thumbnail.png'
 github: 'https://github.com/gmm117/gmm117.github.io'

@@ -3,8 +3,8 @@ layout: post
 title: Why Humans Don't Have to Read Every Line — How the Claude Code Team Does Code Review
 date: 2026-11-05
 published: 2026-11-05
-category: Development
-tags: ['AI', 'agents', 'code review', 'Claude Code', 'harness']
+category: AI Engineering
+tags: ['code-quality', 'agents', 'Claude', 'harness']
 comments: true
 thumbnail: './assets/05/thumbnail.en.png'
 github: ''

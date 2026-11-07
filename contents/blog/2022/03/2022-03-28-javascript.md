@@ -3,7 +3,7 @@ layout: post
 title: javascript
 date: 2022-03-28
 published: 2022-03-28
-category: 개발
+category: JavaScript·웹
 tags: ['javascript']
 comments: true,
 thumbnail: './assets/28/thumbnail.jpg'

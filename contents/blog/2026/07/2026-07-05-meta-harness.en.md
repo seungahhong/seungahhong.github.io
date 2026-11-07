@@ -3,8 +3,8 @@ layout: post
 title: Self-Healing Harness Engineering (meta-harness)
 date: 2026-07-05
 published: 2026-07-05
-category: Development
-tags: ['AI', 'harness', 'Claude', 'self-healing']
+category: AI Engineering
+tags: ['harness', 'Claude']
 comments: true
 thumbnail: './assets/05/thumbnail.en.png'
 github: ''

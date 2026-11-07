@@ -3,8 +3,8 @@ layout: post
 title: The Tool Was Not the Variable — Where 50 Teams Using the Same Tool Split
 date: 2026-09-05
 published: 2026-09-05
-category: Development
-tags: ['AI', 'agents', 'dev-process', 'productivity', 'teams']
+category: Teams & Process
+tags: ['ai-adoption', 'agents']
 comments: true
 thumbnail: './assets/05/thumbnail.en.png'
 github: ''

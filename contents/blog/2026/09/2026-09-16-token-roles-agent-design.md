@@ -3,8 +3,8 @@ layout: post
 title: 토큰을 더 준다고 더 잘하지 않는다 — 같은 예산에서 76점을 89점으로
 date: 2026-09-16
 published: 2026-09-16
-category: 개발
-tags: ['AI', 'Claude', '에이전트', '컨텍스트엔지니어링', '비용']
+category: AI 엔지니어링
+tags: ['컨텍스트엔지니어링', '에이전트', 'Claude']
 comments: true
 thumbnail: './assets/16/thumbnail.png'
 github: ''

@@ -3,8 +3,8 @@ layout: post
 title: 팀보다 오래된 코드베이스에서 에이전트 굴리기 — 브라운필드 에이전틱 엔지니어링
 date: 2026-10-11
 published: 2026-10-11
-category: 개발
-tags: ['AI', '에이전트', '레거시', '마이그레이션', '하네스']
+category: AI 엔지니어링
+tags: ['마이그레이션', '에이전트', '하네스']
 comments: true
 thumbnail: './assets/11/thumbnail.png'
 github: ''
