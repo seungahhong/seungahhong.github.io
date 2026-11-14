@@ -1,0 +1,446 @@
+3:"$Sreact.fragment"
+4:"/_next/static/chunks/12-fpzohv1xd4.js"
+5:I[9619,["$4"],"default"]
+6:I[23615,["$4"],"default"]
+e:"/_next/static/chunks/2kf7_4zlzxl0h.js"
+f:"/_next/static/chunks/0-jsxcg-veu-w.js"
+10:I[53403,["$4","$e","$f"],"default"]
+11:I[34242,["$4","$e","$f"],""]
+19:"ViewportBoundary"
+1a:I[52085,["$4"],"$19"]
+1b:"MetadataBoundary"
+1c:I[52085,["$4"],"$1b"]
+1d:"$Sreact.suspense"
+1e:I[3142,["$4"],"IconMark"]
+8:X
+8:C
+9:X
+d:T60b,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Weekly Package Releases — 2026-11-14","description":"✍️ TL;DR Node.js shipped security releases on all three LTS lines (26, 24, 22) fixing several High-severity HTTP/2 and TLS CVEs, and Grafana (6 CVEs), Gradle…","datePublished":"2026-11-14","dateModified":"2026-11-14","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-11-14-package-release-weekly/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-11-14-package-release-weekly/"},"image":"https://seungahhong.github.io/blog-assets/2026/11/assets/14/thumbnail.en.png","keywords":[],"articleSection":"Weekly Releases","wordCount":4720,"timeRequired":"PT24M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}c:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$d"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Weekly Package Releases — 2026-11-14\",\"item\":\"https://seungahhong.github.io/en/posts/2026-11-14-package-release-weekly/\"}]}"}}],["$","$L10",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L11",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L11",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Weekly Releases"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"Weekly Package Releases — 2026-11-14"}]]}]}],["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"Weekly Package Releases — 2026-11-14"}],"$L12",false,false]}],"$L13","$L14"]}],"$L15"]}]}]],["$L16"],"$L17"]}],"p":"$@18","v":null,"s":"$9"}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"2026-11-14-package-release-weekly","s":[]},"h":96,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@b","v":"$8","s":"$9"},"c":"$Qc"}]]
+2:[["children",{"s":"posts","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"en","s":["about","blog"]},"h":32,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1a",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1c",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1d",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Weekly Package Releases — 2026-11-14 · SeungAh Hong · Tech Blog"}],["$","meta","1",{"name":"description","content":"✍️ TL;DR Node.js shipped security releases on all three LTS lines (26, 24, 22) fixing several High-severity HTTP/2 and TLS CVEs, and Grafana (6 CVEs), Gradle…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"SeungAh Hong"}],["$","meta","4",{"name":"creator","content":"홍승아"}],["$","meta","5",{"name":"publisher","content":"홍승아"}],["$","meta","6",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://seungahhong.github.io/en/posts/2026-11-14-package-release-weekly/"}],["$","link","8",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-11-14-package-release-weekly/"}],["$","link","9",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-11-14-package-release-weekly/"}],["$","link","10",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-11-14-package-release-weekly/"}],["$","meta","11",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","12",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","13",{"property":"og:title","content":"Weekly Package Releases — 2026-11-14"}],["$","meta","14",{"property":"og:description","content":"✍️ TL;DR Node.js shipped security releases on all three LTS lines (26, 24, 22) fixing several High-severity HTTP/2 and TLS CVEs, and Grafana (6 CVEs), Gradle…"}],["$","meta","15",{"property":"og:url","content":"https://seungahhong.github.io/en/posts/2026-11-14-package-release-weekly/"}],["$","meta","16",{"property":"og:locale","content":"en"}],["$","meta","17",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/11/assets/14/thumbnail.en.png"}],["$","meta","18",{"property":"og:image:alt","content":"Weekly Package Releases — 2026-11-14"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2026-11-14"}],["$","meta","21",{"property":"article:modified_time","content":"2026-11-14"}],["$","meta","22",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","23",{"property":"article:section","content":"Weekly Releases"}],["$","meta","24",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","25",{"name":"twitter:title","content":"Weekly Package Releases — 2026-11-14"}],["$","meta","26",{"name":"twitter:description","content":"✍️ TL;DR Node.js shipped security releases on all three LTS lines (26, 24, 22) fixing several High-severity HTTP/2 and TLS CVEs, and Grafana (6 CVEs), Gradle…"}],["$","meta","27",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/11/assets/14/thumbnail.en.png"}],["$","link","28",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L1e","29",{}]]}]}],null]}],null]}],"p":"$@1f","v":null,"s":"$9"}},"a":"$@20","u":"$@21","b":"I3etrEGAUhLeoFLgrz_G6"}
+23:I[15907,["$4","$e","$f"],"default"]
+24:I[27722,["$4","$e","$f"],"default"]
+25:I[52085,["$4"],"OutletBoundary"]
+12:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-11-14","className":"meta-mono","children":"11/14/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[24,"min read"]}]]}]
+22:Ta545,<h3 id="️-tldr">✍️ TL;DR<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#️-tldr"><span class="icon icon-link"></span></a></h3>
+<p>Node.js shipped security releases on all three LTS lines (26, 24, 22) fixing several High-severity HTTP/2 and TLS CVEs, and Grafana (6 CVEs), Gradle (3 advisories, one rated Critical) and Podman (3 CVEs) also shipped security fixes. Rust 1.100.0 stabilizes the never type (<code>!</code>) and the custom allocator API, and Kyverno 1.20.0 contains commits that remove the legacy <code>kyverno.io</code> policy engine, so check before upgrading.</p>
+<h3 id="this-week-at-a-glance">This Week at a Glance<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#this-week-at-a-glance"><span class="icon icon-link"></span></a></h3>
+<p>The period is 2026-11-07 to 2026-11-14 (KST). Of the 87 tracked packages, we confirmed changes in 35. Versions already covered in last week's post (Angular 22.2.5, Tailwind CSS 4.3.5, Nx 24.0.5, Istio 1.31.4 and 1.30.8) are not repeated even though they fall on the period boundary.</p>
+<p>GitHub release pages were again unreadable this week. For packages with a CHANGELOG or in-repo release notes we read that file; for the rest we read the commit history (commit titles) up to the new tag. Packages summarized from commit history are marked <code>None</code> under <code>Release notice</code>, and we could not confirm whether they contain breaking changes (changes that require you to modify existing code).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Package</th><th>Version</th><th>Release notice</th><th>Changes</th></tr></thead><tbody><tr><td>Node.js</td><td>v26.13.1 · v24.22.3 · v22.23.5 (all LTS)</td><td><a href="https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V26.md">Yes</a></td><td>HTTP/2 and TLS security fixes (many CVEs, including High)</td></tr><tr><td>astro</td><td>7.4.12 (5 patches)</td><td><a href="https://github.com/withastro/astro/blob/main/packages/astro/CHANGELOG.md">Yes</a></td><td>Stricter <code>security.allowedDomains</code> header validation, lower build memory</td></tr><tr><td>Zed</td><td>v1.28.1 · v1.28.0</td><td>None</td><td>Agent compaction billing fix, branch search in worktree picker</td></tr><tr><td>pnpm</td><td>v12.21.0 · v12.20.0 · v12.19.0 · v11.28.12</td><td>None</td><td>Many peer resolution fixes, rejects unsafe <code>PNPM_HOME</code></td></tr><tr><td>🔺 Major Electron</td><td>v45.3.2 (3 patches) · v44.11.3 (4 patches) · v43.8.10 (3 patches)</td><td>None</td><td>Blocks revoked eMudhra intermediates, flushes cookies before quit</td></tr><tr><td>Oxfmt</td><td>v0.78.0</td><td>None</td><td>Less output fixes, TS in Astro formatted as TSX</td></tr><tr><td>Oxlint</td><td>v1.93.0</td><td>None</td><td><code>--fix</code> removes unused <code>oxlint-disable</code> directives</td></tr><tr><td>🔺 Major TinyBase</td><td>v10.1.0</td><td><a href="https://github.com/tinyplex/tinybase/blob/main/site/guides/20_releases.md">Yes</a></td><td>WsServer client authorization, less sync data</td></tr><tr><td>Next.js</td><td>v16.4.6</td><td>None</td><td>Automatic route handler compression, Turbopack GC fixes</td></tr><tr><td>🔺 Major Nx</td><td>24.0.6 · 23.3.2</td><td>None</td><td>Private temp/cache directories, task output loss fix</td></tr><tr><td>FastAPI</td><td>0.162.7 (7 patches)</td><td><a href="https://github.com/fastapi/fastapi/blob/master/docs/en/docs/release-notes.md">Yes</a></td><td>Drops Python 3.10 (breaking), dependency cleanup on cancellation</td></tr><tr><td>Grafana</td><td>13.3.1 · 13.2.6 · 13.1.10 · 13.0.13</td><td><a href="https://github.com/grafana/grafana/blob/main/CHANGELOG.md">Yes</a></td><td>6 CVE security fixes</td></tr><tr><td>Homebrew</td><td>7.0.13</td><td>None</td><td>Adds <code>uninstall</code> dry-run option</td></tr><tr><td>Vite</td><td>v8.3.8 (2 patches) · v8.2.6 · v8.1.7 · v7.3.8 · v6.4.6</td><td><a href="https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md">Yes</a></td><td>Virtual module id escaping, CSS and Windows fixes</td></tr><tr><td>Angular</td><td>22.2.6</td><td><a href="https://github.com/angular/angular/blob/main/CHANGELOG.md">Yes</a></td><td>Memory leak, hydration, forms and router fixes</td></tr><tr><td>ESLint</td><td>v10.15.0</td><td><a href="https://github.com/eslint/eslint/blob/main/CHANGELOG.md">Yes</a></td><td>Wider rule coverage, avoids <code>minimatch</code> CVE</td></tr><tr><td>Hono</td><td>v4.13.18 (2 patches)</td><td>None</td><td>JSX attribute escaping, cookie prefix check fix</td></tr><tr><td>Kyverno</td><td>v1.20.0</td><td>None</td><td>Legacy policy engine removed, OCI CLI commands</td></tr><tr><td>Prettier</td><td>3.10.0 · 3.10.1</td><td><a href="https://github.com/prettier/prettier/blob/main/website/blog/2026-11-11-3.10.0.md">Yes</a></td><td>Official <code>@prettier/plugin-yuku</code>, new Flow syntax</td></tr><tr><td>Rspack</td><td>v2.3.2</td><td>None</td><td>Prunes dynamic imports from unused exports, lower memory</td></tr><tr><td>Turborepo</td><td>v2.11.11</td><td>None</td><td>Task hash and log in <code>turbo query</code>, honors <code>NO_PROXY</code></td></tr><tr><td>Visual Studio Code</td><td>1.146.0 · 1.145.3</td><td>None</td><td>MCP and workspace trust hardening, <code>/automate</code> skill</td></tr><tr><td>Biome</td><td>v2.6.7</td><td><a href="https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md">Yes</a></td><td>Many new nursery rules, plugin <code>semantic()</code> removed</td></tr><tr><td>Dragonfly</td><td>v2.5.4</td><td>None</td><td>HttpOnly manager JWT cookie, stricter preheat validation</td></tr><tr><td>Go</td><td>go1.27.4 · go1.26.11</td><td>None</td><td>Stricter cgo/linker flag validation, HTTP/1 server crash fix</td></tr><tr><td>Gradle</td><td>9.9.1 · 8.14.7</td><td><a href="https://github.com/gradle/gradle/blob/v9.9.1/platforms/documentation/docs/src/docs/release/notes.md">Yes</a></td><td>3 security advisories (including Critical 9.3)</td></tr><tr><td>Jotai</td><td>v3.0.2</td><td>None</td><td>Unmount on dependency removal, <code>freezeAtom</code> circular refs</td></tr><tr><td>ollama</td><td>v0.40.16</td><td>None</td><td>Claude Code launch fix, CUDA 13.5 on Windows ARM64</td></tr><tr><td>Podman</td><td>v6.2.0 · v5.8.10</td><td><a href="https://github.com/podman-container-tools/podman/blob/v6.2.0/RELEASE_NOTES.md">Yes</a></td><td>3 CVEs, <code>push --platform</code>, WSL systemd</td></tr><tr><td>React Native Skia</td><td>v3.10.1 · v3.10.0 · v3.9.2</td><td>None</td><td>Skia m158, <code>drawShapes</code>, render thread fixes</td></tr><tr><td>Rolldown</td><td>v1.3.2 (2 patches) · v1.2.19 · v1.1.8 · v1.0.5</td><td><a href="https://github.com/rolldown/rolldown/blob/main/CHANGELOG.md">Yes</a></td><td>Error stub escaping, CJS <code>__dirname</code></td></tr><tr><td>Rust</td><td>1.100.0</td><td><a href="https://github.com/rust-lang/rust/blob/1.100.0/RELEASES.md">Yes</a></td><td>Never type and custom allocators stabilized</td></tr><tr><td>Storybook</td><td>v10.6.7</td><td><a href="https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md">Yes</a></td><td>init supports prerelease community frameworks</td></tr><tr><td>Terraform</td><td>v1.17.2</td><td><a href="https://github.com/hashicorp/terraform/blob/v1.17.2/CHANGELOG.md">Yes</a></td><td><code>destroy=false</code> cycle fix</td></tr><tr><td>Vue Router</td><td>5.5.1 · 5.5.0 · 4.6.5</td><td><a href="https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md">Yes</a></td><td>Scroll positions in sessionStorage, experimental API breaking</td></tr></tbody></table>
+<h3 id="changes-by-package">Changes by Package<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#changes-by-package"><span class="icon icon-link"></span></a></h3>
+<h4 id="nodejs-v26131--v24223--v22235">Node.js v26.13.1 · v24.22.3 · v22.23.5<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nodejs-v26131--v24223--v22235"><span class="icon icon-link"></span></a></h4>
+<p>A JavaScript runtime.</p>
+<p><strong>What changed</strong> — All three lines are security releases. High-severity fixes cover HTTP/2 streams leaking headers and buffers on removal or not detecting streams abandoned by nghttp2, nested HTTP parser execution from empty writes, TLS resumption or renegotiation changing SNI and resumption being allowed for mTLS, and a remotely reachable TLS server crash (26 and 24 lines). Medium and Low fixes include an ALTSVC buffer overflow, proxy credentials appearing in invalid proxy URL errors, and recursive <code>fs.watch</code> leaking denied descendants under the permission model. 26.13.1 is labeled as the 'Lithium' LTS line.</p>
+<p><strong>What to check when upgrading</strong> — If you run HTTP/2 or TLS servers directly, upgrade right away. These are security fixes within the same patch series and no API changes are listed.</p>
+<p>Release notice: <a href="https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V26.md">CHANGELOG_V26</a></p>
+<h4 id="astro-7412">astro 7.4.12<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#astro-7412"><span class="icon icon-link"></span></a></h4>
+<p>A JavaScript web framework.</p>
+<p><strong>What changed</strong> — 7.4.11 changes <code>security.allowedDomains</code> to validate <code>X-Forwarded-Proto</code>, <code>X-Forwarded-Host</code> and <code>X-Forwarded-Port</code> together against each entry instead of separately, and fixes accepting non-HTTP(S) protocol values such as <code>ftp</code> or <code>ws</code>. It also fixes <code>astro build</code> deleting the Vite <code>build.license</code> file and returns 400 instead of 500 for malformed percent-encoded paths. 7.4.9 fixes bundled scripts being blocked under <code>strictDynamic</code> CSP, and 7.4.12 reduces content collection memory use during builds.</p>
+<p><strong>What to check when upgrading</strong> — If you use <code>security.allowedDomains</code> behind a proxy, forwarded header values may no longer apply unless the entry lists the port and protocol, so review your configuration.</p>
+<p>Release notice: <a href="https://github.com/withastro/astro/blob/main/packages/astro/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="zed-v1281--v1280">Zed v1.28.1 · v1.28.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#zed-v1281--v1280"><span class="icon icon-link"></span></a></h4>
+<p>A fast code editor written in Rust.</p>
+<p><strong>What changed</strong> — According to the commit history, agent conversation compaction was being billed as uncached input tokens and is now fixed, and ACP v2 supports background work. The worktree picker also searches by branch name, and submenus and popovers open on the side that has room. Windows SSH remotes with Nushell as the default shell, a Vim visual-block hang and duplicated document color inlays were also fixed.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes.</p>
+<p>Release notice: None</p>
+<h4 id="pnpm-v12210--v12200--v12190--v112812">pnpm v12.21.0 · v12.20.0 · v12.19.0 · v11.28.12<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pnpm-v12210--v12200--v12190--v112812"><span class="icon icon-link"></span></a></h4>
+<p>A Node.js package manager.</p>
+<p><strong>What changed</strong> — According to the commit history, this week is mostly peer dependency resolution fixes. Required peer pins drifting across repeat installs, peer providers being lost in dependency cycles and diamond structures, and duplicate identically resolved peers were fixed. Unsafe <code>PNPM_HOME</code> values are rejected, and setup supports PowerShell as the shell on Linux and macOS. Features for the <code>pnpr</code> registry server (token lifetimes, audit records and more) also grew.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes. Peer resolution changed, so look over the lockfile diff after upgrading.</p>
+<p>Release notice: None</p>
+<h4 id="-major-electron-v4532--v44113--v43810">🔺 Major Electron v45.3.2 · v44.11.3 · v43.8.10<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-major-electron-v4532--v44113--v43810"><span class="icon icon-link"></span></a></h4>
+<p>A platform for building desktop apps with web technologies.</p>
+<p><strong>What changed</strong> — According to the commit history, all three lines block the revoked eMudhra RSA intermediate certificates and limit webRequest redirects across loader restarts to avoid crashes. 45.x flushes cookie stores to disk before quitting, supports <code>chrome.storage.managed</code> in extensions, and rejects <code>net.fetch</code> when the upload body stream errors. 44.x adds <code>Menu.setHighlightColors()</code> for Windows.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes. If you move to the 45 line, which is a major above the baseline (44), check the official guidance separately.</p>
+<p>Release notice: None</p>
+<h4 id="oxfmt-v0780">Oxfmt v0.78.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#oxfmt-v0780"><span class="icon icon-link"></span></a></h4>
+<p>A JS/TS formatter written in Rust.</p>
+<p><strong>What changed</strong> — According to the commit history, TypeScript inside Astro files is formatted as TSX, and Less <code>~</code> escapes and <code>%</code> selectors print correctly. Multiline JSDoc default values and line terminators, whitespace-only TOML documents and empty GraphQL documents are also handled.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes. Less and Astro formatting output may change.</p>
+<p>Release notice: None</p>
+<h4 id="oxlint-v1930">Oxlint v1.93.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#oxlint-v1930"><span class="icon icon-link"></span></a></h4>
+<p>A JS/TS linter written in Rust.</p>
+<p><strong>What changed</strong> — According to the commit history, <code>--fix</code> now removes unused <code>oxlint-disable</code> directives, and <code>react/exhaustive-deps</code> suggests removing unnecessary dependencies. <code>promise/prefer-catch</code> gained a suggested fix, and false positives and panics in several rules such as <code>unicorn/no-useless-undefined</code> and <code>eslint/no-lone-blocks</code> were fixed.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes. If CI runs <code>--fix</code>, it may now delete disable directives.</p>
+<p>Release notice: None</p>
+<h4 id="-major-tinybase-v1010">🔺 Major TinyBase v10.1.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-major-tinybase-v1010"><span class="icon icon-link"></span></a></h4>
+<p>A reactive data store for local-first apps.</p>
+<p><strong>What changed</strong> — You can pass <code>authorize</code>, <code>canWriteCell</code> and <code>canWriteValue</code> functions to <code>createWsServer</code>, so the server decides which clients may use a path and what they may write. Synchronization sends much less data, and many reliability fixes landed, such as convergence after reconnecting and loading while saving. <code>persister-postgres</code> now requires Postgres.js v4 or later, and <code>schematizer-effect</code> requires Effect v4 or later.</p>
+<p><strong>What to check when upgrading</strong> — If you use Postgres.js or Effect, upgrade those dependencies to v4 and check the API changes in those libraries themselves (such as the removal of <code>sql.array()</code> and the new argument shape of <code>Schema.Union</code>).</p>
+<p>Release notice: <a href="https://github.com/tinyplex/tinybase/blob/main/site/guides/20_releases.md">Releases guide</a></p>
+<h4 id="nextjs-v1646">Next.js v16.4.6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nextjs-v1646"><span class="icon icon-link"></span></a></h4>
+<p>A server-rendering React framework.</p>
+<p><strong>What changed</strong> — According to the commit history, route handler responses that are not already compressed are now compressed automatically, and Turbopack GC fixes landed. The Tailwind version in <code>create-next-app</code> is pinned to 4.3.3.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes. If your route handlers handle compression themselves, check the response headers.</p>
+<p>Release notice: None</p>
+<h4 id="-major-nx-2406--2332">🔺 Major Nx 24.0.6 · 23.3.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-major-nx-2406--2332"><span class="icon icon-link"></span></a></h4>
+<p>A monorepo build system.</p>
+<p><strong>What changed</strong> — According to the commit history, temp installs, caches and data directories are now private to the current user, and run-commands output written right before a command exits is no longer lost (23.3.2 also flushes task output before exit). package.json script bodies are hashed when targets set their own inputs, and <code>bun</code> and <code>bun:</code> imports are treated as builtin modules. <code>build-storybook</code> rebuilds when stories or Storybook config change.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes. Hashing changed, so the cache may be invalidated on the first run.</p>
+<p>Release notice: None</p>
+<h4 id="fastapi-01627">FastAPI 0.162.7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#fastapi-01627"><span class="icon icon-link"></span></a></h4>
+<p>A Python web framework.</p>
+<p><strong>What changed</strong> — 0.162.6 drops support for Python 3.10 (a breaking change). 0.162.3 adds Python 3.15 support, and 0.162.4 requires AnyIO 4.1.0 or newer at runtime. 0.162.5 and 0.162.7 fix cleanup code of sync and async <code>yield</code> dependencies not running properly when a request is cancelled.</p>
+<p><strong>What to check when upgrading</strong> — If you run on Python 3.10, upgrade Python before moving to 0.162.6 or later.</p>
+<p>Release notice: <a href="https://github.com/fastapi/fastapi/blob/master/docs/en/docs/release-notes.md">release-notes</a></p>
+<h4 id="grafana-1331--1326--13110--13013">Grafana 13.3.1 · 13.2.6 · 13.1.10 · 13.0.13<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#grafana-1331--1326--13110--13013"><span class="icon icon-link"></span></a></h4>
+<p>A metrics dashboard.</p>
+<p><strong>What changed</strong> — All four lines fix CVE-2026-102589, CVE-2026-107509, CVE-2026-110992, CVE-2026-111024, CVE-2026-13721 and CVE-2026-14242. The CHANGELOG lists only the numbers, not what was at risk. 13.3.1 also includes 2026 time zone updates and allows same-host URL changes for Provisioning repositories.</p>
+<p><strong>What to check when upgrading</strong> — Move to the latest patch of the line you run. Check the official security advisories for the impact of each CVE.</p>
+<p>Release notice: <a href="https://github.com/grafana/grafana/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="homebrew-7013">Homebrew 7.0.13<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#homebrew-7013"><span class="icon icon-link"></span></a></h4>
+<p>A macOS package manager.</p>
+<p><strong>What changed</strong> — According to the commit history, <code>brew uninstall</code> gains a dry-run option that previews unlink and autoremove targets before removing anything. Outdated reports skip disabled packages, <code>bundle</code> honors tap-qualified formulae and casks, and invalid alias receipts are handled.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes.</p>
+<p>Release notice: None</p>
+<h4 id="vite-v838--v826--v817--v738--v646">Vite v8.3.8 · v8.2.6 · v8.1.7 · v7.3.8 · v6.4.6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite-v838--v826--v817--v738--v646"><span class="icon icon-link"></span></a></h4>
+<p>A frontend build tool.</p>
+<p><strong>What changed</strong> — All maintenance lines shipped together on November 9. 7.3.8 and 6.4.6 escape ids when resolving virtual modules, and the 8.x lines pick up the Rolldown patches released the same day. 8.3.8 rejects CSS entrypoints when <code>build.cssCodeSplit: false</code>, emits assets referenced by inline workers in bundled dev mode, and imports sass once instead of per file for speed.</p>
+<p><strong>What to check when upgrading</strong> — The CHANGELOG lists no advisory or CVE number, but since the fix shipped on several lines at once, we recommend moving to the latest patch of your line.</p>
+<p>Release notice: <a href="https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="angular-2226">Angular 22.2.6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#angular-2226"><span class="icon icon-link"></span></a></h4>
+<p>A JavaScript framework.</p>
+<p><strong>What changed</strong> — A memory leak in the animations renderer and closure and reference retention leaks in core were fixed, and map access during hydration and listener cleanup after event replay were hardened. Forms flush debounced values when a field is touched and prevent duplicate <code>valueChanges</code>, and the router no longer reloads the page when restoring the URL with the Navigation API. Empty arrays are omitted from <code>HttpParams</code>, and tree-shaking around <code>httpResource</code> improved.</p>
+<p><strong>What to check when upgrading</strong> — This release is safe to upgrade as is.</p>
+<p>Release notice: <a href="https://github.com/angular/angular/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="eslint-v10150">ESLint v10.15.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#eslint-v10150"><span class="icon icon-link"></span></a></h4>
+<p>A JavaScript code analysis tool.</p>
+<p><strong>What changed</strong> — <code>func-names</code> now checks <code>__proto__</code> and assignment targets, and <code>accessor-pairs</code>, <code>no-invalid-this</code> and <code>no-shadow</code> recognize more syntax. The <code>no-useless-rename</code> and <code>no-unneeded-ternary</code> autofixes now preserve type modifiers and necessary parentheses. ESLint requires <code>minimatch@11.0.1</code> or higher to avoid CVE-2026-118764.</p>
+<p><strong>What to check when upgrading</strong> — Rule coverage is wider, so new warnings may appear.</p>
+<p>Release notice: <a href="https://github.com/eslint/eslint/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="hono-v41318">Hono v4.13.18<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#hono-v41318"><span class="icon icon-link"></span></a></h4>
+<p>A web framework for the edge.</p>
+<p><strong>What changed</strong> — According to the commit history, JSX now escapes element and object attribute values and no longer renders ref objects as attributes, and ErrorBoundary adds the CSP nonce to every script it generates. Cookie <code>__Secure-</code> and <code>__Host-</code> prefixes are matched case-insensitively, and non-ASCII header values in AWS Lambda API Gateway v2 events are sanitized. ETag, Server-Timing and Accept handling fixes are included too.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes. The JSX attribute escaping looks like a security-related fix, so we recommend upgrading if you use Hono JSX.</p>
+<p>Release notice: None</p>
+<h4 id="kyverno-v1200">Kyverno v1.20.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#kyverno-v1200"><span class="icon icon-link"></span></a></h4>
+<p>A Kubernetes policy engine.</p>
+<p><strong>What changed</strong> — According to the commit history, it includes commits that delete the legacy <code>kyverno.io</code> policy engine and Go API and remove legacy policy execution from the admission, background and reports controllers. The CLI gains <code>kyverno oci inspect</code>, <code>resolve</code> and <code>validate</code> plus output file options for <code>apply</code>, and MutatingPolicy supports JSON document mutation. jmesPath projections in globalContext are deprecated and a CEL expression field was added.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm the scope of breaking changes. If you use legacy ClusterPolicy or Policy resources, be sure to read the official migration guidance before upgrading.</p>
+<p>Release notice: None</p>
+<h4 id="prettier-3100--3101">Prettier 3.10.0 · 3.10.1<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#prettier-3100--3101"><span class="icon icon-link"></span></a></h4>
+<p>A code formatter.</p>
+<p><strong>What changed</strong> — A new official plugin, <code>@prettier/plugin-yuku</code>, built on the Zig-based Yuku toolchain, was added, along with support for new Flow syntax and the Structs, Import Sync and Deferred re-exports proposals. There are many fixes, such as unstable comment placement, missing parentheses around <code>TSInstantiationExpression</code> and stack overflows on long binary expressions, and performance on comment-heavy files improved. 3.10.1 fixes an error on empty GraphQL selection sets that contain only comments.</p>
+<p><strong>What to check when upgrading</strong> — Formatting output may shift slightly, so it is best to commit the full formatting diff in one go after upgrading.</p>
+<p>Release notice: <a href="https://github.com/prettier/prettier/blob/main/website/blog/2026-11-11-3.10.0.md">3.10.0 release post</a></p>
+<h4 id="rspack-v232">Rspack v2.3.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rspack-v232"><span class="icon icon-link"></span></a></h4>
+<p>A web bundler written in Rust.</p>
+<p><strong>What changed</strong> — According to the commit history, tree-shaking now prunes dynamic imports inside unused exports and skips side-effect-free <code>export *</code> passthrough modules. Source map memory during asset generation and hashing is lower, and the previous compilation's assets are freed during a rebuild. Circular tsconfig <code>extends</code> is reported instead of crashing, and UTF-8 BOM tsconfig files, HMR async groups and CSS counter style scoping were fixed.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes.</p>
+<p>Release notice: None</p>
+<h4 id="turborepo-v21111">Turborepo v2.11.11<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#turborepo-v21111"><span class="icon icon-link"></span></a></h4>
+<p>A JS/TS build system.</p>
+<p><strong>What changed</strong> — According to the commit history, <code>turbo query</code> exposes a task's hash and log file, and example downloads honor <code>NO_PROXY</code>. Input hashing no longer follows symlinks out of the repository, strict environment mode preserves <code>TMPDIR</code>, and creating <code>turbo.lock</code> is about 10x faster. Exit code propagation from <code>turbo gen</code> and task exclusions in dependencies were also fixed.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes.</p>
+<p>Release notice: None</p>
+<h4 id="visual-studio-code-11460--11453">Visual Studio Code 1.146.0 · 1.145.3<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#visual-studio-code-11460--11453"><span class="icon icon-link"></span></a></h4>
+<p>A code editor.</p>
+<p><strong>What changed</strong> — According to the commit history, 1.145.3 is a hardening patch. It validates MCP install link inputs and SSE endpoints, blocks <code>__proto__</code> segments in dotted-key expansion, fixes injection through the notebook font size, and requires trust for network workspaces. 1.146.0 is the monthly release and adds a built-in <code>/automate</code> skill, chat pinning state shared across windows and a <code>markdownImages.allowedOrigins</code> editor option, among others.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes. Opening a workspace on a network path may now show a trust prompt.</p>
+<p>Release notice: None</p>
+<h4 id="biome-v267">Biome v2.6.7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#biome-v267"><span class="icon icon-link"></span></a></h4>
+<p>A frontend toolchain (formatter and linter).</p>
+<p><strong>What changed</strong> — More than 20 nursery rules were added, including <code>noInvalidFetchOptions</code>, <code>useGlobalRegexInMatchAll</code>, <code>noDisabledAttribute</code> and <code>useConsistentBooleanName</code>. JavaScript plugins gain a <code>grit()</code> query that selects nodes with a GritQL pattern, while the <code>semantic()</code> query function was removed in favor of <code>ast(..., { semantic: true })</code>. Markdown formatting of block quotes, tables and task lists and false positives in several rules were fixed, and Biome now reports an error instead of silently skipping configured plugins that are unavailable.</p>
+<p><strong>What to check when upgrading</strong> — If your own Biome plugins use <code>semantic()</code>, you need to update them.</p>
+<p>Release notice: <a href="https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="dragonfly-v254">Dragonfly v2.5.4<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#dragonfly-v254"><span class="icon icon-link"></span></a></h4>
+<p>A P2P file distribution and image acceleration tool.</p>
+<p><strong>What changed</strong> — According to the commit history, the manager JWT auth cookie is now HttpOnly, and OCI manifest URL parsing and preheat request handling were hardened. Registry authorization is refreshed per preheat request, multi-platform image preheat deduplication improved, and Redis credentials are encoded in URL userinfo.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes.</p>
+<p>Release notice: None</p>
+<h4 id="go-go1274--go12611">Go go1.27.4 · go1.26.11<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#go-go1274--go12611"><span class="icon icon-link"></span></a></h4>
+<p>A programming language.</p>
+<p><strong>What changed</strong> — According to the commit history, go1.27.4 greatly tightens cgo flag validation in <code>cmd/go</code> and the linker. It blocks flags such as <code>--sysroot</code> and <code>-target</code>, disallows local pkg-config <code>.pc</code> paths, and validates <code>.syso</code> and linker input files, and it also fixes an HTTP/1 server crash caused by a <code>MaxBytesReader</code> header race. The commit titles suggest security fixes, but we could not confirm CVE numbers. go1.26.11 shipped the same day, but we read the commit history for 1.27.4 only.</p>
+<p><strong>What to check when upgrading</strong> — Builds that pass unusual linker flags through cgo may now be rejected, so run your build once.</p>
+<p>Release notice: None</p>
+<h4 id="gradle-991--8147">Gradle 9.9.1 · 8.14.7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#gradle-991--8147"><span class="icon icon-link"></span></a></h4>
+<p>A Java build tool.</p>
+<p><strong>What changed</strong> — Both lines are patches fixing three security advisories: version catalog values running as code in generated accessors (Critical 9.3), the Gradle client trusting the content of the daemon registry (High 8.6), and the daemon client trusting stale registry entries, which allowed port squatting (High 7.0). 9.9.1 also fixes a wrong deprecation warning that still appeared with KGP 2.4.21.</p>
+<p><strong>What to check when upgrading</strong> — Upgrade right away if you use untrusted version catalogs or build on shared machines. Use 9.9.1 on 9.x and 8.14.7 on the 8.14 line.</p>
+<p>Release notice: <a href="https://github.com/gradle/gradle/blob/v9.9.1/platforms/documentation/docs/src/docs/release/notes.md">9.9.1 release notes</a></p>
+<h4 id="jotai-v302">Jotai v3.0.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#jotai-v302"><span class="icon icon-link"></span></a></h4>
+<p>A React state management library.</p>
+<p><strong>What changed</strong> — According to the commit history, the last dependency of an atom is now unmounted when it is removed, and <code>freezeAtom</code> handles circular references and typed arrays.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes.</p>
+<p>Release notice: None</p>
+<h4 id="ollama-v04016">ollama v0.40.16<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#ollama-v04016"><span class="icon icon-link"></span></a></h4>
+<p>A tool for running open models locally.</p>
+<p><strong>What changed</strong> — According to the commit history, Claude Code routing in <code>launch</code> and retired model errors were fixed, and CUDA 13.5 was added for Windows ARM64. The MLX runner improved ripple preview and memory efficiency for some models. The OpenAI-compatible <code>/v1/models</code> returns an empty array when no models are installed, and the truncation option is forwarded in responses requests.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes.</p>
+<p>Release notice: None</p>
+<h4 id="podman-v620--v5810">Podman v6.2.0 · v5.8.10<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#podman-v620--v5810"><span class="icon icon-link"></span></a></h4>
+<p>A container engine.</p>
+<p><strong>What changed</strong> — Both lines fix three CVEs: untrusted image labels could trick <code>podman auto-update</code> into restarting the wrong systemd units (CVE-2026-121885), malicious images could bypass digest and signature validation (CVE-2026-111361), and a malicious container could bypass the socket deny rule in the default seccomp profile (CVE-2026-123876). 6.2.0 adds <code>podman push --platform</code>, <code>--validate</code>, <code>--label</code> and <code>--multiple-pods</code> for <code>kube play</code>, the Quadlet <code>Umask</code> key and native systemd support for WSL.</p>
+<p><strong>What to check when upgrading</strong> — Building now requires Go 1.26 or higher, and WSL requires 2.5.1 or later. Annotation-based seccomp configuration in <code>kube play</code> is deprecated and will be removed in Podman 7.0.</p>
+<p>Release notice: <a href="https://github.com/podman-container-tools/podman/blob/v6.2.0/RELEASE_NOTES.md">RELEASE_NOTES</a></p>
+<h4 id="react-native-skia-v3101--v3100--v392">React Native Skia v3.10.1 · v3.10.0 · v3.9.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-native-skia-v3101--v3100--v392"><span class="icon icon-link"></span></a></h4>
+<p>A 2D graphics library for React Native.</p>
+<p><strong>What changed</strong> — According to the commit history, Skia was updated to m158, and <code>SkShapeBlob</code> and <code>canvas.drawShapes</code> were added. A render thread race condition and frame pacing, Android display density tracking and TextureView buffer handling, and keeping the frame of a disposed canvas still on screen were fixed, and copies and allocations during recorder replay were reduced.</p>
+<p><strong>What to check when upgrading</strong> — This summary is based on commit history only, so we could not confirm whether there are breaking changes. The Skia engine version changed, so check your rendering output once.</p>
+<p>Release notice: None</p>
+<h4 id="rolldown-v132--v1219--v118--v105">Rolldown v1.3.2 · v1.2.19 · v1.1.8 · v1.0.5<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rolldown-v132--v1219--v118--v105"><span class="icon icon-link"></span></a></h4>
+<p>A JS/TS bundler written in Rust.</p>
+<p><strong>What changed</strong> — On November 9 every maintenance line received a fix that escapes module names in the error stubs generated by the Vite resolve plugin. 1.3.2 provides <code>__dirname</code> and <code>__filename</code> to CommonJS modules in Node ESM output, adds a magic-string <code>hires</code> option, and fails the build instead of hanging when a module task panics. 1.3.1 fixes bundle-output bugs such as sticky regex matching and keeping side effects when a constant is inlined.</p>
+<p><strong>What to check when upgrading</strong> — The CHANGELOG lists no CVE number. This release is safe to upgrade as is.</p>
+<p>Release notice: <a href="https://github.com/rolldown/rolldown/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="rust-11000">Rust 1.100.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rust-11000"><span class="icon icon-link"></span></a></h4>
+<p>A programming language.</p>
+<p><strong>What changed</strong> — The never type (<code>!</code>) is stabilized, <code>Infallible</code> is now a type alias for <code>!</code>, and the never type fallback changed to <code>!</code> on all editions. The custom allocator API, including <code>std::alloc::Allocator</code>, <code>Box::new_in</code> and <code>Vec::new_in</code>, is stabilized, along with <code>bool::toggle</code>, <code>Box::map</code> and <code>Arc::map</code>, and <code>core::mem::DropGuard</code>. <code>extern "custom"</code> and <code>-Cprofile-sample-use</code> are stabilized, and <code>wasm32-wasip3</code> is now Tier 2.</p>
+<p><strong>What to check when upgrading</strong> — The compatibility notes mention that more precise closure capture in <code>if let</code> may cause new errors, that <code>box</code> patterns are no longer syntactically allowed, and the never type fallback change, so run your build first.</p>
+<p>Release notice: <a href="https://github.com/rust-lang/rust/blob/1.100.0/RELEASES.md">RELEASES.md</a></p>
+<h4 id="storybook-v1067">Storybook v10.6.7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#storybook-v1067"><span class="icon icon-link"></span></a></h4>
+<p>A UI component development tool.</p>
+<p><strong>What changed</strong> — <code>init</code> supports prerelease versions of community frameworks, and MCP publishes the composition schema a hosted Storybook actually serves.</p>
+<p><strong>What to check when upgrading</strong> — This release is safe to upgrade as is.</p>
+<p>Release notice: <a href="https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="terraform-v1172">Terraform v1.17.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#terraform-v1172"><span class="icon icon-link"></span></a></h4>
+<p>An Infrastructure as Code tool.</p>
+<p><strong>What changed</strong> — Performance and allocations improved when generating configuration from large HCP Terraform queries. A cycle caused by providers referencing a managed resource with <code>destroy=false</code> and repeated unavailable-provider schema warnings in <code>init</code> logs were fixed.</p>
+<p><strong>What to check when upgrading</strong> — This release is safe to upgrade as is.</p>
+<p>Release notice: <a href="https://github.com/hashicorp/terraform/blob/v1.17.2/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="vue-router-551--550--465">Vue Router 5.5.1 · 5.5.0 · 4.6.5<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vue-router-551--550--465"><span class="icon icon-link"></span></a></h4>
+<p>A routing library for Vue.js.</p>
+<p><strong>What changed</strong> — 5.5.0 stores scroll positions in sessionStorage instead of <code>history.state</code> (falling back to memory on failure), makes scroll restoration triggers configurable, and prevents exponential backtracking on <code>.*</code> repeatable params. The unplugin's <code>definePage</code> works with webpack and rspack, and <code>defineProps()</code> gets route param types when <code>props: true</code>. 5.5.1 has a breaking change for <code>vue-router/experimental</code> users: matchers return <code>null</code> instead of throwing on a miss, and <code>MatchMiss</code> no longer extends <code>Error</code>. We did not read the 4.6.5 changes.</p>
+<p><strong>What to check when upgrading</strong> — If you use the experimental router, update custom matchers and any code that checks <code>instanceof Error</code> or <code>error.name</code>. Also note that scroll positions are stored in a different place.</p>
+<p>Release notice: <a href="https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md">CHANGELOG</a></p>
+<h3 id="wrapping-up">Wrapping Up<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#wrapping-up"><span class="icon icon-link"></span></a></h3>
+<p>The 4 releases left out because we could not read their changes (skipped) are ClickHouse v26.10.4.207-stable, Istio 1.32.0, Flutter 3.50.0 and Obsidian v1.15.1. New versions were confirmed, but there was no change description readable inside the repository (Flutter only links to an external blog), or the commit history was not enough to summarize them.</p>
+<p>The 11 failed checks are official-site sources that could not be read because their hosts are blocked by the session network (<code>getaddrinfo ENOTFOUND</code>): Expo SDK, GraalVM, JDK, Android, Boundary, Cursor, GitButler, Manus, Swift, Ubuntu and Xcode.</p>
+<p>Method: based on npm/PyPI/git tags (GitHub release bodies not accessed)</p>13:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$22"}}]}]
+14:["$","nav",null,{"aria-label":"Previous / Next","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L11",null,{"href":"/en/posts/2026-11-07-package-release-weekly","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L23",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"Previous"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"Weekly Package Releases — 2026-11-07"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+15:["$","div",null,{"className":"hidden lg:block","children":["$","$L24",null,{"headings":[{"id":"️-tldr","text":"✍️ TL;DR","depth":2},{"id":"this-week-at-a-glance","text":"This Week at a Glance","depth":2},{"id":"changes-by-package","text":"Changes by Package","depth":2},{"id":"nodejs-v26131--v24223--v22235","text":"Node.js v26.13.1 · v24.22.3 · v22.23.5","depth":3},{"id":"astro-7412","text":"astro 7.4.12","depth":3},{"id":"zed-v1281--v1280","text":"Zed v1.28.1 · v1.28.0","depth":3},{"id":"pnpm-v12210--v12200--v12190--v112812","text":"pnpm v12.21.0 · v12.20.0 · v12.19.0 · v11.28.12","depth":3},{"id":"-major-electron-v4532--v44113--v43810","text":"🔺 Major Electron v45.3.2 · v44.11.3 · v43.8.10","depth":3},{"id":"oxfmt-v0780","text":"Oxfmt v0.78.0","depth":3},{"id":"oxlint-v1930","text":"Oxlint v1.93.0","depth":3},{"id":"-major-tinybase-v1010","text":"🔺 Major TinyBase v10.1.0","depth":3},{"id":"nextjs-v1646","text":"Next.js v16.4.6","depth":3},{"id":"-major-nx-2406--2332","text":"🔺 Major Nx 24.0.6 · 23.3.2","depth":3},{"id":"fastapi-01627","text":"FastAPI 0.162.7","depth":3},{"id":"grafana-1331--1326--13110--13013","text":"Grafana 13.3.1 · 13.2.6 · 13.1.10 · 13.0.13","depth":3},{"id":"homebrew-7013","text":"Homebrew 7.0.13","depth":3},{"id":"vite-v838--v826--v817--v738--v646","text":"Vite v8.3.8 · v8.2.6 · v8.1.7 · v7.3.8 · v6.4.6","depth":3},{"id":"angular-2226","text":"Angular 22.2.6","depth":3},{"id":"eslint-v10150","text":"ESLint v10.15.0","depth":3},{"id":"hono-v41318","text":"Hono v4.13.18","depth":3},{"id":"kyverno-v1200","text":"Kyverno v1.20.0","depth":3},{"id":"prettier-3100--3101","text":"Prettier 3.10.0 · 3.10.1","depth":3},{"id":"rspack-v232","text":"Rspack v2.3.2","depth":3},{"id":"turborepo-v21111","text":"Turborepo v2.11.11","depth":3},{"id":"visual-studio-code-11460--11453","text":"Visual Studio Code 1.146.0 · 1.145.3","depth":3},{"id":"biome-v267","text":"Biome v2.6.7","depth":3},{"id":"dragonfly-v254","text":"Dragonfly v2.5.4","depth":3},{"id":"go-go1274--go12611","text":"Go go1.27.4 · go1.26.11","depth":3},{"id":"gradle-991--8147","text":"Gradle 9.9.1 · 8.14.7","depth":3},{"id":"jotai-v302","text":"Jotai v3.0.2","depth":3},{"id":"ollama-v04016","text":"ollama v0.40.16","depth":3},{"id":"podman-v620--v5810","text":"Podman v6.2.0 · v5.8.10","depth":3},{"id":"react-native-skia-v3101--v3100--v392","text":"React Native Skia v3.10.1 · v3.10.0 · v3.9.2","depth":3},{"id":"rolldown-v132--v1219--v118--v105","text":"Rolldown v1.3.2 · v1.2.19 · v1.1.8 · v1.0.5","depth":3},{"id":"rust-11000","text":"Rust 1.100.0","depth":3},{"id":"storybook-v1067","text":"Storybook v10.6.7","depth":3},{"id":"terraform-v1172","text":"Terraform v1.17.2","depth":3},{"id":"vue-router-551--550--465","text":"Vue Router 5.5.1 · 5.5.0 · 4.6.5","depth":3},{"id":"wrapping-up","text":"Wrapping Up","depth":2}],"title":"Contents"}]}]
+16:["$","script","script-0",{"src":"/_next/static/chunks/0-jsxcg-veu-w.js","async":true}]
+17:["$","$L25",null,{"children":["$","$1d",null,{"name":"Next.MetadataOutlet","children":"$@26"}]}]
+21:true
+9:300
+26:null
+9:C
+20:0
+b:"$undefined"
+7:"$undefined"
+1f:"$undefined"
+18:"$undefined"

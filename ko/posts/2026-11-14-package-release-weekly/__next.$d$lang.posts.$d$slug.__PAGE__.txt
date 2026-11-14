@@ -1,0 +1,446 @@
+3:"$Sreact.fragment"
+4:"/_next/static/chunks/12-fpzohv1xd4.js"
+5:I[9619,["$4"],"default"]
+6:I[23615,["$4"],"default"]
+e:"/_next/static/chunks/2kf7_4zlzxl0h.js"
+f:"/_next/static/chunks/0-jsxcg-veu-w.js"
+10:I[53403,["$4","$e","$f"],"default"]
+11:I[34242,["$4","$e","$f"],""]
+19:"ViewportBoundary"
+1a:I[52085,["$4"],"$19"]
+1b:"MetadataBoundary"
+1c:I[52085,["$4"],"$1b"]
+1d:"$Sreact.suspense"
+1e:I[3142,["$4"],"IconMark"]
+8:X
+8:C
+9:X
+d:T66f,{"@context":"https://schema.org","@type":"BlogPosting","headline":"이번 주 패키지 릴리스 정리 — 2026-11-14","description":"✍️ 한 줄 요약 Node.js가 26·24·22 세 LTS 라인에 HTTP/2·TLS 관련 High 등급 CVE 여러 건을 고친 보안 릴리스를 냈고, Grafana(CVE 6건)·Gradle(Critical 등급 포함 보안 권고 3건)·Podman(CVE 3건)도 보안 수정을…","datePublished":"2026-11-14","dateModified":"2026-11-14","inLanguage":"ko-KR","url":"https://seungahhong.github.io/ko/posts/2026-11-14-package-release-weekly/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/ko/posts/2026-11-14-package-release-weekly/"},"image":"https://seungahhong.github.io/blog-assets/2026/11/assets/14/thumbnail.png","keywords":[],"articleSection":"주간 릴리스","wordCount":8342,"timeRequired":"PT22M","isPartOf":{"@id":"https://seungahhong.github.io/ko/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}c:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$d"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"홈\",\"item\":\"https://seungahhong.github.io/ko/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"포스트\",\"item\":\"https://seungahhong.github.io/ko/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"이번 주 패키지 릴리스 정리 — 2026-11-14\",\"item\":\"https://seungahhong.github.io/ko/posts/2026-11-14-package-release-weekly/\"}]}"}}],["$","$L10",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L11",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L11",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"주간 릴리스"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"이번 주 패키지 릴리스 정리 — 2026-11-14"}]]}]}],["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"이번 주 패키지 릴리스 정리 — 2026-11-14"}],"$L12",false,false]}],"$L13","$L14"]}],"$L15"]}]}]],["$L16"],"$L17"]}],"p":"$@18","v":null,"s":"$9"}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"2026-11-14-package-release-weekly","s":[]},"h":96,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@b","v":"$8","s":"$9"},"c":"$Qc"}]]
+2:[["children",{"s":"posts","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"ko","s":["about","blog"]},"h":32,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1a",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1c",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1d",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"이번 주 패키지 릴리스 정리 — 2026-11-14 · 홍승아 기술 블로그"}],["$","meta","1",{"name":"description","content":"✍️ 한 줄 요약 Node.js가 26·24·22 세 LTS 라인에 HTTP/2·TLS 관련 High 등급 CVE 여러 건을 고친 보안 릴리스를 냈고, Grafana(CVE 6건)·Gradle(Critical 등급 포함 보안 권고 3건)·Podman(CVE 3건)도 보안 수정을…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"홍승아"}],["$","meta","4",{"name":"creator","content":"홍승아"}],["$","meta","5",{"name":"publisher","content":"홍승아"}],["$","meta","6",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://seungahhong.github.io/ko/posts/2026-11-14-package-release-weekly/"}],["$","link","8",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-11-14-package-release-weekly/"}],["$","link","9",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-11-14-package-release-weekly/"}],["$","link","10",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-11-14-package-release-weekly/"}],["$","meta","11",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","12",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","13",{"property":"og:title","content":"이번 주 패키지 릴리스 정리 — 2026-11-14"}],["$","meta","14",{"property":"og:description","content":"✍️ 한 줄 요약 Node.js가 26·24·22 세 LTS 라인에 HTTP/2·TLS 관련 High 등급 CVE 여러 건을 고친 보안 릴리스를 냈고, Grafana(CVE 6건)·Gradle(Critical 등급 포함 보안 권고 3건)·Podman(CVE 3건)도 보안 수정을…"}],["$","meta","15",{"property":"og:url","content":"https://seungahhong.github.io/ko/posts/2026-11-14-package-release-weekly/"}],["$","meta","16",{"property":"og:locale","content":"ko-KR"}],["$","meta","17",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/11/assets/14/thumbnail.png"}],["$","meta","18",{"property":"og:image:alt","content":"이번 주 패키지 릴리스 정리 — 2026-11-14"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2026-11-14"}],["$","meta","21",{"property":"article:modified_time","content":"2026-11-14"}],["$","meta","22",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","23",{"property":"article:section","content":"주간 릴리스"}],["$","meta","24",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","25",{"name":"twitter:title","content":"이번 주 패키지 릴리스 정리 — 2026-11-14"}],["$","meta","26",{"name":"twitter:description","content":"✍️ 한 줄 요약 Node.js가 26·24·22 세 LTS 라인에 HTTP/2·TLS 관련 High 등급 CVE 여러 건을 고친 보안 릴리스를 냈고, Grafana(CVE 6건)·Gradle(Critical 등급 포함 보안 권고 3건)·Podman(CVE 3건)도 보안 수정을…"}],["$","meta","27",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/11/assets/14/thumbnail.png"}],["$","link","28",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L1e","29",{}]]}]}],null]}],null]}],"p":"$@1f","v":null,"s":"$9"}},"a":"$@20","u":"$@21","b":"I3etrEGAUhLeoFLgrz_G6"}
+23:I[15907,["$4","$e","$f"],"default"]
+24:I[27722,["$4","$e","$f"],"default"]
+25:I[52085,["$4"],"OutletBoundary"]
+12:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"홍승아"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-11-14","className":"meta-mono","children":"2026.11.14"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[22,"분"]}]]}]
+22:Tb2e9,<h3 id="️-한-줄-요약">✍️ 한 줄 요약<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#️-한-줄-요약"><span class="icon icon-link"></span></a></h3>
+<p>Node.js가 26·24·22 세 LTS 라인에 HTTP/2·TLS 관련 High 등급 CVE 여러 건을 고친 보안 릴리스를 냈고, Grafana(CVE 6건)·Gradle(Critical 등급 포함 보안 권고 3건)·Podman(CVE 3건)도 보안 수정을 냈습니다. Rust 1.100.0은 never 타입(<code>!</code>)과 커스텀 할당자(allocator) API를 안정화했고, Kyverno 1.20.0은 변경 이력상 레거시 <code>kyverno.io</code> 정책 엔진을 제거하는 커밋이 들어 있어 올리기 전에 꼭 확인해야 합니다.</p>
+<h3 id="이번-주-한눈에-보기">이번 주 한눈에 보기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#이번-주-한눈에-보기"><span class="icon icon-link"></span></a></h3>
+<p>기간은 2026-11-07 ~ 2026-11-14(KST)이며, 추적 중인 87개 패키지 가운데 35개의 변경점을 확인했습니다. 지난주 글에서 이미 다룬 버전(Angular 22.2.5, Tailwind CSS 4.3.5, Nx 24.0.5, Istio 1.31.4·1.30.8)은 기간 경계에 걸쳐 있어도 다시 넣지 않았습니다.</p>
+<p>이번 주도 GitHub 릴리스 페이지를 읽을 수 없어, CHANGELOG나 저장소 안 릴리스 노트가 있는 패키지는 그 파일을, 없는 패키지는 새 태그까지의 변경 이력(커밋 제목)을 읽고 정리했습니다. 변경 이력으로 정리한 패키지는 <code>릴리스 공지</code>를 <code>없음</code>으로 표시했고, breaking change(기존 코드를 고쳐야 하는 변경) 여부는 확인하지 못했습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>패키지</th><th>버전</th><th>릴리스 공지</th><th>변경점</th></tr></thead><tbody><tr><td>Node.js</td><td>v26.13.1 · v24.22.3 · v22.23.5 (모두 LTS)</td><td><a href="https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V26.md">있음</a></td><td>HTTP/2·TLS 보안 수정(CVE 다수, High 포함)</td></tr><tr><td>astro</td><td>7.4.12 (패치 5개)</td><td><a href="https://github.com/withastro/astro/blob/main/packages/astro/CHANGELOG.md">있음</a></td><td><code>security.allowedDomains</code> 헤더 검증 강화, 빌드 메모리 절감</td></tr><tr><td>Zed</td><td>v1.28.1 · v1.28.0</td><td>없음</td><td>에이전트 압축 과금 수정, 워크트리 선택기 브랜치 검색</td></tr><tr><td>pnpm</td><td>v12.21.0 · v12.20.0 · v12.19.0 · v11.28.12</td><td>없음</td><td>peer 해석 수정 다수, 위험한 <code>PNPM_HOME</code> 거부</td></tr><tr><td>🔺 메이저 Electron</td><td>v45.3.2 (패치 3개) · v44.11.3 (패치 4개) · v43.8.10 (패치 3개)</td><td>없음</td><td>폐지된 eMudhra 중간 인증서 차단, 종료 전 쿠키 저장</td></tr><tr><td>Oxfmt</td><td>v0.78.0</td><td>없음</td><td>Less 출력 수정, Astro 안 TS를 TSX로 포맷</td></tr><tr><td>Oxlint</td><td>v1.93.0</td><td>없음</td><td><code>--fix</code>로 쓰지 않는 <code>oxlint-disable</code> 제거</td></tr><tr><td>🔺 메이저 TinyBase</td><td>v10.1.0</td><td><a href="https://github.com/tinyplex/tinybase/blob/main/site/guides/20_releases.md">있음</a></td><td>WsServer 클라이언트 권한 부여, 동기화 데이터 절감</td></tr><tr><td>Next.js</td><td>v16.4.6</td><td>없음</td><td>라우트 핸들러 응답 자동 압축, Turbopack GC 수정</td></tr><tr><td>🔺 메이저 Nx</td><td>24.0.6 · 23.3.2</td><td>없음</td><td>임시·캐시 디렉토리 권한 축소, 태스크 출력 유실 수정</td></tr><tr><td>FastAPI</td><td>0.162.7 (패치 7개)</td><td><a href="https://github.com/fastapi/fastapi/blob/master/docs/en/docs/release-notes.md">있음</a></td><td>Python 3.10 지원 중단(breaking), 취소 시 의존성 정리 수정</td></tr><tr><td>Grafana</td><td>13.3.1 · 13.2.6 · 13.1.10 · 13.0.13</td><td><a href="https://github.com/grafana/grafana/blob/main/CHANGELOG.md">있음</a></td><td>보안 수정 CVE 6건</td></tr><tr><td>Homebrew</td><td>7.0.13</td><td>없음</td><td><code>uninstall</code> dry-run 옵션 추가</td></tr><tr><td>Vite</td><td>v8.3.8 (패치 2개) · v8.2.6 · v8.1.7 · v7.3.8 · v6.4.6</td><td><a href="https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md">있음</a></td><td>가상 모듈 id 이스케이프, CSS·Windows 수정</td></tr><tr><td>Angular</td><td>22.2.6</td><td><a href="https://github.com/angular/angular/blob/main/CHANGELOG.md">있음</a></td><td>메모리 누수·hydration·forms·router 수정</td></tr><tr><td>ESLint</td><td>v10.15.0</td><td><a href="https://github.com/eslint/eslint/blob/main/CHANGELOG.md">있음</a></td><td>규칙 검사 범위 확대, <code>minimatch</code> CVE 회피</td></tr><tr><td>Hono</td><td>v4.13.18 (패치 2개)</td><td>없음</td><td>JSX 속성값 이스케이프, 쿠키 접두사 검사 수정</td></tr><tr><td>Kyverno</td><td>v1.20.0</td><td>없음</td><td>레거시 정책 엔진 제거, OCI CLI 명령 추가</td></tr><tr><td>Prettier</td><td>3.10.0 · 3.10.1</td><td><a href="https://github.com/prettier/prettier/blob/main/website/blog/2026-11-11-3.10.0.md">있음</a></td><td>공식 플러그인 <code>@prettier/plugin-yuku</code>, Flow 신문법</td></tr><tr><td>Rspack</td><td>v2.3.2</td><td>없음</td><td>사용하지 않는 export의 동적 import 제거, 메모리 절감</td></tr><tr><td>Turborepo</td><td>v2.11.11</td><td>없음</td><td><code>turbo query</code>에 태스크 해시·로그 노출, <code>NO_PROXY</code> 존중</td></tr><tr><td>Visual Studio Code</td><td>1.146.0 · 1.145.3</td><td>없음</td><td>MCP·워크스페이스 신뢰 보안 강화, <code>/automate</code> 스킬</td></tr><tr><td>Biome</td><td>v2.6.7</td><td><a href="https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md">있음</a></td><td>nursery 규칙 대거 추가, 플러그인 <code>semantic()</code> 제거</td></tr><tr><td>Dragonfly</td><td>v2.5.4</td><td>없음</td><td>매니저 JWT 쿠키 HttpOnly, 프리히트 요청 검증 강화</td></tr><tr><td>Go</td><td>go1.27.4 · go1.26.11</td><td>없음</td><td>cgo·링커 플래그 검증 강화, HTTP/1 서버 크래시 수정</td></tr><tr><td>Gradle</td><td>9.9.1 · 8.14.7</td><td><a href="https://github.com/gradle/gradle/blob/v9.9.1/platforms/documentation/docs/src/docs/release/notes.md">있음</a></td><td>보안 권고 3건(Critical 9.3 포함)</td></tr><tr><td>Jotai</td><td>v3.0.2</td><td>없음</td><td>의존성 제거 시 언마운트, <code>freezeAtom</code> 순환 참조 처리</td></tr><tr><td>ollama</td><td>v0.40.16</td><td>없음</td><td>Claude Code 연동 수정, Windows ARM64 CUDA 13.5</td></tr><tr><td>Podman</td><td>v6.2.0 · v5.8.10</td><td><a href="https://github.com/podman-container-tools/podman/blob/v6.2.0/RELEASE_NOTES.md">있음</a></td><td>CVE 3건, <code>push --platform</code>, WSL systemd</td></tr><tr><td>React Native Skia</td><td>v3.10.1 · v3.10.0 · v3.9.2</td><td>없음</td><td>Skia m158, <code>drawShapes</code> 추가, 렌더 스레드 수정</td></tr><tr><td>Rolldown</td><td>v1.3.2 (패치 2개) · v1.2.19 · v1.1.8 · v1.0.5</td><td><a href="https://github.com/rolldown/rolldown/blob/main/CHANGELOG.md">있음</a></td><td>오류 스텁 이스케이프, CJS <code>__dirname</code> 제공</td></tr><tr><td>Rust</td><td>1.100.0</td><td><a href="https://github.com/rust-lang/rust/blob/1.100.0/RELEASES.md">있음</a></td><td>never 타입·커스텀 할당자 안정화</td></tr><tr><td>Storybook</td><td>v10.6.7</td><td><a href="https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md">있음</a></td><td>프리릴리스 커뮤니티 프레임워크 init 지원</td></tr><tr><td>Terraform</td><td>v1.17.2</td><td><a href="https://github.com/hashicorp/terraform/blob/v1.17.2/CHANGELOG.md">있음</a></td><td><code>destroy=false</code> 순환 참조 수정</td></tr><tr><td>Vue Router</td><td>5.5.1 · 5.5.0 · 4.6.5</td><td><a href="https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md">있음</a></td><td>스크롤 위치를 sessionStorage에 저장, 실험 API breaking</td></tr></tbody></table>
+<h3 id="패키지별-변경-내용">패키지별 변경 내용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#패키지별-변경-내용"><span class="icon icon-link"></span></a></h3>
+<h4 id="nodejs-v26131--v24223--v22235">Node.js v26.13.1 · v24.22.3 · v22.23.5<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nodejs-v26131--v24223--v22235"><span class="icon icon-link"></span></a></h4>
+<p>자바스크립트 런타임입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 세 라인 모두 보안 릴리스입니다. HTTP/2 스트림을 정리할 때 헤더·버퍼를 놓치거나 nghttp2가 버린 스트림을 감지하지 못하던 문제, 빈 쓰기로 HTTP 파서가 중첩 실행되던 문제, TLS 세션 재개·재협상으로 SNI가 바뀌거나 mTLS에서 재개가 허용되던 문제, 원격에서 TLS 서버를 죽일 수 있던 문제(26·24 라인)가 High 등급으로 고쳐졌습니다. Medium·Low 등급으로는 ALTSVC 버퍼 오버플로, 잘못된 프록시 URL 오류 메시지에 자격 증명이 노출되던 문제, 권한 모델에서 재귀 <code>fs.watch</code>가 거부된 하위 경로를 드러내던 문제 등이 포함됩니다. 26.13.1은 'Lithium' LTS 라인으로 표기돼 있습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — HTTP/2나 TLS 서버를 직접 운영한다면 바로 올리는 것이 좋습니다. 같은 패치 버전 안의 보안 수정이라 API 변경은 적혀 있지 않습니다.</p>
+<p>릴리스 공지: <a href="https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V26.md">CHANGELOG_V26</a></p>
+<h4 id="astro-7412">astro 7.4.12<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#astro-7412"><span class="icon icon-link"></span></a></h4>
+<p>JavaScript 웹 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 7.4.11은 <code>security.allowedDomains</code>가 <code>X-Forwarded-Proto</code>·<code>X-Forwarded-Host</code>·<code>X-Forwarded-Port</code>를 따로 검사하던 것을 한 항목 안에서 함께 검사하도록 바꾸고, <code>ftp</code>·<code>ws</code> 같은 HTTP(S)가 아닌 프로토콜 값을 받아들이던 문제를 고쳤습니다. <code>astro build</code>가 Vite <code>build.license</code> 파일을 지우던 문제, 잘못된 퍼센트 인코딩 경로가 500 대신 400을 돌려주도록 한 수정도 있습니다. 7.4.9는 <code>strictDynamic</code> CSP에서 번들 스크립트가 막히던 문제를, 7.4.12는 빌드 중 콘텐츠 컬렉션 메모리 사용을 줄였습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 프록시 뒤에서 <code>security.allowedDomains</code>를 쓴다면, 포트·프로토콜이 항목에 명시돼 있지 않으면 이제 전달 헤더 값이 적용되지 않을 수 있으니 설정을 확인하세요.</p>
+<p>릴리스 공지: <a href="https://github.com/withastro/astro/blob/main/packages/astro/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="zed-v1281--v1280">Zed v1.28.1 · v1.28.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#zed-v1281--v1280"><span class="icon icon-link"></span></a></h4>
+<p>Rust로 만든 빠른 코드 에디터입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 에이전트의 대화 압축(compaction)이 캐시되지 않은 입력 토큰으로 과금되던 문제가 고쳐졌고, ACP v2에서 백그라운드 작업을 지원합니다. 워크트리 선택기는 브랜치 이름으로도 검색되고, 하위 메뉴·팝오버는 공간이 있는 쪽으로 열립니다. 기본 셸이 Nushell인 Windows SSH 원격, Vim visual-block 멈춤, 문서 색상 인레이 중복 문제도 수정됐습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="pnpm-v12210--v12200--v12190--v112812">pnpm v12.21.0 · v12.20.0 · v12.19.0 · v11.28.12<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#pnpm-v12210--v12200--v12190--v112812"><span class="icon icon-link"></span></a></h4>
+<p>Node.js 패키지 매니저입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 이번 주는 peer 의존성 해석 수정이 대부분입니다. 반복 install에서 필요한 peer 고정값이 흔들리던 문제, 의존성 순환·다이아몬드 구조에서 peer 제공자를 잃던 문제, 동일하게 해석된 peer 중복 문제가 고쳐졌습니다. 안전하지 않은 <code>PNPM_HOME</code> 값을 거부하고, Linux·macOS에서 PowerShell을 셸로 쓰는 setup을 지원합니다. 레지스트리 서버 <code>pnpr</code> 쪽 기능(토큰 수명, 감사 기록 등)도 함께 늘었습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다. peer 해석이 바뀌므로 올린 뒤 lockfile 변화를 한 번 살펴보세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="-메이저-electron-v4532--v44113--v43810">🔺 메이저 Electron v45.3.2 · v44.11.3 · v43.8.10<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-메이저-electron-v4532--v44113--v43810"><span class="icon icon-link"></span></a></h4>
+<p>웹 기술로 데스크톱 앱을 만드는 플랫폼입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 세 라인 모두에 폐지된 eMudhra RSA 중간 인증서를 차단하는 수정과, 로더 재시작 사이 webRequest 리다이렉트를 제한해 크래시를 막는 수정이 들어갔습니다. 45.x는 종료 전 쿠키 저장소를 디스크에 기록하고, 확장 프로그램에서 <code>chrome.storage.managed</code>를 지원하며, 업로드 본문 스트림 오류 시 <code>net.fetch</code>를 reject합니다. 44.x에는 Windows용 <code>Menu.setHighlightColors()</code>가 추가됐습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다. 기준(44)보다 메이저가 높은 45 라인으로 넘어가는 경우 공식 안내를 따로 확인하세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="oxfmt-v0780">Oxfmt v0.78.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#oxfmt-v0780"><span class="icon icon-link"></span></a></h4>
+<p>Rust로 만든 JS/TS 포매터입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 Astro 파일 안의 TypeScript를 TSX로 포맷하고, Less의 <code>~</code> 이스케이프·<code>%</code> 선택자 출력을 바로잡았습니다. JSDoc 기본값의 <code>*</code> 접두사와 줄 끝 처리, 공백뿐인 TOML·빈 GraphQL 문서 처리도 고쳐졌습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다. Less·Astro 파일 포맷 결과가 달라질 수 있습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="oxlint-v1930">Oxlint v1.93.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#oxlint-v1930"><span class="icon icon-link"></span></a></h4>
+<p>Rust로 만든 JS/TS Linter입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 <code>--fix</code>가 쓰이지 않는 <code>oxlint-disable</code> 주석을 지워 주고, <code>react/exhaustive-deps</code>가 불필요한 의존성 제거를 제안합니다. <code>promise/prefer-catch</code>에 제안 수정이 생겼고, <code>unicorn/no-useless-undefined</code>·<code>eslint/no-lone-blocks</code> 등 여러 규칙의 오탐·패닉이 고쳐졌습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다. CI에서 <code>--fix</code>를 돌린다면 disable 주석이 지워지는 변경이 생길 수 있습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="-메이저-tinybase-v1010">🔺 메이저 TinyBase v10.1.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-메이저-tinybase-v1010"><span class="icon icon-link"></span></a></h4>
+<p>로컬 우선 앱용 리액티브 데이터 스토어입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — <code>createWsServer</code>에 <code>authorize</code>·<code>canWriteCell</code>·<code>canWriteValue</code> 함수를 넘겨, 어떤 클라이언트가 어떤 경로를 쓰고 무엇을 쓸 수 있는지 서버가 결정할 수 있게 됐습니다. 동기화가 보내는 데이터 양이 크게 줄었고, 재접속 후 수렴·저장 중 로드 등 안정성 수정이 많이 들어갔습니다. <code>persister-postgres</code>는 Postgres.js v4 이상, <code>schematizer-effect</code>는 Effect v4 이상을 요구합니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — Postgres.js·Effect를 함께 쓴다면 의존성을 v4로 올려야 하고, 두 라이브러리 자체의 API 변경(<code>sql.array()</code> 제거, <code>Schema.Union</code> 인자 형태 등)을 확인하세요.</p>
+<p>릴리스 공지: <a href="https://github.com/tinyplex/tinybase/blob/main/site/guides/20_releases.md">Releases 가이드</a></p>
+<h4 id="nextjs-v1646">Next.js v16.4.6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#nextjs-v1646"><span class="icon icon-link"></span></a></h4>
+<p>서버렌더링 React 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 이미 압축되지 않은 라우트 핸들러 응답을 자동으로 압축하고, Turbopack GC 관련 수정이 들어갔습니다. <code>create-next-app</code>의 Tailwind 버전은 4.3.3으로 고정됐습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다. 라우트 핸들러에서 직접 압축을 다루고 있다면 응답 헤더를 확인하세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="-메이저-nx-2406--2332">🔺 메이저 Nx 24.0.6 · 23.3.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#-메이저-nx-2406--2332"><span class="icon icon-link"></span></a></h4>
+<p>모노레포 빌드 시스템입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 임시 설치·캐시·데이터 디렉토리를 현재 사용자만 접근할 수 있게 바꿨고, 명령 종료 직전에 쓴 run-commands 출력이 사라지던 문제를 고쳤습니다(23.3.2도 태스크 출력 flush 수정). 타깃이 자체 입력을 지정할 때 package.json 스크립트 본문을 해시에 넣고, <code>bun</code>·<code>bun:</code> import를 내장 모듈로 다룹니다. stories·Storybook 설정이 바뀌면 <code>build-storybook</code>을 다시 빌드합니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다. 해시 계산이 바뀌어 첫 실행에서 캐시가 무효화될 수 있습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="fastapi-01627">FastAPI 0.162.7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#fastapi-01627"><span class="icon icon-link"></span></a></h4>
+<p>Python 웹 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 0.162.6에서 Python 3.10 지원이 중단됐습니다(breaking change). 0.162.3은 Python 3.15 지원을 추가했고, 0.162.4는 런타임에 AnyIO 4.1.0 이상을 요구합니다. 0.162.5·0.162.7은 요청이 취소됐을 때 동기·비동기 <code>yield</code> 의존성의 정리 코드가 제대로 실행되지 않던 문제를 고쳤습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — Python 3.10에서 돌고 있다면 0.162.6 이상으로 올리기 전에 Python부터 올려야 합니다.</p>
+<p>릴리스 공지: <a href="https://github.com/fastapi/fastapi/blob/master/docs/en/docs/release-notes.md">release-notes</a></p>
+<h4 id="grafana-1331--1326--13110--13013">Grafana 13.3.1 · 13.2.6 · 13.1.10 · 13.0.13<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#grafana-1331--1326--13110--13013"><span class="icon icon-link"></span></a></h4>
+<p>메트릭 대시보드입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 네 라인 모두 CVE-2026-102589, CVE-2026-107509, CVE-2026-110992, CVE-2026-111024, CVE-2026-13721, CVE-2026-14242 보안 수정을 담았습니다. CHANGELOG에는 번호만 있고 무엇이 위험했는지는 적혀 있지 않습니다. 13.3.1은 2026년 시간대 변경 반영과 Provisioning 저장소 URL 변경 허용도 포함합니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 운영 중인 라인의 최신 패치로 올리세요. 각 CVE의 영향 범위는 공식 보안 공지로 확인해야 합니다.</p>
+<p>릴리스 공지: <a href="https://github.com/grafana/grafana/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="homebrew-7013">Homebrew 7.0.13<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#homebrew-7013"><span class="icon icon-link"></span></a></h4>
+<p>macOS 패키지 매니저입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 <code>brew uninstall</code>에 dry-run 옵션이 생겨, 지우기 전에 unlink·autoremove 대상을 미리 볼 수 있습니다. outdated 보고에서 비활성화된 패키지를 건너뛰고, <code>bundle</code>이 탭을 명시한 formula·cask를 존중하며, 잘못된 alias 영수증을 처리합니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="vite-v838--v826--v817--v738--v646">Vite v8.3.8 · v8.2.6 · v8.1.7 · v7.3.8 · v6.4.6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vite-v838--v826--v817--v738--v646"><span class="icon icon-link"></span></a></h4>
+<p>프론트엔드 빌드 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 11월 9일에 모든 유지보수 라인이 함께 나왔습니다. 7.3.8·6.4.6은 가상 모듈을 해석할 때 id를 이스케이프하는 수정을, 8.x 라인은 같은 날 나온 Rolldown 패치를 반영했습니다. 8.3.8은 <code>build.cssCodeSplit: false</code>일 때 CSS 엔트리를 거부하고, inline worker가 참조한 자산을 번들 dev 모드에서 내보내며, sass를 파일마다가 아니라 한 번만 import해 빨라졌습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — CHANGELOG에 보안 권고나 CVE 번호는 없지만 여러 라인을 동시에 낸 수정이니, 쓰는 라인의 최신 패치로 올리는 것을 권합니다.</p>
+<p>릴리스 공지: <a href="https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="angular-2226">Angular 22.2.6<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#angular-2226"><span class="icon icon-link"></span></a></h4>
+<p>JavaScript 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — animations 렌더러의 메모리 누수, core의 클로저·참조 유지 누수가 고쳐졌고, hydration 중 맵 접근과 이벤트 재생 후 리스너 정리가 보강됐습니다. forms는 필드가 touched될 때 debounce된 값을 flush하고 중복 <code>valueChanges</code>를 막으며, router는 Navigation API에서 URL 복원 시 페이지를 새로고침하지 않습니다. <code>HttpParams</code>에서 빈 배열을 빼고 <code>httpResource</code> 관련 트리 셰이킹도 개선됐습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: <a href="https://github.com/angular/angular/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="eslint-v10150">ESLint v10.15.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#eslint-v10150"><span class="icon icon-link"></span></a></h4>
+<p>JavaScript 코드 분석 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — <code>func-names</code>가 <code>__proto__</code>와 할당 대상까지 검사하고, <code>accessor-pairs</code>·<code>no-invalid-this</code>·<code>no-shadow</code>가 더 많은 구문을 인식합니다. <code>no-useless-rename</code>·<code>no-unneeded-ternary</code> 자동 수정이 타입 수식어와 괄호를 보존하도록 고쳐졌습니다. CVE-2026-118764를 피하려 <code>minimatch@11.0.1</code> 이상을 요구합니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 규칙 검사 범위가 넓어져 새 경고가 나올 수 있습니다.</p>
+<p>릴리스 공지: <a href="https://github.com/eslint/eslint/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="hono-v41318">Hono v4.13.18<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#hono-v41318"><span class="icon icon-link"></span></a></h4>
+<p>엣지용 웹 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 JSX가 요소·객체 속성값을 이스케이프하고 ref 객체를 속성으로 렌더하지 않도록 고쳤으며, ErrorBoundary가 만드는 모든 스크립트에 CSP nonce를 붙입니다. 쿠키의 <code>__Secure-</code>·<code>__Host-</code> 접두사를 대소문자 구분 없이 검사하고, AWS Lambda API Gateway v2 이벤트의 비 ASCII 헤더 값을 정리합니다. ETag·Server-Timing·Accept 처리 수정도 포함됩니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다. JSX 속성 이스케이프는 보안 성격의 수정으로 보이니 Hono JSX를 쓴다면 올리는 것을 권합니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="kyverno-v1200">Kyverno v1.20.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#kyverno-v1200"><span class="icon icon-link"></span></a></h4>
+<p>Kubernetes 정책 엔진입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 레거시 <code>kyverno.io</code> 정책 엔진과 Go API를 삭제하고, admission·background·reports 컨트롤러에서 레거시 정책 실행을 제거하는 커밋이 포함돼 있습니다. CLI에는 <code>kyverno oci inspect</code>·<code>resolve</code>·<code>validate</code>와 <code>apply</code>의 출력 파일 옵션이 추가됐고, MutatingPolicy가 JSON 문서 변경을 지원합니다. globalContext의 jmesPath 프로젝션은 deprecated되고 CEL 표현식 필드가 생겼습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 범위는 확인하지 못했습니다. 레거시 ClusterPolicy·Policy를 쓰고 있다면 올리기 전에 공식 마이그레이션 안내를 반드시 확인하세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="prettier-3100--3101">Prettier 3.10.0 · 3.10.1<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#prettier-3100--3101"><span class="icon icon-link"></span></a></h4>
+<p>코드 포매터입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — Zig로 만든 Yuku 툴체인 기반의 공식 플러그인 <code>@prettier/plugin-yuku</code>가 추가됐고, Flow 새 문법과 Structs·Import Sync·Deferred re-exports 제안 문법을 지원합니다. 주석 위치가 매번 바뀌던 문제, <code>TSInstantiationExpression</code> 괄호 누락, 긴 이항식의 스택 오버플로 등 수정이 많고 주석이 많은 파일의 성능도 개선됐습니다. 3.10.1은 주석만 있는 빈 GraphQL 선택 집합에서 나던 오류를 고쳤습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 포맷 결과가 조금씩 달라질 수 있으니 올린 뒤 전체 포맷 diff를 한 번에 커밋하는 것이 좋습니다.</p>
+<p>릴리스 공지: <a href="https://github.com/prettier/prettier/blob/main/website/blog/2026-11-11-3.10.0.md">3.10.0 릴리스 글</a></p>
+<h4 id="rspack-v232">Rspack v2.3.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rspack-v232"><span class="icon icon-link"></span></a></h4>
+<p>Rust로 만든 웹 번들러입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 사용하지 않는 export 안의 동적 import를 트리 셰이킹으로 제거하고, 부수효과 없는 <code>export *</code> 중계 모듈을 건너뜁니다. 자산 생성·해시 계산의 source map 메모리를 줄이고 재빌드 때 이전 컴파일 자산을 해제합니다. 순환 tsconfig <code>extends</code>에서 크래시 대신 오류를 보고하고, UTF-8 BOM tsconfig, HMR 비동기 그룹, CSS counter style 범위를 고쳤습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="turborepo-v21111">Turborepo v2.11.11<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#turborepo-v21111"><span class="icon icon-link"></span></a></h4>
+<p>JS/TS 빌드 시스템입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 <code>turbo query</code>에서 태스크 해시와 로그 파일을 조회할 수 있고, 예제 다운로드가 <code>NO_PROXY</code>를 존중합니다. 입력 해싱이 저장소 밖 심볼릭 링크를 따라가지 않고, strict 환경 모드에서 <code>TMPDIR</code>을 보존하며, <code>turbo.lock</code> 생성이 약 10배 빨라졌습니다. <code>turbo gen</code> 종료 코드 전달과 의존성의 태스크 제외 규칙도 고쳐졌습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="visual-studio-code-11460--11453">Visual Studio Code 1.146.0 · 1.145.3<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#visual-studio-code-11460--11453"><span class="icon icon-link"></span></a></h4>
+<p>코드 에디터입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 1.145.3은 보안 강화 패치입니다. MCP 설치 링크 입력과 SSE 엔드포인트를 검증하고, 점으로 이어진 설정 키 확장에서 <code>__proto__</code> 세그먼트를 막으며, 노트북 글꼴 크기를 통한 주입을 고치고, 네트워크 워크스페이스에 신뢰를 요구합니다. 1.146.0은 월간 릴리스로 내장 <code>/automate</code> 스킬, 창 사이 채팅 고정 상태 공유, <code>markdownImages.allowedOrigins</code> 편집기 옵션 등이 들어갔습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다. 네트워크 경로의 워크스페이스를 연다면 신뢰 확인 창이 새로 뜰 수 있습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="biome-v267">Biome v2.6.7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#biome-v267"><span class="icon icon-link"></span></a></h4>
+<p>프론트엔드 툴체인(포매터·린터)입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — <code>noInvalidFetchOptions</code>, <code>useGlobalRegexInMatchAll</code>, <code>noDisabledAttribute</code>, <code>useConsistentBooleanName</code> 등 nursery 규칙이 20개 넘게 추가됐습니다. JavaScript 플러그인에 GritQL 패턴으로 노드를 고르는 <code>grit()</code> 쿼리가 생겼고, 대신 <code>semantic()</code> 쿼리 함수는 제거돼 <code>ast(..., { semantic: true })</code>로 바꿔야 합니다. Markdown 포매터의 인용·표·작업 목록 처리와 여러 규칙의 오탐이 고쳐졌고, 설정한 플러그인을 쓸 수 없으면 조용히 건너뛰지 않고 오류를 냅니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 직접 만든 Biome 플러그인에서 <code>semantic()</code>을 쓰고 있다면 고쳐야 합니다.</p>
+<p>릴리스 공지: <a href="https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="dragonfly-v254">Dragonfly v2.5.4<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#dragonfly-v254"><span class="icon icon-link"></span></a></h4>
+<p>P2P 파일 배포·이미지 가속 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 매니저 JWT 인증 쿠키에 HttpOnly를 설정하고, OCI 매니페스트 URL 파싱과 프리히트 요청 처리를 강화했습니다. 프리히트 요청마다 레지스트리 인증을 새로 받고, 멀티 플랫폼 이미지 프리히트의 중복 제거를 개선했으며, Redis 자격 증명을 URL userinfo로 인코딩합니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="go-go1274--go12611">Go go1.27.4 · go1.26.11<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#go-go1274--go12611"><span class="icon icon-link"></span></a></h4>
+<p>프로그래밍 언어입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 go1.27.4는 <code>cmd/go</code>·링커의 cgo 플래그 검증을 대폭 강화했습니다. <code>--sysroot</code>·<code>-target</code> 같은 플래그 차단, pkg-config 로컬 <code>.pc</code> 경로 차단, <code>.syso</code>·링커 입력 파일 검증 등이 들어갔고, <code>MaxBytesReader</code> 헤더 경합으로 HTTP/1 서버가 죽던 문제도 고쳤습니다. 커밋 제목상 보안 성격으로 보이지만 CVE 번호는 확인하지 못했습니다. go1.26.11도 같은 날 나왔으나 변경 이력은 1.27.4만 읽었습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — cgo에서 특이한 링커 플래그를 쓰는 빌드는 이제 거부될 수 있으니 빌드를 한 번 돌려 보세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="gradle-991--8147">Gradle 9.9.1 · 8.14.7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#gradle-991--8147"><span class="icon icon-link"></span></a></h4>
+<p>Java 빌드 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 두 라인 모두 보안 권고 3건을 고친 패치입니다. 버전 카탈로그 값이 생성된 접근자에서 코드로 실행되던 문제(Critical 9.3), Gradle 클라이언트가 데몬 레지스트리 내용을 그대로 믿던 문제(High 8.6), 오래된 레지스트리 항목을 믿어 포트를 가로챌 수 있던 문제(High 7.0)입니다. 9.9.1은 KGP 2.4.21에서도 뜨던 잘못된 deprecation 경고도 고쳤습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 신뢰하지 않는 버전 카탈로그를 쓰거나 공유 머신에서 빌드한다면 바로 올리세요. 9.x에 있다면 9.9.1, 8.14 라인이면 8.14.7입니다.</p>
+<p>릴리스 공지: <a href="https://github.com/gradle/gradle/blob/v9.9.1/platforms/documentation/docs/src/docs/release/notes.md">9.9.1 릴리스 노트</a></p>
+<h4 id="jotai-v302">Jotai v3.0.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#jotai-v302"><span class="icon icon-link"></span></a></h4>
+<p>React 상태 관리 라이브러리입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 atom의 마지막 의존성이 제거되면 그 의존성을 언마운트하도록 고쳤고, <code>freezeAtom</code>이 순환 참조와 typed array를 처리합니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="ollama-v04016">ollama v0.40.16<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#ollama-v04016"><span class="icon icon-link"></span></a></h4>
+<p>로컬에서 오픈 모델을 실행하는 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 <code>launch</code>의 Claude Code 연결과 은퇴한 모델 오류 처리를 고쳤고, Windows ARM64에 CUDA 13.5를 추가했습니다. MLX 러너는 ripple preview와 일부 모델의 메모리 효율을 개선했습니다. OpenAI 호환 <code>/v1/models</code>는 설치된 모델이 없을 때 빈 배열을 돌려주고, responses 요청의 truncation 옵션을 전달합니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="podman-v620--v5810">Podman v6.2.0 · v5.8.10<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#podman-v620--v5810"><span class="icon icon-link"></span></a></h4>
+<p>컨테이너 엔진입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 두 라인 모두 CVE 3건을 고쳤습니다. 신뢰할 수 없는 이미지 라벨로 <code>podman auto-update</code>가 엉뚱한 systemd 유닛을 재시작하게 만들 수 있던 문제(CVE-2026-121885), 악성 이미지가 digest·서명 검증을 우회할 수 있던 문제(CVE-2026-111361), 기본 seccomp 프로필의 소켓 차단 규칙을 우회할 수 있던 문제(CVE-2026-123876)입니다. 6.2.0은 <code>podman push --platform</code>, <code>kube play</code>의 <code>--validate</code>·<code>--label</code>·<code>--multiple-pods</code>, Quadlet <code>Umask</code> 키, WSL 네이티브 systemd 지원을 추가했습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 빌드에 Go 1.26 이상이 필요하고, WSL은 2.5.1 이상이 필요합니다. <code>kube play</code>의 어노테이션 기반 seccomp 설정은 deprecated돼 Podman 7.0에서 제거될 예정입니다.</p>
+<p>릴리스 공지: <a href="https://github.com/podman-container-tools/podman/blob/v6.2.0/RELEASE_NOTES.md">RELEASE_NOTES</a></p>
+<h4 id="react-native-skia-v3101--v3100--v392">React Native Skia v3.10.1 · v3.10.0 · v3.9.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-native-skia-v3101--v3100--v392"><span class="icon icon-link"></span></a></h4>
+<p>React Native용 2D 그래픽 라이브러리입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 Skia m158로 올렸고, <code>SkShapeBlob</code>과 <code>canvas.drawShapes</code>가 추가됐습니다. 렌더 스레드 경합 조건과 프레임 페이싱, Android의 화면 밀도 변경 추적과 TextureView 버퍼 처리, 폐기된 캔버스의 프레임 유지가 고쳐졌고, 녹화 명령 재생의 복사·할당을 줄였습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다. Skia 엔진 버전이 바뀌니 렌더링 결과를 한 번 확인하세요.</p>
+<p>릴리스 공지: 없음</p>
+<h4 id="rolldown-v132--v1219--v118--v105">Rolldown v1.3.2 · v1.2.19 · v1.1.8 · v1.0.5<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rolldown-v132--v1219--v118--v105"><span class="icon icon-link"></span></a></h4>
+<p>Rust 기반 JS/TS 번들러입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 11월 9일 모든 유지보수 라인에 Vite resolve 플러그인이 만드는 오류 스텁에서 모듈 이름을 이스케이프하는 수정이 들어갔습니다. 1.3.2는 Node ESM 출력의 CommonJS 모듈에 <code>__dirname</code>·<code>__filename</code>을 제공하고 magic-string <code>hires</code> 옵션을 추가했으며, 모듈 태스크가 패닉하면 멈추지 않고 빌드를 실패시킵니다. 1.3.1은 sticky 정규식 매칭과 상수 인라인 시 부수효과 유지 등 번들 결과 관련 버그를 고쳤습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — CHANGELOG에 CVE 번호는 없습니다. 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: <a href="https://github.com/rolldown/rolldown/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="rust-11000">Rust 1.100.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#rust-11000"><span class="icon icon-link"></span></a></h4>
+<p>프로그래밍 언어입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — never 타입(<code>!</code>)이 안정화되고 <code>Infallible</code>이 <code>!</code>의 별칭이 됐으며, 모든 에디션에서 never 타입 fallback이 <code>!</code>로 바뀌었습니다. <code>std::alloc::Allocator</code>와 <code>Box::new_in</code>·<code>Vec::new_in</code> 등 커스텀 할당자 API가 안정화됐고, <code>bool::toggle</code>, <code>Box::map</code>·<code>Arc::map</code>, <code>core::mem::DropGuard</code>도 쓸 수 있습니다. <code>extern "custom"</code>과 <code>-Cprofile-sample-use</code>가 안정화되고 <code>wasm32-wasip3</code>가 Tier 2가 됐습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 호환성 노트에 <code>if let</code> 클로저 캡처 변경으로 새 오류가 날 수 있다는 점, <code>box</code> 패턴 문법 제거, never 타입 fallback 변경이 적혀 있으니 빌드를 먼저 돌려 보세요.</p>
+<p>릴리스 공지: <a href="https://github.com/rust-lang/rust/blob/1.100.0/RELEASES.md">RELEASES.md</a></p>
+<h4 id="storybook-v1067">Storybook v10.6.7<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#storybook-v1067"><span class="icon icon-link"></span></a></h4>
+<p>UI 컴포넌트 개발 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — <code>init</code>이 프리릴리스 버전의 커뮤니티 프레임워크를 지원하고, MCP가 호스팅된 Storybook이 실제로 제공하는 composition 스키마를 게시합니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: <a href="https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="terraform-v1172">Terraform v1.17.2<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#terraform-v1172"><span class="icon icon-link"></span></a></h4>
+<p>Infrastructure as Code 도구입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 큰 HCP Terraform 쿼리에서 설정을 생성할 때의 성능과 할당을 개선했습니다. <code>destroy=false</code>인 관리 리소스를 참조하는 provider가 순환 참조를 일으키던 문제, <code>init</code> 로그에 사용할 수 없는 provider 스키마 경고가 반복되던 문제를 고쳤습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 그대로 올려도 되는 릴리스입니다.</p>
+<p>릴리스 공지: <a href="https://github.com/hashicorp/terraform/blob/v1.17.2/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="vue-router-551--550--465">Vue Router 5.5.1 · 5.5.0 · 4.6.5<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#vue-router-551--550--465"><span class="icon icon-link"></span></a></h4>
+<p>Vue.js 라우팅 라이브러리입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 5.5.0은 스크롤 위치를 <code>history.state</code> 대신 sessionStorage에 저장하고(실패하면 메모리에 보관), 스크롤 복원 트리거를 설정할 수 있게 했으며, <code>.*</code> 반복 파라미터의 지수적 백트래킹을 막았습니다. unplugin의 <code>definePage</code>가 webpack·rspack에서 동작하고 <code>props: true</code>일 때 <code>defineProps()</code>에 라우트 파라미터 타입이 붙습니다. 5.5.1은 <code>vue-router/experimental</code> 사용자에게 breaking change가 있어, 매처가 일치하지 않으면 throw 대신 <code>null</code>을 반환하고 <code>MatchMiss</code>가 더 이상 <code>Error</code>를 상속하지 않습니다. 4.6.5 변경은 읽지 못했습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 실험 라우터를 쓴다면 커스텀 매처와 <code>instanceof Error</code>·<code>error.name</code> 검사 코드를 고쳐야 합니다. 스크롤 위치 저장 위치가 바뀐 점도 확인하세요.</p>
+<p>릴리스 공지: <a href="https://github.com/vuejs/router/blob/main/packages/router/CHANGELOG.md">CHANGELOG</a></p>
+<h3 id="마무리">마무리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#마무리"><span class="icon icon-link"></span></a></h3>
+<p>변경점을 읽지 못해 본문에서 뺀 릴리스 4건(생략)은 ClickHouse v26.10.4.207-stable, Istio 1.32.0, Flutter 3.50.0, Obsidian v1.15.1입니다. 새 버전은 확인했지만 저장소 안에서 읽을 수 있는 변경 설명이 없거나(Flutter는 외부 블로그만 링크), 변경 이력으로는 내용을 정리할 수 없었습니다.</p>
+<p>확인 실패 11개는 세션 네트워크에서 호스트가 막혀(<code>getaddrinfo ENOTFOUND</code>) 읽지 못한 공식 사이트 기반 소스입니다. Expo SDK, GraalVM, JDK, Android, Boundary, Cursor, GitButler, Manus, Swift, Ubuntu, Xcode입니다.</p>
+<p>확인 방식: npm/PyPI/git 태그 기반 (GitHub 릴리스 본문 미접근)</p>13:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$22"}}]}]
+14:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L11",null,{"href":"/ko/posts/2026-11-07-package-release-weekly","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L23",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"이전 글"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"이번 주 패키지 릴리스 정리 — 2026-11-07"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+15:["$","div",null,{"className":"hidden lg:block","children":["$","$L24",null,{"headings":[{"id":"️-한-줄-요약","text":"✍️ 한 줄 요약","depth":2},{"id":"이번-주-한눈에-보기","text":"이번 주 한눈에 보기","depth":2},{"id":"패키지별-변경-내용","text":"패키지별 변경 내용","depth":2},{"id":"nodejs-v26131--v24223--v22235","text":"Node.js v26.13.1 · v24.22.3 · v22.23.5","depth":3},{"id":"astro-7412","text":"astro 7.4.12","depth":3},{"id":"zed-v1281--v1280","text":"Zed v1.28.1 · v1.28.0","depth":3},{"id":"pnpm-v12210--v12200--v12190--v112812","text":"pnpm v12.21.0 · v12.20.0 · v12.19.0 · v11.28.12","depth":3},{"id":"-메이저-electron-v4532--v44113--v43810","text":"🔺 메이저 Electron v45.3.2 · v44.11.3 · v43.8.10","depth":3},{"id":"oxfmt-v0780","text":"Oxfmt v0.78.0","depth":3},{"id":"oxlint-v1930","text":"Oxlint v1.93.0","depth":3},{"id":"-메이저-tinybase-v1010","text":"🔺 메이저 TinyBase v10.1.0","depth":3},{"id":"nextjs-v1646","text":"Next.js v16.4.6","depth":3},{"id":"-메이저-nx-2406--2332","text":"🔺 메이저 Nx 24.0.6 · 23.3.2","depth":3},{"id":"fastapi-01627","text":"FastAPI 0.162.7","depth":3},{"id":"grafana-1331--1326--13110--13013","text":"Grafana 13.3.1 · 13.2.6 · 13.1.10 · 13.0.13","depth":3},{"id":"homebrew-7013","text":"Homebrew 7.0.13","depth":3},{"id":"vite-v838--v826--v817--v738--v646","text":"Vite v8.3.8 · v8.2.6 · v8.1.7 · v7.3.8 · v6.4.6","depth":3},{"id":"angular-2226","text":"Angular 22.2.6","depth":3},{"id":"eslint-v10150","text":"ESLint v10.15.0","depth":3},{"id":"hono-v41318","text":"Hono v4.13.18","depth":3},{"id":"kyverno-v1200","text":"Kyverno v1.20.0","depth":3},{"id":"prettier-3100--3101","text":"Prettier 3.10.0 · 3.10.1","depth":3},{"id":"rspack-v232","text":"Rspack v2.3.2","depth":3},{"id":"turborepo-v21111","text":"Turborepo v2.11.11","depth":3},{"id":"visual-studio-code-11460--11453","text":"Visual Studio Code 1.146.0 · 1.145.3","depth":3},{"id":"biome-v267","text":"Biome v2.6.7","depth":3},{"id":"dragonfly-v254","text":"Dragonfly v2.5.4","depth":3},{"id":"go-go1274--go12611","text":"Go go1.27.4 · go1.26.11","depth":3},{"id":"gradle-991--8147","text":"Gradle 9.9.1 · 8.14.7","depth":3},{"id":"jotai-v302","text":"Jotai v3.0.2","depth":3},{"id":"ollama-v04016","text":"ollama v0.40.16","depth":3},{"id":"podman-v620--v5810","text":"Podman v6.2.0 · v5.8.10","depth":3},{"id":"react-native-skia-v3101--v3100--v392","text":"React Native Skia v3.10.1 · v3.10.0 · v3.9.2","depth":3},{"id":"rolldown-v132--v1219--v118--v105","text":"Rolldown v1.3.2 · v1.2.19 · v1.1.8 · v1.0.5","depth":3},{"id":"rust-11000","text":"Rust 1.100.0","depth":3},{"id":"storybook-v1067","text":"Storybook v10.6.7","depth":3},{"id":"terraform-v1172","text":"Terraform v1.17.2","depth":3},{"id":"vue-router-551--550--465","text":"Vue Router 5.5.1 · 5.5.0 · 4.6.5","depth":3},{"id":"마무리","text":"마무리","depth":2}],"title":"목차"}]}]
+16:["$","script","script-0",{"src":"/_next/static/chunks/0-jsxcg-veu-w.js","async":true}]
+17:["$","$L25",null,{"children":["$","$1d",null,{"name":"Next.MetadataOutlet","children":"$@26"}]}]
+21:true
+9:300
+26:null
+9:C
+20:0
+b:"$undefined"
+7:"$undefined"
+1f:"$undefined"
+18:"$undefined"
