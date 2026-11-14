@@ -6,6 +6,7 @@ published: 2026-11-14
 category: Weekly Releases
 tags: []
 comments: true
+thumbnail: './assets/14/thumbnail.en.png'
 github: ''
 ---
 

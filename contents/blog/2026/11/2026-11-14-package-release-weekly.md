@@ -6,6 +6,7 @@ published: 2026-11-14
 category: 주간 릴리스
 tags: []
 comments: true
+thumbnail: './assets/14/thumbnail.png'
 github: ''
 ---
 
