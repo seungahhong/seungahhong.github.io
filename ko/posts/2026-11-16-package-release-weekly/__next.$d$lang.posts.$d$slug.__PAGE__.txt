@@ -1,0 +1,105 @@
+3:"$Sreact.fragment"
+4:"/_next/static/chunks/12-fpzohv1xd4.js"
+5:I[9619,["$4"],"default"]
+6:I[23615,["$4"],"default"]
+e:"/_next/static/chunks/2kf7_4zlzxl0h.js"
+f:"/_next/static/chunks/0-jsxcg-veu-w.js"
+10:I[53403,["$4","$e","$f"],"default"]
+11:I[34242,["$4","$e","$f"],""]
+19:"ViewportBoundary"
+1a:I[52085,["$4"],"$19"]
+1b:"MetadataBoundary"
+1c:I[52085,["$4"],"$1b"]
+1d:"$Sreact.suspense"
+1e:I[3142,["$4"],"IconMark"]
+8:X
+8:C
+9:X
+d:T680,{"@context":"https://schema.org","@type":"BlogPosting","headline":"이번 주 패키지 릴리스 정리 — 2026-11-16","description":"✍️ 한 줄 요약 Grafana 12.4.15가 이전 유지보수 라인에 CVE 8건 보안 수정을 내보냈고, FastAPI 0.163.0은 의존성마다 동시 실행 수를 제한하는 Depends(max concurrency=...) 를 추가했습니다. 이번 주 한눈에 보기 기간은…","datePublished":"2026-11-16","dateModified":"2026-11-16","inLanguage":"ko-KR","url":"https://seungahhong.github.io/ko/posts/2026-11-16-package-release-weekly/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/ko/posts/2026-11-16-package-release-weekly/"},"image":"https://seungahhong.github.io/blog-assets/2026/11/assets/16/thumbnail.png","keywords":[],"articleSection":"주간 릴리스","wordCount":1546,"timeRequired":"PT4M","isPartOf":{"@id":"https://seungahhong.github.io/ko/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"홍승아","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}c:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$d"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"홈\",\"item\":\"https://seungahhong.github.io/ko/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"포스트\",\"item\":\"https://seungahhong.github.io/ko/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"이번 주 패키지 릴리스 정리 — 2026-11-16\",\"item\":\"https://seungahhong.github.io/ko/posts/2026-11-16-package-release-weekly/\"}]}"}}],["$","$L10",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L11",null,{"href":"/ko","className":"text-muted hover:text-accent","children":"홈"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L11",null,{"href":"/ko/posts","className":"text-muted hover:text-accent","children":"포스트"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"주간 릴리스"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"이번 주 패키지 릴리스 정리 — 2026-11-16"}]]}]}],["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"이번 주 패키지 릴리스 정리 — 2026-11-16"}],"$L12",false,false]}],"$L13","$L14"]}],"$L15"]}]}]],["$L16"],"$L17"]}],"p":"$@18","v":null,"s":"$9"}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"2026-11-16-package-release-weekly","s":[]},"h":96,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@b","v":"$8","s":"$9"},"c":"$Qc"}]]
+2:[["children",{"s":"posts","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"ko","s":["about","blog"]},"h":32,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1a",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1c",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1d",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"이번 주 패키지 릴리스 정리 — 2026-11-16 · 홍승아 기술 블로그"}],["$","meta","1",{"name":"description","content":"✍️ 한 줄 요약 Grafana 12.4.15가 이전 유지보수 라인에 CVE 8건 보안 수정을 내보냈고, FastAPI 0.163.0은 의존성마다 동시 실행 수를 제한하는 Depends(max concurrency=...) 를 추가했습니다. 이번 주 한눈에 보기 기간은…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"홍승아"}],["$","meta","4",{"name":"creator","content":"홍승아"}],["$","meta","5",{"name":"publisher","content":"홍승아"}],["$","meta","6",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://seungahhong.github.io/ko/posts/2026-11-16-package-release-weekly/"}],["$","link","8",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-11-16-package-release-weekly/"}],["$","link","9",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-11-16-package-release-weekly/"}],["$","link","10",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-11-16-package-release-weekly/"}],["$","meta","11",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","12",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","13",{"property":"og:title","content":"이번 주 패키지 릴리스 정리 — 2026-11-16"}],["$","meta","14",{"property":"og:description","content":"✍️ 한 줄 요약 Grafana 12.4.15가 이전 유지보수 라인에 CVE 8건 보안 수정을 내보냈고, FastAPI 0.163.0은 의존성마다 동시 실행 수를 제한하는 Depends(max concurrency=...) 를 추가했습니다. 이번 주 한눈에 보기 기간은…"}],["$","meta","15",{"property":"og:url","content":"https://seungahhong.github.io/ko/posts/2026-11-16-package-release-weekly/"}],["$","meta","16",{"property":"og:locale","content":"ko-KR"}],["$","meta","17",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/11/assets/16/thumbnail.png"}],["$","meta","18",{"property":"og:image:alt","content":"이번 주 패키지 릴리스 정리 — 2026-11-16"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2026-11-16"}],["$","meta","21",{"property":"article:modified_time","content":"2026-11-16"}],["$","meta","22",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","23",{"property":"article:section","content":"주간 릴리스"}],["$","meta","24",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","25",{"name":"twitter:title","content":"이번 주 패키지 릴리스 정리 — 2026-11-16"}],["$","meta","26",{"name":"twitter:description","content":"✍️ 한 줄 요약 Grafana 12.4.15가 이전 유지보수 라인에 CVE 8건 보안 수정을 내보냈고, FastAPI 0.163.0은 의존성마다 동시 실행 수를 제한하는 Depends(max concurrency=...) 를 추가했습니다. 이번 주 한눈에 보기 기간은…"}],["$","meta","27",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/11/assets/16/thumbnail.png"}],["$","link","28",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L1e","29",{}]]}]}],null]}],null]}],"p":"$@1f","v":null,"s":"$9"}},"a":"$@20","u":"$@21","b":"5O5TTLl0dLKqqsa7aQloz"}
+23:I[15907,["$4","$e","$f"],"default"]
+24:I[27722,["$4","$e","$f"],"default"]
+25:I[52085,["$4"],"OutletBoundary"]
+12:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"홍"}],["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"홍승아"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-11-16","className":"meta-mono","children":"2026.11.16"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[4,"분"]}]]}]
+22:T201e,<h3 id="️-한-줄-요약">✍️ 한 줄 요약<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#️-한-줄-요약"><span class="icon icon-link"></span></a></h3>
+<p>Grafana 12.4.15가 이전 유지보수 라인에 CVE 8건 보안 수정을 내보냈고, FastAPI 0.163.0은 의존성마다 동시 실행 수를 제한하는 <code>Depends(max_concurrency=...)</code>를 추가했습니다.</p>
+<h3 id="이번-주-한눈에-보기">이번 주 한눈에 보기<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#이번-주-한눈에-보기"><span class="icon icon-link"></span></a></h3>
+<p>기간은 2026-11-09 ~ 2026-11-16(KST)입니다. 직전 글(2026-11-14)과 기간이 대부분 겹치기 때문에, 그 글에서 이미 다룬 버전은 다시 넣지 않고 그 뒤에 새로 확인한 릴리스만 정리했습니다. 그 결과 추적 중인 87개 패키지 가운데 4개의 새 변경점을 확인했습니다.</p>
+<p>이번 주도 GitHub 릴리스 페이지를 읽을 수 없어, CHANGELOG나 저장소 안 릴리스 노트가 있는 패키지는 그 파일을 읽었습니다. React Native Skia는 릴리스 노트가 없어 새 태그까지의 변경 이력(커밋 제목)을 읽고 정리했으며, <code>릴리스 공지</code>를 <code>없음</code>으로 표시했고 breaking change(기존 코드를 고쳐야 하는 변경) 여부는 확인하지 못했습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>패키지</th><th>버전</th><th>릴리스 공지</th><th>변경점</th></tr></thead><tbody><tr><td>FastAPI</td><td>0.163.1 · 0.163.0</td><td><a href="https://github.com/fastapi/fastapi/blob/master/docs/en/docs/release-notes.md">있음</a></td><td><code>Depends(max_concurrency=...)</code> 추가, OpenAPI 계산 필드 수정</td></tr><tr><td>Grafana</td><td>12.4.15</td><td><a href="https://github.com/grafana/grafana/blob/main/CHANGELOG.md">있음</a></td><td>12.4 라인 보안 수정 CVE 8건</td></tr><tr><td>Biome</td><td>v2.6.8</td><td><a href="https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md">있음</a></td><td>nursery 규칙 대거 추가, 타입 추론·린트 성능 개선</td></tr><tr><td>React Native Skia</td><td>v3.10.2 · v2.15.5 · v2.15.4 · v2.15.3</td><td>없음</td><td>프레임 페이싱·<code>&#x3C;Text></code> 렌더 개선, 2.x 백포트</td></tr></tbody></table>
+<h3 id="패키지별-변경-내용">패키지별 변경 내용<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#패키지별-변경-내용"><span class="icon icon-link"></span></a></h3>
+<h4 id="fastapi-01631--01630">FastAPI 0.163.1 · 0.163.0<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#fastapi-01631--01630"><span class="icon icon-link"></span></a></h4>
+<p>Python 웹 프레임워크입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 0.163.0은 <code>Depends(max_concurrency=...)</code>를 추가해, 특정 의존성이 동시에 몇 개까지 실행될 수 있는지 제한할 수 있게 했습니다. 외부 API나 DB 연결처럼 한꺼번에 몰리면 곤란한 자원을 의존성으로 감싸 쓰고 있다면 별도 세마포어 코드 없이 동시 실행 수를 묶을 수 있습니다. 0.163.1은 응답 모델 안에 중첩된 계산 필드(computed field)가 있을 때 OpenAPI 문서가 잘못 만들어지던 문제를 고쳤습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 새 옵션은 쓰는 곳에만 영향을 주는 추가 기능입니다. 직전 글에서 다룬 0.162.6의 Python 3.10 지원 중단은 이 버전에도 그대로 적용되니, 아직 3.10이라면 Python부터 올려야 합니다.</p>
+<p>릴리스 공지: <a href="https://github.com/fastapi/fastapi/blob/master/docs/en/docs/release-notes.md">release-notes</a></p>
+<h4 id="grafana-12415">Grafana 12.4.15<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#grafana-12415"><span class="icon icon-link"></span></a></h4>
+<p>메트릭 대시보드입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 직전 글에서 다룬 13.x 라인과 같은 날 나온 12.4 유지보수 라인 릴리스로, CVE-2026-102589, CVE-2026-106472, CVE-2026-106475, CVE-2026-107365, CVE-2026-107509, CVE-2026-111000, CVE-2026-81843, CVE-2026-82014 보안 수정 8건을 담았습니다. CHANGELOG에는 번호만 있고 무엇이 위험했는지는 적혀 있지 않습니다. 2026년 시간대 변경을 반영하도록 moment-timezone도 올렸습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 아직 12.4 라인을 운영 중이라면 12.4.15로 올리세요. 각 CVE의 영향 범위는 공식 보안 공지로 확인해야 합니다.</p>
+<p>릴리스 공지: <a href="https://github.com/grafana/grafana/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="biome-v268">Biome v2.6.8<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#biome-v268"><span class="icon icon-link"></span></a></h4>
+<p>프론트엔드 툴체인(포매터·린터)입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — <code>noBufferConstructor</code>, <code>noDynamicRequire</code>, <code>noMisusedSpread</code>, <code>useSpyOn</code>, <code>noTailwindRestrictedClasses</code>와 Vue·YAML용 규칙 등 nursery(실험 단계) 규칙이 대거 추가됐습니다. 타입 추론이 <code>typeof</code>·동등 비교 뒤의 타입 좁히기와 <code>T extends U ? X : Y</code> 같은 조건부 타입을 계산하게 돼, 타입 정보를 쓰는 규칙의 오탐이 줄어듭니다. 억제 주석이 없는 파일의 린트는 최대 61% 빨라졌고, HTML 포매터가 주석을 두 번 찍거나 Svelte 블록 뒤 주석을 지우던 문제 등 여러 버그가 고쳐졌습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 새 규칙은 nursery라 켜지 않으면 영향이 없습니다. 다만 GritQL 플러그인 파일 이름에 쓸 수 없는 문자가 있으면 이제 오류가 나니, 플러그인을 쓴다면 파일 이름을 확인하세요.</p>
+<p>릴리스 공지: <a href="https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md">CHANGELOG</a></p>
+<h4 id="react-native-skia-v3102--v2155--v2154--v2153">React Native Skia v3.10.2 · v2.15.5 · v2.15.4 · v2.15.3<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#react-native-skia-v3102--v2155--v2154--v2153"><span class="icon icon-link"></span></a></h4>
+<p>React Native용 2D 그래픽 라이브러리입니다.</p>
+<p><strong>무엇이 바뀌었나</strong> — 변경 이력상 v3.10.2는 캔버스의 프레임을 하나의 스케줄러로 맞춰 그리고 Android에서 GPU용 화면 표시를 붙잡아 두도록 고쳤으며, <code>&#x3C;Text></code>를 캐시된 텍스트 블롭으로 그리고 iOS의 CAMetalLayer 색 공간 지정을 메인 스레드로 옮겼습니다. 2.x 라인(v2.15.3~v2.15.5)은 3.x의 수정 사항을 백포트한 릴리스로, 웹 개선, iOS 캔버스 크기 반올림, Android TextureView 버퍼 처리, 폐기된 캔버스의 프레임 유지 등이 들어갔습니다.</p>
+<p><strong>업그레이드할 때 확인할 점</strong> — 변경 이력만 읽은 정리라 breaking change 여부는 확인하지 못했습니다. 아직 2.x를 쓰고 있다면 같은 메이저 안의 v2.15.5로 올려 수정 사항을 받을 수 있습니다.</p>
+<p>릴리스 공지: 없음</p>
+<h3 id="마무리">마무리<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#마무리"><span class="icon icon-link"></span></a></h3>
+<p>변경점을 읽지 못해 본문에서 뺀 릴리스 3건(생략)은 Istio 1.32.0, Flutter 3.50.0, Obsidian v1.15.1로, 직전 글에서와 같은 이유(저장소 안에서 읽을 수 있는 변경 설명이 없거나 변경 이력으로 내용을 정리할 수 없음)입니다.</p>
+<p>확인 실패 11개는 세션 네트워크에서 호스트가 막혀(<code>getaddrinfo ENOTFOUND</code>) 읽지 못한 공식 사이트 기반 소스입니다. Expo SDK, GraalVM, JDK, Android, Boundary, Cursor, GitButler, Manus, Swift, Ubuntu, Xcode입니다.</p>
+<p>확인 방식: npm/PyPI/git 태그 기반 (GitHub 릴리스 본문 미접근)</p>13:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$22"}}]}]
+14:["$","nav",null,{"aria-label":"이전 글 / 다음 글","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L11",null,{"href":"/ko/posts/2026-11-14-package-release-weekly","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L23",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"이전 글"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"이번 주 패키지 릴리스 정리 — 2026-11-14"}]]}],["$","$L11",null,{"href":"/ko/posts/2026-11-21-product-spec-harness","className":"group border-line bg-surface hover:border-accent flex flex-col items-end gap-1.5 rounded-xl border px-[18px] py-4 text-right transition-colors","rel":"next","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":["다음 글",["$","$L23",null,{"icon":{"name":"arrow-right","size":24,"node":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}]]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"쓰기 전에 묻고, 쓴 뒤에 의심한다 — product-spec-harness"}]]}]]}]
+15:["$","div",null,{"className":"hidden lg:block","children":["$","$L24",null,{"headings":[{"id":"️-한-줄-요약","text":"✍️ 한 줄 요약","depth":2},{"id":"이번-주-한눈에-보기","text":"이번 주 한눈에 보기","depth":2},{"id":"패키지별-변경-내용","text":"패키지별 변경 내용","depth":2},{"id":"fastapi-01631--01630","text":"FastAPI 0.163.1 · 0.163.0","depth":3},{"id":"grafana-12415","text":"Grafana 12.4.15","depth":3},{"id":"biome-v268","text":"Biome v2.6.8","depth":3},{"id":"react-native-skia-v3102--v2155--v2154--v2153","text":"React Native Skia v3.10.2 · v2.15.5 · v2.15.4 · v2.15.3","depth":3},{"id":"마무리","text":"마무리","depth":2}],"title":"목차"}]}]
+16:["$","script","script-0",{"src":"/_next/static/chunks/0-jsxcg-veu-w.js","async":true}]
+17:["$","$L25",null,{"children":["$","$1d",null,{"name":"Next.MetadataOutlet","children":"$@26"}]}]
+21:true
+9:300
+26:null
+9:C
+20:0
+b:"$undefined"
+7:"$undefined"
+1f:"$undefined"
+18:"$undefined"

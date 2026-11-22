@@ -1,0 +1,405 @@
+3:"$Sreact.fragment"
+4:"/_next/static/chunks/12-fpzohv1xd4.js"
+5:I[9619,["$4"],"default"]
+6:I[23615,["$4"],"default"]
+e:"/_next/static/chunks/2kf7_4zlzxl0h.js"
+f:"/_next/static/chunks/0-jsxcg-veu-w.js"
+10:I[53403,["$4","$e","$f"],"default"]
+11:I[34242,["$4","$e","$f"],""]
+1b:"ViewportBoundary"
+1c:I[52085,["$4"],"$1b"]
+1d:"MetadataBoundary"
+1e:I[52085,["$4"],"$1d"]
+1f:"$Sreact.suspense"
+20:I[3142,["$4"],"IconMark"]
+8:X
+8:C
+9:X
+d:T640,{"@context":"https://schema.org","@type":"BlogPosting","headline":"From Acceptance Criteria to Layered Tests — test-layering-harness","description":"Splitting Acceptance Criteria into Layered Tests, One Approval at a Time test-layering-harness is a single-skill plugin I published to my Claude Code plugin…","datePublished":"2026-11-22","dateModified":"2026-11-22","inLanguage":"en","url":"https://seungahhong.github.io/en/posts/2026-11-22-test-layering-harness/","mainEntityOfPage":{"@type":"WebPage","@id":"https://seungahhong.github.io/en/posts/2026-11-22-test-layering-harness/"},"image":"https://seungahhong.github.io/blog-assets/2026/11/assets/22/thumbnail.en.png","keywords":["harness","unit-testing","E2E","Claude"],"articleSection":"Testing","wordCount":4686,"timeRequired":"PT24M","isPartOf":{"@id":"https://seungahhong.github.io/en/#blog"},"author":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]},"publisher":{"@type":"Person","@id":"https://seungahhong.github.io/#person","name":"SeungAh Hong","url":"https://seungah-portfolio.vercel.app","jobTitle":"Frontend Engineer","sameAs":["https://github.com/seungahhong","https://www.linkedin.com/in/seungahhong/","https://seungah-portfolio.vercel.app","https://material-debt-c1c.notion.site/39b2a3cc75bb80b1a4c0cacbf6af8cd1"]}}c:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$d"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://seungahhong.github.io/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Posts\",\"item\":\"https://seungahhong.github.io/en/posts/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"From Acceptance Criteria to Layered Tests — test-layering-harness\",\"item\":\"https://seungahhong.github.io/en/posts/2026-11-22-test-layering-harness/\"}]}"}}],["$","$L10",null,{}],["$","div",null,{"className":"max-w-deck mx-auto px-[18px] pb-10 md:px-[34px]","children":["$","div",null,{"className":"grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_236px]","children":[["$","article",null,{"className":"max-w-article min-w-0","children":[["$","header",null,{"className":"border-line border-b pt-10 pb-7","children":[["$","nav",null,{"aria-label":"breadcrumb","className":"text-faint font-mono text-[12px]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-1.5","children":[["$","li",null,{"children":["$","$L11",null,{"href":"/en","className":"text-muted hover:text-accent","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","$L11",null,{"href":"/en/posts","className":"text-muted hover:text-accent","children":"Posts"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"children":["$","span",null,{"className":"text-accent","children":"Testing"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],["$","li",null,{"aria-current":"page","className":"text-muted max-w-[40ch] truncate","children":"From Acceptance Criteria to Layered Tests — test-layering-harness"}]]}]}],"$L12","$L13",false,"$L14"]}],"$L15","$L16"]}],"$L17"]}]}]],["$L18"],"$L19"]}],"p":"$@1a","v":null,"s":"$9"}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"2026-11-22-test-layering-harness","s":[]},"h":96,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@b","v":"$8","s":"$9"},"c":"$Qc"}]]
+2:[["children",{"s":"posts","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"en","s":["about","blog"]},"h":32,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1c",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1e",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"From Acceptance Criteria to Layered Tests — test-layering-harness · SeungAh Hong · Tech Blog"}],["$","meta","1",{"name":"description","content":"Splitting Acceptance Criteria into Layered Tests, One Approval at a Time test-layering-harness is a single-skill plugin I published to my Claude Code plugin…"}],["$","link","2",{"rel":"author","href":"https://seungah-portfolio.vercel.app"}],["$","meta","3",{"name":"author","content":"SeungAh Hong"}],["$","meta","4",{"name":"keywords","content":"harness,unit-testing,E2E,Claude"}],["$","meta","5",{"name":"creator","content":"홍승아"}],["$","meta","6",{"name":"publisher","content":"홍승아"}],["$","meta","7",{"name":"googlebot","content":"max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://seungahhong.github.io/en/posts/2026-11-22-test-layering-harness/"}],["$","link","9",{"rel":"alternate","hrefLang":"ko","href":"https://seungahhong.github.io/ko/posts/2026-11-22-test-layering-harness/"}],["$","link","10",{"rel":"alternate","hrefLang":"en","href":"https://seungahhong.github.io/en/posts/2026-11-22-test-layering-harness/"}],["$","link","11",{"rel":"alternate","hrefLang":"x-default","href":"https://seungahhong.github.io/ko/posts/2026-11-22-test-layering-harness/"}],["$","meta","12",{"name":"google-site-verification","content":"DafIPWtLpIjdEIuERhMFfutDl2IoaF8b6CQTBYF6qsQ"}],["$","meta","13",{"name":"naver-site-verification","content":"ab246841529a97bcf76ac7ed42d5a5c457a381bc"}],["$","meta","14",{"property":"og:title","content":"From Acceptance Criteria to Layered Tests — test-layering-harness"}],["$","meta","15",{"property":"og:description","content":"Splitting Acceptance Criteria into Layered Tests, One Approval at a Time test-layering-harness is a single-skill plugin I published to my Claude Code plugin…"}],["$","meta","16",{"property":"og:url","content":"https://seungahhong.github.io/en/posts/2026-11-22-test-layering-harness/"}],["$","meta","17",{"property":"og:locale","content":"en"}],["$","meta","18",{"property":"og:image","content":"https://seungahhong.github.io/blog-assets/2026/11/assets/22/thumbnail.en.png"}],["$","meta","19",{"property":"og:image:alt","content":"From Acceptance Criteria to Layered Tests — test-layering-harness"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2026-11-22"}],["$","meta","22",{"property":"article:modified_time","content":"2026-11-22"}],["$","meta","23",{"property":"article:author","content":"https://seungah-portfolio.vercel.app"}],["$","meta","24",{"property":"article:section","content":"Testing"}],["$","meta","25",{"property":"article:tag","content":"harness"}],["$","meta","26",{"property":"article:tag","content":"unit-testing"}],["$","meta","27",{"property":"article:tag","content":"E2E"}],["$","meta","28",{"property":"article:tag","content":"Claude"}],["$","meta","29",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","30",{"name":"twitter:title","content":"From Acceptance Criteria to Layered Tests — test-layering-harness"}],["$","meta","31",{"name":"twitter:description","content":"Splitting Acceptance Criteria into Layered Tests, One Approval at a Time test-layering-harness is a single-skill plugin I published to my Claude Code plugin…"}],["$","meta","32",{"name":"twitter:image","content":"https://seungahhong.github.io/blog-assets/2026/11/assets/22/thumbnail.en.png"}],["$","link","33",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","$L20","34",{}]]}]}],null]}],null]}],"p":"$@21","v":null,"s":"$9"}},"a":"$@22","u":"$@23","b":"5O5TTLl0dLKqqsa7aQloz"}
+25:I[15907,["$4","$e","$f"],"default"]
+26:I[27722,["$4","$e","$f"],"default"]
+27:I[52085,["$4"],"OutletBoundary"]
+12:["$","h1",null,{"className":"text-ink my-4 text-[clamp(24px,3vw,34px)] leading-[1.22] font-extrabold tracking-tight","children":"From Acceptance Criteria to Layered Tests — test-layering-harness"}]
+13:["$","div",null,{"className":"flex flex-wrap items-center gap-2.5","children":[["$","span",null,{"className":"grid h-[26px] w-[26px] place-items-center rounded-full text-[11px] font-bold text-white","style":{"background":"linear-gradient(135deg, var(--signal), var(--accent))"},"aria-hidden":"true","children":"S"}],["$","span",null,{"className":"text-ink text-[13.5px] font-semibold","children":"SeungAh Hong"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","time",null,{"dateTime":"2026-11-22","className":"meta-mono","children":"11/22/2026"}],["$","span",null,{"className":"text-line","aria-hidden":"true","children":"·"}],["$","span",null,{"className":"meta-mono","children":[24,"min read"]}]]}]
+14:["$","ul",null,{"className":"mt-4 flex flex-wrap gap-1.5","children":[["$","li","harness",{"children":["$","$L11",null,{"href":"/en/tags?tag=harness","className":"tag-pill","children":"harness"}]}],["$","li","unit-testing",{"children":["$","$L11",null,{"href":"/en/tags?tag=unit-testing","className":"tag-pill","children":"unit-testing"}]}],["$","li","E2E",{"children":["$","$L11",null,{"href":"/en/tags?tag=E2E","className":"tag-pill","children":"E2E"}]}],["$","li","Claude",{"children":["$","$L11",null,{"href":"/en/tags?tag=Claude","className":"tag-pill","children":"Claude"}]}]]}]
+24:Tb099,<h2 id="splitting-acceptance-criteria-into-layered-tests-one-approval-at-a-time">Splitting Acceptance Criteria into Layered Tests, One Approval at a Time<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#splitting-acceptance-criteria-into-layered-tests-one-approval-at-a-time"><span class="icon icon-link"></span></a></h2>
+<p><a href="https://github.com/seungahhong/seungah-claude-plugins/tree/main/plugins/test-layering-harness">test-layering-harness</a> is a single-skill plugin I published to my Claude Code plugin marketplace (seungah-claude-plugins). It takes acceptance criteria (Given-When-Then), plans <strong>which tests to write, at which layer, and in which CI stage</strong>, and then adds the tests one by one through three approvals: plan → individual → final. The current version is 0.8.0.</p>
+<p>If the <a href="/en/posts/2026-11-21-product-spec-harness/">product spec harness</a> takes you from a planning draft to acceptance criteria, this harness handles the next step: turning those criteria into a test suite that actually runs. It does not depend on any other plugin, so acceptance criteria are all it needs.</p>
+<h3 id="️-tldr">✍️ TL;DR<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#️-tldr"><span class="icon icon-link"></span></a></h3>
+<blockquote>
+<p><strong>When AI writes the tests, the risk moves away from "how fast can we write them" to "what do we verify, at which layer, and what do we treat as the right answer."</strong> This harness plans tests along two axes — methodology × layer — has a human approve every step, and actually runs what it writes.</p>
+</blockquote>
+<h3 id="why-i-built-it">Why I built it<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#why-i-built-it"><span class="icon icon-link"></span></a></h3>
+<h4 id="writing-many-tests-is-already-easy">Writing <em>many</em> tests is already easy<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#writing-many-tests-is-already-easy"><span class="icon icon-link"></span></a></h4>
+<p>Ask an agent to "write tests" and you get tests quickly. The trouble comes after. The failures I kept seeing fell into three groups.</p>
+<ul>
+<li><strong>Every acceptance criterion becomes an E2E test.</strong> Acceptance criteria are written from the user's point of view, so a literal translation spins up a browser. You end up with the "ice-cream cone": a heavy top of slow, flaky tests whose failures are hard to trace.</li>
+<li><strong>Suites exist only as names.</strong> The plan says "3 smoke, 10 regression," but nothing in the code marks them, so there is no way to run just the smoke tests. The harness calls this a phantom suite.</li>
+<li><strong>Tests lock bugs in as the right answer.</strong> This is the most dangerous of the three.</li>
+</ul>
+<h4 id="the-biggest-risk-is-oracle-strength">The biggest risk is oracle strength<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-biggest-risk-is-oracle-strength"><span class="icon icon-link"></span></a></h4>
+<p>The rule a test uses to decide what counts as success is called its oracle. Research from 2025 onward keeps pointing to weak or wrong oracles as the biggest risk in LLM-generated tests.</p>
+<p>LLMs tend to write assertions from <strong>what the current implementation actually returns</strong>, not from the spec. If the code has a bug, you get a test that enshrines the bug as correct, and that test hides it behind a green check. On top of that, LLMs are worse at judging whether their own oracles are right than they are at producing them.</p>
+<p>So the harness does three things. It <strong>decomposes</strong> tests along a layer taxonomy, has a <strong>human approve</strong> every application, and <strong>re-checks oracles against the acceptance criteria and actually runs</strong> the result.</p>
+<h3 id="two-axes-methodology--layer">Two axes: methodology × layer<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#two-axes-methodology--layer"><span class="icon icon-link"></span></a></h3>
+<h4 id="four-methodologies">Four methodologies<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#four-methodologies"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><strong>Smoke</strong> — broad and shallow. The checkpoint right after a deploy that asks, "Is this build worth testing further?"</li>
+<li><strong>Sanity</strong> — narrow and deep. This harness uses it to run the pages and components related to a change before the PR.</li>
+<li><strong>Regression</strong> — broad and deep. Confirms existing behavior has not broken.</li>
+<li><strong>Nightly</strong> — a full run on a schedule. The safety net for what selective runs miss.</li>
+</ul>
+<p>The harness goes out of its way to state two things.</p>
+<p>First, the ISTQB glossary treats <strong>smoke and sanity as synonyms</strong>. "Smoke is broad and shallow, sanity is narrow and deep" is an industry convention, not a standard.</p>
+<p>Second, <strong>nightly is not a test type but an axis of <em>when</em> to run</strong>. Neither ISTQB nor ISO defines a nightly test type.</p>
+<p>The harness uses the conventional names but always writes these facts into the plan.</p>
+<h4 id="three-layers">Three layers<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#three-layers"><span class="icon icon-link"></span></a></h4>
+<ul>
+<li><strong>Unit</strong> — "Is this function or decision logic right?" Fast, cheap, and precise about the cause, but it gives little confidence that parts work together.</li>
+<li><strong>Integration</strong> — "Do modules, components, and APIs work together?" The balance point between speed and confidence.</li>
+<li><strong>E2E</strong> — "Does the whole user journey work?" The highest confidence, but slow, expensive, flaky, and hard to diagnose. So it is kept to a few critical journeys.</li>
+</ul>
+<h4 id="seven-cards-instead-of-a-12-cell-grid">Seven cards instead of a 12-cell grid<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#seven-cards-instead-of-a-12-cell-grid"><span class="icon icon-link"></span></a></h4>
+<p>Four methodologies times three layers gives twelve cells. In an early version (0.2.0) I actually wrote a criteria document for each of the twelve.</p>
+<p>But the two axes are independent (orthogonal). ISO/IEC/IEEE 29119-1:2022 defines regression as "a design and execution choice, not a test level." A layer is a fixed property of a single test, while a methodology is a selection on top of it — "which bundle do we pick it into" — so one test can belong to several methodologies at once. The twelve cells are not mutually exclusive buckets, just the points where the two axes cross.</p>
+<p>So from 0.3.0 on I replaced them with <strong>seven axis cards: four methodology cards and three layer cards</strong>. Instead of pre-filling twelve cells, the harness combines the two cards it needs at the moment it routes an acceptance criterion. Each card spells out which criteria it includes and excludes, how strong the oracle must be, and how it is separated in real code.</p>
+<p>Not every combination is useful, so the harness grades them honestly.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Layer \ Methodology</th><th>Smoke</th><th>Sanity</th><th>Regression</th><th>Nightly</th></tr></thead><tbody><tr><td>Unit</td><td>Weak</td><td>Degenerate</td><td><strong>Strong</strong> (highest oracle risk)</td><td>Empty</td></tr><tr><td>Integration</td><td><strong>Strong</strong></td><td>Degenerate</td><td><strong>Strong</strong></td><td>Fairly strong</td></tr><tr><td>E2E</td><td>Conditionally strong (real API only)</td><td>Not created</td><td><strong>Strong</strong></td><td>Strongest by the evidence, but not created</td></tr></tbody></table>
+<p>Weak or degenerate combinations are left empty rather than forced. Unit tests, for example, already run in full at the PR stage, so a nightly-only unit test means nothing. Regression × Unit is the strongest combination and also the one most at risk of "locking a bug in as correct," so its oracle checks are especially strict. E2E nightly fits best by the evidence, but I chose not to create it as an operating decision — more on that below.</p>
+<h4 id="three-presets-matched-to-the-repository">Three presets matched to the repository<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#three-presets-matched-to-the-repository"><span class="icon icon-link"></span></a></h4>
+<p>The harness reads the repository and recommends one of three presets, with its reasons.</p>
+<ul>
+<li><strong>Trophy-lean</strong> — frontend and component-heavy. Thick integration, unit only for decision logic, E2E only for essential journeys. Recommended when it sees React, Vue, or Svelte with Testing Library.</li>
+<li><strong>Google-pipeline</strong> — large codebases and monorepos. Fast, unit-heavy checks before the PR; broader runs after merge. Recommended when it sees workspaces or affected-test selection.</li>
+<li><strong>Contract-honeycomb</strong> — distributed services. Contract tests between services and integration at the center, E2E close to zero. Recommended when it sees OpenAPI, proto, or contract-testing tools.</li>
+</ul>
+<p>None of the presets sets a ratio like "70% unit, 20% integration, 10% E2E." Even Fowler, who popularized the test pyramid, said the numbers themselves don't matter, and the Testing Trophy and Honeycomb are expert rules of thumb rather than experimentally proven optima. A preset only suggests where the weight should sit.</p>
+<h3 id="the-flow-five-phases-and-three-approval-gates">The flow: five phases and three approval gates<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-flow-five-phases-and-three-approval-gates"><span class="icon icon-link"></span></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Phase</th><th>What happens</th><th>Gate</th></tr></thead><tbody><tr><td>Phase 0 Initial inquiry</td><td>Ask where the acceptance criteria come from; detect test runners, mock tools, test id conventions, etc.</td><td>—</td></tr><tr><td>Phase 1 Composition</td><td>Recommend a preset and let the user pick methodologies and layers with checkboxes</td><td>Scope fixed</td></tr><tr><td>Phase 2 Plan</td><td>Route each criterion through card combinations into a layered plan and a CI placement table</td><td><strong>A: plan approval</strong></td></tr><tr><td>Phase 3 Individual application</td><td>One test at a time: draft → check → approve → write file → run</td><td><strong>B: individual approval</strong></td></tr><tr><td>Phase 4 Re-check</td><td>Overall summary and full run, then final confirmation</td><td><strong>C: final commit</strong></td></tr></tbody></table>
+<p>None of the three gates can be skipped. No individual application without plan approval, no file writes without individual approval, no confirmation without final approval. The skill's default tool permissions are read and search only, so file writes and runner executions go through the usual permission prompts every time.</p>
+<h4 id="phase-0-always-ask-where-the-criteria-come-from">Phase 0: always ask where the criteria come from<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#phase-0-always-ask-where-the-criteria-come-from"><span class="icon icon-link"></span></a></h4>
+<p>The first live run was on this very blog repository. The most common mistake it exposed was the agent digging through the repository and inventing candidate criteria without asking — even though the user might already have an authoritative criteria document.</p>
+<p>So Phase 0 always presents three options and waits: (a) paste them into the chat, (b) give a file or link path, or (c) none. Only on (c) does it look for candidates in the repository's PRDs, stories, and existing test titles, propose them, and confirm again. If the first request already includes the criteria, it does not ask again.</p>
+<p>At the same point it reads the repository: which runners exist and which are missing, whether there is a tool that intercepts network requests, whether existing tests call real external APIs, what test id attribute the team uses, and whether there are candidate environments for E2E. For environment variables it reports key names only and never prints their values.</p>
+<h4 id="phase-1-only-build-inside-what-was-chosen-scope-guard">Phase 1: only build inside what was chosen (scope guard)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#phase-1-only-build-inside-what-was-chosen-scope-guard"><span class="icon icon-link"></span></a></h4>
+<p>The user picks methodologies and layers with checkboxes, pre-checked according to the recommended preset. Layers without a runner are marked "runner needs to be added."</p>
+<p>The chosen (methodology × layer) set becomes the fence for every later step. The harness calls this the <strong>scope guard</strong> and treats it as seriously as the three gates. If a criterion would naturally be an E2E test but the user did not choose E2E, the harness either pushes it down to integration or marks it "out of scope — not added" and asks whether to widen the scope. It never adds tests on its own.</p>
+<h4 id="phase-2-one-criterion--several-layers">Phase 2: one criterion = several layers<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#phase-2-one-criterion--several-layers"><span class="icon icon-link"></span></a></h4>
+<p>An acceptance criterion is not equated with a single test. The harness slices it, sends calculation and decision logic to unit, collaboration between modules and APIs to integration, and only critical user journeys to E2E. The principle: "every E2E test can be an acceptance test, but not every acceptance test needs to be E2E." Given-When-Then maps directly to Arrange-Act-Assert at any layer, so the layer is decided by "what do we isolate and what do we use for real."</p>
+<p>Next, each slice gets methodology memberships. Most are regression; deterministic, critical happy paths are smoke; anything slow, expensive, or flaky is deferred to nightly.</p>
+<p>Each row of the plan holds the criterion ID, the layer, the methodology and the command that selects that bundle, combination strength, the API boundary (mock or real, and where the fake responses come from), how screen elements are located, the oracle, the planned test file path, a Given-When-Then summary, and the supporting card. A CI placement table and the list of run scripts to be added are attached, and everything is approved <strong>in one go</strong>. No file is created before approval.</p>
+<h4 id="phase-3-one-test-at-a-time">Phase 3: one test at a time<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#phase-3-one-test-at-a-time"><span class="icon icon-link"></span></a></h4>
+<p>The approved plan is worked through row by row, not in parallel. Each test follows this order.</p>
+<ol>
+<li><strong>Oracle pre-check</strong> — Is the assertion a copy of what the current implementation returns, or does it verify what the acceptance criterion requires? If it copies the implementation, the expectation is re-derived from the criterion; if it is unclear, the harness asks, "Is this expectation correct?" Before the first test, it also looks at existing flaky tests in that area, because feeding flaky tests in as context spreads the flakiness to new ones.</li>
+<li><strong>Draft and self-check</strong> — It checks the file location, traces of real API calls, the order used to find screen elements, and whether tags and criterion IDs follow the rules. It does not include assertions that cannot fail, such as reading back a value it just set.</li>
+<li><strong>Gate B</strong> — The user chooses "apply / apply after edits / skip this test only / stop here." The file is written only on approval.</li>
+<li><strong>Run</strong> — The harness actually runs the applied test and shows the runner output rather than its own claim. If it fails, it separates "the test is wrong" from "the code violates the criterion" and asks what to do next. It also checks that the test passes on correct code (not a false alarm), and runs the selection to confirm the new tags pull this test into its bundle and not into others.</li>
+</ol>
+<p>If the user stops midway, only what has been applied so far is kept and the flow moves to the final phase.</p>
+<h4 id="phase-4-re-check-and-confirm">Phase 4: re-check and confirm<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#phase-4-re-check-and-confirm"><span class="icon icon-link"></span></a></h4>
+<p>The harness summarizes applied, skipped, and failed tests, the distribution across layers and bundles, suspected code defects, and anything still unverified, then asks one last time whether to confirm. If the user asks to roll back a particular test, only that file change is reverted.</p>
+<h3 id="the-rules-it-keeps">The rules it keeps<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-rules-it-keeps"><span class="icon icon-link"></span></a></h3>
+<h4 id="unit-and-integration-never-call-real-apis">Unit and integration never call real APIs<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#unit-and-integration-never-call-real-apis"><span class="icon icon-link"></span></a></h4>
+<p>Unit and integration tests are always mocked, no exceptions. The moment a test goes out to the real network it is no longer a unit or integration test. The harness prefers tools that intercept requests at the network boundary (MSW, nock, and the like); when none exist it falls back to replacing the module itself, and writes down in the plan what that leaves unverified, such as request assembly or error mapping.</p>
+<p>Fake responses (fixtures) are sourced in three steps: reuse what the repository already has; otherwise ask the user for a real response sample; otherwise derive one from the schema or types and label it "not captured from a real response." The harness never calls a real API to create a fixture. Copying fixture values straight into the expected values is also forbidden — a fixture is a precondition (Given), not the answer.</p>
+<p>After writing, it statically checks for leftover external URLs or un-mocked HTTP calls, while also stating the limit: passing that check does not prove the test never touches the network.</p>
+<blockquote>
+<p><strong>A passing mock is not a working integration.</strong> A fixture is a snapshot of the moment it was captured, so the test stays green even after the real API changes. The output always notes that the only thing that confirms integration is an E2E run against the real API.</p>
+</blockquote>
+<h4 id="e2e-is-smoke-and-regression-only-and-smoke-sits-inside-regression">E2E is smoke and regression only, and smoke sits inside regression<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#e2e-is-smoke-and-regression-only-and-smoke-sits-inside-regression"><span class="icon icon-link"></span></a></h4>
+<p>E2E tests are created only as smoke and regression. No nightly or sanity-only E2E. The cost is written down too: with nowhere to defer cross-browser or large E2E runs, regression E2E itself must be narrowed to critical journeys.</p>
+<p>Smoke is a subset of regression. A smoke test carries both the smoke and the regression tag. The same scenario is never duplicated into a mock file and a real-API file; the run mode is expressed only as a tag on the existing test. By default E2E tests carry the mock-mode tag and run deterministically in CI; only scenarios the user points to get the real-API tag as well and are run by hand.</p>
+<h4 id="e2e-smoke-runs-against-the-real-api-only--and-what-that-costs">E2E smoke runs against the real API only — and what that costs<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#e2e-smoke-runs-against-the-real-api-only--and-what-that-costs"><span class="icon icon-link"></span></a></h4>
+<p>This is where the harness is most opinionated. <strong>E2E smoke runs against the real API only, even if nobody asks.</strong> Passing smoke on mock data cannot answer smoke's actual question: "Is what we deployed really alive?" In exchange, it is not placed in any fixed CI stage (PR, post-deploy, nightly) and lives only as a manual run recipe.</p>
+<p>This is an operating decision that directly conflicts with the usual advice that "a gate that blocks deploys must be deterministic and free of external dependencies" (MinimumCD, Fowler). So the harness does not dress it up as evidence-based; it writes it into the output as is. <strong>E2E smoke is not an automated deploy gate but a manual checkpoint a person runs before promotion.</strong> A pass against the real API is also only an observation of "it passed at this time, in this environment," not a permanent guarantee of integration.</p>
+<p>In 0.5.0 the rule was the exact opposite: "E2E smoke never gets a real-API mode." When I reversed it in 0.6.0, I changed the rule without hiding the fact that it conflicts with the evidence.</p>
+<h4 id="the-only-exception-for-calling-a-real-api-and-its-conditions">The only exception for calling a real API, and its conditions<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#the-only-exception-for-calling-a-real-api-and-its-conditions"><span class="icon icon-link"></span></a></h4>
+<p>The only time the harness itself calls a real API is when running E2E smoke, and even then three things must all be in place: the target environment URL, test accounts and seed data (or confirmation that none are needed), and <strong>approval to run, given on the spot</strong>. Approving the plan is not treated as approving the run.</p>
+<ul>
+<li>If the target is production, it asks once more.</li>
+<li>Journeys with side effects — payments, sending messages, deletions, billing — are asked about one by one.</li>
+<li>Secret values are never accepted in the chat; only environment variable or secret key names are handled.</li>
+<li>Data created by the tests is not deleted by the harness on its own; it is reported as left behind.</li>
+<li>Failures are split three ways: test defect, code defect, and <strong>environment or external cause</strong> (not deployed, expired auth, rate limits, upstream outage), so that environment problems are not blamed on the code.</li>
+<li>If the conditions are not met and it cannot run, the recipe stays <strong>UNVERIFIED</strong>. "I created a run recipe" is never reported as "I verified it."</li>
+</ul>
+<h4 id="sanity-is-a-selection-lane-not-an-axis-for-new-tests">Sanity is a selection lane, not an axis for new tests<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#sanity-is-a-selection-lane-not-an-axis-for-new-tests"><span class="icon icon-link"></span></a></h4>
+<p>In the combination table above, sanity is "degenerate" everywhere. That means "no new sanity-only tests," not "no sanity." In this harness, sanity is <strong>a selection lane that picks existing tests by change scope and runs them before the PR</strong>.</p>
+<p>The targets widen in three steps: the changed files, the parent pages and components that import them, and — if E2E was chosen — the mock E2E tests for the related pages. If the mapping is uncertain, the scope widens to everything rather than narrowing. In the PR job, unit and integration failures block, while mock E2E only reports.</p>
+<p>No sanity tag is planted in the code. New tests are created only when a changed target has no tests at all, and the CI config file is never edited directly — the harness only proposes what to add. This placement and blocking policy, too, is labeled as an operating decision rather than a standard.</p>
+<h4 id="find-screen-elements-the-way-users-do">Find screen elements the way users do<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#find-screen-elements-the-way-users-do"><span class="icon icon-link"></span></a></h4>
+<p>Tests that query the screen try a fixed ladder from the top.</p>
+<ol>
+<li><strong>Visible elements and interaction</strong> — role (button, link, …) with name → label → placeholder → visible text → current value</li>
+<li><strong>HTML and ARIA attributes</strong> — image alt text → title attribute</li>
+<li><strong>Test ID</strong> — only when the above cannot find it</li>
+<li><strong>Last resort</strong> — an arbitrary CSS selector</li>
+</ol>
+<p>Every step down requires a reason why the step above cannot work. "It's easier to write" is not a reason. A few more details:</p>
+<ul>
+<li><strong>Runners name things differently.</strong> Testing Library and Playwright use different names for the same concepts, and Playwright has no query that finds by current value at all. The harness never calls an API that doesn't exist; when it needs to pin down a value, it finds the element with a higher-ranked query and checks the value with an assertion.</li>
+<li><strong>The test id attribute name is the team's call.</strong> The harness does not invent one; it detects it in the repository and asks if there is none or several are mixed. Adding a new test id to product code is a change outside the test files, so it gets separate approval.</li>
+<li><strong>The last resort is allowed, but its coupling cost is written down.</strong> Locating by an analytics attribute ties the test to a contract made for another purpose; locating by part of a CSS module class name ties it to a build hash, an implementation detail. When their owners change them, the test breaks. The harness flags the risk, and the user decides.</li>
+</ul>
+<p>This ladder reflects the design intent of the official Testing Library guide, not experimentally proven superiority. So the harness does not score compliance or claim numbers like "finding by role cuts flakiness by X%." And picking a good selector does not make the oracle stronger; the two are separate checks.</p>
+<h4 id="always-in-a-__test__-folder-next-to-the-target">Always in a __test__ folder next to the target<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#always-in-a-__test__-folder-next-to-the-target"><span class="icon icon-link"></span></a></h4>
+<p>Unit and integration tests go into a __test__ folder created right in the folder of the file under test. Even if the repository has another convention (a plural folder name, a separate test folder, files right next to the source), this rule applies without exception.</p>
+<p>At first there was an exception: "follow the existing convention if there is one." In practice that exception became a loophole, and tests occasionally appeared next to the source with no folder. In 0.4.1 I removed the exception and made the harness check the path three times — before, during, and after writing. E2E has its own runner and folder conventions, so its path is asked for separately when the layer is chosen.</p>
+<h4 id="criterion-ids-in-test-titles">Criterion IDs in test titles<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#criterion-ids-in-test-titles"><span class="icon icon-link"></span></a></h4>
+<p>Every smoke and regression test starts its title with the acceptance criterion ID, so the code itself shows which criterion a test verifies.</p>
+<p>Smoke and regression contain only tests grounded in acceptance criteria. Tests needed outside the criteria, such as performance or fuzzing, can live without an ID only in nightly or sanity, and even then the plan records a reason and they are approved separately. If the input criteria have no IDs, the harness first gets approval for a numbered mapping table, and never invents IDs that are not in the input. If there is a test you want in smoke but no matching criterion, the harness does not invent the test; it asks whether to add the criterion (a planning decision).</p>
+<h4 id="suites-must-exist-in-code">Suites must exist in code<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#suites-must-exist-in-code"><span class="icon icon-link"></span></a></h4>
+<p>Writing "smoke" in a plan does nothing on its own. The harness attaches tags in the code using what the runner provides natively (Playwright and Vitest tags; for Jest, which lacks native tags, title conventions or project separation), adds per-bundle run scripts, and then runs those commands to confirm this test is selected and others are not. A test that the plan places in a bundle but that carries no tag in code is rejected. If the runner cannot do tags, the harness does not pretend; it downgrades the bundle to "a label only, not real run separation."</p>
+<p>When E2E is in scope, it confirms six isolation conditions from actual run output. In short: "the smoke and regression lists that run in CI contain no real-API tests," "smoke E2E has no mock tag and does have the regression tag," "nightly has no E2E," and "the same scenario is not duplicated in files that differ only by mode."</p>
+<h3 id="honesty-principles">Honesty principles<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#honesty-principles"><span class="icon icon-link"></span></a></h3>
+<p>The part of this harness that took the most work was not a feature but the list of things <em>not</em> to say.</p>
+<ul>
+<li>It does not set layer ratios like 70/20/10.</li>
+<li>It does not hide that smoke and sanity are synonyms in the standard.</li>
+<li>It does not cite unsupported effect numbers like "smoke catches 80% of critical bugs early" or "switching to mocks cuts flakiness by N%."</li>
+<li>It does not claim that prioritizing test order reduces CI cost. Only the order changes; the total amount of execution stays the same. What reduces cost is selection, batching, and parallelism.</li>
+<li>It never reports a mock pass as verified integration, or an unexecuted test as passing.</li>
+<li>Things that are operating decisions or design intent rather than evidence — sanity's PR placement, the real-API-only rule for E2E smoke, the selector ladder — are labeled as such.</li>
+<li>Every conclusion carries a confidence level (high, medium, low) and a source.</li>
+</ul>
+<h3 id="how-to-use-it">How to use it<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#how-to-use-it"><span class="icon icon-link"></span></a></h3>
+<h4 id="install">Install<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#install"><span class="icon icon-link"></span></a></h4>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># One-step install (Claude Code 2.1.275+)</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">/plugin</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> test-layering-harness</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --marketplace</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> seungahhong/seungah-claude-plugins</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># Or register the marketplace first, then install</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">/plugin</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> marketplace</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> add</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> seungahhong/seungah-claude-plugins</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">/plugin</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> test-layering-harness@seungah-claude-plugins</span></span></code></pre></figure>
+<h4 id="invoke">Invoke<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#invoke"><span class="icon icon-link"></span></a></h4>
+<p>Call it with the slash command, or just ask in natural language and the skill triggers.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span>/test-layering-harness:test-layering-harness</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span>Plan layered tests from these acceptance criteria and add them one at a time with my approval</span></span></code></pre></figure>
+<p>It also triggers on requests like "split these ACs into unit/integration/E2E," "plan smoke and regression tests," or "which tests should go in which CI stage."</p>
+<h4 id="1-provide-the-criteria-and-the-path">1. Provide the criteria and the path<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#1-provide-the-criteria-and-the-path"><span class="icon icon-link"></span></a></h4>
+<p>Choose whether to paste the criteria, give a file path, or have it search the repository because you have none. If you paste them, this shape is enough:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span>AC-1.1</span></span>
+<span data-line=""><span>Given a signed-in user is on a product detail page</span></span>
+<span data-line=""><span>When they press the Wishlist button</span></span>
+<span data-line=""><span>Then the button changes to 'Remove from wishlist' and the wishlist count goes up by 1</span></span>
+<span data-line=""> </span>
+<span data-line=""><span>AC-1.2</span></span>
+<span data-line=""><span>Given a signed-out user is on a product detail page</span></span>
+<span data-line=""><span>When they press the Wishlist button</span></span>
+<span data-line=""><span>Then they are taken to the sign-in page</span></span></code></pre></figure>
+<p>If there are no IDs, the harness builds a mapping table numbered AC-1.1, AC-1.2, and so on, and asks you to approve it. You can skip the target path; it will then detect runners and conventions from the current project path.</p>
+<h4 id="2-pick-methodologies-and-layers">2. Pick methodologies and layers<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#2-pick-methodologies-and-layers"><span class="icon icon-link"></span></a></h4>
+<p>Checkboxes appear along with the recommended preset. Keep the defaults or adjust them.</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span>Methodology  [x] Smoke   [ ] Sanity        [x] Regression   [ ] Nightly</span></span>
+<span data-line=""><span>Layer        [x] Unit    [x] Integration   [x] E2E</span></span></code></pre></figure>
+<p>Choosing E2E prompts for the path where E2E tests should live. Choosing both Smoke and E2E brings a notice that E2E smoke is real-API only, followed by questions about the target environment URL, the environment variable names holding test accounts, and whether to include journeys with side effects. You don't have to answer now; the plan is built either way, and only the run is left UNVERIFIED.</p>
+<h4 id="3-approve-the-plan-gate-a">3. Approve the plan (Gate A)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#3-approve-the-plan-gate-a"><span class="icon icon-link"></span></a></h4>
+<p>You get a plan table. For the criteria above, it looks roughly like this:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>#</th><th>AC-ID</th><th>Layer</th><th>Methodology</th><th>API boundary</th><th>Screen element</th><th>Oracle</th></tr></thead><tbody><tr><td>1</td><td>AC-1.1</td><td>Integration</td><td>smoke, regression</td><td>mock · network interception · reused fixture</td><td>role (button) named 'Wishlist'</td><td>After click the button reads 'Remove from wishlist', count +1</td></tr><tr><td>2</td><td>AC-1.2</td><td>Unit</td><td>regression</td><td>mock · module double</td><td>N/A (non-DOM)</td><td>Returns the sign-in route when signed out</td></tr><tr><td>3</td><td>AC-1.1</td><td>E2E</td><td>smoke, regression</td><td>real API only · manual run</td><td>role (button) named 'Wishlist'</td><td>Detail → wishlist → item appears in the wishlist</td></tr></tbody></table>
+<p>Below it come the CI placement table and the run scripts to be added. Choose full approval, edit or drop specific rows, or readjust the preset.</p>
+<h4 id="4-approve-one-at-a-time-gate-b">4. Approve one at a time (Gate B)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#4-approve-one-at-a-time-gate-b"><span class="icon icon-link"></span></a></h4>
+<p>For each test it shows a draft and asks:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span>Apply this test? (apply / apply after edits / skip this test only / stop here)</span></span></code></pre></figure>
+<p>On approval it writes the file and runs it immediately. The resulting test has the criterion ID at the start of its title and bundle tags in its options. For row 3 above:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="ts" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF">test</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span data-line=""><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">  '[AC-1.1] a signed-in user adds the product to the wishlist'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  { tag: [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'@smoke'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'@regression'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'@e2e-live'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] },</span></span>
+<span data-line=""><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  async</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ({ </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">page</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> }) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span data-line=""><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    // ...</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  },</span></span>
+<span data-line=""><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span></code></pre></figure>
+<p>When the first test of a bundle is applied, the run scripts are added too. Names and commands follow the repository's conventions — for example:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="bash" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">pnpm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> test:smoke</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">            # smoke without E2E — post-deploy CI</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">pnpm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> test:regression</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">       # all regression — E2E in mock mode only</span></span>
+<span data-line=""><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">pnpm</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> test:e2e:smoke:live</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   # E2E smoke against the real API — manual only, never in CI</span></span></code></pre></figure>
+<h4 id="5-final-confirmation-gate-c">5. Final confirmation (Gate C)<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#5-final-confirmation-gate-c"><span class="icon icon-link"></span></a></h4>
+<p>Review the summary and the full run result (real-API tests excluded), then confirm or roll back specific tests. If you like, the plan and summary can be saved as files:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast"><code data-language="text" data-theme="github-light-high-contrast github-dark-high-contrast" style="display: grid;"><span data-line=""><span>&#x3C;target path>/.claude/_docs/test-layering/&#x3C;slug>/</span></span>
+<span data-line=""><span>  test-plan.md        # the plan table</span></span>
+<span data-line=""><span>  applied-summary.md  # the application summary</span></span></code></pre></figure>
+<h3 id="how-it-changed-version-by-version">How it changed, version by version<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#how-it-changed-version-by-version"><span class="icon icon-link"></span></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Version</th><th>Date</th><th>What changed</th></tr></thead><tbody><tr><td>0.1.0</td><td>2026-07-05</td><td>Created. Acceptance criteria → methodology × layer plan, three approval gates, oracle re-checks and execution, three presets</td></tr><tr><td>0.2.0</td><td>2026-07-06</td><td>A criteria document for each of the 12 methodology × layer cells, grounded in post-2025 standards and papers</td></tr><tr><td>0.3.0</td><td>2026-07-06</td><td>Replaced the 12 cells with seven axis cards and introduced the scope guard</td></tr><tr><td>0.4.x</td><td>2026-07-07, 07-14</td><td>Placement and mock rules, early E2E path question, unconditional __test__ folder</td></tr><tr><td>0.5.0</td><td>2026-08-01</td><td>API boundary axis (mock/real), E2E mode tags, sanity as a change-scope selection lane</td></tr><tr><td>0.6.0</td><td>2026-08-17</td><td>Reversed to real-API-only E2E smoke, with run conditions and three-way failure triage</td></tr><tr><td>0.7.x</td><td>2026-08-23, 10-18</td><td>New screen-element ladder; shorter skill description and narrower tool permissions</td></tr><tr><td>0.8.0</td><td>2026-10-18</td><td>E2E is smoke and regression only, smoke ⊆ regression, criterion IDs in test titles</td></tr></tbody></table>
+<p>Looking back, most changes came from "in real use, it slipped out this way": inventing criteria instead of asking, folder rules collapsing through an exception clause, suites that existed in the plan but not in the code. Each time I added a rule, I tried to also write down what it makes us give up.</p>
+<h3 id="wrapping-up">Wrapping up<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#wrapping-up"><span class="icon icon-link"></span></a></h3>
+<p>Generating tests is already something agents do well. What is left for people is judging "what does this test treat as the right answer" and "at which layer and at what point should this test run," and this harness is designed to put those judgments in front of a person every time. Three approvals can feel tedious, but I think they are cheap compared with finding a test that enshrined a bug months later.</p>
+<h3 id="references">References<a class="heading-anchor" aria-hidden="true" tabindex="-1" href="#references"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li><a href="https://github.com/seungahhong/seungah-claude-plugins/tree/main/plugins/test-layering-harness">test-layering-harness (GitHub)</a></li>
+<li>Earlier posts — <a href="/en/posts/2026-11-21-product-spec-harness/">Ask Before Writing, Doubt After — product-spec-harness</a> · <a href="/en/posts/2026-06-04-fe-harness/">Frontend Harness Engineering</a></li>
+</ul>15:["$","div",null,{"className":"pt-6","children":["$","div",null,{"className":"post-prose","dangerouslySetInnerHTML":{"__html":"$24"}}]}]
+16:["$","nav",null,{"aria-label":"Previous / Next","className":"border-line mt-11 grid grid-cols-1 gap-3.5 border-t pt-7 sm:grid-cols-2","children":[["$","$L11",null,{"href":"/en/posts/2026-11-21-product-spec-harness","className":"group border-line bg-surface hover:border-accent flex flex-col gap-1.5 rounded-xl border px-[18px] py-4 transition-colors","rel":"prev","children":[["$","span",null,{"className":"text-accent flex items-center gap-1.5 font-mono text-[12px]","children":[["$","$L25",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"h-3.5 w-3.5","aria-hidden":"true"}],"Previous"]}],["$","span",null,{"className":"text-ink group-hover:text-accent text-[15px] leading-snug font-bold","children":"Ask Before Writing, Doubt After — product-spec-harness"}]]}],["$","span",null,{"aria-hidden":"true"}]]}]
+17:["$","div",null,{"className":"hidden lg:block","children":["$","$L26",null,{"headings":[{"id":"splitting-acceptance-criteria-into-layered-tests-one-approval-at-a-time","text":"Splitting Acceptance Criteria into Layered Tests, One Approval at a Time","depth":1},{"id":"️-tldr","text":"✍️ TL;DR","depth":2},{"id":"why-i-built-it","text":"Why I built it","depth":2},{"id":"writing-many-tests-is-already-easy","text":"Writing many tests is already easy","depth":3},{"id":"the-biggest-risk-is-oracle-strength","text":"The biggest risk is oracle strength","depth":3},{"id":"two-axes-methodology--layer","text":"Two axes: methodology × layer","depth":2},{"id":"four-methodologies","text":"Four methodologies","depth":3},{"id":"three-layers","text":"Three layers","depth":3},{"id":"seven-cards-instead-of-a-12-cell-grid","text":"Seven cards instead of a 12-cell grid","depth":3},{"id":"three-presets-matched-to-the-repository","text":"Three presets matched to the repository","depth":3},{"id":"the-flow-five-phases-and-three-approval-gates","text":"The flow: five phases and three approval gates","depth":2},{"id":"phase-0-always-ask-where-the-criteria-come-from","text":"Phase 0: always ask where the criteria come from","depth":3},{"id":"phase-1-only-build-inside-what-was-chosen-scope-guard","text":"Phase 1: only build inside what was chosen (scope guard)","depth":3},{"id":"phase-2-one-criterion--several-layers","text":"Phase 2: one criterion = several layers","depth":3},{"id":"phase-3-one-test-at-a-time","text":"Phase 3: one test at a time","depth":3},{"id":"phase-4-re-check-and-confirm","text":"Phase 4: re-check and confirm","depth":3},{"id":"the-rules-it-keeps","text":"The rules it keeps","depth":2},{"id":"unit-and-integration-never-call-real-apis","text":"Unit and integration never call real APIs","depth":3},{"id":"e2e-is-smoke-and-regression-only-and-smoke-sits-inside-regression","text":"E2E is smoke and regression only, and smoke sits inside regression","depth":3},{"id":"e2e-smoke-runs-against-the-real-api-only--and-what-that-costs","text":"E2E smoke runs against the real API only — and what that costs","depth":3},{"id":"the-only-exception-for-calling-a-real-api-and-its-conditions","text":"The only exception for calling a real API, and its conditions","depth":3},{"id":"sanity-is-a-selection-lane-not-an-axis-for-new-tests","text":"Sanity is a selection lane, not an axis for new tests","depth":3},{"id":"find-screen-elements-the-way-users-do","text":"Find screen elements the way users do","depth":3},{"id":"always-in-a-__test__-folder-next-to-the-target","text":"Always in a __test__ folder next to the target","depth":3},{"id":"criterion-ids-in-test-titles","text":"Criterion IDs in test titles","depth":3},{"id":"suites-must-exist-in-code","text":"Suites must exist in code","depth":3},{"id":"honesty-principles","text":"Honesty principles","depth":2},{"id":"how-to-use-it","text":"How to use it","depth":2},{"id":"install","text":"Install","depth":3},{"id":"invoke","text":"Invoke","depth":3},{"id":"1-provide-the-criteria-and-the-path","text":"1. Provide the criteria and the path","depth":3},{"id":"2-pick-methodologies-and-layers","text":"2. Pick methodologies and layers","depth":3},{"id":"3-approve-the-plan-gate-a","text":"3. Approve the plan (Gate A)","depth":3},{"id":"4-approve-one-at-a-time-gate-b","text":"4. Approve one at a time (Gate B)","depth":3},{"id":"5-final-confirmation-gate-c","text":"5. Final confirmation (Gate C)","depth":3},{"id":"how-it-changed-version-by-version","text":"How it changed, version by version","depth":2},{"id":"wrapping-up","text":"Wrapping up","depth":2},{"id":"references","text":"References","depth":2}],"title":"Contents"}]}]
+18:["$","script","script-0",{"src":"/_next/static/chunks/0-jsxcg-veu-w.js","async":true}]
+19:["$","$L27",null,{"children":["$","$1f",null,{"name":"Next.MetadataOutlet","children":"$@28"}]}]
+23:true
+9:300
+28:null
+9:C
+22:0
+b:"$undefined"
+7:"$undefined"
+21:"$undefined"
+1a:"$undefined"
