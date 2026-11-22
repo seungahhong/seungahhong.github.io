@@ -1,3 +1,5 @@
+// @vitest-environment node
+// 빌드 타임(Node)에서 도는 코드다. shiki 4.6+는 wasm을 Blob.stream()으로 읽는데 jsdom의 Blob엔 stream()이 없다.
 import { describe, expect, it } from 'vitest';
 import {
   extractHeadings,
