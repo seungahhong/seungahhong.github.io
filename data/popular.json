@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-22",
+  "updatedAt": "2026-11-23",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 120
+      "views": 112
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
-      "views": 99
+      "views": 97
     },
     {
       "slug": "2026-09-19-react-router-v8",
@@ -28,7 +28,11 @@
     },
     {
       "slug": "2026-07-13-vite8.0",
-      "views": 21
+      "views": 20
+    },
+    {
+      "slug": "2026-11-07-package-release-weekly",
+      "views": 19
     },
     {
       "slug": "2026-06-01-RAG",
@@ -39,27 +43,19 @@
       "views": 18
     },
     {
-      "slug": "2026-11-07-package-release-weekly",
-      "views": 18
-    },
-    {
       "slug": "2026-11-14-package-release-weekly",
-      "views": 17
-    },
-    {
-      "slug": "2026-08-23-ai-native-sdlc-playbook",
-      "views": 15
+      "views": 18
     },
     {
       "slug": "2026-10-11-brownfield-agentic-engineering",
       "views": 15
     },
     {
-      "slug": "2020-02-16-winapi",
-      "views": 14
+      "slug": "2026-11-05-claude-code-team-code-review",
+      "views": 15
     },
     {
-      "slug": "2023-08-15-ecmascript",
+      "slug": "2020-02-16-winapi",
       "views": 14
     },
     {
@@ -79,8 +75,12 @@
       "views": 14
     },
     {
-      "slug": "2026-11-05-claude-code-team-code-review",
-      "views": 14
+      "slug": "2023-08-15-ecmascript",
+      "views": 13
+    },
+    {
+      "slug": "2026-08-23-ai-native-sdlc-playbook",
+      "views": 13
     },
     {
       "slug": "2026-10-22-tanstack-start",
@@ -95,10 +95,6 @@
       "views": 12
     },
     {
-      "slug": "2023-07-23-react-query-v5",
-      "views": 12
-    },
-    {
       "slug": "2024-11-23-nextjs-v15-migration",
       "views": 12
     },
@@ -107,8 +103,8 @@
       "views": 12
     },
     {
-      "slug": "2026-08-22-delete-and-verify",
-      "views": 12
+      "slug": "2023-07-23-react-query-v5",
+      "views": 11
     },
     {
       "slug": "2023-08-16-treeshaking",
@@ -143,10 +139,6 @@
       "views": 10
     },
     {
-      "slug": "2023-10-30-nextjs-v14",
-      "views": 10
-    },
-    {
       "slug": "2024-12-05-react-v19",
       "views": 10
     },
@@ -159,11 +151,11 @@
       "views": 9
     },
     {
-      "slug": "2024-03-18-pnpm",
+      "slug": "2023-10-30-nextjs-v14",
       "views": 9
     },
     {
-      "slug": "2024-05-12-development-improvements",
+      "slug": "2024-03-18-pnpm",
       "views": 9
     },
     {
@@ -183,10 +175,6 @@
       "views": 8
     },
     {
-      "slug": "2022-03-30-SWR",
-      "views": 8
-    },
-    {
       "slug": "2022-12-30-react-query",
       "views": 8
     },
@@ -203,7 +191,19 @@
       "views": 8
     },
     {
+      "slug": "2024-05-12-development-improvements",
+      "views": 8
+    },
+    {
+      "slug": "2024-11-16-vite",
+      "views": 8
+    },
+    {
       "slug": "2026-07-31-context-engineering-claude5",
+      "views": 8
+    },
+    {
+      "slug": "2026-08-22-delete-and-verify",
       "views": 8
     },
     {
@@ -215,15 +215,15 @@
       "views": 7
     },
     {
-      "slug": "2020-02-17-c-c++",
-      "views": 7
-    },
-    {
       "slug": "2021-12-30-redux",
       "views": 7
     },
     {
       "slug": "2022-03-22-recoil",
+      "views": 7
+    },
+    {
+      "slug": "2022-03-30-SWR",
       "views": 7
     },
     {
@@ -239,12 +239,12 @@
       "views": 7
     },
     {
-      "slug": "2024-11-16-vite",
+      "slug": "2026-09-07-karpathy-transformers",
       "views": 7
     },
     {
-      "slug": "2026-09-07-karpathy-transformers",
-      "views": 7
+      "slug": "2020-02-17-c-c++",
+      "views": 6
     },
     {
       "slug": "2020-04-12-webtools",
@@ -272,10 +272,6 @@
     },
     {
       "slug": "2023-09-10-react-state",
-      "views": 6
-    },
-    {
-      "slug": "2023-09-17-gatsby-v5",
       "views": 6
     },
     {
@@ -311,7 +307,15 @@
       "views": 5
     },
     {
+      "slug": "2023-09-17-gatsby-v5",
+      "views": 5
+    },
+    {
       "slug": "2025-06-29-vite6.0",
+      "views": 5
+    },
+    {
+      "slug": "2026-11-22-test-layering-harness",
       "views": 5
     },
     {
@@ -328,10 +332,6 @@
     },
     {
       "slug": "2022-01-16-typescript",
-      "views": 4
-    },
-    {
-      "slug": "2022-05-31-css-in-js",
       "views": 4
     },
     {
@@ -355,6 +355,10 @@
       "views": 3
     },
     {
+      "slug": "2022-05-31-css-in-js",
+      "views": 3
+    },
+    {
       "slug": "2024-01-20-nextjs-v14-migration",
       "views": 3
     },
@@ -363,8 +367,16 @@
       "views": 3
     },
     {
+      "slug": "2026-11-21-product-spec-harness",
+      "views": 3
+    },
+    {
       "slug": "2022-05-30-form",
       "views": 2
+    },
+    {
+      "slug": "2026-11-16-package-release-weekly",
+      "views": 1
     }
   ]
 }
