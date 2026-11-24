@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-24",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 112
+      "views": 110
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
-      "views": 97
+      "views": 95
     },
     {
       "slug": "2026-09-19-react-router-v8",
@@ -19,19 +19,19 @@
       "views": 25
     },
     {
-      "slug": "2026-07-14-typescript7.0",
-      "views": 23
-    },
-    {
       "slug": "2026-10-17-package-release-weekly",
       "views": 23
     },
     {
-      "slug": "2026-07-13-vite8.0",
-      "views": 20
+      "slug": "2026-07-14-typescript7.0",
+      "views": 22
     },
     {
       "slug": "2026-11-07-package-release-weekly",
+      "views": 20
+    },
+    {
+      "slug": "2026-11-14-package-release-weekly",
       "views": 19
     },
     {
@@ -43,12 +43,12 @@
       "views": 18
     },
     {
-      "slug": "2026-11-14-package-release-weekly",
-      "views": 18
+      "slug": "2026-07-13-vite8.0",
+      "views": 17
     },
     {
       "slug": "2026-10-11-brownfield-agentic-engineering",
-      "views": 15
+      "views": 16
     },
     {
       "slug": "2026-11-05-claude-code-team-code-review",
@@ -60,6 +60,10 @@
     },
     {
       "slug": "2024-01-14-cors",
+      "views": 14
+    },
+    {
+      "slug": "2026-08-23-ai-native-sdlc-playbook",
       "views": 14
     },
     {
@@ -75,11 +79,11 @@
       "views": 14
     },
     {
-      "slug": "2023-08-15-ecmascript",
+      "slug": "2022-07-25-msw",
       "views": 13
     },
     {
-      "slug": "2026-08-23-ai-native-sdlc-playbook",
+      "slug": "2023-08-15-ecmascript",
       "views": 13
     },
     {
@@ -87,19 +91,11 @@
       "views": 13
     },
     {
-      "slug": "2022-07-25-msw",
-      "views": 12
-    },
-    {
       "slug": "2022-08-07-cypress",
       "views": 12
     },
     {
-      "slug": "2024-11-23-nextjs-v15-migration",
-      "views": 12
-    },
-    {
-      "slug": "2026-07-05-meta-harness",
+      "slug": "2025-09-07-vite7.0",
       "views": 12
     },
     {
@@ -107,15 +103,11 @@
       "views": 11
     },
     {
-      "slug": "2023-08-16-treeshaking",
-      "views": 11
-    },
-    {
       "slug": "2024-04-28-esbuild",
       "views": 11
     },
     {
-      "slug": "2025-09-07-vite7.0",
+      "slug": "2024-11-23-nextjs-v15-migration",
       "views": 11
     },
     {
@@ -139,7 +131,15 @@
       "views": 10
     },
     {
+      "slug": "2023-08-16-treeshaking",
+      "views": 10
+    },
+    {
       "slug": "2024-12-05-react-v19",
+      "views": 10
+    },
+    {
+      "slug": "2026-07-05-meta-harness",
       "views": 10
     },
     {
@@ -168,10 +168,6 @@
     },
     {
       "slug": "2020-06-28-concept",
-      "views": 8
-    },
-    {
-      "slug": "2021-12-02-svelte",
       "views": 8
     },
     {
@@ -207,11 +203,19 @@
       "views": 8
     },
     {
+      "slug": "2026-09-07-karpathy-transformers",
+      "views": 8
+    },
+    {
       "slug": "2026-09-17-ai-native-revenue-org",
       "views": 8
     },
     {
       "slug": "2020-01-01-pdf",
+      "views": 7
+    },
+    {
+      "slug": "2021-12-02-svelte",
       "views": 7
     },
     {
@@ -239,7 +243,7 @@
       "views": 7
     },
     {
-      "slug": "2026-09-07-karpathy-transformers",
+      "slug": "2026-11-21-product-spec-harness",
       "views": 7
     },
     {
@@ -275,10 +279,6 @@
       "views": 6
     },
     {
-      "slug": "2025-02-09-git-to-mp4-convert",
-      "views": 6
-    },
-    {
       "slug": "2026-07-12-product-spec-harness",
       "views": 6
     },
@@ -288,6 +288,10 @@
     },
     {
       "slug": "2026-10-26-package-release-weekly",
+      "views": 6
+    },
+    {
+      "slug": "2026-11-22-test-layering-harness",
       "views": 6
     },
     {
@@ -311,11 +315,11 @@
       "views": 5
     },
     {
-      "slug": "2025-06-29-vite6.0",
+      "slug": "2025-02-09-git-to-mp4-convert",
       "views": 5
     },
     {
-      "slug": "2026-11-22-test-layering-harness",
+      "slug": "2025-06-29-vite6.0",
       "views": 5
     },
     {
@@ -336,6 +340,10 @@
     },
     {
       "slug": "2023-11-26-react-hook-form-inside",
+      "views": 4
+    },
+    {
+      "slug": "2026-11-16-package-release-weekly",
       "views": 4
     },
     {
@@ -367,16 +375,8 @@
       "views": 3
     },
     {
-      "slug": "2026-11-21-product-spec-harness",
-      "views": 3
-    },
-    {
       "slug": "2022-05-30-form",
       "views": 2
-    },
-    {
-      "slug": "2026-11-16-package-release-weekly",
-      "views": 1
     }
   ]
 }
