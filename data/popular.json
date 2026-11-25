@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-25",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 110
+      "views": 109
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
-      "views": 95
+      "views": 97
     },
     {
       "slug": "2026-09-19-react-router-v8",
-      "views": 30
+      "views": 31
     },
     {
       "slug": "2023-04-02-playwright",
@@ -48,7 +48,11 @@
     },
     {
       "slug": "2026-10-11-brownfield-agentic-engineering",
-      "views": 16
+      "views": 17
+    },
+    {
+      "slug": "2026-09-15-vitest5",
+      "views": 15
     },
     {
       "slug": "2026-11-05-claude-code-team-code-review",
@@ -63,10 +67,6 @@
       "views": 14
     },
     {
-      "slug": "2026-08-23-ai-native-sdlc-playbook",
-      "views": 14
-    },
-    {
       "slug": "2026-09-06-skills-governance",
       "views": 14
     },
@@ -75,15 +75,15 @@
       "views": 14
     },
     {
-      "slug": "2026-09-15-vitest5",
-      "views": 14
-    },
-    {
       "slug": "2022-07-25-msw",
       "views": 13
     },
     {
       "slug": "2023-08-15-ecmascript",
+      "views": 13
+    },
+    {
+      "slug": "2026-08-23-ai-native-sdlc-playbook",
       "views": 13
     },
     {
@@ -111,14 +111,6 @@
       "views": 11
     },
     {
-      "slug": "2026-08-25-agentic-code-quality",
-      "views": 11
-    },
-    {
-      "slug": "2026-08-26-agent-skills",
-      "views": 11
-    },
-    {
       "slug": "2026-09-13-writing-specs-for-agents",
       "views": 11
     },
@@ -143,6 +135,10 @@
       "views": 10
     },
     {
+      "slug": "2026-08-25-agentic-code-quality",
+      "views": 10
+    },
+    {
       "slug": "2021-12-31-mobx",
       "views": 9
     },
@@ -159,7 +155,15 @@
       "views": 9
     },
     {
+      "slug": "2024-05-12-development-improvements",
+      "views": 9
+    },
+    {
       "slug": "2025-06-28-figma-mcp-link",
+      "views": 9
+    },
+    {
+      "slug": "2026-08-26-agent-skills",
       "views": 9
     },
     {
@@ -187,15 +191,7 @@
       "views": 8
     },
     {
-      "slug": "2024-05-12-development-improvements",
-      "views": 8
-    },
-    {
       "slug": "2024-11-16-vite",
-      "views": 8
-    },
-    {
-      "slug": "2026-07-31-context-engineering-claude5",
       "views": 8
     },
     {
@@ -240,6 +236,14 @@
     },
     {
       "slug": "2023-07-22-zustand",
+      "views": 7
+    },
+    {
+      "slug": "2026-07-31-context-engineering-claude5",
+      "views": 7
+    },
+    {
+      "slug": "2026-11-16-package-release-weekly",
       "views": 7
     },
     {
@@ -340,10 +344,6 @@
     },
     {
       "slug": "2023-11-26-react-hook-form-inside",
-      "views": 4
-    },
-    {
-      "slug": "2026-11-16-package-release-weekly",
       "views": 4
     },
     {
