@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-25",
+  "updatedAt": "2026-11-26",
   "rangeDays": 90,
   "items": [
     {
       "slug": "2026-06-04-fe-harness",
-      "views": 109
+      "views": 105
     },
     {
       "slug": "2026-06-02-LLM-WIKI",
@@ -12,7 +12,7 @@
     },
     {
       "slug": "2026-09-19-react-router-v8",
-      "views": 31
+      "views": 33
     },
     {
       "slug": "2023-04-02-playwright",
@@ -20,11 +20,11 @@
     },
     {
       "slug": "2026-10-17-package-release-weekly",
-      "views": 23
+      "views": 25
     },
     {
       "slug": "2026-07-14-typescript7.0",
-      "views": 22
+      "views": 21
     },
     {
       "slug": "2026-11-07-package-release-weekly",
@@ -39,15 +39,15 @@
       "views": 18
     },
     {
-      "slug": "2026-06-03-claude-marketplace",
+      "slug": "2026-10-11-brownfield-agentic-engineering",
       "views": 18
     },
     {
-      "slug": "2026-07-13-vite8.0",
+      "slug": "2026-06-03-claude-marketplace",
       "views": 17
     },
     {
-      "slug": "2026-10-11-brownfield-agentic-engineering",
+      "slug": "2026-07-13-vite8.0",
       "views": 17
     },
     {
@@ -75,6 +75,10 @@
       "views": 14
     },
     {
+      "slug": "2026-10-22-tanstack-start",
+      "views": 14
+    },
+    {
       "slug": "2022-07-25-msw",
       "views": 13
     },
@@ -83,19 +87,15 @@
       "views": 13
     },
     {
+      "slug": "2025-09-07-vite7.0",
+      "views": 13
+    },
+    {
       "slug": "2026-08-23-ai-native-sdlc-playbook",
       "views": 13
     },
     {
-      "slug": "2026-10-22-tanstack-start",
-      "views": 13
-    },
-    {
       "slug": "2022-08-07-cypress",
-      "views": 12
-    },
-    {
-      "slug": "2025-09-07-vite7.0",
       "views": 12
     },
     {
@@ -136,6 +136,10 @@
     },
     {
       "slug": "2026-08-25-agentic-code-quality",
+      "views": 10
+    },
+    {
+      "slug": "2026-09-07-karpathy-transformers",
       "views": 10
     },
     {
@@ -199,11 +203,15 @@
       "views": 8
     },
     {
-      "slug": "2026-09-07-karpathy-transformers",
+      "slug": "2026-09-17-ai-native-revenue-org",
       "views": 8
     },
     {
-      "slug": "2026-09-17-ai-native-revenue-org",
+      "slug": "2026-11-21-product-spec-harness",
+      "views": 8
+    },
+    {
+      "slug": "2026-11-22-test-layering-harness",
       "views": 8
     },
     {
@@ -247,10 +255,6 @@
       "views": 7
     },
     {
-      "slug": "2026-11-21-product-spec-harness",
-      "views": 7
-    },
-    {
       "slug": "2020-02-17-c-c++",
       "views": 6
     },
@@ -283,19 +287,11 @@
       "views": 6
     },
     {
-      "slug": "2026-07-12-product-spec-harness",
-      "views": 6
-    },
-    {
       "slug": "2026-09-05-frontier-development-teams",
       "views": 6
     },
     {
       "slug": "2026-10-26-package-release-weekly",
-      "views": 6
-    },
-    {
-      "slug": "2026-11-22-test-layering-harness",
       "views": 6
     },
     {
@@ -324,6 +320,10 @@
     },
     {
       "slug": "2025-06-29-vite6.0",
+      "views": 5
+    },
+    {
+      "slug": "2026-07-12-product-spec-harness",
       "views": 5
     },
     {
